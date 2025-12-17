@@ -151,6 +151,11 @@ _GetFrontpic: ; 510a5
 	push de
 	call GetBaseData
 	ld a, [BasePicSize]
+
+if DEF(BACKPICTEST)
+	ld a, $66
+endc
+
 	and $f
 	ld b, a
 	push bc
@@ -276,6 +281,12 @@ GetFrontpicPointer: ; 510d7
 	dec a
 	ld bc, 6
 	call AddNTimes
+
+if DEF(BACKPICTEST)
+	ld bc, 3
+	add hl, bc
+endc
+
 	ld a, d
 	call GetFarByte
 	push af

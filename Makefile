@@ -23,10 +23,13 @@ endif
 ifeq ($(filter debug,$(MAKECMDGOALS)),debug)
 RGBASM_FLAGS += -DDEBUG
 endif
+ifeq ($(filter backpictest,$(MAKECMDGOALS)),backpictest)
+RGBASM_FLAGS += -DBACKPICTEST
+endif
 
 
 .SUFFIXES:
-.PHONY: all clean orange pss debug bankfree freespace compare
+.PHONY: all clean orange pss debug backpictest bankfree freespace compare
 .SECONDEXPANSION:
 .PRECIOUS: %.2bpp %.1bpp %.wav %.ded
 
@@ -66,6 +69,7 @@ orange: $(ROM_NAME).gbc ; sort $(ROM_NAME).sym -o $(ROM_NAME).sym
 
 pss: orange
 debug: orange
+backpictest: orange
 
 bankfree: FILLER = 0x00
 bankfree: ROM_NAME := $(ROM_NAME)-$(FILLER)

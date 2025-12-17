@@ -564,6 +564,20 @@ IvyDirectionsText3:
 	text "One more thing!"
 	line "<PLAYER>, here"
 	cont "is your #DEX!"
+
+	para "You can even view"
+	line "the shiny variant"
+	cont "of any #MON!"
+	
+	para "Press SELECT and"
+	line "the SHNY icon in"
+	cont "a #DEX entry"
+	cont "to toogle the"
+	cont "different forms"
+	cont "of a #MON."
+	
+	para "Isn't it great?"
+
 	done
 
 PlayerGetDexText:

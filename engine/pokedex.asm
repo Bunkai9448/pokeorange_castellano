@@ -211,8 +211,8 @@ Pokedex_InitMainScreen: ; 4013c (10:413c)
 	call Pokedex_ResetBGMapMode
 	ld a, -1
 	ld [CurPartySpecies], a
-	xor a
-	ld [wDexMonPersonality], a
+	;xor a
+	;ld [wDexMonPersonality], a
 	ld a, SCGB_POKEDEX
 	call Pokedex_GetSGBLayout
 	call Pokedex_UpdateCursorOAM
@@ -253,6 +253,13 @@ Pokedex_UpdateMainScreen: ; 401ae (10:41ae)
 	ld [wJumptableIndex], a
 	ld a, DEXSTATE_MAIN_SCR
 	ld [wDexEntryPrevJumptableIndex], a
+
+	;Needed to handle form changes when pressing select and the shiny button
+	push af
+	ld a, 01
+	ld [TempMonGender], a
+	pop af
+	;
 	ret
 
 .start
@@ -287,8 +294,8 @@ Pokedex_InitDexEntryScreen: ; 40217 (10:4217)
 	ld [hWX], a
 	call Pokedex_GetSelectedMon
 	ld [CurPartySpecies], a
-	xor a
-	ld [wDexMonPersonality], a
+	;xor a
+	;ld [wDexMonPersonality], a
 	ld a, SCGB_POKEDEX
 	call Pokedex_GetSGBLayout
 	call DelayFrame
@@ -341,6 +348,10 @@ Pokedex_Page: ; 40292
 Pokedex_ReinitDexEntryScreen: ; 402aa (10:42aa)
 ; Reinitialize the Pokédex entry screen after changing the selected mon.
 	call Pokedex_WhiteOutBG
+	;Needed to handle form changes when pressing select and the shiny button
+	ld a, 01
+	ld [TempMonGender], a
+	;
 	xor a
 	ld [wPokedexStatus], a
 	xor a
@@ -412,14 +423,83 @@ DexEntryScreen_MenuActionJumptable: ; 402f2
 	jp _PlayCry
 
 .Shiny: ; 4034f
+	call Pokedex_GetSelectedMon
+	ld [CurPartySpecies], a
+;handle forms if select is pressed
+	ld hl, hJoypadDown
+	ld a, [hl]
+	and SELECT
 	ld hl, wDexMonPersonality
+	jr z, .ShinyToogle
+	
+	ld a, [TempMonGender]
+	and FORM_MASK
+	ld b, a
+	
+;check mon that have more than 2 forms
+	;Meowth 3 forms
+	;Lycanroc 3 forms
+	;Magikarp 14 forms
+	;Spinda 26 forms
+	ld a, [CurPartySpecies]
+	cp MEOWTH
+	jr z, .meowth_lycanroc
+	cp LYCANROC
+	jr z, .meowth_lycanroc
+	cp SPINDA
+	jr z, .spinda
+	cp MAGIKARP
+	jr z, .magikarp
+	jr .twoOrLessForms
+
+.spinda
+	ld a, b
+	dec a
+	jr nz, .nextForm
+	ld a, 26
+	jr .nextForm
+.meowth_lycanroc
+	ld a, b
+	dec a
+	jr nz, .nextForm
+	ld a, 3
+	jr .nextForm
+.magikarp
+	ld a, b
+	dec a
+	jr nz, .nextForm
+	ld a, 14
+	jr .nextForm
+
+;For Pokémon with a single form, this is irrelevant, hence why we can use it for everything else
+.twoOrLessForms
+	ld a, b
+	dec a
+	jr nz, .nextForm
+	ld a, 2
+
+.nextForm
+	ld [MonVariant], a
+	ld b, a
+	ld a, [hl] ;add form to the dex PV
+	and %11111100 ;delete form
+	or b ;add new form
+	ld [hl], a
+	ld [TempMonGender], a
+	jr .reloadPic
+
+
+.ShinyToogle
 	ld a, [hl]
 	xor SHINY_MASK ; alternate normal and shiny
 	ld [hl], a
-	call Pokedex_GetSelectedMon
-	ld [CurPartySpecies], a
+	ld [TempMonGender], a
+
+.reloadPic
 	ld a, SCGB_POKEDEX
-	jp Pokedex_GetSGBLayout
+	call Pokedex_GetSGBLayout
+	ld de, VTiles2
+	predef_jump GetFrontpic
 
 Pokedex_RedisplayDexEntry: ; 4038d
 	call Pokedex_DrawDexEntryScreenBG
@@ -899,7 +979,7 @@ Pokedex_DrawSearchScreenBG: ; 408f0 (10:48f0)
 	db   "@"
 
 .Menu: ; 4094c
-	db   "BEGIN SEARCH!"
+	db   "SEARCH!"
 	next "CANCEL"
 	db   "@"
 
@@ -1750,6 +1830,8 @@ Pokedex_LoadSelectedMonTiles: ; 4143b
 	ld a, [wFirstSpindaSeen]
 .got_variant
 	ld [MonVariant], a
+	ld [TempMonGender], a
+	ld [wDexMonPersonality], a
 	call GetBaseData
 	ld de, VTiles2
 	predef_jump GetFrontpic
