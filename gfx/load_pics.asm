@@ -240,6 +240,8 @@ GetFrontpicPointer: ; 510d7
 	pop bc
 	jr z, .notvariant
 	push bc
+	ld a, [TempMonGender]
+    and FORM_MASK
 	ld b, 3
 	cp b
 	ld a, 3 ;third form
@@ -450,6 +452,8 @@ GetBackpic: ; 5116c
 	pop bc
 	jr z, .notvariant
 	push bc
+	ld a, [BattleMonGender]
+    and FORM_MASK
 	ld b, 3
 	cp b
 	ld a, 3 ;third form
