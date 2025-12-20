@@ -460,6 +460,9 @@ endm
 RockMonMaps: ; b82c5
 	treemon_map SEVEN_GRAPEFRUITS_UNDERWATER, 7
 	treemon_map ROUTE_56_EAST, 6
+	treemon_map UNNAMED_ISLAND_1, 8
+	treemon_map TANGELO_JUNGLE, 6
+	treemon_map TROVITA_ISLAND, 8
 	db -1
 ; b82d2
 
@@ -467,7 +470,7 @@ GetTreeMons: ; b82d2
 ; Return the address of TreeMon table a in hl.
 ; Return nc if table a doesn't exist.
 
-	cp 8
+	cp 9
 	jr nc, .quit
 
 	and a
@@ -500,7 +503,7 @@ TreeMons: ; b82e8
 	dw TreeMons5
 	dw RockMons1
 	dw RockMons2
-	dw TreeMons1
+	dw RockMons3
 
 ; Two tables each (normal, rare).
 ; Structure:
@@ -601,6 +604,12 @@ RockMons2: ; b83de
 	db 10, STUNFISK,   30
 	db -1
 ; b83e5
+
+RockMons3: ; b83de
+	db 80, KRABBY,     30
+	db 10, STUNFISK,   30
+	db 10, SHUCKLE,   30
+	db -1
 
 GetTreeMon: ; b83e5
 	push hl
