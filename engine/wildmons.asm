@@ -507,6 +507,38 @@ InitRoamMons: ; 2a2a0
 	ld [wRoamMon2HP], a
 ;	ld [wRoamMon3HP], a
 
+; DVs
+	ld [wRoamMon1DVs], a
+	ld [wRoamMon2DVs], a
+;	ld [wRoamMon3DVs], a
+
+; personality (shinyness)
+
+	ld a, [ScriptVar] ; 0x00 to totally reset (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
+	and a
+	jr nz, .roamer1
+	;reset shinyness
+	xor a
+	ld [wRoamMon1Gender], a
+	ld [wRoamMon2Gender], a
+;	ld [wRoamMon3Gender], a
+
+.roamer1
+	ld a, [wRoamMon1Gender]
+	and SHINY_MASK
+	jr nz, .Roamer2 ;if the roamer is already shiny, keep it
+	farcall GetBattleRandomPersonality
+	ld a, b
+	ld [wRoamMon1Gender], a
+
+.Roamer2
+	ld a, [wRoamMon2Gender]
+	and SHINY_MASK
+	ret nz ;if the roamer is already shiny, keep it
+	farcall GetBattleRandomPersonality
+	ld a, b
+	ld [wRoamMon2Gender], a
+
 	ret
 ; 2a2ce
 

@@ -32,20 +32,21 @@ MotherScript:
 	end
 
 TVScript:
-	checkevent EVENT_EON_DUO_WILD
-	iftrue .TvScriptNormal
+	;checkevent EVENT_EON_DUO_WILD
+	;iftrue .TvScriptNormal
 	checkevent EVENT_BEAT_ORANGE_LEAGUE
 	iffalse .TvScriptNormal
+	setevent EVENT_EON_DUO_WILD
+	writebyte 1 ; 0x00 to totally reset (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
+	special InitRoamMons
 	opentext
 	writetext EonDuoTVSpecial
 	waitbutton
 	writebyte LATIAS
-	special ShowPokedexEntry
+	special ShowPokedexEntryLatias
 	writebyte LATIOS
-	special ShowPokedexEntry
+	special ShowPokedexEntryLatios
 	closetext
-	setevent EVENT_EON_DUO_WILD
-	special InitRoamMons
 	end
 
 .TvScriptNormal

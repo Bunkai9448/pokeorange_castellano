@@ -531,6 +531,10 @@ DuskBall: ; e8a2
 
 	call ClearSprites
 
+	ld a, [EnemyMonGender] ; display the correct pokédex sprite and shinyness when caught
+	ld [wDexMonPersonality], a
+	ld [TempMonGender], a ; display correct sprite color when going to the naming screen
+	
 	ld a, [EnemyMonSpecies]
 	ld [wd265], a
 	predef NewPokedexEntry

@@ -1523,8 +1523,7 @@ Pokedex_DisplayTypeNotFoundMessage: ; 41107
 	jp DelayFrames
 
 .TypeNotFound: ; 41126
-	db   "The specified type"
-	next "was not found.@"
+	db   "No data was found.@"
 
 Pokedex_UpdateCursorOAM: ; 41148 (10:5148)
 	ld hl, .CursorOAM
@@ -1822,6 +1821,12 @@ Pokedex_LoadSelectedMonTiles: ; 4143b
 	call Pokedex_GetSelectedMon
 	call Pokedex_CheckSeen
 	jr z, .QuestionMark
+	ld a, [wBattleMode]
+	and a	;if we are in the overworld, else we were in a battle
+	jr z, .not_wild
+	ld a, [EnemyMonGender]
+	jr .got_variant
+.not_wild 
 	ld a, [wd265]
 	ld [CurPartySpecies], a
 	cp SPINDA
@@ -1830,6 +1835,14 @@ Pokedex_LoadSelectedMonTiles: ; 4143b
 	ld a, [wFirstSpindaSeen]
 .got_variant
 	ld [MonVariant], a
+	push af
+	;keep shiny toogle
+	ld a, [wDexMonPersonality]
+	and SHINY_MASK
+	ld b, a
+	pop af
+	or b
+	;shiny toogle kept
 	ld [TempMonGender], a
 	ld [wDexMonPersonality], a
 	call GetBaseData

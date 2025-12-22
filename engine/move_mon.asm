@@ -1936,14 +1936,16 @@ _GetBattleRandomPersonality: ;tag to call from core.asm, which uses BattleRandom
 	;cp $10 	; 1/16 roll (16/256), so not the intended 1/256?
 	cp 1 		; 1/256
 	jr nc, .not_shiny
+	jr .shiny
 .no_charm
 	; (1/4096 random shiny chance)
 	call Random
 	cp 8 ;8/256 first roll
-	jr nc, .not_shiny
+	jr c, .shiny
 	call Random
 	cp 8 ;8/256 second roll (16/65536 accumulated = 1/4096)
 	jr nc, .not_shiny
+.shiny
 ;if we reach here, it is shiny!
 	pop af
 	set 3, a ;set the shiny bit

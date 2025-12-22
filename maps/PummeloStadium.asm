@@ -141,6 +141,7 @@ PummeloStadiumEntry:
 	clearevent EVENT_VICTORY_ROAD_MEWTWO_FOUGHT
 	clearevent EVENT_TARROCO_CELEBI_FOUGHT
 	clearevent EVENT_RED_ON_CLEOPATRA
+	writebyte 0 ; 0x00 to totally reset (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
 	special InitRoamMons ;reset the eon duo
 	special HealParty
 	halloffame
@@ -178,7 +179,7 @@ DrakeGoneText:
 	done
 
 DeclinePostStadiumText:
-	text "Well, these our"
+	text "Well, these"
 	line "trainers love"
 	cont "battling, they"
 	cont "will accept your"

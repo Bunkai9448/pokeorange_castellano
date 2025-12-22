@@ -8265,6 +8265,8 @@ BattleEnd_HandleRoamMons: ; 3f998
 	ld [hl], $ff
 	call GetRoamMonSpecies
 	ld [hl], $0
+	call GetRoamMonPersonality
+	ld [hl], $0
 	ret
 
 .not_roaming
@@ -8353,15 +8355,16 @@ GetRoamMonSpecies: ; 3fa31
 
 GetRoamMonPersonality:
 	ld a, [TempEnemyMonSpecies]
+	ld hl, wRoamMon1Species
+	cp [hl] ;LATIAS
 	ld hl, wRoamMon1Personality
-	cp [hl]
 	ret z
 	ld hl, wRoamMon2Personality
-	cp [hl]
+	cp [hl] ;LATIOS
+	ld hl, wRoamMon2Personality
 	ret z
-	ld hl, wRoamMon3Personality
+	ld hl, wRoamMon3Personality ;unused
 	ret
-
 
 AddLastBattleToLinkRecord: ; 3fa42
 	ld hl, OTPlayerID
@@ -8861,32 +8864,39 @@ GetWildPersonality:
 	ld a, [BattleType]
 	cp BATTLETYPE_ROAMING
 	jr nz, GetBattleRandomPersonality
-
-; Grab HP
-	call GetRoamMonHP
-	ld a, [hl]
-; Check if the HP has been initialized
-	and a
-; We'll do something with the result in a minute
-	push af
-
-; Grab personality
+	
+	;For roamers, personality is now randomized each time the TV is viewed (unless it is rolled shiny)
 	call GetRoamMonPersonality
 	ld b, [hl]
+	ret
+
+;The following is the old code, which generates a random personality value (and shininess) when encountering the roamer and the HP was't initialized (AKA first encounter)
+
+; Grab HP
+;	call GetRoamMonHP
+;	ld a, [hl]
+; Check if the HP has been initialized
+;	and a
+; We'll do something with the result in a minute
+;	push af
+
+; Grab personality
+;	call GetRoamMonPersonality
+;	ld b, [hl]
 
 ; Get back the result of our check
-	pop af
+;	pop af
 ; If the RoamMon struct has already been initialized, we're done
-	ret nz
+;	ret nz
 
 ; If it hasn't, we need to initialize the personality
 ; (HP is initialized at the end of the battle)
-	call GetRoamMonPersonality
-	push hl
-	call GetBattleRandomPersonality
-	pop hl
-	ld [hl], a
-	ret
+;	call GetRoamMonPersonality
+;	push hl
+;	call GetBattleRandomPersonality
+;	pop hl
+;	ld [hl], a
+;	ret
 
 ; Return personality (gender, shiny, pink and form) in a and b
 GetBattleRandomPersonality:
