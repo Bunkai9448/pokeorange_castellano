@@ -73,6 +73,7 @@ PummeloIslandCrossScript:
 	writetext CrossPummeloIslandDroppedWingText
 	waitbutton
 	verbosegiveitem RAINBOW_WING
+	setevent EVENT_GOT_RAINBOW_WING
 	closetext
 	end	
 	

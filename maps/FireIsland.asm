@@ -29,7 +29,7 @@ FireIslandShrine:
 	end
 	
 .LawrenceCheck:
-	checkevent EVENT_LUGIA_FOUGHT
+	checkevent EVENT_SHAMOUTI_QUEST_ENDED
 	iftrue .MoltresCheck
 	opentext
 	writetext FireIslandShrineText

@@ -35,7 +35,7 @@ ShamoutiShrineSlowkingScript:
 	end
 	
 MelodyShrine:
-	checkevent EVENT_LUGIA_FOUGHT
+	checkevent EVENT_SHAMOUTI_QUEST_ENDED
 	iftrue .AlreadyFoughtLugia
 	faceplayer
 	opentext
@@ -107,6 +107,7 @@ MelodyShrine:
 	disappear SHAMOUTI_SHRINE_LUGIA
 	reloadmapafterbattle
 	playmapmusic
+	setevent EVENT_SHAMOUTI_QUEST_ENDED
 	setevent EVENT_LUGIA_FOUGHT
 	setevent EVENT_LUGIA_APPEARS
 	takeitem ELECTRIC_ORB
@@ -119,6 +120,17 @@ MelodyShrine:
 	opentext
 	checkevent EVENT_ENTERED_KANTO
 	iftrue .BeenGoneAWhile
+	
+	checkevent EVENT_LUGIA_FOUGHT
+	iftrue .AlreadyFoughtLugia2
+	
+	writetext ReadyToSummonLugiaAgainText
+	yesorno
+	iftrue .SummonLugia
+	closetext
+	end
+
+.AlreadyFoughtLugia2
 	writetext LugiaAlreadyFoughtText
 	waitbutton
 	closetext
@@ -177,6 +189,14 @@ NeedMoreOrbsText:
 ReadyToSummonLugiaText:
 	text "Great, you have"
 	line "all of them!"
+	
+	para "Are you ready?"
+	done
+
+ReadyToSummonLugiaAgainText:
+	text "Seem the Guardian"
+	line "of the Seas wants"
+	cont "another round."
 	
 	para "Are you ready?"
 	done

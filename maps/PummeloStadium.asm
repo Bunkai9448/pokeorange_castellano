@@ -55,6 +55,7 @@ PummeloStadiumEntry:
 	clearevent EVENT_MIMIKYU_FOUGHT
 	clearevent EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	clearevent EVENT_RED_ON_CLEOPATRA
+	special InitRoamMons ;init the Eon Duo, making them encounterable even if the player doesn't check the TV
 	warpfacing UP, HALL_OF_FAME, 6, 11
 	end
 
@@ -136,10 +137,17 @@ endc
 	clearevent EVENT_SEVEN_GRAPEFRUITS_SNORLAX
 	clearevent EVENT_FUKUHARA_BF3_AERODACTYL_FOUGHT
 	clearevent EVENT_MIMIKYU_FOUGHT
+	
+	;only clear these if the Shamouti events are finished
+	checkevent EVENT_SHAMOUTI_QUEST_ENDED
+	iffalse .skipShamouti
 	clearevent EVENT_ZAPDOS_FOUGHT
 	clearevent EVENT_ARTICUNO_FOUGHT
 	clearevent EVENT_MOLTRES_FOUGHT
 	clearevent EVENT_LUGIA_FOUGHT
+
+.skipShamouti
+
 	clearevent EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	clearevent EVENT_SUNRAY_CAVE_1F_MARSHADOW_FOUGHT
 	clearevent EVENT_ROUTE51_HO_OH_FOUGHT
@@ -147,7 +155,9 @@ endc
 	clearevent EVENT_VICTORY_ROAD_MEWTWO_FOUGHT
 	clearevent EVENT_TARROCO_CELEBI_FOUGHT
 	clearevent EVENT_RED_ON_CLEOPATRA
-	writebyte 0 ; 0x00 to totally reset (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
+
+;re-init the romaers (resets DVs and HP if not caught)
+	writebyte 0 ; 0x00 to totally reset romaers (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
 	special InitRoamMons ;reset the eon duo
 	special HealParty
 	halloffame

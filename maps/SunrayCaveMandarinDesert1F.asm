@@ -40,6 +40,7 @@ InvisibleForceScript:
 	end
 	
 .KecleonBattle:
+	setevent EVENT_GOT_RAINBOW_WING ;only place where we can ensure old saves can get this flag set
 	writetext RainbowWingReactsText
 	waitbutton
 	variablesprite SPRITE_INVISIBLE, SPRITE_ROCKET_MEOWTH ;todo - SPRITE_KECLEON

@@ -50,7 +50,7 @@ LightningIslandShrine:
 	end
 	
 .LawrenceCheck:
-	checkevent EVENT_LUGIA_FOUGHT
+	checkevent EVENT_SHAMOUTI_QUEST_ENDED
 	iftrue .ZapdosCheck
 	opentext
 	writetext LightningIslandShrineText
