@@ -105,6 +105,13 @@ CheckFacingTileEvent:: ; 97c5f
 RandomEncounter:: ; 97cc0
 ; Random encounter
 
+if def(DEBUG)
+;disable random encounters when a Pokémon with the SKATEBOARD item is the first in the party (debug mode Meowth)
+	ld a, [PartyMon1Item]
+	cp SKATEBOARD
+	jr z, .nope
+endc
+
 	call CheckWildEncounterCooldown
 	jr c, .nope
 	call CanUseSweetScent

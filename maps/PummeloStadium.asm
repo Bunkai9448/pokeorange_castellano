@@ -69,6 +69,11 @@ PummeloStadiumEntry:
 	end
 
 .PostGameStadiumBegin:
+
+if def(DEBUG)
+	callasm _asmDebugSkateBoardCheck
+	iftrue .debugSkipGaunlet
+endc
 	writetext CissyBattleText
 	waitbutton
 	winlosstext CissyWinLoss, 0
@@ -120,6 +125,7 @@ PummeloStadiumEntry:
 	playmapmusic
 	reloadmapafterbattle
 	opentext
+.debugSkipGaunlet
 	writetext StadiumWonText1
 	waitbutton
 	verbosegiveitem MASTER_BALL
@@ -160,6 +166,19 @@ PummeloStadiumEntry:
 	waitbutton
 	closetext
 	end
+
+if def(DEBUG)
+	_asmDebugSkateBoardCheck:
+		ld a, $1
+		ld [ScriptVar], a
+		ld a, [PartyMon1Item]
+		cp SKATEBOARD
+		ret z
+		xor a
+		ld [ScriptVar], a
+		ret
+endc
+	
 
 DrakeGoneText:
 	text "Ah, CHAMPION!"

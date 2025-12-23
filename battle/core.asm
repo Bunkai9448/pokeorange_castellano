@@ -7,6 +7,20 @@ DoBattle: ; 3c000
 	ld [wPlayerAction], a
 	ld [BattleEnded], a
 	inc a
+
+if def(DEBUG)
+	;automatically end any trainer battle when a Pokémon with the SKATEBOARD item is the first in the party (debug mode Meowth)
+		push af
+		ld a, [PartyMon1Item]
+		cp SKATEBOARD
+		jr nz, .skipBattle
+		pop af
+		ld [BattleEnded], a
+		push af
+	.skipBattle
+		pop af
+endc
+
 	ld [wBattleHasJustStarted], a
 	ld hl, OTPartyMon1HP
 	ld bc, PARTYMON_STRUCT_LENGTH - 1

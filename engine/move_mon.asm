@@ -1937,14 +1937,19 @@ _GetBattleRandomPersonality: ;tag to call from core.asm, which uses BattleRandom
 	cp 1 		; 1/256
 	jr nc, .not_shiny
 	jr .shiny
+	
 .no_charm
-	; (1/4096 random shiny chance)
-	call Random
-	cp 8 ;8/256 first roll
-	jr c, .shiny
-	call Random
-	cp 8 ;8/256 second roll (16/65536 accumulated = 1/4096)
-	jr nc, .not_shiny
+	; 1/4096 shiny chance
+    call Random
+    cp 4
+    jr nc, .not_shiny   ; first roll, fail if a >= 4
+
+    call Random
+    cp 4
+    jr nc, .not_shiny   ; second roll, fail if a >= 4
+	
+	;if we are here, we randomly got 0-4 when calling Random two times, so 4/256*4/256 = 8/65536 = 1/4096
+
 .shiny
 ;if we reach here, it is shiny!
 	pop af
@@ -1977,6 +1982,8 @@ _GetBattleRandomPersonality: ;tag to call from core.asm, which uses BattleRandom
 	ld b, a
 	ret
 
+;Current implementation allows prevent the shiny charm from working by PC deposit
+;Solutions: check the event flag instead of carrying the item, check the PC box for it, prevent the player from getting the charm into the PC...
 HaveShinyCharm:
 	ld a, [wCurItem]
 	push af

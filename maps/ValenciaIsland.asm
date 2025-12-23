@@ -139,12 +139,12 @@ if def(DEBUG)
 	giveshells 13
 	givemoney 0, 195000
 	opentext
-	givepoke LAPRAS, 100
+	givepoke LAPRAS, 100, 0, SHINY_MASK
 	givepoke CHARIZARD, 100
 	givepoke HO_OH, 100, LIGHT_BALL
 	givepoke MEW, 100
 	givepoke MARSHADOW, 100
-	givepoke MEOWTH, 99, NUGGET, %00110000
+	givepoke MEOWTH, 99, SKATEBOARD, %00110000
 	closetext
 	callasm TeachHMSlaveMoves
 	special HealParty ; restore PP after TeachHMSlaveMoves
@@ -314,6 +314,10 @@ TeachHMSlaveMoves:
 	ld [hli], a ; CONFUSE_RAY
 	ld a, DIVE
 	ld [hl], a ; PERISH_SONG
+	; Set Lapras friendship to MAX for Surf power
+	ld hl, PartyMon1Happiness
+	ld a, 255
+	ld [hl], a
 	; CHARIZARD
 	ld hl, PartyMon2Moves
 	ld a, FLY
