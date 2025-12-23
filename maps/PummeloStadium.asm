@@ -55,6 +55,7 @@ PummeloStadiumEntry:
 	clearevent EVENT_MIMIKYU_FOUGHT
 	clearevent EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	clearevent EVENT_RED_ON_CLEOPATRA
+	writebyte 0 ; 0x00 to totally reset romaers (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
 	special InitRoamMons ;init the Eon Duo, making them encounterable even if the player doesn't check the TV
 	warpfacing UP, HALL_OF_FAME, 6, 11
 	end
