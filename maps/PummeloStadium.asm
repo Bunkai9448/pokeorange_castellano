@@ -4,6 +4,11 @@ const_value = 1
 	const PUMMELO_STADIUM_DRAKE
 	const PUMMELO_STADIUM_ANNOUNCER
 	const PUMMELO_STADIUM_OFFICER
+	const PUMMELO_STADIUM_CISSY
+	const PUMMELO_STADIUM_DANNY
+	const PUMMELO_STADIUM_RUDY
+	const PUMMELO_STADIUM_LUANA
+	const PUMMELO_STADIUM_RED
 
 PummeloStadium_MapScriptHeader:
 
@@ -23,6 +28,12 @@ PummeloStadiumEntry:
 	writetext PummeloStadiumBadgeCheckPassText
 	waitbutton
 	closetext
+	disappear PUMMELO_STADIUM_DRAKE
+	disappear PUMMELO_STADIUM_CISSY
+	disappear PUMMELO_STADIUM_DANNY
+	disappear PUMMELO_STADIUM_RUDY
+	disappear PUMMELO_STADIUM_LUANA
+	disappear PUMMELO_STADIUM_RED
 	applymovement PUMMELO_STADIUM_OFFICER, StadiumOfficerMovement
 	spriteface PUMMELO_STADIUM_OFFICER, RIGHT
 	applymovement PLAYER, StadiumPlayerMovement1
@@ -32,6 +43,8 @@ PummeloStadiumEntry:
 	closetext
 	applymovement PLAYER, StadiumPlayerMovement2
 	spriteface PLAYER, RIGHT
+	appear PUMMELO_STADIUM_DRAKE
+	applymovement PUMMELO_STADIUM_DRAKE, StadiumNPCEnter
 	opentext
 	writetext DrakeOpeningText
 	waitbutton
@@ -74,46 +87,103 @@ PummeloStadiumEntry:
 
 if def(DEBUG)
 	callasm _asmDebugSkateBoardCheck
-	iftrue .debugSkipGaunlet
+	;iftrue .debugSkipGaunlet
 endc
+	closetext
+
+	disappear PUMMELO_STADIUM_DRAKE
+	disappear PUMMELO_STADIUM_CISSY
+	disappear PUMMELO_STADIUM_DANNY
+	disappear PUMMELO_STADIUM_RUDY
+	disappear PUMMELO_STADIUM_LUANA
+	disappear PUMMELO_STADIUM_RED
+
+	applymovement PUMMELO_STADIUM_OFFICER, StadiumOfficerMovement
+	spriteface PUMMELO_STADIUM_OFFICER, RIGHT
+	applymovement PLAYER, StadiumPlayerMovement1
+	opentext
+	writetext StadiumPlayerEnteringArenaGaunletText
+	waitbutton
+	closetext
+	applymovement PLAYER, StadiumPlayerMovement2
+	spriteface PLAYER, RIGHT
+	appear PUMMELO_STADIUM_CISSY
+	applymovement PUMMELO_STADIUM_CISSY, StadiumNPCEnter
+
+;Cissy battle
+	opentext
 	writetext CissyBattleText
 	waitbutton
+	closetext
 	winlosstext CissyWinLoss, 0
 	loadtrainer CISSY, 2
 	startbattle
-
 	playmapmusic
 	reloadmapafterbattle
+
+	applymovement PUMMELO_STADIUM_CISSY, StadiumNPCLeave
+	disappear PUMMELO_STADIUM_CISSY
+	pause 30
+	appear PUMMELO_STADIUM_DANNY
+	applymovement PUMMELO_STADIUM_DANNY, StadiumNPCEnter
+
+;Danny battle
 	opentext
 	writetext DannyBattleText
 	waitbutton
+	closetext
 	winlosstext DannyWinLoss, 0
 	loadtrainer DANNY, 2
 	startbattle
-
 	playmapmusic
 	reloadmapafterbattle
+
+	applymovement PUMMELO_STADIUM_DANNY, StadiumNPCLeave
+	disappear PUMMELO_STADIUM_DANNY
+	pause 30
+	appear PUMMELO_STADIUM_RUDY
+	applymovement PUMMELO_STADIUM_RUDY, StadiumNPCEnter
+
+;Rudy battle
 	opentext
 	writetext RudyBattleText
 	waitbutton
+	closetext
 	winlosstext RudyWinLoss, 0
 	loadtrainer RUDY, 2
 	startbattle
-
 	playmapmusic
 	reloadmapafterbattle
+
+	applymovement PUMMELO_STADIUM_RUDY, StadiumNPCLeave
+	disappear PUMMELO_STADIUM_RUDY
+	pause 30
+	appear PUMMELO_STADIUM_LUANA
+	applymovement PUMMELO_STADIUM_LUANA, StadiumNPCEnter
+
+;Luana battle	
 	opentext
 	writetext LuanaBattleText
 	waitbutton
+	closetext
 	winlosstext LuanaWinLoss, 0
 	loadtrainer LUANA, 2
 	startbattle
-
 	playmapmusic
 	reloadmapafterbattle
+
+	applymovement PUMMELO_STADIUM_LUANA, StadiumNPCLeave
+	disappear PUMMELO_STADIUM_LUANA
+	pause 30
+	appear PUMMELO_STADIUM_RED
+	applymovement PUMMELO_STADIUM_RED, StadiumNPCEnter
+
+;Red battle
 	opentext
 	writetext RedBattleText
 	waitbutton
+	closetext
+	special FadeOutPalettes
 	playmusic MUSIC_HEAL
 	special HealParty
 	pause 60
@@ -128,12 +198,27 @@ endc
 	reloadmapafterbattle
 	opentext
 .debugSkipGaunlet
+
+	writetext RedWinLoss
+	waitbutton
+	closetext
+
+	applymovement PUMMELO_STADIUM_RED, StadiumNPCLeave
+	disappear PUMMELO_STADIUM_RED
+
+	opentext
 	writetext StadiumWonText1
 	waitbutton
+	closetext
+	
+	applymovement PUMMELO_STADIUM_ANNOUNCER, StadiumOfficerMovement2
+	spriteface PLAYER, UP
+	opentext
 	verbosegiveitem MASTER_BALL
 	writetext StadiumWonText2
 	waitbutton
 	closetext
+	special FadeOutPalettes
 	;reset static encounters
 	clearevent EVENT_SEVEN_GRAPEFRUITS_SNORLAX
 	clearevent EVENT_FUKUHARA_BF3_AERODACTYL_FOUGHT
@@ -364,6 +449,23 @@ StadiumPlayerEnteringArenaText:
 	cont "defeated CHAMP,"
 	cont "DRAKE?!"
 	done
+
+StadiumPlayerEnteringArenaGaunletText:
+	text "ANNOUNCER: Ladies"
+	line "and Gentlemen!"
+	
+	para "The fight you've"
+	line "all been waiting"
+	cont "for!"
+	
+	para "From the ISLAND of"
+	line "VALENCIA, <PLAYER>!"
+	
+	para "Will they be able"
+	line "to beat the best"
+	cont "trainers of the"
+	cont "ORANGE ISLANDS?"
+	done
 	
 DrakeOpeningText:
 	text "Welcome, <PLAYER>."
@@ -411,6 +513,11 @@ StadiumOfficerMovement:
 	step UP
 	step LEFT
 	step_end
+
+StadiumOfficerMovement2:
+	step LEFT
+	step DOWN
+	step_end
 	
 StadiumPlayerMovement1:
 	step UP
@@ -430,6 +537,18 @@ StadiumPlayerMovement2:
 	step UP
 	step_end
 
+StadiumNPCLeave:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step_end
+
+StadiumNPCEnter:
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+
 PummeloStadium_MapEventHeader::
 
 .Warps: db 2
@@ -440,9 +559,14 @@ PummeloStadium_MapEventHeader::
 
 .BGEvents: db 0
 
-.ObjectEvents: db 5
+.ObjectEvents: db 10
 	person_event SPRITE_SPECTATOR_1,  2,  6, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
 	person_event SPRITE_SPECTATOR_1,  2,  9, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
-	person_event SPRITE_DRAKE,  6,  8, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
+	person_event SPRITE_DRAKE,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
 	person_event SPRITE_GYM_GUY,  4,  7, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
 	person_event SPRITE_OFFICER, 16,  7, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, PummeloStadiumEntry, -1
+	person_event SPRITE_CISSY,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
+	person_event SPRITE_DANNY,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
+	person_event SPRITE_RUDY,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
+	person_event SPRITE_LUANA,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
+	person_event SPRITE_RED,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 2, 2, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
