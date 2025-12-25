@@ -14,13 +14,13 @@ SunrayHideCrossCallback:
 	disappear SUNRAY_CROSS
 	appear MARSHADOW_MANDARIN_DESERT_CAVE
 	
-	checkevent EVENT_CROSS_CORRUPTED_SUNRAY ;If this cave's event is done, hide Marshadow, unless already fought Cross at route 51
+	checkevent EVENT_MARSHADOW_HOOH_EVENT_STARTED ;If this cave's event is done, hide Marshadow, unless already fought Cross at route 51
 	iftrue .checkRoute51Cross
 	return ;if the event isn't done, we are done
 	
 .checkRoute51Cross:
-	checkevent EVENT_CROSS_CORRUPTED_FOUGHT ;if we haven't beat Cross at route 51, hide Marshadow
-	iffalse .hideMarshadow
+	checkevent EVENT_CROSS_AT_ROUTE51 ;if we haven't beat Cross at route 51, hide Marshadow
+	iftrue .hideMarshadow
 
 	checkevent EVENT_SUNRAY_CAVE_1F_MARSHADOW_FOUGHT ;if we already battled him, hide Marshadow
 	iftrue .hideMarshadow
@@ -75,7 +75,7 @@ InvisibleForceText:
 	done
 
 SunrayCaveCrossScript:
-	checkevent EVENT_CROSS_CORRUPTED_SUNRAY
+	checkevent EVENT_MARSHADOW_HOOH_EVENT_STARTED
 	iftrue .corruptedCross
 	playmusic MUSIC_LOOK_GLADION
 	appear SUNRAY_CROSS
@@ -88,14 +88,18 @@ SunrayCaveCrossScript:
 	waitbutton
 	closetext
 	disappear SUNRAY_CROSS
+	setevent EVENT_CROSS_AT_ROUTE51
 	special Special_FadeInQuickly
 	pause 20
-	playmapmusic
-	pause 10
 	takeitem RAINBOW_WING
-	setevent EVENT_CROSS_CORRUPTED_SUNRAY
+	setevent EVENT_MARSHADOW_HOOH_EVENT_STARTED
 	spriteface PLAYER, UP
+	pause 10
+	special Special_FadeOutMusic
+	cry MARSHADOW
+	pause 30
 	disappear MARSHADOW_MANDARIN_DESERT_CAVE
+	playmusic MUSIC_ROUTE_111
 .corruptedCross:
 	end
 

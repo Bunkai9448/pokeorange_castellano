@@ -47,7 +47,7 @@ TrovitopolisGrampsScript:
 	;failsafe to give the rainbow wing on old saves that already beat Cross at Pummelo
 	checkevent EVENT_BEAT_ORANGE_LEAGUE
 	iffalse .done ;if you haven't beat the league, we are done (to beat the league you must beat Cross at Pummelo first)
-	checkevent EVENT_CROSS_CORRUPTED_SUNRAY
+	checkevent EVENT_MARSHADOW_HOOH_EVENT_STARTED
 	iftrue .done ;if you triggered this event, you already got the rainbow wing (but may not have it until you beat Cross at route 51)
 	checkitem RAINBOW_WING ;you beat Cross on Pummelo, but haven't triggered Marshadow's event (and thus losing the Rainbow Wing), so assume old save and give it to the player
 	iftrue .done

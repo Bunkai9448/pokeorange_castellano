@@ -769,8 +769,8 @@
 	const EVENT_MANDARIN_CAVE_KECLEON_FOUGHT						;byte $D997, bit 3
 	const EVENT_SUNRAY_CAVE_1F_MARSHADOW_FOUGHT						;byte $D997, bit 4
 	const EVENT_SUNRAY_CAVE_1F_CROSS_HS								;byte $D997, bit 5	;cross sprite hide/show flag
-	const EVENT_CROSS_CORRUPTED_SUNRAY								;byte $D997, bit 6
-	const EVENT_CROSS_CORRUPTED_FOUGHT								;byte $D997, bit 7
+	const EVENT_MARSHADOW_HOOH_EVENT_STARTED						;byte $D997, bit 6
+	const EVENT_CROSS_AT_ROUTE51									;byte $D997, bit 7
 	
 	const EVENT_ROUTE51_HO_OH_FOUGHT								;byte $D998, bit 0
 	const EVENT_TANGELO_JUNGLE_MEW_FOUGHT							;byte $D998, bit 1
