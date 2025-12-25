@@ -63,6 +63,7 @@ PummeloStadiumEntry:
 	special FadeOutPalettes
 	pause 15
 	setevent EVENT_BEAT_ORANGE_LEAGUE
+	clearevent EVENT_CRYSTAL_ONIX_DEFEATED
 	clearevent EVENT_SEVEN_GRAPEFRUITS_SNORLAX
 	clearevent EVENT_FUKUHARA_BF3_AERODACTYL_FOUGHT
 	clearevent EVENT_MIMIKYU_FOUGHT
@@ -229,6 +230,7 @@ endc
 	closetext
 	special FadeOutPalettes
 	;reset static encounters
+	clearevent EVENT_CRYSTAL_ONIX_DEFEATED
 	clearevent EVENT_SEVEN_GRAPEFRUITS_SNORLAX
 	clearevent EVENT_FUKUHARA_BF3_AERODACTYL_FOUGHT
 	clearevent EVENT_MIMIKYU_FOUGHT
