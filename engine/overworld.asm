@@ -940,6 +940,7 @@ Group16Sprites:
 	db SPRITE_LASS
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_NURSE
 	db 0 ;end
 	
 Group17Sprites:
