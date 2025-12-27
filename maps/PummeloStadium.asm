@@ -329,7 +329,7 @@ CissyBattleText:
 	cont "far more powerful"
 	cont "than when you"
 	cont "faced them!"
-	para "Now, let's beggin!"
+	para "Now, let's begin!"
 	done
 
 DannyBattleText:
