@@ -177,6 +177,7 @@ MAP_NONE EQU 0
 	mapgroup TROVITA_PORT, 12, 12
 	mapgroup TROVITA_GYM, 7, 5
 	mapgroup TROVITOPOLIS_PRIMA_SCHOOL, 4, 6
+	mapgroup TROVITOPOLIS_GROOMER, 4, 4
 
 	newgroup ; 9
 

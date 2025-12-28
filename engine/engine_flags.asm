@@ -118,6 +118,7 @@ ENDM
 	engine_flag VisitedSpawns + 0, 5 ; mandarin north
 	engine_flag VisitedSpawns + 0, 6 ; sunburst
 									 ; route 56 west
+									 
 	engine_flag VisitedSpawns + 1, 0 ; kinnow
 	engine_flag VisitedSpawns + 1, 1 ; navel
 	engine_flag VisitedSpawns + 1, 2 ; moro
@@ -126,6 +127,7 @@ ENDM
 	engine_flag VisitedSpawns + 1, 5 ; trovita
 	engine_flag VisitedSpawns + 1, 6 ; ascorbia
 	engine_flag VisitedSpawns + 1, 7 ; kumquat
+	
 	engine_flag VisitedSpawns + 2, 0 ; pummelo
 	engine_flag VisitedSpawns + 2, 1 ; hamlin
 	engine_flag VisitedSpawns + 2, 2 ; shamouti
@@ -135,11 +137,12 @@ ENDM
 	engine_flag wDaycareMan, 6 ; egg is ready
 	; wDaycareMan, 5 ; monster 1 and 2 are compatible
 	engine_flag wDaycareMan, 0 ; monster 1 in daycare
-	;   wDaycareLady, 7 = daycare 2 on
+	; wDaycareLady, 7 = daycare 2 on
 	engine_flag wDaycareLady, 0 ; monster 2 in daycare
 
 	engine_flag DailyFlags, 0 ; daily bug contest
 	engine_flag DailyFlags, 1 ; bargained today
+	engine_flag DailyFlags, 2 ; Luxury massage done today
 
 	engine_flag WeeklyFlags, 0 ; tea in blues house
 	engine_flag WeeklyFlags, 1 ; got haircut

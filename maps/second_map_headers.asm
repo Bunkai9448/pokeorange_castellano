@@ -452,3 +452,4 @@
 	map_header_2 OaksLab, OAKS_LAB, 0, 0
 	map_header_2 SafariZone, SAFARI_ZONE, 44, 0
 	map_header_2 CyberSpace, CYBER_SPACE, 0, 0
+	map_header_2 TrovitopolisGroomer, TROVITOPOLIS_GROOMER, 0, 0

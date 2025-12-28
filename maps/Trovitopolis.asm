@@ -209,7 +209,14 @@ TrovitopolisSailor2Text:
 	line "trade and battle"
 	cont "inside this one."
 	done
-	
+
+TrovitopolisGroomerSign:
+	jumptext TrovitopolisGroomerSignText
+
+TrovitopolisGroomerSignText:
+	text "#MON MASSAGES"
+	done	
+
 TrovitopolisMaxRevive:
 	itemball MAX_REVIVE
 	
@@ -224,7 +231,7 @@ TrovitopolisWaterStone:
 
 Trovitopolis_MapEventHeader::
 
-.Warps: db 13
+.Warps: db 14
 	warp_def 31, 48, 2, TROVITOPOLIS_POKE_COMM_CENTER
 	warp_def 3, 23, 1, SEWER_ENTRANCE
 	warp_def 15, 36, 1, TROVITOPOLIS_DEPT_STORE_1F
@@ -238,10 +245,11 @@ Trovitopolis_MapEventHeader::
 	warp_def 19, 6, 1, TROVITOPOLIS_PORT
 	warp_def 17, 52, 1, MAYORS_OFFICE
 	warp_def 21, 18, 1, TROVITOPOLIS_PRIMA_SCHOOL
+	warp_def 29, 23, 1, TROVITOPOLIS_GROOMER
 
 .CoordEvents: db 0
 
-.BGEvents: db 8
+.BGEvents: db 9
 	signpost 37, 59, SIGNPOST_READ, TrovitopolisSign
 	signpost 17, 49, SIGNPOST_READ, TrovitopolisMayorSign
 	signpost 15, 37, SIGNPOST_READ, TrovitopolisDeptStoreSign
@@ -250,6 +258,7 @@ Trovitopolis_MapEventHeader::
 	signpost 22, 46, SIGNPOST_READ, TrovitopolisMoveDeleterSign
 	signpost 6, 56, SIGNPOST_READ, TrovitopolisMrFlashSign
 	signpost 4, 22, SIGNPOST_READ, TrovitopolisSewerSign
+	signpost 30, 24, SIGNPOST_READ, TrovitopolisGroomerSign
 
 .ObjectEvents: db 9
 	person_event SPRITE_COOLTRAINER_F, 26, 56, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 1, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, TrovitopolisRedCoolTrainerScript, -1

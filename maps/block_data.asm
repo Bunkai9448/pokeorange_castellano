@@ -414,6 +414,9 @@ SewerEntrance_BlockData:
 TrovitopolisPrimaSchool_BlockData:
 	INCBIN "maps/TrovitopolisPrimaSchool.blk"
 
+TrovitopolisGroomer_BlockData:
+	INCBIN "maps/TrovitopolisGroomer.blk"
+
 MayorsOffice_BlockData:
 MayorsOfficeMeetingRoom_BlockData:
 AscorbiaIslandFanClub_BlockData:

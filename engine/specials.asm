@@ -100,8 +100,10 @@ SpecialsPointers:: ; c029
 	add_special MapCallbackSprites_LoadUsedSpritesGFX
 	add_special PlaySlowCry
 	add_special Special_YoungerHaircutBrother
-	add_special Special_OlderHaircutBrother
-	add_special Special_DaisyMassage
+	;add_special Special_OlderHaircutBrother
+	;add_special Special_DaisyMassage
+	add_special Special_MassageNormal
+	add_special Special_MassageDeluxe
 	add_special PlayCurMonCry
 	add_special ProfOaksPCBoot
 	add_special InitRoamMons
