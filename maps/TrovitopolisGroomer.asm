@@ -144,8 +144,8 @@ MassageIntroductionText:
 	cont "and #MON."
 	
 	para "This is the best"
-	line "way bond with your"
-	cont "partner #MON!"
+	line "way to bond with "
+	cont "your partners!"
 	done
 
 AskForDeluxeMassageText:
