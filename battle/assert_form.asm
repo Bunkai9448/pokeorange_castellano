@@ -3,7 +3,7 @@ AssertEnemyMonType:
 	ld a, [EnemyMonPersonality]
     and FORM_MASK
 	push bc
-	ld b, 3 ;lycanrock check
+	ld b, 3 ;lycanroc check
     cp b
 	pop bc
 	jp z, .handle_forms
@@ -121,7 +121,7 @@ AssertPlayerMonType:
 	ld a, [BattleMonPersonality]
     and FORM_MASK
 	push bc
-	ld b, 3 ;lycanrock check
+	ld b, 3 ;lycanroc check
     cp b
 	pop bc
 	jp z, .handle_forms
@@ -259,6 +259,8 @@ LoadEnemyMonForm:
 	jp z, .wild_onix
 	cp POLITOED
 	jp z, .wild_politoed
+	cp LYCANROC
+	jp z, .wild_lycanroc	
 
 	; Otherwise, we're done
 	jp .done
@@ -345,6 +347,26 @@ LoadEnemyMonForm:
 	jr nz, .done
 	ld a, [EnemyMonPersonality]
 	or SHINY_MASK ;enforce shiny for the Unnamed Island 3 Politoed
+	jp .store_enforced_form
+
+;wild lycanroc form depends on the current time
+.wild_lycanroc
+    ; 5:00 PM to 5:59 PM = Dusk Lycanroc
+    ld a, [hHours]
+    cp DUSK_HOUR
+    ld b, LYCANROC_DUSK_FORM
+    jr z, .got_lycanroc_form
+    ; night = Midnight Lycanroc
+    ld a, [TimeOfDay]
+    cp NITE
+    ld b, LYCANROC_MIDNIGHT_FORM
+    jr z, .got_lycanroc_form
+    ; day = Midday Lycanroc
+    ld b, LYCANROC_MIDDAY_FORM
+.got_lycanroc_form
+	ld a, [EnemyMonPersonality]
+	and GENDER_MASK ;erase form
+	or b ;
 	jp .store_enforced_form
 
 ;for trainers, we just need to load and copy the personality byte (gender, shininess, pinkness, form)
