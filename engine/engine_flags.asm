@@ -114,10 +114,10 @@ ENDM
 	engine_flag VisitedSpawns + 0, 1 ; valencia
 	engine_flag VisitedSpawns + 0, 2 ; tangelo
 	engine_flag VisitedSpawns + 0, 3 ; mikan
-									 ; route 52
+	engine_flag VisitedSpawns + 0, 4 ; route 52
 	engine_flag VisitedSpawns + 0, 5 ; mandarin north
 	engine_flag VisitedSpawns + 0, 6 ; sunburst
-									 ; route 56 west
+	engine_flag VisitedSpawns + 0, 7 ; route 56 west
 									 
 	engine_flag VisitedSpawns + 1, 0 ; kinnow
 	engine_flag VisitedSpawns + 1, 1 ; navel

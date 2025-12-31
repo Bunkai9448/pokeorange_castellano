@@ -480,9 +480,11 @@ ENDM
 ; Orange
 	flypoint VALENCIA,       VALENCIA_ISLAND
 	flypoint TANGELO,        TANGELO_ISLAND
+	flypoint ROUTE_52,		 ROUTE_52
 	flypoint MIKAN,          MIKAN_ISLAND
 	flypoint MANDARIN_NORTH, MANDARIN_NORTH
 	flypoint SUNBURST,       SUNBURST_ISLAND
+	flypoint ROUTE_56_WEST,  ROUTE_56
 	flypoint KINNOW,         KINNOW_ISLAND
 	flypoint NAVEL,          NAVEL_ISLAND
 	flypoint MORO,			 MORO_ISLAND
