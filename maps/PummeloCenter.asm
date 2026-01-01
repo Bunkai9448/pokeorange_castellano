@@ -13,10 +13,12 @@ PummeloNurseScript:
 	jumpstd pokecenternurse
 
 PummeloSlouchScript:
+	faceplayer
 	opentext
 	writetext PummeloSlouchText
 	waitbutton
 	closetext
+	spriteface PUMMELO_SLOUCH, RIGHT
 	end
 
 PummeloSlouchText:

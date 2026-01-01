@@ -16,16 +16,18 @@ KinnowGameboyKidScript:
 	jumptextfaceplayer KinnowGBKidText
 
 KinnowSlouchScript:
+	faceplayer
 	opentext
 	writetext KinnowSlouchText
 	waitbutton
 	closetext
+	spriteface KINNOW_SLOUCH, RIGHT
 	end
 
 KinnowSlouchText:
 	text "There are several"
-	line "uninhabited islan-"
-	cont "ds."
+	line "uninhabited is-"
+	cont "lands."
 
 	para "You may find rare"
 	line "#MON there."

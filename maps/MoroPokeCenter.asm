@@ -12,10 +12,12 @@ MoroNurseScript:
 	jumpstd pokecenternurse
 
 MoroSlouchScript:
+	faceplayer
 	opentext
 	writetext MoroSlouchText
 	waitbutton
 	closetext
+	spriteface MORO_SLOUCH, RIGHT
 	end
 
 MoroSlouchText:

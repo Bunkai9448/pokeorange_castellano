@@ -12,10 +12,12 @@ KumquatCenterNurseScript:
 	jumpstd pokecenternurse
 
 KumquatCenterSlouchScript:
+	faceplayer
 	opentext
 	writetext KumquatCenterSlouchText
 	waitbutton
 	closetext
+	spriteface KUMQUAT_SLOUCH, RIGHT
 	end
 
 KumquatCenterSlouchText:
