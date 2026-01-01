@@ -133,7 +133,7 @@ MenuMonIconColors::
 	icon_pals BROWN, RED ; TAUROS
 	icon_pals RED, YELLOW ; MAGIKARP
 	icon_pals BLUE, RED ; GYARADOS
-	icon_pals BLUE, RED ; LAPRAS
+	icon_pals BLUE, PURPLE ; LAPRAS
 	icon_pals PURPLE, BLUE ; DITTO
 	icon_pals BROWN, GRAY ; EEVEE
 	icon_pals BLUE, PURPLE ; VAPOREON
