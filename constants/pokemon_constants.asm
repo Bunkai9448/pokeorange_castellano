@@ -299,13 +299,15 @@ BOXMON_STRUCT_LENGTH     EQUS "(PartyMon1End - PartyMon1)"
 PARTYMON_STRUCT_LENGTH   EQUS "(PartyMon1StatsEnd - PartyMon1)"
 
 ; apply to MON_PERSONALITY
-GENDER_MASK  EQU %11110000 ;Actually PV_MASK, but only used for gender?
-SHINY_MASK   EQU %00001000
-PINK_MASK    EQU %00000100
-FORM_MASK    EQU %00000011
+GENDER_MASK  	EQU %11110000 ;Actually PV_MASK, but only used for gender?
+SHINY_MASK  	EQU %00001000
+PINK_MASK   	EQU %00000100
+FORM_MASK   	EQU %00000011
+FORM_ERASE_MASK	EQU %11111100
 
-MALE_MASK    EQU %11000000 ;//enforce male
-FEMALE_MASK  EQU %00000000 ;//enforce female
+;Used for trainer battles
+MALE_MASK   	EQU %11000000 ;//enforce male
+FEMALE_MASK  	EQU %00000000 ;//enforce female
 
 const_value = 1
 	const SPINDA_A_FORM

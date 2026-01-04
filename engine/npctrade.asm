@@ -61,8 +61,13 @@ NPCTrade:: ; fcba8
 	ld hl, ConnectLinkCableText
 	call PrintText
 
+	ld a, LINK_NPC
+	ld [wLinkMode], a
 	call DoNPCTrade
 	call .TradeAnimation
+	xor a
+	ld [wLinkMode], a
+
 	call GetTradeMonNames
 
 	ld hl, TradedForText
@@ -310,7 +315,7 @@ DoNPCTrade: ; fcc63
 	cp a, MEOWTH
 	jr nz, .skipformforce
 	ld a, [de]
-	and GENDER_MASK ;erase form
+	and FORM_ERASE_MASK ;erase form
 	or $02 ;enforce form 2 (alolan, not default)
 	ld [de], a
 

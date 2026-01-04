@@ -1929,7 +1929,18 @@ _GetBattleRandomPersonality: ;tag to call from core.asm, which uses BattleRandom
 	or a, b ;now a holds gender + form
 
 	push af ;store PV
-	; Shiny Charm gives 1/256 chance of a shiny
+
+; Flat 1/16 chance for shininess for NPC trades
+	ld a, [wLinkMode]
+	cp a, LINK_NPC
+	jr nz, .notNPCTrade
+	call Random
+	cp $10 	; 1/16 roll (16/256)
+	jr nc, .not_shiny
+	jr .shiny
+
+.notNPCTrade
+; Shiny Charm gives 1/256 chance of a shiny
 	call HaveShinyCharm
 	jr nc, .checkSeashells
 	call Random
@@ -1938,6 +1949,7 @@ _GetBattleRandomPersonality: ;tag to call from core.asm, which uses BattleRandom
 	jr nc, .checkSeashells
 	jr .shiny
 
+; Having all 11 Seashells gives 1/256 chance of a shiny, it stacks with the Shiny Charm
 .checkSeashells
 	;extra 1/16 roll when player has all seashells
 	ld a, [Shells+1]
