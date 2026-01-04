@@ -126,8 +126,8 @@ MotherBeatRedText:
 	cont "companions around,"
 	cont "I'm sure battling"
 	cont "with my own son,"
-	para "the CHAMPION!,"
-	para "would be so much"
+	cont "the CHAMPION!,"
+	cont "would be so much"
 	line "fun!"
 	done
 

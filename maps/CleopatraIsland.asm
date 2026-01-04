@@ -158,8 +158,14 @@ CleopatraRedEvent:
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
+	opentext
+	writetext RedText
+	waitbutton
+	closetext
+	special FadeOutPalettes
 	disappear CLEOPATRA_ISLAND_RED
-	special Special_FadeInQuickly
+	wait 5
+	special FadeInPalettes
 	setevent EVENT_RED_ON_CLEOPATRA
 	setevent EVENT_BEAT_RED
 	playmusic MUSIC_ROUTE_26
