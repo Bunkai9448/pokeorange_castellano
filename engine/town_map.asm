@@ -702,6 +702,8 @@ _Area: ; 91d11
 	jp .GetAndPlaceNest
 
 .right
+	ret z ;there's no kanto, so we do nothing
+	; Kanto map is only available after entering the hall of fame
 	ld a, [StatusFlags]
 	bit 6, a ; hall of fame
 	ret z
