@@ -781,4 +781,6 @@
 	const EVENT_SHAMOUTI_QUEST_ENDED								;byte $D998, bit 6
 	const EVENT_GOT_MASTER_ROD										;byte $D998, bit 7
 
+	const EVENT_GOT_TYROGUE											;byte $D999, bit 0
+
 NUM_EVENTS EQU const_value

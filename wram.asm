@@ -2321,7 +2321,7 @@ EventFlags:: ; da72
 	flag_array NUM_EVENTS
 ; db6c
 
-	ds 196
+	ds 195
 wDayCareTrigger::					   ds 1
 wSunrayCaveTrigger::				   ds 1 ;these trigger/scene are here to mantain save compatibility
 wRoute51Trigger::					   ds 1
