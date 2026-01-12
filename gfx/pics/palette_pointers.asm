@@ -413,14 +413,14 @@ WobbuffetPalette:       INCLUDE "gfx/pics/wobbuffet/normal.pal"
 WobbuffetShinyPalette:  INCLUDE "gfx/pics/wobbuffet/shiny.pal"
 GirafarigPalette:       INCLUDE "gfx/pics/girafarig/normal.pal"
 GirafarigShinyPalette:  INCLUDE "gfx/pics/girafarig/shiny.pal"
-PinecoPalette:          INCLUDE "gfx/pics/pineco/normal.pal"
-PinecoShinyPalette:     INCLUDE "gfx/pics/pineco/shiny.pal"
-ForretressPalette:      INCLUDE "gfx/pics/forretress/normal.pal"
-ForretressShinyPalette: INCLUDE "gfx/pics/forretress/shiny.pal"
-DunsparcePalette:       INCLUDE "gfx/pics/dunsparce/normal.pal"
-DunsparceShinyPalette:  INCLUDE "gfx/pics/dunsparce/shiny.pal"
-GligarPalette:          INCLUDE "gfx/pics/gligar/normal.pal"
-GligarShinyPalette:     INCLUDE "gfx/pics/gligar/shiny.pal"
+PinecoPalette:          INCLUDE "gfx/pics/pineco/normal.pal" ; Trapinch
+PinecoShinyPalette:     INCLUDE "gfx/pics/pineco/shiny.pal" ; Trapinch
+ForretressPalette:      INCLUDE "gfx/pics/forretress/normal.pal" ; Vibrava
+ForretressShinyPalette: INCLUDE "gfx/pics/forretress/shiny.pal" ; Vibrava
+DunsparcePalette:       INCLUDE "gfx/pics/dunsparce/normal.pal" ; Flygon
+DunsparceShinyPalette:  INCLUDE "gfx/pics/dunsparce/shiny.pal" ; Flygon
+GligarPalette:          INCLUDE "gfx/pics/gligar/normal.pal" ; Turtonator
+GligarShinyPalette:     INCLUDE "gfx/pics/gligar/shiny.pal"	; Turtonator
 SteelixPalette:         INCLUDE "gfx/pics/steelix/normal.pal"
 SteelixShinyPalette:    INCLUDE "gfx/pics/steelix/shiny.pal"
 SnubbullPalette:        INCLUDE "gfx/pics/snubbull/normal.pal"
@@ -437,10 +437,10 @@ HeracrossPalette:       INCLUDE "gfx/pics/heracross/normal.pal"
 HeracrossShinyPalette:  INCLUDE "gfx/pics/heracross/shiny.pal"
 SneaselPalette:         INCLUDE "gfx/pics/sneasel/normal.pal"
 SneaselShinyPalette:    INCLUDE "gfx/pics/sneasel/shiny.pal"
-TeddiursaPalette:       INCLUDE "gfx/pics/teddiursa/normal.pal"
-TeddiursaShinyPalette:  INCLUDE "gfx/pics/teddiursa/shiny.pal"
-UrsaringPalette:        INCLUDE "gfx/pics/ursaring/normal.pal"
-UrsaringShinyPalette:   INCLUDE "gfx/pics/ursaring/shiny.pal"
+TeddiursaPalette:       INCLUDE "gfx/pics/teddiursa/normal.pal" ; Sandygast
+TeddiursaShinyPalette:  INCLUDE "gfx/pics/teddiursa/shiny.pal" ; Sandygast
+UrsaringPalette:        INCLUDE "gfx/pics/ursaring/normal.pal" ; Palossand
+UrsaringShinyPalette:   INCLUDE "gfx/pics/ursaring/shiny.pal" ; Palossand
 SlugmaPalette:          INCLUDE "gfx/pics/slugma/normal.pal"
 SlugmaShinyPalette:     INCLUDE "gfx/pics/slugma/shiny.pal"
 MagcargoPalette:        INCLUDE "gfx/pics/magcargo/normal.pal"
