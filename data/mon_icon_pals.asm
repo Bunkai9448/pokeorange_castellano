@@ -21,16 +21,16 @@ MenuMonIconColors::
 	icon_pals BROWN, YELLOW ; PIDGEY
 	icon_pals BROWN, YELLOW ; PIDGEOTTO
 	icon_pals BROWN, YELLOW ; PIDGEOT
-	icon_pals PURPLE, GREEN ; RATTATA
-	icon_pals BROWN, RED ; RATICATE
+	icon_pals GRAY, GREEN 	; RATTATA_ALOLAN
+	icon_pals GRAY, RED 	; RATICATE_ALOLAN
 	icon_pals BROWN, YELLOW ; SPEAROW
 	icon_pals BROWN, YELLOW ; FEAROW
 	icon_pals PURPLE, GREEN ; EKANS
 	icon_pals PURPLE, BROWN ; ARBOK
 	icon_pals YELLOW, RED ; PIKACHU
-	icon_pals BROWN, RED ; RAICHU
-	icon_pals YELLOW, GREEN ; SANDSHREW
-	icon_pals BROWN, RED ; SANDSLASH
+	icon_pals BROWN, RED ; RAICHU_ALOLAN
+	icon_pals BROWN, GREEN ; SANDSHREW_KANTONESE
+	icon_pals BROWN, RED ; SANDSLASH_KANTONESE
 	icon_pals BLUE, PURPLE ; NIDORAN_F
 	icon_pals BLUE, PURPLE ; NIDORINA
 	icon_pals BLUE, GREEN ; NIDOQUEEN
@@ -39,8 +39,8 @@ MenuMonIconColors::
 	icon_pals PURPLE, BLUE ; NIDOKING
 	icon_pals GRAY, GREEN ; CLEFAIRY
 	icon_pals GRAY, GREEN ; CLEFABLE
-	icon_pals BLUE, TEAL ; VULPIX
-	icon_pals BLUE, GRAY ; NINETALES
+	icon_pals BLUE, PURPLE ; VULPIX_ALOLAN
+	icon_pals BLUE, PURPLE ; NINETALES_ALOLAN
 	icon_pals RED, GREEN ; JIGGLYPUFF
 	icon_pals RED, PURPLE ; WIGGLYTUFF
 	icon_pals BLUE, GREEN ; ZUBAT
@@ -52,10 +52,10 @@ MenuMonIconColors::
 	icon_pals RED, YELLOW ; PARASECT
 	icon_pals PURPLE, BLUE ; VENONAT
 	icon_pals PURPLE, BLUE ; VENOMOTH
-	icon_pals BROWN, GRAY ; DIGLETT
-	icon_pals BROWN, GRAY ; DUGTRIO
-	icon_pals YELLOW, RED ; MEOWTH
-	icon_pals RED, YELLOW ; PERSIAN
+	icon_pals BROWN, RED ; DIGLETT_ALOLAN
+	icon_pals BROWN, RED ; DUGTRIO_ALOLAN
+	icon_pals YELLOW, RED ; MEOWTH_KANTONESE
+	icon_pals RED, YELLOW ; PERSIAN_KANTONESE
 	icon_pals YELLOW, BLUE ; PSYDUCK
 	icon_pals BLUE, TEAL ; GOLDUCK
 	icon_pals BROWN, GREEN ; MANKEY
@@ -76,9 +76,9 @@ MenuMonIconColors::
 	icon_pals YELLOW, TEAL ; VICTREEBEL
 	icon_pals BLUE, PURPLE ; TENTACOOL
 	icon_pals BLUE, PURPLE ; TENTACRUEL
-	icon_pals GRAY, YELLOW ; GEODUDE
-	icon_pals GRAY, YELLOW ; GRAVELER
-	icon_pals BROWN, YELLOW ; GOLEM
+	icon_pals GRAY, BROWN ; GEODUDE_ALOLAN
+	icon_pals GRAY, BROWN ; GRAVELER_ALOLAN
+	icon_pals GRAY, BROWN ; GOLEM_ALOLAN
 	icon_pals RED, BLUE ; PONYTA
 	icon_pals RED, GRAY ; RAPIDASH
 	icon_pals RED, PURPLE ; SLOWPOKE
@@ -90,8 +90,8 @@ MenuMonIconColors::
 	icon_pals BROWN, GREEN ; DODRIO
 	icon_pals BLUE, YELLOW ; SEEL
 	icon_pals BLUE, YELLOW ; DEWGONG
-	icon_pals PURPLE, GREEN ; GRIMER
-	icon_pals PURPLE, GREEN ; MUK
+	icon_pals GREEN, PURPLE ; GRIMER_ALOLAN
+	icon_pals GREEN, PURPLE ; MUK_ALOLAN
 	icon_pals PURPLE, RED ; SHELLDER
 	icon_pals PURPLE, BLUE ; CLOYSTER
 	icon_pals PURPLE, BLUE ; GASTLY
@@ -105,9 +105,9 @@ MenuMonIconColors::
 	icon_pals RED, BLUE ; VOLTORB
 	icon_pals RED, BLUE ; ELECTRODE
 	icon_pals RED, YELLOW ; EXEGGCUTE
-	icon_pals GREEN, BROWN ; EXEGGUTOR
+	icon_pals GREEN, BROWN ; EXEGGUTOR_ALOLAN
 	icon_pals BROWN, GREEN ; CUBONE
-	icon_pals BROWN, GREEN ; MAROWAK
+	icon_pals TEAL, BLUE ; MAROWAK_ALOLAN
 	icon_pals BROWN, GREEN ; HITMONLEE
 	icon_pals RED, BLUE ; HITMONCHAN
 	icon_pals RED, YELLOW ; LICKITUNG
@@ -139,7 +139,7 @@ MenuMonIconColors::
 	icon_pals BLUE, PURPLE ; VAPOREON
 	icon_pals YELLOW, GREEN ; JOLTEON
 	icon_pals RED, YELLOW ; FLAREON
-	icon_pals BLUE, PURPLE ; PORYGON
+	icon_pals RED, BLUE ; PORYGON
 	icon_pals BLUE, PURPLE ; OMANYTE
 	icon_pals BLUE, PURPLE ; OMASTAR
 	icon_pals BROWN, GREEN ; KABUTO
@@ -162,7 +162,7 @@ MenuMonIconColors::
 	icon_pals RED, PURPLE ; TOUCANNON
 	icon_pals BLUE, TEAL ; MUNCHLAX
 	icon_pals BROWN, BLUE ; ROCKRUFF
-	icon_pals BROWN, BLUE ; LYCANROC
+	icon_pals YELLOW, BLUE ; LYCANROC_MIDDAY
 	icon_pals BLUE, GREEN ; WINGULL
 	icon_pals BLUE, GREEN ; PELIPPER
 	icon_pals RED, YELLOW ; CHINGLING
@@ -235,8 +235,8 @@ MenuMonIconColors::
 	icon_pals BLUE, PURPLE ; KINGDRA
 	icon_pals BLUE, TEAL ; PHANPY
 	icon_pals GRAY, BROWN ; DONPHAN
-	icon_pals BLUE, PURPLE ; PORYGON2
-	icon_pals BLUE, PURPLE ; PORYGON_Z
+	icon_pals RED, BLUE ; PORYGON2
+	icon_pals RED, BLUE ; PORYGON_Z
 	icon_pals RED, YELLOW ; LICKILICKY
 	icon_pals BROWN, BLUE ; TYROGUE
 	icon_pals BLUE, PURPLE ; HITMONTOP
@@ -257,3 +257,37 @@ MenuMonIconColors::
 	icon_pals RED, YELLOW ; LATIAS
 	icon_pals BLUE, TEAL ; LATIOS
 	icon_pals RED, PURPLE ; EGG
+
+icon_pals_forms: MACRO
+	db \1
+	dn PAL_OW_\2, PAL_OW_\3
+endm
+
+MenuMonIconColors_Forms::
+	icon_pals_forms ONIX, TEAL, GRAY 		; ONIX_CRYSTAL_FORM
+	icon_pals_forms STEELIX, TEAL, GRAY 	; STEELIX_CRYSTAL_FORM
+	icon_pals_forms EXEGGUTOR, GREEN, BROWN	; EXEGGUTOR_KANTONESE_FORM
+	icon_pals_forms GRIMER, PURPLE, GREEN	; GRIMER_KANTONESE_FORM
+	icon_pals_forms MUK, PURPLE, GREEN 		; MUK_KANTONESE_FORM
+	icon_pals_forms MEOWTH, GRAY, BLUE 		; MEOWTH_ALOLAN_FORM
+	icon_pals_forms PERSIAN, GRAY, BLUE 	; PERSIAN_ALOLAN_FORM
+	icon_pals_forms VULPIX, BROWN, YELLOW	; VULPIX_KANTONESE_FORM
+	icon_pals_forms NINETALES, YELLOW, GRAY	; NINETALES_KANTONESE_FORM
+	icon_pals_forms SANDSHREW, BLUE, TEAL 	; SANDSHREW_ALOLAN_FORM
+	icon_pals_forms SANDSLASH, BLUE, TEAL	; SANDSLASH_ALOLAN_FORM
+	icon_pals_forms RATTATA, RED, GREEN 	; RATTATA_KANTONESE_FORM
+	icon_pals_forms RATICATE, RED, BROWN	; RATICATE_KANTONESE_FORM
+	icon_pals_forms DIGLETT, BROWN, GRAY 	; DIGLETT_KANTONESE_FORM
+	icon_pals_forms DUGTRIO, BROWN, GRAY	; DUGTRIO_KANTONESE_FORM
+	icon_pals_forms GEODUDE, GRAY, YELLOW 	; GEODUDE_KANTONESE_FORM
+	icon_pals_forms GRAVELER, GRAY, YELLOW	; GRAVELER_KANTONESE_FORM
+	icon_pals_forms GOLEM, GRAY, YELLOW		; GOLEM_KANTONESE_FORM
+	icon_pals_forms RAICHU, BROWN, RED		; RAICHU_KANTONESE_FORM
+	icon_pals_forms MAROWAK, BROWN, GREEN 	; MAROWAK_KANTONESE_FORM
+	icon_pals_forms LYCANROC, RED, BLUE		; LYCANROC_MIDNIGHT_FORM
+	db -1
+
+; As the only species with 3 forms with different palettes, this form is hard coded instead of using the MenuMonIconColors_Forms array.
+MenuMonIconColors_DuskLycanrocPalette::
+	icon_pals BROWN, BLUE ; LYCANROC_DUSK_FORM
+	
