@@ -12,10 +12,12 @@ AscorbiaNurseScript:
 	jumpstd pokecenternurse
 
 AscorbiaSlouchScript:
+	faceplayer
 	opentext
 	writetext AscorbiaSlouchText
 	waitbutton
 	closetext
+	spriteface ASCORBIA_SLOUCH, RIGHT
 	end
 	
 Maya:

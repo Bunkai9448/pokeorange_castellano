@@ -1,8 +1,9 @@
+;deprecated
 AssertEnemyMonType:
 	ld a, [EnemyMonPersonality]
     and FORM_MASK
 	push bc
-	ld b, 3 ;lycanrock check
+	ld b, 3 ;lycanroc check
     cp b
 	pop bc
 	jp z, .handle_forms
@@ -115,11 +116,12 @@ AssertEnemyMonType:
 .end
 	ret
 
+;deprecated
 AssertPlayerMonType:
 	ld a, [BattleMonPersonality]
     and FORM_MASK
 	push bc
-	ld b, 3 ;lycanrock check
+	ld b, 3 ;lycanroc check
     cp b
 	pop bc
 	jp z, .handle_forms
@@ -233,11 +235,18 @@ AssertPlayerMonType:
 .end
 	ret
 
-; Strict form typing for specific WILD Pokémon and locations. NOT for trainer battles.
-StrictForm:
+; Handles correct form for wild Pokémon and Trainer battles
+; Enforces some forms and shinyness for certain wild Pokémon
+LoadEnemyMonForm:
 	ld a, [wBattleMode]
 	cp TRAINER_BATTLE
-	jp z, .done
+	jp z, .trainer
+
+	farcall GetWildPersonality
+	ld a, b
+	ld [EnemyMonPersonality], a
+	ld [TempMonForm], a
+
 	; Grab the BaseData for this species
 	ld a, [EnemyMonSpecies]
 	cp VULPIX
@@ -248,6 +257,10 @@ StrictForm:
 	jp z, .wild_sandshrew
 	cp ONIX
 	jp z, .wild_onix
+	cp POLITOED
+	jp z, .wild_politoed
+	cp LYCANROC
+	jp z, .wild_lycanroc	
 
 	; Otherwise, we're done
 	jp .done
@@ -319,6 +332,49 @@ StrictForm:
 	and GENDER_MASK ;erase form
 	or $02 ;enforce form 2 (crystal)
 	or %11000000 ;enforce male for crystal onix
+	jp .store_enforced_form
+
+;UnnamedIsland3 fixed Politoed encounter should be shiny 
+.wild_politoed
+	ld a, [MapGroup]
+	cp 16 ; Map GROUP 16
+	jr nz, .done
+	ld a, [MapNumber]
+	cp 26 ; UnnamedIsland3
+	jr nz, .done
+	ld a, [EnemyMonLevel] ;extra check, so only level 50 Politoed in this map are enforced shiny
+	cp 50
+	jr nz, .done
+	ld a, [EnemyMonPersonality]
+	or SHINY_MASK ;enforce shiny for the Unnamed Island 3 Politoed
+	jp .store_enforced_form
+
+;wild lycanroc form depends on the current time
+.wild_lycanroc
+    ; 5:00 PM to 5:59 PM = Dusk Lycanroc
+    ld a, [hHours]
+    cp DUSK_HOUR
+    ld b, LYCANROC_DUSK_FORM
+    jr z, .got_lycanroc_form
+    ; night = Midnight Lycanroc
+    ld a, [TimeOfDay]
+    cp NITE
+    ld b, LYCANROC_MIDNIGHT_FORM
+    jr z, .got_lycanroc_form
+    ; day = Midday Lycanroc
+    ld b, LYCANROC_MIDDAY_FORM
+.got_lycanroc_form
+	ld a, [EnemyMonPersonality]
+	and GENDER_MASK ;erase form
+	or b ;
+	jp .store_enforced_form
+
+;for trainers, we just need to load and copy the personality byte (gender, shininess, pinkness, form)
+.trainer
+	ld a, [wCurPartyMon]
+	ld hl, OTPartyMon1Personality
+	call GetPartyLocation ; bc = PartyMon[wCurPartyMon] - PartyMons
+	ld a, [hl] ;personality value is loaded in a
 	jp .store_enforced_form
 
 .store_enforced_form

@@ -13,6 +13,9 @@ MikanGym_MapScriptHeader:
 FalknerScript_0x683c2:
 	faceplayer
 	opentext
+	checkevent EVENT_BEAT_ORANGE_LEAGUE
+	iftrue .postLeague
+	
 	checkevent EVENT_BEAT_CISSY
 	iftrue .FightDone
 	writetext UnknownText_0x68473
@@ -44,6 +47,11 @@ FalknerScript_0x683c2:
 	waitbutton
 	closetext
 	end
+
+.postLeague
+	writetext CissyPostLeagueText
+	waitbutton
+	jump .NoRoomForBubblebeam
 
 .SpeechAfterTM:
 	writetext UnknownText_0x68735
@@ -171,6 +179,26 @@ UnknownText_0x68735:
 	line "on NAVEL ISLAND."
 
 	para "Good luck."
+	done
+
+CissyPostLeagueText:
+	text "So you are the"
+	line "CHAMPION now."
+
+	para "You did not just"
+	line "win battles, you"
+	cont "mastered your"
+	cont "#MON and the"
+	cont "sea itself."
+
+	para "That kind of trust"
+	line "is not easy to"
+	cont "earn."
+
+	para "Ride every new"
+	line "wave with care,"
+	cont "your journey has"
+	cont "only begun."
 	done
 
 SwimmerfMariaSeenText:

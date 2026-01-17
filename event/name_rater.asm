@@ -8,7 +8,7 @@ NameRater: ; fb6ed
 	ld hl, NameRaterWhichMonText
 	call PrintText
 	farcall SelectMonFromParty
-	jr c, .cancel
+	jp c, .cancel
 ; He can't rename an egg...
 	ld a, [CurPartySpecies]
 	cp EGG
@@ -25,6 +25,11 @@ NameRater: ; fb6ed
 ; What name shall I give it then?
 	ld hl, NameRaterWhichNameText
 	call PrintText
+; Load Shinyness for the correct mon icon palette to be loaded
+	ld a, MON_SHINY
+	call GetPartyParamLocation
+	ld a, [hl]
+	ld [TempMonShiny], a
 ; Load the new nickname into StringBuffer2
 	xor a ; PARTYMON
 	ld [MonType], a

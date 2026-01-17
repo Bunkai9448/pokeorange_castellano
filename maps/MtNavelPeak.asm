@@ -11,6 +11,10 @@ MtNavelPeak_MapScriptHeader::
 DannyScript:
 	faceplayer
 	opentext
+
+	checkevent EVENT_BEAT_ORANGE_LEAGUE
+	iftrue .postLeague
+
 	checkevent EVENT_BEAT_DANNY
 	iftrue .FightDone
 	writetext WelcomeToPeakText
@@ -48,6 +52,11 @@ DannyScript:
 	setevent EVENT_GOT_TM_HAIL
 	closetext
 	end
+
+.postLeague
+	writetext DannyPostLeagueText
+	waitbutton
+	jump .NoRoomForHail
 
 .SpeechAfterTM:
 	writetext DannyBeatenText
@@ -116,6 +125,22 @@ DannyBeatenText:
 	line "is on TROVITA"
 	cont "ISLAND."
 	done
+
+DannyPostLeagueText:
+	text "CHAMPION, huh..."
+	line "I heard the tales."
+
+	para "You did not just"
+	line "battle, you worked"
+	cont "with your #MON."
+
+	para "That kind of"
+	line "leadership lasts."
+
+	para "Take it slow."
+	line "There is always"
+	cont "another horizon."
+	done	
 
 NavelPeakEscapeRope:
 	itemball ESCAPE_ROPE

@@ -52,15 +52,15 @@ Route67UnderwaterSeashellScript:
 	end
 	
 Route67UnderwaterNoShellBox:
-    text "What a pretty sea-"
-    line "shell! It looks"
+    text "What a pretty"
+    line "SEASHELL! It looks"
     cont "too fragile to"
     cont "go in my BAG."
     done
 	
 FoundRoute67UnderwaterSeashell:
 	text "You found a rare"
-	line "seashell!"
+	line "SEASHELL!"
 	done
 	
 Route67Underwater_MapEventHeader::

@@ -199,6 +199,8 @@ ItemDescriptions:
 	dw FireOrbDesc
 	dw IceOrbDesc
 	dw KantoStoneDesc
+	dw ChampBeltDesc
+	dw ShinyBallDesc
 
 MasterBallDesc:
 	db   "The best BALL. It"
@@ -871,3 +873,11 @@ IceOrbDesc:
 KantoStoneDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"
+
+ChampBeltDesc:
+	db   "It says <``>P1 GP<''>."
+	next "Raises DEFENSEs.@"
+
+ShinyBallDesc:
+	db   "Mutates caught"
+	next "#MON.@"

@@ -1,4 +1,5 @@
 const_value = 1
+	const KUMQUAT_EAST_MEOWTH
 	const KUMQUAT_UMBRELLA_LEFT_1
 	const KUMQUAT_UMBRELLA_RIGHT_1
 	const KUMQUAT_UMBRELLA_LEFT_2
@@ -14,12 +15,27 @@ KumquatIslandEast_MapScriptHeader::
 
 .Triggers: db 0
 
-.Callbacks: db 1
+.Callbacks: db 2
+	dbw MAPCALLBACK_OBJECTS, .MeowthPalette
 	dbw MAPCALLBACK_NEWMAP, .FlyPoint
 
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_KUMQUAT
 	return
+
+.MeowthPalette:
+	callasm _ASM_IsMeowthTradeDone
+	iffalse .TradeDone
+	callasm _ASM_ChangeMeowthPalette
+.TradeDone
+	return
+
+_ASM_ChangeMeowthPalette:
+	ld a, [Map1ObjectColor]
+	and $10 ;erase first nibble
+	and PAL_OW_RED << 4
+	ld [Map1ObjectColor], a
+	ret
 
 KumquatEastUmbrellaScript:
 	end
@@ -59,6 +75,24 @@ KumquatEastSightseerF1Text:
 KumquatEastSightseerF2:
 	faceplayer
 	opentext
+	callasm _ASM_IsMeowthTradeDone
+	iftrue .tradeAlreadyCompleted ;needed or else the screen reload will happen when cancelling the trade
+	trade 4
+	waitbutton
+	closetext
+	callasm _ASM_IsMeowthTradeDone
+	iffalse .done
+	callasm _ASM_ChangeMeowthPalette
+	special FadeOutPalettes
+	disappear KUMQUAT_EAST_MEOWTH
+	appear KUMQUAT_EAST_MEOWTH
+	cry MEOWTH
+	wait 5
+	special FadeInPalettes
+.done
+	end
+
+.tradeAlreadyCompleted
 	trade 4
 	waitbutton
 	closetext
@@ -131,6 +165,42 @@ KumquatIslandSignText:
 	line "the ORANGE ISLANDS"
 	done
 
+KumquatEastMeowthScript:
+	faceplayer
+	opentext
+	writetext KumquatEastMeowthText1
+	cry MEOWTH
+	pause 15
+	waitbutton
+	callasm _ASM_IsMeowthTradeDone
+	iffalse .done
+	writetext KumquatEastMeowthText2
+	waitbutton
+.done
+	closetext
+	end
+
+KumquatEastMeowthText1:
+	text "Meow!"
+	done
+
+KumquatEastMeowthText2:
+	text "It seems my old"
+	line "MEOWTH is doing"
+	cont "well!"
+	done
+
+_ASM_IsMeowthTradeDone:
+	ld hl, wTradeFlags
+	ld a, 4 ;trade index
+	ld c, a
+	ld b, CHECK_FLAG
+	predef FlagPredef
+	ld a, c
+	and a
+	ld [ScriptVar], a
+	ret
+
 KumquatIslandEast_MapEventHeader::
 
 .Warps: db 4
@@ -144,7 +214,8 @@ KumquatIslandEast_MapEventHeader::
 .BGEvents: db 1
 	signpost  7, 17, SIGNPOST_READ, KumquatIslandSign
 
-.ObjectEvents: db 10
+.ObjectEvents: db 12
+	person_event SPRITE_MEOWTH, 16, 22, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_GRAY, 0, 0, KumquatEastMeowthScript, -1
 	person_event SPRITE_UMBRELLA, 24, 8, SPRITEMOVEDATA_UMBRELLA_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, KumquatEastUmbrellaScript, -1
 	person_event SPRITE_UMBRELLA, 24, 9, SPRITEMOVEDATA_UMBRELLA_RIGHT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, KumquatEastUmbrellaScript, -1
 	person_event SPRITE_UMBRELLA, 22, 14, SPRITEMOVEDATA_UMBRELLA_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, KumquatEastUmbrellaScript, -1
@@ -152,6 +223,7 @@ KumquatIslandEast_MapEventHeader::
 	person_event SPRITE_SUPER_NERD,  9, 16, SPRITEMOVEDATA_WANDER, 2, 0, -1, -1, PAL_OW_PURPLE, PERSONTYPE_SCRIPT, 0, KumquatEastSupernerd, -1
 	person_event SPRITE_COOLTRAINER_F, 23, 16, SPRITEMOVEDATA_STANDING_DOWN, 2, 0, -1, (1 << MORN) | (1 << DAY), PAL_OW_RED, PERSONTYPE_SCRIPT, 0, KumquatEastCooltrainerF, -1
 	person_event SPRITE_SIGHTSEER_F, 18,  6, SPRITEMOVEDATA_WANDER, 2, 0, -1, -1, PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, KumquatEastSightseerF1, -1
-	person_event SPRITE_SIGHTSEER_F, 17, 19, SPRITEMOVEDATA_WANDER, 2, 0, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, KumquatEastSightseerF2, -1
+	person_event SPRITE_SIGHTSEER_F, 17, 21, SPRITEMOVEDATA_WANDER, 2, 0, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, KumquatEastSightseerF2, -1
 	person_event SPRITE_FISHER, 27, 18, SPRITEMOVEDATA_STANDING_DOWN, 2, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, KumquatEastFisher, -1
 	person_event SPRITE_COOLTRAINER_M, 12,  6, SPRITEMOVEDATA_WANDER, 2, 0, -1, (1 << NITE), PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, KumquatEastCooltrainerM, -1
+	person_event SPRITE_INVISIBLE, 17, 22, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_TREE, PERSONTYPE_SCRIPT, 0, KumquatEastMeowthScript, -1

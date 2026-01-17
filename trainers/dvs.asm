@@ -52,7 +52,7 @@ TrainerClassDVs: ; 270d6
 	db $D8, $A8 ; james
 	db $D8, $A8 ; jessie
 	db $D8, $A8 ; jessie&james
-	db $99, $99 ; mom
+	db $ff, $ff ; mom
 	db $98, $88 ; bill
 	db $98, $88 ; imakuni
 	db $98, $88 ; lawrence

@@ -446,6 +446,15 @@ KrisDepositItemMenu: ; 0x1588b
 	ret
 
 .DepositItem_:
+	;check wether the item can be stored in the PC
+	farcall _CheckNoPCDepositItem
+	ld a, [wItemAttributeParamBuffer]
+	and a
+	jr z, .canDeposit
+	ld hl, .BetterKeepText
+	jp PrintText
+
+.canDeposit
 	farcall _CheckTossableItem
 	ld a, [wItemAttributeParamBuffer]
 	and a
@@ -500,6 +509,10 @@ KrisDepositItemMenu: ; 0x1588b
 
 .NoRoomText: ; 0x15978
 	text_jump _KrissPCNoRoomDepositText
+	db "@"
+
+.BetterKeepText:
+	text_jump _KrissPCBetterKeepText
 	db "@"
 
 KrisMailBoxMenu: ; 0x1597d

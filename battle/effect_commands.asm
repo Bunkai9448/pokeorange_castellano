@@ -2815,6 +2815,14 @@ EndMoveEffect: ; 352a3
 
 
 DittoMetalPowder: ; 352b1
+
+	push bc
+	call GetOpponentItem
+	ld a, [hl]
+	cp CHAMP_BELT
+	pop bc
+	jr z, .champBelt
+
 	ld a, MON_SPECIES
 	call BattlePartyAttr
 	ld a, [hBattleTurn]
@@ -2834,6 +2842,7 @@ DittoMetalPowder: ; 352b1
 	pop bc
 	ret nz
 
+.champBelt
 	ld a, c
 	srl a
 	add c

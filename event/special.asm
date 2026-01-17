@@ -16,12 +16,21 @@ Special_YoungerHaircutBrother: ; 7413
 	ld hl, Data_YoungerHaircutBrother
 	jr MassageOrHaircut
 
-Special_OlderHaircutBrother: ; 7418
-	ld hl, Data_OlderHaircutBrother
+;Special_OlderHaircutBrother: ; 7418
+;	ld hl, Data_OlderHaircutBrother
+;	jr MassageOrHaircut
+
+;Special_DaisyMassage: ; 741d
+;	ld hl, Data_DaisyMassage
+
+Special_MassageNormal:
+	ld hl, Data_MassageNormal
 	jr MassageOrHaircut
 
-Special_DaisyMassage: ; 741d
-	ld hl, Data_DaisyMassage
+Special_MassageDeluxe:
+	ld hl, Data_MassageDeluxe
+
+
 
 MassageOrHaircut: ; 7420
 	push hl
@@ -66,12 +75,17 @@ Data_YoungerHaircutBrother: ; 7459
 	db $80, 3, HAPPINESS_YOUNGCUT2 ; 20% chance
 	db $ff, 4, HAPPINESS_YOUNGCUT3 ; 50% chance
 
-Data_OlderHaircutBrother: ; 7462
-	db $9a, 2, HAPPINESS_OLDERCUT1 ; 60% chance
-	db $4c, 3, HAPPINESS_OLDERCUT2 ; 10% chance
-	db $ff, 4, HAPPINESS_OLDERCUT3 ; 30% chance
+;Data_OlderHaircutBrother: ; 7462
+;	db $9a, 2, HAPPINESS_OLDERCUT1 ; 60% chance
+;	db $4c, 3, HAPPINESS_OLDERCUT2 ; 10% chance
+;	db $ff, 4, HAPPINESS_OLDERCUT3 ; 30% chance
 
-Data_DaisyMassage: ; 746b
+Data_MassageNormal: ; 7462
+	db $80, 2, HAPPINESS_MASSAGE_NORMAL ; 50% chance
+	db $ff, 2, HAPPINESS_MASSAGE_NORMAL ; 50% chance
+
+;Data_DaisyMassage: ; 746b
+Data_MassageDeluxe:
 	db $80, 2, HAPPINESS_MASSAGE ; 50% chance
 	db $ff, 2, HAPPINESS_MASSAGE ; 50% chance
 

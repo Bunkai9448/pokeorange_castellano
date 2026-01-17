@@ -65,6 +65,10 @@ SpecialsPointers:: ; c029
 	add_special UpdateSprites
 	add_special ReplaceKrisSprite
 	add_special Special_GameCornerPrizeMonCheckDex
+	add_special SetShowPokedexEntryForm
+	add_special ShowPokedexEntryDefaultForm
+	add_special ShowPokedexEntryLatias
+	add_special ShowPokedexEntryLatios
 	add_special ShowPokedexEntry
 	add_special SpecialSeenMon
 	add_special WaitSFX
@@ -96,8 +100,10 @@ SpecialsPointers:: ; c029
 	add_special MapCallbackSprites_LoadUsedSpritesGFX
 	add_special PlaySlowCry
 	add_special Special_YoungerHaircutBrother
-	add_special Special_OlderHaircutBrother
-	add_special Special_DaisyMassage
+	;add_special Special_OlderHaircutBrother
+	;add_special Special_DaisyMassage
+	add_special Special_MassageNormal
+	add_special Special_MassageDeluxe
 	add_special PlayCurMonCry
 	add_special ProfOaksPCBoot
 	add_special InitRoamMons
@@ -140,12 +146,41 @@ Special_GameCornerPrizeMonCheckDex: ; c230
 	dec a
 	call SetSeenAndCaughtMon
 	call FadeToMenu
+	
+	;set form and shinyness for dex entry
+	;unfortunately the mon is generated after the dex entry is shown (or else it'd be registered already in the dex), so even if it's shiny we can't show it in the dex entry.
+	ld a, 1
+	ld [wDexMonPersonality], a
+
 	ld a, [ScriptVar]
 	ld [wd265], a
 	farcall NewPokedexEntry
 	jp ExitAllMenus
 ; c252
 
+; note: to display a specific form/shinyness load [wDexMonPersonality] with the correct form/shiny value before calling
+; currently this is only used when showing the latis
+
+; call this before showing a pokédex entry to set the shown form sprite and shinyness. I works with pinkness too.
+; use "writebyte $41" to show shiny first form, "writebyte $02" for non-shiny second form... etc. Look at pokemon_constants.asm for the bitflags
+SetShowPokedexEntryForm:
+	ld a, [ScriptVar]
+	ld [wDexMonPersonality], a
+	ret
+
+ShowPokedexEntryLatias:
+	ld a, [wRoamMon1Personality]
+	ld [wDexMonPersonality], a
+	jr ShowPokedexEntry	
+	
+ShowPokedexEntryLatios:
+	ld a, [wRoamMon2Personality]
+	ld [wDexMonPersonality], a
+	jr ShowPokedexEntry
+
+ShowPokedexEntryDefaultForm:
+	xor a
+	ld [wDexMonPersonality], a
 ShowPokedexEntry:
 	ld a, [ScriptVar]
 	dec a

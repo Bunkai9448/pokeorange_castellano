@@ -434,3 +434,4 @@ SECTION "Fukuhara No 4 Scripts", ROMX
 INCLUDE "maps/FukuharaNo4BF1.asm"
 INCLUDE "maps/FukuharaNo4BF2.asm"
 INCLUDE "maps/FukuharaNo4BF3.asm"
+INCLUDE "maps/TrovitopolisGroomer.asm"

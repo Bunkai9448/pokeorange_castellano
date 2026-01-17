@@ -716,6 +716,11 @@ _KrissPCNoRoomDepositText::
 	line "store items."
 	prompt
 
+_KrissPCBetterKeepText::
+	text "Better keep it"
+	line "with me for now."
+	prompt
+
 UnknownText_0x1c144d::
 	text "<PLAYER> turned on"
 	line "the PC."

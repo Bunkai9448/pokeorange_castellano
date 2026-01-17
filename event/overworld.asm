@@ -245,8 +245,12 @@ CutTreeBlockPointers: ; c862
 	dbw TILESET_JOHTO_1, .johto1
 	dbw TILESET_JOHTO_2, .johto1
 	dbw TILESET_KANTO, .kanto
-	dbw TILESET_GOLDEN_ISLAND, .park
+	dbw TILESET_GOLDEN_ISLAND, .park ;Doesn't have any grass actually
 	dbw TILESET_ILEX_FOREST, .ilex
+	dbw TILESET_SHAMOUTI_ISLAND, .johto1
+	dbw TILESET_PUMMELO_TROVITOPOLIS, .johto1
+	dbw TILESET_BATTLE_TOWER_OUTSIDE, .battleTowerOutside
+	dbw TILESET_UNDERWATER, .battleTowerOutside
 	db -1
 
 .johto1 ; Johto OW
@@ -273,7 +277,15 @@ CutTreeBlockPointers: ; c862
 	db -1
 
 .ilex ; Ilex Forest
-	db $0f, $17, $00
+	db $29, $01, $01 ; grass
+	db $2d, $01, $01 ; grass
+	db $2e, $01, $01 ; grass
+	db $2f, $29, $01 ; grass
+	db $0f, $17, $00 ; tree
+	db -1
+
+.battleTowerOutside ; Battle Tower and Underwater
+	db $03, $02, $01 ; grass
 	db -1
 
 WhirlpoolBlockPointers: ; c8a4
@@ -679,6 +691,15 @@ FlyFunction: ; ca3b
 	jr z, .outdoors
 
 .notrovitopolisroof
+	;allow fly in Mt. Navel Peak
+	ld a, [MapGroup]
+	cp $02
+	jr nz, .nomtnavelpeak
+	ld a, [MapNumber]
+	cp $04
+	jr z, .outdoors
+
+.nomtnavelpeak
 	call GetMapPermission
 	call CheckOutdoorMap
 	jr nz, .indoors
@@ -1590,18 +1611,36 @@ RockSmashScript: ; cf32
 	closetext
 	waitsfx
 	playsound SFX_STRENGTH
-;	earthquake 84
+	earthquake 5
 	applymovement2 MovementData_0xcf55
 	disappear -2
 
 	callasm RockMonEncounter
 	copybytetovar TempWildMonSpecies
-	iffalse .done
+	iffalse .giveScale
 	randomwildmon
 	startbattle
 	reloadmapafterbattle
+	end
+.giveScale
+	callasm _ASM_RockSmashRand
+	iffalse .done
+	opentext
+	verbosegiveitem HEART_SCALE
+	closetext
 .done
 	end
+
+_ASM_RockSmashRand:
+	xor a
+	ld [ScriptVar], a
+	call Random
+	ldh a, [hRandomAdd]
+	cp a, $40 ;25% chance
+	ret nc
+	ld a, 1
+	ld [ScriptVar], a
+	ret
 
 MovementData_0xcf55: ; 0xcf55
 	rock_smash 10

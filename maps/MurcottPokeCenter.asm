@@ -12,10 +12,12 @@ MurcottNurseScript:
 	jumpstd pokecenternurse
 
 MurcottSlouchScript:
+	faceplayer
 	opentext
 	writetext MurcottSlouchText
 	waitbutton
 	closetext
+	spriteface MURCOTT_SLOUCH, RIGHT
 	end
 
 MurcottSlouchText:

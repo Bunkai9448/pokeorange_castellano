@@ -22,6 +22,10 @@ RudyScript:
 	blackoutmod TROVITOPOLIS
 	faceplayer
 	opentext
+	
+	checkevent EVENT_BEAT_ORANGE_LEAGUE
+	iftrue .postLeague
+	
 	checkevent EVENT_BEAT_RUDY
 	iftrue .FightDone
 	writetext RudyText
@@ -51,6 +55,11 @@ RudyScript:
 	waitbutton
 	closetext
 	end
+
+.postLeague
+	writetext RudyPostLeagueText
+	waitbutton
+	jump .NoRoomForDoubleTeam
 
 .SpeechAfterTM:
 	writetext RudyAlreadyGotTMText
@@ -244,6 +253,26 @@ RudyDoubleTeamExplanationText:
 RudyAlreadyGotTMText:
 	text "Until we meet"
 	line "again."
+	done
+
+RudyPostLeagueText:
+	text "So the CHAMPION"
+	line "stands before me."
+	
+	para "Your tactics were"
+	line "precise... but not"
+	cont "heartless."
+	
+	para "You also trusted"
+	line "your #MON even"
+	cont "under pressure."
+
+	para "That balance is"
+	line "rare. It deserves"
+	cont "respect."
+
+	para "The bond with your"
+	line "team is admirable."	
 	done
 
 TrovitaGymGuyText:

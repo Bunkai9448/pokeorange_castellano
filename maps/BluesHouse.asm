@@ -25,7 +25,8 @@ UnknownScript_0x19b0de:
 	iffalse UnknownScript_0x19b124
 	writetext UnknownText_0x19b244
 	waitbutton
-	special Special_DaisyMassage
+	;special Special_DaisyMassage
+	special Special_MassageDeluxe
 	if_equal 0, UnknownScript_0x19b124
 	if_equal 1, UnknownScript_0x19b12a
 	setflag ENGINE_TEA_IN_BLUES_HOUSE

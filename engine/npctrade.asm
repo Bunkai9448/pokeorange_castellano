@@ -61,8 +61,13 @@ NPCTrade:: ; fcba8
 	ld hl, ConnectLinkCableText
 	call PrintText
 
+	ld a, LINK_NPC
+	ld [wLinkMode], a
 	call DoNPCTrade
 	call .TradeAnimation
+	xor a
+	ld [wLinkMode], a
+
 	call GetTradeMonNames
 
 	ld hl, TradedForText
@@ -299,6 +304,7 @@ DoNPCTrade: ; fcc63
 	ld a, [hl]
 	ld [de], a
 
+	;Check for Alolan Meowth trade and force form and gender. This could be done in _GetBattleRandomPersonality as the other forms
 	ld e, TRADE_GETMON
 	call GetTradeAttribute
 	push hl
@@ -310,8 +316,9 @@ DoNPCTrade: ; fcc63
 	cp a, MEOWTH
 	jr nz, .skipformforce
 	ld a, [de]
-	and GENDER_MASK ;erase form
+	and FORM_ERASE_MASK ;erase form
 	or $02 ;enforce form 2 (alolan, not default)
+	or MALE_MASK ;enforce male for alolan Meowth (suloku: Momoshiro was my now passed cat, this alolan Meowth is a tribute).
 	ld [de], a
 
 .skipformforce

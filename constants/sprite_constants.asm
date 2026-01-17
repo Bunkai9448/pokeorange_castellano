@@ -119,17 +119,17 @@
 	const SPRITE_SAILBOAT_TOP          ; 73
 	const SPRITE_SAILBOAT_BOTTOM       ; 74
 	const SPRITE_UMBRELLA              ; 75
-	const SPRITE_SPECTATOR_1
-	const SPRITE_DIVER_MALE_SWIM
-	const SPRITE_DIVER_MALE_UW
-	const SPRITE_DIVER_FEMALE_SWIM
-	const SPRITE_DIVER_FEMALE_UW
-	const SPRITE_SEASHELL
-	const SPRITE_LAWRENCE
-	const SPRITE_CAPTURE_RING
-	const SPRITE_KAT
-	const SPRITE_SHRINE1
-	const SPRITE_SHRINE2
+	const SPRITE_SPECTATOR_1           ; 76
+	const SPRITE_DIVER_MALE_SWIM       ; 77
+	const SPRITE_DIVER_MALE_UW         ; 78
+	const SPRITE_DIVER_FEMALE_SWIM     ; 79
+	const SPRITE_DIVER_FEMALE_UW       ; 7a
+	const SPRITE_SEASHELL              ; 7b
+	const SPRITE_LAWRENCE              ; 7c
+	const SPRITE_CAPTURE_RING          ; 7d
+	const SPRITE_KAT              	   ; 7e
+	const SPRITE_SHRINE1               ; 7f
+	const SPRITE_SHRINE2               ; 80
 
 const_value = $90
 SPRITE_POKEMON EQU const_value
@@ -150,6 +150,9 @@ SPRITE_POKEMON EQU const_value
 	const SPRITE_MEW                   ; 9e
 	const SPRITE_MARSHADOW             ; 9f
 	const SPRITE_HO_OH                 ; A0
+	const SPRITE_MEOWTH                ; A1
+	const SPRITE_KECLEON               ; A2
+	const SPRITE_MIMIKYU			   ; A3
 
 const_value = $e0
 	const SPRITE_DAYCARE_MON_1         ; e0
@@ -191,7 +194,9 @@ const_value = PAL_OW_SILVER
 	const PAL_OW_GRAY   ; 05
 	const PAL_OW_YELLOW ; 06
 	const PAL_OW_TEAL   ; 07
-	const PAL_OW_PINK   ; 08
+
+const_value = PAL_OW_ROCK
+	const PAL_OW_YELLOW2   ; 07
 
 ; sprite movement data table indices
 ; see data/map_objects.asm

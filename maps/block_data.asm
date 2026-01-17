@@ -13,7 +13,6 @@ MurcottPokeCenter_BlockData:
 AscorbiaIslandCenter_BlockData:
 KumquatCenter_BlockData:
 PummeloCenter_BlockData:
-ShamoutiCenter_BlockData:
 	INCBIN "maps/PokeCenter1F.blk"
 
 PokeCenter2F_BlockData:
@@ -27,6 +26,9 @@ Colosseum_BlockData:
 
 TradeCenter_BlockData:
 	INCBIN "maps/TradeCenter.blk"
+
+ShamoutiCenter_BlockData:
+	INCBIN "maps/ShamoutiPokeCenter1F.blk"
 
 TangeloMart_BlockData:
 MikanMart_BlockData:
@@ -413,6 +415,9 @@ SewerEntrance_BlockData:
 
 TrovitopolisPrimaSchool_BlockData:
 	INCBIN "maps/TrovitopolisPrimaSchool.blk"
+
+TrovitopolisGroomer_BlockData:
+	INCBIN "maps/TrovitopolisGroomer.blk"
 
 MayorsOffice_BlockData:
 MayorsOfficeMeetingRoom_BlockData:

@@ -230,6 +230,105 @@ LoreleiWinLossText:
 	cont "delight!"
 	done
 
+TrovitopolisPrimaSchoolBookScript:
+	opentext
+	writetext TrovitopolisPrimaSchoolBookText1
+	yesorno
+	iftrue .showText
+	closetext
+	end
+.showText
+	writetext TrovitopolisPrimaSchoolBookText2
+	yesorno
+	iftrue .showText2
+	closetext
+	end
+.showText2
+	writetext TrovitopolisPrimaSchoolBookText3
+	waitbutton
+	closetext
+	end
+
+
+TrovitopolisPrimaSchoolBookText1:
+	text "A textbook about"
+	line "#MON that lurk"
+	cont "tree vines and"
+	cont "rocks."
+	
+	para "Read more?"
+	done
+
+TrovitopolisPrimaSchoolBookText2:
+	text "Different #MON"
+	line "inhabit the ORANGE"
+	cont "ARCHIPELAGO's vine"
+	cont "trees. KAKUNA,"
+	cont "TRUMBEAK and"
+	cont "EXEGGCUTE enjoy"
+	cont "the thick vines."
+	
+	para "Rarely, you can"
+	line "spot MUNCHLAX"
+	cont "or LICKITUNG too,"
+	cont "but never on the"
+	cont "same vine."
+
+	para "The seasoned"
+	line "TRAINER will no-"
+	cont "tice that MUNCHLAX"
+	cont "surrounds itself"
+	cont "with slightly"
+	cont "stronger #MON"
+	cont "than LICKITUNG."
+	
+	para "The next chapter"
+	line "is about rocks."
+	
+	para "Continue reading?"
+	done
+
+TrovitopolisPrimaSchoolBookText3:
+	text "The ARCHIPELAGO's"
+	line "abundant KRABBY"
+	cont "inhabit its rocks,"
+	cont "but SHUCKLE and"
+	cont "STUNFISK also find"
+	cont "their home under"
+	cont "the coziness of"
+	cont "moist rocks."
+	
+	para "Fortunately for"
+	line "the mold and trap"
+	cont "#MON, KINGLER"
+	cont "are too big and"
+	cont "leave their rocky"
+	cont "homes once they"
+	cont "evolve."
+	done
+
+TrovitopolisPrimaSchoolStudentBookScript:
+	jumptext TrovitopolisPrimaSchoolStudentBookText
+
+TrovitopolisPrimaSchoolStudentBookText:
+	text "A book about the"
+	line "CRYSTAL type:"
+	
+	para "The newly found"
+	line "CRYSTAL type can"
+	cont "resist WATER, is"
+	cont "immune to POISON"
+	cont "but weak against"
+	cont "FIRE."
+
+	para "It seems to be"
+	line "NEUTRAL against"
+	cont "every other type,"
+	cont "but this is still"
+	cont "under research by"
+	cont "PROF. IVY."
+	done
+
 TrovitopolisPrimaSchool_MapEventHeader::
 
 .Warps: db 2
@@ -240,9 +339,13 @@ TrovitopolisPrimaSchool_MapEventHeader::
 
 .BGEvents: db 0
 
-.ObjectEvents: db 4
+.ObjectEvents: db 7
 	person_event SPRITE_LORELEI, 2, 5, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, LoreleiSchoolScript, EVENT_LORELEI_AT_TRAINER_SCHOOL
 	person_event SPRITE_YOUNGSTER, 6, 10, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, StudentScript, -1
 	person_event SPRITE_LASS, 5, 2, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_PURPLE, PERSONTYPE_SCRIPT, 0, StudentScript, -1
 	person_event SPRITE_SUPER_NERD, 2, 2, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, TeacherSchoolScript, -1
+	person_event SPRITE_POKEDEX,  4,  8, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, TrovitopolisPrimaSchoolBookScript, -1
+	person_event SPRITE_POKEDEX,  4,  2, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, TrovitopolisPrimaSchoolStudentBookScript, -1
+	person_event SPRITE_POKEDEX,  5, 10, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, TrovitopolisPrimaSchoolStudentBookScript, -1
+
 

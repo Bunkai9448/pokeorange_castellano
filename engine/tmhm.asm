@@ -1,7 +1,7 @@
 CanLearnTMHMMove: ; 11639
 	ld a, [CurPartySpecies]
 	ld [CurSpecies], a
-	ld a, b
+	ld a, [wCurPartyMon]
 	ld hl, PartyMon1Gender
 	ld bc, PARTYMON_STRUCT_LENGTH
 	call AddNTimes

@@ -53,6 +53,10 @@ FindNest: ; 2a01f
 ; 2a052
 
 .FindGrass: ; 2a052
+	;let's know we are scanning grass
+	xor a
+	ld [EnemyMonUnused], a
+
 	ld a, [hl]
 	cp -1
 	ret z
@@ -78,6 +82,10 @@ FindNest: ; 2a01f
 ; 2a06e
 
 .FindWater: ; 2a06e
+	;let's know we are scanning water
+	ld a, 1
+	ld [EnemyMonUnused], a
+
 	ld a, [hl]
 	cp -1
 	ret z
@@ -121,7 +129,40 @@ FindNest: ; 2a01f
 
 .AppendNest: ; 2a09c
 	push de
-	call GetWorldMapLocation
+	push bc	;b is MapGroup, c is MapNumber
+	call GetWorldMapLocation ;returns the map landmark in a	
+	pop bc
+	push af ;store landmark
+
+; check for underwater maps
+	;MapGroup 06 MapNumber 05 is WRECKED_SHIP_UNSUNK, doesn't use underwater tileset, but we'll consider it underwater for mon nest
+	ld a, b
+	cp 06	; MapGroup
+	jr nz, .skipWrecked
+	ld a, c ; MapNumber
+	cp 05
+	jr z, .underWater
+.skipWrecked
+	;all other underwater maps use TILESET_UNDERWATER
+	call GetAnyMapTileset
+	cp TILESET_UNDERWATER
+	jr z, .underWater
+	xor a
+	jr .surface
+.underWater
+	ld a, WILD_UNDERWATER_MAP_MASK
+	jr .continueAppend
+.surface
+	;is it grass?
+	ld a, [EnemyMonUnused]
+	and a
+	jr z, .continueAppend
+	ld a, WILD_SURF_MAP_MASK
+.continueAppend
+	ld c, a
+	pop af ;restore landmark
+	or c   ;add map type bitflag
+
 	ld c, a
 	hlcoord 0, 0
 	ld de, SCREEN_WIDTH * SCREEN_HEIGHT
@@ -506,6 +547,38 @@ InitRoamMons: ; 2a2a0
 	ld [wRoamMon1HP], a
 	ld [wRoamMon2HP], a
 ;	ld [wRoamMon3HP], a
+
+; DVs
+	ld [wRoamMon1DVs], a
+	ld [wRoamMon2DVs], a
+;	ld [wRoamMon3DVs], a
+
+; personality (shinyness)
+
+	ld a, [ScriptVar] ; 0x00 to totally reset (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
+	and a
+	jr nz, .roamer1
+	;reset shinyness
+	xor a
+	ld [wRoamMon1Gender], a
+	ld [wRoamMon2Gender], a
+;	ld [wRoamMon3Gender], a
+
+.roamer1
+	ld a, [wRoamMon1Gender]
+	and SHINY_MASK
+	jr nz, .Roamer2 ;if the roamer is already shiny, keep it
+	farcall GetBattleRandomPersonality
+	ld a, b
+	ld [wRoamMon1Gender], a
+
+.Roamer2
+	ld a, [wRoamMon2Gender]
+	and SHINY_MASK
+	ret nz ;if the roamer is already shiny, keep it
+	farcall GetBattleRandomPersonality
+	ld a, b
+	ld [wRoamMon2Gender], a
 
 	ret
 ; 2a2ce

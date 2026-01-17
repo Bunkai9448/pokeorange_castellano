@@ -7,7 +7,12 @@ Route52PokeCenter1F_MapScriptHeader:
 
 .MapTriggers: db 0
 
-.MapCallbacks: db 0
+.MapCallbacks: db 1
+	dbw MAPCALLBACK_NEWMAP, .FlyPoint
+
+.FlyPoint:
+	setflag ENGINE_FLYPOINT_ROUTE_52
+	return
 
 NurseScript_0x69b52:
 	jumpstd pokecenternurse

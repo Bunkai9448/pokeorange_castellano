@@ -3,7 +3,15 @@ TITLE = PKMNORANGE
 MCODE = PKOR
 ROMVERSION = 0x32
 FILLER = 0xff
+BUILD_DAY   := $(shell date +%d)
+BUILD_MONTH := $(shell date +%m)
+BUILD_YEAR  := $(shell date +%y)
 
+GIT_VERSION := $(shell git describe --abbrev=7 --always)
+
+$(info  )
+$(info $$BUILD_VERSION = $(BUILD_DAY)$(BUILD_MONTH)$(BUILD_YEAR)-$(GIT_VERSION))
+$(info  )
 
 ifneq ($(wildcard rgbds/.*),)
 RGBDS_DIR = rgbds/
@@ -11,7 +19,7 @@ else
 RGBDS_DIR =
 endif
 
-RGBASM_FLAGS =
+RGBASM_FLAGS = -D BUILDDAY=$(BUILD_DAY) -D BUILDMONTH=$(BUILD_MONTH) -D BUILDYEAR=$(BUILD_YEAR) -D GIT_VERSION=\"$(GIT_VERSION)\"
 RGBLINK_FLAGS = -n $(ROM_NAME).sym -m $(ROM_NAME).map -l $(ROM_NAME).link -p $(FILLER)
 RGBFIX_FLAGS = -Cjv -t $(TITLE) -i $(MCODE) -n $(ROMVERSION) -p $(FILLER) -k 01 -l 0x33 -m 0x10 -r 3
 
@@ -23,10 +31,13 @@ endif
 ifeq ($(filter debug,$(MAKECMDGOALS)),debug)
 RGBASM_FLAGS += -DDEBUG
 endif
+ifeq ($(filter backpictest,$(MAKECMDGOALS)),backpictest)
+RGBASM_FLAGS += -DBACKPICTEST
+endif
 
 
 .SUFFIXES:
-.PHONY: all clean orange pss debug bankfree freespace compare
+.PHONY: all clean orange pss debug backpictest bankfree freespace compare
 .SECONDEXPANSION:
 .PRECIOUS: %.2bpp %.1bpp %.wav %.ded
 
@@ -66,6 +77,7 @@ orange: $(ROM_NAME).gbc ; sort $(ROM_NAME).sym -o $(ROM_NAME).sym
 
 pss: orange
 debug: orange
+backpictest: orange
 
 bankfree: FILLER = 0x00
 bankfree: ROM_NAME := $(ROM_NAME)-$(FILLER)

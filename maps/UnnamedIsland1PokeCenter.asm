@@ -50,10 +50,12 @@ UnnamedIslandNurseScript:
 	jumpstd pokecenternurse
 
 UnnamedIslandSlouchScript:
+	faceplayer
 	opentext
 	writetext UnnamedIslandSlouchText
 	waitbutton
 	closetext
+	spriteface UNNAMEDISLAND_SLOUCH, RIGHT
 	end
 
 UnnamedIslandSlouchText:

@@ -1839,7 +1839,7 @@ GetBaseData:: ; 3856
     ld b, LYCANROC_MIDNIGHT_FORM
 	cp b
 	jr nz, .dusk_or_day
-.licanrock_midnight
+.lycanroc_midnight
 	pop bc ;it is midnight form, load data and return
     ld a, BANK(MidnightLycanrocBaseData)
     rst Bankswitch

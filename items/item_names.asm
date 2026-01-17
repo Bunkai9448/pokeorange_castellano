@@ -166,6 +166,8 @@
 	db "FIRE ORB@"
 	db "ICE ORB@"
 	db "KANTO STONE@"
+	db "CHAMPIONBELT@"
+	db "SHINY BALL@"
 	db "TM01@"
 	db "TM02@"
 	db "TM03@"

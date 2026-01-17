@@ -136,15 +136,15 @@ TrovitaSeashellScript:
 	end
 	
 TrovitaNoShellBox:
-    text "What a pretty sea-"
-    line "shell! It looks"
+    text "What a pretty"
+    line "SEASHELL! It looks"
     cont "too fragile to"
     cont "go in my BAG."
     done
 	
 FoundTrovitaSeashell:
 	text "You found a rare"
-	line "seashell!"
+	line "SEASHELL!"
 	done
 	
 TrovitaIslandSign:

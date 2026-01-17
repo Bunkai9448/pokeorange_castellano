@@ -34,10 +34,11 @@ MandarinDesertSignText:
 
 MandarinDesert_MapEventHeader::
 
-.Warps: db 3
+.Warps: db 4
 	warp_def 5, 8, 1, SUNRAY_CAVE_MANDARIN_DESERT_1F
 	warp_def 45, 41, 1, ROUTE_62_MANDARIN_DESERT_GATE
 	warp_def 45, 42, 2, ROUTE_62_MANDARIN_DESERT_GATE
+	warp_def 17, 18, 2, ROUTE_62
 
 .CoordEvents: db 0
 

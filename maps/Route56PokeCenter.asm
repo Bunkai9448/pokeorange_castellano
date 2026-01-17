@@ -5,7 +5,12 @@ Route56PokeCenter_MapScriptHeader:
 
 .MapTriggers: db 0
 
-.MapCallbacks: db 0
+.MapCallbacks: db 1
+	dbw MAPCALLBACK_NEWMAP, .FlyPoint
+
+.FlyPoint:
+	setflag ENGINE_FLYPOINT_ROUTE_56
+	return
 
 Route56SightseerFScript:
 	jumptextfaceplayer R56SightseerText

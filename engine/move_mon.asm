@@ -1929,21 +1929,50 @@ _GetBattleRandomPersonality: ;tag to call from core.asm, which uses BattleRandom
 	or a, b ;now a holds gender + form
 
 	push af ;store PV
-	; Shiny Charm gives 1/256 chance of a shiny
+
+; Flat 1/16 chance for shininess for NPC trades
+	ld a, [wLinkMode]
+	cp a, LINK_NPC
+	jr nz, .notNPCTrade
+	call Random
+	cp $10 	; 1/16 roll (16/256)
+	jr nc, .not_shiny
+	jr .shiny
+
+.notNPCTrade
+; Shiny Charm gives 1/256 chance of a shiny
 	call HaveShinyCharm
-	jr nc, .no_charm
+	jr nc, .checkSeashells
 	call Random
 	;cp $10 	; 1/16 roll (16/256), so not the intended 1/256?
 	cp 1 		; 1/256
-	jr nc, .not_shiny
-.no_charm
-	; (1/4096 random shiny chance)
+	jr nc, .checkSeashells
+	jr .shiny
+
+; Having all 11 Seashells gives 1/256 chance of a shiny, it stacks with the Shiny Charm
+.checkSeashells
+	;extra 1/16 roll when player has all seashells
+	ld a, [Shells+1]
+	cp 11
+	jr c, .normalRoll ;if seashells <11
 	call Random
-	cp 8 ;8/256 first roll
+	cp 1 		; 1/256
 	jr nc, .not_shiny
-	call Random
-	cp 8 ;8/256 second roll (16/65536 accumulated = 1/4096)
-	jr nc, .not_shiny
+	jr .shiny
+
+.normalRoll
+	; 1/4096 shiny chance
+    call Random
+    cp 4
+    jr nc, .not_shiny   ; first roll, fail if a >= 4
+
+    call Random
+    cp 4
+    jr nc, .not_shiny   ; second roll, fail if a >= 4
+	
+	;if we are here, we randomly got 0-4 when calling Random two times, so 4/256*4/256 = 8/65536 = 1/4096
+
+.shiny
 ;if we reach here, it is shiny!
 	pop af
 	set 3, a ;set the shiny bit
@@ -1975,6 +2004,8 @@ _GetBattleRandomPersonality: ;tag to call from core.asm, which uses BattleRandom
 	ld b, a
 	ret
 
+;Current implementation allows prevent the shiny charm from working by PC deposit
+;Solutions: check the event flag instead of carrying the item, check the PC box for it, prevent the player from getting the charm into the PC...
 HaveShinyCharm:
 	ld a, [wCurItem]
 	push af

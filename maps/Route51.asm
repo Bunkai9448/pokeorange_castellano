@@ -15,16 +15,23 @@ Route51_MapScriptHeader:
 	dbw MAPCALLBACK_OBJECTS, Route51HideCrossCallback
 
 Route51HideCrossCallback:
-	checkevent EVENT_CROSS_CORRUPTED_FOUGHT
-	iftrue .hidecross
-	checkevent EVENT_CROSS_CORRUPTED_SUNRAY
+	checkevent EVENT_MARSHADOW_HOOH_EVENT_STARTED
+	iffalse .return
+	;now check if the player has the Rainbow Wing (this is reliable since it is now impossible to put the Rainbow Wing in the PC)
+	checkitem RAINBOW_WING
+	iftrue .hidecross ; if the player has the Rainbow Wing, Cross has already been battled
+	checkevent EVENT_ROUTE51_HO_OH_FOUGHT
 	iftrue .return
+	appear ROUTE51_HO_OH
+	return
+.hidecross ;in this branch we a
+	disappear ROUTE51_CROSS
+	checkevent EVENT_ROUTE51_HO_OH_FOUGHT
+	iftrue .return
+	appear ROUTE51_HO_OH
+.return
 	disappear ROUTE51_CROSS
 	disappear ROUTE51_HO_OH
-	return
-.hidecross
-	disappear ROUTE51_CROSS
-.return
 	return
 
 TrainerBug_catcherSam:
@@ -102,8 +109,8 @@ Ho_ohText:
 	done
 
 Route51CrossScript_left:
-	checkevent EVENT_CROSS_CORRUPTED_FOUGHT
-	iftrue .finish
+	checkevent EVENT_CROSS_AT_ROUTE51
+	iffalse .finish
 	spriteface PLAYER, RIGHT
 	playmusic MUSIC_LOOK_GLADION
 	opentext
@@ -116,8 +123,8 @@ Route51CrossScript_left:
 	end
 
 Route51CrossScript_up:
-	checkevent EVENT_CROSS_CORRUPTED_FOUGHT
-	iftrue .finish
+	checkevent EVENT_CROSS_AT_ROUTE51
+	iffalse .finish
 	spriteface PLAYER, DOWN
 	playmusic MUSIC_LOOK_GLADION
 	opentext
@@ -176,7 +183,7 @@ Route51CrossScript:
 	pause 20
 	playmapmusic
 	pause 10
-	setevent EVENT_CROSS_CORRUPTED_FOUGHT
+	clearevent EVENT_CROSS_AT_ROUTE51
 	cry HO_OH
 	opentext
 	writetext CrossRoute51PurifiedWingText
@@ -290,5 +297,5 @@ Route51_MapEventHeader::
 	person_event SPRITE_FRUIT_TREE, 25, 7, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Route51FruitTree, -1
 	person_event SPRITE_POKE_BALL,  1, 19, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route51Potion, EVENT_ROUTE_51_POTION
 	person_event SPRITE_POKE_BALL,  6,  7, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route51PokeBall, EVENT_ROUTE_51_POKE_BALL
-	person_event SPRITE_HO_OH, 12, 28, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_RED, 0, 0, Route51Ho_ohScript, EVENT_ROUTE51_HO_OH_FOUGHT
-	person_event SPRITE_ROCKER, 11, 28, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, Route51CrossScript, EVENT_CROSS_CORRUPTED_FOUGHT
+	person_event SPRITE_HO_OH, 12, 28, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_RED, 0, 0, Route51Ho_ohScript, EVENT_TEMPORARY_1
+	person_event SPRITE_ROCKER, 11, 28, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, Route51CrossScript, EVENT_TEMPORARY_2

@@ -20,7 +20,7 @@ ShamoutiChiefScript:
 	end
 	
 .AcceptedShamoutiQuest
-	checkevent EVENT_LUGIA_FOUGHT
+	checkevent EVENT_SHAMOUTI_QUEST_ENDED
 	iftrue .RockClimbScript
 	writetext ShamoutiChiefText2
 	waitbutton

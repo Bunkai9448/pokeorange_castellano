@@ -24,19 +24,19 @@ Ren:
 	jumptextfaceplayer RenText
 
 Mimi:
-	checkevent EVENT_GOT_EXP_ALL
-	iftrue .AlreadyGotExpAll
+	checkevent EVENT_GOT_CAT_STATUE
+	iftrue .AlreadyGotCatStatue
 	faceplayer
 	opentext
 	writetext GiveExpAllText
 	waitbutton
 	verbosegiveitem CAT_STATUE
 	iffalse MimiDoneScript
-	setevent EVENT_GOT_EXP_ALL
+	setevent EVENT_GOT_CAT_STATUE
 	closetext
 	end
 
-.AlreadyGotExpAll
+.AlreadyGotCatStatue
 	jumptextfaceplayer MimiText
 	
 MimiDoneScript:

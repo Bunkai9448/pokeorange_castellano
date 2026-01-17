@@ -10,6 +10,7 @@ MainMenu: ; 49cdc
 	call MainMenu_GetWhichMenu
 	ld [wWhichIndexSet], a
 	call MainMenu_PrintCurrentTimeAndDay
+	call MainMenu_PrintVersion
 	ld hl, .MenuDataHeader
 	call LoadMenuDataHeader
 	call MainMenuJoypadLoop
@@ -98,6 +99,52 @@ MainMenuJoypadLoop: ; 49de4
 	scf
 	ret
 ; 49e09
+
+MainMenu_PrintVersion:
+	hlcoord 0, 12
+	ld de, .pokeorangeVersion1
+	call PlaceString
+	hlcoord 12, 13
+	ld de, .pokeorangeVersion2
+	call PlaceString
+	ret
+	
+;automatic date building disabled for public release
+
+;	hlcoord 6, 13
+
+;	ld de, wd265
+;	ld c, 2
+;	ld b, PRINTNUM_LEADINGZEROS | 1
+;	
+;	ld a, BUILDDAY
+;	ld [wd265], a
+;	call PrintNum
+;	ld a, BUILDMONTH
+;	ld [wd265], a
+;	call PrintNum
+;	ld a, BUILDYEAR
+;	ld [wd265], a
+;	jp PrintNum
+
+.pokeorangeVersion1
+if DEF(PSS)
+	if DEF(DEBUG)
+		db "           PSS-Debug@"
+	endc
+		db "                 PSS@"
+else
+    if DEF(DEBUG)
+		db "               Debug@"
+	endc
+		db "@"
+endc
+
+.pokeorangeVersion2
+	;db "-"
+	;db GIT_VERSION
+	db " v170126" ;hard code date as version string for public release
+	db "@"
 
 MainMenu_PrintCurrentTimeAndDay: ; 49e09
 	ld a, [wSaveFileExists]

@@ -158,8 +158,14 @@ CleopatraRedEvent:
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
+	opentext
+	writetext RedText
+	waitbutton
+	closetext
+	special FadeOutPalettes
 	disappear CLEOPATRA_ISLAND_RED
-	special Special_FadeInQuickly
+	wait 5
+	special FadeInPalettes
 	setevent EVENT_RED_ON_CLEOPATRA
 	setevent EVENT_BEAT_RED
 	playmusic MUSIC_ROUTE_26
@@ -247,15 +253,15 @@ CleopatraSeashellScript:
 	end
 	
 CleopatraNoShellBox:
-    text "What a pretty sea-"
-    line "shell! It looks"
+    text "What a pretty"
+    line "SEASHELL! It looks"
     cont "too fragile to"
     cont "go in my BAG."
     done
 	
 FoundCleopatraSeashell:
 	text "You found a rare"
-	line "seashell!"
+	line "SEASHELL!"
 	done
 
 CleopatraIsland_MapEventHeader::

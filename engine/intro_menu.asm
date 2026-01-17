@@ -182,6 +182,27 @@ ENDC
 
 	farcall DeletePartyMonMail
 
+	;Shiny Charm Cheatcode
+	ld hl, hJoypadDown
+	ld a, [hl]
+	and SELECT
+	jr z, .skipShinycharm
+	ld hl, PCItems
+	ld a, 1
+	ld [hli], a
+	ld a, SHINY_CHARM
+	ld [hli], a
+	ld a, 1
+	ld [hli], a
+	ld a, -1
+	ld [hl], a
+	;Set the Flag to prevent getting multiple charms
+	ld hl, EventFlags
+	ld b, SET_FLAG
+	ld c, EVENT_GOT_SHINY_CHARM
+	predef FlagPredef 
+.skipShinycharm
+
 	jp ResetGameTime
 ; 5ca1
 

@@ -87,8 +87,10 @@ if def(DEBUG)
 	setflag ENGINE_FLYPOINT_VALENCIA
 	setflag ENGINE_FLYPOINT_TANGELO
 	setflag ENGINE_FLYPOINT_MIKAN
+	setflag ENGINE_FLYPOINT_ROUTE_52
 	setflag ENGINE_FLYPOINT_MANDARIN_NORTH
 	setflag ENGINE_FLYPOINT_SUNBURST
+	setflag ENGINE_FLYPOINT_ROUTE_56
 	setflag ENGINE_FLYPOINT_KINNOW
 	setflag ENGINE_FLYPOINT_NAVEL
 	setflag ENGINE_FLYPOINT_MORO
@@ -106,6 +108,7 @@ if def(DEBUG)
 	giveitem SKATEBOARD
 	giveitem EXP_ALL
 	giveitem MASTER_BALL, 99
+	giveitem SHINY_BALL, 99
 	giveitem DIVE_BALL, 99
 	giveitem HEAL_BALL, 99
 	giveitem DUSK_BALL, 99
@@ -139,12 +142,12 @@ if def(DEBUG)
 	giveshells 13
 	givemoney 0, 195000
 	opentext
-	givepoke LAPRAS, 100
+	givepoke LAPRAS, 100, 0, SHINY_MASK
 	givepoke CHARIZARD, 100
 	givepoke HO_OH, 100, LIGHT_BALL
 	givepoke MEW, 100
 	givepoke MARSHADOW, 100
-	givepoke MEOWTH, 99, NUGGET, %00110000
+	givepoke MEOWTH, 99, SKATEBOARD, %00110000
 	closetext
 	callasm TeachHMSlaveMoves
 	special HealParty ; restore PP after TeachHMSlaveMoves
@@ -314,26 +317,34 @@ TeachHMSlaveMoves:
 	ld [hli], a ; CONFUSE_RAY
 	ld a, DIVE
 	ld [hl], a ; PERISH_SONG
+	; Set Lapras friendship to MAX for Surf power
+	ld hl, PartyMon1Happiness
+	ld a, 255
+	ld [hl], a
 	; CHARIZARD
 	ld hl, PartyMon2Moves
 	ld a, FLY
 	ld [hli], a ; RAGE
 	ld a, CUT
 	ld [hl], a ; SCARY_FACE
-	; PIKACHU
+	; HO-OH
 	ld hl, PartyMon3Moves
 	ld a, STRENGTH
 	ld [hli], a ; DOUBLE_TEAM
 	ld a, FLASH
 	ld [hl], a ; SLAM
-	; ROCKRUFF
+	; MEW
 	ld hl, PartyMon4Moves
 	ld a, ROCK_CLIMB
 	ld [hli], a
 	ld a, DIG
 	ld [hl], a
-	; MEW
+	; MARSHADOW
 	ld hl, PartyMon5Moves
+	ld a, THIEF
+	ld [hl], a ; TRANSFORM
+	; MEOWTH
+	ld hl, PartyMon6Moves
 	ld a, ROCK_SMASH
 	ld [hli], a ; TRANSFORM
 	ld a, WATERFALL

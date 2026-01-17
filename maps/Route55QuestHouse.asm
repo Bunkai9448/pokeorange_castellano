@@ -18,8 +18,8 @@ BaasamaText:
 	line "had children of my"
 	cont "own."
 
-	para "I wonder what bec-"
-	line "ame of them. It's"
+	para "I wonder what be-"
+	line "came of them. It's"
 	cont "been so long<...>"
 
 	para "By now, they would"

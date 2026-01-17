@@ -182,9 +182,11 @@ ItemEffects: ; e73c
 	dw FireOrb
 	dw IceOrb
 	dw KantoStone
+	dw ChampionBelt
+	dw ShinyBall
 ; e8a2
 
-
+ShinyBall:
 MasterBall:
 UltraBall:
 GreatBall:
@@ -227,6 +229,18 @@ DuskBall: ; e8a2
 	ld hl, UsedItemText
 	call PrintText
 
+	ld a, [EnemyMonCatchRate]
+	ld b, a
+	ld a, [wCurItem]
+	cp SHINY_BALL
+	jr nz, .notShinyBall
+	;it is a shiny ball
+	ld a, [EnemyMonGender]
+	or SHINY_MASK ; force shiny bit
+	ld [EnemyMonGender], a
+	jp .catch_without_fail
+
+.notShinyBall
 	ld a, [EnemyMonCatchRate]
 	ld b, a
 	ld a, [wCurItem]
@@ -372,6 +386,9 @@ DuskBall: ; e8a2
 	call DelayFrames
 
 	ld a, [wCurItem]
+	cp SHINY_BALL
+	jr z, .not_kurt_ball
+
 	cp POKE_BALL + 1 ; Assumes Master/Ultra/Great come before
 	jr c, .not_kurt_ball
 	ld a, POKE_BALL
@@ -531,6 +548,10 @@ DuskBall: ; e8a2
 
 	call ClearSprites
 
+	ld a, [EnemyMonGender] ; display the correct pokédex sprite and shinyness when caught
+	ld [wDexMonPersonality], a
+	ld [TempMonGender], a ; display correct sprite color when going to the naming screen
+	
 	ld a, [EnemyMonSpecies]
 	ld [wd265], a
 	predef NewPokedexEntry
@@ -2858,6 +2879,7 @@ PinkCure_ExitMenu:
 	ld [wItemEffectSucceeded], a
 	jp ClearPalettes
 
+ChampionBelt:
 Brightpowder:
 LuckyPunch:
 MetalPowder:

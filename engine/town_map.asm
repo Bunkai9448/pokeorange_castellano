@@ -480,9 +480,11 @@ ENDM
 ; Orange
 	flypoint VALENCIA,       VALENCIA_ISLAND
 	flypoint TANGELO,        TANGELO_ISLAND
+	flypoint ROUTE_52,		 ROUTE_52
 	flypoint MIKAN,          MIKAN_ISLAND
 	flypoint MANDARIN_NORTH, MANDARIN_NORTH
 	flypoint SUNBURST,       SUNBURST_ISLAND
+	flypoint ROUTE_56_WEST,  ROUTE_56
 	flypoint KINNOW,         KINNOW_ISLAND
 	flypoint NAVEL,          NAVEL_ISLAND
 	flypoint MORO,			 MORO_ISLAND
@@ -602,6 +604,10 @@ FlyMap: ; 91c90
 ; 91d11
 
 _Area: ; 91d11
+
+	xor a
+	ld [EnemyMonUnused], a ; clear this, we will use it as a temporary variable for the Nest area
+
 ; e: Current landmark
 	ld a, [wd002]
 	push af
@@ -618,6 +624,43 @@ _Area: ; 91d11
 	ld hl, VTiles0 tile $7f
 	lb bc, BANK(DexMapNestIconGFX), 1
 	call Request2bpp
+
+	ld de, DexMapNestDiveIconGFX
+	ld hl, VTiles0 tile $7e
+	lb bc, BANK(DexMapNestIconGFX), 1
+	call Request2bpp
+
+	ld de, DexMapNestSurfIconGFX
+	ld hl, VTiles0 tile $7d
+	lb bc, BANK(DexMapNestIconGFX), 1
+	call Request2bpp
+
+	ld de, DexMapNestFishIconGFX
+	ld hl, VTiles0 tile $7c
+	lb bc, BANK(DexMapNestIconGFX), 1
+	call Request2bpp
+
+	ld de, DexMapNestVineIconGFX
+	ld hl, VTiles0 tile $6e
+	lb bc, BANK(DexMapNestIconGFX), 1
+	call Request2bpp
+	
+	ld de, DexMapNestRockIconGFX
+	ld hl, VTiles0 tile $6f
+	lb bc, BANK(DexMapNestIconGFX), 1
+	call Request2bpp
+	
+	ld de, DexMapNestLabelsGFX
+	ld hl, VTiles0 tile $d0
+	lb bc, BANK(DexMapNestLabelsGFX), 23
+	call Request2bpp
+	
+	;Reload the "?" character in another position
+	ld de, Font tile $56 ; "?" char
+    ld hl, VTiles0 tile $BF
+    lb bc, BANK(Font), 1
+    call Request2bpp
+
 	call .GetPlayerOrFastShipIcon
 	ld hl, VTiles0 tile $78
 	ld c, 4
@@ -638,8 +681,12 @@ _Area: ; 91d11
 	call SetPalettes
 	xor a
 	ld [hBGMapMode], a
-	xor a ; Orange
-	call .GetAndPlaceNest
+	
+	xor a; Start with wild mon
+	call .GetAndPlaceNestOnBoot
+	
+;	xor a ; Orange
+;	call .GetAndPlaceNest ; called within .UpdateRodIcons
 .loop
 	call JoyTextDelay
 	ld hl, hJoyPressed
@@ -661,6 +708,12 @@ _Area: ; 91d11
 
 .a_b
 	call ClearSprites
+	
+	farcall Pokedex_LoadGFX
+
+	xor a
+	ld [EnemyMonUnused], a ; clear this, we will use it as a temporary variable for the Nest area
+
 	pop af
 	ld [wd003], a
 	pop af
@@ -669,7 +722,7 @@ _Area: ; 91d11
 
 ; 91d9b
 
-.LeftRightInput: ; 91d9b
+.LeftRightInput: ; Instead of changing between Orange and Kanto maps, this changes nest type
 	ld a, [hl]
 	and D_LEFT
 	jr nz, .left
@@ -679,27 +732,79 @@ _Area: ; 91d11
 	ret
 
 .left
-	ld a, [hWY]
-	cp $90
+	ld a, [EnemyMonUnused]
+	cp 6
 	ret z
+	dec a
+	cp -1
+	ld b, -1 ;backwards indicator
+	jr nz, .reloadMap
+	ld a, 4
+	jr .reloadMap
+	
+	;ld a, [hWY]
+	;cp $90
+	;ret z
+	;call ClearSprites
+	;ld a, $90
+	;ld [hWY], a
+	;xor a ; Orange
+	;jp .GetAndPlaceNest
+
+.right
+	ld a, [EnemyMonUnused]
+	cp 6
+	ret z
+	inc a
+	cp 6
+	ld b, 1 ;frontwards indicator
+	jr nz, .reloadMap
+	xor a
+.reloadMap
+	ld [EnemyMonUnused], a
+	
+	push bc
 	call ClearSprites
-	ld a, $90
-	ld [hWY], a
+	pop bc
+	;ld a, $90
+	;ld [hWY], a
 	xor a ; Orange
 	jp .GetAndPlaceNest
 
-.right
-	ld a, [StatusFlags]
-	bit 6, a ; hall of fame
-	ret z
-	ld a, [hWY]
-	and a
-	ret z
-	call ClearSprites
-	xor a
-	ld [hWY], a
-	ld a, 1 ; Kanto
-	jp .GetAndPlaceNest
+	; Kanto map is only available after entering the hall of fame
+	; Unused
+;	ld a, [StatusFlags]
+;	bit 6, a ; hall of fame
+;	ret z
+;	ld a, [hWY]
+;	and a
+;	ret z
+;	call ClearSprites
+;	xor a
+;	ld [hWY], a
+;	ld a, 1 ; Kanto
+;	jp .GetAndPlaceNest
+
+.oldRodLabel
+	db $d3, $d4, $d5, $d6, $e5, $d6, $7f, "@"
+    
+.goodRodLabel
+	db $d3, $d4, $d7, $d8, $df, $d8, $7f, "@"
+	
+.superRodLabel
+	db $d3, $d4, $d9, $da, $db, $e5, $d6, "@"
+	
+.masterRodLabel
+	db $d3, $d4, $dc, $dd, $de, $df, $d8, "@"
+
+.wildLabel
+	db $d3, $d4, $e0, $e1, $7f, $7f, $7f, "@"
+
+.vineRockLabel
+	db $d3, $d4, $e2, $e3, $e4, $e5, $e6, "@"
+
+.notFoundLabel
+	db $d3, $d4, $7f, $7f, $bf, $7f, $7f, "@"
 
 ; 91dcd
 
@@ -725,7 +830,7 @@ _Area: ; 91d11
 	ld a, " "
 	call ByteFill
 	call GetPokemonName
-	hlcoord 1, 0
+	hlcoord 0, 0
 	call PlaceString
 	ld h, b
 	ld l, c
@@ -735,13 +840,89 @@ _Area: ; 91d11
 ; 91e16
 
 .String_SNest:
-	db "'S NEST@"
+	;db "'S NEST@"
+	db $d0, $d1, $d2, "@"
 ; 91e1e
+
+;Only called the first time player goes to the area screen. Goes through all entries to find the first Nest type with Nests.
+.GetAndPlaceNestOnBoot:
+	ld [wd003], a
+	ld a, [EnemyMonUnused]
+.populateOnBootLoop
+	ld [EnemyMonUnused], a
+	call _PopulateLandmarks
+	jr nc, .UpdateLabels
+	ld a, [EnemyMonUnused]
+	inc a
+	cp 6
+	jr c, .populateOnBootLoop
+	ld [EnemyMonUnused], a
+	jr .UpdateLabels
 
 .GetAndPlaceNest: ; 91e1e
 	ld [wd003], a
-	ld e, a
-	farcall FindNest ; load nest landmarks into TileMap[0,0]
+
+
+; GetAndPlaceNestOnBoot will handle any pokémon with no nests, so if we are here we assume it has at leas one nesting location.
+	ld a, [EnemyMonUnused]
+.placeNestLoop
+	push bc
+	ld [EnemyMonUnused], a
+	call _PopulateLandmarks
+	pop bc
+	push af
+	ld a, b
+	cp -1
+	jr z, .backwards
+	pop af
+	ld a, [EnemyMonUnused]
+	inc a
+	jr c, .placeNestLoop
+	jr .UpdateLabels
+.backwards
+	pop af
+	ld a, [EnemyMonUnused]
+	dec a
+	jr c, .placeNestLoop
+	;fallthrough
+
+.UpdateLabels
+;Update labels
+	call DisableLCD
+
+	ld a, [EnemyMonUnused]
+	cp 6
+	ld de, .notFoundLabel
+	jr z, .writeLabel
+	
+	ld b, a
+	xor a
+	ld de, .wildLabel
+	cp b
+	jr z, .writeLabel
+	inc a
+	ld de, .vineRockLabel
+	cp b
+	jr z, .writeLabel
+	inc a
+	ld de, .oldRodLabel
+	cp b
+	jr z, .writeLabel
+	inc a
+	ld de, .goodRodLabel
+	cp b
+	jr z, .writeLabel
+	inc a
+	ld de, .superRodLabel
+	cp b
+	jr z, .writeLabel
+	ld de, .masterRodLabel
+.writeLabel
+	hlbgcoord 13, 0
+	call PlaceString
+	call EnableLCD
+
+;Process Landmarks and draw Nest icons
 	decoord 0, 0
 	ld hl, Sprites
 .nestloop
@@ -749,6 +930,9 @@ _Area: ; 91d11
 	and a
 	jr z, .done_nest
 	push de
+	
+	push af ;store landmark
+
 	ld e, a
 	push hl
 	farcall GetLandmarkCoords
@@ -760,7 +944,42 @@ _Area: ; 91d11
 	ld a, e
 	sub 4
 	ld [hli], a
+
+	ld a, [EnemyMonUnused]
+	cp 1
+	jr z, .vineRock
+	pop af ;restore landmark
+	and WILD_LANDMARK_MASK ;keep only type of landmark
+	ld d, a
+	cp WILD_UNDERWATER_MAP_MASK
+	ld a, $7e
+	jr z, .placeNestIcon
+	ld a, d
+	cp WILD_SURF_MAP_MASK
+	ld a, $7d
+	jr z, .placeNestIcon
+	ld a, d
+	cp WILD_FISH_MAP_MASK
+	ld a, $7c
+	jr z, .placeNestIcon
 	ld a, $7f ; nest icon in this context
+	jr .placeNestIcon
+
+.vineRock
+	pop af ;restore landmark
+	and WILD_LANDMARK_MASK ;keep only type of landmark
+	ld d, a
+	cp WILD_VINE_MAP_MASK
+	ld a, $6e
+	jr z, .placeNestIcon
+	ld a, d
+	cp WILD_ROCK_MAP_MASK
+	ld a, $6f
+	jr z, .placeNestIcon
+	ld a, $7f ; nest icon in this context
+
+
+.placeNestIcon
 	ld [hli], a
 	xor a
 	ld [hli], a
@@ -876,6 +1095,43 @@ _Area: ; 91d11
 	ld b, BANK(FastShipGFX)
 	ret
 ; 91ee4
+
+; Clears landmark list, then populates it with current Nest type from [EnemyMonUnused]
+; Return: carry if no landmark was added
+_PopulateLandmarks:
+
+	;Clear landmark list
+	hlcoord 0, 0
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	xor a
+	call ByteFill
+
+	ld a, [EnemyMonUnused]
+	and a
+	jr nz, .VineRock
+
+	;Search Orange islands wild nests
+	ld a, [EnemyMonUnused] ;backup the contents as FindNest uses this ram address as temp variable
+	push af
+	ld a, [wd003] ;Map to search, in Orange this is always 0 since there's only one map
+	ld e, a
+	farcall FindNest ; load nest landmarks into TileMap[0,0]
+	pop af
+	ld [EnemyMonUnused], a ;restore
+	jr .done
+.VineRock
+	ld a, [EnemyMonUnused]
+	cp 1
+	jr nz, .isRod
+	farcall FindTreeRockNest ; append Tree Headbutt and Rock Smash landmarks
+	jr .done
+.isRod
+	farcall FindFishNest
+
+.done
+	ld a, [TileMap]
+	cp 1
+	ret
 
 TownMapBGUpdate: ; 91ee4
 ; Update BG Map tiles and attributes
@@ -1090,3 +1346,21 @@ INCBIN "gfx/town_map/kanto.bin"
 
 DexMapNestIconGFX: ; 922d1
 INCBIN "gfx/town_map/dexmap_nest_icon.2bpp"
+
+DexMapNestDiveIconGFX:
+INCBIN "gfx/town_map/dexmap_nest_dive_icon.2bpp"
+
+DexMapNestSurfIconGFX:
+INCBIN "gfx/town_map/dexmap_nest_surf_icon.2bpp"
+
+DexMapNestFishIconGFX:
+INCBIN "gfx/town_map/dexmap_nest_fish_icon.2bpp"
+
+DexMapNestVineIconGFX:
+INCBIN "gfx/town_map/dexmap_nest_vine_icon.2bpp"
+
+DexMapNestRockIconGFX:
+INCBIN "gfx/town_map/dexmap_nest_rock_icon.2bpp"
+
+DexMapNestLabelsGFX:
+INCBIN "gfx/town_map/dexmap_nest_labels.2bpp"

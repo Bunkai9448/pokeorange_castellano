@@ -91,6 +91,14 @@ GetMenuMonIconPalette::
 	and PINK_MASK
 	ld a, PAL_OW_RED
 	ret nz
+; check for a species with forms, get the palettes if that is the case
+	ld a, [hl]
+	and FORM_MASK
+	cp 2
+	jr c, .skipForm ; if form is < 2 (0 or 1) proceed normally
+	call IsSpeciesWithForms
+	jr c, GetMenuMonIconPalette_PredeterminedShininess.altForm
+.skipForm
 ; check shininess at hl
 	ld a, [hl]
 	and SHINY_MASK
@@ -115,6 +123,59 @@ GetMenuMonIconPalette_PredeterminedShininess:
 .shiny
 	and $f
 	ld l, a
+	ret
+
+.altForm
+	ld b, a
+	ld a, [hl]
+	and SHINY_MASK
+	ld a, b
+	jr nz, .shiny_form
+	swap a
+.shiny_form
+	and $f
+	ld l, a
+	ret
+
+; Checks MenuMonIconColors_Forms for the current species.
+; If not present returns no carry if not found and zero in a.
+; If present returns carry and the palettes for the form in a.
+IsSpeciesWithForms:
+	ld a, [CurPartySpecies]
+	;first we do a check for dusk form Lycanroc, the only mon with 3 forms with 3 different palettes.
+	cp LYCANROC
+	jr nz, .noDuskLycanroc
+	ld a, [hl]
+	and FORM_MASK
+	cp LYCANROC_DUSK_FORM
+	jr nz, .noDuskLycanroc
+	ld a, [MenuMonIconColors_DuskLycanrocPalette+0]
+	scf
+	ret
+	
+.noDuskLycanroc
+	push hl
+	ld hl, MenuMonIconColors_Forms
+	ld a, [CurPartySpecies]
+	ld b, a
+.loop
+	ld a, [hli]
+	cp b
+	jr z, .found
+	cp -1
+	jr z, .notFound
+	inc hl
+	jr .loop
+	
+.found
+	ld a, [hl] ;read palette
+	pop hl
+	scf
+	ret
+
+.notFound
+	pop hl
+	xor a
 	ret
 
 LoadPartyMenuMonIcon:

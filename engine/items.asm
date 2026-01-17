@@ -485,6 +485,15 @@ CheckSelectableItem: ; d432
 	and a
 	ret
 
+_CheckNoPCDepositItem:: ; d427
+; Return 1 in wItemAttributeParamBuffer and carry if wCurItem can't be stored in the PC.
+	ld a, ITEMATTR_PERMISSIONS
+	call GetItemAttr
+	bit 5, a
+	jr nz, ItemAttr_ReturnCarry
+	and a
+	ret
+
 CheckItemPocket:: ; d43d
 ; Return the pocket for wCurItem in wItemAttributeParamBuffer.
 	ld a, ITEMATTR_POCKET

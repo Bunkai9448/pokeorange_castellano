@@ -77,6 +77,7 @@ Route69NurseScript:
 	writetext Route69NurseHealedText
 	waitbutton
 	closetext
+	spriteface ROUTE_69_NURSE, DOWN
 	end
 
 Route69NurseText:

@@ -73,7 +73,7 @@ ChangeHappiness: ; 71c2
 	ld d, 0
 	add hl, de
 	ld a, [hl]
-	cp 100
+	cp 128
 	pop de
 
 	ld a, [de]
@@ -103,6 +103,7 @@ ChangeHappiness: ; 71c2
 	ret
 
 .Actions:
+; change if happiness < 100, change if happiness < 200, change otherwise
 	db  +5,  +3,  +2 ; Gained a level
 	db  +5,  +3,  +2 ; Vitamin
 	db  +1,  +1,  +0 ; X Item
@@ -116,11 +117,13 @@ ChangeHappiness: ; 71c2
 	db  +5,  +5,  +2 ; Haircut (Y3)
 	db  +1,  +1,  +1 ; Haircut (O1)
 	db  +3,  +3,  +1 ; Haircut (O2)
-	db +10, +10,  +4 ; Haircut (O3)
+;	db +10, +10,  +4 ; Haircut (O3)
+	db +30, +30,  +30 ; Normal Massage
 	db  -5,  -5, -10 ; Used Heal Powder or Energypowder (bitter)
 	db -10, -10, -15 ; Used Energy Root (bitter)
 	db -15, -15, -20 ; Used Revival Herb (bitter)
-	db  +3,  +3,  +1 ; Grooming
+;	db  +3,  +3,  +1 ; Grooming
+	db  +120,  +120,  +120 ; Deluxe Massage
 	db +10,  +6,  +4 ; Gained a level in the place where it was caught
 
 StepHappiness:: ; 725a

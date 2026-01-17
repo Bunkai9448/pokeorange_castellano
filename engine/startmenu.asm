@@ -1266,6 +1266,7 @@ ChooseMoveToDelete: ; 12f5b
 	push af
 	set NO_TEXT_SCROLL, [hl]
 	call LoadFontsBattleExtra
+	farcall InitPartyMenuPalettes
 	call .ChooseMoveToDelete
 	pop bc
 	ld a, b

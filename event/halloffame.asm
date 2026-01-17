@@ -175,6 +175,7 @@ GetHallOfFameParty: ; 8653f
 	ld a, [hl]
 	ld [de], a
 	inc de
+	ld [CurPartySpecies], a ; we need this properly set for GetVariant function
 
 	ld hl, MON_ID
 	add hl, bc
@@ -185,12 +186,30 @@ GetHallOfFameParty: ; 8653f
 	ld [de], a
 	inc de
 
-	ld hl, MON_DVS
+;	ld hl, MON_DVS
+;	add hl, bc
+;	ld a, [hli]
+;	ld [de], a
+;	inc de
+;	ld a, [hl]
+;	ld [de], a
+;	inc de
+
+; Store PV and MonVariant instead of DVs to show correct form and color at the HoF entries
+	ld hl, MON_GENDER
 	add hl, bc
-	ld a, [hli]
+	ld a, [hl]
 	ld [de], a
 	inc de
-	ld a, [hl]
+
+	ld hl, MON_DVS
+	add hl, bc
+	push bc
+	push de
+	predef GetVariant
+	pop de
+	pop bc
+	ld a, [MonVariant]
 	ld [de], a
 	inc de
 
@@ -239,24 +258,12 @@ AnimateHOFMonEntrance: ; 865b5
 	ld a, [CurPartySpecies]
 	ld [BattleMonSpecies], a ;GetBackpic later relies on BattleMonSpecies
 	
-	;load form byte to get correct basestats and picture pointers
-	push bc
-	push hl
-	ld bc, PartyMon2Gender - PartyMon1Gender
-	ld a, [wCurPartyMon]
-	ld hl, PartyMon1Gender
-	call AddNTimes ;hl should now point to current mon's personality byte
-	ld a, [hl]
+	;load form byte and monvariant form stored HoF entry
+	ld a, [hli]
 	ld [TempMonForm], a
-	pop hl
-	pop bc
+	ld a, [hl]
+	ld [MonVariant], a
 
-	ld a, [hli]
-	ld [TempMonDVs], a
-	ld a, [hli]
-	ld [TempMonDVs + 1], a
-	ld hl, TempMonDVs
-	predef GetVariant
 	hlcoord 0, 0
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
 	ld a, " "
@@ -466,9 +473,9 @@ DisplayHOFMon: ; 86748
 	ld a, [hli]
 	ld [TempMonID + 1], a
 	ld a, [hli]
-	ld [TempMonDVs], a
+	ld [TempMonDVs], a ; this is now stored PV
 	ld a, [hli]
-	ld [TempMonDVs + 1], a
+	ld [TempMonDVs + 1], a ; this is now stored MonVariant
 	ld a, [hli]
 	ld [TempMonLevel], a
 	ld de, StringBuffer2
@@ -489,8 +496,15 @@ DisplayHOFMon: ; 86748
 	ld a, [TempMonSpecies]
 	ld [CurPartySpecies], a
 	ld [wd265], a
+
 	ld hl, TempMonDVs
-	predef GetVariant
+	ld a, [hli]
+	ld [TempMonForm], a
+	ld a, [hl]
+	call _OldHOFVariantCompatibility ; Code so old savegames don't break the game when loading the entries (previously DVs were stored)
+	ld [MonVariant], a
+;	predef GetVariant
+
 	xor a
 	ld [wBoxAlignment], a
 	hlcoord 6, 5
@@ -627,3 +641,43 @@ HOF_AnimatePlayerPic: ; 86810
 	db "PLAY TIME@"
 ; 868f7
 
+; Compatibility function for old savegames, as old HoF entries will have DVs stored and loading those as monvariant can lead to crashes.
+; a is loaded MonVariant
+; return a = 1 if an incorrect MonVariant was loaded
+_OldHOFVariantCompatibility:
+	and a
+	jr z, .returnDefault ; MonVariant shouldn't be 0x00
+	ld b, a
+	ld a, [TempMonSpecies]
+	cp SQUIRTLE
+	jr z, .FixSquirtle
+	cp WARTORTLE
+	jr z, .FixSquirtle
+	cp BLASTOISE
+	jr z, .FixSquirtle
+	cp SPINDA
+	jr z, .FixSpinda
+	cp MAGIKARP
+	jr z, .FixMagikarp
+	; Other species don't use MonVariant, so just load a default value
+.returnDefault
+	ld a, 1
+	ret
+
+.FixSquirtle
+	ld a, b
+	cp SQUIRTLE_GLASSES_FORM + 1
+	jr nc, .returnDefault ; 0, 1 or 2
+	ret
+
+.FixSpinda
+	ld a, b
+	cp NUM_SPINDA + 1
+	jr nc, .returnDefault
+	ret
+
+.FixMagikarp
+	ld a, b
+	cp NUM_MAGIKARP + 1
+	jr nc, .returnDefault
+	ret

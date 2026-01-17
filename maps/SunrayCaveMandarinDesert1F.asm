@@ -2,6 +2,7 @@ const_value = 1
 	const KECLEON_MANDARIN_DESERT_CAVE
 	const SUNRAY_CROSS
 	const MARSHADOW_MANDARIN_DESERT_CAVE
+	const KECLEON_MANDARIN_DESERT_CAVE_VISIBLESPRITE
 
 SunrayCaveMandarinDesert1F_MapScriptHeader::
 
@@ -11,16 +12,17 @@ SunrayCaveMandarinDesert1F_MapScriptHeader::
 	dbw MAPCALLBACK_OBJECTS, SunrayHideCrossCallback
 
 SunrayHideCrossCallback:
+	disappear KECLEON_MANDARIN_DESERT_CAVE_VISIBLESPRITE
 	disappear SUNRAY_CROSS
 	appear MARSHADOW_MANDARIN_DESERT_CAVE
 	
-	checkevent EVENT_CROSS_CORRUPTED_SUNRAY ;If this cave's event is done, hide Marshadow, unless already fought Cross at route 51
+	checkevent EVENT_MARSHADOW_HOOH_EVENT_STARTED ;If this cave's event is done, hide Marshadow, unless already fought Cross at route 51
 	iftrue .checkRoute51Cross
 	return ;if the event isn't done, we are done
 	
 .checkRoute51Cross:
-	checkevent EVENT_CROSS_CORRUPTED_FOUGHT ;if we haven't beat Cross at route 51, hide Marshadow
-	iffalse .hideMarshadow
+	checkevent EVENT_CROSS_AT_ROUTE51 ;if we haven't beat Cross at route 51, hide Marshadow
+	iftrue .hideMarshadow
 
 	checkevent EVENT_SUNRAY_CAVE_1F_MARSHADOW_FOUGHT ;if we already battled him, hide Marshadow
 	iftrue .hideMarshadow
@@ -40,10 +42,12 @@ InvisibleForceScript:
 	end
 	
 .KecleonBattle:
+	setevent EVENT_GOT_RAINBOW_WING ;only place where we can ensure old saves can get this flag set
 	writetext RainbowWingReactsText
 	waitbutton
-	variablesprite SPRITE_INVISIBLE, SPRITE_ROCKET_MEOWTH ;todo - SPRITE_KECLEON
-	special MapCallbackSprites_LoadUsedSpritesGFX
+	appear KECLEON_MANDARIN_DESERT_CAVE_VISIBLESPRITE
+	pause 5
+	showemote EMOTE_SHOCK, PLAYER, 10
 	writetext KecleonCryText
 	pause 15
 	cry KECLEON
@@ -52,6 +56,7 @@ InvisibleForceScript:
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	disappear KECLEON_MANDARIN_DESERT_CAVE
+	disappear KECLEON_MANDARIN_DESERT_CAVE_VISIBLESPRITE
 	reloadmapafterbattle
     setevent EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	end
@@ -74,7 +79,7 @@ InvisibleForceText:
 	done
 
 SunrayCaveCrossScript:
-	checkevent EVENT_CROSS_CORRUPTED_SUNRAY
+	checkevent EVENT_MARSHADOW_HOOH_EVENT_STARTED
 	iftrue .corruptedCross
 	playmusic MUSIC_LOOK_GLADION
 	appear SUNRAY_CROSS
@@ -87,14 +92,18 @@ SunrayCaveCrossScript:
 	waitbutton
 	closetext
 	disappear SUNRAY_CROSS
+	setevent EVENT_CROSS_AT_ROUTE51
 	special Special_FadeInQuickly
 	pause 20
-	playmapmusic
-	pause 10
 	takeitem RAINBOW_WING
-	setevent EVENT_CROSS_CORRUPTED_SUNRAY
+	setevent EVENT_MARSHADOW_HOOH_EVENT_STARTED
 	spriteface PLAYER, UP
+	pause 10
+	special Special_FadeOutMusic
+	cry MARSHADOW
+	pause 30
 	disappear MARSHADOW_MANDARIN_DESERT_CAVE
+	playmusic MUSIC_ROUTE_111
 .corruptedCross:
 	end
 
@@ -160,7 +169,9 @@ SunrayCaveMandarinDesert1F_MapEventHeader::
 
 .BGEvents: db 0
 
-.ObjectEvents: db 3
+.ObjectEvents: db 4
 	person_event SPRITE_INVISIBLE, 3, 13, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, InvisibleForceScript, EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	person_event SPRITE_ROCKER,  8, 30, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_SUNRAY_CAVE_1F_CROSS_HS
 	person_event SPRITE_MARSHADOW,  2, 30, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_GRAY, 0, 0, MandarinCaveMarshadowScript, EVENT_SUNRAY_CAVE_1F_MARSHADOW_HS
+	person_event SPRITE_KECLEON, 3, 13, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_GREEN, 0, 0, 0, EVENT_TEMPORARY_1
+

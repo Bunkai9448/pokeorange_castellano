@@ -7,6 +7,10 @@ KumquatHotelGym_MapScriptHeader::
 LuanaScript:
 	faceplayer
 	opentext
+
+	checkevent EVENT_BEAT_ORANGE_LEAGUE
+	iftrue .postLeague
+
 	checkevent EVENT_BEAT_LUANA
 	iftrue .FightDone
 	writetext LuanaText
@@ -36,6 +40,11 @@ LuanaScript:
 	waitbutton
 	closetext
 	end
+
+.postLeague
+	writetext LuanaPostLeagueText
+	waitbutton
+	jump .NoRoomForPsychic
 
 .SpeechAfterTM:
 	writetext LuanaAlreadyGotTMText
@@ -98,6 +107,23 @@ LuanaPsychicExplanationText:
 LuanaAlreadyGotTMText:
 	text "I'll see you"
 	line "around, kiddo!"
+	done
+
+LuanaPostLeagueText:
+	text "Well now!"
+	line "The CHAMPION"
+	cont "visits at last!"
+
+	para "Your journey"
+	line "showed heart."
+
+	para "Never forget this:"
+	line "Your Pokemon are"
+	cont "your family."
+
+	para "I will be cheering"
+	line "for you. See you"
+	cont "around, kiddo!"
 	done
 
 KumquatHotelGym_MapEventHeader::

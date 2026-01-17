@@ -142,7 +142,7 @@ FrontpicPredef: ; 5108b
 	xor a
 	ld [hBGMapMode], a
 	call _GetFrontpic
-	call Function51103
+	call GetAnimatedEnemyFrontpic
 	pop af
 	ld [rSVBK], a
 	ret
@@ -151,6 +151,11 @@ _GetFrontpic: ; 510a5
 	push de
 	call GetBaseData
 	ld a, [BasePicSize]
+
+if DEF(BACKPICTEST)
+	ld a, $66
+endc
+
 	and $f
 	ld b, a
 	push bc
@@ -163,7 +168,7 @@ _GetFrontpic: ; 510a5
 	pop bc
 	ld hl, wDecompressScratch
 	ld de, wDecompressScratch + $80 tiles
-	call Function512ab
+	call PadFrontpic
 	pop hl
 	push hl
 	ld de, wDecompressScratch
@@ -177,6 +182,7 @@ _GetFrontpic: ; 510a5
 GetFrontpicPointer: ; 510d7
 	ld a, [CurPartySpecies]
 	call GetRelevantPicPointers
+	;TODO Squirtle line isn't handled here, but works nonetheless.
 	ld a, [CurPartySpecies]
 	cp RATTATA
 	jp z, .dual_form
@@ -214,11 +220,13 @@ GetFrontpicPointer: ; 510d7
     jp z, .dual_form
     cp RAICHU
     jp z, .dual_form
-	cp LYCANROC
-	jp z, .dual_form
 	cp MEOWTH
 	jp z, .meowth
 	cp PERSIAN
+	jp z, .dual_form
+	cp LYCANROC
+	jp z, .dual_form
+	cp POLIWRATH
 	jp z, .dual_form
 	jp .skip
 .dual_form
@@ -232,6 +240,8 @@ GetFrontpicPointer: ; 510d7
 	pop bc
 	jr z, .notvariant
 	push bc
+	ld a, [TempMonGender]
+    and FORM_MASK
 	ld b, 3
 	cp b
 	ld a, 3 ;third form
@@ -273,6 +283,12 @@ GetFrontpicPointer: ; 510d7
 	dec a
 	ld bc, 6
 	call AddNTimes
+
+if DEF(BACKPICTEST)
+	ld bc, 3
+	add hl, bc
+endc
+
 	ld a, d
 	call GetFarByte
 	push af
@@ -282,7 +298,7 @@ GetFrontpicPointer: ; 510d7
 	pop bc
 	ret
 
-Function51103: ; 51103
+GetAnimatedEnemyFrontpic: ; 51103
 	ld a, $1
 	ld [rVBK], a
 	push hl
@@ -314,7 +330,7 @@ Function51103: ; 51103
 
 	push hl
 	push bc
-	call Function5114f
+	call LoadFrontpicTiles
 	pop bc
 	pop hl
 	ld de, wDecompressScratch
@@ -325,7 +341,7 @@ Function51103: ; 51103
 	ld [rVBK], a
 	ret
 
-Function5114f: ; 5114f
+LoadFrontpicTiles: ; 5114f
 	ld hl, wDecompressScratch
 	swap c
 	ld a, c
@@ -406,16 +422,22 @@ GetBackpic: ; 5116c
 	jp z, .dual_form
 	cp LYCANROC
 	jp z, .dual_form
+	cp POLIWRATH
+	jp z, .dual_form
 	cp SQUIRTLE
-	jp z, .squirtle_form
+	jp z, .squirtle_magikarp_spinda_form
 	cp WARTORTLE
-	jp z, .squirtle_form
+	jp z, .squirtle_magikarp_spinda_form
 	cp BLASTOISE
-	jp z, .squirtle_form
+	jp z, .squirtle_magikarp_spinda_form
+	cp MAGIKARP
+	jp z, .squirtle_magikarp_spinda_form
+	cp SPINDA
+	jp z, .squirtle_magikarp_spinda_form
 	
 	jp .skip
 	
-.squirtle_form
+.squirtle_magikarp_spinda_form
 	ld a, c ;restore MonVariant previously stored in c
 	jr .notvariant
 
@@ -430,6 +452,8 @@ GetBackpic: ; 5116c
 	pop bc
 	jr z, .notvariant
 	push bc
+	ld a, [BattleMonGender]
+    and FORM_MASK
 	ld b, 3
 	cp b
 	ld a, 3 ;third form
@@ -567,7 +591,7 @@ FixBackpicAlignment: ; 5127c
 	pop de
 	ret
 
-Function512ab: ; 512ab
+PadFrontpic: ; 512ab
 	ld a, b
 	cp 6
 	jr z, .six

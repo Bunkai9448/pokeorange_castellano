@@ -192,15 +192,17 @@ RunTradeAnimScript: ; 28fa1
 	ld de, VTiles0
 	call TradeAnim_GetFrontpic
 	
-	ld a, [wOTTrademonSpecies]
-	;hard code meowth form as it is the only trade with another form
-	cp a, MEOWTH
-	jr nz, .skipmeowth
-	push af
-	ld a, 2
+	
+	;Load traded mon PV to TempMonGender
+	ld hl, PartyMon1Gender
+	ld bc, PARTYMON_STRUCT_LENGTH
+	ld a, [PartyCount]
+	dec a
+	call AddNTimes
+	ld a, [hl]
 	ld [TempMonGender], a
-	pop af
-.skipmeowth
+	
+	ld a, [wOTTrademonSpecies]
 	ld hl, wOTTrademonDVs
 	ld de, VTiles0 tile $31
 	call TradeAnim_GetFrontpic
@@ -829,17 +831,14 @@ TradeAnim_ShowGivemonData: ; 2942e
 
 TradeAnim_ShowGetmonData: ; 29461
 
-	push af
-	xor a
-	ld [TempMonGender], a ;default form
-	ld a, [wOTTrademonSpecies]
-	;meowth exception for alolan meowth trade
-	cp a, MEOWTH
-	jr nz, .skipmeowth
-	ld a, 2
-	ld [TempMonGender], a
-.skipmeowth
-	pop af
+	;load PV from the traded mon, it should be the last one in the party
+	ld hl, PartyMon1Gender
+	ld bc, PARTYMON_STRUCT_LENGTH
+	ld a, [PartyCount]
+	dec a
+	call AddNTimes
+	ld a, [hl]
+	ld [TempMonForm], a
 
 	call ShowOTTrademonStats
 	ld a, [wOTTrademonSpecies]
@@ -892,17 +891,6 @@ TradeAnim_ShowGivemonFrontpic: ; 294bb
 	jr TradeAnim_ShowFrontpic
 
 TradeAnim_ShowGetmonFrontpic: ; 294c0
-	push af
-	xor a
-	ld [TempMonGender], a ;default form
-	ld a, [wOTTrademonSpecies]
-	;meowth exception for alolan meowth trade
-	cp a, MEOWTH
-	jr nz, .skipmeowth
-	ld a, 2
-	ld [TempMonGender], a
-.skipmeowth
-	pop af
 	ld de, VTiles0 tile $31
 
 TradeAnim_ShowFrontpic: ; 294c3
