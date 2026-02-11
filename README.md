@@ -4,7 +4,7 @@
 
 - Autor original de la versión fuente (en inglés): Pia Carrot  
 - Dev: Bunkai  
-- Traductores: [CalentadasTCG](https://x.com/CalentadasTCG), [Alxira5](https://x.com/Alxira5), [MagnoTV](https://x.com/SuperCard_ESP).  
+- Traductores: [CalentadasTCG](https://www.youtube.com/@CalentadasTCG), [Alxira5](https://x.com/Alxira5), [MagnoTV](https://x.com/SuperCard_ESP).  
 
 ### Cambios realizados al código base  
 
