@@ -91,13 +91,13 @@
 	charmap "′",        $ba
 	charmap "″",        $bb
 
-	charmap "'d",       $c0
-	charmap "'l",       $c1
-	charmap "'m",       $c2
-	charmap "'r",       $c3
-	charmap "'s",       $c4
-	charmap "'t",       $c5
-	charmap "'v",       $c6
+	charmap "á",       $c0
+	charmap "í",       $c1
+	charmap "ó",       $c2
+	charmap "ú",       $c3
+	charmap "¿",       $c4
+	charmap "¡",       $c5
+	charmap "ñ",       $c6
 
 	charmap "<UPDN>",   $c7
 	charmap "<PO>",     $c8

@@ -3852,13 +3852,13 @@ ChrisNameMenuHeader: ; 882b5
 .MaleNames: ; 882be
 	db $91 ; flags
 	db 5 ; items
-	db "NEW NAME@"
+	db "NUEVO@"
 	db "INDIGO@"
 	db "ORANGE@"
 	db "JAMES@"
-	db "NINTEN@"
-	db 2 ; displacement
-	db " NAME @" ; title
+	db "BUNKAI@"
+	db 1 ; displacement
+	db " NOMBRE @" ; title
 
 KrisNameMenuHeader: ; 882e5
 	db $40 ; flags
@@ -3871,13 +3871,13 @@ KrisNameMenuHeader: ; 882e5
 .FemaleNames: ; 882ee
 	db $91 ; flags
 	db 5 ; items
-	db "NEW NAME@"
+	db "NUEVO@"
 	db "ORANGE@"
 	db "INDIGO@"
 	db "PIA@"
 	db "SONY@"
-	db 2 ; displacement
-	db " NAME @" ; title
+	db 1 ; displacement
+	db " NOMBRE @" ; title
 
 GetPlayerIcon: ; 8832c
 ; Get the player icon corresponding to gender
