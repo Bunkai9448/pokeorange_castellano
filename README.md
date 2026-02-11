@@ -18,7 +18,7 @@
 Pendiente de añadir
 
 
-## Original Reaadme from Pokémon Orange (english version)
+## Original Readme from Pokémon Orange (english version)
 
 This is a ROM hack of Pokémon Crystal.
 
