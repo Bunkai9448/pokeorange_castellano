@@ -28,8 +28,8 @@ InitGender: ; 48dcb (12:4dcb)
 
 .MenuDataHeader: ; 0x48dfc
 	db $40 ; flags
-	db 04, 06 ; start coords
-	db 09, 12 ; end coords
+	db 03, 06 ; start coords
+	db 09, 14 ; end coords
 	dw .MenuData2
 	db 1 ; default option
 ; 0x48e04
@@ -37,8 +37,8 @@ InitGender: ; 48dcb (12:4dcb)
 .MenuData2: ; 0x48e04
 	db $a1 ; flags
 	db 2 ; items
-	db "Boy@"
-	db "Girl@"
+	db "Chico@"
+	db "Chica@"
 ; 0x48e0f
 
 TextJump_AreYouABoyOrAreYouAGirl: ; 0x48e0f

@@ -239,8 +239,8 @@ ContestResults_PartyFullText:
 	text "Your party's full,"
 	line "so the #MON was"
 
-	para "sent to your BOX"
-	line "in BILL's PC."
+	para "fue enviado al PC"
+	line "de BILL."
 	done
 
 GymStatue_CityGymText:

@@ -26,17 +26,17 @@ PrintDayOfWeek: ; 5b05
 ; 5b1c
 
 .Days: ; 5b1c
-	db "SUN@"
-	db "MON@"
-	db "TUES@"
-	db "WEDNES@"
-	db "THURS@"
-	db "FRI@"
-	db "SATUR@"
+	db "DOM @"
+	db "LUN @"
+	db "MAR @"
+	db "MIE @"
+	db "JUE @"
+	db "VIE @"
+	db "SAB @"
 ; 5b40
 
 .Day: ; 5b40
-	db "DAY@"
+	db " HORA@"
 ; 5b44
 
 NewGame_ClearTileMapEtc: ; 5b44
@@ -169,7 +169,7 @@ _ResetWRAM: ; 5bae
 ;	ld [Shells], a
 ;	ld [Shells + 1], a
 
-START_MONEY EQU 3000
+START_MONEY EQU 999999
 
 IF START_MONEY / $10000
 	ld a, START_MONEY / $10000
@@ -181,27 +181,6 @@ ENDC
 	ld [Money + 2], a
 
 	farcall DeletePartyMonMail
-
-	;Shiny Charm Cheatcode
-	ld hl, hJoypadDown
-	ld a, [hl]
-	and SELECT
-	jr z, .skipShinycharm
-	ld hl, PCItems
-	ld a, 1
-	ld [hli], a
-	ld a, SHINY_CHARM
-	ld [hli], a
-	ld a, 1
-	ld [hli], a
-	ld a, -1
-	ld [hl], a
-	;Set the Flag to prevent getting multiple charms
-	ld hl, EventFlags
-	ld b, SET_FLAG
-	ld c, EVENT_GOT_SHINY_CHARM
-	predef FlagPredef 
-.skipShinycharm
 
 	jp ResetGameTime
 ; 5ca1
@@ -457,10 +436,10 @@ Continue_LoadMenuHeader: ; 5ebf
 .MenuData2_Dex: ; 5ee1
 	db $00 ; flags
 	db 4 ; items
-	db "PLAYER@"
-	db "BADGES@"
+	db "ENT/@"
+	db "MEDALLAS@"
 	db "#DEX@"
-	db "TIME@"
+	db "TIEMPO J.@"
 ; 5efb
 
 .MenuDataHeader_NoDex: ; 5efb
@@ -474,10 +453,10 @@ Continue_LoadMenuHeader: ; 5ebf
 .MenuData2_NoDex: ; 5f03
 	db $00 ; flags
 	db 4 ; items
-	db "PLAYER <PLAYER>@"
-	db "BADGES@"
+	db "ENT/@"
+	db "MEDALLAS@"
 	db " @"
-	db "TIME@"
+	db "TIEMPO J.@"
 ; 5f1c
 
 

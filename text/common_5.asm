@@ -1,30 +1,31 @@
 UnknownText_0x1c505e::
-	text "Start!"
+	text "¡Adelante!"
 	done
 
 UnknownText_0x1c5066::
-	text "Not enough"
-	line "coins."
+	text "No tienes"
+	line "suficientes fichas"
 	prompt
 
 UnknownText_0x1c5079::
-	text "Darn<...> Ran out of"
-	line "coins<...>"
+	text "Vaya<...> Me quede"
+	line "sin fichas<...>"
 	done
 
 UnknownText_0x1c5092::
-	text "Play again?"
+	text "¿Vuelves a"
+	line "jugar?"
 	done
 
 UnknownText_0x1c509f::
-	text "lined up!"
-	line "Won @"
+	text "¡Linea!"
+	line "¡Has ganado @"
 	text_from_ram StringBuffer2
-	text " coins!"
+	text " fichas!"
 	done
 
 UnknownText_0x1c50bb::
-	text "Darn!"
+	text "¡Fallaste!"
 	done
 
 UnknownText_0x1c55db::
@@ -33,31 +34,32 @@ UnknownText_0x1c55db::
 	prompt
 
 UnknownText_0x1c561c::
-	text "Reset the clock?"
+	text "¿Reiniciar el reloj?"
 	done
 
 UnknownText_0x1c564a::
-	text "Clear all save"
-	line "data?"
+	text "¿Borrar los"
+	line "datos guardados?"
 	done
 
 UnknownText_0x1c5660::
 	text_from_ram wMonOrItemNameBuffer
-	text " learned"
-	line "@"
+	text ""
+	line "ha aprendido"
+	cont "@"
 	text_from_ram StringBuffer2
-	text "!@"
+	text ".@"
 	sound_dex_fanfare_50_79
 	text_waitbutton
 	db "@@"
 
 UnknownText_0x1c5678::
-	text "Which move should"
-	next "be forgotten?"
+	text "¿Qué movimiento"
+	next "debería olvidar?"
 	done
 
 UnknownText_0x1c5699::
-	text "Stop learning"
+	text "¿Deja de aprender"
 	line "@"
 	text_from_ram StringBuffer2
 	text "?"
@@ -66,7 +68,7 @@ UnknownText_0x1c5699::
 UnknownText_0x1c56af::
 	text_from_ram wMonOrItemNameBuffer
 	text ""
-	line "did not learn"
+	line "no aprendió"
 	cont "@"
 	text_from_ram StringBuffer2
 	text "."
@@ -74,109 +76,118 @@ UnknownText_0x1c56af::
 
 UnknownText_0x1c56c9::
 	text_from_ram wMonOrItemNameBuffer
-	text " is"
-	line "trying to learn"
+	text ""
+	line "intenta aprender"
 	cont "@"
 	text_from_ram StringBuffer2
 	text "."
 
-	para "But @"
+	para "Pero"
+	line "@"
 	text_from_ram wMonOrItemNameBuffer
 	text ""
-	line "can't learn more"
-	cont "than four moves."
 
-	para "Delete an older"
-	line "move to make room"
-	cont "for @"
+	para "no puede aprender"
+	line "más de cuatro"
+	cont "movimientos."
+
+	para "¿Borras movimiento"
+	line "anterior para"
+
+	para "dejar sitio a"
+	line "@"
 	text_from_ram StringBuffer2
 	text "?"
 	done
 
 UnknownText_0x1c5740::
-	text "1, 2 and<...>@"
+	text "1, 2 y<...>@"
 	interpret_data
 	db "@@"
 
 UnknownText_0x1c574e::
-	text " Poof!@"
+	text " ¡Puf!@"
 	interpret_data
 	text ""
 	para "@"
 	text_from_ram wMonOrItemNameBuffer
-	text " forgot"
-	line "@"
+	text ""
+	line "olvidó"
+	cont "@"
 	text_from_ram StringBuffer1
 	text "."
 
-	para "And<...>"
+	para "Y…"
 	prompt
 
 UnknownText_0x1c5772::
-	text "HM moves can't be"
-	line "forgotten now."
+	text "Los movimientos MO"
+	line "no se pueden"
+	cont "olvidar ahora."
 	prompt
 
 UnknownText_0x1c5793::
-	text "Play with three"
-	line "coins?"
+	text "¿Quieres apostar"
+	line "tres?"
 	done
 
 UnknownText_0x1c57ab::
-	text "Not enough coins<...>"
+	text "Faltan fichas."
 	prompt
 
 UnknownText_0x1c57be::
-	text "Choose a card."
+	text "Elige una carta."
 	done
 
+
 UnknownText_0x1c57ce::
-	text "Place your bet."
+	text "Haz tu apuesta."
 	done
 
 UnknownText_0x1c57df::
-	text "Want to play"
-	line "again?"
+	text "¿Vuelves a"
+	line "jugar?"
 	done
 
 UnknownText_0x1c57f4::
-	text "The cards have"
-	line "been shuffled."
+	text "Has barajado el"
+	line "mazo."
 	prompt
-
+	
 UnknownText_0x1c5813::
-	text "Yeah!"
+	text "¡Si!"
 	done
 
 UnknownText_0x1c581a::
-	text "Darn<...>"
+	text "¡Fallaste…!<...>"
 	done
 
 UnknownText_0x1c5aa6::
-	text "Oh no! The #MON"
-	line "broke free!"
+	text "¡No! ¡El #MON"
+	line "se ha escapado!"
 	prompt
 
 UnknownText_0x1c5ac3::
-	text "Aww! It appeared"
-	line "to be caught!"
+	text "¡Parecía que lo"
+	line "habías atrapado!"
 	prompt
 
 UnknownText_0x1c5ae3::
-	text "Aargh!"
-	line "Almost had it!"
+	text "¡Vaya!"
+	line "¡Te faltó poco!"
 	prompt
 
 UnknownText_0x1c5afa::
-	text "Shoot! It was so"
-	line "close too!"
+	text "¡Caray! ¡Casi"
+	line "lo consigues!"
 	prompt
 
 UnknownText_0x1c5b17::
-	text "Gotcha! @"
+	text "¡Ya está!"
+	line "¡@"
 	text_from_ram EnemyMonNick
 	text ""
-	line "was caught!@"
+	cont "atrapado!@"
 	sound_caught_mon
 	db "@@"
 
@@ -186,148 +197,152 @@ Text_Waitbutton_2::
 
 UnknownText_0x1c5b38::
 	text_from_ram wMonOrItemNameBuffer
-	text " was"
-	line "sent to BILL's PC."
+	text "fue enviado"
+	line "al PC de BILL."
 	prompt
 
 UnknownText_0x1c5b53::
 	text_from_ram EnemyMonNick
 	text "'s data"
-	line "was newly added to"
-	cont "the #DEX.@"
+	line "fueron añadidos a"
+	cont "la #DEX.@"
 	sound_slot_machine_start
 	text_waitbutton
 	db "@@"
 
 UnknownText_0x1c5b7f::
-	text "Give a nickname to"
-	line "@"
+	text "¿Quieres darle"
+	line "un mote a"
+	cont "@"
 	text_from_ram StringBuffer1
 	text "?"
 	done
 
 UnknownText_0x1c5b9a::
-	text_from_ram StringBuffer1
-	text "'s"
-	line "@"
 	text_from_ram StringBuffer2
-	text " rose."
+	text " de"
+	line "@"
+	text_from_ram StringBuffer1
+	text " creció."
 	prompt
 
 UnknownText_0x1c5bac::
-	text "That can't be used"
-	line "on this #MON."
+	text "Eso no se puede"
+	line "usar con este"
+	cont "#MON."
 	prompt
 
 Text_RepelUsedEarlierIsStillInEffect::
-	text "The REPEL used"
-	line "earlier is still"
-	cont "in effect."
+	text "Todavía funciona"
+	line "el REPELENTE que"
+	cont "usaste antes."
 	prompt
 
 UnknownText_0x1c5bf9::
-	text "Played the #"
-	line "FLUTE."
+	text "Escuchaste la"
+	line "# FLAUTA."
 
-	para "Now, that's a"
-	line "catchy tune!"
+	para "¡Es una canción"
+	line "muy pegadiza!"
 	prompt
+
 
 UnknownText_0x1c5c28::
-	text "All sleeping"
-	line "#MON woke up."
+	text "Se han despertado"
+	line "todos los #MON."
 	prompt
-
+	
 UnknownText_0x1c5c44::
-	text "<PLAYER> played the"
+	text "<PLAYER> toca la"
 	line "# FLUTE.@"
 	text_waitbutton
 	db "@@"
 
 UnknownText_0x1c5c7b::
-	text "Coins:"
+	text "Fichas:"
 	line "@"
 	deciram Coins, 2, 4
 	db "@@"
 
 Text_TurnOffExpAll::
-	text "The EXP.ALL was"
-	line "turned off."
+	text "¡El rep.exp fue"
+	line "desactivado!"
 	done
 
 Text_TurnOnExpAll::
-	text "The EXP.ALL was"
-	line "turned on!"
+	text "¡El rep.exp fue"
+	line "activado!"
 
-	para "The whole party"
-	line "will gain EXP."
+	para "Todo el equipo"
+	line "ganara EXP."
 	done
 
 Text_RaiseThePPOfWhichMove::
-	text "Raise the PP of"
-	line "which move?"
+	text "¿Incrementar el PP"
+	line "del movimiento?"
 	done
 
 Text_RestoreThePPOfWhichMove::
-	text "Restore the PP of"
-	line "which move?"
+	text "¿Restaurar PP"
+	line "del movimiento?"
 	done
 
 Text_PPIsMaxedOut::
 	text_from_ram StringBuffer2
-	text "'s PP"
-	line "is maxed out."
+	text "los PP"
+	line "estan agotados."
 	prompt
 
 Text_PPsIncreased::
 	text_from_ram StringBuffer2
-	text "'s PP"
-	line "increased."
+	text "los PP"
+	line "aumentaron"
 	prompt
 	
 Text_PPsMaximized::
 	text_from_ram StringBuffer2
-	text "'s PP"
-	line "maximized."
+	text "Los PP fueron"
+	line "maximizados."
 	prompt
 
 UnknownText_0x1c5cf1::
-	text "PP was restored."
+	text "Los PP fueron"
+	line "restaurados."
 	prompt
 
 UnknownText_0x1c5d3e::
-	text "It looks bitter<...>"
+	text "Parece amargo<...>"
 	prompt
 
 UnknownText_0x1c5d50::
-	text "That can't be used"
-	line "on an EGG."
+	text "No puede ser "
+	line "usado en un huevo."
 	prompt
 
 UnknownText_0x1c5d6e::
 	text "OAK: <PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	line "¡No es el momento"
+	cont "de usar eso!"
 	prompt
 
 UnknownText_0x1c5db6::
-	text "It won't have any"
-	line "effect."
+	text "Eso no tendra"
+	line "ningun efecto."
 	prompt
 
 UnknownText_0x1c5dd0::
-	text "The trainer"
-	line "blocked the BALL!"
+	text "¡El entrenador"
+	line "bloqueo BALL!"
 	prompt
 
 UnknownText_0x1c5def::
-	text "Don't be a thief!"
+	text "¡No seas ladrón!"
 	prompt
 
 UnknownText_0x1c5e3a::
-	text "The #MON BOX"
-	line "is full. That"
-	cont "can't be used now."
+	text "La #MON caja"
+	line "esta llena.No"
+	cont "puede ser usada."
 	prompt
 
 UnknownText_0x1c5e68::
@@ -339,139 +354,143 @@ UnknownText_0x1c5e68::
 
 UnknownText_0x1c5ea8::
 	text_from_ram StringBuffer1
-	text " knows"
+	text " conoce"
 	line "@"
 	text_from_ram StringBuffer2
 	text "."
 	prompt
 
 UnknownText_0x1c5eba::
-	text "That #MON knows"
-	line "only one move."
+	text "Ese #MON"
+	line "sólo conoce un"
+	cont "movimiento."
 	done
 
 UnknownText_0x1c5eda::
-	text "Oh, make it forget"
+	text "¿Le haces olvidar"
 	line "@"
 	text_from_ram StringBuffer1
 	text "?"
 	done
 
 UnknownText_0x1c5ef5::
-	text "Done! Your #MON"
-	line "forgot the move."
+	text "¡Hecho! Tu #MON"
+	line "olvidó el movi-"
+	cont "miento."
 	done
 
 UnknownText_0x1c5f17::
-	text "An EGG doesn't"
-	line "know any moves!"
+	text "¡Los HUEVOS no"
+	line "saben movimientos!"
 	done
 
 UnknownText_0x1c5f36::
-	text "No? Come visit me"
-	line "again."
+	text "¿No? Vuelve"
+	line "cuando quieras."
 	done
 
 UnknownText_0x1c5f50::
-	text "Which move should"
-	line "it forget, then?"
+	text "¿Qué movimiento"
+	line "debería olvidar?"
 	prompt
 
 UnknownText_0x1c5f74::
-	text "Um<...> Oh, yes, I'm"
-	line "the MOVE DELETER."
+	text "Soy el QUITA-"
+	line "MOVIMIENTOS. Hago"
 
-	para "I can make #MON"
-	line "forget moves."
+	para "olvidar movimien-"
+	line "tos a los #MON."
 
-	para "Shall I make a"
-	line "#MON forget?"
+	para "¿Quieres que"
+	line "olviden algún"
+	cont "movimiento?"
 	done
 
 UnknownText_0x1c5fd1::
-	text "Which #MON?"
+	text "¿Qué #MON?"
 	prompt
 
 Text_DSTIsThatOK::
-	text " DST,"
-	line "is that OK?"
+	text "."
+	line "¿Correcto?"
 	done
 
 UnknownText_0x1c5ff1::
-	text ","
-	line "is that OK?"
+	text "."
+	line "¿Correcto?"
 	done
 	
 MoveReminderIntroText::
-	text "Hi! I'm the"
-	line "MOVE RELEARNER."
+	text "¡Hola!Soy el"
+	line "recuerda mov."
 
-	para "I'll make your"
-	line "#MON relearn"
+	para "Hare a tu"
+	line "#MON recordar"
 
-	para "a move if you'll"
-	line "trade me a"
-	cont "HEART SCALE."
+	para "un movimiento"
+	line "si me traes una"
+	cont "escama corazon."
 	done
 
 MoveReminderPromptText::
-	text "Do you want me to"
-	line "teach one of your"
-	cont "#MON a move?"
+	text "¿Quieres que le"
+	line "enseñe a tu"
+	cont "#MON un mov?"
 	done
 
 MoveReminderWhichMonText::
-	text "Which #MON"
-	line "needs tutoring?"
+	text "¿Que #MON"
+	line "quiere recordar?"
 	done
 
 MoveReminderWhichMoveText::
-	text "Which move should"
-	line "it remember?"
+	text "¿Que mov."
+	line "quiere recordar?"
 	done
 
 MoveReminderNoHeartScaleText::
-	text "Huh? You don't"
-	line "have any HEART"
-	cont "SCALES."
+	text "¿Eh? No tienes"
+	line "una escama"
+	cont "corazon."
 
-	para "Sometimes you can"
-	line "find them outside."
+	para "A veces puedes"
+	line "encontrarlas fuera."
 	done
 
 MoveReminderEggText::
-	text "Huh? That's just"
-	line "an EGG."
+	text "¡Eh! Es un"
+	line "huevo."
 	done
 
 MoveReminderNoMonText::
-	text "Huh? That's not"
-	line "a #MON."
+	text "¿Eh? No es "
+	line "un #MON."
 	done
 
 MoveReminderNoMovesText::
-	text "Sorry, There isn't"
-	line "any move I can"
+	text "Lo siento, no hay"
+	line "ningun mov que"
 
-	para "make that #MON"
-	line "remember."
+	para "tu #MON"
+	line "pueda recordar."
 	done
 
 MoveReminderCancelText::
-	text "If your #MON"
-	line "needs to learn a"
+	text "Si tu #MON"
+	line "necesita aprender"
 
-	para "move, return with"
-	line "a HEART SCALE."
+	para "un ataque vuelve"
+	line "una escama"
+	cont "corazon"
 	done
 
 AlreadyHaveTMText::
-	text "You already have"
-	line "that TM."
+	text "Ya tienes esa"
+	line "MT"
 	done
 	
 ShellBoxText::
-	text "Shells:"
+	text "Conchas:"
 	line "@"
 	deciram Shells, 2, 4
 	db "@@"

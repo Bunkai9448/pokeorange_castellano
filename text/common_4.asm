@@ -1,65 +1,64 @@
 _OakText6::
-	text "Now, what did you"
-	line "say your name was?"
+	text "¿Cómo has dicho"
+	line "que te llamas?"
 	prompt
 
 _OakText7::
-	text "<PLAYER>, are you"
-	line "ready?"
+	text "<PLAYER>,"
+	line "prepárate."
 
-	para "Your very own"
-	line "#MON story is"
-	cont "about to unfold."
+	para "Tu propia historia"
+	line "#MON está a"
+	cont "punto de empezar."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "Te divertirás y"
+	line "te enfrentarás a"
+	cont "duros desafíos."
 
-	para "A world of dreams"
-	line "and adventures"
+	para "¡Te espera un"
+	line "mundo de sueños y"
 
-	para "with #MON"
-	line "awaits! Let's go!"
+	para "aventuras con"
+	line "#MON! ¡Vamos!"
 
-	para "I'll be seeing you"
-	line "later!"
+	para "¡Nos vemos!"
 	done
 
 UnknownText_0x1c40e6::
-	text "The clock's time"
-	line "may be wrong."
+	text "La hora del reloj"
+	line "podría estar mal."
 
-	para "Please reset the"
-	line "time."
+	para "Por favor, vuelve"
+	line "a ponerlo en hora."
 	prompt
 
 UnknownText_0x1c411c::
-	text "Set with the"
-	line "Control Pad."
+	text "Cambia la hora con"
+	line "el Panel Control."
 
-	para "Confirm: A Button"
-	line "Cancel:  B Button"
+	para "Confirmar: Botón A"
+	line "Cancelar:  Botón B"
 	done
 
 UnknownText_0x1c415b::
-	text "Is this OK?"
+	text "¿Estás de acuerdo?"
 	done
 
 UnknownText_0x1c4168::
-	text "The clock has been"
-	line "reset."
+	text "Reloj puesto en"
+	line "hora otra vez."
 	done
 
 UnknownText_0x1c4183::
-	text "Too much time has"
-	line "elapsed. Please"
-	cont "try again."
+	text "Ha pasado mucho"
+	line "tiempo. Por favor,"
+	cont "vuelve a probar."
 	prompt
 
 UnknownText_0x1c41b1::
-	text "If you trade that"
-	line "#MON, you won't"
-	cont "be able to battle."
+	text "Si cambias ese"
+	line "#MON, no"
+	cont "podrás luchar."
 	prompt
 
 UnknownText_0x1c41e6::
@@ -80,47 +79,48 @@ UnknownText_0x1c4212::
 	done
 
 UnknownText_0x1c454b::
-	text "Would you like to"
-	line "save the game?"
+	text "¿Quieres guardar"
+	line "el juego?"
 	done
 
 UnknownText_0x1c456d::
-	text "SAVING<...> DON'T TURN"
-	line "OFF THE POWER."
+	text "GUARDANDO<...> NO"
+	line "APAGAR LA CONSOLA."
 	done
 
 UnknownText_0x1c4590::
-	text "<PLAYER> saved"
-	line "the game."
+	text "<PLAYER> guardó"
+	line "el juego."
 	done
 
 UnknownText_0x1c45a3::
-	text "There is already a"
-	line "save file. Is it"
-	cont "OK to overwrite?"
+	text "Ya existe un"
+	line "archivo guardado."
+	cont "¿Sobrescribirlo?"
 	done
 
 UnknownText_0x1c45d9::
-	text "There is another"
-	line "save file. Is it"
-	cont "OK to overwrite?"
+	text "Hay otro archivo"
+	line "guardado."
+	cont "¿Sobrescribirlo?"
 	done
 
 UnknownText_0x1c460d::
-	text "The save file is"
-	line "corrupted!"
+	text "¡El archivo"
+	line "guardado está"
+	cont "corrupto!"
 	prompt
 
 UnknownText_0x1c462a::
-	text "When you change a"
-	line "#MON BOX, data"
-	cont "will be saved. OK?"
+	text "Antes de mover la"
+	line "CAJA, se guarda"
+	cont "la partida, ¿Vale?"
 	done
 
 UnknownText_0x1c465f::
-	text "Each time you move"
-	line "a #MON, data"
-	cont "will be saved. OK?"
+	text "Antes de mover el"
+	line "#MON, se guarda"
+	cont "la partida, ¿Vale?"
 	done
 
 UnknownText_0x1c46b7::
@@ -128,15 +128,15 @@ UnknownText_0x1c46b7::
 	done
 
 _ObjectEventText::
-	text "Object event"
+	text "Evento de objeto"
 	done
 
 UnknownText_0x1c46fc::
-	text "BG event"
+	text "Evento BG"
 	done
 
 UnknownText_0x1c4706::
-	text "Coordinates event"
+	text "Coordenadas evento"
 	done
 
 UnknownText_0x1c4719::
@@ -164,14 +164,14 @@ UnknownText_0x1c474b::
 	prompt
 
 UnknownText_0x1c4b92::
-	text "Congratulations!"
-	line "Your @"
+	text "¡Enhorabuena!"
+	line "¡Tu @"
 	text_from_ram StringBuffer2
 	db "@@"
 
 UnknownText_0x1c4baf::
 	text ""
-	para "evolved into"
+	para "evoluciono en"
 	line "@"
 	text_from_ram StringBuffer1
 	text "!"
@@ -179,20 +179,20 @@ UnknownText_0x1c4baf::
 
 UnknownText_0x1c4bc5::
 	text "Huh? @"
-	text_from_ram StringBuffer2
+	text_from_ram StringBuffer1
 	text ""
-	line "stopped evolving!"
+	line "no evoluciono!"
 	prompt
 
 UnknownText_0x1c4be3::
-	text "What? @"
+	text "Que? @"
 	text_from_ram StringBuffer2
 	text ""
-	line "is evolving!"
+	line "esta evolucionando!"
 	done
 
 UnknownText_0x1c4bfd::
-	text "How many?"
+	text "¿Cuantas unidades?"
 	done
 
 UnknownText_0x1c4c08::
@@ -200,28 +200,28 @@ UnknownText_0x1c4c08::
 	text " @"
 	text_from_ram StringBuffer2
 	text "(S)"
-	line "will be ¥@"
+	line "seran ¥@"
 	deciram hMoneyTemp, 3, 6
 	text "."
 	done
 
 UnknownText_0x1c4c28::
-	text "Hello, dear."
+	text "Hola, joven."
 
-	para "I sell inexpensive"
-	line "herbal medicine."
+	para "Vendo hierbas"
+	line "medicinales."
 
-	para "They're good, but"
-	line "a trifle bitter."
+	para "Son buenas, pero"
+	line "un poco amargas."
 
-	para "Your #MON may"
-	line "not like them."
+	para "Quizá tus #MON"
+	line "no las quieran."
 
-	para "Hehehehe<...>"
+	para "¡Je, je, je…!"
 	done
 
 UnknownText_0x1c4ca3::
-	text "How many?"
+	text "¿Cuantas unidades?"
 	done
 
 UnknownText_0x1c4cae::
@@ -229,82 +229,82 @@ UnknownText_0x1c4cae::
 	text " @"
 	text_from_ram StringBuffer2
 	text "(S)"
-	line "will be ¥@"
+	line "seran ¥@"
 	deciram hMoneyTemp, 3, 6
 	text "."
 	done
 
 UnknownText_0x1c4cce::
-	text "Thank you, dear."
-	line "Hehehehe<...>"
+	text "Gracias, joven."
+	line "¡Je, je, je…!"
 	done
 
 UnknownText_0x1c4cea::
-	text "Oh? Your PACK is"
-	line "full, dear."
+	text "¡Oh! Tu MOCHILA"
+	line "está llena, joven."
 	done
 
 UnknownText_0x1c4d08::
-	text "Hehehe<...> You don't"
-	line "have the money."
+	text "¡Je, je…! No"
+	line "tienes ese dinero."
 	done
 
 UnknownText_0x1c4d2a::
-	text "Come again, dear."
-	line "Hehehehe<...>"
+	text "Vuelve otra vez."
+	line "¡Je, je, je…!"
 	done
 
 UnknownText_0x1c4d47::
-	text "Hiya! Care to see"
-	line "some bargains?"
+	text "¡Oye! ¿Quieres ver"
+	line "unas gangas?"
 
-	para "I sell rare items"
-	line "that nobody else"
+	para "Vendo objetos que"
+	line "nadie posee, pero"
 
-	para "carries--but only"
-	line "one of each item."
+	para "sólo un objeto de"
+	line "cada tipo."
 	done
 
 UnknownText_0x1c4db0::
 	text_from_ram StringBuffer2
-	text " costs"
+	text " cuesta"
 	line "¥@"
 	deciram hMoneyTemp, 3, 6
-	text ". Want it?"
+	text ". ¿Lo quieres?"
 	done
 
 UnknownText_0x1c4dcd::
-	text "Thanks."
+	text "Gracias."
 	done
 
 UnknownText_0x1c4dd6::
-	text "Uh-oh, your PACK"
-	line "is chock-full."
+	text "¡Oh! Tu MOCHILA"
+	line "está a tope."
 	done
 
 UnknownText_0x1c4df7::
-	text "You bought that"
-	line "already. I'm all"
-	cont "sold out of it."
+	text "Eso ya lo has"
+	line "comprado. No me"
+	cont "quedan más."
 	done
 
 UnknownText_0x1c4e28::
-	text "Uh-oh, you're"
-	line "short on funds."
+	text "¡Oh! No tienes"
+	line "suficiente dinero."
 	done
 
 UnknownText_0x1c4e46::
-	text "Come by again"
-	line "sometime."
+	text "Vuelve en otra"
+	line "ocasión."
 	done
 
 UnknownText_0x1c4e5f::
-	text "What's up? Need"
-	line "some medicine?"
+	text "¿Qué quieres?"
+	line "¿Alguna medicina?"
 	done
 
 UnknownText_0x1c4e7e::
-	text "How many?"
+	text "¿Cuántas unidades?"
 	done
 
 UnknownText_0x1c4e89::
@@ -312,87 +312,86 @@ UnknownText_0x1c4e89::
 	text " @"
 	text_from_ram StringBuffer2
 	text "(S)"
-	line "will cost ¥@"
+	line "Serán ¥@"
 	deciram hMoneyTemp, 3, 6
 	text "."
 	done
 
 UnknownText_0x1c4eab::
-	text "Thanks much!"
+	text "¡Muchas gracias!"
 	done
 
 UnknownText_0x1c4eb9::
-	text "You don't have any"
-	line "more space."
+	text "No te queda sitio."
 	done
 
 UnknownText_0x1c4ed8::
-	text "Huh? That's not"
-	line "enough money."
+	text "¿Eh? No tienes"
+	line "sufciente dinero."
 	done
 
 UnknownText_0x1c4ef6::
-	text "All right."
-	line "See you around."
+	text "De acuerdo."
+	line "¡Nos vemos!."
 	done
 
 UnknownText_0x1c4f33::
-	text "How many?"
+	text "¿Cuantas unidades?"
 	done
 
 UnknownText_0x1c4f3e::
-	text "I can pay you"
+	text "Puedo pagarte"
 	line "¥@"
 	deciram hMoneyTemp, 3, 6
 	text "."
 
-	para "Is that OK?"
+	para "¿Te parece bien?"
 	done
 
 UnknownText_0x1c4f62::
-	text "Welcome! How may I"
-	line "help you?"
+	text "¡Hola!"
+	line "¿Qué deseas?"
 	done
 
 UnknownText_0x1c4f80::
-	text "Here you are."
-	line "Thank you!"
+	text "Aquí tienes."
+	line "¡Gracias!"
 	done
 
 UnknownText_0x1c4f9a::
-	text "You don't have"
-	line "enough money."
+	text "No tienes"
+	line "suficiente dinero."
 	done
 
 UnknownText_0x1c4fb7::
-	text "You can't carry"
-	line "any more items."
+	text "No puedes llevar"
+	line "más objetos."
 	done
 
 UnknownText_0x1c4fd7::
-	text "Sorry, I can't buy"
-	line "that from you."
+	text "Lo siento, no"
+	line "puedo comprártelo."
 	prompt
 
 UnknownText_0x1c4ff9::
-	text "Please come again!"
+	text "¡Vuelva cuando quiera!"
 	done
 
 UnknownText_0x1c500d::
-	text "Can I do anything"
-	line "else for you?"
+	text "¿Puedo ayudarte"
+	line "en algo más?"
 	done
 
 UnknownText_0x1c502e::
-	text "Got ¥@"
+	text "Recibiste ¥@"
 	deciram hMoneyTemp, 3, 6
-	text " for"
+	text " por"
 	line "@"
 	text_from_ram StringBuffer2
 	text "(S)."
 	done
 
 UnknownText_0x1c5049::
-	text "Bet how many"
-	line "coins?"
+	text "¿Cuántas"
+	line "fichas?"
 	done

@@ -1,120 +1,121 @@
 UnknownText_0x1c0043::
-	text "Hello, hello! I'm"
-	line "the NAME RATER."
+	text "¡Hola a todos!"
+	line "Soy el INSPECTOR de MOTES."
 
-	para "I rate the names"
-	line "of #MON."
+	para "Evaluo los nombres"
+	line "de los #MON."
 
-	para "Would you like me"
-	line "to rate names?"
+	para "Quieres evaluar"
+	line "algun nombre?"
 	done
 
 UnknownText_0x1c00a0::
-	text "Which #MON's"
-	line "nickname should I"
-	cont "rate for you?"
+	text "Que #MON's"
+	line "mote deberia "
+	cont "evaluar?"
 	prompt
 
 UnknownText_0x1c00cd::
 	text "Hm<...> @"
 	text_from_ram StringBuffer1
 	text "<...>"
-	line "That's a fairly"
-	cont "decent name."
+	line "Es un nombre"
+	cont "bastante bueno."
 
-	para "But, how about a"
-	line "slightly better"
-	cont "nickname?"
+	para "Pero, ¿qué te"
+	line "parece mejorarlo"
+	cont "un poco?"
 
-	para "Want me to give it"
-	line "a better name?"
+	para "¿Quieres que le dé"
+	line "otro nombre?"
 	done
 
 UnknownText_0x1c0142::
-	text "All right. What"
-	line "name should we"
-	cont "give it, then?"
+	text "Muy bien."
+	line "¿Cómo podríamos"
+	cont "llamarlo?"
 	prompt
 
 UnknownText_0x1c0171::
-	text "That's a better"
-	line "name than before!"
+	text "¡Ese nombre es"
+	line "mejor que el"
+	cont "anterior!"
 
-	para "Well done!"
+	para "¡Bien hecho!"
 	done
 
 UnknownText_0x1c019e::
-	text "OK, then. Come"
-	line "again sometime."
+	text "Muy bien. Vuelve"
+	line "cuando quieras."
 	done
 
 UnknownText_0x1c01be::
 	text "Hm<...> @"
 	text_from_ram StringBuffer1
 	text "?"
-	line "What a great name!"
-	cont "It's perfect."
+	line "¡Qué buen nombre!"
+	cont "Es perfecto."
 
-	para "Treat @"
+	para "Trata a"
+	line "@"
 	text_from_ram StringBuffer1
-	text ""
-	line "with loving care."
+	text "con mucho cariño."
 	done
 
 UnknownText_0x1c0208::
-	text "Whoa<...> That's just"
-	line "an EGG."
+	text "Uau<...> Eso es "
+	line "un HUEVO."
 	done
 
 UnknownText_0x1c0222::
-	text "It might look the"
-	line "same as before,"
+    text "¡Se parece al"
+	line "anterior, pero"
 
-	para "but this new name"
-	line "is much better!"
+	para "este nombre es"
+	line "mucho mejor!"
 
-	para "Well done!"
+	para "¡Bien hecho!"
 	done
 
 UnknownText_0x1c0272::
-	text "All right. This"
-	line "#MON is now"
-	cont "named @"
+	text "Muy bien. Ahora"
+	line "este #MON se"
+	cont "llama @"
 	text_from_ram StringBuffer1
 	text "."
 	prompt
 
 Text_Gained::
 	text_from_ram StringBuffer1
-	text " gained@@"
+	text " ganó@@"
 
 Text_ABoostedStringBuffer2ExpPoints::
 	text ""
-	line "a boosted"
+	line "un total de"
 	cont "@"
 	deciram wExpScratch40_1, 3, 8
-	text " EXP.Points!"
+	text " puntos EXP.!"
 	prompt
 
 Text_StringBuffer2ExpPoints::
 	text ""
 	line "@"
 	deciram wExpScratch40_1, 3, 8
-	text " EXP.Points!"
+	text " puntos EXP.!"
 	prompt
 
 Text_GoPkmn::
-	text "Go! @@"
+	text "¡Adelante! @@"
 
 Text_DoItPkmn::
-	text "Do it! @@"
+	text "¡Hazlo! @@"
 
 Text_GoForItPkmn::
-	text "Go for it,"
+	text "A por el!,"
 	line "@@"
 
 Text_YourFoesWeakGetmPkmn::
-	text "Your foe's weak!"
+	text "Tu enemigo esta debil!"
 	line "Get'm, @@"
 
 Text_BattleMonNick01::
@@ -127,51 +128,51 @@ Text_BattleMonNickComma::
 	text ",@@"
 
 Text_ThatsEnoughComeBack::
-	text " that's"
-	line "enough! Come back!@@"
+	text " es"
+	line "suficiente! Vuelve!@@"
 
 Text_OKComeBack::
 	text " OK!"
-	line "Come back!@@"
+	line "Vuelve!@@"
 
 Text_GoodComeBack::
-	text " good!"
-	line "Come back!@@"
+	text " ¡Bien hecho!"
+	line "¡Vuelve!@@"
 
 Text_ComeBack::
-	text " come"
-	line "back!"
+	text " vuelve"
+	line "aqui!"
 	done
 
 UnknownText_0x1c0373::
-	text "Booted up a TM."
+	text "elegida una MT."
 	prompt
 
 UnknownText_0x1c0384::
-	text "Booted up an HM."
+	text "Elegida una MO."
 	prompt
 
 UnknownText_0x1c0396::
-	text "It contained"
+	text "esta contiene"
 	line "@"
 	text_from_ram StringBuffer2
 	text "."
 
-	para "Teach @"
+	para "¿Enseñas @"
 	text_from_ram StringBuffer2
 	text ""
-	line "to a #MON?"
+	line "a un #MON?"
 	done
 
 UnknownText_0x1c03c2::
 	text_from_ram StringBuffer2
 	text " is"
-	line "not compatible"
-	cont "with @"
+	line "no es compatible"
+	cont "con @"
 	text_from_ram StringBuffer1
 	text "."
 
-	para "It can't learn"
+	para "No puede aprender"
 	line "@"
 	text_from_ram StringBuffer2
 	text "."
@@ -179,23 +180,23 @@ UnknownText_0x1c03c2::
 
 UnknownText_0x1c05c8::
 UnknownText_0x1c0705::
-	text "Can't use that"
-	line "here."
+	text "No puedes usar eso"
+	line "aqui."
 	prompt
 
 UnknownText_0x1c05dd::
 	text_from_ram StringBuffer2
-	text " used"
-	line "CUT!"
+	text " usó"
+	line "¡CORTE!"
 	prompt
 
 UnknownText_0x1c05ec::
-	text "There's nothing to"
-	line "CUT here."
+	text "Aquí no hay nada"
+	line "que CORTAR."
 	prompt
 
 UnknownText_0x1c0609::
-	text "A blinding FLASH"
-	line "lights the area!@"
+	text "¡Un DESTELLO"
+	line "ilumina la zona!@"
 	text_waitbutton
 	db "@@"

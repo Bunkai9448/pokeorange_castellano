@@ -46,11 +46,11 @@ PokemonCenterPC: ; 1559a
 	dw HallOfFamePC, .String_HallOfFame
 	dw TurnOffPC, .String_TurnOff
 
-.String_PlayersPC:  db "<PLAYER>'s PC@"
-.String_BillsPC:    db "BILL's PC@"
-.String_OaksPC:     db "PROF.OAK's PC@"
+.String_PlayersPC:  db "PC DE <PLAYER>@"
+.String_BillsPC:    db "PC DE BILL@"
+.String_OaksPC:     db "PC DE OAK@"
 .String_HallOfFame: db "HALL OF FAME@"
-.String_TurnOff:    db "TURN OFF@"
+.String_TurnOff:    db "DESCONECTAR@"
 
 .WhichPC:
 	; before pokedex
@@ -244,11 +244,11 @@ KrissPCMenuData: ; 0x15736
 	dw KrisLogOffMenu,       .TurnOff
 	dw KrisLogOffMenu,       .TurnOff
 
-.WithdrawItem: db "WITHDRAW ITEM@"
-.DepositItem:  db "DEPOSIT ITEM@"
-.TossItem:     db "TOSS ITEM@"
-.MailBox:      db "MAIL BOX@"
-.TurnOff:      db "TURN OFF@"
+.WithdrawItem: db "SACAR OBJETO@"
+.DepositItem:  db "DEJAR OBJETO@"
+.TossItem:     db "TIRAR OBJETO@"
+.MailBox:      db "BUZóN@"
+.TurnOff:      db "DESCONECTAR@"
 
 WITHDRAW_ITEM EQU 0
 DEPOSIT_ITEM  EQU 1
@@ -446,15 +446,6 @@ KrisDepositItemMenu: ; 0x1588b
 	ret
 
 .DepositItem_:
-	;check wether the item can be stored in the PC
-	farcall _CheckNoPCDepositItem
-	ld a, [wItemAttributeParamBuffer]
-	and a
-	jr z, .canDeposit
-	ld hl, .BetterKeepText
-	jp PrintText
-
-.canDeposit
 	farcall _CheckTossableItem
 	ld a, [wItemAttributeParamBuffer]
 	and a
@@ -509,10 +500,6 @@ KrisDepositItemMenu: ; 0x1588b
 
 .NoRoomText: ; 0x15978
 	text_jump _KrissPCNoRoomDepositText
-	db "@"
-
-.BetterKeepText:
-	text_jump _KrissPCBetterKeepText
 	db "@"
 
 KrisMailBoxMenu: ; 0x1597d

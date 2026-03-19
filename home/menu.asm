@@ -167,7 +167,7 @@ YesNoMenuDataHeader:: ; 1e1d
 .MenuData2: ; 1e25
 	db $c0 ; flags
 	db 2
-	db "YES@"
+	db "SI@"
 	db "NO@"
 ; 1e2e
 

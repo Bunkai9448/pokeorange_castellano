@@ -1,121 +1,119 @@
 _FruitBearingTreeText::
-	text "It's a fruit-"
-	line "bearing tree."
+	text "Es un árbol"
+	line "frutal."
 	done
 
 _HeyItsFruitText::
-	text "Hey! It's"
+	text "¡Oye! ¡Mira qué"
 	line "@"
 	text_from_ram StringBuffer3
 	text "!"
 	done
 
 _ObtainedFruitText::
-	text "Obtained"
+	text "¡Obtuvo"
 	line "@"
 	text_from_ram StringBuffer3
 	text "!"
 	done
 
 _FruitPackIsFullText::
-	text "But the PACK is"
-	line "full<...>"
+	text "Pero la MOCHILA"
+	line "está llena…"
 	done
 
 _NothingHereText::
-	text "There's nothing"
-	line "here<...>"
+	text "Aquí no hay"
+	line "nada…"
 	done
 
 UnknownText_0x1bc0a2::
+	text "¡@"
 	text_from_ram StringBuffer1
-	text ""
-	line "recovered @"
-	deciram wd1f3, 2, 3
-	text "HP!"
+	text "recuperó @"
+	deciram wCurHPAnimDeltaHP, 2, 3
+	text " PS!"
 	done
 
 UnknownText_0x1bc0bb::
 	text_from_ram StringBuffer1
-	text "'s"
-	line "cured of poison."
+	text ""
+	line "curado del veneno."
 	done
 
 UnknownText_0x1bc0d2::
 	text_from_ram StringBuffer1
-	text "'s"
-	line "rid of paralysis."
+	text "curado de"
+	cont "parálisis."
 	done
 
 UnknownText_0x1bc0ea::
 	text_from_ram StringBuffer1
-	text "'s"
-	line "burn was healed."
+	text "curado de"
+	cont "quemaduras."
 	done
 
 UnknownText_0x1bc101::
 	text_from_ram StringBuffer1
-	text ""
-	line "was defrosted."
+	text "fue descongelado."
 	done
 
 UnknownText_0x1bc115::
 	text_from_ram StringBuffer1
-	text ""
-	line "woke up."
+	text "se despertó."
 	done
 
 UnknownText_0x1bc123::
 	text_from_ram StringBuffer1
-	text "'s"
-	line "health returned."
+	text "recuperó la salud."
 	done
 
 UnknownText_0x1bc13a::
 	text_from_ram StringBuffer1
-	text ""
-	line "is revitalized."
+	text "es revitalizado."
 	done
 
 UnknownText_0x1bc14f::
+	text "¡@"
 	text_from_ram StringBuffer1
-	text " grew to"
-	line "level @"
+	text "subió al nivel"
+	cont "@"
 	deciram CurPartyLevel, 1, 3
 	text "!@"
-	sound_dex_fanfare_50_79
+	sound_dex_fanfare_50_79 ; plays SFX_DEX_FANFARE_50_79, identical to SFX_LEVEL_UP
 	text_waitbutton
+	done
 	db "@@"
 
 UnknownText_0x1bc16e::
 	text_from_ram StringBuffer1
-	text " came"
-	line "to its senses."
+	text "recuperó el"
+	cont "conocimiento."
 	done
 
 MakePinkText::
 	text_from_ram StringBuffer1
-	text " has"
-	line "turned PINK!"
+	text " ¡se"
+	line "volvio rosa!"
 	done
 
 MakeNotPinkText::
 	text_from_ram StringBuffer1
-	text " is"
-	line "no longer PINK!"
+	text " ¡Ya no"
+	line "esta rosa!"
 	done
 
 UnknownText_0x1bc29c::
-	text "I am setting the"
-	line "time."
+	text "Estoy poniendo"
+	line "la hora."
 	prompt
 
 UnknownText_0x1bc2eb::
-	text "What hour is it?"
+	text "¿Que hora es?"
 	done
 
 UnknownText_0x1bc308::
-	text "How many minutes?"
+	text "¿Cuantos minutos?"
 	done
 
 UnknownText_0x1bc323::
@@ -123,15 +121,15 @@ UnknownText_0x1bc323::
 	done
 
 UnknownText_0x1bc31b::
-	text "Okay!@@"
+	text "¡Okay!@@"
 	done
 
 UnknownText_0x1bc369::
-	text "What day is it?"
+	text "¿Que dia es?"
 	done
 
 UnknownText_0x1bc37a::
-	text ", is it?"
+	text ", ¿Es asi?"
 	done
 
 UnknownText_0x1bc326::
@@ -140,8 +138,8 @@ UnknownText_0x1bc326::
 
 UnknownText_0x1bc6e9::
 	text_from_ram wPlayerTrademonSpeciesName
-	text " was"
-	line "sent to @"
+	text " fue"
+	line "enviado a @"
 	text_from_ram wOTTrademonSenderName
 	text "."
 	done
@@ -152,8 +150,8 @@ UnknownText_0x1bc701::
 
 UnknownText_0x1bc703::
 	text_from_ram wOTTrademonSenderName
-	text " bids"
-	line "farewell to"
+	text " dice adios"
+	line "a"
 	done
 
 UnknownText_0x1bc719::
@@ -162,76 +160,76 @@ UnknownText_0x1bc719::
 	done
 
 UnknownText_0x1bc71f::
-	text "Take good care of"
+	text "Cuida bien de"
 	line "@"
 	text_from_ram wOTTrademonSpeciesName
 	text "."
 	done
 
 UnknownText_0x1bc739::
-	text "For @"
-	text_from_ram wPlayerTrademonSenderName
-	text "'s"
-	line "@"
+	text "Por @"
 	text_from_ram wPlayerTrademonSpeciesName
+	text "de @"
+	text_from_ram wPlayerTrademonSenderName
 	text ","
 	done
 
 UnknownText_0x1bc74c::
 	text_from_ram wOTTrademonSenderName
-	text " sends"
-	line "@"
+	text "envía a"
+	cont "@"
 	text_from_ram wOTTrademonSpeciesName
 	text "."
 	done
 
 UnknownText_0x1bc75e::
 	text_from_ram wOTTrademonSenderName
-	text " will"
-	line "trade @"
+	text "cambiará a"
+	cont "@"
 	text_from_ram wOTTrademonSpeciesName
-	db "@@"
+	done
 
 UnknownText_0x1bc774::
-	text "for @"
-	text_from_ram wPlayerTrademonSenderName
-	text "'s"
-	line "@"
+	text "por @"
 	text_from_ram wPlayerTrademonSpeciesName
+	text "de @"
+	text_from_ram wPlayerTrademonSenderName
 	text "."
 	done
 
 Text_EnemyWithdrew::
 	text "<ENEMY>"
-	line "withdrew"
+	line "retiró a"
 	cont "@"
 	text_from_ram EnemyMonNick
-	text "!"
+	text "."
 	prompt
 
 Text_EnemyUsedOn::
 	text "<ENEMY>"
-	line "used @"
+	line "utilizó"
+
+	para "@"
 	text_from_ram wMonOrItemNameBuffer
-	text ""
-	cont "on @"
+	text "con"
+	cont "@"
 	text_from_ram EnemyMonNick
-	text "!"
+	text "."
 	prompt
 
 UnknownText_0x1bd2bc::
-	text "Which floor?"
+	text "¿Que planta?"
 	done
 
 UnknownText_0x1bd2ca::
-	text "ANNOUNCER: BEEEP!"
+	text "SPEAKER: BEEEP!"
 
-	para "Time's up!"
+	para "¡Tiempo!"
 	done
 
 UnknownText_0x1bd2e7::
-	text "ANNOUNCER: The"
-	line "Contest is over!"
+	text "SPEAKER: El"
+	line "concurso acabó!"
 	done
 
 UnknownText_0x1bd308::
@@ -240,51 +238,56 @@ UnknownText_0x1bd308::
 	done
 
 UseAnotherRepelText::
-	text "REPEL's effect"
-	line "wore off."
+	text "Agotado el efecto"
+	line "del REPELENTE."
+	done
 
-	para "Use another?"
+	para "¿Usar otro?"
 	done
 
 UnknownText_0x1bd321::
-	text "<PLAYER> found"
-	line "@"
+	text "<PLAYER>"
+	line "encontró"
+	cont "@"
 	text_from_ram StringBuffer3
-	text "!"
+	text "."
 	done
 
 UnknownText_0x1bd331::
-	text "But <PLAYER> has"
-	line "no space left<...>"
+	text "Pero a <PLAYER>"
+	line "no le queda sitio."
 	done
 
 UnknownText_0x1bd39e::
-	text "SAVING RECORD<...>"
-	line "DON'T TURN OFF!"
+	text "Guardando ¡No<...>"
+	line "Apagues !"
 	done
 
 UnknownText_0x1bd3d7::
-	text "You have no coins."
+	text "No tienes fichas."
 	prompt
 
 UnknownText_0x1bd3eb::
-	text "You don't have a"
-	line "COIN CASE."
+	text "No tienes ningún"
+	line "MONEDERO."
 	prompt
 
 UnknownText_0x1bd407::
-	text "OK, connect the"
-	line "Game Link Cable."
+	text "¡Bien, conecta el"
+	line "cable Game Link!"
 	prompt
 
 UnknownText_0x1bd429::
-	text "<PLAYER> traded"
-	line "@"
-	text_from_ram wMonOrItemNameBuffer
-	text " for"
-	cont "@"
+	text "<PLAYER>"
+	line "cambió a"
+
+	para "@"
 	text_from_ram StringBuffer2
-	text ".@@"
+	text "por"
+	cont "@"
+	text_from_ram wMonOrItemNameBuffer
+	text ".@"
+	done
 
 UnknownText_0x1bd445::
 	sound_dex_fanfare_80_109
@@ -292,38 +295,37 @@ UnknownText_0x1bd445::
 	db "@@"
 
 UnknownText_0x1bd449::
-	text "Ah, hello again."
-	line "Do you have a"
+	text "Ah, hola."
+	line "¿Tienes un"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "?"
 
-	para "Want to trade it"
-	line "for this @"
+	para "¿Quieres cambiarlo"
+	line "por this @"
 	text_from_ram StringBuffer2
 	text "?"
 	done
 
 UnknownText_0x1bd48c::
-	text "That is a shame."
-	line "We really need"
-	cont "one."
+	text "¿No quieres"
+	line "cambiarlo? ¡Bah!"
 	done
 
 UnknownText_0x1bd4aa::
-	text "Huh? That's not"
+	text "¿Qué? Ése no es"
 	line "@"
 	text_from_ram StringBuffer1
 	text "."
-	cont "What a letdown<...>"
+	cont "¡Qué chasco…!"
 	done
 
 UnknownText_0x1bd4d2::
-	text "Oh! We finally"
-	line "have @"
+	text "¡Sí! ¡Conseguí un"
+	line "@"
 	text_from_ram StringBuffer1
 	text "!"
-	cont "I thank you!"
+	cont "¡Gracias!"
 	done
 
 UnknownText_0x1bd4f4::
@@ -332,315 +334,318 @@ UnknownText_0x1bd4f4::
 	done
 
 UnknownText_0x1bd512::
-	text "Hi, I'm looking"
-	line "for this #MON."
+	text "Estoy buscando a"
+	line "este #MON."
 
-	para "If you have"
+	para "Si tuvieras un"
 	line "@"
 	text_from_ram StringBuffer1
-	text ", would"
+	text ","
 
-	para "you trade it for"
-	line "my @"
+	para "¿lo cambiarías por"
+	line "mi @"
 	text_from_ram StringBuffer2
 	text "?"
 	done
 
 UnknownText_0x1bd565::
-	text "You don't have"
-	line "one either?"
+	text "¿Tú tampoco"
+	line "tienes uno?"
 
-	para "Gee, that's really"
-	line "disappointing<...>"
+	para "¡Pues vaya! ¡Qué"
+	line "decepción…!"
 	done
 
 UnknownText_0x1bd5a1::
-	text "You don't have"
+	text "¿No tienes un"
 	line "@"
 	text_from_ram StringBuffer1
-	text "? That's"
-	cont "too bad, then."
+	text "?"
+	cont "¡Qué lástima!"
 	done
 
 UnknownText_0x1bd5cc::
-	text "Great! Thank you!"
+	text "¡Genial! ¡Gracias!"
 
-	para "I finally got"
-	line "@"
+	para "Por fin conseguí"
+	line "un @"
 	text_from_ram StringBuffer1
 	text "."
 	done
 
 UnknownText_0x1bd5f4::
-	text "Hi! The @"
+	text "¡El @"
 	text_from_ram wMonOrItemNameBuffer
-	text ""
-	line "you traded me is"
-	cont "doing great!"
+	text "que me cambiaste"
+	cont "está fenomenal!"
 	done
 
 UnknownText_0x1bd621::
 	text_from_ram wMonOrItemNameBuffer
-	text "'s cute,"
-	line "but I don't have"
+	text " es"
+	line "genial, pero no lo"
 
-	para "it. Do you have"
+	para "tengo. ¿Tienes un"
 	line "@"
 	text_from_ram StringBuffer1
 	text "?"
 
-	para "Want to trade it"
-	line "for my @"
+	para "¿Quieres cambiarlo"
+	line "por mi"
+	cont "@"
 	text_from_ram StringBuffer2
 	text "?"
 	done
 
 UnknownText_0x1bd673::
-	text "You don't want to"
-	line "trade? Oh, darn<...>"
+	text "¿No quieres"
+	line "cambiarlo? ¡Vaya!"
 	done
 
 UnknownText_0x1bd696::
-	text "That's not"
+	text "Ese no es un"
 	line "@"
 	text_from_ram StringBuffer1
 	text "."
 
-	para "Please trade with"
-	line "me if you get one."
+	para "Cámbiamelo si"
+	line "consigues uno."
 	done
 
 UnknownText_0x1bd6cd::
-	text "Wow! Thank you!"
-	line "I always wanted"
+	text "¡Uau! ¡Gracias!"
+	line "¡Siempre quise un"
 	cont "@"
 	text_from_ram wMonOrItemNameBuffer
 	text "!"
 	done
 
 UnknownText_0x1bd6f5::
-	text "How is that"
+	text "¿Cómo está el"
 	line "@"
 	text_from_ram StringBuffer2
-	text " I"
-	cont "traded you doing?"
+	text "que te cambié?"
 
-	para "Your @"
+	para "¡Tu @"
 	text_from_ram wMonOrItemNameBuffer
-	text "'s"
-	line "so cute!"
+	text "es tan mono!"
 	done
 
 UnknownText_0x1bd731::
-	text "Uh? What happened?"
+	text "¿Eh? ¿Que paso?"
 	done
 
 UnknownText_0x1bd745::
-	text "Trading is so odd<...>"
+	text "Intercambiar es"
+	line "tan raro…"
 
-	para "I still have a lot"
-	line "to learn about it."
+	para "Todavía tengo mu-"
+	line "cho que aprender."
 	done
 
 UnknownText_0x1bdaa9::
-	text "I'm the DAY-CARE"
-	line "MAN. Want me to"
-	cont "raise a #MON?"
+	text "Soy el ENCARGADO"
+	line "de la GUARDERÍA."
+
+	para "¿Quieres que"
+	line "cuide un #MON?"
 	done
 
 UnknownText_0x1bdad8::
-	text "I'm the DAY-CARE"
-	line "MAN. Do you know"
-	cont "about EGGS?"
+	text "Soy el ENCARGADO"
+	line "de la GUARDERÍA."
 
-	para "I was raising"
-	line "#MON with my"
-	cont "wife, you see."
+	para "¿Sabes algo sobre"
+	line "los HUEVOS?"
 
-	para "We were shocked to"
-	line "find an EGG!"
+	para "Mi mujer y yo"
+	line "estábamos cuidando"
+	cont "unos #MON."
 
-	para "How incredible is"
-	line "that?"
+	para "¡Y de pronto"
+	line "vimos un HUEVO!"
 
-	para "So, want me to"
-	line "raise a #MON?"
+	para "¿No te parece"
+	line "increíble?"
+
+	para "¿Quieres que te"
+	line "cuide un #MON?"
 	done
 
 UnknownText_0x1bdb85::
-	text "I'm the DAY-CARE"
-	line "LADY."
+	text "Soy la ENCARGADA"
+	line "de la GUARDERÍA."
 
-	para "Should I raise a"
-	line "#MON for you?"
+	para "¿Quieres que te"
+	line "cuide un #MON?"
 	done
 
 UnknownText_0x1bdbbb::
-	text "I'm the DAY-CARE"
-	line "LADY. Do you know"
-	cont "about EGGS?"
+	text "Soy la ENCARGADA"
+	line "de la GUARDERÍA."
 
-	para "My husband and I"
-	line "were raising some"
-	cont "#MON, you see."
+	para "¿Sabes algo sobre"
+	line "los HUEVOS?"
 
-	para "We were shocked to"
-	line "find an EGG!"
+	para "Mi marido y yo"
+	line "estábamos cuidando"
+	cont "unos #MON."
 
-	para "How incredible"
-	line "could that be?"
+	para "¡Y de pronto"
+	line "vimos un HUEVO!"
 
-	para "Should I raise a"
-	line "#MON for you?"
+	para "¿No te parece"
+	line "increíble?"
+
+	para "¿Quieres que te"
+	line "cuide un #MON?"
 	done
 
 UnknownText_0x1bdc79::
-	text "What should I"
-	line "raise for you?"
+	text "¿Cuál quieres"
+	line "que cuide?"
 	prompt
 
 UnknownText_0x1bdc97::
-	text "Oh? But you have"
-	line "just one #MON."
+	text "¿Oh? Pero sólo"
+	line "tienes un #MON."
 	prompt
 
 UnknownText_0x1bdcb8::
-	text "Sorry, but I can't"
-	line "accept an EGG."
+	text "Perdona, pero no"
+	line "acepto HUEVOS."
 	prompt
 
 UnknownText_0x1bdcda::
-	text "Remove MAIL before"
-	line "you come see me."
+	text "Quita la CARTA y"
+	line "vuelve a verme."
 	prompt
 
 UnknownText_0x1bdcff::
-	text "If you give me"
-	line "that, what will"
-	cont "you battle with?"
+	text "Si me lo das,"
+	line "¿con quién vas a"
+	cont "combatir?"
 	prompt
 
 UnknownText_0x1bdd30::
-	text "OK. I'll raise"
-	line "your @"
+	text "Vale. Cuidaré de"
+	line "tu @"
 	text_from_ram StringBuffer1
 	text "."
 	prompt
-
 UnknownText_0x1bdd4b::
-	text "Come back for it"
-	line "later."
+	text "Vuelve a por él"
+	line "más tarde."
 	done
 
 UnknownText_0x1bdd64::
-	text "Are we geniuses or"
-	line "what? Want to see"
-	cont "your @"
+	text "¿Somos geniales o"
+	line "no? ¿Quieres ver a"
+	cont "tu @"
 	text_from_ram StringBuffer1
 	text "?"
 	done
 
 UnknownText_0x1bdd96::
-	text "Your @"
+	text "Tu @"
 	text_from_ram StringBuffer1
-	text ""
-	line "has grown a lot."
+	text "ha crecido mucho."
 
-	para "By level, it's"
-	line "grown by @"
+	para "En cuanto a su ni-"
+	line "vel, ha subido @"
 	deciram StringBuffer2 + 1, 1, 3
 	text "."
 
-	para "If you want your"
-	line "#MON back, it"
-	cont "will cost ¥@"
+	para "Recuperar a tu"
+	line "#MON te"
+	cont "costará @"
 	deciram StringBuffer2 + 2, 3, 4
-	text "."
+	text "¥."
 	done
 
 UnknownText_0x1bde04::
-	text "Perfect! Here's"
-	line "your #MON."
+	text "¡Perfecto! ¡Aquí"
+	line "está tu #MON!"
 	prompt
 
 UnknownText_0x1bde1f::
-	text "<PLAYER> got back"
-	line "@"
+	text "<PLAYER> recogió"
+	line "a @"
 	text_from_ram StringBuffer1
 	text "."
 	prompt
 
 UnknownText_0x1bde32::
-	text "Huh? Back already?"
-	line "Your @"
+	text "¿Ya de vuelta?"
+	line "Tu @"
 	text_from_ram StringBuffer1
-	text ""
-	para "needs a little"
-	line "more time with us."
 
-	para "If you want your"
-	line "#MON back, it"
-	cont "will cost ¥100."
+	para "debería pasar más"
+	line "tiempo aquí. Pero"
+
+	para "recoger ahora a"
+	line "tu #MON, te"
+	cont "costará 100¥."
 	done
 
 UnknownText_0x1bdea2::
-	text "You have no room"
-	line "for it."
+	text "¡No tienes sitio"
+	line "para él!"
 	prompt
 
 UnknownText_0x1bdebc::
-	text "You don't have"
-	line "enough money."
+	text "No tienes bastante"
+	line "dinero."
 	prompt
 
 UnknownText_0x1bded9::
-	text "Oh, fine then."
+	text "No hay problema."
 	prompt
 
 UnknownText_0x1bdee9::
-	text "Come again."
+	text "Vuelve cuando"
+	line "quieras."
 	done
 
 UnknownText_0x1bdef6::
-	text "Not yet<...>"
+	text "Aún no…"
 	done
 
 UnknownText_0x1bdf00::
-	text "Ah, it's you!"
+	text "¡Ah, eres tú!"
 
-	para "We were raising"
-	line "your #MON, and"
+	para "Estábamos cuidando"
+	line "de tus #MON y…"
 
-	para "my goodness, were"
-	line "we surprised!"
+	para "¡Menuda sorpresa"
+	line "nos hemos llevado!"
 
-	para "Your #MON had"
-	line "an EGG!"
+	para "¡Tus #MON han"
+	line "tenido un HUEVO!"
 
-	para "We don't know how"
-	line "it got there, but"
+	para "No sabemos cómo ha"
+	line "llegado ahí, pero"
 
-	para "your #MON had"
-	line "it. You want it?"
+	para "es de tus #MON."
+	line "¿Lo quieres?"
 	done
 
 UnknownText_0x1bdfa5::
-	text "<PLAYER> received"
-	line "the EGG!"
+	text "¡<PLAYER> recibió"
+	line "el HUEVO!"
 	done
 
 UnknownText_0x1bdfba::
-	text "Take good care of"
-	line "it."
+	text "Cuídalo bien."
 	done
 
 UnknownText_0x1bdfd1::
-	text "Well then, I'll"
-	line "keep it. Thanks!"
+	text "Cuidaré de él."
+	line "¡Gracias!"
 	done
 
 UnknownText_0x1bdff2::
-	text "You have no room"
-	line "in your party."
-	cont "Come back later."
+	text "No tienes sitio en"
+	line "tu equipo. Vuelve"
+	cont "en otro momento."
 	done

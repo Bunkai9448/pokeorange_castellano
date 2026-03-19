@@ -226,19 +226,19 @@ DayToTextScript:
 	stringtotext .SaturdayText, 0
 	end
 .SundayText:
-	db "SUNDAY@"
+	db "DOMINGO@"
 .MondayText:
-	db "MONDAY@"
+	db "LUNES@"
 .TuesdayText:
-	db "TUESDAY@"
+	db "MARTES@"
 .WednesdayText:
-	db "WEDNESDAY@"
+	db "MIERCOLES@"
 .ThursdayText:
-	db "THURSDAY@"
+	db "JUEVES@"
 .FridayText:
-	db "FRIDAY@"
+	db "VIERNES@"
 .SaturdayText:
-	db "SATURDAY@"
+	db "SABADO@"
 
 BugContestResultsWarpScript:
 	special ClearBGPalettes
@@ -606,7 +606,7 @@ CoinVendor_IntroScript: ; 0xbcde0
 	db "  50:  ¥1000@"
 	db " 500: ¥10000@"
 	db "1000: ¥20000@"
-	db "CANCEL@"
+	db "SALIR@"
 ; 0xbce7f
 
 

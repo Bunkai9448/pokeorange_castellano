@@ -40,9 +40,9 @@ MainMenu: ; 49cdc
 ; 49d20
 
 .Strings: ; 49d24
-	db "CONTINUE@"
-	db "NEW GAME@"
-	db "OPTION@"
+	db "CONTINUAR@"
+	db "JUEGO NUEVO@"
+	db "OPCIONES@"
 
 .Jumptable: ; 0x49d60
 
@@ -208,7 +208,7 @@ MainMenu_PrintCurrentTimeAndDay: ; 49e09
 ; 49e7f
 
 .TimeNotSet: ; 49e7f
-	db "TIME NOT SET@"
+	db "NO HAY FECHA@"
 ; 49e8c
 
 .PlaceCurrentDay: ; 49e91
@@ -227,15 +227,15 @@ MainMenu_PrintCurrentTimeAndDay: ; 49e09
 ; 49ea8
 
 .Days:
-	db "SUN@"
-	db "MON@"
-	db "TUES@"
-	db "WEDNES@"
-	db "THURS@"
-	db "FRI@"
-	db "SATUR@"
+	db "DOM @"
+	db "LUN @"
+	db "MAR @"
+	db "MIE @"
+	db "JUE @"
+	db "VIE @"
+	db "SAB @"
 .Day:
-	db "DAY@"
+	db "HORA@"
 ; 49ed0
 
 Function49ed0: ; 49ed0

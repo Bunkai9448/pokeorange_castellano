@@ -177,12 +177,12 @@ endr
 	ret
 
 .Headings: ; 252ec
-	db   "NAME/"
-	next "<ID>№."
-	next "MONEY"
+	db   "ENT/"
+	next "№.<ID>"
+	next "DIN."
 	next "POKéDEX"
-	next "TIME"
-	next "BADGES@"
+	next "TEMPO J."
+	next "MEDALLAS@"
 
 .HorizontalDivider: ; 252fc
 	db $27, $27, $27, $27, $27, $27, $27, $27, $27, $27, $27, $27, $28

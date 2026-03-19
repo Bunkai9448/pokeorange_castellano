@@ -61,13 +61,13 @@ _OptionsMenu: ; e41d0
 ; e4241
 
 StringOptions: ; e4241
-	db "TEXT SPEED<LNBRK>"
+	db "VELOCIDAD TEXTO<LNBRK>"
 	db "        :<LNBRK>"
-	db "BATTLE SCENE<LNBRK>"
+	db "ANIMACION BATALLA<LNBRK>"
 	db "        :<LNBRK>"
-	db "BATTLE STYLE<LNBRK>"
+	db "ESTILO BATALLA<LNBRK>"
 	db "        :<LNBRK>"
-	db "SOUND<LNBRK>"
+	db "SONIDO<LNBRK>"
 	db "        :<LNBRK>"
 	db "FRAME<LNBRK>"
 	db "        :TYPE<LNBRK>"
@@ -160,11 +160,11 @@ Options_TextSpeed: ; e42f5
 .Instant:
 	db "INSTANT@"
 .Fast:
-	db "FAST   @"
+	db "RAP.   @"
 .Mid:
-	db "MID    @"
+	db "MED.   @"
 .Slow:
-	db "SLOW   @"
+	db "LEN.   @"
 ; e4346
 
 
@@ -201,9 +201,9 @@ Options_BattleScene: ; e4365
 	jr .ToggleOff
 
 .On:
-	db "ON @"
+	db "SI @"
 .Off:
-	db "OFF@"
+	db "NO @"
 ; e43a0
 
 

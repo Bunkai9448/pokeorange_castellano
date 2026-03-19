@@ -188,11 +188,11 @@ StartMenu:: ; 125cd
 
 .PokedexString: db "#DEX@"
 .PartyString:   db "#MON@"
-.PackString:    db "PACK@"
+.PackString:    db "MOCHILA@"
 .StatusString:  db "<PLAYER>@"
-.SaveString:    db "SAVE@"
-.OptionString:  db "OPTION@"
-.ExitString:    db "EXIT@"
+.SaveString:    db "GUARDAR@"
+.OptionString:  db "OPCIóN@"
+.ExitString:    db "SALIR@"
 .QuitString:    db "QUIT@"
 
 
@@ -1266,7 +1266,6 @@ ChooseMoveToDelete: ; 12f5b
 	push af
 	set NO_TEXT_SCROLL, [hl]
 	call LoadFontsBattleExtra
-	farcall InitPartyMenuPalettes
 	call .ChooseMoveToDelete
 	pop bc
 	ld a, b

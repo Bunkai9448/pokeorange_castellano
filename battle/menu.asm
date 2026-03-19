@@ -22,7 +22,7 @@ ContestBattleMenu: ; 24f13
 
 BattleMenuDataHeader: ; 24f2c
 	db $40 ; flags
-	db 12, 08 ; start coords
+	db 12, 06 ; start coords
 	db 17, 19 ; end coords
 	dw MenuData_0x24f34
 	db 1 ; default option
@@ -31,16 +31,16 @@ BattleMenuDataHeader: ; 24f2c
 MenuData_0x24f34: ; 0x24f34
 	db $81 ; flags
 	dn 2, 2 ; rows, columns
-	db 6 ; spacing
+	db 8 ; spacing
 	dba Strings24f3d
 	dbw BANK(MenuData_0x24f34), 0
 ; 0x24f3d
 
 Strings24f3d: ; 0x24f3d
-	db "FIGHT@"
+	db "LUCHA@"
 	db "<PK><MN>@"
-	db "PACK@"
-	db "RUN@"
+	db "MOCHILA@"
+	db "ESC@"
 ; 24f4e
 
 MenuDataHeader_0x24f89: ; 24f89
@@ -60,10 +60,10 @@ MenuData_0x24f91: ; 24f91
 ; 24f9a
 
 Strings24f9a: ; 24f9a
-	db "FIGHT@"
+	db "LUCHA@"
 	db "<PK><MN>", "@"
 	db "PARKBALL×  @"
-	db "RUN@"
+	db "ESC@"
 ; 24fb2
 
 Function24fb2: ; 24fb2

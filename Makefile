@@ -14,7 +14,7 @@ $(info $$BUILD_VERSION = $(BUILD_DAY)$(BUILD_MONTH)$(BUILD_YEAR)-$(GIT_VERSION))
 $(info  )
 
 ifneq ($(wildcard rgbds/.*),)
-RGBDS_DIR = rgbds/
+RGBDS_DIR = "./rgbds-0.5.0/" # "./rgbds-0.5.0/" # "./rgbds v1.0 17dic2025/"
 else
 RGBDS_DIR =
 endif
