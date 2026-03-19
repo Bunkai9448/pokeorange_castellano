@@ -28,7 +28,7 @@ TradeCenter_BlockData:
 	INCBIN "maps/TradeCenter.blk"
 
 ShamoutiCenter_BlockData:
-;	INCBIN "maps/ShamoutiPokeCenter1F.blk"
+	INCBIN "maps/ShamoutiPokeCenter1F.blk"
 
 TangeloMart_BlockData:
 MikanMart_BlockData:
