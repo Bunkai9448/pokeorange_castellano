@@ -10,7 +10,7 @@
 ### Cambios realizados al código base  
 
 - Se han añadido los caracteres necesarios en la font española: <code>¡¿áíóúñ</code>  
-- Se ha traducido todo el juego, exceptuando la pokedex (en curso).
+- Se ha traducido todo el juego (en curso), exceptuando la pokedex (de momento no hay planes de hacerla).
 - Se han cambiado los nombres opcionales predefinidos del jugador para homenajear a miembros relevantes del proyecto. (temporal)  
 - Se han modificado los menus graficos (nuevo juego, selección de género, fecha/hora, batalla, ficha entrenador, estado pokémon en equipo) para que entren las palabras en español que eran más largas.  
 
