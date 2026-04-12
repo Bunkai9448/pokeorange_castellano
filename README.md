@@ -4,7 +4,7 @@
 
 - Autor original de la [versión fuente](https://github.com/PiaCarrot/pokeorange) (en inglés): Pia Carrot 
 - Autor de [correccion de errores varios](https://github.com/suloku/pokeorange) (en inglés): Suloku
-- Dev: Bunkai  
+- Dev de cambios de codigo en la traducción: [Bunkai](https://github.com/Bunkai9448/)
 - Traductores: [CalentadasTCG](https://www.youtube.com/@CalentadasTCG), [Alxira5](https://x.com/Alxira5), [MagnoTV](https://x.com/SuperCard_ESP).  
 
 ### Cambios realizados al código base  
