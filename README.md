@@ -2,7 +2,8 @@
 
 ### Créditos
 
-- Autor original de la versión fuente (en inglés): Pia Carrot  
+- Autor original de la [versión fuente](https://github.com/PiaCarrot/pokeorange) (en inglés): Pia Carrot 
+- Implementa parcialmente el fork con [algunos errores corregidos](https://github.com/suloku/pokeorange) (en inglés): Suloku
 - Dev: Bunkai  
 - Traductores: [CalentadasTCG](https://www.youtube.com/@CalentadasTCG), [Alxira5](https://x.com/Alxira5), [MagnoTV](https://x.com/SuperCard_ESP).  
 
