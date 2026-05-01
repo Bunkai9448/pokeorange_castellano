@@ -59,30 +59,31 @@ IvysHouseBookshelf:
 	jumpstd difficultbookshelf
 
 FaithText:
-	text "FAITH: Best of"
-	line "luck on your adv-"
-	cont "enture, <PLAYER>!"
+	text "FAITH: ¡La mejor"
+	line "de las suertes en"
+	cont "tu viaje,"
+	cont "<PLAYER>!"
 
-	para "If you'd like, I"
-	line "can change the"
-	cont "date and time"
-	cont "for you."
+	para "Si quieres,"
+	line "puedo cambiarte"
+	cont "la hora y fecha"
+	cont "del cartcuho."
 	done
 
 CharityHiText:
-	text "CHARITY: Hi,"
+	text "CHARITY:¡Hola,"
 	line "<PLAYER>!"
 	done
 
 CharityText:
-	text "CHARITY: Hey,"
-	line "<PLAYER>! Want"
-	cont "to have a battle?"
-	cont "For practice!"
+	text "CHARITY: Ey,"
+	line "<PLAYER>!¿Una"
+	cont "batalla para"
+	cont "practicar?"
 	done
 
 CharityWinLoss:
-	text "Good battle!"
+	text "¡Buena batalla!"
 	done
 
 IvysHouse_MapEventHeader::

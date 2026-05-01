@@ -33,7 +33,7 @@ Route64Sign:
 	jumptext Route64SignText
 	
 Route64SignText:
-	text "ROUTE 64"
+	text "RUTA 64"
 	done
 	
 Route64TraceyCrossEvent:
@@ -63,31 +63,34 @@ Route64TraceyCrossEvent:
 	end
 	
 TraceyCrossEventText1:
-	text "TRACEY: Hey, I"
-	line "said you could use"
-	cont "the HM, not take"
-	cont "it!"
+	text "TRACEY: Oye, dije"
+	line "que podías usar"
+	cont "la MO, ¡no"
+	cont "tomarla!"
 	
-	para "I happen to be"
-	line "giving that to"
-	cont "<PLAYER>!"
+	para "¡Resulta que le"
+	line "estoy dando esto"
+	cont "a <PLAYER>!"
 	
-	para "CROSS: Hmph. That"
+	para "CROSS: Mmm. ¿Ese"
 	line "nerd, <PLAYER>?"
-	cont "Hahaha, no way!"
+	cont "¡Jajaja, ni"
+	cont "hablar!"
 	
-	para "Losers should"
-	line "be left behind!"
-	cont "You can't pass"
-	cont "BUTWAL ISLAND"
-	cont "without this HM!"
+	para "¡Los perdedores"
+	line "deberían quedarse"
+	cont "atrás! No se puede"
+	cont "pasar por la ISLA"
+	cont "BUTWAL sin"
+	cont "esta MO."
 	
-	para "Serves you right,"
+	para "¡Te lo mereces,"
 	line "<PLAYER>!"
 	
-	para "After all, I've"
-	line "been chosen to be"
-	cont "the greatest!"
+	para "¡Después de todo,"
+	line "me han elegido"
+	cont "para ser el más"
+	cont "grande!"
 	done
 	
 ROUTE_64_CROSS_MOVEMENT:
@@ -99,31 +102,34 @@ ROUTE_64_CROSS_MOVEMENT:
 	step_end
 	
 TraceyCrossEventText2:
-	text "TRACEY: Agh!"
-	line "I can't believe"
-	cont "that guy! He said"
-	cont "he'd give me that"
-	cont "HM right back!"
+	text "TRACEY: ¡Ay! ¡No"
+	line "puedo creer lo"
+	cont "que dijo ese"
+	cont "tipo! ¡Dijo que"
+	cont "me devolvería la"
+	cont "MO enseguida!"
 	
-	para "That HM contains"
-	line "DIVE. It lets you"
-	cont "travel underwater."
-	cont "It's an absolute"
-	cont "necessity!"
+	para "Esa MO incluye"
+	line "BUCEO. Te permite"
+	cont "viajar bajo el"
+	cont "agua. ¡Es"
+	cont "absolutamente"
+	cont "necesario!"
 	
-	para "That guy was way"
-	line "too strong. But,"
-	cont "I don't like the"
-	cont "way he battles."
+	para "Ese tipo era"
+	line "demasiado fuerte."
+	cont "Pero no me gusta"
+	cont "cómo lucha."
 	
-	para "You'll have to"
-	line "chase after him"
-	cont "to get it back,"
-	cont "I'm afraid."
+	para "Tendrás que"
+	line "perseguirlo para"
+	cont "recuperarlo, me"
+	cont "temo."
 	
-	para "I wonder what he"
-	line "meant by being"
-	cont "chosen."
+	para "Me pregunto qué"
+	line "quiso decir con"
+	cont "eso de ser"
+	cont "elegido."
 	done
 	
 ROUTE_64_PLAYER_MOVEMENT:
@@ -150,15 +156,18 @@ Route64YoungsterScript:
 	jumptextfaceplayer Route64YoungsterText
 
 Route64YoungsterText:
-	text "There's two weird"
-	line "guys that sit on"
-	cont "BUTWAL ISLAND all"
-	cont "day."
+	text "Hay dos tipos"
+	line "raros que se"
+	cont "sientan en la"
+	cont "ISLA BUTWAL"
+	cont "todo el día."
 	
-	para "I'd be careful,"
-	line "they don't like"
-	cont "other trainers"
-	cont "on their turf."
+	para "Yo tendría"
+	line "cuidado, no les"
+	cont "gusta que haya"
+	cont "otros"
+	cont "entrenadores en"
+	cont "su territorio."
 	done
 	
 Route64_MapEventHeader::
@@ -181,4 +190,3 @@ Route64_MapEventHeader::
 	person_event SPRITE_TRACEY, 16, 24, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, Route64TraceyCrossEvent, EVENT_ROUTE_64_TRACEYCROSS
 	person_event SPRITE_FRUIT_TREE, 7, 24, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Route64FruitTree, -1
 	person_event SPRITE_YOUNGSTER, 16, 14, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, Route64YoungsterScript, -1
-

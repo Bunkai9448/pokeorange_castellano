@@ -25,23 +25,24 @@ TrainerBlackbeltKen:
 	end
 	
 BlackbeltKenSeenText:
-	text "Ho! Ha! Hee!"
+	text "¡Ho! ¡Ha! ¡Hee!"
 	
-	para "Wataaaaaa!"
+	para "¡Wataaaaaa!"
 	
-	para "You are already"
-	line "defeated!"
+	para "¡Ya estas derro-"
+	line "tado!"
 	done
 	
 BlackbeltKenWinText:
-	text "What?"
+	text "¿Que?"
 	done
 	
 BlackbeltKenAfterText:
-	text "I will continue to"
-	line "train under the"
-	cont "way of the NORTH"
-	cont "STAR."
+	text "Seguire entre-"
+	line "nando para llegar"
+	cont "al nivel de la"
+	cont "ESTRELLA DEL"
+	cont "NORTE."
 	done
 	
 ; YOUNGSTER_Oro
@@ -57,35 +58,36 @@ TrainerYoungsterOro:
 	end
 	
 YoungsterOroSeenText:
-	text "It's getting hard"
-	line "to level up my"
-	cont "#MON!"
+	text "Estoy dandole du-"
+	line "ro para subir mis"
+	cont "#MON."
 	
-	para "Maybe the EXP I'll"
-	line "get from you will"
-	cont "help!"
+	para "Quizas la EXP"
+	line "gue logre de ti"
+	cont "me ayude."
 	done
 	
 YoungsterOroWinText:
-	text "Seems you got EXP"
-	line "from me instead!"
+	text "¡Parece que fue"
+	line "al reves!"
 	done
 	
 YoungsterOroAfterText:
-	text "I'm sure you've"
-	line "noticed, but"
-	cont "higher level"
-	cont "#MON give more"
+	text "Seguro que te"
+	line "lo han dicho, que"
+	cont "los #MON de"
+	cont "mas nivel que el"
 	
-	para "EXP than a lower"
-	line "leveled one will."
+	para "tuyo, dan mas exp"
+	line "que los que estan"
+	cont "por debajo."
 	done
 	
 Route65Sign:
 	jumptext Route65SignText
 	
 Route65SignText:
-	text "ROUTE 65"
+	text "RUTA 65"
 	done
 
 Route65_MapEventHeader::

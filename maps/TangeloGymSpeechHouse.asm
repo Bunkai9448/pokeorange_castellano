@@ -18,21 +18,22 @@ TangeloGymSpeechHouseBookshelf:
 	jumpstd picturebookshelf
 
 UnknownText_0x196aea:
-	text "Hm<...> That's a"
-	line "great #MON"
-	cont "that you have."
+	text "Hm<...> Es un"
+	line "gran #MON"
+	cont "el que tienes."
 
-	para "Taking on the"
-	line "ORANGE CREW won't"
-	cont "be an easy task,"
-	cont "though."
+	para "Desafiar al"
+	line "ORANGE CREW no"
+	cont "creo que sea una"
+	cont "tarea fácil."
 	done
 
 UnknownText_0x196b65:
-	text "Of all the ORANGE"
-	line "CREW members, the"
-	cont "strongest is DRAKE"
-	cont "of PUMMELO ISLAND."
+	text "De los miembros"
+	line "del ORANGE CREW,"
+	cont "el mas poderoso es"
+	cont "DRAKE de ISLA"
+	cont "POMELO."
 	done
 
 TangeloGymSpeechHouse_MapEventHeader:

@@ -63,63 +63,66 @@ IceIslandCutscene:
 	end
 	
 IceIslandLawrenceText1:
-	text "LAWRENCE: Peasant."
+	text "LAWRENCE: Plebeyo."
 	
-	para "Can't you see I'm"
-	line "a bit occupied at"
-	cont "the moment?"
+	para "¿No ves que estoy"
+	line "ocupado en este"
+	cont "momento?"
 	
-	para "Behold, legendary"
-	line "#MON ZAPDOS and"
-	cont "ARTICUNO!"
+	para "Contempla a los"
+	line "legendarios"
+	cont "#MON ZAPDOS y"
+	cont "ARTICUNO."
 	
-	para "I gather it's your"
-	line "first time seeing"
-	cont "one? Hmph."
+	para "Parece que es"
+	line "la primera vez"
+	cont "que los ves."
 	
-	para "Well, seeing as"
-	line "you intend to get"
-	cont "in my way<...>"
+	para "Bueno,viendo"
+	line "que te entrometes"
+	cont "en mi camino<...>"
 	
-	para "Here's your reward!"
+	para "¡Toma tu"
+	line "recompensa!"
 	done
 	
 IceIslandLawrenceWinLoss:
-	text "No matter."
+	text "No importa."
 	
-	para "In just a moment,"
-	line "I will become"
-	cont "unstoppable!"
+	para "En unos momentos"
+	line "sere alguien"
+	cont "imparable."
 	done
 	
 IceIslandLawrenceText2:
-	text "LAWRENCE: Execute"
-	line "capture protocol,"
-	cont "terminal. Targets"
-	cont "are ZAPDOS and"
-	cont "ARTICUNO."
+	text "LAWRENCE:Terminal,"
+	line "Ejecuta protocolo"
+	cont "de captura."
+	cont "Los objetivos son"
+	cont "ZAPDOS y ARTICUNO."
 	
-	para "And send transport"
-	line "for myself."
+	para "Y mándalos a"
+	line "mi nave."
 	
 	para "<...>"
 	
-	para "Capture Protocol"
-	line "Initiated."
+	para "Protocolo de"
+	line "captura iniciado."
 	done
 	
 IceIslandLawrenceText3:
-	text "LAWRENCE: Now to"
-	line "simply wait from"
-	cont "the comfort of my"
-	cont "FLYING PALACE."
+	text "LAWRENCE: Solo"
+	line "queda esperar en"
+	cont "la comodidad de"
+	cont "mi PALACIO"
+	cont "VOLADOR."
 	
-	para "Best of luck to"
-	line "follow me up"
-	cont "there."
+	para "Mucha suerte"
+	line "si me sigues"
+	cont "hasta ahí."
 	
-	para "Fare thee well,"
-	line "trainer."
+	para "Hasta la vista,"
+	line "entrenador."
 	done
 	
 IceIslandPlayerMovement:
@@ -170,7 +173,7 @@ IceIslandShrine:
 	end
 	
 .LawrenceCheck:
-	checkevent EVENT_SHAMOUTI_QUEST_ENDED
+	checkevent EVENT_LUGIA_FOUGHT
 	iftrue .ArticunoCheck
 	opentext
 	writetext IceIslandShrineText
@@ -213,15 +216,15 @@ ArticunoIceIslandMovement:
 	step_end
 
 ObtainedIceOrbText:
-	text "<PLAYER> obtained"
-	line "the ICE ORB!"
+	text "<PLAYER> obtuvo"
+	line "el ORBE DE HIELO."
 	done
 
 IceIslandShrineText:
-	text "The shrine is"
-	line "cracking from the"
-	cont "sub-zero temp-"
-	cont "erature."
+	text "El santuario"
+	line "se esta agrietando"
+	cont "al estar bajo"
+	cont "cero."
 	done
 
 IceIsland_MapEventHeader::
@@ -236,7 +239,7 @@ IceIsland_MapEventHeader::
 .ObjectEvents: db 7
 	person_event SPRITE_CAPTURE_RING,  4, 19, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, 0, EVENT_ICE_ISLAND_CAPTURE_RINGS
 	person_event SPRITE_CAPTURE_RING,  4, 17, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, 0, EVENT_ICE_ISLAND_CAPTURE_RINGS
-	person_event SPRITE_ZAPDOS,  7, 17, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_YELLOW2, PERSONTYPE_SCRIPT, 0, 0, EVENT_BEAT_LAWRENCE_ICE_ISLAND
+	person_event SPRITE_ZAPDOS,  7, 17, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, 0, EVENT_BEAT_LAWRENCE_ICE_ISLAND
 	person_event SPRITE_ARTICUNO,  7, 19, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, 0, EVENT_BEAT_LAWRENCE_ICE_ISLAND
 	person_event SPRITE_ARTICUNO,  0, 18, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, 0, EVENT_ARTICUNO_APPEARS
 	person_event SPRITE_LAWRENCE,  5, 18, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, 0, EVENT_BEAT_LAWRENCE_ICE_ISLAND

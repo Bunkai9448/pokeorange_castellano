@@ -103,108 +103,121 @@ GoldenIslandElderScript:
 	end
 	
 ElderTradeScriptText1:
-	text "It's unfortunate"
-	line "about that MEOWTH."
+	text "Hay una desgracia"
+	line "sobre MEOWTH."
 	
-	para "We really need a"
-	line "MEOWTH to grant us"
-	cont "wealth<...>"
+	para "Necesitamos un"
+	line "MEOWTH "
+	cont "desesperadamente"
+	cont "para garantizar"
+	cont "nuestro sustento"
+	cont "<...>"
 	
-	para "Did you happen to"
-	line "find one?"
+	para "¿Podrías"
+	line "encontrar uno?"
 	done
 	
 ElderTradeScriptText2:
-	text "Thank you<...>"
-	line "You have saved our"
-	cont "village!"
+	text "¡Gracias!<...>"
+	line "¡Has salvado"
+	cont "nuestro pueblo!"
 	done
 	
 ElderTradeScriptText3:
-	text "Oh<...> Please, do"
-	line "return if you find"
-	cont "a MEOWTH<...>"
+	text "Oh<...> Porfa"
+	line "vuelve si"
+	line "encuentras un"
+	cont " MEOWTH<...>"
 	done
 	
 ElderTradeScriptText4:
-	text "Oh! This is a"
-	line "bonafide MEOWTH!"
+	text "¡Oh!¡Es un"
+	line "MEOWTH de la"
+	cont "buena suerte."
 	
-	para "Oh, thank you,"
-	line "thank you!"
-	cont "With this, our"
-	cont "village is saved!"
+	para "Oh,¡gracias,"
+	line "gracias!"
+	cont "Con esto,mi"
+	cont "pueblo estara"
+	cont "a salvo."
 	done
 	
 GaveMeowthText:
-	text "<PLAYER> gave MEOWTH"
-	line "to the ELDER!"
+	text "¡<PLAYER> dio MEOWTH"
+	line "al anciano!"
 	done
 
 ElderPleaseSaveMeText:
-	text "Please help me!"
+	text "¡Ayuda, por favor!"
 	done
 
 ElderHouseJessieText1:
-	text "JESSIE: Hey, kid!"
-	line "Who do you think"
-	cont "you are?"
+	text "JESSIE: Ey,tú"
+	line "¿Quien te"
+	cont "crees?"
 	done
 
 ElderHouseJessieText2:
-	text "JESSIE: Come here"
-	line "to stop us, huh?"
+	text "JESSIE: ¿Vienes"
+	line "a detenernos?"
 
-	para "How about we take"
-	line "your #MON too!"
+	para "¡Nos llevaremos"
+	line "tus #MON !"
 
-	para "JAMES: Ooh! That"
-	line "sounds diabolical,"
+	para "JAMES: ¡Ooh!¡Eso"
+	line "suena diabólico"
 	cont "JESSIE!"
 
-	para "MEOWTH: Yeah, that"
-	line "sounds right up my"
-	cont "alley!"
+	para "MEOWTH: Sí,"
+	line "suena muy bien"
+	cont "chicos."
 	done
 
 ElderHouseJessieText3:
-	text "JAMES: But first<...>"
+	text "JAMES: Primero<...>"
 
-	para "Prepare the world"
-	line "for devastation!"
+	para "Para proteger"
+	line "al mundo de la"
+	cont "devastación."
 
-	para "To unite all"
-	line "peoples within our"
-	cont "nation!"
+	para "Para unir a "
+	line "los pueblos en"
+	cont "una sola nación."
 	done
 	
 ElderHouseJessieText4:
 	text "<...> <...> <...>"
 
-	para "JAMES: You say you"
-	line "heard our motto,"
-	cont "already?"
+	para "JAMES: ¿Dices"
+	line "que habías"
+	cont "escuchado "
+	cont "antes nuestro"
+	cont "lema?"
 
-	para "JESSIE: That's im-"
-	line "possible! Unless<...>"
-	cont "BUTCH and CASSIDY"
-	cont "stole our motto!"
+	para "JESSIE: No puede"
+	line "ser,salvo"
+    cont "que<...>"
+	cont "¡BUTCH y CASSIDY"
+	cont "nos hayan"
+	cont "robado nuestro"
+	cont "lema!"
 
-	para "JAMES: But they"
-	line "wouldn't!"
+	para "JAMES: No"
+	line "habran podido..."
 
-	para "MEOWTH: HEY! Cut"
-	line "the talking and"
-	cont "steal this kid's"
-	cont "#MON already!"
+	para "MEOWTH: ¡EY! "
+	line "¡Cortar el rollo"
+	cont "y robar sus"
+	cont "#MON ya!"
 
-	para "JESSIE: Ahahahaha!"
-	line "Very well."
+	para "JESSIE: ¡Ahahahaha!"
+	line "Muy bien."
 	done
 
 JessieJamesWinLoss:
-	text "TEAM ROCKET's blas-"
-	line "ting off again!"
+	text "¡El TEAM ROCKET"
+	line "despega de"
+	cont "nuevo!."
 	done
 
 ElderHouseRocketScript:
@@ -215,40 +228,42 @@ ElderHouseRocketScript:
 	end
 
 ElderRocketText:
-	text "ROCKETS: Give us"
-	line "all of the #MON"
-	cont "you own!"
+	text "ROCKETS: ¡Dadnos"
+	line "todos los #MON"
+	cont "que tengais!"
 	done
 
 SavedElderText:
-	text "Thank you for sav-"
-	line "ing me."
+	text "Gracias por"
+	line "salvarme."
 
-	para "I was nearly burg-"
-	line "led by those foul"
-	cont "TEAM ROCKETs!"
+	para "Casi nos roban"
+	line "esos idiotas"
+	cont "del"
+	cont "TEAM ROCKET."
 
-	para "The talking MEOWTH"
-	line "had me convinced"
-	cont "it was here to br-"
-	cont "ing good fortune."
+	para "El MEOWTH"
+	line "me engaño."
+	cont "Dijo que traería"
+	cont "buena fortuna."
 
-	para "I guess the search"
-	line "for the MEOWTH of"
-	cont "BOUNTY continues."
+	para "Supongo que"
+	line "la busqueda de"
+	cont "MEOWTH sigue."
 
-	para "If you happen to"
-	line "find one, bring it"
-	cont "to me, please!"
+	para "si consigues"
+	line "encontrar uno"
+	cont "tréemelo, por "
+	cont "favor."
 
-	para "Ah, it seems they"
-	line "dropped this."
-	cont "You can have it."
+	para "Ah,parece que"
+	line "lo soltaron."
+	cont "Puedes tenerlo."
 	done
 
 ElderFarewellText:
-	text "Farewell, young"
-	line "trainer!"
+	text "Bien, joven"
+	line "entrenador."
 	done
 
 ELDER_HOUSE_ROCKET_MOVEMENT1:

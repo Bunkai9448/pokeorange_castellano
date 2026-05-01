@@ -14,11 +14,11 @@ TrovitopolisDeptStore3FElevatorButton:
 	jumpstd elevatorbutton
 
 TrovitopolisDeptStore3FDirectoryText:
-	text "For Victory"
-	line "Seekers"
+	text "Para quien bus-"
+	line "ca la victoria."
 
-	para "3F BATTLE"
-	line "   COLLECTION"
+	para "3F COLECCION"
+	line "BATALLA"
 	done
 	
 TrovitopolisBattleMartScript:

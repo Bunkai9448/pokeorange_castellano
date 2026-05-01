@@ -15,20 +15,21 @@ SunburstLassScript:
 	jumptextfaceplayer SunburstLassText
 
 SunburstLassText:
-	text "There used to be a"
-	line "man who lived here"
-	cont "named MATEO."
+	text "Aqui vivía un"
+	line "un hombre llamado"
+	cont "MATEO."
 
-	para "He used to make"
-	line "glass sculptures"
-	cont "in his shop on the"
-	cont "small island west"
-	cont "of here."
+	para "El solia hacer"
+	line "esculturas de"
+	cont "cristal en esta"
+	cont "tienda y en una"
+	cont "pequeña isla al"
+	cont "este de aqui."
 
-	para "He left because"
-	line "business here died"
-	cont "and customers quit"
-	cont "coming."
+	para "El se fue porque"
+	line "el negocio murió"
+	cont "y los clientes"
+	cont "ya no iban."
 	done
 
 SunburstPokeCenter_MapEventHeader::

@@ -16,19 +16,19 @@ AthleteEdScript:
 	end
 
 AthleteEdSeenText:
-	text "I love this job!"
-	line "LUANA lets me work"
-	cont "out, and I get to"
-	cont "kick TRAINER butt!"
+	text "Amo mi trabajo."
+	line "LUANA me contrató"
+	cont "y voy a "
+	cont "patearte."
 	done
 
 AthleteEdBeatenText:
-	text "Yowch!"
+	text "¡Ouch!"
 	done
 
 AthleteEdAfterText:
-	text "I think I pulled"
-	line "my hamstring!"
+	text "Me has pateado"
+	line "tú..."
 	done
 
 KumquatHotelTopRoom2_MapEventHeader::

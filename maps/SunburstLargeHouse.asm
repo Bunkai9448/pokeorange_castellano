@@ -10,12 +10,12 @@ SunburstGrannyScript:
 	jumptextfaceplayer SunburstGrannyText
 
 SunburstGrannyText:
-	text "Once you go past"
-	line "CRYSTAL CAVE, you"
-	cont "must cross ROUTE"
-	cont "55, PINKAN ISLAND,"
-	cont "and ROUTE 56 to go"
-	cont "to KINNOW ISLAND."
+	text "Una vez cruces"
+	line "la CUEVA CRISTAL,"
+	cont "debes cruzar RUTA"
+	cont "55, ISLA PINKAN,"
+	cont "y RUTA 56 para"
+	cont "ir a ISLA KINNOW."
 	done
 
 SunburstLargeHouse_MapEventHeader::

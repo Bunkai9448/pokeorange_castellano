@@ -55,79 +55,82 @@ UnknownScript_0x61051:
 	end
 
 UnknownText_0x62105:
-	text "The COLOSSEUM"
-	line "upstairs is for"
-	cont "link battles."
+	text "Esta hack no"
+	line "tiene funciones"
+	cont "multijugador."
 
-	para "Battle records are"
-	line "posted on the"
+	para "Pero es el"
+	line "mejor hack"
 
-	para "wall, so I can't"
-	line "afford to lose."
+	para "de segunda gen."
+	line "Palabra de"
+	cont "CALENTADASTCG."
 	done
 
 UnknownText_0x62260:
-	text "A higher level"
-	line "#MON doesn't"
-	cont "always win."
+	text "Tener un"
+	line "#MON de mas"
+	cont "nivel no "
+	cont "garantiza ganar."
 
-	para "After all, it may"
-	line "have a type dis-"
-	cont "advantage."
+	para "Hay tabla de"
+	line "tipos y eso"
+	cont "influye."
 
-	para "I don't think"
-	line "there is a single"
+	para "No hay un"
+	line "solo"
 
-	para "#MON that is"
-	line "the toughest."
+	para "#MON que"
+	line "sea el mejor."
 	done
 
 UnknownText_0x623fb:
-	text "Oh my, your pack"
-	line "looks so heavy!"
+	text "Oh, tu mochila"
+	line "parece pesada."
 
-	para "Oh! Do you happen"
-	line "to have something"
-	cont "named EON MAIL?"
+	para "Oh! ¿Crees que"
+	line "tiene que ver"
+	cont "con la carta
+    cont "	EON ?"
 
-	para "My daughter is"
-	line "after one."
+	para "Mi hija esta"
+	line "despues de todo."
 
-	para "You can part with"
-	line "one, can't you?"
+	para "¿Puedes ir"
+	line "con ella?"
 	done
 
 UnknownText_0x6248c:
-	text "Give away an EON"
-	line "MAIL?"
+	text "¿Regalar la "
+	line "carta EON?"
 	done
 
 UnknownText_0x624a4:
-	text "Oh, that's great!"
-	line "Thank you, honey!"
+	text "¡Oh,genial!"
+	line "¡Gracias cielo!"
 
-	para "Here, this is for"
-	line "you in return!"
+	para "Toma, en"
+	line "agradecimiento"
 	done
 
 UnknownText_0x624e9:
-	text "My daughter will"
-	line "be delighted!"
+	text "Mi hija estara"
+	line "decepcionada."
 	done
 
 UnknownText_0x62509:
-	text "Oh? You don't have"
-	line "one? Too bad."
+	text "Oh? ¿No tienes"
+	line "una? Que mal."
 	done
 
 UnknownText_0x6252a:
-	text "Oh<...> Well, another"
-	line "time, then."
+	text "Oh<...> Bueno"
+	line "otra vez será."
 	done
 
 UnknownText_0x62549:
-	text "<PLAYER> gave away"
-	line "the EON MAIL."
+	text "<PLAYER> dio"
+	line "la carta EON."
 	done
 
 GoldenrodPokeCenter1F_MapEventHeader:

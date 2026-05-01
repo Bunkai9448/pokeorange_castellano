@@ -142,63 +142,72 @@ MandarinUndergroundTMThief:
 	itemball HM_CUT
 
 MandarinButchText:
-	text "Well, well."
+	text "Bueno,bueno."
 
-	para "I found a twerp."
-	line "Sorry kid, but"
-	cont "I'm gonna have to"
-	cont "get rid of you."
+	para "Encontré un "
+	line "mequetrefe. Lo"
+	cont "siento niñato,"
+	cont "te sacaré de aquí."
 
-	para "Can't have the new"
-	line "and improved TEAM"
-	cont "ROCKET meddled by"
-	cont "another kid!"
+	para "No puedo dejar que"
+	line "el nuevo y"
+	cont "mejorado TEAM"
+	cont "ROCKET sea vencido"
+	cont "por otro crio."
 	done
 
 ButchWinLoss:
-	text "No way! Not again!"
-	line "But we're strong!"
+	text "¡No puede ser!"
+	line "¡Otra vez no!"
+	cont "Si somos mas"
+	cont "fuertes..."
 	done
 
 MandarinButchWonText:
-	text "Abort mission!"
-	line "I say that, but"
-	cont "there is still"
-	cont "one more of us."
+	text "¡Abortad misión!"
+	line "¡Os lo ordeno!"
+	cont "Aunque todavia"
+	cont "queda uno de"
+	cont "nosotros."
 	done
 
 MandarinCassidyText:
-	text "Who are you?"
+	text ""
 	line "<...><...><...><...>"
 
-	para "I just got started"
-	line "building this dumb"
-	cont "RADIO TOWER!"
+	para "Ha comenzado"
+	line "la construccion de"
+	cont "esta TORRE de"
+	cont "RADIO."
 	
-	para "We were going to"
-	line "hypnotize #MON"
-	cont "using radio waves!"
+	para "Hipnotizaremos a"
+	line "todos los #MON"
+	cont "usando las ondas"
+	cont "de radio."
 
-	para "How dare you ruin"
-	line "NEO ROCKET's new"
-	cont "secret hideout!"
-	cont "Prepare yourself!"
+	para "¿Osas desafiar al"
+	line "NEO TEAM ROCKET?"
+	cont "¿Quieres destapar"
+	cont "nuestro escondite"
+	cont "secreto?"
+	cont "¡PREPARATE!"
 	done
 
 CassidyWinLoss:
-	text "No way! What is"
-	line "wrong with kids"
-	cont "these days!"
+	text "¡No puede ser!"
+	line "¿Que sucede con"
+	cont "con los crios"
+	cont "de hoy dia?"
 	done
 
 MandarinCassidyWonText:
-	text "You may have won"
-	line "for now, kid."
+	text "Puedes haber"
+	line "ganado por ahora."
 
-	para "But, TEAM ROCKET"
-	line "is back, and you"
-	cont "haven't seen the"
-	cont "last of us!"
+	para "¡Pero,el TEAM"
+	line "ROCKET volverá"
+	cont "con mas fuerza"
+	cont "que nunca!"
 	done
 
 MandarinUndergroundBF3_MapEventHeader::

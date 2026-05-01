@@ -19,52 +19,53 @@ MoroFattyScript:
 	jumptextfaceplayer MoroFattyText
 
 MoroFattyText:
-	text "Technology is just"
-	line "amazing!"
+	text "La tecnologÍa es"
+	line "sorprendente."
 
-	para "Hm? You're asking"
-	line "if I'm from VALEN-"
-	cont "CIA ISLAND?"
+	para "¿Preguntas si "
+	line "vengo de ISLA"
+	cont "VALENCIA?"
 
-	para "I'm not, why?"
+	para "No, ¿Por?"
 	done
 
 MoroCooltrainerMScript:
 	jumptextfaceplayer MoroCooltrainerMText
 
 MoroCooltrainerMText:
-	text "Ever been to GOL-"
-	line "DEN ISLAND?"
+	text "¿Has estado"
+	line "alguna vez en"
+	cont "ISLA GOLDEN?"
 
-	para "There are a bunch"
-	line "of crazy MEOWTH"
-	cont "lovers there!"
+	para "Hay un montón"
+	line "de locos amantes"
+	cont "de MEOWTH ahí."
 	done
 
 MoroCooltrainerFScript:
 	jumptextfaceplayer MoroCooltrainerFText
 
 MoroCooltrainerFText:
-	text "I found the cutest"
-	line "#MON on ROUTE"
-	cont "60!"
+	text "¡Encontre el "
+	line "#MON mas cuqui"
+	cont "en ruta 60!"
 	done
 
 MoroIslandSign:
 	jumptext MoroIslandSignText
 
 MoroIslandSignText:
-	text "MORO ISLAND"
+	text "ISLA MORO"
 
-	para "The lilac of the"
-	line "east"
+	para "La Lila del"
+	line "este."
 	done
 
 MoroIslandMuseumSign:
 	jumptext MoroIslandMuseumSignText
 
 MoroIslandMuseumSignText:
-	text "MORO ISLAND MUSEUM"
+	text "MUSEO DE ISLA MORO"
 	done
 
 MoroIslandTMFacade:

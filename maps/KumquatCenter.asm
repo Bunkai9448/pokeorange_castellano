@@ -12,22 +12,23 @@ KumquatCenterNurseScript:
 	jumpstd pokecenternurse
 
 KumquatCenterSlouchScript:
-	faceplayer
 	opentext
 	writetext KumquatCenterSlouchText
 	waitbutton
 	closetext
-	spriteface KUMQUAT_SLOUCH, RIGHT
 	end
 
 KumquatCenterSlouchText:
-	text "Past this island"
-	line "is VICTORY ROAD."
+	text "Pasada esta isla,"
+	line "esta la CALLE"
+	cont "VICTORIA."
 	
-	para "It's a rocky crag"
-	line "that the strongest"
-	cont "TRAINERS gather to"
-	cont "stomp competition."
+	para "Es un terreno"
+	line "rocoso con"
+	cont "entrenadores muy"
+	cont "fuertes, listos"
+	cont "para interrumpir"
+	cont "tu viaje."
 	done
 
 

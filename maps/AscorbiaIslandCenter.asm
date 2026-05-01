@@ -12,12 +12,10 @@ AscorbiaNurseScript:
 	jumpstd pokecenternurse
 
 AscorbiaSlouchScript:
-	faceplayer
 	opentext
 	writetext AscorbiaSlouchText
 	waitbutton
 	closetext
-	spriteface ASCORBIA_SLOUCH, RIGHT
 	end
 	
 Maya:
@@ -29,12 +27,12 @@ Maya:
 	end
 
 AscorbiaSlouchText:
-	text "HEART SCALES can"
-	line "be found on the"
-	cont "beaches and WILD"
-	cont "#MON found"
+	text "Las Esc.corazón"
+	line "pueden encontrarse"
+	cont "en playas y en"
+	cont "#MON salvajes"
 	
-	para "underwater."
+	para "bajo el agua."
 	done
 
 AscorbiaIslandCenter_MapEventHeader::

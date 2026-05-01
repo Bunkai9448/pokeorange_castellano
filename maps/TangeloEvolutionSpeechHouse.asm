@@ -28,27 +28,30 @@ TangeloEvolutionSpeechHouseBookshelf:
 	jumpstd magazinebookshelf
 
 UnknownText_0x196cc3:
-	text "TANGELO ISLAND is"
-	line "on the far western"
-	cont "side of the ORANGE"
-	cont "ARCHIPELAGO."
+	text "ISLA TANGELO es"
+	line "la isla mas lejana"
+	cont "en el lado oeste"
+	cont "del ARCHIPELAGO."
 
-	para "Only by boat or by"
-	line "using a strong WA-"
-	cont "TER #MON can"
-	cont "you explore it."
+	para "Solo puedes ir"
+	line "en barco o si"
+	cont "tienes #MON"
+	cont "de tipo agua"
+	cont "que surfeen."
 	done
 
 UnknownText_0x196cfc:
-	text "There are several"
-	line "islands that have"
-	cont "not been explored."
+	text "Hay muchas islas"
+	line "que todavia no"
+	cont "han sido"
+	cont "exploradas."
 
-	para "Some just aren't"
-	line "habitable. Some"
-	cont "are protected so"
-	cont "wild #MON can"
-	cont "live freely."
+	para "Algunas no son"
+	line "habitables. Otras"
+	cont "esta protegidas"
+	cont "por #MON"
+	cont "salvajes que"
+	cont "viven libremente."
 	done
 
 TangeloEvolutionSpeechHouse_MapEventHeader::

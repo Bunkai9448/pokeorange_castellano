@@ -1,3 +1,4 @@
+
 const_value = 1
 	const LIGHTNING_ISLAND_ELECTIRIZER
 	const LIGHTNING_ISLAND_SEASHELL
@@ -50,7 +51,7 @@ LightningIslandShrine:
 	end
 	
 .LawrenceCheck:
-	checkevent EVENT_SHAMOUTI_QUEST_ENDED
+	checkevent EVENT_LUGIA_FOUGHT
 	iftrue .ZapdosCheck
 	opentext
 	writetext LightningIslandShrineText
@@ -93,29 +94,31 @@ ZapdosLightningIslandMovement:
 	step_end
 
 ObtainedElectricOrbText:
-	text "<PLAYER> obtained"
-	line "the ELECTRIC ORB!"
+	text "<PLAYER> obtuvo"
+	line "el ORBE ELECTRICO."
 	done
 
 LightningIslandShrineText:
-	text "The shrine is"
-	line "crackling with"
-	cont "electricity,"
-	cont "to the point it"
-	cont "probably isn't"
-	cont "safe to touch."
+	text "El Santuario"
+	line "chisporrotea"
+	cont "electicidad,"
+	cont "será mejor no"
+	cont "tocarlo por si"
+	cont "acaso."
 	done
 	
 LightningIslandNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "Una bonita concha"
+    line "marina. Parece"
+    cont "muy frágil para"
+    cont "guardarla en"
+	cont "mi mochila."
     done
 	
 FoundLightningIslandSeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "Encontraste una"
+	line "rara concha"
+	cont "marina."
 	done
 
 LightningIsland_MapEventHeader::
@@ -132,5 +135,5 @@ LightningIsland_MapEventHeader::
 	person_event SPRITE_POKE_BALL, 18, 49, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, LightningIslandElectirizer, EVENT_LIGHTNING_ISLAND_ELECTIRIZER
 	person_event SPRITE_SEASHELL, 30, 12, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, LightningIslandSeashellScript, EVENT_LIGHTNING_ISLAND_SEASHELL
 	person_event SPRITE_POKE_BALL,  8, 52, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, LightningIslandThunderstone, EVENT_LIGHTNING_ISLAND_THUNDERSTONE
-	person_event SPRITE_ZAPDOS,  2, 36, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_YELLOW2, 0, 0, 0, EVENT_ZAPDOS_APPEARS
+	person_event SPRITE_ZAPDOS,  2, 36, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BROWN, 0, 0, 0, EVENT_ZAPDOS_APPEARS
 

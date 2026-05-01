@@ -15,11 +15,14 @@ Route57SwimmerGirlScript:
 	jumptextfaceplayer R57SwimmerGirlText
 
 R57SwimmerGirlText:
-	text "What? You thought"
-	line "I was a trainer?"
+	text "¿Qué? ¿Pensabas"
+	line "que yo era"
+	cont "entrenador?"
 
-	para "Some people just"
-	line "like to swim!"
+	para "¡A algunas"
+	line "personas"
+	cont "simplemente les"
+	cont "gusta nadar!"
 	done
 
 TrainerSightSeerAsami:
@@ -34,23 +37,27 @@ TrainerSightSeerAsami:
 	end
 
 SightSeerAsamiSeenText:
-	text "The ORANGE ISLANDS"
-	line "are wonderful!"
+	text "¡Las ISLAS"
+	line "NARANJAS son"
+	cont "maravillosas!"
 
-	para "Beautiful beaches,"
-	line "cute boys, and of"
-	cont "course, weak trai-"
-	cont "ners!"
+	para "Playas preciosas,"
+	line "chicos guapos y,"
+	cont "por supuesto,"
+	cont "¡entrenadores"
+	cont "débiles!"
 	done
 
 SightSeerAsamiBeatenText:
-	text "Kyaa!"
+	text "¡Kyaa!"
 	done
 
 SightSeerAsamiAfterText:
-	text "I guess some of"
-	line "you are strong"
-	cont "after all."
+	text "Supongo que"
+	line "algunos de"
+	cont "ustedes son"
+	cont "fuertes después"
+	cont "de todo."
 	done
 
 TrainerBugCatcherFAlia:
@@ -65,22 +72,26 @@ TrainerBugCatcherFAlia:
 	end
 
 BugCatcherFAliaSeenText:
-	text "I don't see many"
-	line "other girls who"
-	cont "like BUG #MON."
+	text "No veo a muchas"
+	line "otras chicas a"
+	cont "las que les"
+	cont "guste los"
+	cont "#MON de"
+	cont "tipo BICHO."
 
-	para "Is it really that"
-	line "strange?"
+	para "¿Es realmente"
+	line "tan extraño?"
 	done
 
 BugCatcherFAliaBeatenText:
-	text "My cute BUGs!"
+	text "¡Mis lindos BICHOS!"
 	done
 
 BugCatcherFAliaAfterText:
-	text "I hope I can meet"
-	line "lots of BUG-type"
-	cont "collectors."
+	text "Espero poder"
+	line "conocer a muchos"
+	cont "coleccionistas de"
+	cont "tipo BICHO."
     done
 
 TrainerFisherYuuta:
@@ -95,30 +106,31 @@ TrainerFisherYuuta:
 	end
 
 FisherYuutaSeenText:
-	text "Deep sea angling"
-	line "will net you big"
-	cont "catches!"
+	text "¡La pesca de"
+	line "altura te dará"
+	cont "grandes capturas!"
 	done
 
 FisherYuutaBeatenText:
-	text "Wiped out!"
+	text "¡Aniquilados!"
 	done
 
 FisherYuutaAfterText:
-	text "Not bad."
+	text "Nada mal."
 
-	para "I sense a great"
-	line "FISHER spirit in"
-	cont "you."
+	para "Percibo en ti un"
+	line "gran espíritu"
+	cont "PESCADOR."
 	done
 	
 Route57Sign:
 	jumptext Route57SignText
 	
 Route57SignText:
-	text "ROUTE 57"
-	line "east to the 7"
-	cont "GRAPEFRUIT ISLANDS"
+	text "RUTA 57"
+	line "al este de las"
+	cont "7 ISLAS"
+	cont "POMELO"
 	done
 
 Route57HardStone:

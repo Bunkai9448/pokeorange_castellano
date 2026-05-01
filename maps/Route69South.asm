@@ -16,8 +16,8 @@ VictoryRoadSign:
 	jumptext VictoryRoadSignText
 	
 VictoryRoadSignText:
-	text "ROUTE 69"
-	line "VICTORY ROAD"
+	text "RUTA 69"
+	line "CALLE VICTORIA"
 	done
 
 Route69SouthUltraBall:
@@ -43,18 +43,18 @@ TrainerCooltrainerMMako:
 	end
 
 CooltrainerMMakoSeenText:
-	text "This battle is so"
-	line "going on #TUBE!"
+	text "El combate ira"
+	line "a #TUBE!"
 	done
 
 CooltrainerMMakoBeatenText:
-	text "This better get"
-	line "a hundred likes!"
+	text "¡Mas vale que "
+	line "tenga 100 likes!"
 	done
 
 CooltrainerMMakoAfterText:
-	text "#TUBE stardom,"
-	line "here I come!"
+	text "#TUBE, ¡Voy"
+	line "al estrellato!"
 	done
 	
 Route69DragonPulse:
@@ -77,25 +77,24 @@ Route69NurseScript:
 	writetext Route69NurseHealedText
 	waitbutton
 	closetext
-	spriteface ROUTE_69_NURSE, DOWN
 	end
 
 Route69NurseText:
-	text "Hello trainer!"
+	text "¡Hola!"
 
-	para "Victory Road is"
-	line "just ahead, so be"
-	cont "sure you are fully"
-	cont "prepared!"
+	para "La Calle Victoría"
+	line "esta justo ahí,"
+	cont "así que ya puedes"
+	cont "ir bien preparado."
 	
-	para "Let me heal your"
-	line "party."
+	para "Déjame curar a"
+	line "tu equipo."
 	done
 
 Route69NurseHealedText:
-	text "Good luck."
+	text "Buena suerte."
 
-	para "You'll need it."
+	para "La necesitarás."
 	done
 
 Route69South_MapEventHeader::

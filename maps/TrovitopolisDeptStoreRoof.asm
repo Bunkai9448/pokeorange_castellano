@@ -221,36 +221,36 @@ DeptOldLadyRoofScript:
 	db "EGG@"
 
 WhichEggText:
-	text "Which EGG?"
+	text "¿Que huevo?"
 	done
 
 DeptOldLadyText1:
-	text "I sell very rare"
-	line "#MON EGGs."
+	text "Vendo huevos"
+	line "#MON muy raros."
 
-	para "I have plenty!"
-	line "One can be yours"
-	cont "for only ¥2000!"
-	cont "How about it?"
+	para "¡Tengo de sobra!"
+	line "¡Uno puede ser "
+	cont "tuyo por ¥2000!"
+	cont "¿Que me dices?"
 	done
 
 NotEnoughMoneyDeptRoofText:
-	text "You don't have"
-	line "enough money!"
+	text "¡No tienes sufi-"
+	line "ciente dinero!"
 	done
 
 DeptRoofPartyFullText:
-	text "You don't have"
-	line "enough room!"
+	text "¡No tienes sufi-"
+	line "ciente espacio!"
 	done
 
 RefusedDeptStoreLadyText:
-	text "Very well, then."
+	text "Muy bien, toma."
 	done
 
 PleasureDoingBusinessDeptStoreText:
-	text "Pleasure doing"
-	line "business with you."
+	text "Un placer hacer"
+	line "negocios contigo."
 	done
 
 TrovitopolisDeptStoreRoof_MapEventHeader::

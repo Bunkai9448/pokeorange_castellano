@@ -45,45 +45,45 @@ PinkanIslandHiddenPinkanBerry:
 .Text:
 
 ManiacShawnSeenText:
-	text "Ahaha!"
+	text "¡Hahaha!"
 
-	para "I painted myself"
-	line "to blend in with"
-	cont "the #MON!"
+	para "¡Me he pintado"
+	line "para ir a juego"
+	cont "con los #MON!"
 
-	para "How do you like"
-	line "it?"
+	para "¿Como te gusta-"
+	line "ría?"
 	done
 
 ManiacShawnBeatenText:
-	text "PINK! PINK!"
-	line "PIIIIIIINK!"
+	text "¡ROSA! ¡ROSA!"
+	line "¡ROSAAAAA!"
 	done
 
 ManiacShawnAfterText:
-	text "I am an absolute"
-	line "MANIAC when it"
-	cont "comes to PINKAN"
-	cont "ISLAND!"
+	text "¡Me vuelvo loquí-"
+	line "simo cuando"
+	cont "vengo a ISLA"
+	cont "PINKAN!"
 	done
 
 PinkanIslandSignText:
-	text "PINKAN ISLAND"
-	line "EAST to KINNOW"
-	cont "ISLAND"
+	text "ISLA PINKAN,"
+	line "AL ESTE ISLA"
+	cont "KINNOW"
 	done
 
 PinkanTrainerTipsSignText:
-	text "TRAINER TIPS"
+	text "PISTA ENT."
 
-	para "#MON that are"
-	line "caught on PINKAN"
-	cont "ISLAND are PINK"
-	cont "permanently."
+	para "Los #MON"
+	line "atrapados en ISLA"
+	cont "PINKAN son ROSAS"
+	cont "permanentemente."
 	
-	para "PINKAN BERRY will"
-	line "also turn #MON"
-	cont "PINK."
+	para "Las BAYAS PINKAN"
+	line "vuelven los #MON"
+	cont "ROSAS."
 	done
 
 PinkanIslandFruitTree1:

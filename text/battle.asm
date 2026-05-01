@@ -32,7 +32,7 @@ PokemonFellFromTreeText: ; 0x80778
 
 WantsToBattleText:: ; 0x807a9
 	text "<ENEMY>"
-	line "quiere luchar.!"
+	line "quiere luchar!"
 	prompt
 ; 0x807bd
 
@@ -76,7 +76,7 @@ LeechSeedSapsText: ; 0x8080e
 ; 0x80822
 
 HurtByCurseText: ; 0x80836
-	text "¡<USER>'s"
+	text "¡<USER> es"
 	line "herido por"
 	cont "MALDICIÓN!"
 	prompt
@@ -94,9 +94,9 @@ HailHitsText:
 	prompt
 
 PerishCountText: ; 0x80864
-	text "<USER>'s"
-	line "EL Contador de"
-	cont "MUERTE es @"
+	text "EL Contador de"
+	line "MUERTE de"
+	cont "<USER> es @"
 	deciram wd265, 1, 1
 	text "!"
 	prompt
@@ -128,8 +128,8 @@ BattleText_TargetWasHitByFutureSight: ; 0x808b6
 ; 0x808d2
 
 BattleText_SafeguardFaded: ; 0x808d2
-	text "<USER>'s"
-	line "VELO SAGRADO se"
+	text "El VELO SAGRADO"
+	line "de <USER> se"
 	cont "desvanecio!"
 	
 	prompt
@@ -139,7 +139,7 @@ BattleText_PkmnLightScreenFell: ; 0x808e7
 	text_from_ram StringBuffer1
 	text " #MON's"
 	line "Pantalla de luz"
-	cont " ha caido!"
+	cont "ha caido!"
 	prompt
 ; 0x80905
 
@@ -211,7 +211,7 @@ GotMoneyForWinningText:
 	prompt
 
 BattleText_EnemyWasDefeated: ; 0x809da
-	text "¡<ENEMY>"
+	text "<ENEMY>"
 	line "ha perdido!"
 	prompt
 ; 0x809eb
@@ -440,32 +440,32 @@ DisabledNoMoreText: ; 0x80d39
 
 IsConfusedText: ; 0x80d4f
 	text "¡<USER>"
-	line "esta confuso!"
+	line "está confuso!"
 	prompt
 ; 0x80d5f
 
 HurtItselfText: ; 0x80d5f
-	text "¡Tan confuso está"
+	text "¡Está confuso tan"
 	line "que se hiere a"
 	cont "sí mismo!"
 ; 0x80d81
 
 ConfusedNoMoreText: ; 0x80d81
-	text "¡<USER>'s"
-	line "no esta confuso!"
+	text "¡<USER>"
+	line "no está confuso!"
 	prompt
 ; 0x80d97
 
 BecameConfusedText: ; 0x80d97
 	text "¡<TARGET>"
-	line "Esta confuso!"
+	line "Está confuso!"
 	prompt
 ; ItemHealedConfusion
 
 BattleText_ItemHealedConfusion: ; ItemHealedConfusion
 	text "A @"
 	text_from_ram StringBuffer1
-	text " curo a "
+	text " curó a "
 	line "<TARGET>"
 	cont "de su confusión."
 	prompt
@@ -473,12 +473,12 @@ BattleText_ItemHealedConfusion: ; ItemHealedConfusion
 
 AlreadyConfusedText: ; 0x80dcc
 	text "¡<TARGET>'s"
-	line "ya esta confuso!"
+	line "ya está confuso!"
 	prompt
 ; 0x80de2
 
 BattleText_UsersHurtByStringBuffer1: ; 0x80de2
-	text "<USER>'s"
+	text "¡<USER> es"
 	line "herido por"
 	cont "@"
 	text_from_ram StringBuffer1
@@ -487,7 +487,7 @@ BattleText_UsersHurtByStringBuffer1: ; 0x80de2
 ; 0x80df5
 
 BattleText_UserWasReleasedFromStringBuffer1: ; 0x80df5
-	text "<USER>"
+	text "¡<USER>"
 	line "fue liberado de"
 	cont "@"
 	text_from_ram StringBuffer1
@@ -508,7 +508,7 @@ FireSpinTrapText: ; 0x80e34
 ; 0x80e44
 
 WrappedByText: ; 0x80e44
-	text "<TARGET>"
+	text "¡<TARGET>"
 	line "fue atrapado por"
 	cont "<USER>!"
 	prompt

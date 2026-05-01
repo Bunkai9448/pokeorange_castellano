@@ -26,7 +26,7 @@ TrainerDiverMOkabe:
 	end
 	
 DiverOkabeSeenText:
-	text "Blub! Blub!"
+	text "¡Blub! ¡Blub!"
 	done
 	
 DiverOkabeWinText:
@@ -54,7 +54,7 @@ DiverMayuriSeenText:
 	done
 	
 DiverMayuriWinText:
-	text "Bu bu!"
+	text "¡Bu bu!"
 	done
 	
 DiverMayuriAfterText:

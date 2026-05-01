@@ -8,7 +8,7 @@ UnknownText_0x1c5066::
 	prompt
 
 UnknownText_0x1c5079::
-	text "Vaya<...> Me quede"
+	text "Vaya<...> Me quedé"
 	line "sin fichas<...>"
 	done
 
@@ -29,8 +29,8 @@ UnknownText_0x1c50bb::
 	done
 
 UnknownText_0x1c55db::
-	text "Select CONTINUE &"
-	line "reset settings."
+	text "Dale a continuar"
+	line "y resetea."
 	prompt
 
 UnknownText_0x1c561c::
@@ -121,8 +121,8 @@ UnknownText_0x1c574e::
 	prompt
 
 UnknownText_0x1c5772::
-	text "Los movimientos MO"
-	line "no se pueden"
+	text "Los movimientos"
+	line "MO no se pueden"
 	cont "olvidar ahora."
 	prompt
 
@@ -203,7 +203,7 @@ UnknownText_0x1c5b38::
 
 UnknownText_0x1c5b53::
 	text_from_ram EnemyMonNick
-	text "'s data"
+	text "'s datos"
 	line "fueron añadidos a"
 	cont "la #DEX.@"
 	sound_slot_machine_start
@@ -254,7 +254,7 @@ UnknownText_0x1c5c28::
 	
 UnknownText_0x1c5c44::
 	text "<PLAYER> toca la"
-	line "# FLUTE.@"
+	line "# FLAUTA.@"
 	text_waitbutton
 	db "@@"
 
@@ -274,7 +274,7 @@ Text_TurnOnExpAll::
 	line "activado!"
 
 	para "Todo el equipo"
-	line "ganara EXP."
+	line "ganará EXP."
 	done
 
 Text_RaiseThePPOfWhichMove::
@@ -296,7 +296,7 @@ Text_PPIsMaxedOut::
 Text_PPsIncreased::
 	text_from_ram StringBuffer2
 	text "los PP"
-	line "aumentaron"
+	line "aumentaron."
 	prompt
 	
 Text_PPsMaximized::
@@ -327,7 +327,7 @@ UnknownText_0x1c5d6e::
 
 UnknownText_0x1c5db6::
 	text "Eso no tendra"
-	line "ningun efecto."
+	line "ningún efecto."
 	prompt
 
 UnknownText_0x1c5dd0::
@@ -340,13 +340,13 @@ UnknownText_0x1c5def::
 	prompt
 
 UnknownText_0x1c5e3a::
-	text "La #MON caja"
+	text "La caja #MON"
 	line "esta llena.No"
 	cont "puede ser usada."
 	prompt
 
 UnknownText_0x1c5e68::
-	text "<PLAYER> used the@"
+	text "<PLAYER> uso el@"
 	text_low
 	text_from_ram StringBuffer2
 	text "."
@@ -424,7 +424,7 @@ MoveReminderIntroText::
 	text "¡Hola!Soy el"
 	line "recuerda mov."
 
-	para "Hare a tu"
+	para "Haré a tu"
 	line "#MON recordar"
 
 	para "un movimiento"
@@ -451,7 +451,7 @@ MoveReminderWhichMoveText::
 MoveReminderNoHeartScaleText::
 	text "¿Eh? No tienes"
 	line "una escama"
-	cont "corazon."
+	cont "corazón."
 
 	para "A veces puedes"
 	line "encontrarlas fuera."
@@ -486,7 +486,7 @@ MoveReminderCancelText::
 
 AlreadyHaveTMText::
 	text "Ya tienes esa"
-	line "MT"
+	line "MT."
 	done
 	
 ShellBoxText::

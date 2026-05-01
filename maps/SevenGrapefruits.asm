@@ -92,77 +92,78 @@ GrapefruitHiddenRareCandy:
 	dwb EVENT_GRAPEFRUIT_RARE_CANDY, RARE_CANDY
 
 GrapefruitWorkerText:
-	text "Oh no!"
+	text "¡Oh no!"
 
-	para "This SNORLAX is"
-	line "eating all of our"
-	cont "GRAPEFRUITs!"
+	para "¡Este SNORLAX se"
+	line "comiendo todos"
+	cont "los pomelos!"
 
-	para "Oh, whatever will"
-	line "we do?"
+	para "¿Que podemos"
+	line "hacer?"
 	done
 
 GrapefruitWorkerHappyText:
-	text "Thank you for get-"
-	line "ting rid of that"
+	text "¡Gracias por"
+	line "detener al"
 	cont "SNORLAX!"
 	done
 
 SnorlaxIsSleepingText:
-	text "SNORLAX is snoring"
-	line "peacefully<...>"
+	text "SNORLAX ronca"
+	line "tranquilo<...>"
 	done
 
 GrapefruitIslandsSnorlaxTextHaveFlute:
-	text "SNORLAX is snoring"
-	line "peacefully<...>"
+	text "SNORLAX ronca"
+	line "tranquilo<...>"
 	
-	para "Want to use the"
-	line "# FLUTE?"
+	para "¿Quieres usar la"
+	line "# FLAUTA?"
 	done
 	
 GrapefruitIslandsSnorlaxTextUseFlute:
-	text "<PLAYER> used the"
-	line "# FLUTE!"
+	text "¡<PLAYER> uso la"
+	line "# FLAUTA!"
 	done
 
 GrapefruitIslandsSnorlaxTextWakeUp:
 	text "<...>"
 
-	para "SNORLAX scratches"
-	line "its behind<...>"
+	para "SNORLAX se rasca"
+	line "el trasero<...>"
 
 	para "<...>"
 
-	para "SNORLAX groans."
-	line "Five more minutes."
+	para "SNORLAX gruñe."
+	line "Cinco min mas."
 
 	para "<...>"
 
-	para "SNORLAX stops sno-"
-	line "ring<...>"
+	para "SNORLAX deja de"
+	line "roncar<...>"
 
 	para "<...>"
 
-	para "SNORLAX woke up!"
+	para "¡SNORLAX se"
+	cont "despierta!"
 	done
 	
 GrapefruitIslandsSnorlaxTextSnorlaxGone:
-	text "The path is now"
-	line "open!"
+	text "Ahora, el camino"
+	line "esta despejado."
 	done
 
 GrapefruitIslandsSnorlaxTextRanAway:
-	text "SNORLAX ran away!"
+	text "¡SNORLAX huye!"
 	done
 
 GrapefruitWarehouseSignText:
-	text "GRAPEFRUIT for"
-	line "sale!"
+	text "¡Frutas en "
+	line "venta!"
 
-	para "Welcome to the"
-	line "7 GRAPEFRUIT"
-	cont "ISLANDS!"
+	para "Bienvenido a"
+	line "7 ISLAS "
+	cont "POMELO."
 	done
 	
 SevenGrapefruitsSeashellScript:
@@ -185,15 +186,18 @@ SevenGrapefruitsSeashellScript:
 	end
 	
 SevenGrapefruitsNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "¡Una bonita"
+    line "concha marina!"
+    cont "Parece demasiado"
+    cont "frágil para"
+    cont "guardarla en"
+    cont "la bolsa."
     done
 	
 FoundSevenGrapefruitsSeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "¡Encontraste una"
+	line "rara concha"
+	cont "marina!"
 	done
 
 SevenGrapefruits_MapEventHeader::

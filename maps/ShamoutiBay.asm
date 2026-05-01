@@ -34,20 +34,23 @@ ShamoutiBayBoat:
 	jumptext ShamoutiBayBoatText
 
 ShamoutiBayBoatText:
-	text "It's the boat that"
-	line "brought you here."
+	text "Es el barco que"
+	line "te ha traido"
+	cont "hasta aquí."
 	done
 	
 ShamoutiBayNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "¡Una bonita concha"
+    line "marina! Parece"
+    cont "demasiado frágil"
+    cont "para guardarla"
+	cont "en la bolsa."
     done
 	
 FoundShamoutiBaySeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "¡Encontraste una"
+	line "rara concha"
+	cont "marina!"
 	done
 
 ShamoutiBayTradestone:

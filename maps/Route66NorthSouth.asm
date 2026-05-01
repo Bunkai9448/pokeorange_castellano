@@ -39,19 +39,20 @@ TrainerLassLola:
 	end
 
 LassLolaSeenText:
-	text "We got whooped by"
-	line "LUANA! So we're"
-	cont "looking for weak-"
-	cont "lings to train on!"
+	text "¡Luana nos dio"
+	line "una paliza!"
+	cont "¡Estamos buscan-"
+	cont "do debiluchos"
+	cont "para entrenar!"
 	done
 
 LassLolaBeatenText:
-	text "Whooped again!"
+	text "Otra vez perdí..."
 	done
 
 LassLolaAfterText:
-	text "You looked so"
-	line "easy, too<...>"
+	text "Parecias un"
+	line "matao<...>"
 	done
 	
 ;=================================
@@ -69,19 +70,19 @@ TrainerCooltrainerMDavid:
 	end
 
 CooltrainerMDavidSeenText:
-	text "The ORANGE crew!"
+	text "¡El ORANGE crew!"
 	
-	para "Show me you're"
-	line "worthy to fight"
-	cont "them!"
+	para "Muestrame si"
+	line "estas preparado"
+	cont "para desafiarlos."
 	done
 
 CooltrainerMDavidBeatenText:
-	text "You pass!"
+	text "¡Prueba superada!"
 	done
 
 CooltrainerMDavidAfterText:
-	text "You pass!"
+	text "¡Prueba superada!"
 	done
 	
 ;=================================
@@ -99,18 +100,19 @@ TrainerBirdkeeperDwight:
 	end
 
 BirdkeeperDwightSeenText:
-	text "A bird in a cage<...>"
+	text "Un pájaro en una"
+	line "jaula."
 	done
 
 BirdkeeperDwightBeatenText:
-	text "It<...>"
+	text "Eso<...>"
 	done
 
 BirdkeeperDwightAfterText:
-	text "It<...>"
+	text "Eso<...>"
 	
-	para "Can't spread its'"
-	line "wings!"
+	para "No pudo despe-"
+	line "gar sus alas..."
 	done
 	
 ;=================================
@@ -128,21 +130,22 @@ TrainerSightseerFFlora:
 	end
 
 SightseerFFloraSeenText:
-	text "I'll have you know!"
+	text "¡Vas a ver!"
 	
-	para "I'm a super strong"
-	line "trainer!"
-	cont "I have 6 BADGES!"
+	para "Soy un entrena-"
+	line "dor fortísimo."
+	cont "¡Tengo 6 medallas!"
 	done
 
 SightseerFFloraBeatenText:
-	text "No way!"
+	text "No puede ser..."
 	done
 
 SightseerFFloraAfterText:
-	text "Well, I only have"
-	line "one BADGE from the"
-	cont "ORANGE ISLANDS<...>"
+	text "Bueno, solo tengo"
+	line "una MEDALLA de"
+	cont "las ISLAS"
+	cont "NARANJA<...>"
 	done
 
 Route66NorthSouth_MapEventHeader::

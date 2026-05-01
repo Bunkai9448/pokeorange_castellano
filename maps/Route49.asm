@@ -52,50 +52,50 @@ Route49FreshWater:
 	itemball FRESH_WATER
 
 Route49YoungsterText:
-	text "Yo. That's a"
-	line "cool #MON."
+	text "Yo. Es un"
+	line "buen #MON."
 
-	para "But be careful."
-	line "I hear there are"
+	para "Pero ten cuidado."
+	line "He escuchado que"
 
-	para "some shady char-"
-	line "acters around."
+	para "hay gente sospe-"
+	line "chosa merodeando."
 	done
 
 Route49TeacherText:
-	text "Hey! I caught a"
-	line "strange RATTATA."
-	cont "It has black fur!"
+	text "¡Ey! He atrapado"
+	line "un RATTATA muy"
+	cont "raro. ¡Es negro!"
 	done
 
 Route49FisherText:
-	text "Did you know?"
-	line "PROF.IVY once"
+	text "¿Sabes? La"
+	line "PROF.IVY una vez"
 
-	para "saved a RATICATE"
-	line "that was poisoned"
-	cont "by VILEPLUME."
+	para "salvo un RATICATE"
+	line "envenenado por"
+	cont "VILEPLUME."
 	done
 
 Text_WaitingForNight:
-	text "I'm waiting for"
-	line "#MON that"
+	text "Estoy esperando"
+	line "los #MON que"
 
-	para "appear only at"
-	line "night."
+	para "solo aparecen"
+	line "por la noche."
 	done
 
 Text_WaitingForMorning:
-	text "I'm waiting for"
-	line "#MON that"
+	text "Estoy esperando"
+	line "los #MON que"
 
-	para "appear only in the"
-	line "morning."
+	para "solo aparecen"
+	line "por el día."
 	done
 
 Route49SignText:
-	text "ROUTE 49"
-	line "VALENCIA ISLAND"
+	text "RUTA 49"
+	line "ISLA VALENCIA"
 	done
 	
 Route49HiddenUltraBall:
@@ -124,25 +124,26 @@ Route49BugBiteTutor:
 	end
 
 GivePlayerBugBiteText:
-	text "I'll give you a BUG"
-	line "BITE if you don't"
-	cont "leave me alone!"
+	text "¡Hare que te"
+	line "pique un bicho"
+	cont "si no me dejas"
+	cont "solo!"
 	
-	para "Unless, you want"
-	line "me to teach you?"
+	para "¿O quieres que"
+	line "te enseñe?"
 	
-	para "Want to learn"
-	line "BUG BITE?"
+	para "¿Quieres aprender"
+	line "PICADURA?"
 	done
 	
 Text_BugBiteTutorTaught:
-	text "BUG BITE can eat"
-	line "your opponent's"
-	cont "BERRIES!"
+	text "¡Picadura puede"
+	line "quitar las bayas"
+	cont "del rival!"
 	done
 	
 Text_BugBiteTutorRefused:
-	text "Buzz off, then!"
+	text "¡Entonces vete!"
 	done
 	
 Text_BugBiteTutorClear:

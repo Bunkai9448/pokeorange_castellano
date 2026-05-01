@@ -26,9 +26,9 @@ CleopatraIslandSign:
 	jumptext CleopatraIslandSignText
 	
 CleopatraIslandSignText:
-	text "CLEOPATRA ISLAND"
+	text "ISLA CLEOPATRA "
 
-	para "TO ASCORBIA"
+	para "HACIA ASCORBIA"
 	done
 
 CrossCleopatraEventScript:
@@ -64,56 +64,60 @@ CrossCleopatraEventScript:
 	
 CleopatraCrossText1:
 	text "CROSS: Hmph."
-	line "That CHAMPION BELT"
-	cont "means nothing, it"
-	cont "seems!"
+	line "El cinturón de"
+	cont "CAMPEON parece"
+	cont "que no significa"
+	cont "nada."
 	
-	para "You said you're"
-	line "some hotshot from"
-	cont "KANTO, but you're"
-	cont "nothing but a"
+	para "Dices que los"
+	line "fuertes vienen de"
+	cont "KANTO, pero tú no"
+	cont "eres mas que un"
 	
-	para "weakling! I'm out"
-	line "of here!"
+	para "débil.Me voy"
+	line "de aquí."
 	
 	para "???: <...>"
 	done
 	
 CleopatraCrossText2:
-	text "CROSS: Well, well."
-	line "If it isn't"
+	text "CROSS: Bien,bien."
+	line "¡Si es"
 	cont "<PLAYER>!"
 	
-	para "Unfortunately, my"
-	line "#MON aren't in"
-	cont "top condition, so"
-	cont "let's battle some"
+	para "Desgraciadamente"
+	line "mis #MON no"
+	cont "estan en "
+	cont "condiciones.En"
 	
-	para "other time. Later!"
+	para "otra ocasión"
+	cont "pelearemos"
 	done
 	
 CleopatraCrossText3:
-	text "???: That guy sure"
-	line "beat me good. The"
-	cont "name's TAD."
+	text "???: Este tipo"
+	line "parece bueno. Su"
+	cont "nombre es TAD."
 	
-	para "TAD: Despite what"
-	line "that guy said, I"
-	cont "have a lot of"
-	cont "faith in my ace,"
+	para "TAD: Olvida lo"
+	line "que ha dicho,"
+	cont "Tengo mucha fe"
+	cont "en mi AS."
 	
 	para "POLIWRATH."
-	line "We won a contest"
-	cont "back at home in"
-	cont "KANTO, and my"
+	line "Ganamos un"
+	cont "certamen volviendo"
+	cont "a casa en Kanto."
 	
-	para "POLIWRATH won a"
-	line "CHAMPION BELT."
+	para "POLIWRATH luce ese"
+	line "cinturón de"
+	cont "campeón."
 	
-	para "Anyway, let me"
-	line "know if you want a"
-	cont "battle. I'm always"
-	cont "raring to go!"
+	para "De todos modos"
+	line "se que quieres"
+	cont "combatir. Siempre"
+	cont "estoy preparado"
+	cont "para luchar."
 	done
 	
 PlayerCleopatraMovement:
@@ -158,14 +162,8 @@ CleopatraRedEvent:
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
-	opentext
-	writetext RedText
-	waitbutton
-	closetext
-	special FadeOutPalettes
 	disappear CLEOPATRA_ISLAND_RED
-	wait 5
-	special FadeInPalettes
+	special Special_FadeInQuickly
 	setevent EVENT_RED_ON_CLEOPATRA
 	setevent EVENT_BEAT_RED
 	playmusic MUSIC_ROUTE_26
@@ -174,8 +172,8 @@ CleopatraRedEvent:
 RedWrongWayText:
 	text "<...>"
 	
-	para "You should talk to"
-	line "him from behind."
+	para "Deberías hablarle"
+	line "desde atrás."
 	done
 	
 RedText:
@@ -212,25 +210,26 @@ CleopatraTadScript:
 	end
 	
 CleopatraTadText1:
-	text "TAD: So how about"
-	line "it? Wanna battle?"
+	text "TAD:¿Que quieres?"
+	line "¿Combatir?"
 	done
 	
 CleopatraTadText2:
-	text "TAD: Here we go!"
+	text "TAD:¡VAMOS!"
 	done
 	
 CleopatraTadWinLossText:
-	text "You're the real"
-	line "deal, <PLAYER>!"
+	text "¡Eres alguien"
+	line "genial, <PLAYER>!"
 	done
 	
 CleopatraTadText3:
-	text "TAD: I have a"
-	line "feeling we will"
-	cont "meet again!"
+	text "TAD: Tengo"
+	line "el presentimiento"
+	cont "de que nos "
+	cont "veremos otra vez."
 	
-	para "Goodbye, for now!"
+	para "Adiós, por ahora."
 	done
 	
 CleopatraSeashellScript:
@@ -253,15 +252,16 @@ CleopatraSeashellScript:
 	end
 	
 CleopatraNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "Que bonita concha"
+    line "marina. Parece "
+    cont "muy frágil para"
+    cont "guardarla en mi "
+	cont "mochila."
     done
 	
 FoundCleopatraSeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "Encontraste una"
+	line "concha marina."
 	done
 
 CleopatraIsland_MapEventHeader::

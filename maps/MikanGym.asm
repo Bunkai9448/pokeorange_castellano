@@ -13,9 +13,6 @@ MikanGym_MapScriptHeader:
 FalknerScript_0x683c2:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_ORANGE_LEAGUE
-	iftrue .postLeague
-	
 	checkevent EVENT_BEAT_CISSY
 	iftrue .FightDone
 	writetext UnknownText_0x68473
@@ -47,11 +44,6 @@ FalknerScript_0x683c2:
 	waitbutton
 	closetext
 	end
-
-.postLeague
-	writetext CissyPostLeagueText
-	waitbutton
-	jump .NoRoomForBubblebeam
 
 .SpeechAfterTM:
 	writetext UnknownText_0x68735
@@ -107,154 +99,143 @@ MikanGymStatue:
 	jumpstd gymstatue2
 
 UnknownText_0x68473:
-	text "Welcome, CHALLEN-"
-	line "GER."
+	text "Bienvenido,"
+	line "ASPIRANTE."
 
-	para "I am CISSY of the"
+	para "Soy CISSY del"
 	line "ORANGE CREW."
 
-	para "I grew up on this"
-	line "island, raising my"
-	cont "WATER #MON to"
-	cont "perfection."
+	para "Creci en esta"
+	line "isla, con mis"
+	cont " #MON de agua,"
+	cont "hasta llegar"
+	cont " a lo que somos."
 
-	para "Well then, why"
-	line "don't we get"
-	cont "started?"
+	para "Bueno,¿Por"
+	line "qué no "
+	cont "empezamos?"
 	done
 
 UnknownText_0x6854a:
-	text "What?!"
+	text "¿Qué?!"
 
-	para "My perfect WATER"
-	line "#MON!"
+	para "¡Mis #MON"
+	line "perfectos de agua!"
 
-	para "Very well! You've"
-	line "earned this."
+	para "Muy bien. Te has"
+	line "ganado esto."
 
-	para "It's the official"
-	line "ORANGE CREW"
-	cont "CORAL-EYE BADGE."
+	para "La medalla oficial"
+	line "del ORGANGE CREW,"
+	cont "la medalla OJO"
+	cont "DE CORAL."
 	done
 
 UnknownText_0x685af:
-	text "<PLAYER> received"
-	line "CORAL-EYE BADGE."
+	text "<PLAYER> obtuvo"
+	line "MEDALLA OJO DE"
+	cont "CORAL."
 	done
 
 UnknownText_0x685c8:
-	text "I'm impressed."
+	text "Estoy muy"
+	line "impresionada."
 
-	para "That badge will"
-	line "allow any #MON"
-	cont "up to Level 35"
-	cont "to obey you."
+	para "Esta medalla hace"
+	line "qye tus #MON"
+	cont "de hasta nivel 35"
+	cont "te obedezcan."
 
-	para "Here--take this"
-	line "too."
+	para "Toma esto"
+	line "tambien."
 	done
 
 UnknownText_0x68648:
-	text "By using a TM, a"
-	line "#MON will"
+	text "Usando esta MT"
+	line "un #MON podra"
 
-	para "instantly learn a"
-	line "new move."
+	para "aprender un "
+	line "nuevo movimiento."
 
-	para "That TM contains"
-	line "BUBBLEBEAM."
+	para "Esta MT contiene"
+	line "RAYO BURBUJA."
 
-	para "It reduces the"
-	line "enemy's speed"
+	para "Reduce la vel."
+	line "del enemigo."
 
-	para "while it causes"
-	line "damage."
+	para "a la vez que le"
+	line "causa daño."
 
-	para "It's a powerful"
-	line "tool--use it well."
+	para "Es una poderosa"
+	line "herramienta."
+	cont "Usala bien."
 	done
 
 UnknownText_0x68735:
-	text "Your next test is"
-	line "on NAVEL ISLAND."
+	text "Tu siguiente "
+	line "prueba es ISLA"
+	cont "NAVEL."
 
-	para "Good luck."
-	done
-
-CissyPostLeagueText:
-	text "So you are the"
-	line "CHAMPION now."
-
-	para "You did not just"
-	line "win battles, you"
-	cont "mastered your"
-	cont "#MON and the"
-	cont "sea itself."
-
-	para "That kind of trust"
-	line "is not easy to"
-	cont "earn."
-
-	para "Ride every new"
-	line "wave with care,"
-	cont "your journey has"
-	cont "only begun."
+	para "Buena suerte."
 	done
 
 SwimmerfMariaSeenText:
-	text "CORSOLA and I are"
-	line "unbeatable!"
+	text "Mi CORSOLA y yo"
+	line "somos imbatibles."
 	done
 
 SwimmerfMariaBeatenText:
-	text "Noooooo!"
+	text "¡Noooooo!"
 	done
 
 UnknownText_0x68837:
-	text "My CORSOLA<...>"
+	text "Mi CORSOLA<...>"
 	done
 
 LassNicoleSeenText:
-	text "I hope you did"
-	line "some serious trai-"
-	cont "ning before you"
-	cont "came here!"
+	text "Espero que seas"
+	line "mejor entrenador"
+	cont "que los que han"
+	cont "venido antes que"
+	cont "tú.."
 	done
 
 LassNicoleBeatenText:
-	text "Woah!"
+	text "¡Guau!"
 	done
 
 UnknownText_0x688c7:
-	text "I'm nothing when"
-	line "compared to CISSY!"
+	text "No soy nada"
+	line "comparado con"
+	cont "CISSY."
 
-	para "Don't get cocky"
-	line "just because you"
-	cont "beat me!"
+	para "No te vengas"
+	line "arriba por "
+	cont "vencerme."
 	done
 
 MikanGymGuyText:
-	text "Look, some fresh"
-	line "meat."
+	text "Mira, mas carne"
+	line "fresca..."
 
-	para "Listen kid, CISSY"
-	line "is no joke. She"
-	cont "uses strong WATER-"
-	cont "type #MON."
+	para "Escucha chico,"
+	line "CiSSY no es"
+	cont "ninguna broma."
+	cont "Usa #MON de agua"
+	cont "muy fuertes."
 
-	para "But if you got a"
-	line "ELECTRIC or GRASS-"
-	cont "type, you might"
-	cont "have a chance."
+	para "Pero si tienes"
+	line "tipos planta o"
+	cont "eléctrico, puedes"
+	cont "tener opciones."
 	done
 
 MikanGymGuyWinText:
-	text "Nice battle! Keep"
-	line "it up, and you'll"
+	text "¡Buen combate!"
+	line "Sigue así y seras"
 
-	para "be the CHAMP in no"
-	line "time at all!"
+	para "CAMPEON en tiempo"
+	line "record."
 	done
 
 MikanGym_MapEventHeader::

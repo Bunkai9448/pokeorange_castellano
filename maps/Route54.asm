@@ -75,104 +75,104 @@ NicoSign:
 .Text:
 
 SwimmermHairoSeenText:
-	text "Did you see those"
-	line "two weirdos in"
-	cont "TEAM ROCKET out-"
-	cont "fits earlier?"
+	text "¿Has visto a"
+	line "esos dos idiotas"
+	cont "del TEAM ROCKET"
+	cont "merodear?"
 	done
 
 SwimmermHairoBeatenText:
-	text "I wonder who they"
-	line "are?"
+	text "¿Me pregunto"
+	line "quienes serán?"
 	done
 
 SwimmermHairoAfterText:
-	text "I wonder who they"
-	line "are?"
+	text "¿Me pregunto"
+	line "donde están?"
 	done
 
 SwimmermDaisukeSeenText:
-	text "Racing #MON"
-	line "is the best exer-"
-	cont "cise!"
+	text "¡Las carreas"
+	line "#MON son el"
+	cont "mejor ejercicio!"
 	done
 
 SwimmermDaisukeBeatenText:
-	text "Are you faster"
-	line "than me?"
+	text "¿Seras mas rá-"
+	line "pido que yo?"
 	done
 
 SwimmermDaisukeAfterText:
-	text "I'll beat the"
-	line "world record some"
-	cont "day!"
+	text "¡Algun día ba-"
+	line "tiré el record"
+	cont "del mundo!"
 	done
 
 SwimmermJunpeiSeenText:
-	text "My #MON"
-	line "have been raised"
-	cont "with care!"
+	text "Mis #MON"
+	line "han crecido con"
+	cont "cariño."
 
-	para "Let's see who's"
-	line "stronger!"
+	para "¡Veamos quien"
+	line "es mas fuerte!"
 	done
 
 SwimmermJunpeiBeatenText:
-	text "Yo, that was a"
-	line "good fight!"
+	text "¡Fue una buena"
+	line "pelea!"
 	done
 
 SwimmermJunpeiAfterText:
-	text "That wasn't too"
-	line "bad!"
+	text "¡No ha estado"
+	line "mal!"
 	done
 
 SwimmerfReinaSeenText:
-	text "I see you're"
-	line "heading to"
-	cont "MANDARIN NORTH."
+	text "Veo que vas"
+	line "hacia"
+	cont "MANDARINA NORTE."
 
-	para "Care to spar"
-	line "with me first?"
+	para "¿Quieres comba-"
+	line "tir antes?"
 	done
 
 SwimmerfReinaBeatenText:
-	text "Ohoho, not bad!"
+	text "¡Oh, ni tan mal!"
 	done
 
 SwimmerfReinaAfterText:
-	text "Ohohoho! STARYU"
-	line "was no match for"
-	cont "you!"
+	text "¡Ohohoho! STARYU"
+	line "no fue rival"
+	cont "para ti."
 	done
 
 SwimmerfUmikoSeenText:
-	text "Yikes! I think a"
-	line "MAREANIE almost"
-	cont "touched me!"
+	text "¡Ouch! Creo que"
+	line "un MAREANIE "
+	cont "me ha tocado."
 	done
 
 SwimmerfUmikoBeatenText:
-	text "Thank goodness, it"
-	line "was just some sea-"
-	cont "weed<...>"
+	text "Gracias a DIOS"
+	line "que solo era un"
+	cont "alga<...>"
 	done
 
 SwimmerfUmikoAfterText:
-	text "Thank goodness, it"
-	line "was just some sea-"
-	cont "weed<...>"
+	text "Gracias a DIOS"
+	line "que solo era un"
+	cont "alga<...>"
 	done
 
 Route54SignText:
-	text "ROUTE 54 -"
-	line "MANDARIN NORTH"
+	text "RUTA 50 -"
+	line "MANDARINA NORTE"
 	done
 
 NicoSignText:
-	text "NICO ISLAND"
+	text "ISLA NICO"
 
-	para "Nico nico nii!"
+	para "¡Nico nico nii!"
 	done
 
 Route54_MapEventHeader::

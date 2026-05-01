@@ -18,13 +18,15 @@ KinnowMartLassScript:
 	jumptextfaceplayer KinnowMartLassText
 
 KinnowMartLassText:
-	text "I heard there's an"
-	line "old lady who sells"
-	cont "bitter herbs."
+	text "He oido que una"
+	line "señora mayor"
+	cont "vende hierbas"
+	cont "amargas."
 
-	para "They work wonders,"
-	line "but they taste bad"
-	cont "to #MON."
+	para "Hacen maravillas"
+	line "pero su sabor"
+	cont "no gusta a los"
+	cont "#MON."
 	done
 
 KinnowMart_MapEventHeader::

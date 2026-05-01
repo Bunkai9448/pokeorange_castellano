@@ -1,17 +1,18 @@
 UnknownText_0x1c0043::
 	text "¡Hola a todos!"
-	line "Soy el INSPECTOR de MOTES."
+	line "Soy el INSPECTOR"
+	cont "MOTES."
 
-	para "Evaluo los nombres"
+	para "Evalúo los nombres"
 	line "de los #MON."
 
 	para "Quieres evaluar"
-	line "algun nombre?"
+	line "algún nombre?"
 	done
 
 UnknownText_0x1c00a0::
-	text "Que #MON's"
-	line "mote deberia "
+	text "¿Que mote"
+	line "#MON debería"
 	cont "evaluar?"
 	prompt
 
@@ -26,8 +27,8 @@ UnknownText_0x1c00cd::
 	line "parece mejorarlo"
 	cont "un poco?"
 
-	para "¿Quieres que le dé"
-	line "otro nombre?"
+	para "¿Quieres que le"
+	line "dé otro nombre?"
 	done
 
 UnknownText_0x1c0142::
@@ -105,18 +106,18 @@ Text_StringBuffer2ExpPoints::
 	prompt
 
 Text_GoPkmn::
-	text "¡Adelante! @@"
+	text "¡Ve! @@"
 
 Text_DoItPkmn::
 	text "¡Hazlo! @@"
 
 Text_GoForItPkmn::
-	text "A por el!,"
+	text "¡A por él!,"
 	line "@@"
 
 Text_YourFoesWeakGetmPkmn::
-	text "Tu enemigo esta debil!"
-	line "Get'm, @@"
+	text "¡Esta débil!"
+	line "¡Ve, @@"
 
 Text_BattleMonNick01::
 	text_from_ram BattleMonNick
@@ -128,24 +129,24 @@ Text_BattleMonNickComma::
 	text ",@@"
 
 Text_ThatsEnoughComeBack::
-	text " es"
-	line "suficiente! Vuelve!@@"
+	text " ¡Suficiente!"
+	line " ¡Vuelve!@@"
 
 Text_OKComeBack::
-	text " OK!"
-	line "Vuelve!@@"
+	text " ¡OK!"
+	line "¡Vuelve!@@"
 
 Text_GoodComeBack::
 	text " ¡Bien hecho!"
 	line "¡Vuelve!@@"
 
 Text_ComeBack::
-	text " vuelve"
+	text " ¡Vuelve"
 	line "aqui!"
 	done
 
 UnknownText_0x1c0373::
-	text "elegida una MT."
+	text "Elegida una MT."
 	prompt
 
 UnknownText_0x1c0384::
@@ -166,7 +167,7 @@ UnknownText_0x1c0396::
 
 UnknownText_0x1c03c2::
 	text_from_ram StringBuffer2
-	text " is"
+	text " él"
 	line "no es compatible"
 	cont "con @"
 	text_from_ram StringBuffer1
@@ -181,7 +182,7 @@ UnknownText_0x1c03c2::
 UnknownText_0x1c05c8::
 UnknownText_0x1c0705::
 	text "No puedes usar eso"
-	line "aqui."
+	line "aquí."
 	prompt
 
 UnknownText_0x1c05dd::

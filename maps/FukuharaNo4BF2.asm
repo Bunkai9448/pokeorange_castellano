@@ -33,16 +33,15 @@ FukuharaBF2Butch1Script:
 	end
 	
 FukuharaBF2ButchText1:
-	text "BUTCH: Gah!"
-	line "Not you again!"
+	text "BUTCH: ¡Gah!"
+	line "Tú otra vez."
 	
 	para "<...>"
 	
-	para "You're gonna stop"
-	line "us? Wait, that's"
-	cont "not my name!"
+	para "¿Quieres "
+	line "detenernos?"
 	
-	para "Erm, I gotta go!"
+	para "Erm, vamos."
 	done
 	
 FukuharaBF2ButchMovement1:
@@ -76,21 +75,22 @@ FukuharaBF2Butch2Script:
 	end
 	
 FukuharaBF2ButchText2:
-	text "BOTCH: I can't let"
-	line "you pass! Orders"
-	cont "from CASSIDY!"
+	text "BOTCH: No puedo"
+	line "dejarte pasar."
+	cont "¡Ordenes de"
+	cont "CASSIDY!"
 	done
 	
 FukuharaButchWinLoss:
-	text "The name's not"
-	line "BOTCH! It's BUTCH!"
+	text "¡El nombre no es"
+	line "BOTCH! ¡Es BUTCH!"
 	done
 	
 FukuharaBF2ButchText3:
-	text "BUTCH: I've gotta"
-	line "get CASSIDY!"
+	text "BUTCH: ¡Vamos"
+	line "CASSIDY!"
 	
-	para "Dang kids!"
+	para "¡Malditos!"
 	done
 
 FukuharaNo4BF2_MapEventHeader::

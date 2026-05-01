@@ -88,45 +88,46 @@ TrovitopolisDeptStore6FElevatorButton:
 	jumpstd elevatorbutton
 
 TrovitopolisVendingText:
-	text "A vending machine!"
-	line "Here's the menu."
+	text "¡Una máquina de"
+	line "vending!"
 	done
 
 TrovitopolisClangText:
-	text "Clang! A can of"
+	text "¡Clang! Una lata de"
 	line "@"
 	text_from_ram StringBuffer3
 	text $55
-	db "popped out!"
+	db "cayo."
 	done
 
 TrovitopolisVendingNoMoneyText:
-	text "Oops, not enough"
-	line "money."
+	text "Oops, no tienes"
+	line "el dinero"
+	cont "suficiente."
 	done
 
 TrovitopolisVendingNoSpaceText:
-	text "There's no more"
-	line "room for stuff."
+	text "No tienes espa-"
+	line "cio suficiente."
 	done
 
 TrovitopolisDeptStore6FDirectoryText:
-	text "Take a Break from"
-	line "Shopping!"
+	text "¡Descansa un poco"
+	line "de tanto Shopping!"
 
-	para "6F TRANQUIL SQUARE"
+	para "6F SALA DESCANSO"
 	done
 	
 DeptStore6FCooltrainerScript:
 	jumptextfaceplayer DeptStore6FCooltrainerText
 	
 DeptStore6FCooltrainerText:
-	text "I bought an EGG"
-	line "off the lady on"
-	cont "the roof."
+	text "Compre un HUEVO"
+	line "a la chica de"
+	cont "la azotea."
 	
-	para "I wonder what it"
-	line "will hatch into?"
+	para "Me pregunto que"
+	line "habrá dentro."
 	done
 
 TrovitopolisDeptStore6F_MapEventHeader::

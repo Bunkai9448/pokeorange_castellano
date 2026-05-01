@@ -17,15 +17,15 @@ MurcottYoungsterScript:
 	jumptextfaceplayer MurcottYoungsterText
 	
 MurcottYoungsterText:
-	text "Hey, there."
+	text "¡Ey!"
 	
-	para "If you plan on"
-	line "going to ROUTE 62,"
-	cont "keep an eye out"
-	cont "for SALANDIT."
+	para "Si piensas ir"
+	line "a Ruta 62,"
+	cont "presta atención"
+	cont "a SALANDIT."
 	
-	para "They can poison"
-	line "your #MON!"
+	para "¡Puede envenenar"
+	line "a tus #MON!"
 	done
 
 MurcottPokeMart_MapEventHeader::

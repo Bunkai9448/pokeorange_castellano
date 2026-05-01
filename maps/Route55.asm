@@ -28,20 +28,21 @@ TrainerSwimmerMayumi:
 	end
 
 SwimmerMayumiSeenText:
-	text "Hello there!"
+	text "¡Hola!"
 
-	para "Perhaps you would"
-	line "like to battle?"
+	para "¿Quizás te"
+	line "gustaría luchar?"
 	done
 
 SwimmerMayumiBeatenText:
-	text "Ayaa! I didn't"
-	line "think I'd lose!"
+	text "¡Ay! ¡No pensé"
+	line "que iba a"
+	cont "perder!"
 	done
 
 SwimmerMayumiAfterText:
-	text "Thanks for the"
-	line "great battle!"
+	text "¡Gracias por la"
+	line "gran batalla!"
 	done
 
 TrainerSwimmerKosuke:
@@ -56,20 +57,21 @@ TrainerSwimmerKosuke:
 	end
 
 SwimmerKosukeSeenText:
-	text "I saw a PINK"
-	line "MANKEY on the"
-	cont "island near by!"
+	text "¡Vi un MANKEY"
+	line "ROSA en la"
+	cont "isla cercana!"
 	done
 
 SwimmerKosukeBeatenText:
-	text "I swear it's the"
-	line "truth!"
+	text "¡Juro que es"
+	line "la verdad!"
 	done
 
 SwimmerKosukeAfterText:
-	text "I wonder if my"
-	line "#MON could"
-	cont "become PINK?"
+	text "Me pregunto si mi"
+	line "#MON podría"
+	cont "volverse de"
+	cont "color rosa."
 	done
 
 TrainerAthleteHideki:
@@ -84,21 +86,22 @@ TrainerAthleteHideki:
 	end
 
 AthleteHidekiSeenText:
-	text "Jogging on this"
-	line "island made my"
-	cont "#MON strong!"
+	text "¡Correr a pie por"
+	line "esta isla me ha"
+	cont "ayudado a fortalecer"
+	cont "mi #MON!"
 	done
 
 AthleteHidekiBeatenText:
-	text "Looks like I"
-	line "have more run-"
-	cont "ning to do!"
+	text "Parece que aún"
+	line "tengo que"
+	cont "correr más."
 	done
 
 AthleteHidekiAfterText:
-	text "To win a marathon,"
-	line "you have to train"
-	cont "super hard!"
+	text "¡Para ganar un"
+	line "maratón, tienes que"
+	cont "entrenar super duro!"
 	done
 
 Route55MaxRevive:
@@ -116,14 +119,14 @@ Route55PotHiddenItem:
 .Text:
 
 Route55SignText:
-	text "ROUTE 55"
-	line "TO KINNOW ISLAND"
+	text "RUTA 55"
+	line "A LA ISLA KINNOW"
 	done
 
 RangiSignText:
-	text "RANGI ISLAND"
+	text "ISLA RANGI"
 
-	para "GITHUB lies here."
+	para "GITHUB yace aquí."
 	done
 	
 Route55SeashellScript:
@@ -146,15 +149,17 @@ Route55SeashellScript:
 	end
 	
 Route55NoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "¡Qué bonita concha"
+    line "marina! Parece"
+    cont "demasiado frágil"
+    cont "como para meterlo"
+    cont "en mi MOCHILA."
     done
 	
 FoundRoute55Seashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "¡Encontraste una"
+	line "concha marina"
+	cont "muy rara!"
 	done
 
 Route55_MapEventHeader::

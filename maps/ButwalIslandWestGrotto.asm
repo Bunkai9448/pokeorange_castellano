@@ -8,9 +8,9 @@ ButwalMossRock:
 	jumptext ButwalMossRockText
 
 ButwalMossRockText:
-	text "A strange aura"
-	line "emanates from the"
-	cont "the rock<...>"
+	text "Un aura extraña"
+	line "emana de la"
+	cont "roca<...>"
 	done
 
 ButwalIslandWestGrotto_MapEventHeader::

@@ -18,10 +18,10 @@ StudentScript:
 	end
 
 StudentStudyingHardText:
-	text "They seem to be"
-	line "studying hard<...>"
+	text "Parecen estar"
+	line "estudiando duro<...>"
 	
-	para "Best not disturb!"
+	para "¡Mejor no molesto!"
 	done
 	
 TeacherSchoolScript:
@@ -89,67 +89,68 @@ TeacherSchoolScript:
 	end
 	
 PrimaQuestionCorrectText:
-	text "That is correct!"
+	text "¡Es correcto!"
 	done
 	
 PrimaThatsWrongText:
-	text "Sorry, that's not"
-	line "right."
+	text "¡Lo siento!. No"
+	line "es correcto."
 	done
 	
 PrimaQuestion1: ;ANSWER IS YES
-	text "CHATOT can learn"
-	line "human speech?"
+	text "¿CHATOT puede"
+	line "aprender el"
+	cont "lenguaje humano?"
 	done
 	
 PrimaQuestion2: ;ANSWER IS YES
-	text "MAREEP is ELECTRIC"
-	line "type?"
+	text "¿MAREEP es tipo"
+	line "eléctrico?"
 	done
 	
 PrimaQuestion3: ;ANSWER IS NO
-	text "MAGIKARP can be"
-	line "found almost any-"
-	cont "where?"
+	text "¿MAGIKARP se"
+	line "encuentra en"
+	cont "cualquier zona?"
 	done
 	
 PrimaQuestion4: ;ANSWER IS YES
-	text "LORELEI uses ICE"
-	line "type #MON?"
+	text "¿LORELEI usa #MON"
+	line "tipo hielo ?"
 	done
 	
 PrimaQuestion5: ;ANSWER IS NO
-	text "RATTATA can learn"
-	line "WATER GUN?"
+	text "¿RATTATA aprende"
+	line "pistola agua?"
 	done
 
 PrimaStrengthHMPrizeText:
-	text "Wow, great job!"
-	line "Here's your prize"
-	cont "for completing the"
-	cont "test!"
+	text "¡Buen trabajo!"
+	line "Aquí tienes el"
+	cont "premio por comple-"
+	cont "tar el test."
 	done
 
 StrengthQuizWantToTakeText:
-	text "Welcome to PRIMA's"
-	line "OFFICIAL SCHOOL"
-	cont "for TRAINERS."
+	text "Bienvenido a Prima,"
+	line "la ESCUELA OFICIAL"
+	cont "de entrenadores."
 	
-	para "We offer a good"
-	line "item for students"
-	cont "who can pass our"
-	cont "test. Want to try?"
+	para "Ofrecemos un item"
+	line "a los estudiantes"
+	cont "que aprueban el"
+	cont "test. ¿Pruebas?"
 	done
 	
 PrimaTeacherComeAgainText:
-	text "Please come back"
-	line "if you change your"
-	cont "mind."
+	text "Vuelve si"
+	line "cambias de"
+	cont "opinión."
 	done
 	
 AlreadyGotStrengthText:
-	text "What a bright"
-	line "student you are!"
+	text "¡Eres un estu-"
+	line "diante brillante!"
 	done
 	
 LoreleiSchoolScript:
@@ -189,144 +190,46 @@ LoreleiSchoolScript:
 
 DoYouWantToBattleLoreleiText:
 	text "LORELEI: <PLAYER>!"
-	line "Thanks again for"
-	cont "the help. I'd like"
-	cont "to make it up to"
+	line "Gracias otra vez"
+	cont "por la ayuda."
+	cont "Me gusto formar"
 	
-	para "you."
+	para "equipo."
 	
-	para "How about a battle"
-	line "between the two of"
-	cont "us?"
+	para "¿Te apetece un"
+	line "combate entre"
+	cont "nosotros?"
 	done
 
 LoreleiComeBackLaterText:
-	text "LORELEI: Ahaha!"
-	line "Very well! If you"
-	cont "change your mind,"
-	cont "I'll be here."
+	text "LORELEI: ¡Jaja!"
+	line "¡Muy bien! Si"
+	cont "cambias de"
+	cont "opinion, aqui"
+	cont "estoy."
 	done
 
 AlreadyBeatLoreleiOnceText:
-	text "LORELEI: You're"
-	line "quite the trainer,"
-	cont "<PLAYER>! You"
-	cont "remind me of the"
+	text "LORELEI: ¡Eres"
+	line "todo un entrena-"
+	cont "dor <PLAYER>! Me"
+	cont "recuerdas al"
 	
-	para "current KANTO"
-	line "CHAMPION. Take"
-	cont "care of yourself."
+	para "CAMPEON DE"
+	line "KANTO. Cuídate"
+	cont "mucho."
 	done
 
 BattleLoreleiFirstTimeText:
-	text "LORELEI: Okay!"
-	line "Watch yourself,"
-	cont "here I come!"
+	text "LORELEI: ¡Okey!"
+	line "¡Compruebalo tu"
+	cont "mismo, alle voy!"
 	done
 
 LoreleiWinLossText:
-	text "LORELEI: I'm"
-	line "shivering in"
-	cont "delight!"
-	done
-
-TrovitopolisPrimaSchoolBookScript:
-	opentext
-	writetext TrovitopolisPrimaSchoolBookText1
-	yesorno
-	iftrue .showText
-	closetext
-	end
-.showText
-	writetext TrovitopolisPrimaSchoolBookText2
-	yesorno
-	iftrue .showText2
-	closetext
-	end
-.showText2
-	writetext TrovitopolisPrimaSchoolBookText3
-	waitbutton
-	closetext
-	end
-
-
-TrovitopolisPrimaSchoolBookText1:
-	text "A textbook about"
-	line "#MON that lurk"
-	cont "tree vines and"
-	cont "rocks."
-	
-	para "Read more?"
-	done
-
-TrovitopolisPrimaSchoolBookText2:
-	text "Different #MON"
-	line "inhabit the ORANGE"
-	cont "ARCHIPELAGO's vine"
-	cont "trees. KAKUNA,"
-	cont "TRUMBEAK and"
-	cont "EXEGGCUTE enjoy"
-	cont "the thick vines."
-	
-	para "Rarely, you can"
-	line "spot MUNCHLAX"
-	cont "or LICKITUNG too,"
-	cont "but never on the"
-	cont "same vine."
-
-	para "The seasoned"
-	line "TRAINER will no-"
-	cont "tice that MUNCHLAX"
-	cont "surrounds itself"
-	cont "with slightly"
-	cont "stronger #MON"
-	cont "than LICKITUNG."
-	
-	para "The next chapter"
-	line "is about rocks."
-	
-	para "Continue reading?"
-	done
-
-TrovitopolisPrimaSchoolBookText3:
-	text "The ARCHIPELAGO's"
-	line "abundant KRABBY"
-	cont "inhabit its rocks,"
-	cont "but SHUCKLE and"
-	cont "STUNFISK also find"
-	cont "their home under"
-	cont "the coziness of"
-	cont "moist rocks."
-	
-	para "Fortunately for"
-	line "the mold and trap"
-	cont "#MON, KINGLER"
-	cont "are too big and"
-	cont "leave their rocky"
-	cont "homes once they"
-	cont "evolve."
-	done
-
-TrovitopolisPrimaSchoolStudentBookScript:
-	jumptext TrovitopolisPrimaSchoolStudentBookText
-
-TrovitopolisPrimaSchoolStudentBookText:
-	text "A book about the"
-	line "CRYSTAL type:"
-	
-	para "The newly found"
-	line "CRYSTAL type can"
-	cont "resist WATER, is"
-	cont "immune to POISON"
-	cont "but weak against"
-	cont "FIRE."
-
-	para "It seems to be"
-	line "NEUTRAL against"
-	cont "every other type,"
-	cont "but this is still"
-	cont "under research by"
-	cont "PROF. IVY."
+	text "LORELEI: Estoy"
+	line "tiritando de"
+	cont "placer."
 	done
 
 TrovitopolisPrimaSchool_MapEventHeader::
@@ -339,13 +242,9 @@ TrovitopolisPrimaSchool_MapEventHeader::
 
 .BGEvents: db 0
 
-.ObjectEvents: db 7
+.ObjectEvents: db 4
 	person_event SPRITE_LORELEI, 2, 5, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, LoreleiSchoolScript, EVENT_LORELEI_AT_TRAINER_SCHOOL
 	person_event SPRITE_YOUNGSTER, 6, 10, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, StudentScript, -1
 	person_event SPRITE_LASS, 5, 2, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_PURPLE, PERSONTYPE_SCRIPT, 0, StudentScript, -1
 	person_event SPRITE_SUPER_NERD, 2, 2, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, TeacherSchoolScript, -1
-	person_event SPRITE_POKEDEX,  4,  8, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, TrovitopolisPrimaSchoolBookScript, -1
-	person_event SPRITE_POKEDEX,  4,  2, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, TrovitopolisPrimaSchoolStudentBookScript, -1
-	person_event SPRITE_POKEDEX,  5, 10, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, TrovitopolisPrimaSchoolStudentBookScript, -1
-
 

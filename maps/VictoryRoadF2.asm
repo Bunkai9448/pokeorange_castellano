@@ -30,17 +30,16 @@ TrainerCamperNeb:
 	end
 
 CamperNebSeenText:
-	text "Together, my boy-"
-	line "friend and I are"
-	cont "unstoppable!"
+	text "Mi novio y yo"
+	line "somos imparables."
 	done
 
 CamperNebBeatenText:
-	text "Yikes!"
+	text "¡Yikes!"
 	done
 
 CamperNebAfterText:
-	text "I can't believe it!"
+	text "¡No me lo creo!"
 	done
 	
 ;=================================
@@ -58,17 +57,18 @@ TrainerCamperSnyd:
 	end
 
 CamperSnydSeenText:
-	text "Would ya please"
-	line "lose for me?"
+	text "¿Podrias perder"
+	line "por  mi?"
 	done
 
 CamperSnydBeatenText:
-	text "Just why?"
+	text "¿Por que?"
 	done
 
 CamperSnydAfterText:
-	text "I was trying to"
-	line "look good for NEB!"
+	text "Estaba intentando"
+	line "verme bien para"
+	cont "NEB."
 	done
 	
 ;=================================
@@ -86,18 +86,18 @@ TrainerFisherStephen:
 	end
 
 FisherStephenSeenText:
-	text "A fine craft takes"
-	line "time. A good"
-	cont "battle isn't"
-	cont "rushed, either."
+	text "Una buena arte-"
+	line "sania. Una buena"
+	cont "pelea tampoco"
+	cont "debe apresurarse."
 	done
 
 FisherStephenBeatenText:
-	text "So it is written."
+	text "Estaba escrito."
 	done
 
 FisherStephenAfterText:
-	text "Good luck, kid."
+	text "Buena suerte."
 	done
 	
 ;=================================
@@ -115,18 +115,18 @@ TrainerCatmanMayo:
 	end
 
 CatmanMayoSeenText:
-	text "Hello, meow!"
+	text "¡Hola, meow!"
 	done
 
 CatmanMayoBeatenText:
-	text "Hiss!"
+	text "¡Hiss!"
 	done
 
 CatmanMayoAfterText:
-	text "I left the village"
-	line "to find a MEOWTH."
+	text "Deje la villa para"
+	line "encontrar un MEOWTH."
 	
-	para "Now I'm lost here."
+	para "Y me he perdido."
 	done
 
 ;=================================
@@ -143,11 +143,11 @@ TrainerCooltrainerMMike:
 	end
 
 CooltrainerMMikeSeenText:
-	text "Did you just walk"
-	line "right up to me?"
+	text "¿Te acabas de"
+	line "acercar a mi?"
 	
-	para "Nothing better to"
-	line "do?"
+	para "¿No tienes nada"
+	line "mejor que hacer?"
 	done
 
 CooltrainerMMikeBeatenText:
@@ -155,7 +155,7 @@ CooltrainerMMikeBeatenText:
 	done
 
 CooltrainerMMikeAfterText:
-	text "Leave me alone!"
+	text "¡Dejame solo!"
 	done
 
 ;=================================
@@ -172,24 +172,24 @@ TrainerYoungsterEve:
 	end
 
 YoungsterEveSeenText:
-	text "You're from that"
-	line "VALENCIA ISLAND?"
+	text "¿Eres de ISLA"
+	line "VALENCIA?"
 	
-	para "I wonder what"
-	line "#MON you got!"
+	para "Me sorpende los"
+	line "#MON que llevas."
 	done
 
 YoungsterEveBeatenText:
-	text "Nicely done!"
+	text "¡Bien hecho!"
 	done
 
 YoungsterEveAfterText:
-	text "I absolutely love"
-	line "my VENUSAUR. You"
-	cont "could say I'm the"
-	cont "reason it looks"
+	text "Amo a mi VENUSAUR."
+	line "my VENUSAUR. A su"
+	cont "vez yo soy la"
+	cont "principal motiva-"
 	
-	para "the way it does."
+	para "cion de el."
 	done
 	
 VictoryRoadF2Elixer:
@@ -210,15 +210,16 @@ VictoryRoadF2OfficerScript:
 	end
 
 VictoryRoadF2OfficerText:
-	text "This is ORANGE"
-	line "CAVE! Horribly"
-	cont "strong #MON"
-	cont "live in there!"
+	text "Es la CUEVA"
+	line "NARANJA. Hay"
+	cont "#MON fuertes y"
+	cont "horribles que"
+	cont "viven aqui."
 
-	para "The ORANGE LEAGUE"
-	line "champion is the"
-	cont "only person who"
-	cont "is allowed in!"
+	para "El CAMPEON de"
+	line "la LIGA NARANJA"
+	cont "es la unica per-"
+	cont "que se aloja ahi."
 	done
 
 VictoryRoadF2_MapEventHeader::

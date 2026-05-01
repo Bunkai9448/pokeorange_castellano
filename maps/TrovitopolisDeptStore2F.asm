@@ -15,11 +15,11 @@ TrovitopolisDeptStore2FElevatorButton:
 	jumpstd elevatorbutton
 
 TrovitopolisDeptStore2FDirectoryText:
-	text "Your Travel"
-	line "Companion"
+	text "Tu compañia de"
+	line "viaje"
 
-	para "2F TRAINER'S"
-	line "   MARKET"
+	para "2F TIENDA"
+	line "ENTRENADORES"
 	done
 
 TrovitopolisPokeballMartScript:

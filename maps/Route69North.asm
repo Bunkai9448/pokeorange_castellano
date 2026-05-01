@@ -27,37 +27,39 @@ Route69ZenHeadbuttTutor:
 	end
 
 GivePlayerZenHeadbuttText:
-	text "What am I doing?"
+	text "¿Que estoy"
+	line "haciendo?"
 	
-	para "Finding my inner"
-	line "balance, that's"
-	cont "what!"
+	para "Encontrando mi"
+	line "propio equili-"
+	cont "brio ¡Eso es!"
 	
-	para "By headbutting"
-	line "this mountain, I'm"
-	cont "opening my mind."
+	para "Dar cabezazos a "
+	line "estas montañas"
+	cont "esta abriendo mi"
+	cont "mente."
 	
-	para "It's not for us"
-	line "humans, though."
-	cont "I can teach your"
-	cont "#MON to use"
+	para "No es para huma-"
+	line "nos, creo."
+	cont "Puedo enseñarlo a"
+	cont "tu #MON."
 	
-	para "ZEN HEADBUTT if"
-	line "you would like?"
+	para "¿Les gustaría "
+	line "CABEZAZO ZEN?"
 	done
 	
 Text_ZenHeadbuttTutorTaught:
-	text "ZEN HEADBUTT is"
-	line "a PSYCHIC attack"
-	cont "that can sometimes"
-	cont "cause the enemy to"
+	text "CABEZAZO ZEN es un"
+	line "ataque psíquico"
+	cont "que puede hacer "
+	cont "retroceder al"
 	
-	para "flinch!"
+	para "enemigo"
 	done
 	
 Text_ZenHeadbuttTutorRefused:
-	text "Tell me if you"
-	line "change your mind!"
+	text "¡Avisame si"
+	line "abres tu mente!"
 	done
 	
 Text_ZenHeadbuttTutorClear:

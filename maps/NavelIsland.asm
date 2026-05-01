@@ -22,11 +22,12 @@ NavelIslandSign:
 	jumptext NavelIslandSignText
 
 NavelIslandSignText:
-	text "NAVEL ISLAND"
+	text "ISLA NAVEL"
 
-	para "GYM CHALLENGERS"
-	line "only! MT.NAVEL is"
-	cont "very dangerous!"
+	para "¡Solo aspirantes"
+	line "a gimnasio!"
+	cont "¡Mt Navel es"
+	cont "muy peligroso!"
 	done
 	
 NavelSeashellScript:
@@ -49,17 +50,18 @@ NavelSeashellScript:
 	end
 	
 NavelNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "¡Una bonita concha"
+    line "marina! Parece"
+    cont "muy frágil para"
+    cont "guardarla en mi"
+	cont "mochila."
     done
 	
 FoundNavelSeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "Encontraste una"
+	line "rara concha"
+	cont "marina."
 	done
-
 
 NavelIsland_MapEventHeader::
 

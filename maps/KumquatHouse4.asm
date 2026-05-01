@@ -85,65 +85,65 @@ KumquatPokefanFScript:
 	end
 	
 KumquatPartyFullText:
-	text "Your #MON"
-	line "party is full."
+	text "Tu equipo"
+	line "#MON esta lleno."
 	done
 	
 KumquatBulbasaurText:
-	text "I can tell from"
-	line "your clothes<...>"
-	cont "You're from"
-	cont "VALENCIA ISLAND!"
+	text "Por tu ropa"
+	line "diría<...>"
+	cont "¡Que eres de"
+	cont "ISLA VALENCIA!."
 	
-	para "You've come a long"
-	line "way!"
+	para "Vienes de muy"
+	line "lejos."
 	
-	para "Let's see<...>"
+	para "Veamos<...>"
 	
-	para "I bet you started"
-	line "with the #MON"
+	para "¡Empezo tu viaje"
+	line "con el #MON"
 	cont "SQUIRTLE!"
 	
-	para "How would you like"
-	line "a BULBASAUR?"
+	para "¿Querrías un"
+	line "BULBASAUR?"
 	done
 	
 KumquatSquirtleText:
-	text "I can tell from"
-	line "your clothes<...>"
-	cont "You're from"
-	cont "VALENCIA ISLAND!"
+	text "Por tu ropa"
+	line "diría<...>"
+	cont "¡Que eres de"
+	cont "ISLA VALENCIA!."
 	
-	para "You've come a long"
-	line "way!"
+	para "Vienes de muy"
+	line "lejos."
 	
-	para "Let's see<...>"
+	para "Veamos<...>"
 	
-	para "I bet you started"
-	line "with the #MON"
-	cont "CHARMANDER!"
+	para "¡Empezo tu viaje"
+	line "con el #MON"
+	cont "CHARMANDER."
 	
-	para "How would you like"
-	line "a SQUIRTLE?"
+	para "¿Querrías un"
+	line "SQUIRTLE?"
 	done
 	
 KumquatCharmanderText:
-	text "I can tell from"
-	line "your clothes<...>"
-	cont "You're from"
-	cont "VALENCIA ISLAND!"
+    text "Por tu ropa"
+	line "diría<...>"
+	cont "¡Que eres de"
+	cont "ISLA VALENCIA!."
 	
-	para "You've come a long"
-	line "way!"
+	para "Vienes de muy"
+	line "lejos."
 	
-	para "Let's see<...>"
+	para "Veamos<...>"
 	
-	para "I bet you started"
-	line "with the #MON"
-	cont "BULBASAUR!"
+	para "Empezo tu viaje"
+	line "con el #MON"
+	cont "BULBASAUR."
 	
-	para "How would you like"
-	line "a CHARMANDER?"
+	para "¿Querrías un"
+	line "CHARMANDER?"
 	done
 	
 DeclinedFreeKumquatPokemonText:
@@ -151,21 +151,21 @@ DeclinedFreeKumquatPokemonText:
 	done
 
 AlreadyReceivedKumquatPokefanFGiftText:
-	text "Good luck!"
+	text "¡Buena suerte!"
 	done
 	
 PlayerReceivedKumquatBulbasaurText:
-	text "<PLAYER> received"
+	text "<PLAYER> recibío"
 	line "BULBASAUR!"
 	done
 	
 PlayerReceivedKumquatCharmanderText:
-	text "<PLAYER> received"
+	text "<PLAYER> recibio"
 	line "CHARMANDER!"
 	done
 
 PlayerReceivedKumquatSquirtleText:
-	text "<PLAYER> received"
+	text "<PLAYER> recibío"
 	line "SQUIRTLE!"
 	done
 

@@ -4,11 +4,6 @@ const_value = 1
 	const PUMMELO_STADIUM_DRAKE
 	const PUMMELO_STADIUM_ANNOUNCER
 	const PUMMELO_STADIUM_OFFICER
-	const PUMMELO_STADIUM_CISSY
-	const PUMMELO_STADIUM_DANNY
-	const PUMMELO_STADIUM_RUDY
-	const PUMMELO_STADIUM_LUANA
-	const PUMMELO_STADIUM_RED
 
 PummeloStadium_MapScriptHeader:
 
@@ -28,12 +23,6 @@ PummeloStadiumEntry:
 	writetext PummeloStadiumBadgeCheckPassText
 	waitbutton
 	closetext
-	disappear PUMMELO_STADIUM_DRAKE
-	disappear PUMMELO_STADIUM_CISSY
-	disappear PUMMELO_STADIUM_DANNY
-	disappear PUMMELO_STADIUM_RUDY
-	disappear PUMMELO_STADIUM_LUANA
-	disappear PUMMELO_STADIUM_RED
 	applymovement PUMMELO_STADIUM_OFFICER, StadiumOfficerMovement
 	spriteface PUMMELO_STADIUM_OFFICER, RIGHT
 	applymovement PLAYER, StadiumPlayerMovement1
@@ -43,8 +32,6 @@ PummeloStadiumEntry:
 	closetext
 	applymovement PLAYER, StadiumPlayerMovement2
 	spriteface PLAYER, RIGHT
-	appear PUMMELO_STADIUM_DRAKE
-	applymovement PUMMELO_STADIUM_DRAKE, StadiumNPCEnter
 	opentext
 	writetext DrakeOpeningText
 	waitbutton
@@ -63,14 +50,11 @@ PummeloStadiumEntry:
 	special FadeOutPalettes
 	pause 15
 	setevent EVENT_BEAT_ORANGE_LEAGUE
-	clearevent EVENT_CRYSTAL_ONIX_DEFEATED
 	clearevent EVENT_SEVEN_GRAPEFRUITS_SNORLAX
 	clearevent EVENT_FUKUHARA_BF3_AERODACTYL_FOUGHT
 	clearevent EVENT_MIMIKYU_FOUGHT
 	clearevent EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	clearevent EVENT_RED_ON_CLEOPATRA
-	writebyte 0 ; 0x00 to totally reset romaers (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
-	special InitRoamMons ;init the Eon Duo, making them encounterable even if the player doesn't check the TV
 	warpfacing UP, HALL_OF_FAME, 6, 11
 	end
 
@@ -85,215 +69,71 @@ PummeloStadiumEntry:
 	end
 
 .PostGameStadiumBegin:
-
-if def(DEBUG)
-	callasm _asmDebugSkateBoardCheck
-	;Uncomment to totally skip the gauntlet battles when the SKATEBOARD item is held by the first party Pok�mon
-	;iftrue .debugSkipGaunlet
-endc
-	closetext
-
-	disappear PUMMELO_STADIUM_DRAKE
-	disappear PUMMELO_STADIUM_CISSY
-	disappear PUMMELO_STADIUM_DANNY
-	disappear PUMMELO_STADIUM_RUDY
-	disappear PUMMELO_STADIUM_LUANA
-	disappear PUMMELO_STADIUM_RED
-
-	applymovement PUMMELO_STADIUM_OFFICER, StadiumOfficerMovement
-	spriteface PUMMELO_STADIUM_OFFICER, RIGHT
-	applymovement PLAYER, StadiumPlayerMovement1
-	opentext
-	writetext StadiumPlayerEnteringArenaGaunletText
-	waitbutton
-	closetext
-	applymovement PLAYER, StadiumPlayerMovement2
-	spriteface PLAYER, RIGHT
-	appear PUMMELO_STADIUM_CISSY
-	applymovement PUMMELO_STADIUM_CISSY, StadiumNPCEnter
-
-;Cissy battle
-	opentext
 	writetext CissyBattleText
 	waitbutton
-	closetext
 	winlosstext CissyWinLoss, 0
 	loadtrainer CISSY, 2
 	startbattle
+
 	playmapmusic
 	reloadmapafterbattle
-
-	applymovement PUMMELO_STADIUM_CISSY, StadiumNPCLeave
-	disappear PUMMELO_STADIUM_CISSY
-	pause 30
-	appear PUMMELO_STADIUM_DANNY
-	applymovement PUMMELO_STADIUM_DANNY, StadiumNPCEnter
-
-;Danny battle
 	opentext
 	writetext DannyBattleText
 	waitbutton
-	closetext
 	winlosstext DannyWinLoss, 0
 	loadtrainer DANNY, 2
 	startbattle
+
 	playmapmusic
 	reloadmapafterbattle
-
-	applymovement PUMMELO_STADIUM_DANNY, StadiumNPCLeave
-	disappear PUMMELO_STADIUM_DANNY
-	pause 30
-	appear PUMMELO_STADIUM_RUDY
-	applymovement PUMMELO_STADIUM_RUDY, StadiumNPCEnter
-
-;Rudy battle
 	opentext
 	writetext RudyBattleText
 	waitbutton
-	closetext
 	winlosstext RudyWinLoss, 0
 	loadtrainer RUDY, 2
 	startbattle
+
 	playmapmusic
 	reloadmapafterbattle
-
-	applymovement PUMMELO_STADIUM_RUDY, StadiumNPCLeave
-	disappear PUMMELO_STADIUM_RUDY
-	pause 30
-	appear PUMMELO_STADIUM_LUANA
-	applymovement PUMMELO_STADIUM_LUANA, StadiumNPCEnter
-
-;Luana battle	
 	opentext
 	writetext LuanaBattleText
 	waitbutton
-	closetext
 	winlosstext LuanaWinLoss, 0
 	loadtrainer LUANA, 2
 	startbattle
+
 	playmapmusic
 	reloadmapafterbattle
-
-	applymovement PUMMELO_STADIUM_LUANA, StadiumNPCLeave
-	disappear PUMMELO_STADIUM_LUANA
-	pause 30
-	
-;Red or Drake?
-	checkevent EVENT_BEAT_RED
-	iffalse .battleRED ;only allow for Drake battle if player has beat RED in cleopatra island
-	callasm _ASM_PummeloRand
-	iftrue .battleRED
-
-;Drake rematch!
-	appear PUMMELO_STADIUM_DRAKE
-	applymovement PUMMELO_STADIUM_DRAKE, StadiumNPCEnter
-
-	opentext
-	writetext DrakeGauntletBattleText
-	waitbutton
-	writetext PummeloStadiumHealPartyText
-	yesorno
-	iffalse .skipHeal
-	
-	;Heal party
-	closetext
-	special FadeOutPalettes
-	playmusic MUSIC_HEAL
-	special HealParty
-	pause 60
-	special Special_FadeInQuickly
-	;special RestartMapMusic
-	
-.skipHeal
-	closetext
-	blackoutmod PUMMELO_ISLAND
-	winlosstext DrakeGauntletWinLossText, 0
-	loadtrainer DRAKE, 2
-	startbattle
-	playmapmusic
-	reloadmapafterbattle
-	
-	opentext
-	writetext DrakeGauntletPostBattleText
-	waitbutton
-	closetext
-
-	applymovement PUMMELO_STADIUM_DRAKE, StadiumNPCLeave
-	disappear PUMMELO_STADIUM_DRAKE
-	jump .finishGauntlet
-
-.battleRED
-	appear PUMMELO_STADIUM_RED
-	applymovement PUMMELO_STADIUM_RED, StadiumNPCEnter
-
-;Red battle
-
 	opentext
 	writetext RedBattleText
 	waitbutton
-	writetext PummeloStadiumHealPartyText
-	yesorno
-	iffalse .skipHeal2
-	
-	;Heal party
-	closetext
-	special FadeOutPalettes
 	playmusic MUSIC_HEAL
 	special HealParty
 	pause 60
 	special Special_FadeInQuickly
-	;special RestartMapMusic
-	
-.skipHeal2
-	closetext
+	special RestartMapMusic
 	blackoutmod PUMMELO_ISLAND
 	winlosstext RedWinLoss, 0
 	loadtrainer RED, 1
 	startbattle
+
 	playmapmusic
 	reloadmapafterbattle
-	
-	opentext
-	writetext RedWinLoss
-	waitbutton
-	closetext
-
-	applymovement PUMMELO_STADIUM_RED, StadiumNPCLeave
-	disappear PUMMELO_STADIUM_RED
-
-.finishGauntlet
-	pause 30
 	opentext
 	writetext StadiumWonText1
 	waitbutton
-	closetext
-	
-	applymovement PUMMELO_STADIUM_ANNOUNCER, StadiumOfficerMovement2
-	spriteface PLAYER, UP
-	opentext
-
-.debugSkipGaunlet
 	verbosegiveitem MASTER_BALL
 	writetext StadiumWonText2
 	waitbutton
 	closetext
-	special FadeOutPalettes
 	;reset static encounters
-	clearevent EVENT_CRYSTAL_ONIX_DEFEATED
 	clearevent EVENT_SEVEN_GRAPEFRUITS_SNORLAX
 	clearevent EVENT_FUKUHARA_BF3_AERODACTYL_FOUGHT
 	clearevent EVENT_MIMIKYU_FOUGHT
-	
-	;only clear these if the Shamouti events are finished
-	checkevent EVENT_SHAMOUTI_QUEST_ENDED
-	iffalse .skipShamouti
 	clearevent EVENT_ZAPDOS_FOUGHT
 	clearevent EVENT_ARTICUNO_FOUGHT
 	clearevent EVENT_MOLTRES_FOUGHT
 	clearevent EVENT_LUGIA_FOUGHT
-
-.skipShamouti
-
 	clearevent EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	clearevent EVENT_SUNRAY_CAVE_1F_MARSHADOW_FOUGHT
 	clearevent EVENT_ROUTE51_HO_OH_FOUGHT
@@ -301,9 +141,6 @@ endc
 	clearevent EVENT_VICTORY_ROAD_MEWTWO_FOUGHT
 	clearevent EVENT_TARROCO_CELEBI_FOUGHT
 	clearevent EVENT_RED_ON_CLEOPATRA
-
-;re-init the romaers (resets DVs and HP if not caught)
-	writebyte 0 ; 0x00 to totally reset romaers (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
 	special InitRoamMons ;reset the eon duo
 	special HealParty
 	halloffame
@@ -323,115 +160,88 @@ endc
 	closetext
 	end
 
-if def(DEBUG)
-	_asmDebugSkateBoardCheck:
-		ld a, $1
-		ld [ScriptVar], a
-		ld a, [PartyMon1Item]
-		cp SKATEBOARD
-		ret z
-		xor a
-		ld [ScriptVar], a
-		ret
-endc
-
-_ASM_PummeloRand:
-	xor a
-	ld [ScriptVar], a
-	call Random
-	ldh a, [hRandomAdd]
-	cp a, $80 ;50% chance
-	ret nc
-	ld a, 01
-	ld [ScriptVar], a
-	ret
-
 DrakeGoneText:
-	text "Ah, CHAMPION!"
+	text "¡CAMPEON!"
 	
-	para "If you're looking"
-	line "for DRAKE. He left"
-	cont "PUMMELO to train."
-	cont "But if you are"
-	cont "looking for a"
-	cont "challenge, you've"
-	cont "come to the right"
-	cont "place!"
+	para "Si estas"
+	line "buscando a DRAKE,"
+	cont "ha ido a ISLA"
+	cont "POMELO a entre-"
+	cont "nar.Pero si "
+	cont "buscas desafios,"
+	cont "estas en el "
+	cont "lugar correcto."
 	
-	para "Would you like to"
-	line "face our island's"
-	cont "strongest?"
+	para "¿Quieres vertelas"
+	line "con nuestros"
+	cont "isleños mas"
+	cont "fuertes?"
 	done
 
 DeclinePostStadiumText:
-	text "Well, these"
-	line "trainers love"
-	cont "battling, they"
-	cont "will accept your"
-	cont "challenge anytime."
+	text "Bien, nuestros"
+	line "entrenadores aman"
+	cont "combatir. Ellos"
+	cont "siempre aceptaran"
+	cont "tu desafio."
 	
-	para "Please come back."
+	para "Por favor,vuelve."
 	done
 
 CissyBattleText:
-	text "Your first battle"
-	line "will be against"
-	cont "CISSY!"
-	para "What? You expected"
-	line "someone else?"
-	para "Of course our"
-	line "strongest trainers"
-	cont "are the GYM"
-	cont "LEADERS!"
-	para "But don't be"
-	line "fooled, they are"
-	cont "far more powerful"
-	cont "than when you"
-	cont "faced them!"
-	para "Now, let's begin!"
+	text "Tu primera pelea"
+	line "sera contra"
+	cont "CISSY."
+	para "¿Que? ¿Esperabas"
+	line "otro rival?"
+	para "Nuestros entre-"
+	line "nadores mas "
+	cont "fuertes son los"
+	cont "LIDERES de GIM."
+	para "Pero no te"
+	line "confies, son mas"
+	cont "fuertes que en"
+	cont "encuentros"
+	cont "anteriores."
+	para "¡COMENCEMOS!"
 	done
 
 DannyBattleText:
-	text "The second match"
-	line "against DANNY will"
-	cont "commence!"
+	text "La segunda pelea"
+	line "es contra DANNY "
+	cont "¡COMENCEMOS!"
 	done
 
 RudyBattleText:
-	text "The third match"
-	line "against RUDY will"
-	cont "commence!"
+	text "La tercera pelea"
+	line "es contra Rudy."
+	cont "¡COMENCEMOS!"
 	done
 
 LuanaBattleText:
-	text "The fourth battle"
-	line "against LUANA will"
-	cont "commence!"
+	text "La cuarta pelea"
+	line "es contra LUNA."
+	cont "¡COMENCEMOS!"
 	done
 
 RedBattleText:
-	text "Finally, we have a"
-	line "new challenger for"
-	cont "you, CHAMPION!"
-
-	para "How will you fare"
-	line "against KANTO's"
-	cont "CHAMPION?"
-	done
-
-PummeloStadiumHealPartyText:
-	text "Would you like to"
-	line "heal your party?"
+	text "Finalmente, tene-"
+	line "mos un nuevo"
+	cont "desafio para ti,"
+	cont "CAMPEON."
+	
+	para "Antes,curaremos"
+	line "a tus POKES."
 	done
 
 CissyWinLoss:
-	text "I gave it my best"
-	line "shot!"
+	text "¡LO DI TODO!"
+	line "¡ENHORABUENA!"
 	done
 
 DannyWinLoss:
-	text "Wow, not bad at"
-	line "all!"
+	text "Wow, no me"
+	line "fue tan mal."
 	done
 
 RudyWinLoss:
@@ -439,7 +249,7 @@ RudyWinLoss:
 	done
 
 LuanaWinLoss:
-	text "Can you do it?"
+	text "¿Puedes hacerlo?"
 	done
 
 RedWinLoss:
@@ -447,87 +257,60 @@ RedWinLoss:
 	done
 
 StadiumWonText1:
-	text "Great job!"
-	line "We had no doubts"
-	cont "that you would"
-	cont "succeed, CHAMP!"
+	text "¡Gran trabajo!"
+	line "No teniamos"
+	cont "dudas de que"
+	cont "lo lograrias."
 	
-	para "We would like"
-	line "you to have this!"
+	para "Nos gustaria"
+	line "darte esto."
 	done
 
 StadiumWonText2:
-	text "Please come see"
-	line "us again if you"
-	cont "have the itch to"
-	cont "battle, CHAMPION."
-	done
-
-DrakeGauntletBattleText:
-	text "Finally, we have a"
-	line "surprise for you,"
-	cont "CHAMPION!"
-
-	para "DRAKE is back to"
-	line "reclaim his title!"
-
-	para "DRAKE: This time"
-	line "I've come prepared"
-	cont "for you, <PLAYER>!"
-	done
-
-DrakeGauntletWinLossText:
-	text "I need to go back"
-	line "training."
-	done
-
-DrakeGauntletPostBattleText:
-	text "It would seem I"
-	line "still have much to"
-	cont "learn."
-
-	para "You really deserve"
-	line "to be the ORANGE"
-	cont "LEAGUE's CHAMPION."
-
-	para "I shall continue"
-	line "my training."
-
-	para "Until next time."
+	text "Vuelve si"
+	line "quieres otra"
+	cont "revancha,"
+	cont "CAMPEON."
 	done
 
 PummeloStadiumNoSpikeShellText:
-	text "Frankly, I'm"
-	line "appalled."
+	text "Frankly, me "
+	line "han dado una"
+	cont "paliza."
 	
-	para "You seem to be"
-	line "missing the SPIKE"
-	cont "SHELL BADGE."
+	para "Parece que te"
+	line "falta la meda-"
+	cont "lla CONCHA"
+	cont "ESPINOSA."
 	
-	para "RUDY of TROVITA"
-	line "ISLAND has that."
+	para "RUDY de ISLA"
+	line "TROVITA esta"
+	cont "aqui."
 	done
 
 PummeloStadiumNoJadeStarText:
-	text "Frankly, I'm"
-	line "appalled."
+	text "Frankly, me"
+	line "han dado una"
+	cont "paliza."
 	
-	para "You seem to be"
-	line "missing the JADE"
-	cont "STAR BADGE."
+	para "Parece que te"
+	line "falta la "
+	cont "MEDALLA"
+	cont "ESTRELLA DE"
+	cont "JADE."
 	
-	para "LUANA of KUMQUAT"
-	line "ISLAND has that."
+	para "LUANA de ISLA"
+	line "KUMQUAT la tiene."
 	done
 	
 PummeloStadiumEntryBadgeCheckText:
-	text "Greetings. You"
-	line "must be <PLAYER>."
-	cont "DRAKE has been"
-	cont "expecting you."
+	text "Saludos. Debes"
+	line "de ser <PLAYER>."
+	cont "DRAKE te ha es-"
+	cont "tado esperando."
 	
-	para "First, let me see"
-	line "your BADGES."
+	para "Primero, dejame"
+	line "ver tus medallas."
 	
 	para "<...>"
 	
@@ -537,95 +320,72 @@ PummeloStadiumEntryBadgeCheckText:
 	done
 	
 PummeloStadiumBadgeCheckPassText:
-	text "Excellent. Come"
-	line "this way, DRAKE"
-	cont "awaits."
+	text "Excellente. Ven"
+	line "por aqui, DRAKE"
+	cont "te espera."
 	done
 	
 StadiumPlayerEnteringArenaText:
-	text "ANNOUNCER: Ladies"
-	line "and Gentlemen!"
+	text "SPEAKER:¡Señoras"
+	line "y señores!"
 	
-	para "The fight you've"
-	line "all been waiting"
-	cont "for!"
+	para "¡La pelea que"
+	line "que estaban"
+	cont "esperando!"
 	
-	para "From the ISLAND of"
+	para "De ISLA"
 	line "VALENCIA, <PLAYER>!"
 	
-	para "Will they be able"
-	line "to beat the un-"
-	cont "defeated CHAMP,"
-	cont "DRAKE?!"
-	done
-
-StadiumPlayerEnteringArenaGaunletText:
-	text "ANNOUNCER: Ladies"
-	line "and Gentlemen!"
-	
-	para "The fight you've"
-	line "all been waiting"
-	cont "for!"
-	
-	para "From the ISLAND of"
-	line "VALENCIA, <PLAYER>!"
-	
-	para "Will they be able"
-	line "to beat the best"
-	cont "trainers of the"
-	cont "ORANGE ISLANDS?"
+	para "¿Podra derrotar"
+	line "al campeon"
+	cont "DRAKE?"
 	done
 	
 DrakeOpeningText:
-	text "Welcome, <PLAYER>."
-	line "I'm DRAKE, the top"
-	cont "dog of the ORANGE"
+	text "Bienvenido, <PLAYER>."
+	line "Soy DRAKE, el"
+	cont "lider del ORANGE"
 	cont "CREW."
 	
-	para "You've done well"
-	line "to come this far,"
-	cont "but I'm not giving"
-	cont "up my title so"
+	para "Lo has hecho bien"
+	line "llegando tan lejos,"
+	cont "¡pero no te voy a"
+	cont "dar el titulo tan"
 	
-	para "easily!"
+	para "facilmente!"
 	done
 	
 DrakePummeloWinLoss:
-	text "Impossible!"
+	text "¡Imposible!"
 	
 	para "<...>"
 	
-	para "What am I sayin'?"
-	line "<PLAYER>, I am"
-	cont "beyond impressed."
+	para "¿Pero que digo?"
+	line "<PLAYER>, Estoy"
+	cont "muy impresionado."
 	
-	para "You've earned the"
-	line "title of CHAMPION!"
+	para "¡Has ganado el"
+	line "titulo de CAMPEON!"
 	done
 	
 AnnouncerWinnerText:
-	text "ANNOUNCER: WOW!"
-	line "LADIES AND GENTS!"
+	text "SPEAKER: ¡GUAU!"
+	line "¡SEÑORAS, SEÑORES!"
 	
-	para "WE HAVE A NEW"
-	line "CHAMP! <PLAYER>!"
+	para "¡Tenemos un nuevo"
+	line "CAMPEON! <PLAYER>"
 	
 	para "DRAKE: <PLAYER>."
-	line "Follow me, it's"
-	cont "now time to go"
-	cont "to the HALL OF"
+	line "Sigueme. Es la"
+	cont "hora de ir al"
+	cont "HALL DE LA"
 	
-	para "FAME."
+	para "FAMA."
 	done
 	
 StadiumOfficerMovement:
 	step UP
 	step LEFT
-	step_end
-
-StadiumOfficerMovement2:
-	step LEFT
-	step DOWN
 	step_end
 	
 StadiumPlayerMovement1:
@@ -646,18 +406,6 @@ StadiumPlayerMovement2:
 	step UP
 	step_end
 
-StadiumNPCLeave:
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step_end
-
-StadiumNPCEnter:
-	step LEFT
-	step LEFT
-	step LEFT
-	step_end
-
 PummeloStadium_MapEventHeader::
 
 .Warps: db 2
@@ -668,14 +416,9 @@ PummeloStadium_MapEventHeader::
 
 .BGEvents: db 0
 
-.ObjectEvents: db 10
+.ObjectEvents: db 5
 	person_event SPRITE_SPECTATOR_1,  2,  6, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
 	person_event SPRITE_SPECTATOR_1,  2,  9, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
-	person_event SPRITE_DRAKE,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
+	person_event SPRITE_DRAKE,  6,  8, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
 	person_event SPRITE_GYM_GUY,  4,  7, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
 	person_event SPRITE_OFFICER, 16,  7, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, PummeloStadiumEntry, -1
-	person_event SPRITE_CISSY,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
-	person_event SPRITE_DANNY,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
-	person_event SPRITE_RUDY,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
-	person_event SPRITE_LUANA,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1
-	person_event SPRITE_RED,  6, 11, SPRITEMOVEDATA_STANDING_LEFT, 2, 2, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, -1

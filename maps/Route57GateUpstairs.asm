@@ -11,15 +11,15 @@ Route57GateBugBoy:
 	jumptextfaceplayer Route57BugBoyText
 
 Route57BugBoyText:
-	text "I wonder if there"
-	line "are super rare"
-	cont "#MON you can"
-	cont "only find here?"
+	text "Me encantaría que"
+	line "hubiera"
+	cont "#MON"
+	cont "rarísimos que solo"
+	cont "estuvieran aquí."
 
-	para "Just one time, I"
-	line "could have sworn"
-	cont "I saw my SHADOW"
-	cont "move."
+	para "Recuerdo una vez"
+	line "que vi mi propia"
+	cont "SOMBRA moverse."
 	done
 
 KinnowBinoculars1:
@@ -28,18 +28,18 @@ KinnowBinoculars1:
 KinnowBinoculars1Text:
 	text "Hmm<...>"
 
-	para "Beautiful beaches"
-	line "as far as the eye"
-	cont "can see!"
+	para "Desde aquí"
+	line "pueden verse"
+	cont "playas increibles."
 	done
 
 KinnowBinoculars2:
 	jumptext KinnowBinoculars2Text
 
 KinnowBinoculars2Text:
-	text "An island far to"
-	line "the north. Seems"
-	cont "to be uninhabited."
+	text "Hay una isla al"
+	line "norte, parece"
+	cont "deshabitada."
 	done
 
 Route57GateUpstairs_MapEventHeader::

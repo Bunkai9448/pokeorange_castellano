@@ -20,7 +20,7 @@ ShamoutiChiefScript:
 	end
 	
 .AcceptedShamoutiQuest
-	checkevent EVENT_SHAMOUTI_QUEST_ENDED
+	checkevent EVENT_LUGIA_FOUGHT
 	iftrue .RockClimbScript
 	writetext ShamoutiChiefText2
 	waitbutton
@@ -47,105 +47,113 @@ ShamoutiChiefScript:
 	end
 
 ShamoutiChiefText2:
-	text "If you'd like more"
-	line "details, please go"
-	cont "to my home just"
-	cont "outside of this"
-	cont "building. My grand"
-	cont "kid will handle"
-	cont "the rest."
+	text "Si quieres más"
+	line "detalles,por favor"
+	cont "ve a mi casa,justo"
+	cont "detras de este"
+	cont "edificio.Mi"
+	cont "nieta te dirá"
+	cont "el resto."
 	
-	para "I will let the"
-	line "GUARD on the beach"
-	cont "know to let you"
-	cont "through."
+	para "Le diré al"
+	line "GUARDIAN en la"
+	cont "playa que te "
+	cont "deje cruzar."
 	done
 
 ShamoutiChiefText1:
-	text "CHIEF: Ah, are you"
-	line "a tourist?"
+	text "JEFE:¿Ah, eres"
+	line "un turista?"
 	
 	para "<...>"
 	
-	para "CHIEF: So, your"
-	line "name is <PLAYER>,"
-	cont "and you are the"
-	cont "current CHAMPION"
+	para "CHIEF: Así que"
+	line "te llamas <PLAYER>,"
+	cont "y eres el actual"
+	cont "CAMPEON"
 	
-	para "of the ORANGE"
-	line "CREW!"
+	para "del ORANGE"
+	line "CREW."
 	
-	para "What wondrous"
-	line "timing!"
-	cont "You see, every"
-	cont "year we hold a"
+	para "¡Que maravillosa"
+	line "coincidencia!"
+	cont "Veras,cada"
+	cont "año celebramos"
 	
-	para "festival in honor"
-	line "of our guardians,"
-	cont "the gods of fire,"
-	cont "ice, lightning,"
-	cont "and the sea."
+	para "un festival en "
+	line "honor a los "
+	cont "guardianes, los"
+	cont "dioses del fuego"
+	cont "rayo,hielo y"
+	cont "del mar."
 	
-	para "They protect us,"
-	line "nay, the entire"
-	cont "world!"
+	para "Ellos nos,"
+	line "protegen, y al"
+	cont "mundo entero."
 	
-	para "Anyway, in the"
-	line "legends, should"
-	cont "the gods be dis-"
-	cont "turbed, it is"
-	cont "said only a great"
-	cont "trainer can bring"
-	cont "balance back to"
-	cont "the world."
+	para "Cuentan las"
+	line "leyendas que si"
+	cont "los dioses son"
+	cont "molestados, solo"
+	cont "un gran entrenador"
+	cont "podra devolver"
+	cont "el equilibrio al"
+	cont "mundo."
 	
-	para "Now, we'd normally"
-	line "let any trainer"
-	cont "do the part, but"
-	cont "there's been some"
-	cont "sightings of a big"
-	cont "flying castle as"
-	cont "of late."
+	para "Normalmente no"
+	line "dejariamos formar"
+	cont "parte al primer "
+	cont "entrenador que"
+	cont "veamos, pero"
+	cont "eres un campeón y"
+	cont "hay señales de"
+	cont "un castillo volador"
+	cont "en los cielos."
 	
-	para "I'm worried about"
-	line "the guardian gods!"
-	cont "Please look into"
-	cont "this, CHAMPION!"
+	para "Estoy preocupado"
+	line "por los dioses"
+	cont "guadianes."
+	cont "Por favor, ¡mira "
+	cont "esto, CAMPEON!"
 	
-	para "If you'd like more"
-	line "details, please go"
-	cont "to the home just"
-	cont "outside of this"
-	cont "building. My grand"
-	cont "kid will handle"
-	cont "the rest."
+	para "Si quieres mas"
+	line "detalles,ve "
+	cont "a la casa justo"
+	cont "detras de este"
+	cont "edificio.Mi"
+	cont "nieta hará"
+	cont "el resto."
 	
-	para "I will let the"
-	line "GUARD on the beach"
-	cont "know to let you"
-	cont "through."
+	para "Hare que el"
+	line "GUARDIAN en la "
+	cont "playa sepa que"
+	cont "cruzas."
 	done
 
 ShamoutiChiefText3:
-	text "I can't thank you"
-	line "enough, <PLAYER>!"
+	text "¡No puedo "
+	line "agradecerte lo"
+	cont "suficiente"
+	cont "PLAYER>!"
 	
-	para "The prophecy is"
-	line "fulfilled, and"
-	cont "all is well."
+	para "La profecía se"
+	line "ha cumplido,asi"
+	cont "que perfecto."
 	
-	para "Of course, I have"
-	line "a reward for your"
-	cont "troubles."
+	para "Por supuesto,"
+	line "toma una "
+	cont "recompensa por"
+	cont "las molestias."
 	done
 
 ShamoutiChiefText4:
-	text "That HM will let"
-	line "you scale all"
-	cont "kinds of walls!"
+	text "Esta MO te"
+	line "permitirá"
+	cont "trepar muros."
 	
-	para "I'm sure it will"
-	line "come in handy!"
+	para "No todos,pero"
+	line "podras sacarle"
+	cont "partido."
 	done
 
 
@@ -153,17 +161,18 @@ ChiefSage1Script:
 	jumptext ChiefSage1Text
 	
 ChiefSage1Text:
-	text "<...>And she says"
-	line "'No, but I have"
-	cont "KRABBYs!' Wahaha!"
+	text "<...>Y ella"
+	line "'dijo, no pero"
+	cont "tengo KRABBYS"
+	cont "jajaja."
 	done
 	
 ChiefSage2Script:
 	jumptext ChiefSage2Text
 	
 ChiefSage2Text:
-	text "Hehehe<...>"
-	line "KRABBYs<...>"
+	text "Jajja<...>"
+	line "KRABBYS<...>"
 	done
 
 ChiefsHouse_MapEventHeader:

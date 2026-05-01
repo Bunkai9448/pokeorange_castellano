@@ -16,12 +16,12 @@ Route60GateCooltrainer:
 	end
 
 Route60GateCooltrainerText:
-	text "That's a lot of"
-	line "badges you have!"
+	text "¡Tienes un montón"
+	line "de medallas!"
 
-	para "Maybe you have a"
-	line "shot at the champ-"
-	cont "ionship."
+	para "Quizas tengas"
+	line "una oportunidad en"
+	cont "el campeonato."
 	done
 
 MoroBinoculars1:
@@ -30,17 +30,19 @@ MoroBinoculars1:
 MoroBinoculars1Text:
 	text "Hmm<...>"
 
-	para "A flock of WINGULL"
-	line "heading east!"
+	para "Una bandada de"
+	line "Wingull va al"
+	cont "este."
 	done
 
 MoroBinoculars2:
 	jumptext MoroBinoculars2Text
 
 MoroBinoculars2Text:
-	text "Interesting WATER"
-	line "#MON are jump-"
-	cont "ing out the water."
+	text "Interesante..."
+	line "Los #MON "
+	cont "acuáticos saltan"
+	cont "fuera del agua."
 	done
 
 Route60GateUpstairs_MapEventHeader::

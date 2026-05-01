@@ -50,12 +50,10 @@ UnnamedIslandNurseScript:
 	jumpstd pokecenternurse
 
 UnnamedIslandSlouchScript:
-	faceplayer
 	opentext
 	writetext UnnamedIslandSlouchText
 	waitbutton
 	closetext
-	spriteface UNNAMEDISLAND_SLOUCH, RIGHT
 	end
 
 UnnamedIslandSlouchText:
@@ -81,38 +79,39 @@ UnnamedPokeCenter1FPlayerMovement1:
 	step_end
 
 UnnamedMistyText1:
-	text "Oh, hello there."
+	text "Oh, hola."
 
-	para "Was I in your way?"
-	line "I'm so sorry!"
+	para "¿Estoy en tu cami-"
+	line "no?¡Perdon!"
 
 	para  "<...> <...> <...>"
 
-	para "Say, I can't put"
-	line "my finger on it,"
-	cont "but you remind me"
-	cont "of someone."
+	para "No estoy segura,"
+	line "pero creo que me"
+	cont "recuerdas a"
+	cont "alguien."
 
-	para "The name's MISTY."
-	line "I'm a gym leader"
-	cont "from the KANTO"
-	cont "region."
+	para "Soy MISTY."
+	line "Soy una lider de"
+	cont "gimnasio de la"
+	cont "region de KANTO"
 
 	para "<...> <...> <...>"
 
-	para "So, your name is"
+	para "Asi que eres"
 	line "<PLAYER>!"
 
-	para "I have a feeling"
-	line "we'll meet again."
-	cont "Take this, a gift"
-	cont "from me to you."
+	para "Tengo el presen-"
+	line "timiento de que"
+	cont "nos volveremos a"
+	cont "encontrar. Toma"
+	cont "esto como regalo."
 	done
 
 UnnamedMistyText2:
-	text "Well, I must be"
-	line "off, now. It was"
-	cont "nice meeting you!"
+	text "Bueno, tengo que"
+	line "irme. ¡Un placer"
+	cont "conocerte!"
 	done
 
 UnnamedIsland1PokeCenter_MapEventHeader::

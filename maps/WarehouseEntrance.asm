@@ -325,128 +325,131 @@ UnknownText_0x7c5b0:
 	done
 
 UnknownText_0x7c5f9:
-	text "Welcome!"
+	text "¡Bienvenido!"
 
-	para "I run the #MON"
-	line "SALON!"
+	para "Dirijo el SALON "
+	line "#MON."
 
-	para "I'm the older and"
-	line "better of the two"
-	cont "HAIRCUT BROTHERS."
+	para "Soy el mayor y"
+	line "el mejor de los"
+	cont "dos hermanos pe-"
+	cont "luqueros."
 
-	para "I can make your"
-	line "#MON beautiful"
-	cont "for just ¥500."
+	para "Puedo poner bo-"
+	line "nito tu "
+	cont "#MON por "
+	cont "solo ¥500."
 
-	para "Would you like me"
-	line "to do that?"
+	para "¿Que te gusta-"
+	line "ria que haga?"
 	done
 
 UnknownText_0x7c69a:
-	text "Which #MON"
-	line "should I work on?"
+	text "¿Con que #MON"
+	line "quieres que "
+	cont "trabaje?"
 	done
 
 UnknownText_0x7c6b8:
-	text "OK! Watch it"
-	line "become beautiful!"
+	text "¡OK! ¡Mira"
+	line "como lo dejo!"
 	done
 
 UnknownText_0x7c6d8:
-	text "There! All done!"
+	text "¡Ya esta!"
 	done
 
 UnknownText_0x7c6ea:
-	text "Is that right?"
-	line "That's a shame!"
+	text "¿Es correcto?"
+	line "¡Es una verguenza!"
 	done
 
 UnknownText_0x7c709:
-	text "You'll need more"
-	line "money than that."
+	text "Necesitaras mas"
+	line "dinero para eso."
 	done
 
 UnknownText_0x7c72b:
-	text "I do only one"
-	line "haircut a day. I'm"
-	cont "done for today."
+	text "Solo corto el"
+	line "pelo una vez al"
+	cont "dia. Ya vale"
+	cont "por hoy."
 	done
 
 UnknownText_0x7c75c:
-	text "Welcome to the"
-	line "#MON SALON!"
+	text "¡Bienvenido al SA-"
+	line "LON #MON!"
 
-	para "I'm the younger"
-	line "and less expen-"
-	cont "sive of the two"
-	cont "HAIRCUT BROTHERS."
+	para "Soy el mas joven"
+	line "e inexperto de los"
+	cont "dos hermanos"
+	cont "peluqueros."
 
-	para "I'll spiff up your"
-	line "#MON for just"
+	para "Embellecere a tus"
+	line "#MON por solo"
 	cont "¥300."
 
-	para "So? How about it?"
+	para "¿Que me dices?"
 	done
 
 UnknownText_0x7c7f1:
-	text "OK, which #MON"
-	line "should I do?"
+	text "OK,¿que #MON"
+	line "trato?"
 	done
 
 UnknownText_0x7c80e:
-	text "OK! I'll make it"
-	line "look cool!"
+	text "¡OK! ¡Lo deja-"
+	line "re genial!"
 	done
 
 UnknownText_0x7c82a:
-	text "There we go!"
-	line "All done!"
+	text "¡Estoy listo!"
+	line "¡Alla vamos!"
 	done
 
 UnknownText_0x7c842:
-	text "No? "
-	line "How disappointing!"
+	text "¿No? "
+	line "¡Que decepcion!"
 	done
 
 UnknownText_0x7c85b:
-	text "You're a little"
-	line "short on funds."
+	text "Vas algo justo"
+	line "de fondos."
 	done
 
 UnknownText_0x7c87b:
-	text "I can do only one"
-	line "haircut a day."
+	text "Solo puedo hacer"
+	line "un corte diario."
 
-	para "Sorry, but I'm all"
-	line "done for today."
+	para "Lo siento, es"
+	line "todo por hoy."
 	done
 
 HaircutBrosText_SlightlyHappier:
 	text_from_ram StringBuffer3
-	text " looks a"
-	line "little happier."
+	text " parece"
+	line "algo contento."
 	done
 
 HaircutBrosText_Happier:
 	text_from_ram StringBuffer3
-	text " looks"
-	line "happy."
+	text " parece"
+	line "contento."
 	done
 
 HaircutBrosText_MuchHappier:
 	text_from_ram StringBuffer3
-	text " looks"
-	line "delighted!"
+	text " ¡parece"
+	line "encantado!"
 	done
 
 UnknownText_0x7c904:
-	text "We're not open"
-	line "today."
+	text "No abrimos hoy."
 	done
 
 UnknownText_0x7c91a:
-	text "NO ENTRY BEYOND"
-	line "THIS POINT"
+	text "NO PASAR MAS"
+	line "ALLA DE AQUI"
 	done
 
 WarehouseEntrance_MapEventHeader:

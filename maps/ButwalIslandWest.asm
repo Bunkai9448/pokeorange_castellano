@@ -58,20 +58,20 @@ TrainerCooltrainerMKubo:
 	end
 	
 CooltrainerMKuboSeenText:
-	text "This is me and my"
-	line "bro's turf!"
+	text "¡Este cesped es mío"
+	line "y de mi hermano!"
 	
-	para "I'm gonna send you"
-	line "home crying, kid!"
+	para "¡Chico, te mandaré"
+	line "a casa a llorar!"
 	done
 	
 CooltrainerMKuboWinText:
-	text "Big bro!"
+	text "¡Gran hermano!"
 	done
 	
 CooltrainerMKuboAfterText:
-	text "My ACE #MON"
-	line "were defeated!"
+	text "¡Mis AS #MON"
+	line "fueron derrotados!"
 	done
 	
 
@@ -88,24 +88,24 @@ TrainerCooltrainerMNagi:
 	end
 	
 CooltrainerMNagiSeenText:
-	text "Beat my little bro"
-	line "did ya'?"
+	text "¿Venciste ya a mi"
+	line "hermano menor?"
 	
-	para "Guess I'll show"
-	line "you what we are"
-	cont "capable of!"
+	para "Bien, te enseñaré"
+	line "de lo que somos"
+	cont "capaces."
 	done
 	
 CooltrainerMNagiWinText:
-	text "I see your power!"
-	line "Staggering!"
+	text "¡Veo tu poder!"
+	line "¡Asombroso!"
 	done
 	
 CooltrainerMNagiAfterText:
-	text "We brothers will"
-	line "continue training"
-	cont "until we can beat"
-	cont "LUANA."
+	text "Como hermanos"
+	line "continuaremos"
+	cont "entrenando hasta"
+	cont "vencer a LUANA."
 	done
 	
 ButwalWestTM17Protect:

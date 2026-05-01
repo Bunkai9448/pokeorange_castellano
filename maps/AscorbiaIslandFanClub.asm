@@ -57,57 +57,58 @@ AscorbiaFanClubPresidentScript:
 	end
 
 AscorbiaFanClubPresidentText1:
-	text "Hey there!"
+	text "¡Ey!"
 	
-	para "So, do you know"
-	line "about EXEGGUTOR?"
+	para "¿Conoces algo"
+	line "sobre EXEGGUTOR?"
 	
-	para "Don't you love how"
-	line "long its neck is?"
+	para "¿No te encanta"
+	line "lo largo que es"
+	cont "su cuello?"
 	done
 	
 AscorbiaFanClubPresidentText2:
-	text "Oh, yes! Yes! It's"
-	line "magnificent."
+	text "¡Oh,si! Es"
+	line "magnífico."
 	
-	para "Now, tell me! What"
-	line "about the fourth"
-	cont "head on its tail?"
+	para "Ahora, cuentame"
+	line "sobre la cuarta"
+	cont "cabeza en la cola"
 	
-	para "Isn't it so cute?"
+	para "¿No es bella?"
 	done
 	
 AscorbiaFanClubPresidentText3:
-	text "Isn't it though?"
+	text "¿No es sufieciente?"
 	
-	para "Now, tell me! Don't"
-	line "you just love how"
-	cont "green its fronds"
-	cont "are?"
+	para "Dime,"
+	line "¿No te encanta"
+	cont "el verde de sus"
+	cont "hojas?"
 	done
 	
 AscorbiaFanClubPresidentText4:
-	text "Oh, so green!"
+	text "Oh,¡tan verde!"
 	
-	para "Thank you for tak-"
-	line "ing the time to"
-	cont "talk to me about"
-	cont "EXEGGUTOR!"
+	para "Gracias por "
+	line "estar hablando"
+	cont "conmigo sobre"
+	cont "EXEGGUTOR."
 	
-	para "Here's a gift from"
-	line "one #MON fan"
-	cont "to another!"
+	para "Toma,un regalo"
+	line "de un fan"
+	cont "#MON a otro."
 	done
 	
 AscorbiaFanClubPresidentTextNo:
-	text "Oh, I see. Sorry"
-	line "to bother you."
+	text "Oh,ya veo. Perdon"
+	line "por molestarte."
 	done
 	
 AscorbiaFanClubPresidentText5:
-	text "Why, hello again!"
-	line "I hope you meet"
-	cont "many more #MON!"
+	text "Hola, otra vez."
+	line "Espero que "
+	cont "conozcas mas #MON."
 	done
 	
 AscorbiaFanClubFearowScript:
@@ -119,48 +120,51 @@ AscorbiaFanClubFearowScript:
 	end
 	
 FearowText:
-	text "Fraaah!"
+	text "¡Fraaah!"
 	done
 	
 AscorbiaFanClubRockerScript:
 	jumptextfaceplayer AscorbiaFanClubRockerText
 	
 AscorbiaFanClubRockerText:
-	text "FEAROW learns a"
-	line "strong FLYING"
-	cont "type move called"
-	cont "DRILL PECK!"
+	text "FEAROW aprende"
+	line "un poderoso mov."
+	cont "volador llamado"
+	cont "PICO TALADRO."
 	done
 	
 AscorbiaFanClubFisherScript:
 	jumptextfaceplayer AscorbiaFanClubFisherText
 	
 AscorbiaFanClubFisherText:
-	text "Do you know about"
-	line "the LINK CABLE?"
+	text "¿Sabes algo"
+	line "del CABLE LINK?"
 	
-	para "Some #MON only"
-	line "evolve by trade,"
-	cont "but LINK CABLE"
-	cont "ignores that!"
+	para "Ciertos #MON solo"
+	line "evolucionan por,"
+	cont "intercambio pero"
+	cont "el CABLE LINK"
+	cont "hace lo mismo."
 	done
 	
 AscorbiaFanClubLassScript:
 	jumptextfaceplayer AscorbiaFanClubLassText
 	
 AscorbiaFanClubLassText:
-	text "Have you heard of"
-	line "a MASTER BALL?"
+	text "¿Has oido algo"
+	line "sobre la"
+	cont "MASTER BALL?"
 	
-	para "Apparently, if you"
-	line "get one of those,"
-	cont "you can catch any"
-	cont "#MON!"
+	para "Supuestamente "
+	line "atrapa siempre"
+	cont "a cualquier"
+	cont "#MON."
 	
-	para "If I had that, I'd"
-	line "use it on a rare"
-	cont "#MON like FEAR-"
-	cont "OW or TENTACRUEL!"
+	para "Si tuviera una,"
+	line "la usaria en"
+	cont "en algún #MON "
+	cont "raro como FEAROW"
+	cont "o TENTACRUEL."
 	done
 
 AscorbiaIslandFanClub_MapEventHeader::

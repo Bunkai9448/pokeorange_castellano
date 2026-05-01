@@ -22,22 +22,22 @@ YoungsterScript_0x196831:
 	jumptextfaceplayer UnknownText_0x1968a0
 
 UnknownText_0x196834:
-	text "Ah! The AC in"
-	line "here feels good!"
+	text "¡Ah!¡El aire"
+	line "esta de lujo!"
 	done
 
 UnknownText_0x1968a0:
-	text "Southeast of this"
-	line "island is a city"
-	cont "called TROVITO-"
-	cont "POLIS."
+	text "Al sureste de"
+	line "esta isla hay una"
+	cont "ciudad llamada"
+	cont "TROVITOPOLIS."
 
-	para "They have a huge"
-	line "shopping center!"
+	para "¡Tienen un enorme"
+	line "centro comercial!"
 
-	para "You can buy TMs,"
-	line "BALLS, and even"
-	cont "#MON!"
+	para "Puedes comprar MT,"
+	line "BALLS, y tambien"
+	cont "#MON."
 	done
 
 TangeloMart_MapEventHeader:

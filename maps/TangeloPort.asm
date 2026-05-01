@@ -39,14 +39,14 @@ SailorMove1:
 	step_end
 
 TangeloPortSailorText:
-	text "Hey, kid! Do you"
-	line "need a ride to"
-	cont "VALENCIA ISLAND?"
+	text "¡Ey, chico! ¿Ne-"
+	line "cesitas viajar a"
+	cont "ISLA VALENCIA?"
 	done
 
 TangeloPortSailorAhoyText:
-	text "Alright! Off we"
-	line "go!"
+	text "¡De acuerdo!¡Nos"
+	line "vamos!"
 	done
 
 TangeloPortRepel:

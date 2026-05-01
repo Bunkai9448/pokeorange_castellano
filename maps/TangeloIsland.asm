@@ -115,122 +115,127 @@ TangeloCenterSign:
 	jumptext TangeloCenterSignText
 
 TraceyBattleText:
-	text "So you delivered"
-	line "it?"
+	text "¿Así que lo"
+	line "entregaste?"
 
-	para "What? You're"
-	line "taking on the"
+	para "¿Qué? ¿Vas a"
+	line "por el"
 	cont "ORANGE CREW?"
 
-	para "That's really"
-	line "interesting."
+	para "Es realmente"
+	line "interesante."
 
-	para "Say, why don't"
-	line "we have a battle?"
-	cont "I'm kinda strong!"
+	para "Oye, ¿Y si"
+	line "combatimos?"
+	cont "¡Soy fuerte!"
 	done
 
 TraceyLeavingTangelo:
-	text "Say, why don't"
-	line "you take this"
+	text "Oye, ¿Por que"
+	line "no coges este"
 	cont "LAPRAS?"
 
-	para "It was separated"
-	line "from its family,"
-	cont "and it needs a"
-	cont "good trainer."
+	para "Fue separado de"
+	line "de su familia,"
+	cont "y necesita un"
+	cont "buen entrenador."
 
-	para "Oh, how rude!"
-	line "The name is"
+	para "¡Oh, que duro!"
+	line "Mi nombre es"
 	cont "TRACEY SKETCHIT."
-	cont "I'm a WATCHER."
+	cont "Soy un OBSER-"
+	cont "VADOR."
 
-	para "Anyway, I must"
-	line "be off. Seeya"
-	cont "around!"
+	para "De todas formas,"
+	line "me voy. ¡Nos"
+	cont "vemos!"
 	done
 
 LaprasIntroText:
-	text "The LAPRAS seems"
-	line "eager to join you."
+	text "El LAPRAS parece"
+	line "querer unirse a"
+	cont "ti."
 
-	para "Take LAPRAS?"
+	para "¿Coges a LAPRAS?"
 	done
 
 GotLaprasText:
-	text "LAPRAS has joined"
-	line "the party!"
+	text "LAPRAS se unio"
+	line "a tu equipo."
 	done
 
 UnknownText_0x19c4e2:
-	text "This poor LAPRAS"
-	line "washed up on ROUTE"
-	cont "50. I saved it."
+	text "Este pobre LAPRAS"
+	line "estaba varado en"
+	cont "RUTA 50. Lo salvé."
 
 	para "<...><...>"
 
-	para "What's that? You"
-	line "are from VALENCIA?"
+	para "¿Que es eso? ¿Eres"
+	line "de VALENCIA?"
 
-	para "I see. Say, I was"
-	line "on my way there to"
-	cont "deliver something"
+	para "Ya veo. Digamos"
+	line "que estaba de"
+	cont "camino para"
 
-	para "to PROF.IVY for a"
-	line "friend."
+	para "entregar algo a"
+	line "la PROF.IVY de"
+	cont "parte de un amigo."
 
-	para "Could you deliver"
-	line "it for me?"
+	para "¿Podrias llevar-"
+	line "selo por mi?"
 	done
 
 TraceyRelievedText:
-	text "Could you deliver"
-	line "that GS BALL to"
-	cont "her?"
+	text "¿Podrias llevar"
+	line "esta GS BALL "
+	cont "por mi?"
 	done
 
 TraceyWinLoss:
-	text "Wow, you might"
-	line "have a chance!"
+	text "¡Wow, podrías"
+	line "tener una"
+	cont "oportunidad."
 	done
 
 TangeloTeacherText:
-	text "If you want a"
-	line "#MON you caught"
-	cont "to be healthy,"
-	cont "try a HEAL BALL!"
+	text "Si quieres que"
+	line "un #MON atra-,"
+	cont "pado tenga sus PS,"
+	cont "usa una SANA BALL."
 	done
 	
 TangeloTeacherText2:
-	text "HEAL BALL will"
-	line "bring a wild"
-	cont "#MON back"
-	cont "to full health!"
+	text "La SANA BALL"
+	line "devolverá a un"
+	cont "#MON salavaje"
+	cont "todos sus PS."
 	done
 
 TangeloYoungsterText:
-	text "Some people don't"
-	line "like coming out"
-	cont "during the day."
+	text "A algunas per-"
+	line "sonas no les"
+	cont "gusta salir"
+	cont "durante el día."
 	
-	para "Same goes for the"
-	line "night. In that"
-	cont "sense, people are"
-	cont "like #MON!"
+	para "Algunas pre-"
+	line "fieren la noche."
+	cont "En ese caso, son"
+	cont "como los #MON."
 	done
 
 TangeloIslandSignText:
-	text "TANGELO ISLAND"
+	text "ISLA TANGELO"
 	done
 
 TangeloCenterSignText:
-	text "TANGELO CENTER"
+	text "CENTRO TANGELO"
 	done
 
 LaprasSurf:
-	text "There's something"
-	line "floating on the"
-	cont "water!"
+	text "Hay algo"
+	line "flotando en"
+	cont "el agua."
 	done
 
 PlayerMovement:

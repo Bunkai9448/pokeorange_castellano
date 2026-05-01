@@ -69,16 +69,17 @@ DayCareBookshelf:
 	jumpstd difficultbookshelf
 
 Text_GrampsLookingForYou:
-	text "Gramps was looking"
-	line "for you."
+	text "Mi marido te "
+	line "estaba buscando."
 	done
 	
 DayCareLadyText:
-	text "My husband and I"
-	line "run this DAYCARE."
+	text "Mi marido y yo"
+	line "llevamos esta"
+	cont "guardería."
 	
-	para "We can look after"
-	line "a #MON for you."
+	para "Podemos cuidar"
+	line "un #MON por ti."
 	done
 
 DayCare_MapEventHeader::

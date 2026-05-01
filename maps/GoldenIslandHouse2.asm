@@ -11,10 +11,10 @@ CatManBrownScript:
 	jumptextfaceplayer BrownCatManText
 
 BrownCatManText:
-	text "Meow! MEOWTH!"
+	text "¡Meow! ¡MEOWTH!"
 
-	para "How was my MEOWTH"
-	line "impression?"
+	para "¿Que te MEOWTH-"
+	line "pareció?"
 	done
 
 GoldenIslandHouse2_MapEventHeader::

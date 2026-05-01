@@ -466,309 +466,315 @@ MovementData_0x6add1:
 	step_end
 
 UnknownText_0x6add5:
-	text "Today's @"
+	text "Hoy es @"
 	text_from_ram StringBuffer3
 	text "."
-	line "That means the"
+	line "Significa que el"
 
-	para "Bug-Catching Con-"
-	line "test is on today."
+	para "concurso Caza-"
+	line "bichos es hoy."
 
-	para "The rules are sim-"
-	line "ple."
+	para "Las reglas son"
+	line "simples."
 
-	para "Using one of your"
-	line "#MON, catch a"
+	para "Usando uno de"
+	line "tus #MON, caza"
 
-	para "bug #MON to be"
-	line "judged."
+	para "un #MON nicho"
+	line "para evaluarlo."
 
-	para "Would you like to"
-	line "give it a try?"
+	para "¿Te gustaria"
+	line "intentarlo?"
 	done
 
 UnknownText_0x6ae87:
-	text "Here are the PARK"
-	line "BALLS for the"
-	cont "Contest."
+	text "Aqui tienes las"
+	line "PARQUE BALLS"
+	cont "para el concurso."
 	done
 
 UnknownText_0x6aeb1:
-	text "<PLAYER> received"
-	line "20 PARK BALLS."
+	text "<PLAYER> obtuvo"
+	line "20 PARQUE BALLS."
 	done
 
 UnknownText_0x6aecc:
-	text "The person who"
-	line "gets the strong-"
-	cont "est bug #MON"
-	cont "is the winner."
+	text "Quien logre el"
+	line "#MON bicho mas"
+	cont "fuerte sera el"
+	cont "ganador."
 
-	para "You have 20"
-	line "minutes."
+	para "Tienes 20"
+	line "minutos."
 
-	para "If you run out of"
-	line "PARK BALLS, you're"
-	cont "done."
+	para "Si te quedas sin"
+	line "PARQUE BALLS,"
+	cont "se acabó."
 
-	para "You can keep the"
-	line "last #MON you"
-	cont "catch as your own."
+	para "Puedes quedarte"
+	line "el último #MON"
+	cont "que atrapaste."
 
-	para "Go out and catch"
-	line "the strongest bug"
+	para "¡Ve y atrapa el"
+	line "#MON bicho mas"
 
-	para "#MON you can"
-	line "find!"
+	para "fuerte que"
+	line "encuentres!"
 	done
 
 UnknownText_0x6afb0:
 	text "Uh-oh<...>"
 
-	para "You have more than"
-	line "one #MON."
+	para "Tienes mas de"
+	line "un #MON."
 
-	para "You'll have to use"
+	para "Tendras que usar"
 	line "@"
 	text_from_ram StringBuffer3
-	text ", the"
+	text ", el"
 
-	para "first #MON in"
-	line "your party."
+	para "primer #MON"
+	line "de tu equipo."
 
-	para "Is that OK with"
-	line "you?"
+	para "¿Te parece"
+	line ""bien?"
 	done
 
 UnknownText_0x6b021:
-	text "Fine, we'll hold"
-	line "your other #MON"
-	cont "while you compete."
+	text "Bien,guardaremos"
+	line "tus otros #MON"
+	cont "mientras compites."
 	done
 
 UnknownText_0x6b055:
-	text "<PLAYER>'s #MON"
-	line "were left with the"
-	cont "CONTEST HELPER."
+	text "<PLAYER> #MON"
+	line "se quedaron con"
+	cont "el AYUDANTE."
 	done
 
 UnknownText_0x6b081:
-	text "Please choose the"
-	line "#MON to be used"
+	text "Por favor, elige"
+	line "el #MON que"
 
-	para "in the Contest,"
-	line "then come see me."
+	para "usarás, luego"
+	line "ven a verme."
 	done
 
 UnknownText_0x6b0c6:
-	text "OK. We hope you'll"
-	line "take part in the"
-	cont "future."
+	text "OK. Esperamos"
+	line "que participes"
+	cont "en el futuro."
 	done
 
 UnknownText_0x6b0f2:
 	text "Uh-oh<...>"
-	line "The first #MON"
+	line "El primer #MON"
 
-	para "in your party"
-	line "can't battle."
+	para "de tu equipo no"
+	line "puede combatir."
 
-	para "Please switch it"
-	line "with the #MON"
+	para "Por favor, cambia"
+	line "ese #MON por"
 
-	para "you want to use,"
-	line "then come see me."
+	para "él que quieras"
+	line "usar y vuelve."
 	done
 
 UnknownText_0x6b166:
 	text "Uh-oh<...>"
-	line "Both your party"
+	line "Tu equipo y"
 
-	para "and your PC BOX"
-	line "are full."
+	para "la CAJA DEL PC"
+	line "están completos."
 
-	para "You have no room"
-	line "to put the bug"
-	cont "#MON you catch."
+	para "No tienes espacio"
+	line "para poner el"
+	cont "#MON bicho que"
+	cont "has atrapado."
 
-	para "Please make room"
-	line "in your party or"
+	para "Por favor, haz"
+	line "hueco en tu"
 
-	para "your PC BOX, then"
-	line "come see me."
+	para "equipo o pc y"
+	line "vuelve a verme."
 	done
 
 UnknownText_0x6b209:
 	text "Uh-oh<...>"
-	line "You have an EGG as"
+	line "Tienes un huevo"
 
-	para "the first #MON"
-	line "in your party."
+	para "como primer #MON"
+	line "en tu equipo."
 
-	para "Please switch it"
-	line "with the #MON"
+	para "Por favor, cambia-"
+	line "por el #MON"
 
-	para "you want to use,"
-	line "then come see me."
+	para "que quieras usar"
+	line "y vuelve a verme."
 	done
 
 UnknownText_0x6b284:
-	text "You still have @"
+	text "Todavia quedan @"
 	text_from_ram StringBuffer3
 	text ""
-	line "minute(s) left."
+	line "minutos."
 
-	para "Do you want to"
-	line "finish now?"
+	para "¿Quieres acabar"
+	line "ya?"
 	done
 
 UnknownText_0x6b2c5:
-	text "OK. Please wait"
-	line "here for the"
+	text "OK. Espera"
+	line "aqui el"
 
-	para "announcement of"
-	line "the winners."
+	para "anuncio de los"
+	line "ganadores."
 	done
 
 UnknownText_0x6b300:
-	text "OK. Please go back"
-	line "outside and finish"
-	cont "up."
+	text "OK. Vuelve fuera"
+	line "y acaba el"
+	cont "concurso."
 	done
 
 UnknownText_0x6b32b:
-	text "Today's Contest is"
-	line "over. We hope you"
+	text "El concurso de"
+	line "hoy se acabo."
 
-	para "will participate"
-	line "in the future."
+	para "Esperamos volver"
+	line "a veros."
 	done
 
 UnknownText_0x6b370:
-	text "Some #MON can"
-	line "only be seen in"
-	cont "the PARK."
+	text "Algunos MON"
+	line "solo se encuentran"
+	cont "en el parque."
 	done
 
 UnknownText_0x6b399:
-	text "DON: Wow, you beat"
-	line "me. You're pretty"
-	cont "good."
+	text "DON: Wow, me"
+	line "ganaste. Eres"
+	cont "muy bueno."
 	done
 
 UnknownText_0x6b3c4:
-	text "DON: Luck plays a"
-	line "big part in this."
+	text "DON: La suerte"
+	line "también juega."
 
-	para "You never know"
-	line "what #MON will"
-	cont "appear."
+	para "Nunca sabes"
+	line "que #MON"
+	cont "aparecerá."
 	done
 
 UnknownText_0x6b40f:
-	text "ED: I envy you."
-	line "I just couldn't"
-	cont "do it this time."
+	text "ED: Te envidio."
+	line "No pude lograrlo"
+	cont "esta vez."
 	done
 
 UnknownText_0x6b440:
-	text "ED: Maybe you win"
-	line "with big #MON?"
+	text "ED: ¿Quizas"
+	line "ganaste con un"
+	cont "gran #MON?"
 	done
 
 UnknownText_0x6b462:
-	text "NICK: Well done!"
-	line "I'm going to raise"
-	cont "my #MON better."
+	text "NICK: ¡Bien hecho!"
+	line "Entrenare mejor"
+	cont "a mi #MON."
 	done
 
 UnknownText_0x6b496:
-	text "NICK: Maybe you"
-	line "get a higher score"
+	text "NICK: Quizas"
+	line "lograste una"
 
-	para "for a #MON of"
-	line "an unusual color."
+	para "gran puntuación"
+	line "por un #MON de"
+	cont "un color inusual."
 	done
 
 UnknownText_0x6b4da:
-	text "WILLIAM: You're"
-	line "the winner? What"
-	cont "did you catch?"
+	text "WILLIAM: ¿Eres"
+	line "el ganador?"
+	cont "¿Que atrapaste?"
 	done
 
 UnknownText_0x6b50a:
-	text "WILLIAM: Well, I'm"
-	line "satisfied because"
+	text "WILLIAM: Bueno,"
+	line "estoy satisfecho."
 
-	para "I caught a #MON"
-	line "that I wanted."
+	para "Atrape un #MON"
+	line "que buscaba."
 	done
 
 UnknownText_0x6b54e:
-	text "BENNY: Congrats!"
-	line "You have earned my"
-	cont "respect!"
+	text "BENNY: ¡Feli-"
+	line "cidades! Tienes"
+	cont "mi respeto."
 	done
 
 UnknownText_0x6b57c:
-	text "BENNY: I caught a"
-	line "SCYTHER before,"
-	cont "but I didn't win."
+	text "BENNY: Atrapé"
+	line "un SCYTHER antes,"
+	cont "pero no gané."
 	done
 
 UnknownText_0x6b5b0:
-	text "BARRY: That #-"
-	line "MON you caught<...>"
-	cont "it's awesome!"
+	text "BARRY: El #-"
+	line "MON que atra-"
+	cont "paste es"
+	cont "increible."
 	done
 
 UnknownText_0x6b5dd:
-	text "BARRY: It's easier"
-	line "to win if you get"
+	text "BARRY: Es mas"
+	line "fácil ganar con"
 
-	para "a high-level bug"
-	line "#MON."
+	para "#MON bicho"
+	line "de gran nivel."
 
-	para "But I think they"
-	line "also consider some"
-	cont "other points."
+	para "Pero pienso que"
+	line "hay que considerar"
+	cont "otros aspectos."
 	done
 
 UnknownText_0x6b64b:
-	text "CINDY: You won?"
-	line "That's great!"
+	text "CINDY: ¿Ganaste?"
+	line "¡Genial!"
 
-	para "Do you feel like"
-	line "looking for bug"
-	cont "#MON with me?"
+	para "¿Te apetece"
+	line "buscar un #MON"
+	cont "conmigo?"
 	done
 
 UnknownText_0x6b698:
-	text "CINDY: I really"
-	line "love bug #MON!"
+	text "CINDY: ¡Amo"
+	line "los #MON bicho!"
 	done
 
 UnknownText_0x6b6b8:
-	text "JOSH: I<...> I can't"
-	line "believe I lost at"
-	cont "bug-catching<...>"
+	text "JOSH: I<...> No"
+	line "puedo creer mi"
+	cont "derrota<...>"
 	done
 
 UnknownText_0x6b6e9:
-	text "JOSH: I heard that"
-	line "somebody won with"
-	cont "a CATERPIE!"
+	text "JOSH: ¡He oido"
+	line "que alguien gano"
+	cont "con un CATERPIE!"
 	done
 
 UnknownText_0x6b71b:
-	text "SAMUEL: Next time,"
-	line "I'm going to win."
+	text "SAMUEL: Ganaré"
+	line "a la siguiente."
 	done
 
 UnknownText_0x6b740:
-	text "SAMUEL: Darn."
-	line "I thought I would"
-	cont "score higher<...>"
+	text "SAMUEL: Joba."
+	line "Pensaba que"
+	cont "tendría una"
+	cont "puntuación"
+	cont "mayor<...>"
 	done
 
 UnknownText_0x6b76f:
@@ -780,31 +786,31 @@ UnknownText_0x6b76f:
 	done
 
 UnknownText_0x6b7af:
-	text "KIPP: I study a"
-	line "lot, but that's"
+	text "KIPP: Estudie"
+	line "mucho, pero no"
 
-	para "not good enough to"
-	line "win."
+	para "lo suficiente"
+	line "para ganar."
 	done
 
 UnknownText_0x6b910:
-	text "Uh-oh<...> Your PACK"
-	line "is full."
+	text "Uh-oh<...> Tu"
+	line "mochila esta llena."
 
-	para "We'll hold on to"
-	line "your prize, but"
-	cont "only for today."
+	para "Te guardaremos"
+	line "el premio pero"
+	cont "solo por hoy."
 
-	para "Please make room,"
-	line "then come see me."
+	para "Haz hueco y"
+	line "ven a verme."
 	done
 
 UnknownText_0x6b97f:
-	text "<PLAYER>?"
+	text "¿<PLAYER>?"
 
-	para "Here's the prize"
-	line "we were holding"
-	cont "for you."
+	para "Este es el"
+	line "premio que"
+	cont "te guardabamos."
 	done
 
 Route36NationalParkgate_MapEventHeader:

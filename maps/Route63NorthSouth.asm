@@ -28,21 +28,21 @@ TrainerOtakuNiro:
 	end
 
 OtakuNiroSeenText:
-	text "Hnyaah! My perfect"
-	line "collection of"
-	cont "#MON will show"
-	cont "you how it's done!"
+	text "¡Guau! Mi colección"
+	line "perfecta de"
+	cont "#MON te enseñará"
+	cont "cómo se hace."
 	done
 
 OtakuNiroBeatenText:
-	text "Aah! No!"
+	text "¡Ah! ¡No!"
 	done
 
 OtakuNiroAfterText:
-	text "Are you asking if"
-	line "I always talk with"
-	cont "a nasally voice?"
-	cont "How rude!"
+	text "¿Me preguntas si"
+	line "siempre hablo con"
+	cont "voz nasal?"
+	cont "¡Qué grosero!"
 	done
 
 TrainerFisherYamato:
@@ -57,24 +57,25 @@ TrainerFisherYamato:
 	end
 
 FisherYamatoSeenText:
-	text "If you beat me, I"
-	line "will tell you a"
-	cont "good secret."
+	text "Si me ganas"
+	line "te contaré un"
+	cont "buen secreto."
 	done
 
 FisherYamatoBeatenText:
-	text "Well done."
+	text "Bien hecho."
 	done
 
 FisherYamatoAfterText:
-	text "There is an island"
-	line "west of here. It's"
-	cont "the only place you"
-	cont "can find MAGIKARP."
+	text "Hay una isla al"
+	line "oeste de aquí. Es"
+	cont "el único lugar"
+	cont "donde puedes "
+	cont "pescar MAGIKARP."
 	
-	para "Well, around this"
-	line "time of year, at"
-	cont "least."
+	para "Bueno, al menos"
+	line "en esta época del"
+	cont "del año."
 	done
 
 TrainerOtakuGodo:
@@ -89,20 +90,21 @@ TrainerOtakuGodo:
 	end
 
 OtakuGodoSeenText:
-	text "If I win, you have"
-	line "to check out my"
-	cont "KATANA collection!"
+	text "¡Si gano,"
+	line "tienes que ver mi"
+	cont "colección KATANAS!"
 	done
 
 OtakuGodoBeatenText:
-	text "Wayaaah!"
+	text "¡Waaaah!"
 	done
 
 OtakuGodoAfterText:
-	text "My KATANA can cut"
-	line "through hard steel"
-	cont "because it's been"
-	cont "folded 1000 times."
+	text "Mi KATANA puede"
+	line "cortar acero duro"
+	cont "porque ha sido"
+	cont "doblada 1000"
+	cont "veces."
 	done
 
 TrainerCooltrainerFReika:
@@ -117,20 +119,22 @@ TrainerCooltrainerFReika:
 	end
 
 CooltrainerFReikaSeenText:
-	text "I train every day"
-	line "for the best re-"
-	cont "sults!"
+	text "¡Entreno todos los"
+	line "días para obtener"
+	cont "los mejores"
+	cont "resultados!"
 	done
 
 CooltrainerFReikaBeatenText:
-	text "Wow, you must be"
-	line "training a lot!"
+	text "Vaya, ¡debes estar"
+	line "entrenando mucho!"
 	done
 
 CooltrainerFReikaAfterText:
-	text "Your #MON need"
-	line "to be in tip-top"
-	cont "shape to succeed!"
+	text "¡Tu #MON"
+	line "necesita estar en"
+	cont "plena forma para"
+	cont "tener éxito!"
 	done
 	
 TrainerCooltrainerMYuuji:
@@ -145,22 +149,24 @@ TrainerCooltrainerMYuuji:
 	end
 
 CooltrainerMYuujiSeenText:
-	text "Our leader made"
-	line "this group so we"
-	cont "could train for"
-	cont "the ORANGE CREW!"
+	text "¡Nuestro líder"
+	line "creó este grupo"
+	cont "para que pudiéramos"
+	cont "entrenar para el"
+	cont "ORANGE CREW!"
 	done
 
 CooltrainerMYuujiBeatenText:
-	text "How many badges"
-	line "could you have?"
+	text "¿Cuántas insignias"
+	line "podrías tener?"
 	done
 
 CooltrainerMYuujiAfterText:
-	text "I'll let you know."
-	line "LUANA is a really"
-	cont "strong ORANGE CREW"
-	cont "member!"
+	text "Ya te contaré."
+	line "¡LUANA es una"
+	cont "miembro muy"
+	cont "fuerte del"
+	cont "ORANGE CREW!"
 	done
 
 TrainerSightseerFArashi:
@@ -175,20 +181,21 @@ TrainerSightseerFArashi:
 	end
 
 SightseerFArashiSeenText:
-	text "Ohohoho!"
+	text "¡Oh, oh, oh!"
 	
-	para "My darlings will"
-	line "beat you in an"
-	cont "instant!"
+	para "¡Mis queridos"
+	line "te vencerán en"
+	cont "un instante!"
 	done
 
 SightseerFArashiBeatenText:
-	text "Kyaa!"
+	text "¡Kyaa!"
 	done
 
 SightseerFArashiAfterText:
-	text "You beat up my"
-	line "little darlings!"
+	text "¡Golpeaste a mis"
+	line "pequeños"
+	cont "queridos!"
 	done
 
 TrainerSightseerMHyou:
@@ -203,32 +210,37 @@ TrainerSightseerMHyou:
 	end
 
 SightseerMHyouSeenText:
-	text "Back where I'm"
-	line "from, most of the"
-	cont "#MON here can't"
-	cont "be found!"
+	text "¡En el lugar de"
+	line "donde yo vengo,"
+	cont "la mayoría de los"
+	cont "#MON que hay"
+	cont "aquí no se pueden"
+	cont "encontrar!"
 	done
 
 SightseerMHyouBeatenText:
-	text "Those are some"
-	line "neat #MON!"
+	text "¡Esos son unos"
+	line "#MON"
+	cont "geniales!"
 	done
 
 SightseerMHyouAfterText:
-	text "At my home in the"
-	line "SINNOH region,"
-	cont "it's really cold!"
+	text "En mi casa, en la"
+	line "región de SINNOH,"
+	cont "¡hace mucho frío!"
 	done
 
 Route63GauntletSign:
 	jumptext Route63GauntletSignText
 	
 Route63GauntletSignText:
-	text "ASCORBIA TRAINER"
-	line "CREW"
+	text "EQUIPO DE"
+	line "ENTRENADORES DE"
+	cont "ASCORBIA"
 	
-	para "Test your might"
-	line "for a grand prize!"
+	para "¡Pon a prueba tu"
+	line "poder para ganar"
+	cont "un gran premio!"
 	done
 	
 Route63NorthSouthNugget:
@@ -248,20 +260,23 @@ Route63GauntletEventScript:
 	end
 	
 CompletedGauntletText1:
-	text "Wow, great job!"
+	text "¡Vaya, gran"
+	line "trabajo!"
 	
-	para "You beat all of"
-	line "the trainers!"
-	cont "Here's your grand"
-	cont "prize!"
+	para "¡Le ganaste a"
+	line "todos los"
+	cont "entrenadores!"
+	cont "¡Aquí está tu"
+	cont "gran premio!"
 	done
 	
 CooltrainerRoute63Script:
 	jumptextfaceplayer CooltrainerRoute63ScriptText
 	
 CooltrainerRoute63ScriptText:
-	text "You sure are a"
-	line "tough kid!"
+	text "¡Seguro que"
+	line "eres un chico"
+	cont "duro!"
 	done
 
 Route63NorthSouth_MapEventHeader::
@@ -286,4 +301,3 @@ Route63NorthSouth_MapEventHeader::
 	person_event SPRITE_FISHER, 32, 14, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_PURPLE, PERSONTYPE_TRAINER, 2, TrainerOtakuGodo, -1
 	person_event SPRITE_COOLTRAINER_M, 25, 14, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, CooltrainerRoute63Script, -1
 	person_event SPRITE_POKE_BALL, 60, 7, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route63NorthSouthLeafStone, EVENT_ROUTE_63_NORTH_SOUTH_LEAF_STONE
-

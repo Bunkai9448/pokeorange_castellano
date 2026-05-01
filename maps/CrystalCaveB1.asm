@@ -71,71 +71,73 @@ CrystalCaveB1TMDragonTail:
 	itemball TM_DRAGON_TAIL
 
 CrystalOnixText:
-	text "Grraaahr!"
+	text "¡Grraaahr!"
 	done
 
 CrystalCaveB2BrockText:
-	text "So you made it!"
-	line "I apologize, what"
-	cont "was your name?"
+	text "¡Lo lograste!"
+	line "Me disculpo,¿cuál"
+	cont "es tu nombre?"
 
 	para "<...><...><...><...>"
 
-	para "So your name is"
+	para "Así que te llamas"
 	line "<PLAYER>."
 
-	para "Well then, as"
-	line "promised, let's"
-	cont "battle for the"
-	cont "right to battle"
-	cont "the CRYSTAL ONIX!"
+	para "Bien, como"
+	line "prometí esta"
+	cont "es la lucha "
+	cont "para desafiar al"
+	cont "ONIX de CRISTAL."
 	done
 
 BrockWinLoss:
-	text "Well done,"
+	text "Bien hecho,"
 	line "<PLAYER>."
 	done
 
 BrockWonText:
-	text "That was hard-"
-	line "fought, <PLAYER>."
+	text "Fue una pelea"
+	line "difícil, <PLAYER>."
 
-	para "You've earned the"
-	line "right to challenge"
-	cont "the CRYSTAL ONIX."
+	para "Has ganado el "
+	line "derecho a desafiar"
+	cont "al ONIX de"
+	cont "CRISTAL."
 
-	para "You are a very"
-	line "talented trainer!"
+	para "Eres un entrenador"
+	line "muy talentoso."
 	done
 
 BrockDefeatedText:
-	text "You've earned the"
-	line "right to challenge"
-	cont "the CRYSTAL ONIX."
+	text "Has ganado el "
+	line "derecho a desafiar"
+	cont "al ONIX de"
+    cont "CRISTAL."
 	done
 
 BrockStayingText:
-	text "Amazing!"
+	text "¡Sorprendente!"
 	
-	para "You displayed"
-	line "skill I have only"
-	cont "seen from two"
-	cont "other trainers."
+	para "Has demostrado"
+	line "una habilidad que"
+	cont "solo he visto en"
+	cont "dos entrenadores."
 	
-	para "I got some samples"
-	line "already, so it's"
-	cont "time for me to go"
-	cont "back to KANTO."
+	para "Tengo varias"
+	line "muestras, asi que"
+	cont "es hora de volver"
+	cont "a KANTO."
 	
-	para "I truly hope we"
-	line "will meet again."	
+	para "Espero de verdad"
+	line "volver a vernos."	
 	done
 
 EarnTheRightText:
-	text "You have not yet"
-	line "earned the right"
-	cont "to battle the"
-	cont "CRYSTAL ONIX."
+	text "No mereces"
+	line "toadvia desafiar"
+	cont "al ONIX de"
+	cont "CRISTAL."
 	done
 
 CrystalCaveB1_MapEventHeader::
@@ -150,5 +152,5 @@ CrystalCaveB1_MapEventHeader::
 .ObjectEvents: db 3
 	person_event SPRITE_BROCK, 22, 19, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, CrystalCaveB1BrockScript, EVENT_CRYSTAL_CAVE_B1_BROCK
 	person_event SPRITE_POKE_BALL, 4, 29, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, CrystalCaveB1TMDragonTail, EVENT_CRYSTAL_CAVE_B1_TM_DRAGON_TAIL
-	person_event SPRITE_ONIX, 19, 19, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_TEAL, 0, 0, CrystalOnixScript, EVENT_CRYSTAL_ONIX_DEFEATED
+	person_event SPRITE_ONIX, 19, 19, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BLUE, 0, 0, CrystalOnixScript, EVENT_CRYSTAL_ONIX_DEFEATED
 

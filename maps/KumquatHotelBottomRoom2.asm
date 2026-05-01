@@ -16,21 +16,23 @@ AthleteBarneyScript:
 	end
 
 AthleteBarneySeenText:
-	text "SUITE? SWEET?"
-	line "SWEAT?"
+	text "¿SUITE? SWEET?"
+	line "¿SWEAT?"
 	cont "Uh."
 	
-	para "SHOOT!"
+	para "¡SHOOT!"
+	cont "¿Te mola mi"
+	cont "ingles, eh?"
 	done
 
 AthleteBarneyBeatenText:
-	text "Dag gone it!"
+	text "Soy GALARIAN"
 	done
 
 AthleteBarneyAfterText:
-	text "You have more"
-	line "sweet suites to"
-	cont "check out."
+	text "Tienes mas"
+	line "suites que"
+	cont "chequear."
 	done
 
 KumquatHotelBottomRoom2_MapEventHeader::

@@ -68,79 +68,80 @@ Route50HiddenPotion:
 	dwb EVENT_ROUTE_50_HIDDEN_POTION, POTION
 
 YoungsterKojiSeenText:
-	text "Hey, you're taking"
-	line "the ORANGE CREW"
-	cont "CHALLENGE?"
+	text "Ey, ¿estás con"
+	line "el desafío del"
+	cont "ORANGE CREW?"
 
-	para "No way a complete"
-	line "newbie like you"
-	cont "has a chance!"
+	para "¡Un novato como"
+	line "tu no tiene opción"
+	cont "de completarlo!"
 	done
 
 YoungsterKojiBeatenText:
-	text "I'm the weakling?"
+	text "¿Soy mas débil?"
 	done
 
 YoungsterKojiAfterText:
-	text "Darn! I have to"
-	line "train even more"
-	cont "to take on the"
-	cont "ORANGE CREW!"
+	text "¡Maldición!"
+	line "Tendre que entre-"
+	cont "nar mas para"
+	cont "tener opciones."
 	done
 
 YoungsterTouyaSeenText:
-	text "You're a #MON"
-	line "trainer?"
+	text "¿Eres entrenador"
+	line "#MON?"
 
-	para "You don't look so"
-	line "tough!"
+	para "¡No tienes"
+	line "pinta!"
 	done
 
 YoungsterTouyaBeatenText:
-	text "You are way too"
-	line "strong!"
+	text "¡Eres muy muy"
+	line "fuerte!"
 	done
 
 YoungsterTouyaAfterText:
-	text "Becoming a good"
-	line "trainer isn't"
-	cont "easy."
+	text "Convertirse en"
+	line "un buen entre-"
+	cont "nador no es fácil."
 	done
 
 Bug_catcherKattaSeenText:
-	text "More prey for my"
-	line "BUG #MON!"
+	text "¡Mas plegarias por"
+	line "mis #MON bicho!"
 	done
 
 Bug_catcherKattaBeatenText:
-	text "Aiyaa!"
+	text "¡Aiyaa!"
 	done
 
 Bug_catcherKattaAfterText:
-	text "I became prey for"
-	line "yours, instead."
+	text "En vez de eso,"
+	line "rezaré por los"
+	cont "tuyos."
 	done
 
 Route50CooltrainerFText:
-	text "You can cross"
-	line "ROUTE 51 to enter"
-	cont "the TANGELO"
-	cont "JUNGLE."
+	text "Puedes cruzar"
+	line "RUTA 51 para"
+	cont "entrar a JUNGLA"
+	cont "TANGELO."
 	done
 
 Route50SignText:
-	text "ROUTE 50"
+	text "RUTA 50"
 	done
 
 Route50TrainerTipsText:
 	text "TRAINER TIPS"
 
-	para "No stealing other"
-	line "people's #MON!"
+	para "¡No robar #MON "
+	line "de otra gente!"
 
-	para "# BALLS are to"
-	line "be thrown only at"
-	cont "wild #MON!"
+	para "¡Las # BALLS"
+	line "solo se tiran a"
+	cont "#MON salvajes!"
 	done
 
 Route50_MapEventHeader::

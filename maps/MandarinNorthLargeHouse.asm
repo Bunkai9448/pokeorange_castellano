@@ -11,16 +11,20 @@ MandarinNorthOldManScript:
 	jumptextfaceplayer MandarinNorthOldManText
 
 MandarinNorthOldManText:
-	text "Used to be lots of"
-	line "people here."
+	text "Solía venir mucha"
+	line "gente aquí."
 
-	para "Tourism died down"
-	line "on the southwest"
-	cont "ORANGE ISLANDS in"
-	cont "recent years."
+	para "El turismo ha"
+	line "decaido mucho"
+	cont "estos años"
+	cont "en el sureste de"
+	cont "las ISLAS"
+	cont "NARANJA."
 
-	para "Now, it's just us"
-	line "and the #MON."
+	para "Ahora solo"
+	line "estamos tus"
+	cont "#MON y"
+	cont "nosotros."
 	done
 
 MandarinNorthLargeHouse_MapEventHeader::

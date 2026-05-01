@@ -39,23 +39,24 @@ SunburstBirdScript:
 	end
 
 GiveSharpBeakText:
-	text "Bird-type #MON"
-	line "are great."
+	text "Los #MON"
+	line "pájaro son"
+	cont "increibles."
 
-	para "Here's something"
-	line "to make them a"
-	cont "bit stronger."
+	para "Toma esto para"
+	line "hacerlos un poco"
+	cont "mas fuertes."
 	done
 
 GotSharpBeakText:
-	text "SHARP BEAK will"
-	line "increase damage"
-	cont "from FLYING-type"
-	cont "attacks."
+	text "PICO AFILADO"
+	line "aumenta el daño"
+	cont "de los ataques"
+	cont "de tipo volador."
 	done
 
 BirdText:
-	text "Winnhaa!"
+	text "¡Winnhaa!"
 	done
 
 SunburstSouthHouse_MapEventHeader::

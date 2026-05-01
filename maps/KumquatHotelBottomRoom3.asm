@@ -16,18 +16,18 @@ AthleteBruceScript:
 	end
 
 AthleteBruceSeenText:
-	text "DO-DUO!"
-	line "DO-DRIO!"
+	text "¡DO-DUO!"
+	line "¡DO-DRIO!"
 	done
 
 AthleteBruceBeatenText:
-	text "DO-OH!"
+	text "¡DO-OH!"
 
 	done
 
 AthleteBruceAfterText:
-	text "DODUO are the"
-	line "coolest!"
+	text "¡DODUO es el"
+	line "mejor!"
 	done
 
 KumquatHotelBottomRoom3_MapEventHeader::

@@ -24,43 +24,43 @@ RedsHouse1FBookshelf:
 	jumpstd picturebookshelf
 
 RedsMomText1:
-	text "Hi!"
+	text "¡Hola!"
 
-	para "RED's been away"
-	line "for a long time."
+	para "ROJO estuvo aquí"
+	line "hace mucho tiempo."
 
-	para "He hasn't called"
-	line "either, so I have"
+	para "No ha vuelto a "
+	line "llamar, así que"
 
-	para "no idea where he"
-	line "is or what he's"
-	cont "been doing."
+	para "no tengo idea de"
+	line "por donde para, o"
+	cont "que esta haciendo."
 
-	para "They say that no"
-	line "word is proof that"
+	para "Dicen que no reci-"
+	line "bir noticias es"
 
-	para "he's doing fine,"
-	line "but I do worry"
-	cont "about him."
+	para "señal de que no"
+	line "pasa nada, pero "
+	cont "me preocupa."
 	done
 
 RedsMomText2:
-	text "I worry about RED"
-	line "getting hurt or"
+	text "Me preocupa que"
+	line "ROJO este herido"
 
-	para "sick, but he's a"
-	line "boy. I'm proud"
+	para "o enfermo. Pero"
+	line "es un chico, estoy"
 
-	para "that he is doing"
-	line "what he wants to"
+	para "orgullosa de lo"
+	line "que hizo, y en lo"
 
-	para "do."
+	para "que se convertira."
 	done
 
 RedsHouse1FTVText:
-	text "They have programs"
-	line "that aren't shown"
-	cont "in JOHTO<...>"
+	text "Tiene programas"
+	line "que no echan en"
+	cont "JOHTO<...>"
 	done
 
 RedsHouse1F_MapEventHeader:

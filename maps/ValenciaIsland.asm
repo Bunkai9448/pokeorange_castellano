@@ -87,10 +87,8 @@ if def(DEBUG)
 	setflag ENGINE_FLYPOINT_VALENCIA
 	setflag ENGINE_FLYPOINT_TANGELO
 	setflag ENGINE_FLYPOINT_MIKAN
-	setflag ENGINE_FLYPOINT_ROUTE_52
 	setflag ENGINE_FLYPOINT_MANDARIN_NORTH
 	setflag ENGINE_FLYPOINT_SUNBURST
-	setflag ENGINE_FLYPOINT_ROUTE_56
 	setflag ENGINE_FLYPOINT_KINNOW
 	setflag ENGINE_FLYPOINT_NAVEL
 	setflag ENGINE_FLYPOINT_MORO
@@ -108,7 +106,6 @@ if def(DEBUG)
 	giveitem SKATEBOARD
 	giveitem EXP_ALL
 	giveitem MASTER_BALL, 99
-	giveitem SHINY_BALL, 99
 	giveitem DIVE_BALL, 99
 	giveitem HEAL_BALL, 99
 	giveitem DUSK_BALL, 99
@@ -142,12 +139,12 @@ if def(DEBUG)
 	giveshells 13
 	givemoney 0, 195000
 	opentext
-	givepoke LAPRAS, 100, 0, SHINY_MASK
+	givepoke LAPRAS, 100
 	givepoke CHARIZARD, 100
 	givepoke HO_OH, 100, LIGHT_BALL
 	givepoke MEW, 100
 	givepoke MARSHADOW, 100
-	givepoke MEOWTH, 99, SKATEBOARD, %00110000
+	givepoke MEOWTH, 99, NUGGET, %00110000
 	closetext
 	callasm TeachHMSlaveMoves
 	special HealParty ; restore PP after TeachHMSlaveMoves
@@ -201,72 +198,73 @@ Movement_TeacherBringsYouBack2_NBT:
 	step_end
 
 Text_GearIsImpressive:
-	text "<PLAYER>!"
+	text "¡<PLAYER>!"
 
-	para "PROF.IVY is"
-	line "waiting for you!"
+	para "La PROF.IVY está"
+	line "esperandote."
 	done
 
 Text_WaitPlayer:
-	text "Yo, <PLAYER>!"
+	text "¡Yo, <PLAYER>!"
 	done
 
 Text_WhatDoYouThinkYoureDoing:
-	text "What do you think"
-	line "you're doing?"
+	text "¿Que crees que"
+	line "estas haciendo?"
 	done
 
 Text_ItsDangerousToGoAlone:
-	text "It's dangerous to"
-	line "go out without a"
+	text "¡Es peligroso"
+	line "salir sin un"
 	cont "#MON!"
 
-	para "Isn't PROF.IVY"
-	line "giving you a "
+	para "¿No te ha dado"
+	line "la PRO.IVY un "
 
-	para "#MON? She's"
-	line "on BAYVIEW ROAD."
+	para "#MON? Ella esta"
+	line "en CARRETERA DE"
+	cont "LA BAHIA."
 	done
 
 Text_YourMonIsAdorable:
-	text "Oh! Nice #MON!"
-	line "It looks cool,"
-	cont "I wish I had one!"
+	text "¡Oh! ¡Que #MON"
+	line "mas bonito!"
+	cont "¡Quiero uno!"
 	done
 
 Text_ElmDiscoveredNewMon:
-	text "<PLAYER>!"
+	text "¡<PLAYER>!"
 
-	para "PROFESSOR IVY is"
-	line "smokin', don't"
-	cont "you think?"
+	para "¡La PROFESSOR IVY"
+	line "esta buenisima!"
+	cont "¿No crees?"
 	done
 
 ValenciaIslandSignText:
-	text "VALENCIA ISLAND"
+	text "ISLA VALENCIA"
 
-	para "IVY RESEARCH"
-	line "South side of"
-	cont "village."
+	para "LAB. IVY"
+	line "En el lado sur"
+	cont "del pueblo."
 	done
 
 PlayersHouseSignText:
-	text "<PLAYER>'s House"
+	text "CASA DE <PLAYER>"
 	done
 
 IvysLabSignText:
-	text "IVY RESEARCH"
-	line "№.2 BAYVIEW"
+	text "LAB. DE IVY"
+	line "№.2 BAHIA"
 	done
 	
 ValenciaIvyHouseSignpostScript:
 	jumptext IvyHouseSignText
 
 IvyHouseSignText:
-	text "PHILENA IVY"
-	line "RESIDENCE"
+	text "RESIDENCIA"
+	line "PHILENA IVY"
 	
-	para "№.1 BAYVIEW"
+	para "№.1 BAHIA"
 	done
 	
 ValenciaIslandMagnet:
@@ -317,34 +315,26 @@ TeachHMSlaveMoves:
 	ld [hli], a ; CONFUSE_RAY
 	ld a, DIVE
 	ld [hl], a ; PERISH_SONG
-	; Set Lapras friendship to MAX for Surf power
-	ld hl, PartyMon1Happiness
-	ld a, 255
-	ld [hl], a
 	; CHARIZARD
 	ld hl, PartyMon2Moves
 	ld a, FLY
 	ld [hli], a ; RAGE
 	ld a, CUT
 	ld [hl], a ; SCARY_FACE
-	; HO-OH
+	; PIKACHU
 	ld hl, PartyMon3Moves
 	ld a, STRENGTH
 	ld [hli], a ; DOUBLE_TEAM
 	ld a, FLASH
 	ld [hl], a ; SLAM
-	; MEW
+	; ROCKRUFF
 	ld hl, PartyMon4Moves
 	ld a, ROCK_CLIMB
 	ld [hli], a
 	ld a, DIG
 	ld [hl], a
-	; MARSHADOW
+	; MEW
 	ld hl, PartyMon5Moves
-	ld a, THIEF
-	ld [hl], a ; TRANSFORM
-	; MEOWTH
-	ld hl, PartyMon6Moves
 	ld a, ROCK_SMASH
 	ld [hli], a ; TRANSFORM
 	ld a, WATERFALL

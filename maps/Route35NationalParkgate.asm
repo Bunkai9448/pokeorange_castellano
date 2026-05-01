@@ -216,57 +216,59 @@ MovementData_0x6a2e9:
 	step_end
 
 UnknownText_0x6a2eb:
-	text "Today's @"
+	text "Hoy es @"
 	text_from_ram StringBuffer3
 	text "."
-	line "That means the"
+	line "Eso significa que"
 
-	para "Bug-Catching Con-"
-	line "test is on today."
+	para "el concurso "
+	line "caza-bichos es hoy"
 
-	para "The rules are sim-"
-	line "ple."
+	para "Las reglas son"
+	line "simples."
 
-	para "Using one of your"
-	line "#MON, catch a"
+	para "Solo puedes usar"
+	line "un #MON, para"
 
-	para "bug #MON to be"
-	line "judged."
+	para "atrapar al"
+	line "#MON bicho que"
+	cont "sera evaluado."
 
-	para "Would you like to"
-	line "give it a try?"
+	para "¿Te gustaría"
+	line "intentarlo?"
 	done
 
 UnknownText_0x6a39d:
-	text "Here are the PARK"
-	line "BALLS for the"
-	cont "Contest."
+	text "Aqui tienes las"
+	line "PARK BALLS para"
+	cont "el concurso."
 	done
 
 UnknownText_0x6a3c7:
-	text "<PLAYER> received"
+	text "<PLAYER> obtuvo"
 	line "20 PARK BALLS."
 	done
 
 UnknownText_0x6a3e2:
-	text "The person who"
-	line "gets the strong-"
-	cont "est bug #MON"
-	cont "is the winner."
+	text "La persona que"
+	line "que logré el"
+	cont "#MON bicho"
+	cont "mas fuerte, será"
+	cont "el ganador."
 
-	para "You have 20"
-	line "minutes."
+	para "Dispones de 20"
+	line "minutos."
 
-	para "If you run out of"
-	line "PARK BALLS, you're"
-	cont "done."
+	para "Si te quedas sin"
+	line "PARK BALLS, se"
+	cont "acabo."
 
-	para "You can keep the"
-	line "last #MON you"
-	cont "catch as your own."
+	para "Puedes quedarte"
+	line "el último #MON"
+	cont "que atrapes."
 
-	para "Go out and catch"
-	line "the strongest bug"
+	para "Ve y captura al"
+	line "bicho mas fuerte."
 
 	para "#MON you can"
 	line "find!"
@@ -275,151 +277,158 @@ UnknownText_0x6a3e2:
 UnknownText_0x6a4c6:
 	text "Uh-oh<...>"
 
-	para "You have more than"
-	line "one #MON."
+	para "Tienes mas de"
+	line "un #MON."
 
-	para "You'll have to use"
+	para "Tendras que usar"
 	line "@"
 	text_from_ram StringBuffer3
-	text ", the"
+	text ", el"
 
-	para "first #MON in"
-	line "your party."
+	para "primer #MON"
+	line "de tu equipo."
 
-	para "Is that OK with"
-	line "you?"
+	para "¿Irás con "
+	line "este?"
 	done
 
 UnknownText_0x6a537:
-	text "Fine, we'll hold"
-	line "your other #MON"
-	cont "while you compete."
+	text "Bien,guardaremos"
+	line "tus otros #MON"
+	cont "mientras compites."
 	done
 
 UnknownText_0x6a56b:
-	text "<PLAYER>'s #MON"
-	line "were left with the"
-	cont "CONTEST HELPER."
+	text "#MON <PLAYER>"
+	line "se quedaron con"
+	cont "el ayudante."
 	done
 
 UnknownText_0x6a597:
-	text "Please choose the"
-	line "#MON to be used"
+	text "Por favor, elige"
+	line "el #MON que"
+	cont "usarás."
 
-	para "in the Contest,"
-	line "then come see me."
+	para "Despues del,"
+	line "concurso, ven"
+	cont "a verme."
 	done
 
 UnknownText_0x6a5dc:
-	text "OK. We hope you'll"
-	line "take part in the"
-	cont "future."
+	text "OK. Esperamos"
+	line "que participes"
+	cont "en el futuro."
 	done
 
 UnknownText_0x6a608:
 	text "Uh-oh<...>"
-	line "The first #MON"
+	line "Tu primer #MON"
 
-	para "in your party"
-	line "can't battle."
+	para "no puede"
+	line "combatir."
 
-	para "Please switch it"
-	line "with the #MON"
+	para "Por favor, cambia"
+	line "de #MON."
 
-	para "you want to use,"
-	line "then come see me."
+	para "Cuando lo hagas,"
+	line "vuelve a verme."
 	done
 
 UnknownText_0x6a67c:
 	text "Uh-oh<...>"
-	line "Both your party"
+	line "Tu equipo y"
 
-	para "and your PC BOX"
-	line "are full."
+	para "la caja de PC"
+	line "estan llenos.."
 
-	para "You have no room"
-	line "to put the bug"
-	cont "#MON you catch."
+	para "No tienes espacio"
+	line "para los"
+	cont "#MON que"
+	cont "atrapes."
 
-	para "Please make room"
-	line "in your party or"
+	para "Por favor, haz"
+	line "espacio en tu"
 
-	para "your PC BOX, then"
-	line "come see me."
+	para "equipo o PC,"
+	line "despues vuelve."
 	done
 
 UnknownText_0x6a71f:
 	text "Uh-oh<...>"
-	line "You have an EGG as"
+	line "Tienes un huevo"
 
-	para "the first #MON"
-	line "in your party."
+	para "como primer #MON"
+	line "en tu equipo."
 
-	para "Please switch it"
-	line "with the #MON"
+	para "Por favor,"
+	line "cambialo por un"
 
-	para "you want to use,"
-	line "then come see me."
+	para "#MON que puedas"
+	line "usar, despues ven"
+	cont "a verme."
 	done
 
 UnknownText_0x6a79a:
-	text "You still have @"
+	text "Todavia quedan @"
 	text_from_ram StringBuffer3
 	text ""
-	line "minute(s) left."
+	line "minuto(s)."
 
-	para "Do you want to"
-	line "finish now?"
+	para "¿Quieres terminar"
+	line "ya?"
 	done
 
 UnknownText_0x6a7db:
-	text "OK. Please wait at"
-	line "the North Gate for"
+	text "OK. Espera en"
+	line "la puerta norte"
 
-	para "the announcement"
-	line "of the winners."
+	para "para el anunncio"
+	line "de los ganadores."
 	done
 
 UnknownText_0x6a823:
-	text "OK. Please get"
-	line "back outside and"
-	cont "finish up."
+	text "OK. Por favor,"
+	line "ve fuera y"
+	cont "termina."
 	done
 
 UnknownText_0x6a84f:
-	text "Today's Contest is"
-	line "over. We hope you"
+	text "Se acabo el "
+	line "concurso de hoy."
 
-	para "will participate"
-	line "in the future."
+	para "Esperamos tu"
+	line "participación en"
+	cont "el futuro."
 	done
 
 UnknownText_0x6a894:
-	text "We hold Contests"
-	line "regularly in the"
+	text "Realizamos "
+	line "concursos con"
 
-	para "PARK. You should"
-	line "give it a shot."
+	para "frecuencia en el"
+	line "PARQUE. Deberías"
+	cont "echarles un"
+	cont "vistazo."
 	done
 
 UnknownText_0x6a90e:
-	text "The Bug-Catching"
-	line "Contest is held on"
+	text "El concurso de"
+	line "Caza de bichos es"
 
-	para "Tuesday, Thursday"
-	line "and Saturday."
+	para "los martes, miér-"
+	line "coles y sabados."
 
-	para "Not only do you"
-	line "earn a prize just"
+	para "No solo ganarás"
+	line "un premio por"
 
-	para "for participating,"
-	line "you also get to"
+	para "participar,también"
+	line "puedes quedarte"
 
-	para "keep the bug"
-	line "#MON you may"
+	para "al #MON"
+	line "bicho que tengas"
 
-	para "have at the end of"
-	line "the contest."
+	para "al acabar el "
+	line "concurso."
 	done
 
 Route35NationalParkgate_MapEventHeader:

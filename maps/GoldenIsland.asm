@@ -20,21 +20,22 @@ GoldenIslandSign:
 	jumptext GoldenIslandSignText
 
 GoldenIslandSignText:
-	text "GOLDEN ISLAND"
+	text "ISLA GOLDEN"
 
-	para "MEOWTH are"
-	line "welcome!"
+	para "¡Los MEOWTH son"
+	line "bienvenidos!"
 	done
 
 CatManGuardingExitScript:
 	jumptextfaceplayer CatManGuardText
 
 CatManGuardText:
-	text "The BOUNTY HARVEST"
-	line "is underway."
+	text "La Abundante "
+	line "cosecha esta"
+	cont "en marcha."
 
-	para "None may pass at"
-	line "this time."
+	para "Nadie puede"
+	line "pasar ahora."
 	done
 
 GoldenIslandAmuletCoin:
@@ -44,52 +45,53 @@ CatManOutside1Script:
 	jumptextfaceplayer CatManOutside1Text
 
 CatManOutside1Text:
-	text "Welcome to GOLDEN"
-	line "ISLAND!"
+	text "¡BIENVENIDO A"
+	line "ISLA GOLDEN!"
 
-	para "If you have a"
-	line "MEOWTH, our elder"
-	cont "would love to"
-	cont "speak with you."
+	para "Si tienes un"
+	line "MEOWTH, nuestro"
+	cont "anciano estaría"
+	cont "encantado de"
+	cont "hablar contigo."
 	done
 
 CatManOutside2Script:
 	jumptextfaceplayer CatManOutside2Text
 
 CatManOutside2Text:
-	text "Our livelihood de-"
-	line "pends on a MEOWTH"
-	cont "with the move PAY"
-	cont "DAY!"
+	text "Nuestro sustento"
+	line "depende de MEOWTH"
+	cont "y su Mov."
+	cont "DIA DE PAGO."
 	done
 
 CatManOutside3Script:
 	jumptextfaceplayer CatManOutside3Text
 
 CatManOutside3Text:
-	text "If I had a MEOWTH,"
-	line "I think I'd name"
-	cont "it NYARTH."
+	text "Si tuviera un"
+	line "MEOWTH lo "
+	cont "llamaria NYARTH."
 
-	para "Sounds cool to me."
+	para "Me suena bien."
 	done
 
 GoldenIslandLargeStatue:
 	jumptext GoldenIslandLargeStatueText
 
 GoldenIslandLargeStatueText:
-	text "A huge MEOWTH"
-	line "statue made out of"
-	cont "solid gold!"
+	text "Una gran estatua"
+	line "de MEOWTH de oro"
+	cont "macizo."
 	done
 
 GoldenIslandSmallStatue:
 	jumptext GoldenIslandSmallStatueText
 
 GoldenIslandSmallStatueText:
-	text "A small, golden"
-	line "statue depicting"
-	cont "a MEOWTH."
+	text "Una pequeña "
+	line "estatua dorada"
+	cont "de MEOWTH."
 	done
 
 GoldenIslandFruitTree:
@@ -112,33 +114,34 @@ GoldenIslandRocketEvent:
 	end
 
 GoldenIslandRocketText:
-	text "JESSIE: It seems"
-	line "they're holing"
-	cont "MEOWTH up in here."
+	text "JESSIE: Parece"
+	line "que adoran a"
+	cont "MEOWTH aquí."
 
-	para "What should we do,"
-	line "JAMES?"
+	para "¿Que debariamos"
+	line "hacer JAMES?"
 
-	para "JAMES: Well, it"
-	line "doesn't look like"
-	cont "the locals noticed"
-	cont "us."
+	para "JAMES: Bueno,no"
+	line "parece que los"
+	cont "habitantes esten"
+	cont "al tanto de"
+	cont "nuestra presencia."
 
-	para "We should just go"
-	line "in and beat the"
-	cont "crazy cat people."
+	para "Deberiamos robarles"
+	line "los pokes a estos"
+	cont "locos del gato."
 
-	para "JESSIE: Ah haha!"
-	line "Then all of their"
-	cont "#MON are as"
-	cont "good as ours!"
+	para "JESSIE: ¡JAJA!"
+	line "¡Todos sus"
+	cont "#MON seran"
+	cont "nuestros!"
 
-	para "JAMES: Ooh!"
-	line "I like the way you"
-	cont "think, JESSIE!"
+	para "JAMES: ¡Ooh!"
+	line "¡Me gusta como"
+	cont "piensas, JESSIE!"
 
 	para "JESSIE and JAMES:"
-	line "Ahahahahahaha!"
+	line "¡Ahahahahahaha!"
 	done
 
 GOLDEN_ISLAND_JESSIE_MOVEMENT:
@@ -248,13 +251,13 @@ BATTLE_HOUSE_MOVEMENT1:
 	step_end
 
 CatmanDaikonWinLoss:
-	text "I gave it my best"
-	line "shot!"
+	text "¡Di lo mejor"
+	line "de mi!"
 	done
 
 CatmanKunioWinLoss:
-	text "Wow, not bad at"
-	line "all!"
+	text "Wow,¡no esta"
+	line "tan mal!"
 	done
 
 CatmanYoshikawaWinLoss:
@@ -262,112 +265,119 @@ CatmanYoshikawaWinLoss:
 	done
 
 CatmanRenWinLoss:
-	text "Can you do it?"
+	text "¿Puedes hacerlo?"
 	done
 
 CatmanMimiWinLoss:
-	text "We have a winner!"
+	text "¡Tenemos un"
+	line "ganador!"
 	done
 
 CatManBattleHouseText1:
-	text "Welcome to the"
-	line "GOLDEN ISLAND"
-	cont "BATTLE HOUSE!"
+	text "¡BIENVENIDO A"
+	line "LA CASA BATALLA"
+	cont "DE ISLA GOLDEN!"
 
-	para "To enter, you"
-	line "must win 5 consec-"
-	cont "utive battles!"
+	para "Al entrar, debes"
+	line "debes ganar cinco"
+	cont "victorias"
+	cont "consecutivas."
 
-	para "You will then be"
-	line "be given a great"
-	cont "prize!"
+	para "Seras recompensado"
+	line "con un gran"
+	cont "premio."
 
-	para "Want to try?"
+	para "¿Quieres probar?"
 	done
 	
 CatManBattleHouseNoFightText:
 	text "Nyaa<...>"
-	line "Welcome to the"
-	cont "GOLDEN ISLAND"
-	cont "BATTLE HOUSE<...>"
+	line "Bienvenido a"
+	cont "la CASA BATALLA"
+	cont "de GOLDEN<...>"
 	
-	para "We're nyaat takin'"
-	line "challengers right"
-	cont "now."
+	para "Tenemos nyaat"
+	line "a los "
+	cont "participantes."
 	
-	para "How can we, when"
-	line "we don't have the"
-	cont "MEOWTH of BOUNTY?"
+	para "¿Que podemos "
+	line "hacer cuando no"
+	cont "tenemos a MEOWTH"
+	cont "o la paga?"
 	cont "Nyaa<...>"
 	done
 
 DeclineBattleHouseText:
-	text "Very well."
-	line "The BATTLE HOUSE"
-	cont "is always open!"
+	text "Muy bien."
+	line "La CASA BATALLA"
+	cont "esta siempre"
+	cont "abierta."
 	done
 
 CatManBattleHouseText2:
-	text "A challenger!"
+	text "¡Un participante!"
 
-	para "Well, then. I will"
-	line "be your first opp-"
-	cont "onent!"
+	para "Bien pues,aquí"
+	line "esta tu primer"
+	cont "oponente."
 	done
 
 CatManBattleHouseText3:
-	text "I have lost."
-	line "Allow me to get"
-	cont "the next battler."
+	text "He perdido. Permi-"
+	line "teme pasar al"
+	cont "siguiente rival."
 	done
 
 CatManBattleHouseText4:
-	text "Hey, there!"
-	line "I'm way stronger"
-	cont "than my friend,"
-	cont "so let's go!"
+	text "¡Aquí estoy!"
+	line "Soy mas fuerte"
+	cont "que mi amigo."
+	cont "¡Vamos!"
 	done
 
 CatManBattleHouseText5:
-	text "That worked up a"
-	line "sweat! Let me get"
-	cont "the next guy."
+	text "¡Peleas bien!"
+	line "¡Permiteme ser"
+	cont "el siguiente!."
 	done
 
 CatManBattleHouseText6:
-	text "Getting tired yet?"
+	text "¿Agotado ya?"
 	done
 
 CatManBattleHouseText7:
-	text "Hmph. I'll get"
-	line "NOAH to beat you."
+	text "Hmph. Sera"
+	line "NOAH quien"
+	cont "te derrote."
 	done
 
 CatManBattleHouseText8:
-	text "You've made it"
-	line "pretty far, but"
-	cont "this is where it"
-	cont "ends!"
+	text "Has llegado"
+	line "muy lejos ¡pero"
+	cont "esto se acaba"
+	cont "aquí!"
 	done
 
 CatManBattleHouseText9:
-	text "GRANT's the stron-"
-	line "gest of us all."
+	text "GRANT es el"
+	line "mas fuerte de"
+	cont "nosotros."
 
-	para "Prepare yourself."
+	para "Preparate."
 	done
 
 CatManBattleHouseText10:
-	text "Good job making"
-	line "it this far. I've"
-	cont "been itching for a"
-	cont "good challenge!"
+	text "Buen trabajo"
+	line "llegando hasta"
+	cont "mi. Llevo tiempo"
+	cont "esperando un"
+	cont "buen desafio."
 	done
 
 CatManBattleHouseText11:
-	text "Congratulations."
-	line "Come inside for"
-	cont "your prize."
+	text "¡Felicidades!"
+	line "Ve dentro a "
+	cont "por tu premio."
 	done
 
 GoldenIsland_MapEventHeader::

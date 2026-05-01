@@ -59,79 +59,81 @@ TrovitopolisGrampsScript:
 	end
 
 TrovitopolisGrampsText:
-	text "Sometimes I've run"
-	line "into an invisble"
-	cont "wall in the caves."
-	cont "Did it happen to"
-	cont "you too?"
+	text "A veces choco"
+	line "con una pared"
+	cont "invisible en"
+	cont "las cuevas. ¿No"
+	cont "te ha pasado?"
 	
-	para "I may be crazy,"
-	line "but I feel like"
-	cont "there's something"
-	cont "watching me when"
-	cont "it happens. Legend"
-	cont "says the feathers"
-	cont "of the legendary"
-	cont "#MON HO-OH can"
-	cont "show the secrets"
-	cont "of the invisible,"
-	cont "but I guess I'll"
-	cont "never solve this"
-	cont "mystery."
+	para "Parece una lo-"
+	line "cura, pero"
+	cont "siento que algo"
+	cont "me observa cuando"
+	cont "eso ocurre. La"
+	cont "leyenda dice que"
+	cont "que las plumas"
+	cont "del #MON legen-"
+	cont "dario HO-OH"
+	cont "pueden revelar"
+	cont "lo invisible."
+	cont "Creo que nunca"
+	cont "resolveré el"
+	cont "misterio."
 
 	done
 	
 TrovitopolisRedCooltrainerCorruptedText:
-	text "The mayor keeps"
-	line "raising our taxes!"
+	text "¡El Alcalde sube"
+	line "los impurestos!"
 
-	para "Now that he has"
-	line "those TEAM ROCKET"
-	cont "goons working for"
-	cont "him, they are even"
+	para "Ahora tiene al"
+	line "TEAM ROCKET"
+	cont "trabajando para"
+	cont "él, ellos están"
 	
-	para "trying to steal"
-	line "the #MON!"
+	para "intentando robar"
+	line "#MON."
 	done
 		
 TrovitopolisRedCooltrainerSavedText:
-	text "Hey, you're the"
-	line "kid who defeated"
-	cont "TEAM ROCKET!"
+	text "¡Ey!¡Eres el chico"
+	line "que ha derrotado"
+	cont "al TEAM ROCKET!"
 	
-	para "You're gonna be in"
-	line "history books, you"
-	cont "know?"
+	para "Saldras en nuestros"
+	line "libros de historia,"
+	cont "¿Lo sabes?"
 	done
 	
 TrovitopolisGreenCoolTrainerText:
-	text "RUDY's so cool!"
+	text "¡RUDY mola!"
 	
-	para "He trains with his"
-	line "#MON through"
-	cont "dancing!"
+	para "Entrena con sus"
+	line "#MON mientras"
+	cont "danzan."
 	
-	para "He's also super"
-	line "cute!"
+	para "¡El es super-"
+	line "hermoso!"
 	done
 	
 TrovitopolisGentlemanText:
-	text "Ohoho!"
+	text "¡Ohoho!"
 	
-	para "On the ROOF of"
-	line "the DEPT. STORE,"
-	cont "you can buy a rare"
-	cont "#MON."
+	para "En el tejado "
+	line "de DEPT. STORE,"
+	cont "puedes comprar"
+	cont "raros #MON."
 	done
 
 TrovitopolisSailorText:
-	text "I saw the most"
-	line "beautiful woman!"
+	text "¡He visto a la"
+	line "mujer mas "
+	cont "hermosa!"
 	
-	para "I think her name"
-	line "was LORELEI. Some"
-	cont "big shot from the"
-	cont "KANTO region."
+	para "Creo que se"
+	line "llamaba LORELEI."
+	cont "Una eminencia"
+	cont "de KANTO."
 	done
 	
 TrovitopolisSign:
@@ -140,81 +142,83 @@ TrovitopolisSign:
 TrovitopolisSignText:
 	text "TROVITOPOLIS"
 	
-	para "City that never"
-	line "sleeps!"
+	para "¡La ciudad que"
+	line "nunca duerme!"
 	done
 	
 TrovitopolisMayorSign:
 	jumptext TrovitopolisMayorSignText
 	
 TrovitopolisMayorSignText:
-	text "MAYOR's OFFICE"
+	text "OFICINA ALCALDE"
 	done
 	
 TrovitopolisDeptStoreSign:
 	jumptext TrovitopolisDeptStoreSignText
 	
 TrovitopolisDeptStoreSignText:
-	text "DEPT. STORE"
+	text "CENT. COMERCIAL"
 	
-	para "#MON SHOP on"
-	line "ROOF"
+	para "TIENDA #MON"
+	line "EN EL TEJADO"
 	done
 	
 TrovitopolisPortSign:
 	jumptext TrovitopolisPortSignText
 	
 TrovitopolisPortSignText:
-	text "TROVITOPOLIS PORT"
+	text "PUERTO"
 	done
 	
 TrovitopolisSchoolSign:
 	jumptext TrovitopolisSchoolSignText
 	
 TrovitopolisSchoolSignText:
-	text "PRIMA's OFFICIAL"
-	line "TRAINER SCHOOL"
+	text "PRIMA, ESCUELA"
+	line "OFICIAL DE"
+	cont "ENTRENADORES"
 	done
 
 TrovitopolisMoveDeleterSign:
 	jumptext TrovitopolisMoveDeleterSignText
 	
 TrovitopolisMoveDeleterSignText:
-	text "MOVE DELETER"
+	text "QUITA-MOVS"
 	done
 
 TrovitopolisMrFlashSign:
 	jumptext TrovitopolisMrFlashSignText
 	
 TrovitopolisMrFlashSignText:
-	text "MR. FLASH's HOUSE"
+	text "CASA MR. FLASH"
 	done
 	
 TrovitopolisSewerSign:
 	jumptext TrovitopolisSewerSignText
 	
 TrovitopolisSewerSignText:
-	text "TROVITOPOLIS SEWER"
-	line "ENTRANCE"
+	text "ENTRADA A LAS"
+	line "ALCANTARILLAS"
 	done
 	
 TrovitopolisSailor2Script:
 	jumptextfaceplayer TrovitopolisSailor2Text
 	
 TrovitopolisSailor2Text:
-	text "The #MON CENTER"
-	line "here is huge!"
+	text "¡El #MON CENTER"
+	line "es enorme!"
 	
-	para "Apparently you can"
-	line "trade and battle"
-	cont "inside this one."
+	para "Aparentemente"
+	line "puedes combatir"
+	cont "e intercambiar"
+	cont "dentro."
 	done
-
+	
 TrovitopolisGroomerSign:
 	jumptext TrovitopolisGroomerSignText
 
 TrovitopolisGroomerSignText:
-	text "#MON MASSAGES"
+	text "MASAJES #MON "
 	done	
 
 TrovitopolisMaxRevive:

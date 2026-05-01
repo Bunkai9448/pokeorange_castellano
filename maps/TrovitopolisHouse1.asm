@@ -10,35 +10,37 @@ TrovitopolisBlackBeltScript:
 	jumptextfaceplayer TrovitopolisBlackBeltText
 	
 TrovitopolisBlackBeltText:
-	text "If you intend to"
-	line "challenge RUDY of"
-	cont "TROVITA GYM, I"
-	cont "must warn you."
+	text "Si pretendes"
+	line "desafiar a RUDY,"
+	cont "el lider del GIM"
+	cont "de Trovita, debo"
+	cont "advertirte."
 	
-	para "His team is very"
-	line "well rounded."
+	para "Su equipo esta muy"
+	line "equilibrado."
 	
-	para "His #MON are"
-	line "trained by DANCE."
-	cont "You may find them"
-	cont "hard to hit in a"
+	para "Sus #MON estan"
+	line "entrenados con"
+	cont "danzas. Quizás"
+	cont "puedas tener"
+	cont "problemas para"
 	
-	para "prolonged battle."
-	line "I recommend you"
-	cont "bring some"
-	cont "X ACCURACY!"
+	para "golpearle en una"
+	line "batalla larga. Te"
+	cont "recomiendo llevar"
+	cont "PRECISION X."
 	done
 	
 TrovitopolisPokeFanFScript:
 	jumptextfaceplayer TrovitopolisPokeFanFText
 	
 TrovitopolisPokeFanFText:
-	text "My husband trains"
-	line "with GYM LEADER"
-	cont "RUDY of TROVITA"
-	cont "ISLAND."
+	text "Mi marido entrena"
+	line "con el lider del"
+	cont "GIM de Trovita,"
+	cont "RUDI."
 	
-	para "Isn't he so manly?"
+	para "¿No es guay?"
 	done
 
 TrovitopolisHouse1_MapEventHeader::

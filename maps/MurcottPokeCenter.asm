@@ -12,37 +12,36 @@ MurcottNurseScript:
 	jumpstd pokecenternurse
 
 MurcottSlouchScript:
-	faceplayer
 	opentext
 	writetext MurcottSlouchText
 	waitbutton
 	closetext
-	spriteface MURCOTT_SLOUCH, RIGHT
 	end
 
 MurcottSlouchText:
-	text "Go upstairs in a"
-	line "GATEHOUSE and look"
-	cont "into the binocul-"
-	cont "ars."
+	text "Sube las esca-"
+	line "leras de la case-"
+	cont "ta y mira por los"
+	cont "binoculares."
 	done
 	
 MurcottSightseerScript:
 	jumptextfaceplayer MurcottSightseerText
 	
 MurcottSightseerText:
-	text "The southern is-"
-	line "lands are rather"
-	cont "quaint, don't you"
-	cont "think?"
+	text "Las islas del"
+	line "sur son bastante"
+	cont "pintorescas, ¿No"
+	cont "crees?"
 	
-	para "I can't wait until"
-	line "I get to KUMQUAT"
-	cont "or TROVITOPOLIS."
+	para "No aguanto hasta"
+	line "ir a KUMQUAT o"
+	cont "TROVITOPOLIS."
 	
-	para "Huge malls, five-"
-	line "star hotels, and"
-	cont "the best beaches!"
+	para "Grandes tiendas, "
+	line "hoteles 5 estre-"
+	cont "llas...¡Y las"
+	cont "mejores playas!"
 	done
 	
 MurcottLuckyEggScript:
@@ -76,28 +75,29 @@ MurcottLuckyEggDoneScript:
 	end
 	
 GiveLuckyEggText:
-	text "Oh! You look like"
-	line "a hungry young"
-	cont "trainer."
+	text "¡Oh! Pareces un"
+	line "joven entrenador"
+	cont "con hambre."
 	
-	para "Take this, I am"
-	line "sure it will help!"
+	para "¡Toma esto!"
+	line "¡Seguro que te"
+	cont "ayuda!"
 	done
 	
 GotLuckyEggText:
-	text "I sure do love"
-	line "scrambled eggs!"
+	text "¡Me encantan los"
+	line "huevos revueltos!"
 	done
 	
 MurcottCenterOldLadyText:
-	text "A trainer, eh?"
-	line "You don't look"
-	cont "like you need a"
-	cont "good meal yet."
+	text "¿Un entrenador?"
+	line "No pareces nece-"
+	cont "sitar un buen "
+	cont "desayuno ya."
 	
-	para "Come see granny"
-	line "when you're very"
-	cont "hungry."
+	para "Ven a ver a la"
+	line "abuela cuando"
+	cont "tengas hambre."
 	done
 
 MurcottPokeCenter_MapEventHeader::

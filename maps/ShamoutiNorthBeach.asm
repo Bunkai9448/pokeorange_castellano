@@ -10,10 +10,10 @@ ShamoutiBeachGuard:
 	jumptextfaceplayer ShamoutiBeachGuardText
 	
 ShamoutiBeachGuardText:
-	text "Sorry, but no one"
-	line "is allowed through"
-	cont "unless the CHIEF"
-	cont "says you can."
+	text "Lo siento, pero"
+	line "nadie puede "
+	cont "pasar hasta que"
+	cont "el jefe lo diga."
 	done
 
 ShamoutiNorthBeach_MapEventHeader::

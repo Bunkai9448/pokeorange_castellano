@@ -91,44 +91,47 @@ CrossBattle4Script:
 	end
 	
 CrossButwalIslandText:
-	text "CROSS: Heh. So you"
-	line "came for it after"
-	cont "all."
+	text "CROSS: Vienes"
+	line "aquí despúes de"
+	cont "todo."
 	
-	para "I beat your wimpy"
-	line "friend down to the"
-	cont "ground!"
+	para "¡Te machacaré y"
+	line "mandaré a la"
+	cont "lona,amigo!"
 	
-	para "If you want this"
-	line "HM so badly, then"
-	cont "take it by force!"
+	para "Si quieres esta"
+	line "MO,es una pena."
+	cont "¡Tendras que"
+	cont "quitármela por"
+	cont "la fuerza!"
 	done
 	
 CrossButwalIslandWinLoss:
-	text "CROSS: Argh! You"
-	line "think this is"
-	cont "over, just because"
-	cont "you won by fluke"
-	cont "once or twice?"
+	text "CROSS: ¡Argh!"
+	line "¿Piensas que"
+	cont "se acabó solo por"
+	cont "ganarme de chiripa"
+	cont "una o dos veces?"
 	done
 
 CrossButwalIslandLeavingNowText:
-	text "CROSS: Hahaha!"
-	line "I've already used"
-	cont "this HM, I have"
-	cont "no use for it."
+	text "CROSS: ¡Hahaha!"
+	line "Ya he usado "
+	cont "esta MO. No tiene"
+	cont "usos para ti."
 	
-	para "But you still do!"
-	line "Serves you right!"
+	para "Pero todavía"
+	line "puedes usarla"
+	cont "para algo."
 	done
 
 ButwalEastDiverText:
-	text "OUCH!"
+	text "¡OUCH!"
 	
-	para "Hey, kid! Watch"
-	line "where you throw"
-	cont "things! Polluting"
-	cont "ain't cool!"
+	para "¡Eh chico!"
+	line "Mira cuando tires"
+	cont "cosas, contaminar"
+	cont "no esta bien."
 	done
 
 ButwalPokeballMovementData:
@@ -160,7 +163,7 @@ ButwalSign:
 	jumptext ButwalSignText
 	
 ButwalSignText:
-	text "BUTWAL ISLAND"
+	text "ISLA BUTWAL"
 	done
 
 ButwalEastHyperPotion:

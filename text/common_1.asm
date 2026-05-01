@@ -100,7 +100,7 @@ MakePinkText::
 MakeNotPinkText::
 	text_from_ram StringBuffer1
 	text " ¡Ya no"
-	line "esta rosa!"
+	line "está rosa!"
 	done
 
 UnknownText_0x1bc29c::
@@ -117,19 +117,19 @@ UnknownText_0x1bc308::
 	done
 
 UnknownText_0x1bc323::
-	text "?"
+	text "?" ; es el question mark de los prompt, , no tocar
 	done
 
 UnknownText_0x1bc31b::
-	text "¡Okay!@@"
+	text "¿Son@@" ; para confirmar min en intro, no tocar, el "?" es el string de arriba 0x1bc323
 	done
 
 UnknownText_0x1bc369::
-	text "¿Que dia es?"
+	text "¿Que día es?"
 	done
 
 UnknownText_0x1bc37a::
-	text ", ¿Es asi?"
+	text ", ¿Es así?"
 	done
 
 UnknownText_0x1bc326::
@@ -228,13 +228,13 @@ UnknownText_0x1bd2ca::
 	done
 
 UnknownText_0x1bd2e7::
-	text "SPEAKER: El"
+	text "SPEAKER: ¿El"
 	line "concurso acabó!"
 	done
 
 UnknownText_0x1bd308::
-	text "REPEL's effect"
-	line "wore off."
+	text "Agotado el efecto"
+	line "del REPELENTE."
 	done
 
 UseAnotherRepelText::
@@ -329,8 +329,8 @@ UnknownText_0x1bd4d2::
 	done
 
 UnknownText_0x1bd4f4::
-	text "The BOUNTY HARVEST"
-	line "will be wondrous!"
+	text "¡La cosecha será"
+	line "maravillosa!"
 	done
 
 UnknownText_0x1bd512::

@@ -48,43 +48,45 @@ MandarinNorthHiddenSuperPotion:
 .Text:
 
 MandarinNorthLassText:
-	text "Welcome!"
+	text "¡BIENVENIDO!"
 
-	para "This is MANDARIN"
-	line "ISLAND NORTH."
+	para "Esta es la ISLA"
+	line "MANDARINA NORTE"
 
-	para "Though, I'm not"
-	line "sure why. MANDARIN"
-	cont "ISLAND SOUTH isn't"
-	cont "anywhere nearby."
+	para "Aunque diría"
+	line "que ISLA "
+	cont "MANDARINA SUR no"
+	cont "esta cerca."
+	cont "Curioso,¿Verdad?"
 	done
 
 MandarinNorthGuruText:
-	text "The ocean is so"
-	line "beautiful."
+	text "El oceano es"
+	line "tan bonito."
 
-	para "I could stare at"
-	line "it forever."
+	para "Podria estar"
+	line "toda la vida"
+	cont "contemplandolo."
 	done
 
 PikachuText:
-	text "PIKACHU: Pikapii!"
+	text "PIKACHU: ¡Pikapii!"
 	done
 
 MandarinTownSignText:
-	text "MANDARIN ISLAND"
-	line "NORTH"
+	text "ISLA MANDARINA"
+	line "NORTE"
 
-	para "The island where"
-	line "fate takes turns"
+	para "La isla donde"
+	line "espera el destino."
 	done
 
 UndergroundSignText:
-	text "UNDERGROUND"
+	text "SUBSUELO"
 	done
 
 NameRaterSignText:
-	text "NAME RATER"
+	text "EVALUADOR DE MOTES"
 	done
 
 MandarinNorth_MapEventHeader::
@@ -109,6 +111,6 @@ MandarinNorth_MapEventHeader::
 	person_event SPRITE_LASS, 16, 9, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, MandarinNorthLassScript, -1
 	person_event SPRITE_COOLTRAINER_F, 29, 5, SPRITEMOVEDATA_STANDING_DOWN, 2, 2, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, MandarinNorthGuruScript, -1
 	person_event SPRITE_POKE_BALL, 27, 29, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, MandarinNorthRareCandy, EVENT_MANDARIN_NORTH_RARE_CANDY
-	person_event SPRITE_PIKACHU, 8, 21, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_YELLOW2, 0, 0, MandarinNorthPikachuScript, -1
-	person_event SPRITE_PIKACHU, 12,  4, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_YELLOW2, 0, 0, MandarinNorthPikachuScript, -1
+	person_event SPRITE_PIKACHU, 8, 21, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_RED, 0, 0, MandarinNorthPikachuScript, -1
+	person_event SPRITE_PIKACHU, 12,  4, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_RED, 0, 0, MandarinNorthPikachuScript, -1
 

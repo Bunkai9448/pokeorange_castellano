@@ -5,23 +5,18 @@ Route56PokeCenter_MapScriptHeader:
 
 .MapTriggers: db 0
 
-.MapCallbacks: db 1
-	dbw MAPCALLBACK_NEWMAP, .FlyPoint
-
-.FlyPoint:
-	setflag ENGINE_FLYPOINT_ROUTE_56
-	return
+.MapCallbacks: db 0
 
 Route56SightseerFScript:
 	jumptextfaceplayer R56SightseerText
 
 R56SightseerText:
-	text "PINKAN ISLAND is"
-	line "simply amazing!"
+	text "¡ISLA PINKAN"
+	line "es increible!"
 
-	para "I caught a PINK"
-	line "PIKACHU there."
-	cont "It's adorable!"
+	para "Atrape a un"
+	line "PIKACHU rosa."
+	cont "¡Es adorable!"
 	done
 
 Route56NurseScript:

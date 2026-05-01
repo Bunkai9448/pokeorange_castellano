@@ -102,78 +102,78 @@ SewerNerdScript:
 	end
 	
 SewerPartyFullText:
-	text "Your #MON"
-	line "party is full."
+	text "Tu equipo "
+	line "#MON esta lleno."
 	done
 	
 SewerBulbasaurText:
-	text "Ah! You did well"
-	line "to find this"
-	cont "place<...>"
+	text "¡Ah! Has encon-"
+	line "trado este"
+	cont "lugar<...>"
 	
-	para "Let's see<...>"
+	para "Veamos<...>"
 	
-	para "I bet you started"
-	line "with the #MON"
-	cont "CHARMANDER!"
+	para "Empezaste con"
+	line "el #MON"
+	cont "CHARMANDER."
 	
-	para "How would you like"
-	line "a BULBASAUR?"
+	para "¿Te gustaría un"
+	line "BULBASAUR?"
 	done
 	
 SewerSquirtleText:
-	text "Ah! You did well"
-	line "to find this"
-	cont "place<...>"
+	text "¡Ah! Has encon-"
+	line "trado este"
+	cont "lugar<...>"
 	
-	para "Let's see<...>"
+	para "Veamos<...>"
 	
-	para "I bet you started"
-	line "with the #MON"
-	cont "BULBASAUR!"
+	para "Empezaste con"
+	line "el #MON"
+	cont "BULBASAUR."
 	
-	para "How would you like"
-	line "a SQUIRTLE?"
+	para "¿Te gustaría un"
+	line "SQUIRTLE?"
 	done
 	
 SewerCharmanderText:
-	text "Ah! You did well"
-	line "to find this"
-	cont "place<...>"
+	text "¡Ah! Has encon-"
+	line "trado este"
+	cont "lugar<...>"
 	
-	para "Let's see<...>"
+	para "Veamos<...>"
 	
-	para "I bet you started"
-	line "with the #MON"
-	cont "SQUIRTLE!"
+	para "Empezaste con"
+	line "el #MON"
+	cont "SQUIRTLE."
 	
-	para "How would you like"
-	line "a CHARMANDER?"
+	para "¿Te gustaría un"
+	line "CHARMANDER?"
 	done
 	
 DeclinedFreeSewerPokemonText:
-	text "Very well. Leave"
-	line "then<...>"
+	text "Bueno, bueno,"
+	line "pues<...>"
 	done
 
 AlreadyReceivedSewerNerdGiftText:
-	text "May that #MON"
-	line "serve you well."
+	text "Este #MON"
+	line "te puede ayudar."
 	done
 	
 PlayerReceivedBulbasaurText:
-	text "<PLAYER> received"
-	line "BULBASAUR!"
+	text "<PLAYER> obtuvo"
+	line "BULBASAUR."
 	done
 	
 PlayerReceivedCharmanderText:
-	text "<PLAYER> received"
-	line "CHARMANDER!"
+	text "<PLAYER> obtuvo"
+	line "CHARMANDER."
 	done
 
 PlayerReceivedSquirtleText:
-	text "<PLAYER> received"
-	line "SQUIRTLE!"
+	text "<PLAYER> obtuvo"
+	line "SQUIRTLE."
 	done
 	
 SewerTMScript:

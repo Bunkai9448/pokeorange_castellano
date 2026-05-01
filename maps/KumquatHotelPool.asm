@@ -40,41 +40,42 @@ SwimmerMarinaScript:
 	end
 	
 GotCardKeyPoolText:
-	text "You got the LVL 1"
-	line "CARD KEY!"
+	text "Obtuviste la"
+	line "TARJ.LLAVE NVL1."
 	
-	para "You can use that"
-	line "in the ELEVATOR"
-	cont "in the lobby."
+	para "Puedes usar el"
+	line "ascensor del"
+	cont "lobby."
 	done
 	
 MarinaWinLoss:
-	text "Crikey!"
+	text "¡Crikey!"
 	done
 	
 AlreadyBeatMarinaText:
-	text "I found my GOLDUCK"
-	line "on KINNOW ISLAND."
-	cont "We've been best"
-	cont "mates since!"
+	text "Encontré mi GOLDUCK"
+	line "en ISLA KINNOW."
+	cont "Es mi mejor amigo"
+	cont "desde entonces."
 	done
 	
 SwimmerMarinaText1:
-	text "Nyahah! I'm MARINA"
-	line "of KUMQUAT GYM!"
-	cont "They call me the"
-	cont "POOL MASTER!"
+	text "¡Nyahah!Soy MARINA"
+	line "del KUMQUAT GIM!"
+	cont "Puedes llamarme"
+	cont "la MAESTRA DE LA"
+	cont "PISCINA."
 	
-	para "If you beat me,"
-	line "you get the CARD"
-	cont "KEY to the upper"
-	cont "floors!"
+	para "Si me vences"
+	line "te dare la"
+	cont "TARJ.LLAVE para"
+	cont "pisos superiores."
 	done
 	
 SwimmerMarinaText2:
-	text "Crikey! Well done,"
-	line "mate! Here's your"
-	cont "prize!"
+	text "¡Crikey! Bien"
+	line "hecho,toma tu"
+	cont "premio."
 	done
 	
 CooltrainerMTradScript:
@@ -89,20 +90,20 @@ CooltrainerMTradScript:
 	end
 
 CooltrainerMTradSeenText:
-	text "MARINA is just too"
-	line "good for the likes"
-	cont "of you!"
+	text "MARINA es"
+	line "demasiado buena"
+	cont "para ti."
 	done
 
 CooltrainerMTradBeatenText:
-	text "I'm washed out!"
+	text "Y tu para mi..."
 	done
 
 CooltrainerMTradAfterText:
-	text "Even if you beat"
-	line "MARINA, there's"
-	cont "a lot more to"
-	cont "this hotel!"
+	text "Aunque ganes a"
+	line "MARINA, hay muchos"
+	cont "contrincantes mas"
+	cont "en el hotel."
 	done
 	
 CooltrainerFMaryScript:
@@ -117,20 +118,21 @@ CooltrainerFMaryScript:
 	end
 
 CooltrainerFMarySeenText:
-	text "Training under"
-	line "LUANA has made my"
-	cont "#MON the best"
-	cont "they can be!"
+	text "Entrenar bajo"
+	line "el mando de LUANA"
+	cont "saca lo mejor de"
+	cont "mis #MON."
 	done
 
 CooltrainerFMaryBeatenText:
-	text "Training never"
-	line "ends!"
+	text "El entrenamiento"
+	line "nunca acaba."
 	done
 
 CooltrainerFMaryAfterText:
-	text "We just have to"
-	line "work harder!"
+	text "¡Tenemos un duro"
+	line "trabajo por"
+	cont "delante!"
 	done
 	
 OtakuDocScript:
@@ -145,20 +147,22 @@ OtakuDocScript:
 	end
 
 OtakuDocSeenText:
-	text "I'm at the apex of"
-	line "my career!"
+	text "Estoy en la"
+	line "cima de mi"
+	cont "carrera."
 	
-	para "Prepare to fall!"
+	para "Prepárate para"
+	line "caer."
 	done
 
 OtakuDocBeatenText:
-	text "Master SHEILA!"
+	text "¡Maestra SHEILA!"
 	done
 
 OtakuDocAfterText:
-	text "Does any of my"
-	line "effort mean any-"
-	cont "thing?"
+	text "¿No significa"
+	line "nada todo mi"
+	cont "esfuerzo?"
 	done
 	
 LassRileyScript:
@@ -173,19 +177,19 @@ LassRileyScript:
 	end
 
 LassRileySeenText:
-	text "Cuteness is totes"
-	line "prio! Feel my"
-	cont "cuties' wrath!"
+	text "¡La ternura lo"
+	line "es todo!¡Siente"
+	cont "mi ira cuqui!"
 	done
 
 LassRileyBeatenText:
-	text "Kyaa! My babies!"
+	text "¡Kyaa!¡Mis bebes!"
 	done
 
 LassRileyAfterText:
-	text "You are totes"
-	line "going on my black"
-	cont "list!"
+	text "Te vas a mi"
+	line "lista negra,"
+	cont "tio rudo..."
 	done
 
 ;EVENT_POOL_MASTER_DEFEATED

@@ -11,17 +11,17 @@ MapRedsHouse2FSignpost1Script:
 	jumptext UnknownText_0x19b087
 
 UnknownText_0x19b050:
-	text "<PLAYER> played the"
-	line "N64."
+	text "<PLAYER> jugo"
+	line "a la N64."
 
-	para "Better get going--"
-	line "no time to lose!"
+	para "¡Mejor no"
+	line "perder tiempo!"
 	done
 
 UnknownText_0x19b087:
-	text "It looks like it"
-	line "hasn't been used"
-	cont "in a long time<...>"
+	text "Parece que"
+	line "lleva tiempo"
+	cont "sin usarse...>"
 	done
 
 RedsHouse2F_MapEventHeader:

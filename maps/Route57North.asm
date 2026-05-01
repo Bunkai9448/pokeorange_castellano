@@ -21,19 +21,19 @@ TrainerSightSeerKenta:
 	end
 
 SightSeerKentaSeenText:
-	text "It's a secret to"
-	line "everyone."
+	text "Es un secreto"
+	line "para todos."
 	done
 
 SightSeerKentaBeatenText:
-	text "Woah!"
+	text "¡GUAU!"
 	done
 
 SightSeerKentaAfterText:
-	text "Did you know?"
-	line "SALAZZLE will only"
-	cont "evolve from FEMALE"
-	cont "SALANDIT."
+	text "¿Lo sabías?"
+	line "SALAZZLE solo"
+	cont "evoluciona si "
+	cont "es hembra."
 	done
 	
 TrainerFisherShinji:
@@ -48,19 +48,20 @@ TrainerFisherShinji:
 	end
 
 FisherShinjiSeenText:
-	text "Kid, you need a"
-	line "SUPER ROD to catch"
-	cont "SUPER #MON!"
+	text "Chico, necesitas"
+	line "una SUPER CAÑA "
+	cont "para SUPER"
+	cont "#MON."
 	done
 
 FisherShinjiBeatenText:
-	text "That's just SUPER."
+	text "Es SUPER."
 	done
 
 FisherShinjiAfterText:
-	text "Hmph. You can get"
-	line "a SUPER ROD some-"
-	cont "where on KUMQUAT."
+	text "Puedes obtener"
+	line "una SUPER CAÑA"
+	cont "en KUMQUAT."
 	done
 	
 Route57NorthMaxRevive:
@@ -75,7 +76,7 @@ Route57North_MapEventHeader::
 .BGEvents: db 0
 
 .ObjectEvents: db 3
-	person_event SPRITE_COOLTRAINER_M, 20, 14, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 2, TrainerSightSeerKenta, -1
+	person_event SPRITE_COOLTRAINER_M, 20, 14, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 3, TrainerSightSeerKenta, -1
 	person_event SPRITE_FISHER, 7, 10, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 1, TrainerFisherShinji, -1
 	person_event SPRITE_POKE_BALL, 28, 4, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route57NorthMaxRevive, EVENT_ROUTE_57_NORTH_MAX_REVIVE
 

@@ -61,31 +61,33 @@ Route51PokeBall:
 	itemball POKE_BALL
 
 Bug_catcherSamSeenText:
-	text "My BEEDRILL is"
-	line "sure to beat you!"
+	text "Mi BEEDRILL te"
+	line "vence, seguro."
 	done
 
 Bug_catcherSamBeatenText:
-	text "BEEDRILL!"
+	text "¡BEEDRILL!"
 	done
 
 Bug_catcherSamAfterText:
-	text "Listen, BUG-type"
-	line "#MON evolve"
-	cont "very quickly."
+	text "Escucha, los"
+	line "#MON tipo"
+	cont "bicho evolu-"
+	cont "cionan muy "
+	cont "rápido."
 	done
 
 Route51YoungsterText:
-	text "TANGELO JUNGLE is"
-	line "pretty hard to get"
-	cont "through."
+	text "JUNGLA TANGELO"
+	line "es muy difícil"
+	cont "de cruzar."
 
-	para "It's full of tricky"
-	line "paths and #MON."
+	para "Hay muchos caminos"
+	line "sinuosos y Pokes."
 	done
 
 Route51SignText:
-	text "ROUTE 51"
+	text "RUTA 51"
 	done
 
 Route51Ho_ohScript:	
@@ -105,7 +107,7 @@ Route51Ho_ohScript:
 	end
 	
 Ho_ohText:
-	text "Shaooo!"
+	text "¡Shaooo!"
 	done
 
 Route51CrossScript_left:
@@ -193,89 +195,97 @@ Route51CrossScript:
 	end
 
 CrossRoute51Text:
-	text "CROSS: Why will"
-	line "you not face me,"
-	cont "HO-OH? I have your"
-	cont "RAINBOW WING!"
-	cont "Submit to me, a"
-	cont "#MON MASTER!"
+	text "CROSS: ¿Por"
+	line "que no apareces,"
+	cont "HO-OH? ¡Tengo tu"
+	cont "ALA ARCOIRIS!"
+	cont "¡Obedéceme"
+	cont "a mi, un maestro"
+	cont "#MON!"
 	
-	para "CROSS produces the" 
-	line "RAINBOW WING, but"
-	cont "it's covered in a"
-	cont "dark miasma."
+	para "CROSS mueve el" 
+	line "ALA ARCOIRIS,"
+	cont "pero esta"
+	cont "cubierta de un"
+	cont "miasma oscuro."
 	
-	para "HO-OH: Ayiiiehh!!"
+	para "HO-OH: ¡Ayiehh!!"
 	done
 	
 CrossRoute51Text2:
-	text "CROSS: Oh, I see<...>"
-	line "You wish for me to"
-	cont "prove myself by"
-	cont "beating the ORANGE"
-	cont "CREW CHAMPION!"
+	text "CROSS: Ya veo<...>"
+	line "Deseas que pruebe"
+	cont "mi valía derrotan-"
+	cont "do al CAMPEON"
+	cont "del ORANGE CREW."
 	
-	para "That will be easy,"
-	line "with my new tools"
-	cont "I've obtained!"
+	para "¡Eso sera fácil"
+	line "con las nuevas"
+	cont "herramientas que"
+	cont "he conseguido."
 	done
 
 CrossRoute51WinLoss:
-	text "CROSS: MARSHADOW!"
-	line "Where are you"
-	cont "going? This isn't"
-	cont "how it was meant"
-	cont "to be<...>"
+	text "CROSS:¡MARSHADOW!"
+	line "¿Qué estas "
+	cont "haciendo? No es"
+	cont "como debería"
+	cont "ser<...>"
 	done
 
 CrossRout51DefeatText:
 	text "CROSS: <...><...>"
-	line "I understand now."
-	cont "It was never about"
-	cont "strength, was it?"
+	line "Ahora lo entiendo."
+	cont "Nunca fue sobre"
+	cont "fuerza, ¿verdad?"
 	
-	para "I can see it now,"
+	para "Ahora lo veo,"
 	line "<PLAYER>."
-	cont "Your #MON adore"
-	cont "you, and you love"
-	cont "them too. I only"
-	cont "treated mine as"
-	cont "tools to obtain"
-	cont "even more power."
+	cont "Tus #MON te"
+	cont "adoran y tu los"
+	cont "tratas con cariño."
+	cont "Pensaba que solo"
+	cont "eran herramientas"
+	cont "para conseguir"
+	cont "mas poder"
 	
-	para "I was never worthy"
-	line "of HO-OH. You can"
-	cont "have this, I don't"
-	cont "need it anymore<...>"
+	para "Nunca fui digno"
+	line "de HO-OH. Puedes"
+	cont "quedarte esto, ya"
+	cont "no lo "
+	cont "necesito<...>"
 	
-	para "<PLAYER> received"
-	line "the RAINBOW WING!"
-	cont "It's still covered"
-	cont "in a dark miasma."
+	para "¡<PLAYER> obtuvo"
+	line "el ALA ARCOIRIS!"
+	cont "Todavía está"
+	cont "cubierta de"
+	cont "miasma oscuro."
 	
-	para "CROSS: I don't"
-	line "expect you to"
-	cont "forgive me for the"
-	cont "way I've treated"
-	cont "you, but I hope we"
-	cont "meet again."
+	para "CROSS: No"
+	line "espero que me"
+	cont "perdones por"
+	cont "como te he tra-"
+	cont "tado pero espero"
+	cont "que nos volvamos"
+	cont "a encontrar."
 	done
 
 CrossRoute51PurifiedWingText:
-	text "HO-OH: Ayiiieehhh!"
+	text "HO-OH:¡Ayieehhh!"
 	
-	para "The dark miasma"
-	line "enveloping the"
-	cont "RAINBOW WING"
-	cont "dissipates, and it"
-	cont "shimmers again!"
+	para "El miasma oscuro"
+	line "que envuelve el"
+	cont "ALA ARCOIRIS"
+	cont "se disipa, y"
+	cont "el ala vuelve"
+	cont "a brillar."
 	
-	para "HO-OH looks down"
-	line "upon you, awaiting"
-	cont "your challenge."
-	cont "You have earned"
-	cont "the right to face"
-	cont "it!"
+	para "HO-OH te mira"
+	line "esperando ser"
+	cont "desafiado. ¡Te"
+	cont "has ganado el"
+	cont "derecho a"
+	cont "retarlo!"
 	done
 
 Route51_MapEventHeader::

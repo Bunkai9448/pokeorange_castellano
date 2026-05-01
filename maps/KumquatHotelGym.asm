@@ -7,10 +7,6 @@ KumquatHotelGym_MapScriptHeader::
 LuanaScript:
 	faceplayer
 	opentext
-
-	checkevent EVENT_BEAT_ORANGE_LEAGUE
-	iftrue .postLeague
-
 	checkevent EVENT_BEAT_LUANA
 	iftrue .FightDone
 	writetext LuanaText
@@ -41,11 +37,6 @@ LuanaScript:
 	closetext
 	end
 
-.postLeague
-	writetext LuanaPostLeagueText
-	waitbutton
-	jump .NoRoomForPsychic
-
 .SpeechAfterTM:
 	writetext LuanaAlreadyGotTMText
 	waitbutton
@@ -54,76 +45,65 @@ LuanaScript:
 	end
 	
 LuanaText:
-	text "Well, I'll be!"
+	text "Bien, lo haré."
 	
-	para "You might be just"
-	line "as strong as my"
-	cont "kiddo!"
+	para "Puede que seas"
+	line "tan fuerte como"
+	cont "mi niño."
 	
-	para "Defeating me will"
-	line "yield the JADE"
-	cont "STAR BADGE."
+	para "Derrotarme te"
+	line "otorgará la"
+	cont "medalla ESTRELLA"
+	cont "DE JADE."
 	
-	para "So, show me what"
-	line "you've got!"
+	para "Enséñame tu"
+	line "poder."
 	done
 	
 LuanaWinLossText:
-	text "The child has sur-"
+	text "No eres tan niño"
 	
-	para "Oh, that's right!"
-	line "You aren't my kid,"
+	para "Y despues de todo"
+	line "no eres mi niño,"
 	cont "<PLAYER>."
 	
-	para "Great battle! Take"
-	line "this JADE STAR"
-	cont "BADGE and go forth"
-	cont "to PUMMELO!"
+	para "¡Grandísimo"
+	line "combate! Toma la"
+	cont "medalla ESTRELLA"
+	cont "DE JADE y ve"
+	cont "directo a POMELO."
 	done
 
 BeatLuanaText:
-	text "<PLAYER> received"
-	line "JADE STAR BADGE."
+	text "<PLAYER> obtuvo"
+	line "la medalla "
+	cont "ESTRELLA de JADE."
 	done
 
 LuanaPsychicText:
-	text "So precious!"
+	text "Tan precioso."
 
-	para "That badge will"
-	line "allow any #MON"
-	cont "to obey you."
+	para "Esta medalla"
+	line "hará que #MON"
+	cont "de todos los"
+	cont "los niveles te"
+	cont "obedezcan."
 
-	para "Here--you can"
-	line "have this."
+	para "Puedes coger"
+	line "esto."
 	done
 
 LuanaPsychicExplanationText:
-	text "That TM contains"
-	line "PSYCHIC."
-	cont "I'm sure it will"
-	cont "be helpful."
+	text "Esta MT es"
+	line "PSIQUICO."
+	cont "Estoy segura de"
+	cont "que te será de"
+    cont "ayuda."
 	done
 
 LuanaAlreadyGotTMText:
-	text "I'll see you"
-	line "around, kiddo!"
-	done
-
-LuanaPostLeagueText:
-	text "Well now!"
-	line "The CHAMPION"
-	cont "visits at last!"
-
-	para "Your journey"
-	line "showed heart."
-
-	para "Never forget this:"
-	line "Your Pokemon are"
-	cont "your family."
-
-	para "I will be cheering"
-	line "for you. See you"
-	cont "around, kiddo!"
+	text "Mi chico..."
+	line "Nos vemos."
 	done
 
 KumquatHotelGym_MapEventHeader::

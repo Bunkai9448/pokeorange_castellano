@@ -12,10 +12,10 @@ Route59Sign:
 	jumptext Route59SignText
 
 Route59SignText:
-	text "ROUTE 59"
+	text "RUTA 59"
 
-	para "South to MORO"
-	line "ISLAND."
+	para "SUR para ISLA"
+	line "MORO."
 	done
 
 TrainerSwimmermKazuma:
@@ -30,19 +30,20 @@ TrainerSwimmermKazuma:
 	end
 
 SwimmermKazumaSeenText:
-	text "It's not only"
-	line "WATER-types that"
-	cont "can swim!"
+	text "¡No solo los"
+	line "tipo agua "
+	cont "pueden nadar!"
 	done
 
 SwimmermKazumaBeatenText:
-	text "Nicely done!"
+	text "¡Bien hecho!"
 	done
 
 SwimmermKazumaAfterText:
-	text "#MON like SNOR-"
-	line "LAX and RHYDON"
-	cont "can learn SURF."
+	text "#MON como"
+	line "RHYDON y"
+	cont "SNORLAX pueden"
+	cont "aprender SURF."
 	done
 
 Route59LightBall:

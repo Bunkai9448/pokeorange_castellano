@@ -18,13 +18,13 @@ MandarinNorthGrannyScript:
 	jumptextfaceplayer MandarinNorthGrannyText
 
 MandarinNorthGrannyText:
-	text "They started to"
-	line "carry GREAT BALLS"
-	cont "here to attract"
-	cont "trainers."
+	text "Empezaron a traer"
+	line "SUPER BALLS para"
+	cont "atraer a los"
+	cont "entrenadores."
 
-	para "Seems it worked!"
-	line "Kekekekeke<...>"
+	para "¡Y funciono!"
+	line "HEHEHEHEHE<...>"
 	done
 
 MandarinNorthMart_MapEventHeader::

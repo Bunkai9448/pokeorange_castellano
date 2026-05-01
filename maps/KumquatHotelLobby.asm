@@ -40,31 +40,34 @@ KumquatHotelLobby_MapScriptHeader::
 	end
 
 KumquatHotelLobbyLuanaText1:
-	text "My baby!"
+	text "¡Mi bebé!"
 	done
 
 KumquatHotelLobbyLuanaText2:
-	text "Oh, you're finally"
-	line "home! Mommy missed"
-	cont "you so so-"
+	text "Oh, finalmente"
+	line "estas en casa"
+	cont "Mami te ha"
+	cont "echado tanto"
+	cont "de menos..."
 	
-	para "Oh my goodness!"
-	line "I'm so sorry, you"
-	cont "look just like my"
-	cont "kid!"
+	para "¡Ay,Dios!"
+	line "Lo siento,"
+	cont "Pensaba que eras"
+	cont "mi niño."
 	
-	para "I'm LUANA of the"
-	line "ORANGE CREW, and"
-	cont "this is my GYM!"
+	para "Soy LUANA de la"
+	line "ORANGE CREW, y"
+	cont "este es mi GIM."
 	
-	para "If you're here to"
-	line "challenge me, you"
-	cont "have to beat my"
-	cont "trainers to reach"
+	para "Si has venido a"
+	line "a retarme antes"
+	cont "debes vencer a"
+	cont "mis entrenadores"
 	
-	para "the top floor!"
-	line "Well then, good"
-	cont "luck, ahaha!"
+	para "para alcanzar la"
+	line "ultima planta."
+	cont "¡Buena suerte!"
+	cont "JAJAJAJA"
 	done
 	
 	
@@ -72,12 +75,14 @@ KumquatHotelReceptionistScript:
 	jumptextfaceplayer KumquatHotelReceptionistText
 	
 KumquatHotelReceptionistText:
-	text "Welcome to the"
-	line "KUMQUAT GYM!"
+	text "Bienvenido al"
+	line "GIM DE KUMQUAT."
 	
-	para "It also doubles as"
-	line "a luxury hotel, so"
-	cont "enjoy your stay!"
+	para "Combates dobles"
+	line "en un hotel de"
+	cont "lujo, asi que"
+	cont "disfrute de su"
+	cont "estancia."
 	done
 
 KumquatGymGuyScript:
@@ -97,27 +102,30 @@ KumquatGymGuyScript:
 	end
 	
 KumquatGymGuyText:
-	text "Yo, champ in the"
-	line "making!"
+	text "Hola,futuro"
+	line "campeón."
 	
-	para "LUANA uses no set"
-	line "typing, so make"
-	cont "sure all your"
-	cont "bases are covered!"
+	para "LUANA no usa"
+	line "un tipo único"
+	cont "asi que"
+	cont "deberias de"
+    cont "llevar varios"
+	cont "tipos."
 	
-	para "Her ALAKAZAM and"
-	line "MAROWAK combo is"
-	cont "powerful!"
+	para "Sus ALAKAZAM y"
+	line "MAROWAK son una"
+	cont "combinación"
+	cont "poderosa."
 	done
 	
 KumquatGymGuyWinText:
-	text "Yo, champ in the"
-	line "making!"
+	text "Hola,futuro"
+	line "campeón."
 	
-	para "You're the real"
-	line "deal! Good luck"
-	cont "with the fight"
-	cont "on PUMMELO ISLAND."
+	para "Eres un grande,"
+	line "buena suerte con"
+	cont "con los combates"
+	cont "en ISLA POMELO."
 	done
 	
 KumquatHotelPlayerLuanaMovement1:

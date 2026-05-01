@@ -10,11 +10,13 @@ MoroSuperNerd:
 	jumptextfaceplayer MoroSuperNerdText
 
 MoroSuperNerdText:
-	text "Whether you're a"
-	line "tourist or a"
-	cont "#MON trainer,"
-	cont "check out the MORO"
-	cont "ISLAND MUSEUM."
+	text "Ya seas un"
+	line "turista o un"
+	cont "entrenador #MON"
+	cont "mira los"
+	cont "alrededores del"
+	cont "MUSEO DE ISLA "
+	cont "MORO."
 	done
 
 MoroHouse2_MapEventHeader::

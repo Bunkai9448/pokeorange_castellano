@@ -583,19 +583,21 @@ TradeAfterText1: ; 0xfcfab
 
 
 TradeIntroText2:
-	text "Hello there!"
+	text "¡Hola!"
 	
-	para "I came to this"
-	line "region so I can"
-	cont "train a SALAZZLE,"
-	cont "but I've had no"
-	cont "luck yet. Do you"
-	cont "happen to have a"
+	para "Vine a esta"
+	line "región para"
+	cont "poder entrenar "
+	cont "un SALAZZLE,"
+	cont "pero no he te-"
+	cont "nido suerte. "
+	cont "¿Por un casual"
+	cont "tienes un" 
 	cont "SALANDIT♀?"
 	
-	para "I'm willing to"
-	line "trade my loyal"
-	cont "PORYGON for one."
+	para "Te lo cambiaría"
+	line "por mi leal"
+	cont "PORYGON."
 	done
 
 TradeIntroText3: ; 0xfcfb0
@@ -629,13 +631,13 @@ TradeAfterText2: ; 0xfcfc4
 ;	text_jump UnknownText_0x1bd5f4
 ;	db "@"
 ; 0xfcfc9
-	text "Hi! The SALANDIT♀"
-	line "you traded me"
-	cont "finally evolved"
-	cont "into SALAZZLE!"
+	text "¡Ey! ¡El SALANDIT♀"
+	line "que me cambiaste"
+	cont "si evoluciono a"
+	cont "SALAZZLE!"
 
-	para "How is my old"
-	line "buddy doing?"
+	para "¿Por qué el"
+	line "mio no?"
 	done
 
 TradeIntroText4: ; 0xfcfc9
@@ -709,24 +711,24 @@ GetCaughtGender: ; 4f301
 ; 4f31c
 
 _TradeIntroText5:
-	text "The MEOWTH here"
-	line "are different from"
-	cont "the ones from my"
-	cont "region."
-	para "Would you like to"
-	line "trade a MEOWTH for"
-	cont "one of my region?"
+	text "Los MEOWTH de"
+	line "aquí son dife-"
+	cont "rentes a los de"
+	cont "mi región."
+	para "¿Querrías cambiar"
+	line "un MEOWTH por"
+	cont "uno de mi region?"
 	done
 
 _TradeCompleteText5:
-	text "Great! MEOWTH from"
-	line "this region are so"
-	cont "interesting!"
+	text "¡Genial! ¡MEOWTH"
+	line "es muy interesante"
+	cont "en esta región!"
 	done
 
 _TradeAfterText5:
-	text "My friends will"
-	line "be amazed when I"
-	cont "show them this"
-	cont "MEOWTH!"
+	text "¡Mis amigos"
+	line "fliparan cuando"
+	cont "les enseñe"
+	cont "este MEOWTH!"
 	done

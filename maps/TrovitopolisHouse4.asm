@@ -54,65 +54,67 @@ EeveeBall:
 	jumptext EeveeBallText
 	
 EeveeBallText:
-	text "There's a #MON"
-	line "inside!"
+	text "¡Hay un #MON"
+	line "dentro!"
 	done
 	
 UnknownText_0x54dae:
-	text "<PLAYER> received"
-	line "EEVEE!"
+	text "<PLAYER> obtuvo"
+	line "EEVEE."
 	done
 	
 NotEnoughRoomForEeveeText:
-	text "You don't have"
-	line "enough room for"
+	text "No tienes hueco"
+	line "suficiente para"
 	cont "EEVEE."
 	
-	para "Please come back"
-	line "when you have room"
-	cont "in your party."
+	para "Vuelve cuando"
+	line "tengas espacio"
+	cont "en tu equipo."
 	done
 
 YouDoWantEeveeText:	
-	text "I knew you'd be"
-	line "the one!"
+	text "¡Sabía que eras"
+	line "el indicado!"
 
-	para "OK, I'm counting"
-	line "on you."
+	para "OK, cuento"
+	line "contigo."
 
-	para "Take good care of"
-	line "it!"
+	para "Cuídalo bien,"
+	line "por favor."
 	done
 	
 WantThisEeveeText:
-	text "Hello!"
+	text "¡Hola!"
 	
-	para "You seem like a"
-	line "decent #MON"
-	cont "TRAINER."
+	para "Pareces un entre-"
+	line "nador #MON"
+	cont "decente."
 	
-	para "I found this EEVEE"
-	line "in an alleyway."
+	para "Encontré a EEVEE"
+	line "en un callejón."
 	
-	para "I can't take care"
-	line "of it, but maybe"
-	cont "you can? It needs"
-	cont "a good home!"
+	para "No puedo hacerme"
+	line "cargo de él."
+	cont "¡Quizas tu si!"
+	cont "¡Necesita un "
+	cont "hogar!"
 	done
 	
 DontWantEeveeText:
-	text "You don't want it?"
-	line "I understand."
+	text "¿No lo quieres?"
+	line "Lo entiendo."
 	
-	para "It was an unreaso-"
-	line "nable request."
+	para "Es una petición"
+	line "ilógica."
 	done
 	
 AlreadyGotEeveeText:
-	text "Take good care of"
-	line "that EEVEE. I hear"
-	cont "it can EVOLVE into"
-	cont "many #MON."
+	text "Cuida de este"
+	line "EEVEE. He escu-"
+	cont "chado que puede"
+	cont "evolucionar en"
+	cont "muchos #MON."
 	done
 
 TrovitopolisHouse4_MapEventHeader::

@@ -36,67 +36,72 @@ VictoryRoadTraceyScript:
 	end
 	
 TraceyVictoryRoadText:
-	text "TRACEY: So, you"
-	line "made it out here,"
+	text "TRACEY: ¡Asi que"
+	line "lograste llegar"
+	cont "hasta aqui,"
 	cont "<PLAYER>!"
 	
-	para "Truth be told, I"
-	line "was waiting for"
-	cont "you to show up."
+	para "A decir verdad,"
+	line "estaba esperando"
+	cont "que aparecieras."
 	
-	para "That guy, CROSS."
+	para "Ese tipo, CROSS."
 	
-	para "I tried to beat"
-	line "him, to get him"
-	cont "back for what he"
-	cont "did on ASCORBIA."
+	para "Intente ganarle"
+	line "por lo que hizo"
+	cont " en ASCORBIA."
 	
-	para "But, he's much"
-	line "too strong."
+	para "Pero el es mas"
+	line "poderoso."
 	
-	para "Anyway, I decided"
-	line "to quit being a"
-	cont "TRAINER to be a"
-	cont "fulltime WATCHER!"
+	para "Asi que he deci-"
+	line "dido dejar de "
+	cont "ser entrenador y"
+	cont "convertirme en"
+	cont "observador."
 	
-	para "So, <PLAYER>,"
-	line "how about one last"
-	cont "battle before I"
-	cont "retire?!"
+	para "Mmm, <PLAYER>,"
+	line "¿Un ultimo "
+	cont "combate antes"
+	cont "de mi retiro?"
 	done
 	
 TraceyVictoryRoadWinLoss:
-	text "Absolutely bril-"
-	line "liant."
+	text "Absolutamente"
+	line "brillante."
 	
 	para "<PLAYER>."
-	line "You are really"
-	cont "something, y'know?"
+	line "¿Sabes? Realmente"
+	cont "eres alguien"
+	cont "especial."
 	done
 	
 TraceyVictoryRoadLeavingNowText:
 	text "<...>"
 	
-	para "Battling with you,"
+	para "Nuestra pelea,"
 	line "<PLAYER>."
 	
-	para "That's what reminds"
-	line "me of what this is"
-	cont "all about."
+	para "Me recuerda de"
+	line "sobre que van"
+	cont "las cosas."
 	
-	para "But I have bigger"
-	line "plans. I'm going to"
-	cont "see PROF. OAK in"
-	cont "KANTO!"
+	para "Pero tengo metas"
+	line "mayores. ¡Voy a"
+	cont "ver al PROF. OAK"
+	cont "en KANTO!"
 	
-	para "I'll become his"
-	line "AIDE and become a"
-	cont "researcher!"
+	para "Me convertire en"
+	line "su asistente y"
+	cont "sere un inves-"
+	cont "tigador."
 	
-	para "Meet me in PALLET"
-	line "TOWN, <PLAYER>."
-	cont "Not as a TRAINER,"
-	cont "but as a CHAMPION!"
+	para "Nos vemos en "
+	line "PUEBLO PALETA,"
+    cont "<PLAYER>."
+	cont "No como entre-"
+	cont "nador,¡Si no"
+	cont "CAMPEON!"
 	done
 	
 TraceyVR_Movement:

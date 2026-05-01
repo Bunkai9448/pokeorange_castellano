@@ -83,23 +83,25 @@ MandarinUndergroundStatue:
 MandarinUndergroundPCText:
 	text "JESSIE and JAMES"
 
-	para "We have set up"
-	line "operations on a"
-	cont "quiet island."
+	para "Establecimos"
+	line "operaciones en una"
+	cont "isla tranquila."
 
-	para "We expect to"
-	line "round up all the"
-	cont "#MON here soon."
+	para "Esperamos hacernos"
+	line "con todos los"
+	cont "#MON de aqui"
+	cont "pronto."
 
-	para "BUTCH and CASSIDY"
+	para "BUTCH y CASSIDY"
 	done
 
 MandarinUndergroundStatueText:
-	text "A commemorative"
-	line "statue of TEAM"
-	cont "ROCKET's revival."
+	text "Una estatua"
+	line "conmemorativa del"
+	cont "resurgir del"
+	cont "TEAM ROCKET."
 
-	para "Oh no!"
+	para "¡Oh no!"
 	done
 
 ; Engineer Kobe
@@ -115,23 +117,27 @@ TrainerEngineerKobe:
 	end
 	
 EngineerKobeSeenText:
-	text "Hey, I'm laying"
-	line "out wires there!"
+	text "Hey, ¡Que"
+	line "estoy instalando"
+	cont "el cableado!"
 	done
 	
 EngineerKobeWinText:
-	text "It's dangerous!"
+	text "¡Es peligroso!"
 	done
 	
 EngineerKobeAfterText:
-	text "Kinda weird those"
-	line "SILPH CO. guys had"
-	cont "us add all these"
-	cont "spinning panels."
+	text "Esos tios raros"
+	line "de SILPH S.A nos"
+	cont "tenían todo el"
+	cont "día instalando"
+	cont "baldosas que "
+	cont "te hacían girar."
 	
-	para "Made my head spin"
-	line "installing them,"
-	cont "that's for sure!"
+	para "Hacía que mi"
+	line "cabeza tambien"
+	cont "diera vueltas"
+	cont "al instalarlas."
 	done
 	
 MandarinUndergroundSuperPotion:
@@ -152,7 +158,7 @@ MandarinUndergroundTrapVoltorbScript:
 	end
 	
 TrapVoltrobText:
-	text "Bzzzt!"
+	text "¡Bzzzt!"
 	done
 
 MandarinUndergroundBF2_MapEventHeader::

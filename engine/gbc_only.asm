@@ -23,9 +23,9 @@ GBCOnlyString: ; 4eb38
 	db   "  Pokémon Orange"
 	next "       ERROR"
 	next "------------------"
-	next "This Game Pak is"
-	next "designed only for"
-	next "use on the"
+	next "Este juego solo"
+	next "esta diseñado"
+	next "para ser usado en"
 	next "Game Boy Color."
 	next "     -- Pia Carrot@"
 ; 4eb76

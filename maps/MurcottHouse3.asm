@@ -37,32 +37,33 @@ PharmacistDoneScript:
 	end
 	
 PharmacistText1:
-	text "Hello. I'm the"
-	line "pharmacist here."
+	text "Hola. Soy el"
+	line "farmaceútico."
 	
-	para "If you bring me a"
-	line "PINKAN BERRY, I"
-	cont "can make some"
-	cont "PINK CURE."
+	para "Si me traes una"
+	line "Baya Pinkan,"
+	cont "puedo hacer una"
+	cont "cura al rosa."
 	
-	para "Do you need some"
-	line "medicine made?"
+	para "¿Necesitas que"
+	line "cree alguna"
+	cont "medicina?"
 	done
 	
 PharmacistText2:
-	text "I'll make some"
-	line "right away."
+	text "Okey, te "
+	line "lo hago ahora."
 	
 	para "<...>"
 	
 	para "<...>"
 	
-	para "Here you go!"
+	para "¡Aquí tienes!"
 	done
 
 PharmacistText3:
-	text "You don't have any"
-	line "PINKAN BERRIES."
+	text "No tienes bayas"
+	line "Pinkan."
 	done
 
 MurcottHouse3_MapEventHeader::

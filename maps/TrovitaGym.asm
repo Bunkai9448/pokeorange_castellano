@@ -22,10 +22,6 @@ RudyScript:
 	blackoutmod TROVITOPOLIS
 	faceplayer
 	opentext
-	
-	checkevent EVENT_BEAT_ORANGE_LEAGUE
-	iftrue .postLeague
-	
 	checkevent EVENT_BEAT_RUDY
 	iftrue .FightDone
 	writetext RudyText
@@ -55,11 +51,6 @@ RudyScript:
 	waitbutton
 	closetext
 	end
-
-.postLeague
-	writetext RudyPostLeagueText
-	waitbutton
-	jump .NoRoomForDoubleTeam
 
 .SpeechAfterTM:
 	writetext RudyAlreadyGotTMText
@@ -104,18 +95,20 @@ CooltrainerMorikoScript:
 	end
 
 CooltrainerMorikoSeenText:
-	text "RUDY doesn't have"
-	line "time for a loser"
-	cont "like you!"
+	text "¡RUDY no tiene"
+	line "tiempo para un"
+	cont "perdedor como"
+	cont "tu!"
 	done
 
 CooltrainerMorikoBeatenText:
-	text "What?"
+	text "¿Qué?"
 	done
 
 CooltrainerMorikoAfterText:
-	text "I just let my"
-	line "guard down."
+	text "Justo me pillaste"
+	line "con la guardia"
+	cont "baja."
 	done
 
 CooltrainerAiriScript:
@@ -132,19 +125,19 @@ CooltrainerAiriScript:
 CooltrainerAiriSeenText:
 	text "Um<...>"
 	
-	para "Let's have a fair"
-	line "battle."
+	para "Tengamos una"
+	line "lucha justa."
 	done
 
 CooltrainerAiriBeatenText:
-	text "Uwaah!"
+	text "¡Buaaa!"
 	done
 
 CooltrainerAiriAfterText:
-	text "Sniffle<...>"
+	text "Snifff<...>"
 	
-	para "I lost fair and"
-	line "square."
+	para "Perdí de ma-"
+	line "nera justa."
 	done
 
 CooltrainerKatsuoScript:
@@ -159,21 +152,22 @@ CooltrainerKatsuoScript:
 	end
 
 CooltrainerKatsuoSeenText:
-	text "I wonder if making"
-	line "poses and dancing"
-	cont "could make #MON"
-	cont "stronger."
+	text "Me maravilla como"
+	line "las poses y la"
+	cont "danzas #MON"
+	cont "los potencian."
 	done
 
 CooltrainerKatsuoBeatenText:
-	text "Wow, you got the"
-	line "moves!"
+	text "¡Guau, que"
+	line "movimientos!"
 	done
 
 CooltrainerKatsuoAfterText:
-	text "RUDY says dancing"
-	line "makes #MON a"
-	cont "lot more agile."
+	text "RUDY dice que"
+	line "las danzas hacen"
+	cont "a los #MON mas"
+	cont "ágiles."
 	done
 
 CooltrainerSonScript:
@@ -188,123 +182,105 @@ CooltrainerSonScript:
 	end
 
 CooltrainerSonSeenText:
-	text "I feel like I'm"
-	line "one with the wind"
-	cont "when I'm dancing"
-	cont "with #MON!"
+	text "¡Siento que soy"
+	line "uno con el viento"
+	cont "cuando danzo con"
+	cont "mis #MON!"
 	done
 
 CooltrainerSonBeatenText:
-	text "Blown away!"
+	text "¡Estoy anonadado!"
 	done
 
 CooltrainerSonAfterText:
-	text "You're disturbing"
-	line "my peaceful day!"
+	text "¡Perturbas mi"
+	line "pacífico día!"
 	done
 
 RudyText:
-	text "Hello, CHALLENGER."
+	text "Hola, ASPIRANTE."
 	
-	para "I am RUDY of the"
-	line "ORANGE CREW, and I"
-	cont "specialize in the"
-	cont "ability of #MON"
+	para "Soy RUDY del"
+	line "ORANGE CREW, y me"
+	cont "especializo en "
+	cont "las habilidades"
 	
-	para "that are evasive!"
-	line "I'll beat you in a"
-	cont "flash!"
+	para "evasivas de los"
+	line "#MON. ¡No podras"
+	cont "alcanzarnos!"
 	done
 	
 RudyWinLossText:
-	text "Your moves are too"
-	line "good for me to"
-	cont "keep up!"
+	text "¡Tus movimientos"
+	line "son demasiado"
+	cont "para mi!"
 	done
 
 BeatRudyText:
-	text "<PLAYER> received"
-	line "SPIKE SHELL BADGE."
+	text "<PLAYER> obtuvo"
+	line "la MEDALLA CONCHA"
+	cont "PUNTIAGUDA."
 	done
 
 RudyDoubleTeamText:
-	text "Well done."
+	text "Bien hecho."
 
-	para "That badge will"
-	line "allow any #MON"
-	cont "up to Level 70"
-	cont "to obey you."
+	para "Con esta medalla"
+	line "cualquier #MON"
+	cont "de nivel 70 o"
+	cont "mas te obedecera."
 
-	para "Here--you can"
-	line "have this."
+	para "Toma esto"
+	line "tambien."
 	done
 
 RudyDoubleTeamExplanationText:
-	text "That TM contains"
-	line "DOUBLE TEAM. Use"
-	cont "it to dance out"
-	cont "of trouble!"
+	text "Esta MT contiene"
+	line "DOBLE EQUIPO. Usa-"
+	cont "lo para evitar"
+	cont "el peligro."
 	
-	para "If they can't hit"
-	line "you, they can't"
-	cont "win!"
+	para "¡Si no te puede"
+	line "golpear, no te"
+	cont "pueden ganar!"
 	done
 
 RudyAlreadyGotTMText:
-	text "Until we meet"
-	line "again."
-	done
-
-RudyPostLeagueText:
-	text "So the CHAMPION"
-	line "stands before me."
-	
-	para "Your tactics were"
-	line "precise... but not"
-	cont "heartless."
-	
-	para "You also trusted"
-	line "your #MON even"
-	cont "under pressure."
-
-	para "That balance is"
-	line "rare. It deserves"
-	cont "respect."
-
-	para "The bond with your"
-	line "team is admirable."	
+	text "¡Hasta que nos"
+	line "volvamos a ver!"
 	done
 
 TrovitaGymGuyText:
-	text "Yo, CHAMP in the"
-	line "making!"
+	text "Hola, Campeón"
+	line "en ciernes."
 	
-	para "You better be fast"
-	line "if you wanna take"
-	cont "out RUDY! He'll"
-	cont "use DOUBLE TEAM to"
+	para "Mejor que seas"
+	line "rapido si quieres"
+	cont "derrotar a RUDY."
+	cont "Usa DOUBLE EQUIPO"
 	
-	para "increase his"
-	line "evasiveness!"
+	para "e incrementa la"
+	line "evasión."
 	done
 
 TrovitaGymGuyWinText:
-	text "That was a hot"
-	line "match!"
+	text "¡Fue una gran"
+	line "pelea!"
 	
-	para "Only one badge to"
-	line "go, kid!"
+	para "¡Chico, solo te"
+	line "queda una meda-"
+	cont "lla."
 	done
 	
 PiaCarrotText:
-	text "PIA CARROT: Thanks"
-	line "for playing the"
-	cont "the beta."
+	text "PIA CARROT: Gracias"
+	line "por jugar esta"
+	cont "beta."
 	
-	para "Not much more to"
-	line "do, but take these"
-	cont "and go have some"
-	cont "more fun!"
+	para "No hay mucho"
+	line "mas por hacer,"
+	cont "pero aun puedes"
+	cont "divertirte."
 	done
 
 TrovitaGym_MapEventHeader::

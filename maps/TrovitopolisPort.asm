@@ -124,171 +124,177 @@ TrovitopolisSailorMovement:
 LoreleiLancePortText1:
 	text "<...> <...> <...>"
 	
-	para "???: I'm sorry,"
-	line "LANCE. My decision"
-	cont "is final."
+	para "???: Lo siento,"
+	line "LANCE. Mi decisión"
+	cont "es inamovible."
 	
-	para "LANCE: You can't"
-	line "just quit the"
-	cont "ELITE FOUR like"
-	cont "this without a"
+	para "LANCE: No puedes"
+	line "dejar sin motivo"
+	cont "la ELITE FOUR."
+	cont "¡Dame una buena"
 	
-	para "good reason,"
+	para "razón,"
 	line "LORELEI!"
 	
 	para "LORELEI: <...>"
-	line "I'm staying here"
-	cont "on MANDARIN SOUTH"
-	cont "for a bit, before"
+	line "Estaré por MAN-"
+	cont "DARINA SUR unos"
+	cont "días, antes de"
 	
-	para "returning to my"
-	line "home on FOUR"
-	cont "ISLAND. Goodbye,"
-	cont "LANCE."
+	para "volver a mi casa,"
+	line "en ISLA CUATRO."
+	cont "Adios, LANCE."
 	
 	para "LANCE: Sigh<...>"
 	done
 	
 LancePortText:
 	text "LANCE: <...>"
-	line "That look in your"
-	cont "eyes<...>"
+	line "Ese brillo en "
+	cont "tus ojos<...>"
 	
-	para "Nevermind. Sorry"
-	line "to bother you. You"
-	cont "reminded me of"
-	cont "someone."
+	para "No importa. Lo"
+	line "siento. Solo es"
+	cont "que me recordas-"
+	cont "te a alguien."
 	done
 	
 LoreleiPortText1:
-	text "LORELEI: Hello. My"
-	line "apologies for the"
-	cont "disturbance that"
-	cont "we caused."
+	text "LORELEI: Hola.Mis"
+	line "disculpas por los"
+	cont "problemas que he"
+	cont "causado."
 	
-	para "And your name?"
+	para "¿Tu nombre?"
 	
 	para "<...> <...> <...>"
 	
-	para "LORELEI: So, your"
-	line "name is <PLAYER>."
-	cont "Well, I am LORELEI"
-	cont "of the ELITE FOUR."
+	para "LORELEI: Así que"
+	line "eres <PLAYER>."
+	cont "Bien, soy LORELEI"
+	cont "de la ELITE FOUR."
 	
-	para "Well, I was, but I"
-	line "just officially"
-	cont "retired. Haha."
+	para "Bueno, estoy"
+	line "oficialmente"
+	cont "retirada. JaJa."
 	
-	para "Anyways, if you do"
-	line "need me for some-"
-	cont "thing, I can be"
-	cont "found at the"
+	para "De todas formas,"
+	line "si necesitas "
+	cont "algo, puedes"
+	cont "pasarte por la"
 	
-	para "TRAINER SCHOOL in"
-	line "the city."
-	cont "I'll be taking my"
-	cont "leave now."
+	para "ESCUELA DE"
+	line "ENTRENADORES de"
+	cont "la ciudad, ahí"
+	cont "estare."
 	done
 	
 TraceyPortText1:
-	text "TRACEY: <PLAYER>!"
+	text "TRACEY: ¡<PLAYER>!"
 	
-	para "I finally found"
-	line "you! There's big"
-	cont "trouble in this"
-	cont "city!"
+	para "¡Por fin te"
+	line "encuentro!¡Hay un"
+	cont "gran problema en"
+	cont "la ciudad!"
 	done
 	
 LoreleiPortText2:
-	text "LORELEI: What is"
-	line "going on here?"
+	text "LORELEI: ¿Que"
+	line "esta pasando aquí?"
 	done
 	
 TraceyPortText2:
-	text "TRACEY: It's TEAM"
-	line "ROCKET! They are-"
+	text "TRACEY: ¡El TEAM"
+	line "ROCKET!"
 	
 	para "<...>"
 	
-	para "Wait, aren't you"
-	line "LORELEI of the"
-	cont "KANTO ELITE FOUR?"
-	cont "What an honor!"
+	para "Espera...¿Eres"
+	line "LORELEI de la "
+	cont "ELITE FOUR de "
+	cont "KANTO? ¡Es un"
+	cont "honor!"
 	
-	para "LORELEI: Boy, get"
-	line "back on topic."
+	para "LORELEI: Chico,"
+	line "dejate de topicos."
 	
-	para "TRACEY: Oh, right!"
-	line "TEAM ROCKET is"
-	cont "working with the"
-	cont "MAYOR in order to"
+	para "TRACEY: ¡Oh!"
+	line "El TEAM ROCKET"
+	cont "esta trabajando"
+	cont "con el ALCALDE"
 	
-	para "TAX the citizens"
-	line "and launder the"
-	cont "money for their"
-	cont "evil deeds!"
+	para "en aras de"
+	line "imponer impuestos"
+	cont "a los ciudadanos"
+	cont "para sufragar"
+	cont "sus fechorías."
 	
-	para "We gotta stop 'em!"
+	para "¡Los pararemos!"
 	
-	para "LORELEI: Okay."
-	line "I'll head down"
-	cont "there now."
+	para "LORELEI: Okey."
+	line "Los pararé,"
+	cont "aquí y ahora."
 	
-	para "You two are still"
-	line "still kids, don't"
-	cont "you dare come!"
-	cont "It's dangerous!"
+	para "Vosotros dos,"
+	line "chavalillos, no"
+	cont "interfirais si"
+	cont "se pone peligroso."
 	done
 	
 TraceyPortText3:
-	text "TRACEY: As if!"
+	text "TRACEY: ¡Asi sera!"
 	
-	para "I'm going too!"
-	line "<PLAYER>! We can't"
-	cont "let TEAM ROCKET"
-	cont "have their way!"
+	para "¡Vamos!"
+	line "<PLAYER>! No"
+	cont "podemos dejar que"
+	cont "el TEAM ROCKET"
+	cont "se salga con"
+	cont "la suya."
 	
-	para "They steal #MON"
-	line "and make people"
-	cont "miserable!"
+	para "Roban #MON"
+	line "y empobrecen a" 
+	cont "la gente."
 	
-	para "I don't know why"
-	line "they are here or"
-	cont "how, but we must"
-	cont "stop them!"
+	para "No se porque"
+	line "estan aqui,"
+	cont "¡Pero debemos"
+	cont "detenerlos!"
 	done
 	
 TrovitopolisPortNotWorkingText:
-	text "Sorry, kid. FERRY"
-	line "isn't running."
+	text "Lo siento, el"
+	line "FERRY no esta"
+	cont "operativo."
 	
-	para "MAYOR just imposed"
-	line "a new SAILOR TAX."
-	cont "We have to pay to"
-	cont "give free rides!"
+	para "El ALCALDE puso"
+	line "una nueva tasa."
+	cont "Debemos pagar"
+	cont "para navegar."
 	
-	para "Not only that,"
-	line "I've been seeing"
-	cont "those TEAM ROCKET"
-	cont "goons around."
+	para "No solo eso,"
+	line "se han visto a los"
+	cont "del TEAM ROCKET"
+	cont "merodeando."
 	
-	para "What's happening"
-	line "to this city?"
+	para "¿Que esta pasan-"
+	line "do en esta"
+	cont "ciudad?"
 	done
 
 TrovitopolisPortSailorText:
-	text "Now that we don't"
-	line "have to pay the"
-	cont "SAILOR's TAX, I"
-	cont "can take you to"
+	text "Ahora que no"
+	line "hay que pagar la"
+	cont "la tasa por"
+	cont "navegar, puedo"
 	
-	para "TROVITA ISLAND."
-	line "You ready, kid?"
+	para "llevarte a"
+	line "ISLA TROVITA."
+	cont "¿Zarpamos?"
 	done
 
 TrovitopolisSailorAhoyText:
-	text "Alright! Off we"
-	line "go!"
+	text "¡Muy bien! ¡Nos"
+	line "vamos!"
 	done
 	
 PlayerTrovitopolisPortMovement:

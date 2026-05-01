@@ -21,24 +21,25 @@ AscorbiaArtistLadyDayScript:
 	end
 	
 AscorbiaArtistLadyDayText:
-	text "Hello, dearie."
+	text "Hola, cariño."
 	
-	para "Have you heard of"
-	line "the amazing artist"
-	cont "that lives here?"
+	para "¿Has oido sobre"
+	line "el gran artista"
+	cont "que vive aqui?"
 	
-	para "No one has claimed"
-	line "to have ever seen"
-	cont "them painting."
+	para "Nadie lo ha"
+	line "visto nunca"
+	cont "pintando."
 	done
 	
 AscorbiaArtistLadyDayGotPikachuText:
-	text "Hello again, dear."
+	text "Hola otra vez,"
+	line "cariño"
 	
-	para "How is PIKACHU"
-	line "doing? I hope it"
-	cont "gets out of its"
-	cont "creative block."
+	para "¿Que esta haciendo"
+	line "Pikachu? Espero"
+	cont "que salga de su"
+	cont "bloqueo creativo."
 	done
 
 AscorbiaIslandHouse2_MapEventHeader::

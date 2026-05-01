@@ -51,23 +51,24 @@ MovementData_0x74a30:
 	step_end
 
 SailorText:
-	text "Hey, kid! Do you"
-	line "need a ride to"
-	cont "TANGELO ISLAND?"
+	text "Ey, chaval, ¿Ne-"
+	line "cesitas viajar a"
+	cont "ISLA TANGELO?"
 	done
 
 SailorAhoyText:
-	text "Alright! Off we"
-	line "go!"
+	text "¡Todo listo!"
+	line "¡Nos vamos!"
 	done
 
 UnknownText_0x74bf4:
-	text "Fish in ports when"
-	line "you can!"
+	text "¡Pesca en puertos"
+	line "todo lo que "
+	cont "puedas!"
 
-	para "Some #MON"
-	line "only appear around"
-	cont "them."
+	para "Ciertos #MON"
+	line "solo aparecen"
+	cont "en esas zonas."
 	done
 
 ValenciaPort_MapEventHeader::

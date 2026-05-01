@@ -11,11 +11,12 @@ HamlinRoute71OfficerScript:
 	jumptextfaceplayer HamlinRoute71OfficerText
 
 HamlinRoute71OfficerText:
-	text "Hello!"
-	line "Once you cross"
-	cont "the bridge, the"
-	cont "city of HAMLIN is"
-	cont "just past!"
+	text "¡Hola!"
+	line "Una vez cruces"
+	cont "el puente, la"
+	cont "ciudad de HAMLIN"
+	cont "esta justo al"
+	cont "lado."
 	done
 
 HamlinRoute71Gate_MapEventHeader:

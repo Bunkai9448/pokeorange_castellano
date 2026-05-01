@@ -11,12 +11,12 @@ KinnowShowboatOfficerScript:
 	jumptextfaceplayer KinnowShowboatOfficerScriptText
 
 KinnowShowboatOfficerScriptText:
-	text "There's a boat"
-	line "docked at shore."
+	text "Hay un barco"
+	line "atracado cerca."
 	
-	para "I heard there's"
-	line "some really strong"
-	cont "trainers on it."
+	para "He oido que"
+	line "hay entrenadores"
+	cont "muy fuertes en él."
 	done
 
 KinnowShowboatGate_MapEventHeader:

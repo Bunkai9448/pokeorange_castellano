@@ -50,36 +50,38 @@ UnknownScript_0x190078:
 	end
 	
 UnknownText_0x1900b0:
-	text "Hiya, kid!"
+	text "¡Chaval!"
 
-	para "Want to buy one of"
-	line "our famous GRAPE-"
-	cont "FRUITS? It's only"
-	cont "¥300!"
+	para "¿Quieres comprar"
+	line "nuestras famosas"
+	cont "frutas?¡Solo "
+	cont "cuestan ¥300!"
 	done
 
 UnknownText_0x19014a:
-	text "Good! Savor it!"
+	text "¡Bien!¡Toma!"
 	done
 
 UnknownText_0x19015b:
-	text "You don't have"
-	line "enough money."
+	text "No tienes"
+	line "suficiente "
+	cont "dinero."
 	done
 
 UnknownText_0x190178:
-	text "Oh, fine then<...>"
+	text "Oh, vale<...>"
 	done
 
 UnknownText_0x190188:
-	text "You don't have"
-	line "room for this."
+	text "No tienes"
+	line "espacio para"
+	cont "esto."
 	done
 
 GrapefruitLassText:
-	text "The GRAPEFRUIT"
-	line "grown here are so"
-	cont "tasty!"
+	text "Las frutas que"
+	line "crecen aquí son"
+	cont "muy sabrosas."
 	done
 
 GrapefruitStore_MapEventHeader::

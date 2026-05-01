@@ -34,35 +34,35 @@ MoroFishingGuruScript:
 	end
 
 WantAGoodRodText:
-	text "Why, hello there!"
+	text "¡Bienvenido!"
 
-	para "I see you are a"
-	line "talented #MON"
-	cont "trainer!"
+	para "Veo que eres un"
+	line "talentoso "
+	cont "entrenador "
+	cont "#MON."
 
-	para "This GOOD ROD here"
-	line "might help you"
-	cont "with that #DEX"
-	cont "thing you got."
+	para "Esta CAÑA BUENA"
+	line "podria ayudarte"
+	cont "con la #DEX."
 
-	para "Would you like it?"
+	para "¿La quieres?"
 	done
 
 OhWellGoodRodText:
-	text "Ah, well."
+	text "Ah, bien."
 
-	para "If you change your"
-	line "mind I'll be right"
-	cont "here."
+	para "Si cambias de"
+	line "opinión, estare"
+	cont "aqui."
 	done
 
 AlreadyGotGoodRodText:
-	text "How goes the fish-"
-	line "ing, trainer?"
+	text "¿Como va la"
+	line "pesca?"
 	done
 
 GoodRodHappyFishingText:
-	text "Happy fishing!"
+	text "¡Feliz pesca!"
 	done
 
 MoroFishingHouse_MapEventHeader::

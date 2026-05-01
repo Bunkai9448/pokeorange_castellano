@@ -13,37 +13,37 @@ PummeloNurseScript:
 	jumpstd pokecenternurse
 
 PummeloSlouchScript:
-	faceplayer
 	opentext
 	writetext PummeloSlouchText
 	waitbutton
 	closetext
-	spriteface PUMMELO_SLOUCH, RIGHT
 	end
 
 PummeloSlouchText:
-	text "They say there was"
-	line "an ORANGE CREW"
-	cont "CHAMPION who sunk"
-	cont "at sea nearly 300"
+	text "Dicen que un"
+	line "campeon del"
+	cont "ORANGE CREW se"
+	cont "se hundio en"
 	
-	para "years ago. I think"
-	line "it was somewhere"
-	cont "near MORO ISLAND."
+	para "el mar hace"
+	line "300 años. Debio"
+	cont "ser cerca de"
+	cont "ISLA MORO"
 	done
 	
 PummeloCenterFisherScript:
 	jumptextfaceplayer PummeloCenterFisherScriptText
 	
 PummeloCenterFisherScriptText:
-	text "I've seen some"
-	line "rocky walls that"
-	cont "look climbable."
+	text "Estoy viendo"
+	line "paredes rocosas"
+	cont "que parecen"
+	cont "escalables"
 	
-	para "I wonder if there"
-	line "is a #MON"
-	cont "move that can do"
-	cont "it?"
+	para "Seria maravilloso"
+	line "que un mov."
+	cont "#MON pudiera"
+	cont "hacerlo."
 	done
 
 PummeloCenter_MapEventHeader::

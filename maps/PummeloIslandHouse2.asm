@@ -13,25 +13,26 @@ PummeloHouse2LassScript:
 	jumptextfaceplayer PummeloHouse2LassScriptText
 	
 PummeloHouse2GrampsScriptText:
-	text "When I was a young"
-	line "lad, I was adrift"
-	cont "at sea. I washed"
-	cont "up on a mysterious"
+	text "Cuando era joven,"
+	line "iba a la deriva"
+	cont "en el mar cuando"
+	cont "acabe en una"
 	
-	para "island, and there"
-	line "was a strange"
-	cont "tower. The folk"
-	cont "there saved me and"
+	para "isla misteriosa"
+	line "con una extraña"
+	cont "torre. La gente"
+	cont "de alli me salvo"
 	
-	para "that's why I'm"
-	line "here today!"
+	para "y por eso,estoy"
+	line "hoy aqui."
 	done
 
 PummeloHouse2LassScriptText:
-	text "Grandpa tells a"
-	line "lot of stories."
-	cont "Don't mind him if"
-	cont "it's unbelievable."
+	text "El abuelo "
+	line "cuenta muchas"
+	cont "historias. No"
+	cont "le importa que"
+	cont "sean fantasias."
 	done
 
 PummeloIslandHouse2_MapEventHeader:

@@ -25,39 +25,41 @@ YoungsterScript_0x69546:
 UnknownText_0x69809:
 	text "Don't interrupt me!"
 
-	para "I'm playing #-"
+	para "Estoy jugando #-"
 	line "MON Trading Card"
-	cont "Game 2!"
+	cont "Game 2."
 
-	para "GAH! Why do I al-"
-	line "ways get TAILS?!"
+	para "¡GAH! Siempre"
+	line "sale cruz."
 	done
 
 UnknownText_0x6983c:
-	text "It was around half"
-	line "a year ago."
+	text "Ocurrió hace"
+	line "medio año."
 
-	para "TEAM ROCKET was up"
-	line "to no good with"
-	cont "#MON."
+	para "El TEAM ROCKET "
+	line "no fue bueno con"
+	cont "los #MON."
 
-	para "But justice pre-"
-	line "vailed--a young"
-	cont "kid broke 'em up."
+	para "Pero la justicia"
+	line "prevaleció en "
+	cont "forma de niño que"
+	cont "los vapuleo."
 	done
 
 UnknownText_0x698b8:
-	text "#MON are smart."
-	line "They won't obey a"
+	text "Los #MON solo"
+	line "obedecen al"
 
-	para "trainer they don't"
-	line "respect."
+	para "entrenador que"
+	line "respetan."
 
-	para "Without the right"
-	line "BADGES, they"
+	para "Si no se tienen"
+	line "las MEDALLAS,"
 
-	para "will just do as"
-	line "they please."
+	para "ellos hara lo "
+	line "que les dé la"
+	cont "gana."
 	done
 
 MikanPokeCenter1F_MapEventHeader::

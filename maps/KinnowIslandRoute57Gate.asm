@@ -33,25 +33,25 @@ KinnowOfficerScript:
 	end
 
 OfficerJenny2DaytimeText:
-	text "Be careful out"
-	line "there, kid."
+	text "Chico, ten cui-"
+	line "dado por aquí."
 
-	para "If you're headed"
-	line "to NAVEL ISLAND,"
-	cont "stock up on FULL"
-	cont "HEAL."
+	para "Si te empeñas"
+	line "en ir a ISLA NAVEL"
+	cont "lleva muchos"
+	cont "CURA TOTAL."
 	done
 	
 OfficerJenny2SeenText:
-	text "Hey, it's pretty"
-	line "boring around here"
-	cont "at night. Let's"
-	cont "have a battle!"
+	text "Ey, es muy "
+	line "aburrido estar "
+	cont "aquí por la noche."
+	cont "¡Combatamos!"
 	done
 
 OfficerJenny2WinText:
-	text "You're a tough"
-	line "little kid."
+	text "Es mas que"
+	line "suficiente."
 	done
 
 

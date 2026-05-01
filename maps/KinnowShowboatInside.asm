@@ -31,23 +31,26 @@ KinnowShowboatJace:
 	end
 	
 KinnowShowboatJaceText1:
-	text "Ah, I see you"
-	line "have the CORAL-"
-	cont "EYE BADGE."
+	text "Ah,veo que"
+	line "tienes la medalla"
+	cont "OJO DE CORAL."
 	
-	para "Per my master's"
-	line "order, we battle!"
+	para "Por orden de mi"
+	line "maestro,"
+	cont "combatamos."
 	done
 	
 JaceWinLossText:
-	text "Splendid, I can"
-	line "go home now."
+	text "Espléndido,ya"
+	line "puedo irme a"
+	cont "casa."
 	done
 	
 KinnowShowboatJaceText2:
-	text "You'll need the"
-	line "SEA RUBY BADGE to"
-	cont "go further!"
+	text "Necesitaras la"
+	line "medalla RUBI"
+	cont "MARINO para"
+	cont "avanzar."
 	done
 	
 KinnowShowboatKurt:
@@ -79,32 +82,35 @@ KinnowShowboatKurt:
 	end
 
 KinnowShowboatKurtText1:
-	text "Ah, I see you have"
-	line "the SEA RUBY"
-	cont "BADGE."
+	text "Ah, veo que"
+	line "tienes la medalla"
+	cont "RUBI MARINO."
 	
-	para "We were instructed"
-	line "to fight you!"
+	para "Estamos"
+	line "adiestrados para"
+	cont "combatir contra"
+	cont "ti."
 	done
 	
 KurtWinLossText:
-	text "I was hoping to"
-	line "stay a little"
-	cont "longer<...>"
+	text "Tenía la"
+	line "esperanza de "
+	cont "resistirte<...>"
 	done
 	
 KinnowShowboatKurtText2:
-	text "Got a concert to"
-	line "get to, but come"
-	cont "back with the"
-	cont "SPIKE SHELL BADGE!"
+	text "Tengo un acuerdo"
+	line "para dejarte"
+	cont "pasar si vienes"
+	cont "con la medalla"
+	cont "CONCHA ESPINA."
 	done
 	
 KinnowShowboatKurtText3:
-	text "Ah, you don't have"
-	line "a SEA RUBY BADGE."
-	cont "Come back when you"
-	cont "do!"
+	text "Ah,no tienes la"
+	line "medalla CONCHA"
+	cont "ESPINA. Vuelve"
+	cont "cuando la tengas."
 	done
 
 KinnowShowboatKat:
@@ -136,30 +142,33 @@ KinnowShowboatKat:
 	end
 	
 KinnowShowboatKatText1:
-	text "Meow! That's a"
-	line "SPIKE SHELL BADGE!"
-	cont "Let's battle!"
+	text "¡Meow! Es la"
+	line "medalla CONCHA"
+	cont "ESPINA,"
+	cont "¡Luchemos!"
 	done
 	
 KatWinLossText:
-	text "This is so much"
-	line "more fun than"
-	cont "when I lived on"
-	cont "GOLDEN ISLAND!"
+	text "Era mucho mas"
+	line "divertido cuando"
+	cont "vivía en ISLA"
+	cont "GOLDEN."
 	done
 	
 KinnowShowboatKatText2:
-	text "Meow. Come back"
-	line "with the JADE STAR"
-	cont "BADGE to battle"
-	cont "the commander!"
+	text "Meow. Vuelve"
+	line "con la medalla"
+	cont "ESTRELLA JADE"
+	cont "para luchar con"
+	cont "EL COMANDANTE."
 	done
 	
 KinnowShowboatKatText3:
-	text "Mu<...> You don't"
-	line "have a SPIKE SHELL"
-	cont "BADGE. Battle?"
-	cont "No can do!"
+	text "Mu<...> No tienes"
+	line "la medalla CONCHA"
+	cont "ESPINA."
+	cont "¿Combatir?"
+	cont "¡No podemos!"
 	done
 	
 KinnowShowboatAlice:
@@ -191,29 +200,30 @@ KinnowShowboatAlice:
 	end
 	
 KinnowShowboatAliceText1:
-	text "We aren't actually"
-	line "employees here<...>"
-	cont "We're under orders"
-	cont "to make you"
+	text "No somos  "
+	line "gente aqui<...>"
+	cont "Tenemos órdenes"
+	cont "de hacerte mas"
 	
-	para "stronger!"
+	para "fuerte."
 	done
 	
 AliceWinLossText:
-	text "Mission<...>"
-	line "Accomplished!"
+	text "¡Misión<...>"
+	line "conseguida!"
 	done
 	
 KinnowShowboatAliceText2:
-	text "Whelp, see you"
-	line "around! Maybe?"
+	text "¿Nos veremos"
+	line "otra vez?"
 	done
 	
 KinnowShowboatAliceText3:
-	text "Oh no, sweetie."
-	line "No JADE STAR?"
-	cont "Come back when"
-	cont "you get it!"
+	text "Oh no, cari."
+	line "¿Y la ESTRELLA"
+	cont "DE JADE?."
+	cont "Vuelve cuando"
+	cont "la tengas."
 	done
 	
 KinnowShowboatAnne:
@@ -268,38 +278,40 @@ KinnowShowboatLen:
 	end
 	
 FrozenNPCText:
-	text "Looks like a STAFF"
-	line "member from the"
-	cont "SHOWBOAT. It's"
-	cont "like they're"
+	text "Parece como si los"
+	line "tripulantes del"
+	cont "BARCO-SHOW"
+	cont "estuvieran"
+	cont "congelados en"
 	
-	para "frozen in time!"
+	para "el tiempo."
 	done
 	
 KinnowShowboatAnneText:
-	text "What happened? I"
-	line "was getting ready"
-	cont "for the show when"
-	cont "suddenly I<...>"
+	text "¿Que ha pasado?"
+	line "Estaba listo"
+	cont "para el show"
+	cont "cuando yo<...>"
 	
-	para "I guess I fainted?"
+	para "¿Me he debilitado?"
 	done
 	
 KinnowShowboatRogerText:
-	text "Strange<...>"
-	line "My memory feels"
-	cont "foggy<...>"
+	text "Extraño<...>"
+	line "Mi memoria esta"
+	cont "en una bruma<...>"
 	
-	para "Thanks for talking"
-	line "to an old man!"
-	cont "Got to get ready"
-	cont "for the next show."
+	para "Gracias por estar"
+	line "hablando con"
+	cont "un viejo. Estoy"
+	cont "listo para el"
+	cont "siguiente show."
 	done
 	
 KinnowShowboatLenText:
-	text "Huh<...>What"
-	line "happened? Is the"
-	cont "show cancelled?"
+	text "Huh<...>¿Que"
+	line "ha pasado? ¿Esta"
+	cont "el show cancelado?"
 	done
 	
 KinnowShowboatKay:
@@ -321,22 +333,23 @@ KinnowShowboatKay:
 	end
 	
 ShowboatKayText:
-	text "Thank you for"
-	line "making those"
-	cont "weirdos leave!"
+	text "Gracias por"
+	line "echar a estos"
+	cont "idiotas."
 	
-	para "Here, I hope this"
-	line "helps you out!"
+	para "Espero que esto"
+	line "te ayude."
 	done
 	
 ShowboatKayText2:
-	text "Those guys came"
-	line "out of nowhere"
-	cont "after we docked."
+	text "Estos tipos"
+	line "salieron de la"
+	cont "nada despues de"
+	cont "atracar."
 	
-	para "It was almost like"
-	line "we were frozen in"
-	cont "place!"
+	para "Es como si"
+	line "estuvieramos"
+	cont "congelados aqui."
 	done
 
 KinnowShowboatInside_MapEventHeader::

@@ -8,10 +8,11 @@ Route68Sign:
 	jumptext Route68SignText
 	
 Route68SignText:
-	text "ROUTE 68"
+	text "RUTA 68"
 	
-	para "I wonder who drew"
-	line "these map lines?"
+	para "Me gustaria saber"
+	line "quien diseña "
+	cont "estos mapas..."
 	done
 ;=================================
 ;=================================
@@ -28,18 +29,19 @@ TrainerSwimmerFMelly:
 	end
 
 SwimmerFMellySeenText:
-	text "WATER #MON"
-	line "are the best!"
+	text "Los #MON"
+	line "de agua son"
+	cont "los mejores."
 	done
 
 SwimmerFMellyBeatenText:
-	text "My point still"
-	line "stands!"
+	text "¡Me mantengo a"
+	line "flote!"
 	done
 
 SwimmerFMellyAfterText:
-	text "My point still"
-	line "stands!"
+	text "¡Me mantengo a"
+	line "flote!"
 	done
 	
 ;=================================
@@ -57,9 +59,9 @@ TrainerSwimmerFSally:
 	end
 
 SwimmerFSallySeenText:
-	text "My favorite ORANGE" 
-	line "CREW member is"
-	cont "CISSY!"
+	text "Mi miembro favorito"
+	line "del ORANGE CREW es"
+	cont "CISSY."
 	done
 
 SwimmerFSallyBeatenText:
@@ -67,8 +69,9 @@ SwimmerFSallyBeatenText:
 	done
 
 SwimmerFSallyAfterText:
-	text "I can see how you"
-	line "beat CISSY<...>"
+	text "Pude ver como"
+	line "vencerás a"
+	cont "CISSY<...>"
 	done
 	
 ;=================================
@@ -86,8 +89,8 @@ TrainerSwimmerFRue:
 	end
 
 SwimmerFRueSeenText:
-	text "ROUTE 68<...>"
-	line "It's quite small."
+	text "RUTA 68<...>"
+	line "Es cortita."
 	done
 
 SwimmerFRueBeatenText:
@@ -95,8 +98,8 @@ SwimmerFRueBeatenText:
 	done
 
 SwimmerFRueAfterText:
-	text "Can you really"
-	line "call this a ROUTE?"
+	text "¿Realmente puedes"
+	line "llamarlo ruta?"
 	done
 
 Route68_MapEventHeader::

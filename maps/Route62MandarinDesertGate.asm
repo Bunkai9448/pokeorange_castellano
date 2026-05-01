@@ -11,16 +11,18 @@ R62MandarinGateOfficerScript:
 	jumptextfaceplayer R62MandarinOfficer_Text
 
 R62MandarinOfficer_Text:
-	text "There are a lot"
-	line "of wild #MON"
-	cont "in the DESERT!"
+	text "¡Hay un montón"
+	line "de #MON"
+	cont "salvajes en el"
+	cont "desierto!"
 
-	para "There aren't any"
-	line "trainers, though!"
-	cont "SANDSTORM is real"
-	cont "harsh, kid!"
+	para "No hay entrena-"
+	line "dores, porque"
+	cont "la tormenta de"
+	cont "arena es muy"
+	cont "peligrosa."
 	
-	para "Be careful!"
+	para "¡Ten cuidado!"
 	done
 
 Route62MandarinDesertGate_MapEventHeader:

@@ -52,15 +52,18 @@ Route67UnderwaterSeashellScript:
 	end
 	
 Route67UnderwaterNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "Una bonita"
+    line "concha marina,"
+    cont "parece muy"
+    cont "frágil para"
+	cont "guardar en la"
+	cont "mochila."
     done
 	
 FoundRoute67UnderwaterSeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "Encontraste una"
+	line "rara concha"
+	cont "marina."
 	done
 	
 Route67Underwater_MapEventHeader::

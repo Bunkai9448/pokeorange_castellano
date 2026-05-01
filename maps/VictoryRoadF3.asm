@@ -28,11 +28,11 @@ TrainerDiverMCaos:
 	end
 
 DiverMCaosSeenText:
-	text "Hola, amigo!"
+	text "¡Hola, amigo!"
 	done
 
 DiverMCaosBeatenText:
-	text "En serio!?"
+	text "¿En serio?"
 	done
 
 DiverMCaosAfterText:
@@ -55,23 +55,25 @@ TrainerSightseerMCoral:
 	end
 
 SightseerMCoralSeenText:
-	text "You seem strong!"
-	line "Battle me!"
+	text "¡Pareces fuerte!"
+	line "¡Combatamos!"
 	done
 
 SightseerMCoralBeatenText:
-	text "Save the reefs!"
+	text "¡Salva los"
+	line "arrecifes!"
 	done
 
 SightseerMCoralAfterText:
-	text "I just came from"
-	line "an island called"
+	text "Acabo de llegar"
+	line "de la isla"
 	cont "PORTA VISTA."
 	
-	para "The mayor there,"
-	line "NASTINA, killed a"
-	cont "reef to build a"
-	cont "hotel. Tragic."
+	para "El alcalde,"
+	line "NASTINA, mato"
+	cont "los arrecifes"
+	cont "para construir un"
+	cont "hotel. Tragico."
 	done
 	
 ;=================================
@@ -89,26 +91,28 @@ TrainerDiverMMonsta:
 	end
 
 DiverMMonstaSeenText:
-	text "Rode on a WAILORD"
-	line "and somehow ended"
-	cont "up here<...>"
+	text "Surfeaba en"
+	line "WAILORD y acabe"
+	cont "aqui<...>"
 	done
 
 DiverMMonstaBeatenText:
-	text "Another white out!"
+	text "¡Otro corrector"
+	line "blanco!"
 	done
 
 DiverMMonstaAfterText:
-	text "I'm just a man,"
-	line "standing in the"
-	cont "dusk<...>"
+	text "Solo soy un"
+	line "hombre parado"
+	cont "en el anochecer"
+	cont "<...>"
 
-	para "looking at the"
-	line "seagulls<...>"
+	para "Estoy observando"
+	line "las gaviotas<...>"
 
-	para "KOONTZ can sing"
-	line "that much better"
-	cont "than I can<...>"
+	para "KOONTZ canta"
+	line "mucho mejor que"
+	cont "yo<...>"
 	done
 	
 ;=================================
@@ -126,18 +130,18 @@ TrainerHikerSour:
 	end
 
 HikerSourSeenText:
-	text "Gwahaha! Almost"
-	line "at the end!"
+	text "¡Gwahaha! ¡Casi"
+	line "al final!"
 	done
 
 HikerSourBeatenText:
-	text "Perfection!"
+	text "¡Perfeccion!"
 	done
 
 HikerSourAfterText:
-	text "I could go for"
-	line "a bowl of POTATO"
-	cont "SOUP."
+	text "Podria ir por"
+	line "un BOL DE SOPA"
+	cont "DE PATATA."
 	done
 	
 VictoryRoadF3ShadowClaw:

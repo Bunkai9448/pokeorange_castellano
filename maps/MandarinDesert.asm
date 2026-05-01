@@ -22,23 +22,22 @@ MandarinDesertSign:
 	jumptext MandarinDesertSignText
 	
 MandarinDesertSignText:
-	text "MANDARIN DESERT"
+	text "DES. MANDARINA"
 	
-	para "BEWARE!"
+	para "¡CUIDADO!"
 	
-	para "SANDSTORM hurts"
-	line "any #MON that"
-	cont "isn't STEEL, ROCK,"
-	cont "or GROUND-type!"
+	para "Torm.Arena hiere"
+	line "a los #MON que no"
+	cont "tipo ROCA,ACERO"
+	cont "o TIERRA."
 	done
 
 MandarinDesert_MapEventHeader::
 
-.Warps: db 4
+.Warps: db 3
 	warp_def 5, 8, 1, SUNRAY_CAVE_MANDARIN_DESERT_1F
 	warp_def 45, 41, 1, ROUTE_62_MANDARIN_DESERT_GATE
 	warp_def 45, 42, 2, ROUTE_62_MANDARIN_DESERT_GATE
-	warp_def 17, 18, 2, ROUTE_62
 
 .CoordEvents: db 0
 

@@ -63,33 +63,34 @@ TarrocoBetaEndScript:
 	end
 
 TarrocoBetaEndScriptText:
-	text "PIACRT: Thanks for"
-	line "playing ORANGE!"
-	cont "The beta is over,"
-	cont "and we are hard at"
-	cont "work on a new base"
-	cont "to make the game"
-	cont "even better."
+	text "PIACRT: ¡Gracias"
+	line "por jugar ORANGE!"
+	cont "Completaste la"
+	cont "beta. Estamos"
+	cont "trabajando duro"
+	cont "en una nueva base"
+	cont "para hacer el "
+	cont "juego mejor."
 	
-	para "If you haven't"
-	line "gone to SHAMOUTI"
-	cont "ISLAND yet, there's"
-	cont "a whole quest for"
-	cont "you! Go get on the"
-	cont "boat at KUMQUAT!"
-	para "Do you want me to"
-	line "teleport you"
-	cont "there?"
+	para "Si no has ido "
+	line "aun a ISLA "
+	cont "SHAMOUTI,tines"
+	cont "ahi una misión"
+	cont "que cumplir. Ve"
+	cont "en barco a"
+	para "KUMQUAT. ¿Quieres"
+	line "que te teletrans-"
+	cont "porte desde aquí?"
 	done
 
 TarrocoBetaEndScriptNoteleportText:
-	text "I see, you have"
-	line "your own means."
+	text "Ya veo, tienes"
+	line "tus propias metas."
 	
-	para "There's not much"
-	line "on this island,"
-	cont "but you might be"
-	cont "in for a surprise."
+	para "No hay mucho en"
+	line "en esta isla, pero"
+	cont "quizas te lleves"
+	cont "una soprpresa."
 	done
 
 TarrocoStub:
@@ -123,40 +124,40 @@ TarrocoIslandCelebiScript:
 	end
 
 CelebiText:
-	text "What a peculiar"
-	line "old shrine..."
+	text "Un antiguo"
+	line "santuario..."
 	
-	para "There seems to be"
-	line "an inscription:"
+	para "Parece haber"
+	line "una inscripcion."
 	
 	para "        GS"
 	
-	para "Where have I seen"
-	line "that symbol?"
+	para "¿Donde he visto"
+	line "este simbolo?"
 	
-	para "Mmm... Oh right!"
-	line "The GS Ball!"
+	para "Mmm... ¡Ah si!"
+	line "¡La GS Ball!"
 
-	para "It seems there's"
-	line "also a slot in it,"
-	cont "it is suspiciously"
-	cont "about the same"
-	cont "size as the GS"
+	para "Parece haber un"
+	line "sumamente sos-"
+	cont "pechoso del "
+	cont "mismo tamaño"
+	cont "que la GS"
 	cont "Ball..."
 	
 	
-	para "<PLAYER> put"
-	line "the GS Ball in"
-	cont "the shrine."
+	para "<PLAYER> puso"
+	line "la GS Ball en"
+	cont "el santuario."
 	
 	done
 
 CelebiFoughtText:
-	text "I just had a"
-	line "deja vu..."
+	text "Tuve un deja"
+	line " vu..."
 	done
 CelebiFoughtText2:
-	text "What was that?"
+	text "¿Que fue eso?"
 	done
 
 TarrocoIsland_MapEventHeader::

@@ -917,25 +917,27 @@ FiveQMarkString: ; 4e3c4
 	db "?????@"
 
 EggSoonString: ; 0x4e3ca
-	db   "It's making sounds"
-	next "inside. It's going"
-	next "to hatch soon!@"
+	db   "Se escuchan"
+	next "ruidos. ¡Pronto"
+	next "saldrá!@"
 
 EggCloseString: ; 0x4e3fd
-	db   "It moves around"
-	next "inside sometimes."
-	next "It must be close"
-	next "to hatching.@"
+	db   "A veces se"
+	next "mueve. Debe"
+	next "estar a punto"
+	next "de salir.@"
 
 EggMoreTimeString: ; 0x4e43d
-	db   "Wonder what's"
-	next "inside? It needs"
-	next "more time, though.@"
+	db   "¿Qué habrá"
+	next "dentro? Tendrás"
+	next "que esperar un"
+	next "poco mas.@"
 
 EggALotMoreTimeString: ; 0x4e46e
-	db   "This EGG needs a"
-	next "lot more time to"
-	next "hatch.@"
+	db   "Parece que al"
+	next "huevo le va a"
+	next "costar mucho"
+	next "abrirse.@"
 ; 0x4e497
 
 

@@ -30,32 +30,35 @@ Route67AttractTutor:
 	end
 
 GivePlayerAttractText:
-	text "Hey, cutie!"
+	text "Ey, monada"
 	line "<...>"
 	
-	para "Hmm, you're cute,"
-	line "but you have no"
-	cont "game!"
+	para "Hmm, eres tan"
+	line "mono, pero no"
+	cont "tienes opción"
+	cont "conmigo."
 	
-	para "OK!"
+	para "¡OK!"
 	
-	para "I'll teach your"
-	line "#MON how to"
-	cont "ATTRACT for you!"
+	para "Enseñare a tus"
+	line "#MON como"
+	cont "aprender"
+	cont "ATRACCION."
 	
-	para "Want to learn"
-	line "ATTRACT?"
+	para "¿Quieres que"
+	line "aprendan"
+	cont "ATRACCION?"
 	done
 	
 Text_AttractTutorTaught:
-	text "ATTRACT charms"
-	line "#MON of the"
-	cont "opposite gender."
+	text "ATRACCION nubla"
+	line "a los #MON del"
+	cont "genero opuesto."
 	done
 	
 Text_AttractTutorRefused:
-	text "Tell me if you"
-	line "change your mind!"
+	text "Si cambias de"
+	line "opinión, me dices."
 	done
 	
 Text_AttractTutorClear:

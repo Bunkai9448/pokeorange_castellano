@@ -34,37 +34,39 @@ CrystalCave1FMysticWater:
 	itemball MYSTIC_WATER
 
 Brock1FText:
-	text "Why, hello there."
+	text "Hola, por aquí."
 
-	para "I'm BROCK, leader"
-	line "of the PEWTER CITY"
-	cont "#MON GYM."
+	para "Soy BROCK,"
+	line "de CIUDAD"
+	cont "PLATEADA y"
+	cont "lider del GIM"
+	cont "#MON."
 
-	para "I am looking for"
-	line "the legendary"
-	cont "CRYSTAL ONIX."
+	para "Estoy buscando "
+	line "al legendario"
+	cont "ONIX DE CRISTAL."
 
-	para "You can come, too,"
-	line "but if it comes"
-	cont "down to it, I will"
-	cont "battle you for it."
+	para "Puedes venir,"
+	line "pero si lo haces"
+	cont "probare tu valía"
+	cont "en un combate."
 	done
 
 BrockNoText:
-	text "No sweat, then!"
-    line "Let me know if"
-    cont "you change your"
-	cont "mind."
+	text "¡Sin problema!"
+    line "Hazme saber si"
+    cont "cambias de"
+	cont "opinión."
 	done
 
 BrockOkText:
-	text "Alright, then!"
-	line "It should be far"
-	cont "deeper into the"
-	cont "cave."
+	text "De acuerdo,"
+	line "debería estar"
+	cont "mas profundo"
+	cont "en la cueva."
 
-	para "Keep up if you"
-	line "can!"
+	para "Aguanta el ritmo"
+	line "si puedes."
 	done
 
 Brock_Movement:

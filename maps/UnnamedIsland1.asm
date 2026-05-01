@@ -27,11 +27,11 @@ CooltrainerKeikoScript:
 	end
 
 CooltrainerKeikoSeenText:
-	text "On your way to"
-	line "NAVEL ISLAND?"
+	text "¿Vas de camino"
+	line "a ISLA NAVEL?"
 
-	para "Sorry, but you"
-	line "won't be seeing"
+	para "Lo siento, pero"
+	line "no veras a "
 	cont "DANNY."
 	done
 
@@ -40,10 +40,10 @@ CooltrainerKeikoBeatenText:
 	done
 
 CooltrainerKeikoAfterText:
-	text "DANNY doesn't let"
-	line "anyone on the is-"
-	cont "land unless they"
-	cont "are a challenger."
+	text "DANNY no recibe"
+	line "a nadie en la"
+	cont "isla salvo que"
+	cont "sea un aspirante."
 	done
 
 UnnamedIslandTM:

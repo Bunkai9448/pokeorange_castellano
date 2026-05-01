@@ -38,23 +38,26 @@ TrainerYoungsterHiruma:
 	end
 	
 YoungsterHirumaSeenText:
-	text "Hey, I know you!"
+	text "¡Oye, te conozco!"
 
-	para "You're <PLAYER>,"
-	line "from VALENCIA IS-"
-	cont "LAND. We left near"
-	cont "the same time!"
+	para "Eres <PLAYER>"
+	line "de la ISLA"
+	cont "VALENCIA. ¡Nos"
+	cont "fuimos casi al"
+	cont "mismo tiempo!"
 	done
 	
 YoungsterHirumaWinText:
-	text "Should've caught"
-	line "more #MON"
-	cont "along the way."
+	text "Debería haber"
+	line "visto más"
+	cont "#MON por"
+	cont "el camino."
 	done
 	
 YoungsterHirumaAfterText:
-	text "Not bad. I need"
-	line "to train hard!"
+	text "No está mal."
+	line "¡Tengo que"
+	cont "entrenar duro!"
 	done
 	
 
@@ -71,43 +74,46 @@ TrainerLassFuyumi:
 	end
 	
 LassFuyumiSeenText:
-	text "Where are you"
-	line "going?"
+	text "¿Donde vas?"
 	
-	para "Play with me for a"
-	line "minute!"
+	para "¡Juega conmigo un"
+	line "minuto!"
 	done
 	
 LassFuyumiWinText:
-	text "Sniffle<...>"
+	text "Resoplido<...>"
 	done
 	
 LassFuyumiAfterText:
-	text "I didn't say you"
-	line "could knock all"
-	cont "my #MON out!"
+	text "¡No dije que"
+	line "pudieras noquear"
+	cont "a todos mis"
+	cont "#MON!"
 	
-	para "You meanie!"
+	para "¡Eres malo!"
 	done
 	
 Route62Sign:
 	jumptext R62SignText
 	
 R62SignText:
-	text "ROUTE 62"
-	line "to MANDARIN DESERT"
+	text "RUTA 62"
+	line "al DESIERTO"
+	cont "MANDARÍN"
 	done
 	
 Route62ClimbSign:
 	jumptext R62ClimbSignText
 	
 R62ClimbSignText:
-	text "Hidden in the mou-"
-	line "tain lies SUNRAY"
-	cont "CAVE."
+	text "Escondido en la"
+	line "montaña se"
+	cont "encuentra la"
+	cont "CUEVA SUNRAY."
 	
-	para "At the peak, the"
-	line "rainbow awaits."
+	para "En la cima, el"
+	line "arcoíris"
+	cont "aguarda."
 	done
 	
 Route62TraceyScript:
@@ -139,37 +145,40 @@ Route62TraceyScript:
 	end
 	
 TraceyRoute62Text:
-	text "TRACEY: Well, look"
-	line "who it is!"
+	text "TRACEY: ¡Vaya,"
+	line "mira quién"
+	cont "está aquí!"
 	
-	para "<PLAYER>, how's it"
-	line "going? I bet you"
-	cont "got a lot stronger"
-	cont "since ROUTE 56!"
+	para "<PLAYER>, ¿qué"
+	line "tal? ¡Apuesto a"
+	cont "que te has vuelto"
+	cont "mucho más fuerte"
+	cont "desde la RUTA 56!"
 	
-	para "Why don't we test"
-	line "my theory in a"
-	cont "battle!"
+	para "¿Por qué no"
+	line "ponemos a prueba"
+	cont "mi teoría en una"
+	cont "batalla?"
 	done
 	
 TraceyRoute62WinLoss:
-	text "Unbelievable!"
+	text "¡Increíble!"
 	done
 	
 TraceyRoute62LeavingNowText:
-	text "TRACEY: I'm headed"
-	line "to TROVITOPOLIS!"
+	text "TRACEY: ¡Me dirijo"
+	line "a Trovitópolis!"
 	
-	para "I've heard they"
-	line "have a huge prob-"
-	cont "lem due to their"
-	cont "mayor."
+	para "He oído que tienen"
+	line "un gran problema"
+	cont "debido a su"
+	cont "alcalde."
 	
-	para "I'm going to go"
-	line "see if I can"
-	cont "help them!"
+	para "¡Voy a ir a ver si"
+	line "puedo ayudarlos!"
 	
-	para "Seeya, <PLAYER>!"
+	para "¡Nos vemos,"
+	line "<PLAYER>!"
 	done
 	
 Tracey62_Movement:
@@ -180,9 +189,8 @@ Tracey62_Movement:
 
 Route62_MapEventHeader::
 
-.Warps: db 2
+.Warps: db 1
 	warp_def 7, 6, 3, ROUTE_62_MANDARIN_DESERT_GATE
-	warp_def  7, 44, 4, MANDARIN_DESERT
 
 .CoordEvents: db 0
 
@@ -198,4 +206,3 @@ Route62_MapEventHeader::
 	person_event SPRITE_LASS, 23, 37, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerLassFuyumi, -1
 	person_event SPRITE_YOUNGSTER, 22, 23, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerYoungsterHiruma, -1
 	person_event SPRITE_TRACEY, 9, 5, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, Route62TraceyScript, EVENT_ROUTE_62_TRACEY
-

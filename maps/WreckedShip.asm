@@ -32,15 +32,18 @@ WreckedShipSeashellScript:
 	end
 	
 WreckedShipNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "¡Una bonita "
+    line "concha marina!"
+    cont "Parece muy"
+    cont "fragil para"
+	cont "llevar en la"
+	cont "mochila."
     done
 	
 FoundWreckedShipSeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "¡Encontraste una"
+	line "rara concha"
+	cont "marina."
 	done
 
 

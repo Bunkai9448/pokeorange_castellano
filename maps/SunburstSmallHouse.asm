@@ -10,11 +10,12 @@ SunburstCooltrainerScript:
 	jumptextfaceplayer SunburstCooltrainerText
 
 SunburstCooltrainerText:
-	text "I saw them!"
+	text "¡LOS VI!"
 
-	para "WAILMER on ROUTE"
-	line "55! Isn't the"
-	cont "ocean amazing?"
+	para "Hay WAILMER en"
+	line "la RUTA 55! ¿No"
+	cont "es el oceano"
+	cont "sorprendente?"
 	done
 
 SunburstSmallHouse_MapEventHeader::

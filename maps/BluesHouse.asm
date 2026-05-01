@@ -66,82 +66,84 @@ UnknownScript_0x19b12a:
 	end
 
 UnknownText_0x19b130:
-	text "DAISY: Hi! My kid"
-	line "brother is the GYM"
+	text "DAISY:¡Hola!"
+	line "Mi hermano"
+	cont "pequeño es el"
 
-	para "LEADER in VIRIDIAN"
-	line "CITY."
+	para "lider de gimnasio"
+	line "de CIUDAD VERDE."
 
-	para "But he goes out"
-	line "of town so often,"
+	para "Pero suele viajar"
+	line "con frecuencia."
 
-	para "it causes problems"
-	line "for the trainers."
+	para "Eso afecta a los"
+	line "los entrenadores."
 	done
 
 UnknownText_0x19b1b6:
-	text "DAISY: Hi! Good"
-	line "timing. I'm about"
-	cont "to have some tea."
+	text "DAISY:¡Hola! En"
+	line "buen momento"
+	cont "vienes. Me iba a"
+	cont "servir un té."
 
-	para "Would you like to"
-	line "join me?"
+	para "¿Querrías unirte"
+	line "a mi?"
 
-	para "Oh, your #MON"
-	line "are a bit dirty."
+	para "Oh,tus #MON estan"
+	line "algo sucios."
 
-	para "Would you like me"
-	line "to groom one?"
+	para "¿Te gustaría que"
+	line "limpie alguno?"
 	done
 
 UnknownText_0x19b244:
-	text "DAISY: Which one"
-	line "should I groom?"
+	text "DAISY: ¿Cual "
+	line "debería limpiar?"
 	done
 
 UnknownText_0x19b266:
-	text "DAISY: OK, I'll"
-	line "get it looking"
-	cont "nice in no time."
+	text "DAISY: OK,lo"
+	line "dejaré limpito"
+	cont "en nada."
 	done
 
 UnknownText_0x19b296:
 	text_from_ram StringBuffer3
-	text " looks"
-	line "content."
+	text "Parece"
+	line "contento."
 	done
 
 UnknownText_0x19b2aa:
-	text "DAISY: There you"
-	line "go! All done."
+	text "DAISY: Ya esta"
+	line "todo hecho."
 
-	para "See? Doesn't it"
-	line "look nice?"
+	para "¿Ves? ¿No te "
+	line "luce mejor?"
 
-	para "It's such a cute"
+	para "Esta mas bonito"
 	line "#MON."
 	done
 
 UnknownText_0x19b2fa:
-	text "DAISY: I always"
-	line "have tea around"
+	text "DAISY: Siempre"
+	line "tengo mas te"
 
-	para "this time. Come"
-	line "join me."
+	para "Ven,"
+	line "unete."
 	done
 
 UnknownText_0x19b334:
-	text "DAISY: You don't"
-	line "want to have one"
+	text "DAISY:¿No quieres"
+	line "que limpie a"
 
-	para "groomed? OK, we'll"
-	line "just have tea."
+	para "a nadie? OK,"
+	line "solo té."
 	done
 
 UnknownText_0x19b377:
-	text "DAISY: Oh, sorry."
-	line "I honestly can't"
-	cont "groom an EGG."
+	text "DAISY: Oh,perdón."
+	line "No puedo limpiar"
+	cont "un huevo."
 	done
 
 BluesHouse_MapEventHeader:

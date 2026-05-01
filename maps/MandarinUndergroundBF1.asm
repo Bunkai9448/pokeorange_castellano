@@ -21,25 +21,28 @@ TrainerEngineerTake:
 	end
 	
 EngineerTakeSeenText:
-	text "Hey, kid! This is"
-	line "a construction"
-	cont "site! You can't be"
-	cont "around here!"
+	text "Ey,chaval.Este"
+	line "sitio esta en"
+	cont "construcción. No"
+	cont "puedes estar por"
+	cont "aquí."
 	done
 	
 EngineerTakeWinText:
-	text "Scram!"
+	text "¡Scram!"
 	done
 	
 EngineerTakeAfterText:
-	text "We're building a"
-	line "RADIO TOWER here"
-	cont "for those SILPH"
-	cont "CO. employees!"
+	text "Estamos"
+	line "construyendo una"
+	cont "TORRE DE RADIO"
+	cont "para los"
+	cont "empleados de"
+	cont "SILPH S.A."
 	
-	para "What were their"
-	line "names again? Oh,"
-	cont "right! BOOF and"
+	para "Recuerdame cuales"
+	line "eran sus nombres."
+	cont "¡Ah si! BOOF y"
 	cont "CASSIDY!"
 	done
 
@@ -56,20 +59,21 @@ TrainerEngineerMura:
 	end
 	
 EngineerMuraSeenText:
-	text "Ahh, now look what"
-	line "you've done!"
+	text "Ahh, mira lo"
+	line "que has hecho."
 	
-	para "You stepped on my"
-	line "switch!"
+	para "Has pisado mi"
+	line "interruptor."
 	done
 	
 EngineerMuraWinText:
-	text "I think it's bent."
+	text "Lo has doblado."
 	done
 	
 EngineerMuraAfterText:
-	text "I guess I'll have"
-	line "put in a new one."
+	text "Parece que"
+	line "tendre que poner"
+	cont "uno nuevo."
 	done
 
 MandarinUndergroundBF1_MapEventHeader::

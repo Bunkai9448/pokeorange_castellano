@@ -879,8 +879,8 @@ GiveTakeItemMenuData: ; 12c9b
 .Items:
 	db %10000000 ; x padding
 	db 2 ; # items
-	db "GIVE@"
-	db "TAKE@"
+	db "DAR@"
+	db "QUITAR@"
 ; 12caf
 
 
@@ -1066,9 +1066,9 @@ MonMailAction: ; 12d45
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "READ@"
-	db "TAKE@"
-	db "QUIT@"
+	db "LEER@"
+	db "DAR@"
+	db "QUITAR@"
 ; 0x12de2
 
 

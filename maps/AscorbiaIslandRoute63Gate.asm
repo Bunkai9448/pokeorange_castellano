@@ -11,30 +11,31 @@ AscorbiaOfficerScript:
 	jumptextfaceplayer AscorbiaOfficerText
 
 AscorbiaOfficerText:
-	text "There isn't much"
-	line "going on around"
-	cont "these parts."
+	text "No ocurren"
+	line "muchas cosas"
+	cont "por aquí."
 	
-	para "I've heard of some"
-	line "TEAM ROCKETS show-"
-	cont "ing themselves"
-	cont "around the ORANGE"
-	cont "ISLANDS, though."
+	para "He escuchado"
+	line "que algunos"
+	cont "miembros del "
+	cont "TEAM ROCKET se"
+	cont "han visto por"
+	cont "las islas."
 	done
 	
 AscorbiaGateGuyScript:
 	jumptextfaceplayer AscorbiaGateGuyText
 	
 AscorbiaGateGuyText:
-	text "That island breeze"
-	line "is something that"
-	cont "I'll never get"
-	cont "tired of!"
+	text "¡La brisa de "
+	line "la isla es "
+	cont "algo que nunca "
+	cont "cansa!"
 	
-	para "Listen, kiddo."
-	line "From here you'll"
-	cont "see a lot of hills"
-	cont "and mountains!"
+	para "Escucha,chico."
+	line "Desde aqui se"
+	cont "pueden ver muchas"
+	cont "colinas y montañas"
 	done
 
 AscorbiaIslandRoute63Gate_MapEventHeader:

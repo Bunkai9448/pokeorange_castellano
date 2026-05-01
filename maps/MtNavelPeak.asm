@@ -11,10 +11,6 @@ MtNavelPeak_MapScriptHeader::
 DannyScript:
 	faceplayer
 	opentext
-
-	checkevent EVENT_BEAT_ORANGE_LEAGUE
-	iftrue .postLeague
-
 	checkevent EVENT_BEAT_DANNY
 	iftrue .FightDone
 	writetext WelcomeToPeakText
@@ -53,11 +49,6 @@ DannyScript:
 	closetext
 	end
 
-.postLeague
-	writetext DannyPostLeagueText
-	waitbutton
-	jump .NoRoomForHail
-
 .SpeechAfterTM:
 	writetext DannyBeatenText
 	waitbutton
@@ -66,81 +57,74 @@ DannyScript:
 	end
 
 WelcomeToPeakText:
-	text "Welcome, trainer."
+	text "Bienvenido."
 
-	para "I'm the world fam-"
-	line "ous rock climber,"
-	cont "DANNY."
+	para "Soy el escalador"
+	line "mundialmente"
+	cont "conocido, DANNY."
 
-	para "Not many can climb"
-	line "to this peak and"
-	cont "have the strength"
-	cont "to stand."
+	para "Poca gente puede"
+	line "escalar hasta"
+	cont "este pico y"
+	cont "tiene fuerza"
+	cont "para aguantar."
 
-	para "You made it to the"
-	line "peak, which earns"
-	cont "you the right to"
-	cont "battle me."
+	para "Has superado"
+	line "este pico,eso"
+	cont "te da derecho a"
+	cont "combatir contra"
+	cont "mi."
 
-	para "First, let me heal"
-	line "your #MON."
+	para "Primero,"
+	line "permiteme curar"
+	cont "tus #MON."
 	done
 
 LetsBattleDanny:
-	text "Well, then."
-	line "Shall we get"
-	cont "started?"
+	text "Bueno,"
+	line "¿Comenzamos?"
 	done
 
 DannyWinLossText:
-	text "Oh. Seems we have"
-	line "a rising star."
+	text "Oh, parece"
+	line "que tenemos una"
+	cont "estrella en"
+	cont "ciernes."
 	done
 
 YouEarnedSeaRubyText:
-	text "<PLAYER> received"
-	line "SEA-RUBY BADGE."
+	text "<PLAYER> obtuvo"
+	line "la MEDALLA"
+	cont "RUBI MARINO."
 	done
 
 ThatBadgeWillText:
-	text "You're one tough"
-	line "nut. You climbed"
-	cont "the brutal moun-"
-	cont "tain, and beat me."
+	text "Eres alguien"
+	line "con coraje."
+	cont "Escalaste esta"
+	cont "brutal montaña"
+	cont "y me has vencido."
 
-	para "That SEA-RUBY"
-	line "badge will make"
-	cont "#MON up to lev-"
-	cont "el 50 obey you."
+	para "La medalla RUBI"
+	line "MARINO hará que"
+	cont "los #MON de"
+	cont "nivel superior"
+	cont "al 50 te"
+	cont "obedezcan."
 
-	para "Also, a gift from"
-	line "from me."
+	para "Toma, un regalo"
+	line "de mi parte."
 	done
 
 DannyBeatenText:
-	text "There is still a"
-	line "long road ahead."
+	text "Todavia tienes"
+	line "un largo camino"
+	cont "que recorrer."
 
-	para "Your next battle"
-	line "is on TROVITA"
-	cont "ISLAND."
+	para "Tu siguiente"
+	line "parada es "
+	cont "ISLA TROVITA."
 	done
-
-DannyPostLeagueText:
-	text "CHAMPION, huh..."
-	line "I heard the tales."
-
-	para "You did not just"
-	line "battle, you worked"
-	cont "with your #MON."
-
-	para "That kind of"
-	line "leadership lasts."
-
-	para "Take it slow."
-	line "There is always"
-	cont "another horizon."
-	done	
 
 NavelPeakEscapeRope:
 	itemball ESCAPE_ROPE

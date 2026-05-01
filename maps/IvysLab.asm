@@ -270,41 +270,9 @@ IvysAideScript:
 	faceplayer
 	opentext
 	writetext AideText_ExplainBalls
-	checkcode VAR_DEXCAUGHT
-	if_greater_than NUM_POKEMON - 1, .CompletedPokedex ; need all 253 mon!
 	waitbutton
 	closetext
 	end
-
-.CompletedPokedex:
-	waitbutton
-	writetext GameFreakGameDesignerCompletedPokedexText
-	playsound SFX_DEX_FANFARE_230_PLUS
-	waitsfx
-	writetext GameFreakGameDesignerPauseForDiplomaText
-	waitbutton
-	special Diploma
-	writetext GameFreakGameDesignerAfterDiplomaText
-	waitbutton
-	closetext
-	end
-
-GameFreakGameDesignerCompletedPokedexText:
-	text "Wow! Excellent!"
-	line "You completed your"
-	cont "#DEX!"
-
-	para "Congratulations!"
-	done
-
-GameFreakGameDesignerPauseForDiplomaText:
-	text "..."
-	done
-
-GameFreakGameDesignerAfterDiplomaText:
-	text "You should go show"
-	line "it to everyone!"
-	done
 
 IvysLabTravelTip1:
 	jumptext IvysLabTravelTip1Text
@@ -406,329 +374,311 @@ AfterBulbasaurMovement:
 IvyAdventureText:
 	text "<...><...>"
 
-	para "IVY: This is<...>"
+	para "IVY: Esto es<...>"
 
-	para "<PLAYER>, this"
-	line "is an important"
-	cont "item."
+	para "<PLAYER>, esto"
+	line "es un objeto"
+	cont "importante."
 
-	para "The GS BALL. It"
-	line "seems to not be"
-	cont "possible to open"
-	cont "up. We don't know"
+	para "La GS BALL."
+	line "Parece que no"
+	cont "es posible"
+	cont "abrirla.No sabemos"
 
-	para "its purpose or who"
-	line "made it. I had it"
-	cont "sent to PROF.OAK"
-	cont "in PALLET TOWN."
+	para "su proposito o"
+	line "quien la ha hecho."
+	cont "Dasela al PROF.OAK"
+	cont "en PUEBLO PALETA."
 
-	para "It seems he didn't"
-	line "know either."
+	para "Parece que él no"
+	line "lo sabe tampoco."
 
-	para "There's a man who"
-	line "could possibly un-"
-	cont "cover its secret."
+	para "Hay un hombre que"
+	line "podría arrojar luz"
+	cont "al asunto."
 
-	para "His name's SAMSON."
-	line "He's PROF.OAK's"
-	cont "cousin, who is"
+	para "Su nombre es SAM."
+	line "Es sobrino del"
+	cont "PROF.OAK."
 
-	para "currently visiting"
-	line "on HAMLIN ISLAND."
+	para "Esta de visita"
+	line "en ISLA HAMLIN."
 
-	para "Since you're taking"
-	line "on the ORANGE CREW"
-	cont "I'd like to ask"
+	para "Ya que estas en"
+	line "el archipiélago"
+	cont "naranja, te pido"
 
-	para "you to deliver it"
-	line "to him."
+	para "que se la lleves,"
+	line "por favor."
 
-	para "I can only count"
-	line "on you."
+	para "Solo puedo contar"
+	line "contigo."
 	done
 
 FinalIvyText:
-	text "IVY: SAMSON OAK is"
-	line "a professor from"
-	cont "the ALOLA region."
+	text "IVY: SAM OAK es"
+	line "un profesor de la"
+	cont "region de ALOLA."
 	
-	para "He's SAMUEL OAK's"
-	line "cousin, and he is"
-	cont "here to study the"
-	cont "unique forms that"
+	para "SAM OAK"
+	line "esta aqui para"
+	cont "estudiar las "
+	cont "formas"
 	
-	para "#MON take in"
-	line "the ORANGE"
-	cont "ARCHIPELAGO. As"
-	cont "our regions are"
-	cont "similar, you may"
+	para "#MON unicas"
+	line "en este"
+	cont "ARCHIPELAGO."
+	cont "Son distintas a"
+	cont "las de KANTO."
 	
-	para "meet many #MON"
-	line "that exhibit the"
-	cont "same changes that"
-	cont "those in ALOLA do."
+	para "Muchos #MON"
+	line "muestran signos"
+	cont "iguales a los"
+	cont "de ALOLA."
 	
-	para "As a professor my-"
-	line "self I would love"
-	cont "to see you catch"
-	cont "them all so we can"
-	cont "study them."
+	para "Como profesora "
+	line "me encantaría"
+	cont "que los atrapes"
+	cont "para poder"
+	cont "estudiarlos."
 	
-	para "Best of luck now,"
+	para "¡Buena suerte!"
 	line "<PLAYER>!"
 	done
 
 IvyText_Intro:
-	text "IVY: <PLAYER>!"
-	line "There you are!"
+	text "IVY: ¡<PLAYER>!"
+	line "¡Estamos aqui!"
 
-	para "Today is the day"
-	line "you begin your"
-	cont "#MON journey."
+	para "Hoy es el día"
+	line "que empieza tu"
+	cont "viaje #MON. "
 
-	para "As a #MON"
-	line "PROFESSOR, I'll"
-	cont "give you a tool"
+	para "Como Profesora"
+	line "#MON, te daré"
+	cont "una cosa"
 
-	para "known as a"
-	line "#DEX. It will"
-	cont "record data of"
-	cont "#MON you meet."
+	para "llamada"
+	line "#DEX. Graba"
+	cont "los datos de los"
+	cont "#MON que veas."
 
-	para "I'd like you to"
-	line "take a #MON"
+	para "Te voy a dar "
+	line "un #MON"
 
-	para "that I recently"
-	line "caught."
+	para "que he capturado"
+	line "recientemente."
 	done
 
 IvyText_ChooseAPokemon:
-	text "I want you to"
-	line "raise one of the"
+	text "Quiero que "
+	line "elijas uno de los"
 
-	para "#MON contained"
-	line "in these BALLS."
+	para "#MON de"
+	line "estas  POKEBALLS."
 
-	para "You'll be that"
-	line "#MON's first"
-	cont "partner, <PLAYER>!"
+	para "¡Sera tu primer"
+	line "#MON y compi,"
+	cont " <PLAYER>!"
 
-	para "Go on. Pick one!"
+	para "Vamos,¡Elige!"
 	done
 
 LabWhereGoingText:
-	text "IVY: Wait! Where"
-	line "are you going?"
+	text "IVY: ¡Espera!"
+	line "¿Que haces?"
 	
 	para "<...>"
 	
-	para "Maybe you need a"
-	line "minute to decide?"
+	para "¿Quieres 1 min"
+	line "para pensarlo?"
 	done
 	
 LabGoForAWalkText:
 	text "IVY: Hmm<...>"
-	line "Why don't we go"
-	cont "for a walk?"
+	line "¿Por que no "
+	cont "damos un paseo?"
 	done
 
 TakeCharmanderText:
-	text "IVY: You'll take"
-	line "CHARMANDER, the"
-	cont "fire #MON?"
+	text "IVY: ¿Coges"
+	line "a CHARMANDER,el"
+	cont "#MON de fuego?"
 	done
 
 TakeSquirtleText:
-	text "IVY: Do you want"
-	line "SQUIRTLE, the"
-	cont "water #MON?"
+	text "IVY: ¿Quieres a"
+	line "SQUIRTLE, el"
+	cont "#MON de agua?"
 	done
 
 TakeBulbasaurText:
-	text "IVY: So, you like"
-	line "BULBASAUR, the"
-	cont "grass #MON?"
+	text "IVY: ¿Asi que"
+	line "BULBASAUR, el"
+	cont "#MON de planta?"
 	done
 
 DidntChooseStarterText:
-	text "IVY: Think it over"
-	line "carefully."
+	text "IVY: Piénsalo"
+	line "detenidamente."
 
-	para "Your partner is"
-	line "important."
+	para "Tu compañero"
+	line "sera clave."
 	done
 
 ChoseStarterText:
-	text "IVY: I think"
-	line "that's a great"
-	cont "#MON too!"
+	text "IVY: Pienso"
+	line "que es un gran"
+	cont "#MON."
 	done
 
 ReceivedStarterText:
-	text "<PLAYER> received"
+	text "¡<PLAYER> obtuvo"
 	line "@"
 	text_from_ram StringBuffer3
 	text "!"
 	done
 
 IvyDirectionsText1:
-	text "Go to the west"
-	line "end of VALENCIA"
-	cont "to find the port."
+	text "Ve al  oeste de"
+	line "VALENCIA para"
+	cont "encontrar el"
+	cont "puerto."
 
-	para "You can catch a"
-	line "boat there to"
-	cont "TANGELO ISLAND."
+	para "Ahi puedes coger"
+	line "un barco hacia "
+	cont "ISLA TANGELO."
 	done
 
 IvyDirectionsText2:
-	text "If your #MON is"
-	line "hurt, you should"
+	text "Si tu #MON está"
+	line "herido, deberías"
 
-	para "heal it with this"
-	line "machine."
+	para "curarlo con esta"
+	line "maquina."
 
-	para "Feel free to use"
-	line "it anytime."
+	para "Sientete libre"
+	line "de usarla"
+	cont "cuando quieras."
 	done
 
 IvyDirectionsText3:
-	text "One more thing!"
-	line "<PLAYER>, here"
-	cont "is your #DEX!"
-
-	para "You can even view"
-	line "the shiny variant"
-	cont "of any #MON!"
-	
-	para "Press SELECT and"
-	line "the SHNY icon in"
-	cont "a #DEX entry"
-	cont "to toogle the"
-	cont "different forms"
-	cont "of a #MON."
-	
-	para "Isn't it great?"
-
+	text "¡Una cosa mas!"
+	line "<PLAYER>, aqui"
+	cont "tienes tu"
+	cont "#DEX."
 	done
 
 PlayerGetDexText:
-	text "<PLAYER> received"
+	text "<PLAYER> obtuvo"
 	line "#DEX!"
 	done
 
 IvyDescribesMrPokemonText:
-	text "Best of luck,"
+	text "¡Buena suerte,"
 	line "<PLAYER>!"
 	done
 
 IvyPokeBallText:
-	text "It contains a"
-	line "#MON caught by"
-	cont "PROF.IVY."
+	text "Contiene un"
+	line "#MON capturado"
+	cont "por la PROF.IVY."
 	done
 
 IvysLabHealingMachineText1:
-	text "I wonder what this"
-	line "does?"
+	text "¿Que te parece"
+	line "esto?"
 	done
 
 IvysLabHealingMachineText2:
-	text "Would you like to"
-	line "heal your #MON?"
+	text "¿Quieres curar"
+	line "tus #MON?"
 	done
 
 AideText_GiveYouPotions:
-	text "HOPE: <PLAYER>!"
+	text "HOPE: ¡<PLAYER>!"
 
-	para "Use these on your"
-	line "#DEX quest!"
+	para "Úsala en tu"
+	line "aventura."
 	done
 
 AideText_ExplainBalls:
-	text "HOPE: To complete"
-	line "the #DEX, you"
-	cont "have to catch"
+	text "HOPE: Para "
+	line "completar la" 
+	cont "#DEX, has"
+	cont " de atrapar"
 	cont "#MON."
 
-	para "Throw # BALLS"
-	line "at wild #MON"
-	cont "to get them."
-	
-	para "Come back with"
-	line "a full #DEX and"
-	cont "I'll give you a"
-	cont "diploma!"
-	
-	para "It may not sound"
-	line "like much, but"
-	cont "gives you bragging"
-	cont "rights!"
+	para "Lanza # BALLS"
+	line "#MON salvajes"
+	cont "para atraparlos."
 	done
 
 IvysLabWindowText:
-	text "The window's open."
+	text "Ventana abierta."
 
-	para "An ocean breeze"
-	line "is blowing in."
+	para "Una brisa "
+	line "marina te."
+	cont "recorre."
 	done
 
 IvysLabTravelTip1Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER> abrió"
+	line "un libro."
 
-	para "Travel Tip 1:"
+	para "PISTA 1:"
 
-	para "Press START to"
-	line "open the MENU."
+	para "Pulsa START para"
+	line "abrir el MENU."
 	done
 
 IvysLabTravelTip2Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER> abrió"
+	line "un libro."
 
-	para "Travel Tip 2:"
+	para "PISTA 2:"
 
-	para "Record your trip"
-	line "with SAVE!"
+	para "Graba tu viaje"
+	line "con GUARDAR."
 	done
 
 IvysLabTravelTip3Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER> abrió un"
+	line "libro."
 
-	para "Travel Tip 3:"
+	para "PISTA 3:"
 
-	para "Open your PACK and"
-	line "press SELECT to"
-	cont "move items."
+	para "Abre tu bolsa"
+	line "y pulsa SELECT"
+	cont "para cambiar"
+	cont "objetos."
 	done
 
 IvysLabTravelTip4Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER> abrió"
+	line "un libro."
 
-	para "Travel Tip 4:"
+	para "PISTA 4:"
 
-	para "Check your #MON"
-	line "moves. Press the"
+	para "Comprueba los mov."
+	line "de tus #MON."
 
-	para "A Button to switch"
-	line "moves."
+	para "Pulsa A para"
+	line "intercambiarlos."
 	done
 
 IvysLabTrashcanText:
-	text "The wrapper from"
-	line "the snack PROF.IVY"
-	cont "ate is in there<...>"
+	text "El envoltorio del"
+	line "snack de la PROF."
+	cont "IVI esta ahí<...>"
 	done
 
 IvysLabPCText:
-	text "REGIONAL VARIETY"
-	line "OF #MON"
+	text "VARIEDAD REGIONAL"
+	line "DE #MON"
 
-	para "<...>It says on the"
-	line "screen<...>"
+	para "<...>Eso pone en"
+	line "la pantalla<...>"
 	done
 
 IvysLab_MapEventHeader::

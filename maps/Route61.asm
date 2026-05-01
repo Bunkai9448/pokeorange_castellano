@@ -61,23 +61,24 @@ TrainerPokemaniacKusato:
 	end
 
 PokemaniacKusatoSeenText:
-	text "Would it be rude"
-	line "if I poisoned"
-	cont "your party in a"
-	cont "#MON battle?"
+	text "¿Que pasaría"
+	line "si en una pelea"
+	cont "se envenena tu"
+	cont "equipo de"
+	cont "#MON?"
 	done
 
 PokemaniacKusatoWinText:
-	text "My POISON #MON!"
+	text "¡Mis #MON!"
 	done
 
 PokemaniacKusatoAfterText:
-	text "I'll let you in"
-	line "on a tip."
+	text "Te daré una"
+	line "pista."
 
-	para "You can find a"
-	line "SALANDIT on ROUTE"
-	cont "62."
+	para "Puedes ver a"
+	line "SALANDIT en la"
+	cont "RUTA 62."
 	done
 
 Route6lRareCandy:
@@ -93,11 +94,11 @@ Route61Sign:
 	jumptext Route61SignText
 
 Route61SignText:
-	text "ROUTE 61"
+	text "RUTA 61"
 
-	para "EAST to MURCOTT"
-	line "WEST to MANDARIN"
-	cont "ISLAND SOUTH"
+	para "AL ESTE MURCOTT"
+	line "AL OESTE ISLA"
+	cont "MANDARINA SUR"
 	done
 
 Route61_MapEventHeader::

@@ -34,18 +34,19 @@ TrainerEngineerKalarie:
 	end
 
 EngineerKalarieSeenText:
-	text "Welcome to VICTORY"
-	line "ROAD. Will you"
-	cont "make it through?"
+	text "Bienvenido a "
+	line "CALLE VICTORIA."
+	cont "¿Crees que podras"
+	cont "cruzarlo?"
 	done
 
 EngineerKalarieBeatenText:
-	text "Excellent."
+	text "Excelente."
 	done
 
 EngineerKalarieAfterText:
-	text "Go forth, if you"
-	line "dare."
+	text "Ve adelante si"
+	line "te atreves."
 	done
 	
 ;=================================
@@ -98,22 +99,23 @@ TrainerCooltrainerFGranny:
 	end
 
 CooltrainerFGrannySeenText:
-	text "On your way to"
-	line "PUMMELO ISLAND?"
+	text "¿De camino a"
+	line "ISLA POMMELO?"
 	done
 
 CooltrainerFGrannyBeatenText:
-	text "Just wanted to"
-	line "make sure<...>"
+	text "Solo queria"
+	line "asegurarme<...>"
 	done
 
 CooltrainerFGrannyAfterText:
-	text "There's an island"
-	line "north of the"
-	cont "ORANGE ARCHIPELAGO"
-	cont "where I caught my"
+	text "Hay una isla al"
+	line "al norte del "
+	cont "ARCHIPELAGO"
+	cont "NARANJA donde "
 	
-	para "EEVEEs!"
+	para "atrape a mis"
+	line "EEVEES."
 	done
 
 ;=================================
@@ -131,18 +133,18 @@ TrainerOtakuRwne:
 	end
 
 OtakuRwneSeenText:
-	text "How much do you"
-	line "like #MON?"
+	text "¿Cuanto te gustan"
+	line "los #MON?"
 	done
 
 OtakuRwneBeatenText:
-	text "Ah, I see you are"
-	line "a kid of culture<...>"
+	text "Ah,ya veo, eres"
+	line "culto<...>"
 	done
 
 OtakuRwneAfterText:
-	text "Ah, I see you are"
-	line "a kid of culture<...>"
+	text "Ah,ya veo, eres"
+	line "culto<...>"
 	done
 
 ;=================================
@@ -160,18 +162,18 @@ TrainerCooltrainerFNuuk:
 	end
 
 CooltrainerFNuukSeenText:
-	text "The way #MON"
-	line "are so animated"
-	cont "make them great!"
+	text "¡Los #MON"
+	line "animados se ven"
+	cont "genial!"
 	done
 
 CooltrainerFNuukBeatenText:
-	text "That put a pep in"
-	line "my step!"
+	text "¡Eso da energia"
+	line "a mis pasos!"
 	done
 
 CooltrainerFNuukAfterText:
-	text "I'm fired up now!"
+	text "¡Estoy a tope!"
 	done
 
 ;=================================
@@ -189,18 +191,18 @@ TrainerBlackbeltSteppo:
 	end
 
 BlackbeltSteppoSeenText:
-	text "Your gains are"
-	line "insufficient!"
+	text "¡Tus ganancias son"
+	line "insuficientes!"
 	done
 
 BlackbeltSteppoBeatenText:
-	text "My gains are"
-	line "insufficient<...>"
+	text "¡Mis ganancias son"
+	line "insuficientes<...>"
 	done
 
 BlackbeltSteppoAfterText:
-	text "I require more"
-	line "training!"
+	text "¡Necesito mas"
+	line "entrenamiento!"
 	done
 
 VictoryRoadF1_MapEventHeader::

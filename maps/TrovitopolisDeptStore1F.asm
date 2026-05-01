@@ -17,35 +17,35 @@ TrovitopolisDeptStore1FElevatorButton:
 	jumpstd elevatorbutton
 
 UnknownText_0x55993:
-	text "Welcome to the"
-	line "TROVITOPOLIS DEPT."
-	cont "STORE."
+	text "BIENVENIDO AL"
+	line "CENTRO COMERCIAL"
+	cont "DE TROVITOPOLIS."
 	done
 
 TrovitopolisDeptStore1FDirectoryText:
-	text "1F SERVICE COUNTER"
+	text "1F MOSTRADOR"
 
-	para "2F TRAINER'S"
-	line "   MARKET"
+	para "2F TIENDA"
+	line "ENTRENADORES"
 
-	para "3F BATTLE"
-	line "   COLLECTION"
+	para "3F COLECCION"
+	line "BATALLA"
 
-	para "4F MEDICINE BOX"
+	para "4F MEDICINAS"
 
-	para "5F TM CORNER"
+	para "5F SECCION MT"
 
-	para "6F TRANQUIL SQUARE"
+	para "6F SALA DESCANSO"
 
-	para "ROOFTOP LOOKOUT"
+	para "AZOTEA"
 	done
 	
 DeptStore1FPokefanFScript:
 	jumptextfaceplayer DeptStore1FPokefanFText
 	
 DeptStore1FPokefanFText:
-	text "You can buy almost"
-	line "anything in here!"
+	text "¡Puedes comprar "
+	line "de todo aquí!"
 	done
 
 TrovitopolisDeptStore1F_MapEventHeader::

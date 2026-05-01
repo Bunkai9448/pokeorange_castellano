@@ -37,15 +37,15 @@ PlaceDiplomaOnScreen: ; 1dd709
 ; 1dd760
 
 .Player:
-	db "TRAINER@"
+	db "ENT/@"
 
 .EmptyString:
 	db "@"
 
 .Certification:
 	db   "ORANGE #DEX"
-	next "completion"
-	next "certificate."
+	next "Certificado de"
+	next "compleción."
 	db   "@"
 ; 1dd7ae
 

@@ -10,14 +10,14 @@ MurcottRockerScript:
 	jumptextfaceplayer MurcottRockerText
 	
 MurcottRockerText:
-	text "I spoke with my"
-	line "bro in VERMILION"
-	cont "CITY."
+	text "Hablé con mi"
+	line "hermano en ciudad"
+	cont "CARMIN."
 	
-	para "He traded away a"
-	line "FARFETCH'D for a"
-	cont "SPEAROW, of all"
-	cont "things!"
+	para "Cambio un"
+	line "FARFETCH'D por"
+	cont "un SPEAROW, ¡Que"
+	cont "cosas!"
 	done
 
 MurcottHouse1_MapEventHeader::

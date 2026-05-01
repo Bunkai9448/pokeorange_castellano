@@ -278,7 +278,7 @@ Text_WhatTimeIsIt: ; 0x90879
 ; 0x9087e
 
 String_oclock:
-	db "en punto@"
+	db "¿verdad@" ; es el string "en punto@" de el set de hora de la intro
 ; 90886
 
 Text_WhatHrs: ; 0x90886
@@ -302,7 +302,7 @@ String_min:
 
 Text_WhoaMins: ; 0x908a4
 	; Whoa!@ @
-	text_jump UnknownText_0x1bc31b
+	text_jump UnknownText_0x1bc31b ; el texto esta en text>common_1
 	start_asm
 	hlcoord 7, 14
 	call DisplayMinutesWithMinString

@@ -8,9 +8,9 @@ NavelIceRock:
 	jumptext NavelIceRockText
 
 NavelIceRockText:
-	text "A strange aura"
-	line "emanates from the"
-	cont "the rock<...>"
+	text "Un aura extraña"
+	line "emana de la"
+	cont "rocak<...>"
 	done
 
 MtNavelIceRock_MapEventHeader::

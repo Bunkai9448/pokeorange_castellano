@@ -35,7 +35,7 @@ TangeloJungleMewScript:
 	end
 	
 MewText:
-	text "Mew!"
+	text "¡Mew!"
 	done
 
 TangeloRock:
@@ -113,101 +113,107 @@ MapTangeloJungleSignpost4Script:
 	jumptext Text_TangeloJungleSignpost4
 
 Text_TangeloJungleLass:
-	text "Oh, no! I got"
-	line "lost! It's my"
-	cont "fault, really."
+	text "¡Oh, no!¡He"
+	line "perdido!"
+	cont "Fue mi culpa."
 
-	para "I was trying to"
-	line "catch a PIKACHU!"
+	para "Estaba inten-"
+	line "tando atrapar"
+	cont "un PIKACHU."
 	done
 
 Text_TangeloJungleSignpost4:
-	text "TANGELO JUNGLE"
-	line "Warning!"
+	text "JUNGLA TANGELO"
+	line "¡ADVERTENCIA!"
 
-	para "Wild #MON are"
-	line "very dangerous!"
-	cont "Be careful."
+	para "Los #MON "
+	line "salvajes son"
+	cont "muy peligrosos."
+	cont "TEN CUIDADO."
 	done
 
 Bug_catcherWayneSeenText:
-	text "This JUNGLE is so"
-	line "great! So many BUG"
-	cont "TYPE #MON!"
+	text "Esta JUNGLA es"
+	line "enorme. Demasiados"
+	cont "#MON tipo bicho."
 	done
 
 Bug_catcherWayneBeatenText:
-	text "Huh? I lost?"
+	text "¿Huh? ¿Perdí?"
 	done
 
 Bug_catcherWayneAfterText:
-	text "Y'know, even if"
-	line "you don't like BUG"
-	cont "#MON, there are"
-	cont "others here too!"
+	text "Incluso si no"
+	line "te gustan los"
+	cont "#MON tipo bicho,"
+	cont "hay otros #MON"
+	cont "aqui."
 	done
 
 Bug_catcherMushiSeenText:
-	text "Hm? You aren't"
-	line "a BUTTERFREE!"
+	text "¿Hm? ¡No eres un"
+	line "BUTTERFREE!"
 	done
 
 Bug_catcherMushiBeatenText:
-	text "I want a BUTTER-"
-	line "FREE!"
+	text "¡Quiero un"
+	line "BUTTERFREE!"
 	done
 
 Bug_catcherMushiAfterText:
-	text "BUTTERFREE some-"
-	line "times appear in"
-	cont "this JUNGLE."
+	text "BUTTERFREE a"
+	line "veces aparece"
+	cont "en esta JUNGLA."
 	done
 
 Bug_catcherAlexSeenText:
-	text "I'm a BUG COLLEC-"
-	line "TOR! I will own"
-	cont "them all!"
+	text "¡Soy un co-"
+	line "leccionista de"
+	cont "bichos! ¡Los"
+	cont "quiero todos!"
 	done
 
 Bug_catcherAlexBeatenText:
-	text "I never said I"
-	line "could battle<...>"
+	text "Nunca dije de"
+	line "combatir<...>"
 	done
 
 Bug_catcherAlexAfterText:
-	text "I hear there are"
-	line "over 80 BUG-TYPE"
-	cont "#MON."
+	text "He oido que hay"
+	line "sobre 80 #MON"
+	cont "tipo BICHO."
 
-	para "I'm gonna catch"
-	line "'em all!"
+	para "¡Quiero hacerme"
+	line "con todos"
 	done
 
 YoungsterNessSeenText:
-	text "Heh, a TRAINER?"
-	line "You don't look"
-	cont "like much. Let"
-	cont "me show you!"
+	text "Ey, entrenador,"
+	line "No pareces gran"
+	cont "cosa. ¡Yo te"
+	cont "enseñaré!"
 	done
 
 YoungsterNessBeatenText:
-	text "You didn't beat"
-	line "me! I lost on"
-	cont "purpose."
+	text "¡No me has ga-"
+	line "nado! Perdí a"
+	cont "proposito."
 	done
 
 YoungsterNessAfterText:
-	text "Think you're so"
-	line "tough after I"
-	cont "lost on purpose?"
+	text "¿Crees que eres"
+	line "un tipo duro"
+	cont "despues de que"
+	cont "perdí a pro-"
+	cont "posito?"
 
-	para "What a loser."
+	para "¡QUE PERDEDOR!"
 	done
 	
 CrossBattle1Script:
 	faceplayer
+;	playmusic MUSIC_CROSS_ENCOUNTER
 	showemote EMOTE_SHOCK, TANGELO_JUNGLE_CROSS, 15
-	playmusic MUSIC_LOOK_GLADION
 	opentext
 	writetext CrossJungleText
 	waitbutton
@@ -243,7 +249,7 @@ CrossBattle1Script:
 	jump .returnfrombattle
 
 .returnfrombattle:
-	playmusic MUSIC_LOOK_GLADION
+;	playmusic MUSIC_CROSS_ENCOUNTER
 	opentext
 	writetext CrossJungleLeavingNowText
 	waitbutton
@@ -258,46 +264,46 @@ CrossBattle1Script:
 	setevent EVENT_TANGELO_JUNGLE_CROSS
 	end
 	
-CrossJungleText:
-	text "???: Huh?"
 
-	para "Who's the weakling"
-	line "in my way here?"
+CrossJungleText:
+	text "???: ¿Huh?"
+
+	para "¿Quién se inter-"
+	line "pone en mi camino?"
 
 	para "<...>"
 	
-	para "<PLAYER>? Never"
-	line "heard of you. Hah!"
+	para "<PLAYER>? Nunca"
+	line "he oido sobre ti."
 
-	para "Well, since I'm"
-	line "already here, I"
-	cont "guess I'll intro-"
-	cont "duce myself."
+	para "Bueno, como ya"
+	line "estoy preparado,"
+	cont "me presentare."
 
-	para "CROSS: I am CROSS,"
-	line "the one who will"
-	cont "be the ultimate"
-	cont "trainer using"
+	para "CROSS: Soy CROSS,"
+	line "aquel que sera"
+	cont "el entrenador"
+	cont "definitivo usando"
 
-	para "strength alone!"
-	line "Allow me to demon-"
-	cont "strate!"
+	para "solo la fuerza."
+	line "¡Deja que te lo"
+	cont "demuestre!"
 	done
 	
 CrossJungleWinLoss:
-	text "That was just a"
-	line "fluke."
+	text "Tiene que ser"
+	line "una broma."
 	done
 	
 CrossJungleLeavingNowText:
-	text "CROSS: Hmph!"
+	text "CROSS: ¡Hmph!"
 
-	para "Don't think you've"
-	line "won! I'll be back,"
-	cont "stronger than you"
-	cont "can handle!"
+	para "¡No pienses que"
+	line "has ganado!"
+	cont "¡Volveré mucho"
+	cont "mas fuerte!"
 
-	para "Remember this,"
+	para "¡Recuerdalo,"
 	line "<PLAYER>!"
 	done
 	
@@ -323,6 +329,7 @@ TangeloJungle_MapEventHeader::
 	signpost 17, 37, SIGNPOST_ITEM, TangeloJungleHiddenSuperPotion
 	signpost 26, 4, SIGNPOST_ITEM, TangeloJungleHiddenFullHeal
 	signpost 51, 39, SIGNPOST_UP, MapTangeloJungleSignpost4Script
+
 
 .ObjectEvents: db 12
 	person_event SPRITE_ROCKER, 6, 21, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_SCRIPT, 0, CrossBattle1Script, EVENT_TANGELO_JUNGLE_CROSS

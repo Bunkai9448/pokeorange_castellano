@@ -21,9 +21,9 @@ Route58SalesmanScript:
 	end
 
 LastMinuteSuppliesText:
-	text "Need any last min-"
-	line "ute supplies for"
-	cont "NAVEL ISLAND?"
+	text "¿Necesitas algo"
+	line "de última hora"
+	cont "para ISLA NAVEL?"
 	done
 
 CooltrainerMAkira:
@@ -38,35 +38,36 @@ CooltrainerMAkira:
 	end
 
 CooltrainerAkiraSeenText:
-	text "NAVEL ISLAND is a"
-	line "large dormant vol-"
-	cont "cano."
+	text "ISLA NAVEL es"
+	line "un gran volcán"
+	cont "dormido."
 
-	para "It's a perilous"
-	line "dungeon home to"
-	cont "many ICE-type"
-	cont "#MON now."
+	para "Es una cueva"
+	line "peligrosa con"
+	cont "con muchos"
+	cont "#MON de hielo."
 	done
 
 CooltrainerAkiraBeatenText:
-	text "Hey, you're cool."
+	text "¡Ey,eres guay!"
 	done
 
 CooltrainerAkiraAfterText:
-	text "After hundreds of"
-	line "years the peak of"
-	cont "the island became"
-	cont "cold and snowy."
+	text "Despues de cientos"
+	line "de años, el pico"
+	cont "de la Isla se"
+	cont "ha congelado y se"
+	cont "puede esquiar."
 	done
 
 Route58Sign:
 	jumptext Route58SignText
 
 Route58SignText:
-	text "ROUTE 58"
-	line "EAST to NAVEL"
-	cont "SOUTH to GRAPE-"
-	cont "FRUIT ISLANDS"
+	text "RUTA 58"
+	line "Al este NAVEL"
+	cont "Sur para las"
+	cont "7 ISLAS POMELO."
 	done
 
 Route58_MapEventHeader::

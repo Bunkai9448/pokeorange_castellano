@@ -29,7 +29,7 @@ FireIslandShrine:
 	end
 	
 .LawrenceCheck:
-	checkevent EVENT_SHAMOUTI_QUEST_ENDED
+	checkevent EVENT_LUGIA_FOUGHT
 	iftrue .MoltresCheck
 	opentext
 	writetext FireIslandShrineText
@@ -72,15 +72,18 @@ MoltresFireIslandMovement:
 	step_end
 
 ObtainedFireOrbText:
-	text "<PLAYER> obtained"
-	line "the FIRE ORB!"
+	text "<PLAYER> obtuvo"
+	line "el ORBE DE FUEGO."
 	done
 
 FireIslandShrineText:
-	text "The shrine is very"
-	line "hot to the touch."
-	cont "The stone looks"
-	cont "like it may melt."
+	text "El santuario "
+	line "esta muy"
+	cont "caliente para"
+	cont "tocarlo."
+	cont "La piedra parece"
+	cont "que se podría"
+	cont "derretir."
 	done
 
 FireIsland_MapEventHeader::

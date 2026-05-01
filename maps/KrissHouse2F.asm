@@ -1,28 +1,17 @@
 const_value = 1
-	const KRISSHOUSE2F_DOLL
-	const KRISSHOUSE2F_TROPHY
 
 KrissHouse2F_MapScriptHeader:
 
 .MapTriggers: db 0
 
-.MapCallbacks: db 2
+.MapCallbacks: db 1
 	dbw MAPCALLBACK_NEWMAP, .InitializeRoom
-	dbw MAPCALLBACK_OBJECTS, .ShowHideTrophy
 
 .InitializeRoom:
 	checkevent EVENT_INITIALIZED_EVENTS
 	iftrue .SkipInizialization
 	jumpstd initializeevents
 .SkipInizialization:
-	return
-
-.ShowHideTrophy:
-	disappear KRISSHOUSE2F_TROPHY
-	checkevent EVENT_BEAT_ORANGE_LEAGUE
-	iffalse .TrophyDone
-	appear KRISSHOUSE2F_TROPHY
-.TrophyDone
 	return
 
 KrissHouseRadio:
@@ -50,9 +39,6 @@ KrissHouseRadio:
 	closetext
 	end
 
-OrangeTrophyScript:
-	jumptext OrangeTrophyText
-
 BigDoll:
 	jumptext BigDollText
 
@@ -71,59 +57,28 @@ KrissHousePC:
 
 KrisRadioText1:
 	text "PROF.OAK'S #MON"
-	line "TALK! Please tune"
-	cont "in next time!"
+	line "¡Habla!Por favor"
+	cont "¡Sintonízanos!"
 	done
 
 KrisRadioText2:
-	text "#MON CHANNEL!"
+	text "CANAL #MON "
 	done
 
 KrisRadioText3:
-	text "This is DJ MARY,"
-	line "your co-host!"
+	text "Ella es DJ MARY,"
+	line "tu copresentadora"
 	done
 
 KrisRadioText4:
 	text "#MON!"
-	line "#MON CHANNEL<...>"
+	line "#CANAL MON <...>"
 	done
 
 BigDollText:
-	text "A giant doll! It's"
-	line "fluffy and cuddly."
-	done
-
-OrangeTrophyText:
-	text "The ORANGE LEAGUE"
-	line "trophy."
-	
-	para "It's very shiny."
-	done
-
-KrissHouse2FHealPartyScript:
-	opentext
-	writetext KrissHouse2FHealPartyText
-	yesorno
-	iffalse .skipHeal
-	
-	;Heal party
-	closetext
-	special FadeOutPalettes
-	playmusic MUSIC_HEAL
-	special HealParty
-	pause 60
-	special Special_FadeInQuickly
-	special RestartMapMusic
-	end
-	
-.skipHeal
-	closetext
-	end
-
-KrissHouse2FHealPartyText:
-	text "Would you like to"
-	line "take a nap?"
+	text "Una muñeca"
+	line "gigante,adorable"
+	cont "y achuchable."
 	done
 
 KrissHouse2F_MapEventHeader:
@@ -137,8 +92,5 @@ KrissHouse2F_MapEventHeader:
 	signpost 1, 2, SIGNPOST_UP, KrissHousePC
 	signpost 1, 5, SIGNPOST_READ, KrissHouseBookshelf
 
-.PersonEvents: db 4
+.PersonEvents: db 1
 	person_event SPRITE_BIG_LAPRAS, 1, 0, SPRITEMOVEDATA_SNORLAX, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, BigDoll, -1
-	person_event SPRITE_SILVER_TROPHY,  4,  5, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, OrangeTrophyScript, EVENT_TEMPORARY_1
-	person_event SPRITE_INVISIBLE,  4,  0, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, KrissHouse2FHealPartyScript, -1
-	person_event SPRITE_INVISIBLE,  5,  0, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, KrissHouse2FHealPartyScript, -1

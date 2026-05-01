@@ -37,67 +37,69 @@ AscorbiaTeacherScript:
 	jumptextfaceplayer AscorbiaTeacherText
 	
 AscorbiaTeacherText:
-	text "I think I got off"
-	line "on the wrong port!"
+	text "Pienso que estoy"
+	line "en el puerto"
+	cont "equivocado."
 	
-	para "This isn't KUMQUAT"
-	line "ISLAND!"
+	para "¡No es la ISLA "
+	line "KUMQUAT!"
 	done
 	
 AscorbiaLassScript:
 	jumptextfaceplayer AscorbiaLassText
 	
 AscorbiaLassText:
-	text "This is ASCORBIA"
-	line "ISLAND! Isn't it"
-	cont "super pretty?"
+	text "¡Esta es la ISLA"
+	line "ASCORBIA!¿No es "
+	cont "super bonita?"
 	
-	para "The beach to the"
-	line "west is beautiful!"
+	para "¡La playa del este"
+	line "es preciosa!"
 	done
 	
 AscorbiaRockerScript:
 	jumptextfaceplayer AscorbiaRockerText
 	
 AscorbiaRockerText:
-	text "There's a large"
-	line "island west of"
-	cont "here."
+	text "Hay una gran "
+	line "isla al este"
+	cont "de aquí."
 	
-	para "I hear you need a"
-	line "certain HM if you"
-	cont "want to explore it"
-	cont "fully."
+	para "He oido que"
+	line "necesitas cierta"
+	cont "MO si quieres "
+	cont "explorar todo"
 	done
 
 AscorbiaBlackBeltScript:
 	jumptextfaceplayer AscorbiaBlackBeltText
 	
 AscorbiaBlackBeltText:
-	text "I heard there's a"
-	line "beautiful woman"
-	cont "who paints at"
-	cont "night time."
+	text "He oido que "
+	line "aquí hay una"
+	cont "bella mujer que"
+	cont "pinta en la"
+	cont "noche."
 	
-	para "I've never seen"
-	line "her, though."
+	para "Nunca la he "
+	line "visto, creo."
 	done
 	
 AscorbiaTownSign:
 	jumptext AscorbiaTownSignText
 	
 AscorbiaTownSignText:
-	text "ASCORBIA ISLAND"
+	text "ISLA ASCORBIA"
 	
-	para "Taking a turn of"
-	line "fate"
+	para "Escoge tu "
+	line "destino."
 	done	
 
 AscorbiaFanclubSign:
 	jumptext AscorbiaFanclubSignText
 	
 AscorbiaFanclubSignText:
-	text "ASCORBIA ISLAND"
+	text "ISLA ASCORBIA"
 	line "FAN CLUB"
 	done
 
@@ -105,7 +107,7 @@ AscorbiaMoveRelearnerSign:
 	jumptext AscorbiaMoveRelearnerSignText
 	
 AscorbiaMoveRelearnerSignText:
-	text "MOVE RELEARNER"
+	text "RECUERDA MOV"
 	done
 	
 AscorbiaIllustratorPikachu:
@@ -118,7 +120,7 @@ AscorbiaIllustratorPikachu:
 	end
 
 AscorbiaIllustratorPikachuText:
-	text "Pii?"
+	text "¿Pii?"
 	done
 	
 AscorbiaArtistLadyNightScript:
@@ -170,8 +172,9 @@ AscorbiaArtistLadyNightScript:
 	end
 	
 NoRoomForIllyPikachuText:
-	text "Your #MON"
-	line "party is full."
+	text "Tu equipo"
+	line "#MON está"
+	cont "completo."
 	done
 
 IllyPikaJumpMovement1:
@@ -187,53 +190,53 @@ IllyPikaJumpMovement2:
 	step_end
 	
 AscorbiaGrannyNiteText1:
-	text "Oh, hello there."
-	line "Have you heard of"
-	cont "the famous painter"
-	cont "on this island?"
+	text "Oh, hola. ¿ Has"
+	line "oido sobre el"
+	cont "famoso pintor de"
+	cont "esta isla?"
 	
-	para "Well, this may"
-	line "come as a shock,"
-	cont "but that painter"
-	cont "is this PIKACHU!"
+	para "Bueno, esto puede"
+	line "ser chocante,"
+	cont "pero el pintor..."
+	cont "¡es ese PIKACHU!"
 	
-	para "But, if word were"
-	line "to get out, I'm"
-	cont "worried about"
-	cont "PIKACHU's safety."
+	para "¡Pero ni una"
+	line "palabra!, me"
+	cont "preocuparia la"
+	cont "seguridad de"
+	cont "PIKACHU."
 	
-	para "You seem like a"
-	line "capable trainer!"
-	cont "How about it, why"
-	cont "don't you take"
+	para "¡Pareces un buen"
+	line "entrenador!¿Y si"
+	cont "te lo llevas?"
 	
-	para "PIKACHU under your"
-	line "wing, and take it"
-	cont "all around the"
-	cont "world so it can"
+	para "PIKACHU baja tu"
+	line "ala, y toma esto"
+	cont "alrededor del"
+	cont "mundo si puedes."
 	
-	para "keep doing what it"
-	line "loves?"
+	para "¿Seguir haciendo"
+	line "lo que amas?"
 	done
 
 AscorbiaGrannyNiteText2:
-	text "Oh, I see. I"
-	line "understand. You"
-	cont "must already have"
-	cont "a lot of wonderful"
+	text "Oh,Ya veo."
+	line "Entiendo.Debes"
+	cont "tener ya muchos"
+	cont "maravillosos"
 	
 	para "#MON."
 	done
 	
 AscorbiaGrannyNiteText3:
-	text "Safe travels,"
-	line "PIKACHU!"
+	text "Viajes seguros,"
+	line "¡PIKACHU!"
 	done	
 
 AscorbiaGrannyNiteText4:
-	text "Why, I dare say it"
-	line "has already taken"
-	cont "a liking to you!"
+	text "Me atrevo a "
+	line "decir que ya te"
+	cont "ha cogido cariño."
 	done
 
 AscorbiaIsland_MapEventHeader::
@@ -266,6 +269,6 @@ AscorbiaIsland_MapEventHeader::
 	person_event SPRITE_POKE_BALL, 2, 15, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, AscorbiaTMDragonPulse, EVENT_ASCORBIA_TM_DRAGON_PULSE
 	person_event SPRITE_POKE_BALL, 4, 22, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, AscorbiaMaxRepel, EVENT_ASCORBIA_MAX_REPEL
 	person_event SPRITE_POKE_BALL, 21, 39, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, AscorbiaPolkadotBow, EVENT_ASCORBIA_POLKADOT_BOW
-	person_event SPRITE_PIKACHU, 27, 34, SPRITEMOVEDATA_POKEMON, 0, 0, -1, (1 << NITE), PAL_OW_YELLOW2, PERSONTYPE_SCRIPT, 0, AscorbiaIllustratorPikachu, EVENT_GOT_ILLUSTRATOR_PIKACHU
+	person_event SPRITE_PIKACHU, 27, 34, SPRITEMOVEDATA_POKEMON, 0, 0, -1, (1 << NITE), PAL_OW_RED, PERSONTYPE_SCRIPT, 0, AscorbiaIllustratorPikachu, EVENT_GOT_ILLUSTRATOR_PIKACHU
 	person_event SPRITE_GRANNY, 28, 34, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, (1 << NITE), 0, PERSONTYPE_SCRIPT, 0, AscorbiaArtistLadyNightScript, -1
 

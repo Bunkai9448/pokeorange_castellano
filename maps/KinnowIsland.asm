@@ -25,22 +25,22 @@ KinnowNugget:
 	itemball NUGGET
 
 KinnowPokeFanMText:
-	text "Welcome to KINNOW"
-	line "ISLAND! Plenty to"
-	cont "do around here."
+	text "¡Bienvenido a"
+	line "ISLA KINNOW! Hay"
+	cont "mucho que hacer."
 
-	para "If you're itching"
-	line "for a battle, head"
-	cont "to the CAFE."
+	para "Si buscas un"
+	line "combate,ve al"
+	cont "CAFE."
 
-	para "The waitresses th-"
-	line "ere love battles!"
+	para "Las dependientas"
+	line "aman combatir."
 	done
 
 KinnowTownSignText:
-	text "KINNOW ISLAND"
-	line "The SAPPHIRE of"
-	cont "the ORANGE ISLANDS"
+	text "ISLA KINNOW"
+	line "El zafiro de las"
+	cont "ISLAS NARANJA."
 	done
 
 CafePiaSignText:
@@ -49,9 +49,9 @@ CafePiaSignText:
 	done
 
 SkateShopSignText:
-	text "SKATE SHOP"
-	line "Roll around in"
-	cont "style!"
+	text "TIENDA DEL SKATE"
+	line "¡Rueda con"
+	cont "estilo!"
 	done
 	
 KinnowIslandHiddenPPUp:

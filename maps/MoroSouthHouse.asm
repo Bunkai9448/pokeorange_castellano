@@ -9,14 +9,15 @@ MoroFarfetchdFan:
 	jumptextfaceplayer MoroFarfetchdFanText
 
 MoroFarfetchdFanText:
-	text "I'll let you in on"
-	line "a secret."
+	text "Te contaré un"
+	line "secreto."
 
-	para "On ROUTE 61, if"
-	line "you keep going"
-	cont "south, there's an"
-	cont "island where FAR-"
-	cont "FETCH'D gather."
+	para "En la RUTA 61,"
+	line "si continúas al"
+	cont "sur, llegarás"
+	cont "a unas islas"
+	cont "habitadas por"
+	cont "FARFETCH'D."
 	done
 
 MoroSouthHouse_MapEventHeader::

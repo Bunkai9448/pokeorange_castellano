@@ -62,18 +62,18 @@ UnknownText_0x1c41b1::
 	prompt
 
 UnknownText_0x1c41e6::
-	text "Your friend's"
+	text "¡Tu amigo"
 	line "@"
 	text_from_ram StringBuffer1
-	text " appears"
-	cont "to be abnormal!"
+	text " parece ser"
+	cont "anormal!"
 	prompt
 
 UnknownText_0x1c4212::
-	text "Trade @"
+	text "¿Cambiar @"
 	text_from_ram wd004
 	text ""
-	line "for @"
+	line "por @"
 	text_from_ram StringBuffer1
 	text "?"
 	done
@@ -124,7 +124,7 @@ UnknownText_0x1c465f::
 	done
 
 UnknownText_0x1c46b7::
-	text "STACK OVERFLOW"
+	text "PILA AGOTADA"
 	done
 
 _ObjectEventText::
@@ -140,27 +140,27 @@ UnknownText_0x1c4706::
 	done
 
 UnknownText_0x1c4719::
-	text "<PLAYER> received"
+	text "<PLAYER> obtuvo"
 	line "@"
 	text_from_ram StringBuffer4
 	text "."
 	done
 
 UnknownText_0x1c472c::
-	text "<PLAYER> put the"
+	text "<PLAYER> puso"
 	line "@"
 	text_from_ram StringBuffer1
-	text " in"
-	cont "the @"
+	text " en"
+	cont "el @"
 	text_from_ram StringBuffer3
 	text "."
 	prompt
 
 UnknownText_0x1c474b::
-	text "The @"
+	text "El @"
 	text_from_ram StringBuffer3
 	text ""
-	line "is full<...>"
+	line "esta lleno<...>"
 	prompt
 
 UnknownText_0x1c4b92::
@@ -181,14 +181,14 @@ UnknownText_0x1c4bc5::
 	text "Huh? @"
 	text_from_ram StringBuffer1
 	text ""
-	line "no evoluciono!"
+	line "¡no evoluciono!"
 	prompt
 
 UnknownText_0x1c4be3::
 	text "Que? @"
 	text_from_ram StringBuffer2
 	text ""
-	line "esta evolucionando!"
+	line "¡esta evolucionando!"
 	done
 
 UnknownText_0x1c4bfd::

@@ -309,37 +309,38 @@ PokeCenter2FMovementData_PlayerSpinsClockwiseEndsFacingLeft:
 	step_end
 
 Text_BattleReceptionistIntro:
-	text "Welcome to CABLE"
+	text "Este es el CABLE"
 	line "CLUB COLOSSEUM."
 
-	para "You may battle a"
-	line "friend here."
+	para "En este hack"
+	line "no funciona."
 
-	para "Would you like to"
-	line "battle?"
+	para "Pero es un "
+	line "juegazo."
 	done
 
 Text_TradeReceptionistIntro:
-	text "Welcome to CABLE"
+	text "Este es el CABLE"
 	line "TRADE CENTER."
 
-	para "You may trade your"
-	line "#MON here with"
-	cont "a friend."
+	para "En este hack no"
+	line "funciona."
 
-	para "Would you like to"
-	line "trade?"
+	para "Pero los POkes"
+	line "ya no evolu-"
+	cont "cionan por in-"
+	cont "tercambio."
 	done
 
 Text_FriendNotReady:
-	text "Your friend is not"
-	line "ready."
+	text "Tu amigo no"
+	line "esta listo."
 	prompt
 
 Text_MustSaveGame:
-	text "Before opening the"
-	line "link, you must"
-	cont "save your game."
+	text "Ante de usar"
+	line "el cable link,"
+	cont "debes guardar."
 	done
 
 Text_PleaseWait:
@@ -375,21 +376,21 @@ Text_IncompatibleRooms:
 	prompt
 
 Text_TimeCapsuleClosed:
-	text "I'm sorry--the"
-	line "TIME CAPSULE is"
-	cont "being adjusted."
+	text "En este hack la"
+	line "CAPSULA DEL "
+	cont "TIEMPO NO VA."
 	done
 
 Text_TradeRoomClosed:
-	text "I'm sorry--the"
-	line "TRADE MACHINE is"
-	cont "being adjusted."
+	text "En este hack la"
+	line "TRADE MACHINE no"
+	cont "funciona."
 	done
 
 Text_BattleRoomClosed:
-	text "I'm sorry--the"
-	line "BATTLE MACHINE is"
-	cont "being adjusted."
+	text "En este hack la"
+	line "BATTLE MACHINE no"
+	cont "funciona."
 	done
 
 Text_OhPleaseWait:

@@ -26,7 +26,7 @@ TrainerDiverMHiroshi:
 	end
 	
 DiverHiroshiSeenText:
-	text "Blub?"
+	text "¿Blub?"
 	done
 	
 DiverHiroshiWinText:
@@ -54,7 +54,7 @@ DiverAmiSeenText:
 	done
 	
 DiverAmiWinText:
-	text "Blub bu!"
+	text "¡Blub bu!"
 	done
 	
 DiverAmiAfterText:

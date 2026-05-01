@@ -11,15 +11,15 @@ HamlinBridgeOfficerScript:
 	jumptextfaceplayer HamlinBridgeOfficerText
 
 HamlinBridgeOfficerText:
-	text "Hmm?"
+	text "¿Mmm?"
 	
-	para "Are you <PLAYER>?"
-	line "Some kid was in"
-	cont "here talking about"
-	cont "you earlier."
+	para "¿Eres tu <PLAYER>?"
+	line "Un chico estuvo"
+	cont "aqui hablando"
+	cont "sobre ti antes."
 	
-	para "Looked just like"
-	line "you, too!"
+	para "¡Era clavadito"
+	line "a ti!"
 	done
 
 HamlinBridgeGate_MapEventHeader:

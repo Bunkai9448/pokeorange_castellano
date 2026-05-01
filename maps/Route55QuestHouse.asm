@@ -11,20 +11,20 @@ BaasamaScript:
 	jumptextfaceplayer BaasamaText
 
 BaasamaText:
-	text "Ah, hello there,"
-	line "young child."
+	text "Ah, hola,"
+	line "chavalín."
 
-	para "A long time ago, I"
-	line "had children of my"
-	cont "own."
+	para "Hace mucho tiempo,"
+	line "tuve niños a mi"
+	cont "cuidado."
 
-	para "I wonder what be-"
-	line "came of them. It's"
-	cont "been so long<...>"
+	para "Me pregunto que"
+	line "fue de ellos."
+	cont "Fue hace tanto<...>"
 
-	para "By now, they would"
-	line "have children of"
-	cont "their own."
+	para "Ahora, ellos"
+	line "deberían ser los"
+	cont "que tienen niños."
 	done
 
 Route55QuestHouse_MapEventHeader::

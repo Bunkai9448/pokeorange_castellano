@@ -33,20 +33,20 @@ PummeloClerkGiftScript:
 	end
 
 PummeloClerkGiftScriptText1:
-	text "Trainers leave"
-	line "litter all over"
-	cont "the place. Be a"
-	cont "dear and help us"
+	text "La gente deja"
+	line "basura por todos"
+	cont "los sitios. Se"
+	cont "civilizado y"
 	
-	para "clean up the"
-	line "ARCHIPELAGO with"
-	cont "this?"
+	para "manten limpio el"
+	line "ARCHIPELAGO como"
+	cont "nosotros."
 	done
 	
 PummeloClerkGiftScriptText2:
-	text "The ITEMFINDER"
-	line "will help you see"
-	cont "HIDDEN items."
+	text "El BUSCAOBJETOS"
+	line "te ayudara a ver"
+	cont "objetos ocultos."
 	done
 
 PummeloMart_MapEventHeader::

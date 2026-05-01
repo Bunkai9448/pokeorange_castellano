@@ -10,14 +10,14 @@ MurcottFirebreatherScript:
 	jumptextfaceplayer MurcottFirebreatherText
 	
 MurcottFirebreatherText:
-	text "To some, it might"
-	line "be common sense,"
-	cont "but if you pass"
-	cont "the school test in"
+	text "Puede que sea"
+	line "de sentido común"
+	cont "pero si apruebas"
+	cont "en la escuela de"
 	
-	para "TROVITOPOLIS, the"
-	line "teacher will give"
-	cont "you a good item!"
+	para "TROVITOPOLIS, el"
+	line "profesor te dará"
+	cont "un buen objeto."
 	done
 
 MurcottHouse2_MapEventHeader::

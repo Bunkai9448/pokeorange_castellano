@@ -43,26 +43,29 @@ FukuharaNo4BF1ScriptMovement:
 	step_end
 
 FukuharaNo4BF1ScriptText:
-	text "BUTCH: We scored"
-	line "big this time, my"
-	cont "dear CASSIDY!"
+	text "BUTCH: Hemos"
+	line "apuntado alto"
+	cont "esta vez, mi"
+	cont "querido CASSIDY."
 	
-	para "CASSIDY: Yes, we"
-	line "have. There are"
-	cont "tons of rare"
-	cont "#MON here!"
+	para "CASSIDY: Sí, lo"
+	line "tenemos. Hay"
+	cont "toneladas de"
+	cont "raros"
+	cont "#MON aqui."
 	
-	para "BUTCH: Who would"
-	line "have thought?"
+	para "BUTCH:¿Quién "
+	line "podría saberlo?"
 
-	para "CASSIDY: Let's"
-	line "catch some and use"
-	cont "them to advance"
-	cont "TEAM ROCKET's"
+	para "CASSIDY:Vamos"
+	line "a atraparlos y"
+	cont "usarlos para"
+	cont "aumentar la"
+	cont "ambición del"
 	
-	para "ambition!"
+	para "TEAM ROCKET."
 	
-	para "ROCKETS: Mwahaha!"
+	para "ROCKETS: ¡Muahaha!"
 	done
 
 FukuharaNo4BF1_MapEventHeader::

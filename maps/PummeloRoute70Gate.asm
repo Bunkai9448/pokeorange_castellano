@@ -11,14 +11,14 @@ PummeloRoute70GateScript:
 	jumptextfaceplayer PummeloRoute70GateText
 
 PummeloRoute70GateText:
-	text "Oh, CHAMPION!"
+	text "¡Oh, campeon!"
 	
-	para "The road is clear!"
-	line "There were some"
-	cont "pirates, but they"
-	cont "went back to their"
+	para "La ruta esta"
+	line "despejada.Habia"
+	cont "piratas pero"
+	cont "han vuelto a "
 	
-	para "hideout!"
+	para "su escondite."
 	done
 
 PummeloRoute70Gate_MapEventHeader::

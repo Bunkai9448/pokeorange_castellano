@@ -26,60 +26,45 @@ MotherScript:
 	end
 	
 .MotherBattle ;TODO
-	writetext MotherBeatRedText1
-	yesorno
-	iftrue .MotherBattleScript
-	writetext MotherBeatRedText2
+	writetext MotherBeatRedText
 	waitbutton
-	closetext
-	end
-
-.MotherBattleScript
-	winlosstext MotherWinLossText, 0
-	loadtrainer MOM, 1
-	startbattle
-	reloadmapafterbattle
-	opentext
-	writetext BeatMotherText
-	waitbutton
-	verbosegiveitem SHINY_BALL
 	closetext
 	end
 
 TVScript:
-	;checkevent EVENT_EON_DUO_WILD
-	;iftrue .TvScriptNormal
+	checkevent EVENT_EON_DUO_WILD
+	iftrue .TvScriptNormal
 	checkevent EVENT_BEAT_ORANGE_LEAGUE
 	iffalse .TvScriptNormal
-	setevent EVENT_EON_DUO_WILD
-	writebyte 1 ; 0x00 to totally reset (Pummelo Stadium), 0x01 to not reset shinyness (Player's House)
-	special InitRoamMons
 	opentext
 	writetext EonDuoTVSpecial
 	waitbutton
 	writebyte LATIAS
-	special ShowPokedexEntryLatias
+	special ShowPokedexEntry
 	writebyte LATIOS
-	special ShowPokedexEntryLatios
+	special ShowPokedexEntry
 	closetext
+	setevent EVENT_EON_DUO_WILD
+	special InitRoamMons
 	end
 
 .TvScriptNormal
 	jumptext TVText
 
 EonDuoTVSpecial:
-	text "Breaking news!"
-	line "Two #MON"
-	cont "that were reported"
-	cont "to look like jets"
+	text "¡Noticias!"
+	line "Dos #MON"
+	cont "han sido vistos"
+	cont "volando como"
+	cont "aviones."
 	
-	para "have been seen"
-	line "flying around the"
-	cont "ORANGE ISLANDS."
-	cont "This broadcast was"
+	para "Se les ha"
+	line "visto por varias"
+	cont "islas."
+	cont "Esta noticia"
 	
-	para "Brought to you by"
-	line "HAMLIN TV!"
+	para "es obra de"
+	line "HAMLIN TV."
 	done
 
 StoveScript:
@@ -92,117 +77,97 @@ FridgeScript:
 	jumptext FridgeText
 
 MotherText:
-	text "MOM: A TRAINER?"
-	line "All kids leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text "Mama: Entrenar..."
+	line "Todos los niños"
+	cont "se van de casa"
+	cont "algun día..."
+	cont "Eso dicen en TV."
 
-	para "You know, I used"
-	line "to be a TRAINER,"
-	cont "a long time ago."
+	para "Sabes, fuí"
+	line "entrenadora hace"
+	cont "mucho tiempo."
 
-	para "You'll surely get"
-	line "stronger than I"
-	cont "ever was."
+;	para "Si te vuelves"
+;	line "mas fuerte,"
+;	cont "combatiremos."
 	done
 	
 MotherBeatOrangeCrewText:
-	text "MOM: Way to go,"
-	line "baby!"
+	text "Mama: Hora de"
+	line "irse."
 	
-	para "Keep at it, I'm"
-	line "rooting for you."
+	para "Estaré pendiente"
+	line "de ti."
 	
-	para "I once took on"
-	line "the INDIGO LEAGUE."
-	cont "I hear there's a"
-	cont "new CHAMPION now,"
-	cont "there are rumors"
-	cont "he's come to the"
-	cont "islands to face"
-	cont "our CHAMPION, and"
-	cont "that is you!"
+	para "Una vez luché en"
+	line "la LIGA AÑIL."
+	cont "He oído que tiene"
+	cont "un nuevo CAMPEON."
+	cont "Hay rumores de"
+	cont "que ha venido a"
+	cont "a desafiar al"
+	cont "CAMPEON de"
+	cont "nuestras ISLAS,"
+	cont "que eres TU."
 	
-	para "Apparently he was"
-	line "last seen in"
-	cont "CLEOPATRA ISLAND."
+	para "Fue visto por"
+	line "última vez en"
+	cont "ISLA CLEOPATRA."
 	done
 
-MotherBeatRedText1:
-	text "MOM: You defeated"
-	line "INDIGO LEAGUE's"
-	cont "CHAMPION?!"
+MotherBeatRedText:
+	text "Mama: ¿Has"
+	line "vencido al"
+	cont "CAMPEON de"
+	cont "la LIGA AÑIL?"
 	
-	para "I guess you ended"
-	line "up being a better"
-	cont "TRAINER than I"
-	cont "used to..."
-	para "or maybe not?"
-	
-	para "Care to show your"
-	line "mom how strong you"
-	cont "have grown?"
+	para "Parece que has"
+	line "terminado por"
+	cont "ser mejor"
+	cont "entrenador de lo"
+	cont "que yo nunca fuí."
+	cont "¡Estoy orgullosa!"
+	cont "Seguro que pelear"
+	cont "contra mi hijo"
+	para "CAMPEON es un buen"
+	para "combate POKEMON,"
+	line "¿No crees?"
 	done
-
-MotherBeatRedText2:
-	text "Oh..."
-
-	para "Well, nothing I"
-	line "can do if the"
-	cont "CHAMPION doesn't"
-	cont "feel confident"
-	cont "enough."
-	
-	para "I'll be ready when"
-	line "you are, sweetie."
-	done
-
-MotherWinLossText:
-	text "I'm so proud of"
-	line "you."
-	done
-
-BeatMotherText:
-	text "You are really"
-	line "good, CHAMP."
-	
-	para "Here's a gift for"
-	line "you, use it"
-	cont "wisely."
-	done
-	
 
 StoveText:
-	text "An adept"
-	line "arrangement by"
-	cont "MOTHER<...>"
+	text "Un buen"
+	line "plato de la"
+	cont "MAMA<...>"
 
-	para "VOLCANO BAKEMEAT!"
+	para "¡CARNE VOLCANO!"
 	done
 
 SinkText:
-	text "The sink is spot-"
-	line "less. MOM likes it"
-	cont "clean."
+	text "El fregadero esta"
+	line "impecable. A mama"
+	cont "le encanta lo"
+	cont "limpio."
 	done
 
 FridgeText:
-	text "Let's see what's"
-	line "in the fridge<...>"
+	text "Veamos que hay"
+	line "en el frigo<...>"
 
-	para "FRESH WATER and"
-	line "tasty LEMONADE!"
+	para "AGUA FRESCA,"
+	line "sabrosa LIMONADA."
 	done
 
 TVText:
-	text "There's a movie on"
-	line "TV: Stars dot the"
+	text "Hay una serie."
+	line "TV: Llegaré"
 
-	para "sky as two kids"
-	line "sail on a raft<...>"
+	para "a ser el mejor,"
+	line "el mejor que<...>"
 
-	para "I'd better get"
-	line "rolling too!"
+	para "habrá jamás..."
+	line "¡Se me ha puesto"
+	cont "la piel de"
+	cont "gallina."
 	done
 
 KrissHouse1F_MapEventHeader::

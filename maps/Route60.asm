@@ -52,73 +52,80 @@ RocketRoute60Event:
 
 
 Route60RocketText1:
-	text "???: Ooh, look at"
-	line "it, JESSIE!"
+	text "???: ¡Ooh, mira"
+	line "eso, JESSIE!"
 
-	para "JESSIE: You're far"
-	line "too loud, JAMES."
-	cont "What if some cop"
-	cont "hears us?"
+	para "JESSIE: ¡JAMES,"
+	line "estás haciendo"
+	cont "demasiado ruido!"
+	cont "¿Y si nos oye"
+	cont "algún policía?"
 
-	para "JAMES: That's when"
-	line "we give them our"
-	cont "motto, like we"
-	cont "practiced."
+	para "JAMES: Es entonces"
+	line "cuando les damos"
+	cont "nuestro lema, como"
+	cont "habíamos practi-"
+	cont "cado."
 
-	para "Then we give them"
-	line "a little taste of"
-	cont "ARBOK and WEEZING!"
+	para "¡Luego les damos"
+	line "una pequeña"
+	cont "muestra de ARBOK"
+	cont "y WEEZING!"
 
 	para "<...> <...> <...>"
 	done
 
 Route60RocketMottoText:
-	text "Prepare the world"
-	line "for devastation!"
+	text "¡Para protege al"
+	line "mundo de  la"
+	cont "devastación!"
 
-	para "To unite all"
-	line "peoples within our"
-	cont "nation!"
+	para "¡Para unir a todos"
+	cont "los pueblos en"
+	cont "una sola nación!"
 
-	para "To denounce the"
-	line "evils of truth and"
-	cont "love!"
+	para "¡Para denunciar a"
+	line "los enemigos de la"
+	cont "verdad y el amor!"
 
-	para "To extend our"
-	line "reach to the stars"
-	cont "above!"
+	para "¡Para extender"
+	line "nuestro poder mas"
+	cont "alla del espacio"
+    cont "exterior!"
 
-	para "JESSIE!"
+	para "¡JESSIE!"
 
-	para "JAMES!"
+	para "¡JAMES!"
 
-	para "TEAM ROCKET, blast"
-	line "off at the speed"
-	cont "of light!"
+	para "¡EQUIPO ROCKET,"
+	line "despegamos a la"
+	cont "velocidad de la luz!"
 
-	para "Surrender now or"
-	line "prepare to fight!"
+	para "¡Ríndete ahora o"
+	line "prepárate para"
+	cont "luchar!"
 	done
 
 WhereIsMeowthText:
 	text "<...> <...> <...>"
 
-	para "JAMES: MEOWTH?"
+	para "JAMES: ¿MEOWTH?"
 
 	para "<...>"
 
-	para "JAMES: JESSIE, do"
-	line "you know where"
-	cont "MEOWTH went to?"
+	para "JAMES: JESSIE,"
+	line "¿sabes adónde"
+	cont "fue MEOWTH?"
 
-	para "JESSIE: No idea."
+	para "JESSIE: Ni idea."
 
-	para "JAMES: Maybe he"
-	line "went to the next"
-	cont "ISLAND?"
+	para "JAMES: ¿Tal vez"
+	line "fue a la siguiente"
+	cont "ISLA?"
 
-	para "JESSIE: Well, why"
-	line "don't we find out?"
+	para "JESSIE: Bueno,"
+	line "¿por qué no lo"
+	cont "averiguamos?"
 	done
 
 ROUTE_60_JESSIE_MOVEMENT:
@@ -136,7 +143,7 @@ Route60Sign:
 	jumptext Route60SignText
 
 Route60SignText:
-	text "ROUTE 60"
+	text "RUTA 60"
 	done
 
 Route60UltraBall:
@@ -149,15 +156,17 @@ Route60SwimmerGirlScript:
 	jumptextfaceplayer Route60SwimmerText
 
 Route60SwimmerText:
-	text "See this deep part"
-	line "of the water?"
+	text "¿Ves esta parte"
+	line "profunda del"
+	cont "agua?"
 
-	para "There's a WRECKED"
-	line "SHIP underneath!"
+	para "¡Hay un BARCO"
+	line "NAUFRAGADO debajo!"
 
-	para "GHOST-type #MON"
-	line "appear around here"
-	cont "because of it."
+	para "Los #MON de"
+	line "tipo FANTASMA"
+	cont "aparecen por aquí"
+	cont "debido a ello."
 	done
 	
 ; SWIMMER_M_TAKAO
@@ -173,21 +182,23 @@ TrainerSwimmermTakao:
 	end
 	
 SwimmerMTakaoSeenText:
-	text "I tried to go to"
-	line "the WRECKED SHIP"
-	cont "underwater, but a"
-	cont "GHOST attacked me!"
+	text "Intenté llegar al"
+	line "BARCO NAUFRAGADO"
+	cont "bajo el agua,"
+	cont "¡pero un FANTASMA"
+	cont "me atacó!"
 	done
 	
 SwimmerMTakaoWinText:
-	text "Spooky!"
+	text "¡Escalofriante!"
 	done
 	
 SwimmerMTakaoAfterText:
-	text "I can deal with a"
-	line "SHARPEDO or a TOX-"
-	cont "APEX, but GHOSTS"
-	cont "are too much!"
+	text "Puedo lidiar con"
+	line "un SHARPEDO o un"
+	cont "TOXAPEX, ¡pero"
+	cont "los GHOSTS son"
+	cont "demasiado!"
 	done
 	
 ; BIRDKEEPER_TATSUYA
@@ -203,19 +214,22 @@ TrainerBirdkeeperTatsuya:
 	end
 	
 BirdkeeperTatsuyaSeenText:
-	text "Can you soar like"
-	line "my BIRDS?"
+	text "¿Puedes volar"
+	line "como mis"
+	cont "PÁJAROS?"
 	done
 	
 BirdkeeperTatsuyaWinText:
-	text "I've been clipped!"
+	text "¡He sido"
+	line "recortado!"
 	done
 	
 BirdkeeperTatsuyaAfterText:
-	text "BIRD #MON might"
-	line "be common, but do"
-	cont "not underestimate"
-	cont "their power!"
+	text "Los #MON"
+	line "pájaro pueden ser"
+	cont "comunes, ¡pero no"
+	cont "subestimes su"
+	cont "poder!"
 	done
 	
 Route60SeashellScript:
@@ -238,15 +252,18 @@ Route60SeashellScript:
 	end
 	
 Route60NoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "¡Qué bonita"
+    line "concha! Parece"
+    cont "demasiado frágil"
+    cont "para meterla en"
+    cont "mi bolso."
     done
 	
 FoundRoute60Seashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "¡Has encontrado"
+	line "una concha"
+	cont "marina muy"
+	cont "rara!"
 	done
 	
 Route60Seashell2Script:

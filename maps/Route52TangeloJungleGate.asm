@@ -11,10 +11,10 @@ OfficerScript_0x62d63:
 	jumptextfaceplayer UnknownText_0x62d9d
 
 UnknownText_0x62d9d:
-	text "You'll have to"
-	line "cross the ocean"
-	cont "to get to MIKAN"
-	cont "ISLAND."
+	text "Tienes que cruzar"
+	line "el oceano para"
+	cont "para llegar a "
+	cont "ISLA MIKAN."
 	done
 
 Route52TangeloJungleGate_MapEventHeader:

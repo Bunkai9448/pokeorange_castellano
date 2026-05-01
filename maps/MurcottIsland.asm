@@ -143,10 +143,10 @@ DayCareSign:
 	jumptext DayCareSignText
 	
 DayCareSignText:
-	text "DAY-CARE"
+	text "GUARDERIA"
 
-	para "LET US RAISE YOUR"
-	line "#MON FOR YOU!"
+	para "¡Criamos a tu"
+	line "#MON por ti!"
 	done
 	
 MurcottIslandSign:
@@ -156,23 +156,24 @@ MurcottIslandPharmacySign:
 	jumptext MurcottIslandPharmacySignText
 	
 MurcottIslandSignText:
-	text "MURCOTT ISLAND"
+	text "ISLA MURCOTT"
 	
-	para "New beginnings in"
-	line "unexpected places"
+	para "Nuevos comienzos"
+	line "en lugares"
+	cont "inesperados."
 	done
 	
 MurcottIslandPharmacySignText:
-	text "PHARMACY"
+	text "FARMACIA"
 	done
 
 MurcottLassScript:
 	jumptextfaceplayer MurcottLassText
 	
 MurcottLassText:
-	text "There's a really"
-	line "big DESERT on"
-	cont "MANDARIN SOUTH!"
+	text "¡Hay un enorme"
+	line "desierto en"
+	cont "MANDARINA SUR!"
 	done
 	
 MurcottIslandFruitTree:
@@ -182,13 +183,14 @@ MurcottOldManScript:
 	jumptextfaceplayer MurcottOldManText
 	
 MurcottOldManText:
-	text "My brother and his"
-	line "wife run the DAY-"
-	cont "CARE on the north"
-	cont "end of town."
+	text "Mi hermano y su"
+	line "mujer llevan la"
+	cont "GUARDERIA del"
+	cont "norte de la"
+	cont "ciudad."
 	
-	para "They can raise a"
-	line "#MON for you."
+	para "Puede criar a tu"
+	line "#MON por ti."
 	done
 	
 MurcottIslandTMRainDance:
@@ -311,49 +313,50 @@ CrossBattle3Script2:
 	end
 	
 CrossMurcottIslandText:
-	text "CROSS: Stopping by"
-	line "this loser town,"
-	cont "<PLAYER>? Fitting."
+	text "CROSS: ¿De visita"
+	line "en este pueblo"
+	cont "de perdedores,"
+	cont "<PLAYER>? Idoneo."
 
-	para "There's nothing"
-	line "but old geezers."
+	para "No hay mas que"
+	line "ancianos."
 
-	para "I came to find a"
-	line "strong #MON,"
-	cont "but I can't find"
-	cont "a SCYTHER."
+	para "Vine buscando un"
+	line " #MON poderoso,"
+	cont "pero ni rastro"
+	cont "de SCYTHER."
 
-	para "No matter! I got"
-	line "something even"
-	cont "better off the"
-	cont "next island!"
+	para "¡No importa! Algo"
+	line "mejor encontraré"
+	cont "en la siguiente"
+	cont "isla."
 
-	para "Prepare yourself!"
+	para "¡Prepárate!"
 	done
 	
 CrossMurcottIslandWinLoss:
-	text "How frustrating!"
+	text "¡Que frustrante!"
 	done
 	
 CrossMurcottIslandLeavingNowText:
 	text "CROSS: <...>"
 
-	para "I won't let this"
-	line "bring me down! I"
-	cont "don't understand,"
-	cont "though."
+	para "No dejaré que"
+	line "esto me afecte,"
+	cont "pero no lo"
+	cont "entiendo."
 
-	para "I know I've made"
-	line "my #MON the"
-	cont "strongest they"
-	cont "can be!"
+	para "Se que he vuelto"
+	line "a mis #MON"
+	cont "lo mas poderosos"
+	cont "posible."
 
-	para "So why is it that"
-	line "you win every"
-	cont "time?"
+	para "¿Como me has"
+	line "podido ganar"
+	cont "cada vez?"
 
-	para "No matter, I'll"
-	line "see you again!"
+	para "No importa,¡nos"
+	line "volveremos a ver!"
 	done
 	
 CrossMurcottIsland_Movement:

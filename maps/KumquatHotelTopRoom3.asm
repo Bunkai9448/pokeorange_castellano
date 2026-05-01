@@ -16,18 +16,19 @@ AthleteLarsScript:
 	end
 
 AthleteLarsSeenText:
-	text "Who's our manager?"
-	line "I'll tell you if"
-	cont "you beat me!"
+	text "¿Quié es nuestro"
+	line "manager?"
+	cont "¡Te lo dire si"
+	cont "me vences."
 	done
 
 AthleteLarsBeatenText:
-	text "I'll tell you!"
+	text "¡Te lo contaré!"
 	done
 
 AthleteLarsAfterText:
-	text "Our manager's name"
-	line "is SHELDON."
+	text "Nuestro manager"
+	line "es SHELDON."
 	done
 
 KumquatHotelTopRoom3_MapEventHeader::

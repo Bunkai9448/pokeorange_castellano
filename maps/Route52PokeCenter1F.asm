@@ -7,12 +7,7 @@ Route52PokeCenter1F_MapScriptHeader:
 
 .MapTriggers: db 0
 
-.MapCallbacks: db 1
-	dbw MAPCALLBACK_NEWMAP, .FlyPoint
-
-.FlyPoint:
-	setflag ENGINE_FLYPOINT_ROUTE_52
-	return
+.MapCallbacks: db 0
 
 NurseScript_0x69b52:
 	jumpstd pokecenternurse
@@ -24,26 +19,27 @@ CooltrainerFScript_0x69b80:
 	jumptextfaceplayer UnknownText_0x69cac
 
 UnknownText_0x69b83:
-	text "There are a lot"
-	line "of TRAINERS on"
-	cont "ROUTE 52."
+	text "Hay muchos"
+	line "entrenadores en"
+	cont "RUTA 52."
 
-	para "They're all tra-"
-	line "ining to face"
-	cont "CISSY of the"
+	para "Todos entrenan"
+	line "para desafiar a"
+	cont "CISSY del"
 	cont "ORANGE CREW."
 	done
 
 UnknownText_0x69cac:
-	text "This PIKACHU I"
-	line "caught in the"
-	cont "TANGELO JUNGLE"
-	cont "is amazing!"
+	text "El PIKACHU que"
+	line "atrape en JUNGLA"
+	cont "TANGELO es"
+	cont "increible."
 
-	para "THUNDERSHOCK is"
-	line "a great move"
-	cont "against WATER-"
-	cont "TYPE #MON."
+	para "IMPACTRUENO es"
+	line "un gran ataque"
+	cont "contra los"
+	cont "#MON de "
+	cont "tipo agua."
 	done
 
 Route52PokeCenter1F_MapEventHeader::

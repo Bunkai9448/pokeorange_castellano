@@ -40,13 +40,14 @@ TrovitaSailorMovement:
 	step_end
 
 TrovitaPortSailorText:
-	text "Ready to head back"
-	line "to TROVITOPOLIS?"
+	text "¿Listo para"
+	line "regresar a "
+	cont "TROVITOPOLIS?"
 	done
 
 TrovitaSailorAhoyText:
-	text "Alright! Off we"
-	line "go!"
+	text "¡De acuerdo!"
+	line "¡Nos vamos!"
 	done
 
 TrovitaPort_MapEventHeader::

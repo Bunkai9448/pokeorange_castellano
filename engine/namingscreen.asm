@@ -107,7 +107,7 @@ NamingScreen: ; 116c1
 
 .NicknameStrings: ; 11780
 	db "'S@"
-	db "NICKNAME?@"
+	db "¿MOTE?@"
 
 ; 1178d
 
@@ -122,7 +122,7 @@ NamingScreen: ; 116c1
 ; 117a3 (4:57a3)
 
 .PlayerNameString: ; 117a3
-	db "YOUR NAME?@"
+	db "¿TU NOMBRE?@"
 
 ; 117ae
 
@@ -149,7 +149,7 @@ NamingScreen: ; 116c1
 ; 11822 (4:5822)
 
 .BoxNameString: ; 11822
-	db "BOX NAME?@"
+	db "¿NOMBRE CAJA?@"
 
 ; 1182c
 

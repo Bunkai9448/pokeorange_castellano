@@ -25,42 +25,45 @@ Guard_Stop1:
 	end
 
 Text_WaitPlayer2:
-	text "Hey!"
+	text "¡Ey!"
 
-	para "I'm afraid I can't"
-	line "let you pass."
+	para "Me preocupa, no"
+	line "puedo dejarte"
+	cont "pasar."
 
-	para "There are suspici-"
-	line "ous people on"
-	cont "ROUTE 53."
+	para "Hay gente sospe-"
+	line "chosa en la "
+	cont "RUTA 53."
 
-	para "It seems there"
-	line "are several repor-"
-	cont "ts of a couple"
-	cont "wearing the now-"
+	para "Parece que hay"
+	line "informes de una"
+	cont "pareja usando"
+	cont "uniformes del"
 
-	para "defunct TEAM"
-	line "ROCKET's uniform."
+	para "difunto TEAM"
+	line "ROCKET."
 	done
 
 UnknownText_0x69a36:
-	text "From here, you'll"
-	line "have access to two"
-	cont "islands."
+	text "Desde aquí tienes"
+	line "acceso a dos"
+	cont "islas."
 
-	para "There's MANDARIN"
-	line "NORTH and SUNBURST"
-	cont "ISLAND."
+	para "SON MANDARINA"
+	line "NORTE e isla"
+	cont "SUNBURST."
 	done
 
 UnknownText_0x69abd:
-	text "I heard that TEAM"
-	line "ROCKET dispersed"
-	cont "recently."
+	text "He oido que el"
+	line "TEAM ROCKET se"
+	cont "disolvió hace"
+	cont "poco."
 
-	para "Maybe some stragg-"
-	line "lers are up to no"
-	cont "good."
+	para "Quizás algunos"
+	line "rezagados no"
+	cont "tengan buenas"
+	cont "intenciones."
 	done
 
 Movement_Hey:

@@ -10,13 +10,14 @@ TrovitopolisWildHintScript:
 	jumptextfaceplayer TrovitopolisWildHintText
 	
 TrovitopolisWildHintText:
-	text "This time of year,"
-	line "MAGIKARP can only"
-	cont "be found on RIND"
-	cont "ISLAND."
+	text "En esta época,"
+	line "del año, solo"
+	cont "se puede encon-"
+	cont "trar a Magikarp"
+	cont "en ISLA RIND."
 	
-	para "It's the mating"
-	line "season."
+	para "Es la temporada"
+	line "de apareamiento."
 	done
 
 TrovitopolisHouse3_MapEventHeader::

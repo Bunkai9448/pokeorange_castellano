@@ -15,18 +15,21 @@ CatManGatehouseScript2:
 	jumptextfaceplayer CatGateHouseGuardText2
 
 CatGateHouseGuardText1:
-	text "This is GOLDEN IS-"
-	line "LAND. Please enjoy"
-	cont "our unique town."
+	text "Esta es la ISLA"
+	line "GOLDEN.Por favor"
+	cont "disfruta de "
+	cont "nuestra única"
+	cont "ciudad."
 	done
 
 CatGateHouseGuardText2:
-	text "Nyaa! This gate"
-	line "leads to ROUTE 61."
+	text "¡Nyaa! Este paso"
+	line "lleva a RUTA 61."
 
-	para "Go WEST to MANDAR-"
-	line "IN SOUTH, EAST to"
-	cont "MURCOTT ISLAND."
+	para "Al oeste ISLA"
+	line "MANDARINA, al"
+	cont "sueste ISLA"
+	cont "MURCOTT."
 	done
 
 GoldenIslandGateHouse_MapEventHeader::

@@ -10,14 +10,15 @@ KumquatEastHouseLass:
 	jumptextfaceplayer KumquatEastHouseLassText
 	
 KumquatEastHouseLassText:
-	text "There's a SAILOR"
-	line "at the dock who"
-	cont "takes trainers to"
-	cont "SHAMOUTI ISLAND."
+	text "Hay un marinero"
+	line "en el puerto que"
+	cont "hace viajes a"
+	cont "ISLA SHAMOUTI. "
 	
-	para "I hear you need a"
-	line "TICKET of some"
-	cont "sort, though."
+	para "He oido que"
+	line "necesitas un"
+	cont "TICKET o algo"
+	cont "parecido."
 	done
 
 KumquatHouse2_MapEventHeader::

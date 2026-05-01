@@ -11,14 +11,16 @@ MoroOfficerScript:
 	jumptextfaceplayer MoroOfficerText
 
 MoroOfficerText:
-	text "Hey there."
+	text "Hola."
 
-	para "From here, go west"
-	line "to GOLDEN ISLAND."
+	para "Desde aquí, ve"
+	line "al oeste para"
+	cont "llegar a"
+	cont "ISLA GOLDEN."
 
-	para "After that, you"
-	line "can go south to"
-	cont "various islands."
+	para "Despues, verás"
+	line "al sur varias"
+	cont "islas."
 	done
 
 MoroRoute60Gate_MapEventHeader::

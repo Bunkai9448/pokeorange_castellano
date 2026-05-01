@@ -35,8 +35,8 @@ AirshipOutsideCaptureRingScript:
 	end
 
 AirshipOutsideCaptureRingScriptText:
-	text "It should take me"
-	line "inside. Use it?"
+	text "Debería llevarme"
+	line "dentro.¿Lo uso?"
 	done
 
 AirshipOutside_MapEventHeader::

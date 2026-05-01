@@ -60,17 +60,16 @@ InvisibleForceScript:
 	reloadmapafterbattle
     setevent EVENT_MANDARIN_CAVE_KECLEON_FOUGHT
 	end
-	
 RainbowWingReactsText:
-	text "The RAINBOW WING"
-	line "is reacting!"
+	text "El ALA ARCOIRIS"
+	line "esta reaccionando."
 	
-	para "KECLEON revealed"
-	line "itself!"
+	para "¡KECLEON fue"
+	line "revelado!"
 	done
 
 KecleonCryText:
-	text "Keku keku!"
+	text "¡Keku keku!"
 	done
 
 InvisibleForceText:
@@ -131,27 +130,29 @@ MandarinCaveMarshadowScript:
 	end
 	
 MarshadowText:
-	text "Kuu!"
+	text "¡Kuu!"
 	done
 
 CrossSunrayText:
-	text "<PLAYER>! You have"
-	line "something of mine."
-	cont "Give it back!"
+	text "<PLAYER>!Tienes"
+	line "algo que me"
+	cont "pertenece! ¡De-"
+	cont "vuélmelo!"
 
-	para "You return the" 
-	line "RAINBOW WING to"
+	para "Devolviste el" 
+	line "ALA ARCOIRIS a"
 	cont "CROSS."
 	
-	para "CROSS: Hahaha! You"
-	line "are spineless."
-	cont "CHAMPION of the"
-	cont "dorks! I'll return" 
-	cont "to the island we"
-	cont "first met. I can"
-	cont "feel HO-OH's power"
-	cont "in the RAINBOW"
-	cont "WING!"
+	para "CROSS: ¡Hahaha!"
+	line "Tienes sangre de"
+	cont "horchata, CAMPEON"
+	cont "de los frikis." 
+	cont "Vuelvo a la isla"
+	cont "donde nos encon-"
+	cont "tramos por pri-"
+	cont "mera vez. Puedo"
+	cont "sentir el poder"
+	cont "HO-OH."
 	
 	para "MARSHADOW: Kuu<...>"
 	done

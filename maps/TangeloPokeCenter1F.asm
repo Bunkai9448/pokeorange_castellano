@@ -19,20 +19,21 @@ GentlemanScript_0x196973:
 	jumptextfaceplayer UnknownText_0x1969c8
 
 UnknownText_0x19698a:
-	text "It's great. The"
-	line "#MON CENTER"
-	cont "lets you stay"
-	cont "the night."
+	text "Es genial. El"
+	line "centro #MON"
+	cont "te permite"
+	cont "pasar la noche."
 
-	para "Free food too! I"
-	line "love this life."
+	para "¡Comida gratis! "
+	line "Amo esta vida."
 	done
 
 UnknownText_0x1969c8:
-	text "Ah<...> These tiny"
-	line "towns are nothing"
-	cont "compared to my"
-	cont "hometown."
+	text "Ah<...> Estas"
+	line "pequeñas ciudades"
+	cont "no son nada"
+	cont "comparadas con"
+	cont "mi ciudad natal."
 	done
 
 TangeloPokeCenter1F_MapEventHeader::

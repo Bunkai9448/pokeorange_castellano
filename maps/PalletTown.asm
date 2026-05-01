@@ -35,44 +35,45 @@ YellowsHouseSign:
 	jumptext YellowsHouseSignText
 
 UnknownText_0x1ac6e7:
-	text "I'm raising #-"
-	line "MON too."
+	text "Crio #-"
+	line "MON también."
 
-	para "They serve as my"
-	line "private guards."
+	para "Son mis "
+	line "guardaespaldas."
 	done
 
 UnknownText_0x1ac720:
-	text "Technology is"
-	line "incredible!"
+	text "¡La tecnología"
+	line "es increible!"
 
-	para "You can now trade"
-	line "#MON across"
-	cont "time like e-mail."
+	para "Puedes mandar"
+	line "#MON a traves"
+	cont "del tiempo como"
+	cont "e-mail."
 	done
 
 PalletTownSignText:
-	text "PALLET TOWN"
+	text "PUEBLO PALETA"
 
-	para "A Tranquil Setting"
-	line "of Peace & Purity"
+	para "Un lugar de"
+	line "paz y pureza."
 	done
 
 OaksLabSignText:
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "LAB #MON"
+	line "DE OAK"
 	done
 
 RedsHouseSignText:
-	text "RED'S HOUSE"
+	text "CASA DE ROJO"
 	done
 
 BluesHouseSignText:
-	text "BLUE'S HOUSE"
+	text "CASA DE AZUL"
 	done
 
 YellowsHouseSignText:
-	text "YELLOW'S HOUSE"
+	text "CASA DE AMARILLO"
 	done
 
 PalletTown_MapEventHeader::

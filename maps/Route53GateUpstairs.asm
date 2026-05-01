@@ -10,9 +10,9 @@ MikanBinoculars1:
 	jumptext MikanBinoculars1Text
 
 MikanBinoculars1Text:
-	text "Wow! A lot of"
-	line "MAGIKARP are trav-"
-	cont "eling in a school."
+	text "¡Wow! Un montón"
+	line "de MAGIKARP se"
+	cont "ven en el agua."
 	done
 
 MikanBinoculars2:
@@ -21,8 +21,8 @@ MikanBinoculars2:
 MikanBinoculars2Text:
 	text "Hmm<...>"
 
-	para "This one doesn't"
-	line "work!"
+	para "Este no"
+	line "funciona."
 	done
 
 Route53GateUpstairs_MapEventHeader::

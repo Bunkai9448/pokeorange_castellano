@@ -38,41 +38,42 @@ Route71LaprasScript:
 	end
 	
 Route71LaprasText1:
-	text "The LAPRAS looks"
-	line "at you curiously."
-	cont "Perhaps this is"
-	cont "LAPRAS' family"
+	text "El LAPRAS te mira"
+	line "con curiosidad."
+	cont "Tal vez sea su"
+	cont "familia, la que"
 	
-	para "that TRACEY men-"
-	line "tioned."
+	para "Tracey había"
+	line "mencionado."
 	done
 	
 Route71LaprasText2:
-	text "The family of"
-	line "LAPRAS is over-"
-	cont "joyed that their"
-	cont "lost one is safe."
+	text "La familia del"
+	line "LAPRAS esta"
+	cont "contentísima de"
+	cont "que su miembro"
+	cont "perdido este bien."
 	done
 	
 Route71LaprasText3:
-	text "Upon being re-"
-	line "united with their"
-	cont "lost one, the pod"
-	cont "of LAPRAS seem"
+	text "Al reunirse con"
+	line "su miembro que-"
+	cont "rido perdido,"
+	cont "la familia de"
 	
-	para "overjoyed!"
-	line "It appears LAPRAS"
-	cont "is ready to move"
-	cont "on!"
+	para "Lapras es feliz."
+	line "¡Parece que LAPRAS"
+	cont "esta listo para"
+	cont "continuar!"
 	done
 	
 Route71PirateGuard:
 	jumptextfaceplayer Route71PirateGuardText
 	
 Route71PirateGuardText:
-	text "Yarr! There be no"
-	line "gettin' through,"
-	cont "scallywag!"
+	text "¡Yarr! ¡No hay"
+	line "nada por aquí!"
+	cont "¡Canalla!"
 	done
 	
 Route71PirateTutorScript:
@@ -98,30 +99,30 @@ Route71PirateTutorScript:
 	end
 
 GivePlayerSwordsDanceText:
-	text "Yarr!"
-	line "I bet ye want to"
-	cont "be as good at"
-	cont "sword fightin' as"
+	text "¡Yarr!"
+	line "¡Te aviso que"
+	cont "soy bueno con"
+	cont "la espada!"
 	
-	para "me!"
-	line "Well, ter' bad!"
-	cont "But, I can teach"
-	cont "yer #MON"
+	para "¡YE!"
+	line "¡No esta mal!"
+	cont "¿Quieres que"
+	cont "tus #MON"
 	
-	para "SWORDS DANCE if"
-	line "ye want?"
+	para "aprendan DANZA"
+	line "ESPADA?"
 	done
 	
 Text_SwordsDanceTutorTaught:
-	text "Arr! SWORDS DANCE"
-	line "Will let ye raise"
-	cont "your ATTACK up two"
-	cont "stages! Arr!"
+	text "¡Arr! DANZA"
+	line "ESPADA aumenta"
+	cont "el ataque en"
+	cont "dos niveles."
 	done
 	
 Text_SwordsDanceTutorRefused:
-	text "Arr! Off with ye,"
-	line "scurvy dog!"
+	text "¡Arr! ¡Adios"
+	line "perro viejo!"
 	done
 	
 Text_SwordsDanceTutorClear:

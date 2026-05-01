@@ -8,21 +8,21 @@ MoroTrophyScript:
 	jumptext MoroTrophyText
 
 MoroTrophyText:
-	text "Although quite old"
-	line "and rusted, it"
-	cont "gives off a proud"
-	cont "vibe."
+	text "Aunque es muy viejo"
+	line "y oxidado, da"
+	cont "uns sensación de"
+	cont "orgullo."
 	done
 
 MoroMuseumShip:
 	jumptext MoroMuseumShipText
 
 MoroMuseumShipText:
-	text "A small-scale ver-"
-	line "sion of the S.S."
-	cont "ORANGE, which will"
-	cont "debut on HAMLIN"
-	cont "ISLAND."
+	text "Una versión a"
+	line "escala del S.S."
+	cont "ORANGE, que hara"
+	cont "su debut en"
+	cont "ISLA HAMLIN."
 	done
 
 MoroMuseumKabutopsFossil:
@@ -38,15 +38,15 @@ MoroMuseumKabutopsFossil:
 MoroMuseumKabutopsFossilText:
 	text "KABUTOPS"
 
-	para "Only recently,"
-	line "scientists have"
-	cont "been able to re-"
-	cont "vive these ancient"
-	cont "#MON."
+	para "Solo investiga-"
+	line "ciones recientes"
+	cont "han permitido"
+	cont "revivir a estos"
+	cont "antiguos #MON."
 
-	para "It once swam under"
-	line "water to hunt for"
-	cont "prey."
+	para "Se sumergía en"
+	line "el agua para"
+	cont "cazar a su presa."
 	done
 
 MoroMuseumOmastarFossil:
@@ -62,63 +62,67 @@ MoroMuseumOmastarFossil:
 MoroMuseumOmastarFossilText:
 	text "OMASTAR"
 
-	para "Only recently,"
-	line "scientists have"
-	cont "been able to re-"
-	cont "vive these ancient"
-	cont "#MON."
+	para "Solo investiga-"
+	line "ciones recientes"
+	cont "han permitido"
+	cont "revivir a estos"
+	cont "antiguos #MON."
 
-	para "It uses its tenta-"
-	line "cles to capture"
-	cont "its prey."
+	para "Usaba sus tentá-"
+	line "culos para cazar"
+	cont "a su presa."
 	done
 
 MoroMuseumMewTablet:
 	jumptext MoroMuseumMewTabletText
 
 MoroMuseumMewTabletText:
-	text "The tablet depicts"
-	line "a mythic #MON."
+	text "La tablilla muestra"
+	line "un #MON mítico."
 
-	para "It is in an un-"
-	line "known language and"
-	cont "could not be read."
+	para "Está en un lenguaje"
+	line "desconocido lo que"
+	cont "imposibilita su"
+	cont "lectura."
 	done
 
 MoroMuseumTrophySign:
 	jumptext MoroMuseumTrophySignText
 
 MoroMuseumTrophySignText:
-	text "This trophy was"
-	line "found in a wreck-"
-	cont "age off the coast"
-	cont "of the island."
+	text "Este trofeo fue"
+	line "encontrado en los"
+	cont "restos de un"
+	cont "naufragio frente"
+	cont "a la costa de la"
+	cont "isla."
 
-	para "It is believed to"
-	line "have belonged to"
-	cont "an ORANGE LEAGUE"
-	cont "champion nearly"
-	cont "300 years ago."
+	para "Se cree que perte-"
+	line "neció al CAMPEON"
+	cont "DE LA LIGA NARANJA"
+	cont "de hace unos 300"
+	cont "años."
 	done
 
 MoroMuseumSign:
 	jumptext MoroMuseumSignText
 
 MoroMuseumSignText:
-	text "Please do not"
-	line "touch the display!"
+	text "¡Por favor, NO"
+	line "TOCAR la pantalla!"
 	done
 
 MoroMuseumStone:
 	jumptext MoroMuseumStoneText
 
 MoroMuseumStoneText:
-	text "ICE STONE"
+	text "PIEDRA HIELO"
 
-	para "This is a recently"
-	line "discovered stone."
-	cont "It evolves certain"
-	cont "kinds of #MON."
+	para "Se ha descubierto"
+	line "recientemente."
+	cont "Permite evolucionar"
+	cont "a ciertos tipos"
+	cont "de #MON."
 	done
 
 MoroMuseumCuratorScript:
@@ -138,27 +142,30 @@ MoroMuseumCuratorScript:
 	end
 
 CuratorTrophyMissingText:
-	text "CURATOR: Hello."
-	line "I'm sorry to say"
-	cont "this, but someone"
-	cont "stole the ORANGE"
-	cont "LEAGUE trophy we"
-	cont "had on display."
+	text "CUSTODIO: Hola."
+	line "Siento decirte"
+	cont "que alguien"
+	cont "ha robado el"
+	cont "trofeo de la"
+	cont "LIGA NARANJA."
 
-	para "I hope the police"
-	line "find it soon."
+	para "Espero que la"
+	line "policía lo"
+	cont "encuentre pronto."
 	done
 
 CuratorTrophyFoundText:
-	text "CURATOR: Welcome"
-	line "to the MORO MUSEUM"
-	cont "where we keep rare"
-	cont "exhibits that are"
-	cont "found underwater."
+	text "CUSTODIO:"
+	line "Bienvenido al"
+	cont "MUSEO DE MORO"
+	cont "donde exhibimos"
+	cont "tesoros encon-"
+	cont "trados bajo el"
+	cont "agua."
 
-	para "Please enjoy it to"
-	line "your heart's con-"
-	cont "tent!"
+	para "¡Por favor dis-"
+	line "frútelo a su"
+	cont "gusto!"
 	done
 
 MoroMuseumPoliceScript:
@@ -192,60 +199,63 @@ MoroMuseumPoliceScript:
 	end
 
 PoliceTrophyMissingText:
-	text "This is a doozy. A"
-	line "TROPHY was stolen"
-	cont "from this display"
-	cont "while the CURATOR"
-	cont "wasn't looking."
+	text "¡Esto es increi-"
+	line "ble! El trofeo"
+	cont "ha sido robado"
+	cont "mientras el"
+	cont "CUSTODIO no"
+	cont "estaba atento."
 
-	para "Unfortunately, no"
-	line "one saw the perp-"
-	cont "atrators, so we"
-	cont "are stumped."
+	para "Desafortunada-"
+	line "mente nadie ha"
+	cont "visto a los"
+	cont "autores."
 	done
 
 PoliceTrophyReturnedText:
-	text "Is that what I"
-	line "think it is?"
+	text "¿Es eso lo que"
+	line "creo que es?"
 
 	para "<...>"
 
-	para "I can't believe"
-	line "you found the"
-	cont "trophy!"
+	para "¡No puedo creer"
+	line "que hayas encon-"
+	cont "trado el trofeo!"
 
-	para "Thank you for"
-	line "returning it!"
-	cont "Here's something"
-	cont "for your trouble."
+	para "¡Gracias por"
+	line "devolverlo!"
+	cont "Aquí tienes por"
+	cont "las molestias."
 	done
 
 PoliceMuseumDoneText:
-	text "Thank you for"
-	line "being a good"
-	cont "samaritan!"
+	text "¡Gracias por"
+	line "haber sido"
+	cont "un buen sama-"
+	cont "ritano."
 	done
 
 MoroMuseumBoyScript:
 	jumptextfaceplayer MoroMuseumBoyText
 
 MoroMuseumBoyText:
-	text "The fossils are"
-	line "way cool!"
+	text "¡Los fósiles son"
+	line "muy guays!"
 
-	para "This one looks"
-	line "like a BUG!"
+	para "¡Hay uno que"
+	line "parece un bicho!"
 	done
 
 MoroMuseumLadyScript:
 	jumptextfaceplayer MoroMuseumLadyText
 
 MoroMuseumLadyText:
-	text "My son is very ex-"
-	line "cited to be here."
+	text "Mi hijo esta"
+	line "encantado de"
+	cont "estar aquí."
 
-	para "I've already lost"
-	line "track of him!"
+	para "¡Ya lo he perdido"
+	line "de vista!"
 	done
 
 MoroMuseumGrampsScript:
@@ -255,20 +265,21 @@ MoroMuseumGrampsText:
 	text "Mm<...>"
 
 	para "Mythic #MON<...>"
-	line "When I was a wee"
-	cont "lad, I saw one."
+	line "Cuando era crío,"
+	cont "vi uno."
 
-	para "As black as a"
-	line "SHADOW, with"
-	cont "burning red eyes."
+	para "Negro como una"
+	line "SOMBRA, con"
+	cont "ardientes ojos"
+	cont "rojos."
 
-	para "It simply watched"
-	line "me from the shade"
-	cont "of a tree, and"
-	cont "then disappeared."
+	para "Me observa desde"
+	line "la sombra de un"
+	cont "árbol, y luego"
+	cont "desaparece."
 
-	para "I wonder what it"
-	line "was?"
+	para "¿Me pregunto que"
+	line "será?"
 	done
 
 MoroIslandMuseum_MapEventHeader::

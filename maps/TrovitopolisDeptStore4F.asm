@@ -14,10 +14,10 @@ TrovitopolisDeptStore4FElevatorButton:
 	jumpstd elevatorbutton
 
 TrovitopolisDeptStore4FDirectoryText:
-	text "Let Us Pump Up"
-	line "Your #MON!"
+	text "¡Dejamos como nue-"
+	line " vo a tu #MON!"
 
-	para "4F MEDICINE BOX"
+	para "4F MEDICINAS"
 	done
 	
 TrovitopolisMedicineMartScript:

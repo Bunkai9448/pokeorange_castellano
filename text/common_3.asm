@@ -1,6 +1,6 @@
 _UsedSurfText::
 	text_from_ram StringBuffer2
-	text " ¡uso"
+	text " ¡Usó"
 	line "SURF!"
 	done
 
@@ -10,13 +10,13 @@ _CantSurfText::
 	prompt
 
 _AlreadySurfingText::
-	text "Ya estas"
+	text "Ya estás"
 	line "SURFEANDO."
 	prompt
 
 _UsedDiveText::
 	text_from_ram StringBuffer2
-	text " ¡Uso"
+	text " ¡Usó"
 	line "BUCEO!"
 	done
 
@@ -32,8 +32,8 @@ _AskDiveDownText::
 	done
 
 _AskDiveUpText::
-	text "Light is filter-"
-	line "ing from above."
+	text "La luz se filtra"
+	line "de la superficie."
 	cont "¿Quieres usar"
 	cont "buceo?"
 	done
@@ -42,7 +42,7 @@ _CanDiveText::
 	text "El mar es profundo."
 
 	para "un #MON puede"
-	line "usar BUCEO aqui."
+	line "usar BUCEO aquí.."
 	done
 
 UnknownText_0x1c068e::
@@ -63,7 +63,7 @@ UnknownText_0x1c06bf::
 
 UnknownText_0x1c06de::
 	text_from_ram StringBuffer2
-	text " ¡uso"
+	text " ¡Usó"
 	line "EXCAVAR!"
 	done
 
@@ -86,7 +86,7 @@ UnknownText_0x1c073b::
 
 UnknownText_0x1c0774::
 	text_from_ram StringBuffer2
-	text " uso"
+	text " Uso"
 	line "FUERZA!"
 	done
 
@@ -113,7 +113,7 @@ UnknownText_0x1c07f4::
 
 UnknownText_0x1c0816::
 	text_from_ram StringBuffer2
-	text " ¡uso"
+	text " ¡Usó"
 	line "TORBELLINO!"
 	prompt
 
@@ -132,7 +132,7 @@ UnknownText_0x1c0864::
 
 UnknownText_0x1c0897::
 	text_from_ram StringBuffer2
-	line "usó GOLPE CABEZA!"
+	line "Usó GOLPE CABEZA."
 	prompt
 
 UnknownText_0x1c08ac::
@@ -174,20 +174,20 @@ UnknownText_0x1c0965::
 	prompt
 
 UnknownText_0x1c099a::
-	text "You can't get off"
-	line "here!"
+	text "¡No puedes"
+	line "bajarte de ahí!"
 	done
 
 UnknownText_0x1c09b2::
-	text "<PLAYER> got on the"
+	text "<PLAYER> subio a"
 	line "@"
 	text_from_ram StringBuffer2
 	text "."
 	done
 
 UnknownText_0x1c09c7::
-	text "<PLAYER> got off"
-	line "the @"
+	text "<PLAYER> bajo"
+	line "de @"
 	text_from_ram StringBuffer2
 	text "."
 	done
@@ -213,24 +213,24 @@ _UsedRockClimbText::
 	prompt
 
 _CantRockClimbText::
-	text "The wall is very"
-	line "rocky<...>"
+	text "La pared es muy"
+	line "rocosa<...>"
 
 	para "¿Un #MON's"
 	line "la escalara?"
 	done
 
 UnknownText_0x1c0a1c::
-	text "<PLAYER> encontro"
+	text "¡<PLAYER> encontró"
 	line "@"
 	text_from_ram StringBuffer3
 	text "!"
 	done
 
 UnknownText_0x1c0a2c::
-	text "¡Pero <PLAYER> no"
-	line "puede llevar más"
-	cont "objetos!"
+	text "¡Pero <PLAYER>"
+	line "no puede llevar"
+	cont "mas objetos!"
 	done
 
 UnknownText_0x1c0a4e::
@@ -260,26 +260,27 @@ UnknownText_0x1c0acc::
 
 UnknownText_0x1c0b03::
 	text_from_ram StringBuffer3
-	text " ¡uso"
+	text " ¡Usó"
 	line "DULCE AROMA!"
 	done
 
 UnknownText_0x1c0b1a::
-	text "Parece que aquí no"
-	line "hay nada…"
+	text "Parece que aquí"
+	line "no hay nada…"
 	done
 
 UnknownText_0x1c0b3b::
-	text "<PLAYER> rego"
+	text "<PLAYER> regó"
 	line "con agua."
 
-	para "Pero no paso"
+	para "Pero no pasó"
 	line "nada<...>"
 	done
 
 UnknownText_0x1c0b65::
-	text "¡<PLAYER>'s #MON"
-	line "fueron curados!"
+	text "¡Los #MON de"
+	line "<PLAYER> fueron"
+	cont "curados!"
 	done
 
 Text_AnEGGCantHoldAnItem::
@@ -320,7 +321,7 @@ Text_YouDontHaveAPkmn::
 	prompt
 
 UnknownText_0x1c0c2e::
-	text "ASignado a select"
+	text "Asignado a select"
 	line "@"
 	text_from_ram StringBuffer2
 	text "."
@@ -353,11 +354,11 @@ UnknownText_0x1c0cc6::
 
 UnknownText_0x1c0cd0::
 	interpret_data
-	text $4c, "¡subio mucho!"
+	text $4c, "¡Subió mucho!"
 	prompt
 
 UnknownText_0x1c0ce0::
-	text " ¡subio!"
+	text " ¡Subió!"
 	prompt
 
 UnknownText_0x1c0ceb::
@@ -368,11 +369,11 @@ UnknownText_0x1c0ceb::
 
 UnknownText_0x1c0cf5::
 	interpret_data
-	text $4c, "¡bajo mucho!"
+	text $4c, "¡Bajó mucho!"
 	prompt
 
 UnknownText_0x1c0d06::
-	text " ¡bajo!"
+	text " ¡Bajo!"
 	prompt
 
 UnknownText_0x1c0d0e::
@@ -380,32 +381,32 @@ UnknownText_0x1c0d0e::
 
 UnknownText_0x1c0d26::
 	text ""
-	line "¡tomo luz solar!"
+	line "¡Tomo luz solar!"
 	prompt
 
 UnknownText_0x1c0d5c::
 	text ""
-	line "sprang up!"
+	line "¡La liberó!"
 	prompt
 
 FlewUpHighText::
 	text ""
-	line "¡Volo alto!"
+	line "¡Voló alto!"
 	prompt
 
 UnknownText_0x1c0d6c::
 	text ""
-	line "¡Excavo un agujero!"
+	line "¡Excavó un agujero!"
 	prompt
 
 HidUnderwaterText::
 	text ""
-	line "¡Se escondio"
+	line "¡Se escondió"
 	cont "bajo el agua!"
 	prompt
 
 UnknownText_0x1c0db0::
-	text "Huh?"
+	text "¿Huh?"
 	para "@@"
 
 UnknownText_0x1c0db8::
@@ -538,7 +539,7 @@ UnknownText_0x1c102b::
 	prompt
 
 UnknownText_0x1c10c0::
-	text "¡atrapado @"
+	text "¡Atrapado @"
 	text_from_ram StringBuffer1
 	text "!"
 	prompt
@@ -555,7 +556,7 @@ UnknownText_0x1c10dd::
 	prompt
 
 ContestJudging_FirstPlaceText::
-	text "El ganador de este"
+	text "El ganador de esté"
 	line "Concurso de"
 	interpret_data
 	text "<...>"
@@ -570,8 +571,7 @@ ContestJudging_FirstPlaceText::
 	line "que atrapó un"
 	cont "@"
 	text_from_ram StringBuffer1
-	text "!@"
-	done
+	text "!@@"
 
 ContestJudging_FirstPlaceScoreText::
 	text ""
@@ -593,8 +593,7 @@ ContestJudging_SecondPlaceText::
 	line "que atrapó un"
 	cont "@"
 	text_from_ram StringBuffer1
-	text "!@"
-	done
+	text "!@@"
 
 ContestJudging_SecondPlaceScoreText::
 	para "¡La puntuación"
@@ -614,8 +613,7 @@ ContestJudging_ThirdPlaceText::
 	line "que atrapó un"
 	cont "@"
 	text_from_ram StringBuffer1
-	text "!@"
-	done
+	text "!@@"
 
 ContestJudging_ThirdPlaceScoreText::
 	text ""
@@ -638,7 +636,7 @@ UnknownText_0x1c1203::
 	prompt
 
 UnknownText_0x1c123a::
-	text "RÉCORD ACTUAL"
+	text "RECORD ACTUAL"
 
 	para "@"
 	text_from_ram StringBuffer1
@@ -739,8 +737,8 @@ _KrissPCNoRoomDepositText::
 	prompt
 
 _KrissPCBetterKeepText::
-	text "Better keep it"
-	line "with me for now."
+	text "Mejor guardarlo"
+	line "por ahora."
 	prompt
 
 UnknownText_0x1c144d::
@@ -959,7 +957,7 @@ UnknownText_0x1c1a6c::
 	done
 
 UnknownText_0x1c1a90::
-	text "Toss out how many"
+	text "¿Tirar cuantas"
 	line "@"
 	text_from_ram StringBuffer2
 	text "(S)?"
@@ -1104,8 +1102,8 @@ UnknownText_0x1c1cf3::
 	done
 
 _OakText1::
-	text "Traducido por"
-	line "CALENTADASTCG"
+	text "Bienvenido a las"
+	line "ISLAS NARANJA."
 
 	para "Soy la profesora"
 	line "IVY. Dijijo el LAB"

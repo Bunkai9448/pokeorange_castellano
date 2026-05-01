@@ -29,35 +29,37 @@ PummeloIslandDrakeGift:
 	end
 	
 DrakeGiftPartyFullText:
-	text "Your party is"
-	line "full!"
+	text "¡Tu equipo"
+	line "esta lleno!"
 	done
 	
 DrakeGiftText1:
-	text "There's a note."
+	text "Hay una nota."
 	
 	para "DRAKE: <PLAYER>."
-	line "I'm going to KANTO"
-	cont "to train."
+	line "Me voy a KANTO"
+	cont "para entrenar."
 	
-	para "Next time we meet,"
-	line "I'll be ready to"
-	cont "take back my"
-	cont "place as CHAMPION!"
+	para "La siguiente vez"
+	line "que nos encontremos"
+	cont "estare listo..."
+	cont "¡Para recuperar mi"
+	cont "lugar como "
+	cont "CAMPEON!"
 	
-	para "I met your friend,"
-	line "TRACEY, as well."
-	cont "I know you have"
-	cont "business in KANTO"
+	para "Conoci a tu "
+	line "amigo TRACEY."
+	cont "Me conto sus"
+	cont "asuntos en "
 	
-	para "anyway. I also"
-	line "have a gift for"
-	cont "you. Take this"
-	cont "#MON, and show"
+	para "KANTO.. Tambien"
+	line "regalo para ti."
+	cont "Coge este"
+	cont "#MON, ¡y muestra"
 	
-	para "that you're not"
-	line "just a CHAMPION,"
-	cont "you're THE CHAMP!"
+	para "que eres el"
+	line "CAMPEON DE"
+	cont "CAMPEONES!"
 	done
 
 PummeloIslandHouse6_MapEventHeader:

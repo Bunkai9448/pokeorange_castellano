@@ -38,38 +38,40 @@ Mimi:
 
 .AlreadyGotCatStatue
 	jumptextfaceplayer MimiText
-	
+
 MimiDoneScript:
 	closetext
 	end
 
 DaikonText:
-	text "You are so strong!"
+	text "¡Eres tan fuerte!"
 	done
 
 KunioText:
-	text "You are worthy of"
-	line "the GOLDEN ISLAND"
-	cont "BATTLE HOUSE."
+	text "Eres digno de "
+	line "la CASA BATALLA"
+	cont "de Isla GOLDEN."
 	done
 
 YoshikawaText:
-	text "Well done."
+	text "Bien hecho."
 	done
 
 RenText:
-	text "We haven't had"
-	line "anyone beat us for"
-	cont "a long time!"
+	text "No ha habido"
+	line "nadie que nos"
+	cont "haya derrotado"
+	cont "en mucho tiempo."
 	done
 
 MimiText:
-	text "See you around!"
+	text "¡Nos vemos!"
 	done
 
 GiveExpAllText:
-	text "Here's your prize"
-	line "for beating us,"
+	text "¡Aqui tienes tu"
+	line "premio por"
+	cont "derrotarnos,"
 	cont "<PLAYER>!"
 	done
 

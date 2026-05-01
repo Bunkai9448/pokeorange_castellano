@@ -1,3 +1,4 @@
+
 const_value = 1
 	const HALLOFFAME_LANCE
 
@@ -57,50 +58,52 @@ HallOfFame_SlowlyApproachMachine:
 	step_end
 
 HallOfFame_LanceText:
-	text "DRAKE: It's been a"
-	line "long time since I"
-	cont "last came here."
+	text "DRAKE: Ha pasado"
+	line "mucho tiempo desde"
+	cont "la última vez que"
+	cont "estuve aquí."
 
-	para "This is where we"
-	line "honor the ORANGE"
+	para "Es donde honramos"
+	line "a los"
 
-	para "CREW CHAMPIONS"
-	line "for generations"
-	cont "to come."
+	para "CAMPEONES del"
+	line "ORANGE CREW"
+	cont "por generaciones."
 
-	para "Their courageous"
-	line "#MON are also"
-	cont "inducted."
+	para "El coraje de tus"
+	line "#MON es muy"
+	cont "inspirador."
 
-	para "Here today, we"
-	line "witnessed the rise"
+	para "Hoy, aquí"
+	line "presenciamos el"
 
-	para "of a new ORANGE"
-	line "CREW CHAMPION--a"
+	para "alzamiento de un"
+	line "nuevo CAMPEON,"
 
-	para "trainer who feels"
-	line "compassion for,"
+	para "que entiende y"
+	line "confía en sus"
 
-	para "and trust toward,"
-	line "all #MON."
+	para "compañeros,todos"
+	line "sus #MON."
 
-	para "A trainer who"
-	line "succeeded through"
+	para "Un entrenador"
+	line "que ha mostrado"
 
-	para "perseverance and"
-	line "determination."
+	para "perseverancia y"
+	line "determinación."
 
-	para "The new ORANGE"
-	line "CREW CHAMPION who"
+	para "El nuevo CAMPEON"
+	line "que ha alcanzado"
 
-	para "will lead us to"
-	line "more greatness!"
+	para "la grandeza y la"
+	line "eternidad."
 
-	para "<PLAYER>, allow me"
-	line "to register you"
+	para "<PLAYER>,permite"
+	line "que te registre"
 
-	para "and your partners"
-	line "as CHAMPIONS!"
+	para "junto a tus"
+	line "compañeros como"
+	cont "CAMPEONES."
 	done
 	
 HoFOfficerGuardScript:
@@ -113,16 +116,16 @@ HoFMasterBall:
 	itemball MASTER_BALL
 	
 HallOfFameMachineScriptText:
-	text "This machine is"
-	line "used to start up"
-	cont "the HALL OF FAME"
-	cont "RECORDER."
+	text "Esta máquina es"
+	line "usada para grabar"
+	cont "el HALL DE LA"
+	cont "FAMA."
 	done
 	
 HoFOfficerGuardScriptText:
-	text "Sorry, only the"
-	line "CHAMPION can go"
-	cont "back here."
+	text "Lo siento, solo"
+	line "el CAMPEON puede"
+	cont "venir aqui."
 	done
 
 HallOfFame_MapEventHeader:

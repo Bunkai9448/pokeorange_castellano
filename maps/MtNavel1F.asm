@@ -66,35 +66,39 @@ CrossBattle2Script:
 	end
 	
 CrossMtNavelText:
-	text "CROSS: Well, look"
-	line "what we have here!"
+	text "CROSS: Mira que"
+	line "tenemos aquí."
 
-	para "<PLAYER>, so not"
-	line "nice to see you!"
+	para "<PLAYER>, no"
+	line "es que me alegre"
+	cont "verte."
 
-	para "I have a score to"
-	line "settle with you,"
-	cont "loser!"
+	para "Tenemos una"
+	line "cuenta que"
+	cont "saldar, perdedor."
 
-	para "Let's battle!"
+	para "¡Combatamos!"
 	done
 	
 CrossMtNavelWinLoss:
-	text "As if that was my"
-	line "full strength!"
+	text "Has probado"
+	line "todo mi poder."
 	done
 	
 CrossMtNavelLeavingNowText:
-	text "CROSS: Hmph!"
+	text "CROSS: ¡Hmph!"
 
-	para "#MON are"
-	line "nothing more than"
-	cont "tools for winning!"
+	para "Los #MON no"
+	line "son mas que"
+	cont "herramientas para"
+	cont "combatir."
 
-	para "At the rate you"
-	line "are going, there"
-	cont "is no way I will"
-	cont "lose next time!"
+	para "Al ritmo que"
+	line "vas no hay"
+	cont "opción de que"
+	cont "pierda contra ti"
+	cont "la siguiente"
+	cont "vez."
 	done
 	
 PlayerMtNavel_Movement:

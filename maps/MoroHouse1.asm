@@ -29,27 +29,28 @@ MoroHeadbuttScript:
 	end
 
 GivePlayerHeadbuttText:
-	text "Hey, have you seen"
-	line "those thick vines?"
+	text "¿Has visto estas"
+	line "ramas?"
 
-	para "Sometimes, #MON"
-	line "live inside them."
-	cont "You can use a move"
-	cont "to draw them out!"
+	para "A veces,los #MON"
+	line "viven en ellas."
+	cont "Puedes moverlas "
+	cont "para espantarlos."
 	
-	para "Want to learn"
-	line "HEADBUTT?"
+	para "¿Quieres aprender"
+	line "GOLPE CABEZA?"
 	done
 	
 Text_HeadbuttTutorTaught:
-	text "Rattle vines with"
-	line "HEADBUTT. Some-"
-	cont "times, sleeping"
-	cont "#MON fall out."
+	text "Si usas GOLPE"
+	line "CABEZA en ellas,"
+	cont "algunos #MON "
+	cont "que duerman en"
+	cont "ellas, caerán."
 	done
 	
 Text_HeadbuttTutorRefused:
-	text "Alright then."
+	text "De acuerdo, pues."
 	done
 	
 Text_HeadbuttTutorClear:

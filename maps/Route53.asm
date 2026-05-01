@@ -57,100 +57,103 @@ Route53FruitTreeScript:
 	fruittree FRUITTREE_ROUTE_53
 
 FisherNatPagleSeenText:
-	text "If you ask me,"
-	line "the best part"
-	cont "about fishing is"
-	cont "its slow pace."
+	text "Si me preguntas,"
+	line "la mejor parte"
+	cont "de la pesca, es"
+	cont "la tranquilidad"
+	cont "y la paz."
 
-	para "It gives one time"
-	line "to think, to ref-"
-	cont "lect on past"
-	cont "events and to plan"
-	cont "for future ones."
+	para "Me da tiempo"
+	line "para pensar en"
+	cont "eventos pasados"
+	cont "para planear el"
+	cont "futuro."
 	done
 
 FisherNatPagleBeatenText:
-	text "I'm like some kind"
-	line "of fishing god<...>"
+	text "Me gustaría una"
+	line "buena pesca<...>"
 	done
 
 FisherNatPagleAfterText:
-	text "Now, I'm not say-"
-	line "ing you need to"
-	cont "fish for 30 years"
-	cont "or catch every"
+	text "No te digo que"
+	line "tengas que estar"
+	cont "pescando 30 años"
+	cont "atrapando cada"
 
-	para "fish in the sea"
-	line "to become a mas-"
-	cont "ter fisherman."
+	para "pez en el mar"
+	line "para convertirte"
+	cont "en un maestro"
+	cont "pescador."
 
-	para "I reckon you just"
-	line "need to be deter-"
-	cont "mined--enough to"
-	cont "sit on your duff"
-	cont "for hours at a"
-	cont "time."
+	para "Reconozco tu"
+	line "determinación"
+	cont "para echarle"
+	cont "horas suficientes."
 	done
 
 SwimmermKojuroSeenText:
-	text "You beat CISSY?"
-	line "Let's see what"
-	cont "you're made of!"
+	text "¿Venciste a "
+	line "CISSY?"
+	cont "¡Dejame ver de"
+	cont "que estas hecho!"
 	done
 
 SwimmermKojuroBeatenText:
-	text "Fried like a"
-	line "fish!"
+	text "Frito como un"
+	line "pez..."
 	done
 
 SwimmermKojuroAfterText:
-	text "You're hot stuff,"
-	line "kid!"
+	text "¡Eres pura"
+	line "pasión, chico!"
 	done
 
 SwimmermYoutaSeenText:
-	text "Some kid riding a"
-	line "MARILL came by!"
+	text "Un chico vino"
+	line "con un MARILL. "
 
-	para "He beat me, so I"
-	line "am gonna take out"
-	cont "my anger on you!"
+	para "Me ganó, voy"
+	line "a pagar mi"
+	cont "frustración"
+	cont "contigo."
 	done
 
 SwimmermYoutaBeatenText:
-	text "Yaaaah! I'm mad!"
+	text "¡Yaaaah! Estoy"
+	line "ido."
 	done
 
 SwimmermYoutaAfterText:
-	text "Two brats in a"
-	line "single day! Yah!"
+	text "¡Dos derrotas"
+	line "en un día!"
 	done
 
 Route53LassText:
-	text "Hey."
+	text "Ey."
 
-	para "Once you hit the"
-	line "end of this route,"
-	cont "there are two"
-	cont "paths."
+	para "Una vez acabes"
+	line "esta ruta,"
+	cont "habra dos"
+	cont "caminos."
 
-	para "North goes to"
-	line "MANDARIN NORTH,"
-	cont "and south goes to"
-	cont "SUNBURST ISLAND."
+	para "El Norte va a"
+	line "MANDARINA NORTE,"
+	cont "el sur a ISLA"
+	cont "SUNBURST."
 	done
 
 Route53SignText:
-	text "ROUTE 53"
+	text "RUTA 53"
 	done
 
 Route53TrainerTipsText:
-	text "TRAINER TIPS"
+	text "PISTAS ENTRENADOR"
 
-	para "Be wary of shady"
-	line "thugs! They may"
+	para "Ten cuidado con"
+	line "los ladroes."
 
-	para "try to steal your"
+	para "¡Querran robar tus"
 	line "#MON!"
 	done
 

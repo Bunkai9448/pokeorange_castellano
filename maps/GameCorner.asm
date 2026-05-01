@@ -364,73 +364,74 @@ GameCornerCardFlipMachineScript:
 	end
 
 GameCornerPrizeVendorIntroText:
-	text "Welcome!"
+	text "¡Bienvenido!"
 
-	para "We exchange your"
-	line "game coins for"
-	cont "fabulous prizes!"
+	para "¡Cambiamos tus"
+	line "fichas por premios"
+	cont "fabulosos!"
 	done
 
 GameCornerPrizeVendorWhichPrizeText:
-	text "Which prize would"
-	line "you like?"
+	text "¿Que premio te"
+	line "gustaría?"
 	done
 
 GameCornerPrizeVendorConfirmPrizeText:
 	text_from_ram StringBuffer3
 	text "."
-	line "Is that right?"
+	line "¿Este?"
 	done
 
 GameCornerPrizeVendorHereYouGoText:
-	text "Here you go!"
+	text "De acuerdo"
 	done
 
 GameCornerPrizeVendorNeedMoreCoinsText:
-	text "Sorry! You need"
-	line "more coins."
+	text "¡Lo siento! Pero"
+	line "necesitas mas"
+	cont "fichas."
 	done
 
 GameCornerPrizeVendorNoMoreRoomText:
-	text "Sorry. You can't"
-	line "carry any more."
+	text "Lo siento, no"
+	line "puedes llevar más."
 	done
 
 GameCornerPrizeVendorQuitText:
-	text "OK. Please save"
-	line "your coins and"
-	cont "come again!"
+	text "OK. Guarde sus"
+	line "fichas y vuelva"
+	cont "otra vez."
 	done
 
 GameCornerPrizeVendorNoCoinCaseText:
-	text "Oh? You don't have"
-	line "a COIN CASE."
+	text "¿Oh? No tienes"
+	line "un MONEDERO."
 	done
 
 GameCornerPokefanFText:
-	text "Slots is where the"
-	line "big money is at."
-	cont "I ought to try out"
-	cont "those new machines"
-	cont "they installed."
+	text "Los Slots es"
+	line "donde esta la"
+	cont "pasta.Llevo"
+	cont "enganchado desde"
+	cont "que estrenaron"
+	cont "estas máquinas."
 	done
 
 GameCornerCooltrainerFText:
-	text "I won a PORYGON"
-	line "with my coins!"
+	text "Gané un PORYGON"
+	line "con mis fichas."
 	done
 
 GameCornerPokefanM3Text:
 	text "Hmm<...>"
 	
-	para "I dropped some"
-	line "coins earlier."
+	para "Perdí algunas"
+	line "fichas antes.."
 	done
 	
 GameCornerAlreadyHaveTMText:
-	text "I'm sorry, but you"
-	line "already own that"
-	cont "TM."
+	text "Perdona, ya"
+	line "tienes la MT."
 	done
 	
 GameCorner10Coins:
@@ -512,50 +513,50 @@ FloorCoinsNoCoinCaseScript:
 	end
 	
 FloorCoinsNoCoinCaseText:
-	text "You don't have a"
-	line "COIN CASE!"
+	text "¡No tienes un"
+	line "MONEDERO!"
 	done
 	
 GameCorner10CoinsText:
-	text "You found 10"
-	line "coins! Nice!"
+	text "¡Encontraste 10"
+	line "fichas!¡Bien!"
 	done
 	
 GameCorner20CoinsText:
-	text "You found 20"
-	line "coins! Wow!"
+	text "¡Encontraste 20"
+	line "fichas! ¡Wow!"
 	done
 	
 GameCorner50CoinsText:
-	text "You found 50"
-	line "coins! Cheers!"
+	text "¡Encontraste 50"
+	line "fichas! ¡Yeah!"
 	done
 	
 GameCorner100CoinsText:
-	text "You found 100"
-	line "coins! Lucky!"
+	text "¡Encontraste 100"
+	line "fichas!¡Suertudo!"
 	done
 	
 PickedFireBlastText:
-	text "Ah, that one con-"
-	line "tains FIRE BLAST."
-	cont "Good choice!"
+	text "Ah, esta es"
+	line "llamarada."
+	cont "¡Buena elección!"
 	done
 
 PickedBlizzardText:
-	text "Ah, that one con-"
-	line "tains BLIZZARD."
-	cont "Good choice!"
+	text "Ah, esta es"
+	line "ventisca."
+	cont "¡Buena elección!"
 	done
 	
 PickedThunderText:
-	text "Ah, that one con-"
-	line "tains THUNDER."
-	cont "Good choice!"
+	text "Ah, esta es"
+	line "trueno."
+	cont "¡Buena elección!"
 	done
 
 ItemPickedText:
-	text "Good choice!"
+	text "¡Buena elección!"
 	done
 	
 GameCorner_MapEventHeader::

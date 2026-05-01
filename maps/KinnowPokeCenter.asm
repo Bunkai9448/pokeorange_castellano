@@ -16,28 +16,27 @@ KinnowGameboyKidScript:
 	jumptextfaceplayer KinnowGBKidText
 
 KinnowSlouchScript:
-	faceplayer
 	opentext
 	writetext KinnowSlouchText
 	waitbutton
 	closetext
-	spriteface KINNOW_SLOUCH, RIGHT
 	end
 
 KinnowSlouchText:
-	text "There are several"
-	line "uninhabited is-"
-	cont "lands."
+	text "Hay muchas islas"
+	line "vírgenes o "
+	cont "deshabitadas."
 
-	para "You may find rare"
-	line "#MON there."
+	para "Hay raros"
+	line "#MON en ellas."
 	done
 
 KinnowGBKidText:
-	text "Why are there no"
-	line "trade centers?"
+	text "¿Por que no hay"
+	line "centros de"
+	cont "intercambio?."
 
-	para "There is one, in"
+	para "Hay uno en"
 	line "TROVITOPOLIS."
 	done
 

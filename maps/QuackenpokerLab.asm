@@ -27,41 +27,43 @@ ProfQuackenpokercript:
 	end
 
 WantASuperRodText:
-	text "Ah, you must be"
-	line "<PLAYER>!"
+	text "Ah, ¡debes de"
+	line "ser <PLAYER>!"
 	
-	para "PROF. IVY told me"
-	line "you'd drop by."
+	para "LA PROF. IVY "
+	line "me dijo que"
 	
-	para "The name's"
-	line "QUACKENPOKER."
+	para "vendrias a ver"
+	line "al QUACKENPOKER."
 	
-	para "I'm a researcher"
-	line "of MAGIKARP. Did"
-	cont "you know they come"
-	cont "here to RIND"
+	para "Soy un investi-"
+	line "gador de MAGIKARP."
+	cont "¿Sabes que vienen"
+	cont "a ISLA RIND a"
 	
-	para "ISLAND during"
-	line "breeding season?"
+	para "descansar duran-"
+	line "te la temporada"
+	cont "de cría?"
 	
-	para "They also have"
-	line "striking markings!"
+	para "Tambien tienen"
+	line "marcas llamativas."
 
-	para "Ehem<...>"
-	line "Anyway, this is"
-	cont "for you."
+	para "Eem<...>"
+	line "Da igual, esto"
+	cont "es para ti."
 	done
 
 AlreadyGotSuperRodText:
-	text "How goes the fish-"
-	line "ing, <PLAYER>?"
+	text "¿Como va la"
+	line "pesca, <PLAYER>?"
 	done
 
 SuperRodHappyFishingText:
-	text "If you would be"
-	line "so kind, you can"
-	cont "start off by cat-"
-	cont "ching some KARP!"
+	text "Si quieres ser"
+	line "TOP, puedes"
+	cont "empezar por "
+	cont "pescar algun"
+	cont "Magicarp."
 	done
 
 KarpSalesmanScript:
@@ -116,32 +118,34 @@ KarpSalesmanScript:
 KarpSalesmanText1:
 	text "Hey, kid!"
 	
-	para "I got a golden"
-	line "MAGIKARP for sale!"
-	cont "How does ¥200000"
-	cont "sound?"
+	para "Tengo un"
+	line "MAGIKARP dorado"
+	cont "a la venta. "
+	cont "Solo pido"
+	cont "¥200000."
 	done
 	
 NotEnoughMoneyKarpSalesmanText:
-	text "You ain't got the"
-	line "cash!"
+	text "¡No tienes ese"
+	line "dinero!"
 	done
 	
 PleasureDoingBusinessKarpSalesmanText:
-	text "Pleasure doin'"
-	line "business with ya!"
+	text "Un placer hacer"
+	line "negocios contigo."
 	done
 	
 KarpSalesmanPartyFullText:
-	text "You're going to"
-	line "need to make more"
-	cont "room."
+	text "Necesitas tener"
+	line "mas espacio en"
+	cont "tu equipo."
 	done
 
 RefusedKarpSalesmanText:
-	text "No problemo, old"
-	line "QUACKENPOKER would"
-	cont "not buy it either."
+	text "No problemo, el"
+	line "QUACKENPOKER "
+	cont "tampoco lo"
+	cont "compraria."
 	done
 	
 AlreadyBoughtMagikarpText:
@@ -173,8 +177,8 @@ QuackenPokerLabBookshelf:
 	jumpstd difficultbookshelf
 
 QuackenpokerLabHealingMachineText2:
-	text "Would you like to"
-	line "heal your #MON?"
+	text "¿Te gustaría"
+	line "curar tus #MON?"
 	done
 
 QuackenpokerLab_MapEventHeader::

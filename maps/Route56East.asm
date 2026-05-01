@@ -26,20 +26,20 @@ TrainerSightSeerMichio:
 	end
 
 SightSeerMichioSeenText:
-	text "I am totally lost!"
-	line "Do you know how to"
-	cont "get to KINNOW"
-	cont "ISLAND?"
+	text "Estoy totalmente"
+	line "perdido! ¿Sabes"
+	cont "cómo llegar a la"
+	cont "ISLA KINNOW?"
 	done
 
 SightSeerMichioBeatenText:
-	text "I remember now!"
+	text "¡Ahora lo recuerdo!"
 	done
 
 SightSeerMichioAfterText:
-	text "That's right!"
-	line "It's north of"
-	cont "here!"
+	text "¡Así es!"
+	line "¡Está al norte"
+	cont "de aquí!"
 	done
 
 TrainerSwimmerYaeko:
@@ -54,20 +54,20 @@ TrainerSwimmerYaeko:
 	end
 
 SwimmerYaekoSeenText:
-	text "Are you ready for"
-	line "the shock of your"
-	cont "life?"
+	text "¿Estás preparado"
+	line "para la mayor"
+	cont "sorpresa de tu vida?"
 	done
 
 SwimmerYaekoBeatenText:
-	text "Shocking!"
+	text "¡Chocante!"
 	done
 
 SwimmerYaekoAfterText:
-	text "STUNFISK lives in"
-	line "water, but it is"
-	cont "GROUND-type and"
-	cont "ELECTRIC-type."
+	text "STUNFISK vive en"
+	line "el agua, pero es"
+	cont "de tipo TIERRA y"
+	cont "ELÉCTRICO."
 	done
 
 TrainerHikerTeppei:
@@ -82,21 +82,24 @@ TrainerHikerTeppei:
 	end
 
 HikerTeppeiSeenText:
-	text "Hiking at sea?"
+	text "¿Hacer senderismo"
+	line "en el mar?"
 
-	para "No problem! Look"
-	line "what I found ski-"
-	cont "ttering around!"
+	para "¡No hay problema!"
+	line "¡Mira lo que"
+	cont "encontré dando"
+	cont "vueltas por aquí!"
 	done
 
 HikerTeppeiBeatenText:
-	text "How cool is that?"
+	text "¿Qué tan genial"
+	line "es eso?"
 	done
 
 HikerTeppeiAfterText:
-	text "I wonder what"
-	line "else lives in"
-	cont "this cave."
+	text "Me pregunto qué"
+	line "más puede habitar"
+	cont "en esta cueva."
 	done
 
 Route56EastTMDragonbreath:
@@ -131,29 +134,30 @@ Route56MachPunchTutor:
 	end
 
 GivePlayerMachPunchText:
-	text "Wahahaha!"
+	text "Wajajaja!"
 	
-	para "You look quite"
-	line "nimble, my young"
-	cont "friend!"
+	para "¡Pareces muy"
+	line "ágil, amigo"
+	cont "mío!"
 	
-	para "If you'd like, I"
-	line "can teach your"
-	cont "#MON the move"
-	cont "MACH PUNCH!"
+	para "¡Si quieres,"
+	line "puedo enseñarle a"
+	cont "tu #MON el"
+	cont "movimiento"
+	cont "ULTRAPUÑO!"
 	
-	para "Want to learn"
-	line "MACH PUNCH?"
+	para "¿Quieres aprender"
+	line "ULTRAPUÑO?"
 	done
 	
 Text_MachPunchTutorTaught:
-	text "MACH PUNCH is very"
-	line "fast! It usually"
-	cont "strikes first."
+	text "¡ULTRAPUÑO es muy"
+	line "rápido! Suele"
+	cont "atacar primero."
 	done
 	
 Text_MachPunchTutorRefused:
-	text "Very well!"
+	text "¡Muy bien!"
 	done
 	
 Text_MachPunchTutorClear:

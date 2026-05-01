@@ -11,32 +11,32 @@ CooltrainerFScript_0x197637:
 	jumptextfaceplayer UnknownText_0x197661
 
 UnknownText_0x197661:
-	text "Oh, of all the"
-	line "rotten luck! You"
-	cont "can't go to MIKAN"
-	cont "ISLAND unless you"
-	cont "go through the"
-	cont "JUNGLE!"
+	text "¡Que mala "
+	line "suerte! No"
+	cont "puedes ir a "
+	cont "ISLA MIKAN"
+	cont "salvo que cruces"
+	cont "la JUNGLA."
 	done
 
 TangeloBinoculars1:
 	jumptext TangeloBinoculars1Text
 
 TangeloBinoculars1Text:
-	text "There are a lot of"
-	line "trainers that are"
-	cont "swimming in the"
-	cont "ocean!"
+	text "¡Hay un montón"
+	line "de entrenadores"
+	cont "nadando por el"
+	cont "oceano!"
 	done
 
 TangeloBinoculars2:
 	jumptext TangeloBinoculars2Text
 
 TangeloBinoculars2Text:
-	text "A #MON center"
-	line "is on the other"
-	cont "side of the JUN-"
-	cont "GLE."
+	text "Hay un centro"
+	line "#MON  en el"
+	cont "otro lado de "
+	cont "la JUNGLA."
 	done
 
 Route51GateUpstairs_MapEventHeader::

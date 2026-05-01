@@ -27,26 +27,28 @@ MayorReceptionistScript:
 	end
 	
 MayorReceptionistNoOneCanEnterText:
-	text "Um<...> I'm sorry."
+	text "Um<...> Lo siento."
 	
-	para "No one is allowed"
-	line "in. Please come"
-	cont "some other time."
+	para "Nadie puede entrar"
+	line "aquí por ahora."
+	cont "Por favor ven"
+	cont "en otra ocasión."
 	done
 	
 MayorReceptionistLeavingText:
-	text "Um<...> I'm sorry."
+	text "Um<...> Lo siento."
 	
 	para "<...> <...> <...>"
 	
-	para "You're here to put"
-	line "a stop to the"
-	cont "mayor?"
+	para "¿Estas aquí para"
+	line "detener al"
+	cont "alcalde?"
 	
-	para "In that case<...>"
-	line "Please! Go right"
-	cont "ahead! If anyone"
-	cont "asks, I was beat!"
+	para "En ese caso<...>"
+	line "Por favor, entra"
+	cont "rápido. Si"
+	cont "alguien pregunta,"
+	cont "me venciste."
 	done
 
 MayorsOffice_MapEventHeader::

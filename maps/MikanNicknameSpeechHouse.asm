@@ -37,22 +37,21 @@ BirdScript_0x693ef:
 	end
 
 UnknownText_0x693fa:
-	text "I can sense you"
-	line "have a knack at"
-	cont "SEAFARING."
+	text "Puedo sentir que"
+	line "tienes un don"
+	cont "para la NAVEGACION."
 
-	para "Here, take this."
-	line "One of my older"
-	cont "RODs."
+	para "Toma, una de mis "
+	line "viejas cañas."
 	done
 
 RodText:
-	text "How goes the fish-"
-	line "ing?"
+	text "¿Como va la"
+	line "pesca?"
 	done
 
 UnknownText_0x6947c:
-	text "SHELLDER: Krrkrr!"
+	text "SHELLDER: ¡Krrkrr!"
 	done
 
 MikanNicknameSpeechHouse_MapEventHeader:

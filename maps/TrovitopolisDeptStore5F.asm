@@ -18,10 +18,10 @@ TrovitopolisDeptStore5FElevatorButton:
 	jumpstd elevatorbutton
 
 TrovitopolisDeptStore5FDirectoryText:
-	text "Customize Your"
+	text "Personaliza tu"
 	line "#MON"
 
-	para "5F TM CORNER"
+	para "5F SECCION MT"
 	done
 	
 TrovitopolisTMMartScript:
@@ -53,30 +53,32 @@ Route52IcepunchTutor:
 	end
 
 GivePlayerIcepunchText:
-	text "Hu ha! We are the"
-	line "Order of the Fist!"
+	text "¡Hu ha! ¡Somos la"
+	line "Orden del PUÑO!"
 	
-	para "Our leader left us"
-	line "here to teach our"
-	cont "ways while he went"
-	cont "on a mission to"
-	cont "TANGELO ISLAND!"
+	para "Nuestro líder"
+	line "nos enseña téc-"
+	cont "nicas, ahora esta"
+	cont "de misión en"
+	cont "ISLA TANGELO"
 	
-	para "As such, I can"
-	line "teach your #MON"
-	cont "ICE PUNCH! Want"
-	cont "to learn?"
+	para "Puedo enseñar"
+	line "a tu #MON,"
+	cont "PUÑO HIELO."
+	cont "¿Quieres que lo"
+	cont "haga?"
 	done
 	
 Text_IcepunchTutorTaught:
-	text "ICE PUNCH is"
-	line "an ICE attack"
-	cont "that can sometimes"
-	cont "freeze your foe!"
+	text "PUÑO HIELO es"
+	line "ataque de fuego"
+	cont "que puede con-"
+	cont "gelar al"
+	cont "objetivo."
 	done
 	
 Text_IcepunchTutorRefused:
-	text "Very well!"
+	text "¡Muy bien!"
 	done
 	
 Text_IcepunchTutorClear:
@@ -106,30 +108,31 @@ Route52FirepunchTutor:
 	end
 
 GivePlayerFirepunchText:
-	text "Hu ha! We are the"
-	line "Order of the Fist!"
+	text "¡Hu ha! ¡Somos la"
+	line "Orden del PUÑO!"
 	
-	para "Our leader left us"
-	line "here to teach our"
-	cont "ways while he went"
-	cont "on a mission to"
-	cont "TANGELO ISLAND!"
+	para "Nuestro líder"
+	line "nos enseña téc-"
+	cont "nicas, ahora esta"
+	cont "de misión en"
+	cont "ISLA TANGELO."
 	
-	para "As such, I can"
-	line "teach your #MON"
-	cont "FIRE PUNCH! Want"
-	cont "to learn?"
+	para "Puedo enseñar"
+	line "a tu #MON,"
+	cont "PUÑO FUEGO."
+	cont "¿Quieres que lo"
+	cont "haga?"
 	done
 	
 Text_FirepunchTutorTaught:
-	text "FIRE PUNCH is"
-	line "a FIRE attack"
-	cont "that can sometimes"
-	cont "burn your foe!"
+	text "PUÑO FUEGO es"
+	line "ataque de fuego"
+	cont "que puede que-"
+	cont "mar al objetivo."
 	done
 	
 Text_FirepunchTutorRefused:
-	text "Very well!"
+	text "¡Muy bien!"
 	done
 	
 Text_FirepunchTutorClear:
@@ -159,30 +162,32 @@ Route52CometpunchTutor:
 	end
 
 GivePlayerCometpunchText:
-	text "Hu ha! We are the"
-	line "Order of the Fist!"
+	text "¡Hu ha! ¡Somos la"
+	line "Orden del PUÑO!"
 	
-	para "Our leader left us"
-	line "here to teach our"
-	cont "ways while he went"
-	cont "on a mission to"
-	cont "TANGELO ISLAND!"
+	para "Nuestro lider"
+	line "nos enseña téc-"
+	cont "nicas, ahora esta"
+	cont "de misión en"
+	cont "ISLA TANGELO."
 	
-	para "As such, I can"
-	line "teach your #MON"
-	cont "COMET PUNCH! Want"
-	cont "to learn?"
+	para "Puedo enseñar"
+	line "a tu #MON,"
+	cont "PUÑO COMETA."
+	cont "¿Quieres que lo"
+	cont "haga?"
 	done
 	
 Text_CometpunchTutorTaught:
-	text "COMET PUNCH is"
-	line "a NORMAL attack"
-	cont "that can hit the"
-	cont "foe many times!"
+	text "PUÑO COMETA es"
+	line "ataque de tipo"
+	cont "normal que puede"
+	cont "golpear varias"
+	cont "veces."
 	done
 	
 Text_CometpunchTutorRefused:
-	text "Very well!"
+	text "¡Muy bien!"
 	done
 	
 Text_CometpunchTutorClear:
@@ -212,30 +217,32 @@ Route52DynamicPunchTutor:
 	end
 
 GivePlayerDynamicpunchText:
-	text "Hu ha! We are the"
-	line "Order of the Fist!"
+	text "¡Hu ha! ¡Somos la"
+	line "Orden del PUÑO!"
 	
-	para "Our leader left us"
-	line "here to teach our"
-	cont "ways while he went"
-	cont "on a mission to"
-	cont "TANGELO ISLAND!"
+	para "Nuestro líder"
+	line "nos enseña téc-"
+	cont "nicas, ahora esta"
+	cont "de misión en"
+	cont "ISLA TANGELO"
 	
-	para "As such, I can"
-	line "teach your #MON"
-	cont "DYNAMICPUNCH! Want"
-	cont "to learn?"
+	para "Puedo enseñar"
+	line "a tu #MON,"
+	cont "PUÑODINAMICO."
+	cont "¿Quieres que lo"
+	cont "haga?"
 	done
 	
 Text_DynamicpunchTutorTaught:
-	text "DYNAMICPUNCH is"
-	line "a FIGHTING attack"
-	cont "that can confuse"
-	cont "the foe!"
+	text "PUÑODINAMICO es"
+	line "un ataque de "
+	cont "lucha que puede"
+	cont "confundir al"
+	cont "rival."
 	done
 	
 Text_DynamicpunchTutorRefused:
-	text "Very well!"
+	text "¡Muy bién!"
 	done
 	
 Text_DynamicpunchTutorClear:

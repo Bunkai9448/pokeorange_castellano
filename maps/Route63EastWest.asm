@@ -28,20 +28,24 @@ TrainerFisherMiyagi:
 	end
 
 FisherMiyagiSeenText:
-	text "A true fisherman"
-	line "can brave anything"
-	cont "for the sake of"
-	cont "fishing."
+	text "Un verdadero"
+	line "pescador puede"
+	cont "desafiar cual-"
+	cont "quier cosa por"
+	cont "el bien de la"
+	cont "pesca."
 	done
 
 FisherMiyagiBeatenText:
-	text "A typhoon couldn't"
-	line "match your might!"
+	text "¡Ni un tifón"
+	line "podría igualar"
+	cont "tu fuerza!"
 	done
 
 FisherMiyagiAfterText:
-	text "Truly skilled play"
-	line "you have shown me."
+	text "Me has demostrado"
+	line "una habilidad"
+	cont "excepcional."
 	done
 	
 TrainerFisherKunai:
@@ -56,19 +60,19 @@ TrainerFisherKunai:
 	end
 
 FisherKunaiSeenText:
-	text "It's MAN-TIME for"
+	text "¡Es hora de"
 	line "MANTINE!"
 	done
 
 FisherKunaiBeatenText:
-	text "I can't MAN-TAIN"
-	line "any more!"
+	text "¡Ya no puedo"
+	line "más!"
 	done
 
 FisherKunaiAfterText:
-	text "MAN, that was a"
-	line "MAN-TY fine"
-	cont "battle!"
+	text "¡Hombre, esa"
+	line "fue una batalla"
+	cont "épica!"
 	done
 	
 TrainerCooltrainerMSei:
@@ -83,27 +87,27 @@ TrainerCooltrainerMSei:
 	end
 
 CooltrainerMSeiSeenText:
-	text "The ASCORBIA"
-	line "TRAINER CREW re-"
-	cont "jected me, so I'm"
-	cont "training!"
+	text "La ASCORBIA"
+	line "TRAINER CREW me"
+	cont "rechazó, ¡así que"
+	cont "estoy entrenando!"
 	done
 
 CooltrainerMSeiBeatenText:
-	text "Oof!"
+	text "¡Uf!"
 	done
 
 CooltrainerMSeiAfterText:
-	text "You can find the"
-	line "#MON MEOWTH"
-	cont "around here."
+	text "Puedes encontrar"
+	line "el #MON"
+	cont "MEOWTH por aquí."
 	done
 	
 Route63Sign:
 	jumptext Route63SignText
 	
 Route63SignText:
-	text "ROUTE 63"
+	text "RUTA 63"
 	done
 
 Route63EastWest_MapEventHeader::
@@ -121,4 +125,3 @@ Route63EastWest_MapEventHeader::
 	person_event SPRITE_FISHER, 5, 36, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 1, TrainerFisherMiyagi, -1
 	person_event SPRITE_FISHER, 13, 51, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 1, TrainerFisherKunai, -1
 	person_event SPRITE_COOLTRAINER_M, 5, 66, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 3, TrainerCooltrainerMSei, -1
-

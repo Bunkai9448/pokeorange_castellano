@@ -73,68 +73,71 @@ SunburstTMSunnyDay:
 	itemball TM_SUNNY_DAY
 
 SunburstFatManText:
-	text "This is CRYSTAL"
-	line "CAVE."
+	text "Es la cueva"
+	line "Cristal."
 
-	para "Legend has it"
-	line "that an ONIX made"
-	cont "of crystal lives"
-	cont "inside."
+	para "La leyenda dice"
+	line "que hay un ONIX "
+	cont "hecho de los "
+	cont "cristales de la"
+	cont "cueva."
 
-	para "Speaking of ONIX,"
-	line "a gym leader from"
-	cont "KANTO came by"
-	cont "earlier."
+	para "Hablando de ONIX,"
+	line "un lider de Gim"
+	cont "de KANTO vino"
+	cont "antes."
 	done
 
 SunburstCooltrainerFText:
-	text "Oh my gosh!"
+	text "¡Cielos!"
 
-	para "I saw BROCK, the"
-	line "PEWTER CITY gym"
-	cont "leader from KANTO!"
+	para "Vi a BROCK, el"
+	line "lider de Gim"
+	cont "de CIUDAD"
+	cont "PLATEADA,"
+	cont "KANTO."
 	done
 
 SunburstGrampsText:
-	text "This used to be"
-	line "a well-off town,"
-	cont "like MANDARIN"
-	cont "ISLAND NORTH was."
+	text "Esto solía ser"
+	line "una ciudad adi-"
+	cont "nerada como"
+	cont "MANDARINA NORTE."
 
-	para "Recently tourism"
-	line "has died off, our"
-	cont "business has been"
-	cont "suffering for it."
+	para "Ultimamente el"
+	line "turismo ha ido"
+	cont "muriendo, y lo"
+	cont "estamos notando."
 	done
 
 SunburstSignText:
-	text "SUNBURST ISLAND"
+	text "ISLA SUNBURST"
 
-	para "The island where"
-	line "crystal shines"
-	cont "bright."
+	para "La isla donde"
+	line "el cristal "
+	cont "brilla fuerte."
 	done
 
 BazaarSignText:
-	text "SUNBURST BAZAAR"
+	text "BAZAR SUNBURST"
 	done
 
 IslandSignText:
-	text "CRYSTAL SHOP"
+	text "TIENDA CRISTAL"
 
-	para "Out of Business"
+	para "CERRADO"
 	done
 
 CenterSignText:
-	text "SUNBURST ISLAND"
-	line "#MON CENTER"
+	text "ISLA SUNBURST"
+	line "CENTRO #MON "
 	done
 
 CaveSignText:
-	text "CRYSTAL CAVE"
+	text "CUEVA CRISTAL"
 
-	para "Follow right to"
-	line "ROUTE 55."
+	para "Sigue recto "
+	line "hacia RUTA 55."
 	done
 	
 SunburstHiddenNugget:

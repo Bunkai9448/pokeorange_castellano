@@ -47,39 +47,40 @@ KumquatWestShamoutiSailor:
 	end
 	
 KumquatWestShamoutiSailorText:
-	text "I run a ferry to"
-	line "SHAMOUTI ISLAND."
+	text "Llevo un ferry a"
+	line "ISLA SHAMOUTI."
 	
-	para "Sadly, the sea is"
-	line "a bit rough right"
-	cont "now, so I can't"
-	cont "take you there."
+	para "Por ahora el"
+	line "mar está muy"
+	cont "bravo así que"
+	cont "tendrás que"
+	cont "esperar."
 	done
 	
 KumquatWestShamoutiSailorText2:
-	text "You're just in"
-	line "time, kid!"
+	text "Justo a tiempo,"
+	line "chico."
 	
-	para "I'm about to set"
-	line "sail for SHAMOUTI"
-	cont "ISLAND. Want to"
-	cont "come along?"
+	para "Voy a zarpar a"
+	line "a ISLA SHAMOUTI."
+	cont "¿Quieres venir"
+	cont "en mi barco?"
 	done
 	
 KumquatWestShamoutiSailorText3:
-	text "Off we go!"
+	text "¡Nos vamos!"
 	done
 	
 KumquatWestSailor:
 	jumptextfaceplayer KumquatWestSailorText
 	
 KumquatWestSailorText:
-	text "I just came from"
-	line "VERMILION CITY."
+	text "Acabo de venir"
+	line "de CIUDAD CARMIN."
 	
-	para "Let me tell you,"
-	line "the resorts here"
-	cont "can't be beat!"
+	para "Cuentame los"
+	line "placeres de"
+	cont "estas islas."
 	done
 	
 KumquatWestFisher:
@@ -102,36 +103,41 @@ KumquatWestFisher:
 	end
 	
 KumquatWestFisherText:
-	text "Maybe you'll have"
-	line "better luck."
+	text "Quizás tengas"
+	line "mejor suerte."
 	done
 	
 KumquatWestFisherText2:
-	text "I lost all my"
-	line "cash playing at"
-	cont "the GAME CORNER."
+	text "Perdí todo"
+	line "mi dinero en"
+	cont "el CASINO."
 	
-	para "I don't need this"
-	line "anymore. Take it."
+	para "No lo necesito"
+	line "más. TOMA."
 	done
 	
 KumquatWestSightseer:
 	jumptextfaceplayer KumquatWestSightseerText
 	
 KumquatWestSightseerText:
-	text "What do you want?"
-	line "I'm soaking up"
-	cont "some sun here!"
+	text "¿Qué quieres?"
+	line "Estoy a remojo"
+	cont "con el solecito."
 	done
 	
 GameCornerSign:
 	jumptext GameCornerSignText
 	
 GameCornerSignText:
-	text "GAME CORNER"
+	text "CASINO"
 	
-	para "Hit it big for"
-	line "awesome prizes!"
+	para "Apuesta todo"
+	line "para grandes"
+	cont "premios."
+	cont "En la vida"
+	cont "real,la"
+	cont "ludopatía es algo"
+	cont "muy peligroso."
 	done
 	
 KumquatWestSuperNerd:
@@ -166,17 +172,16 @@ KumquatWestSuperNerd:
 
 KumquatWestSuperNerdText1:
 	text "Sigh<...>"
-	line "You don't have"
-	cont "what I'm looking"
-	cont "for."
+	line "¿No ves que"
+	cont "estoy buscando"
+	cont "algo?"
 	done
 	
 KumquatWestSuperNerdText2:
-	text "I smell coins!"
-	line "How about it?"
-	cont "For 5000 coins,"
-	cont "I'll give you a"
-	cont "precious PP UP."
+	text "¡Huelo fichas!"
+	line "Por solo 5000"
+	cont "te doy un "
+	cont "precioso MAS PP."
 	done
 	
 KumquatWestSuperNerdText3:
@@ -184,29 +189,33 @@ KumquatWestSuperNerdText3:
 	done
 	
 KumquatWestSuperNerdText4:
-	text "Oh yes! Coins are"
-	line "the best!"
+	text "¡Oh si!Las"
+	line "fichas son"
+	cont "lo mejor."
 	done
 	
 KumquatWestCooltrainerF2:
 	jumptextfaceplayer KumquatWestCooltrainerF2Text
 	
 KumquatWestCooltrainerF2Text:
-	text "LUANA is the gym"
-	line "leader here."
+	text "LUANA es la lider"
+	line "de gimnasio de"
+	cont "esta ciudad."
 	
-	para "Her ALAKAZAM packs"
-	line "a PSYCHIC punch!"
+	para "Su ALAKAZAM da"
+	line "muy fuerte."
 	done
 
 KumquatWestCooltrainerM:
 	jumptextfaceplayer KumquatWestCooltrainerMText
 	
 KumquatWestCooltrainerMText:
-	text "I hear the ORANGE"
-	line "CREW leader has a"
-	cont "strong DRAGON-type"
-	cont "#MON."
+	text "He oido que"
+	line "el lider del"
+	cont "ORANGE CREW"
+	cont "tiene #MON"
+	cont "dragón que son"
+	cont "formidables."
 	done
 
 KumquatWestCooltrainerF1:
@@ -215,12 +224,13 @@ KumquatWestCooltrainerF1:
 KumquatWestCooltrainerF1Text:
 	text "<...>"
 	
-	para "I think my team is"
-	line "pretty well bal-"
-	cont "anced."
+	para "Creo que mi"
+	line "equipo está muy"
+	cont "balanceado."
 	
-	para "All my friends got"
-	line "stomped by LUANA."
+	para "Todos mis amigos"
+	line "fueron derrotados"
+    cont "por LUANA."
 	done
 
 KumquatIslandWest_MapEventHeader::

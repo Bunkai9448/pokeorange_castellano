@@ -75,57 +75,60 @@ AthleteSheldonScript:
 	end
 	
 SheldonNotReadyText:
-	text "Welcome to the"
-	line "SUITES. To proceed"
-	cont "you will enter the"
-	cont "rooms until you"
+	text "Bienvenido a las"
+	line "SUITES. Debes"
+	cont "entrar en las"
+	cont "habitaciones hasta"
 	
-	para "Find the CARD KEY."
+	para "dar con la"
+	line "TARJ.LLAVE."
 	done
 	
 GotCardKeySuiteText:
-	text "You got the LVL 2"
-	line "CARD KEY!"
+	text "Conseguiste la"
+	line "TARJ.LLAVE NVL 2."
 	
-	para "That CARD KEY will"
-	line "let you enter the"
-	cont "top floor."
+	para "La TARJ.LLAVE"
+	line "te abrirá"
+	cont "la planta mas"
+	cont "alta."
 	done
 	
 SheldonWinLoss:
-	text "Brilliant!"
+	text "¡Brillante!"
 	done
 	
 AlreadyBeatSheldonText:
-	text "I've been working"
-	line "for LUANA for a"
-	cont "long time now. I"
-	cont "think she's taken"
+	text "He estado "
+	line "trabajando para"
+	cont "LUANA mucho"
+	cont "tiempo.Creo que"
 	
-	para "quite a liking to"
-	line "you."
+	para "te ha cogido"
+	line "cariño."
 	done
 	
 AthleteSheldonText1:
-	text "Have you figured"
-	line "it out then?"
+	text "¿Quien lo "
+	line "hubiera dicho?"
 	
-	para "That's right!"
-	line "I'm the SUITE"
-	cont "MASTER, SHELDON!"
+	para "¡Correcto!"
+	line "Soy el Maestro"
+	cont "de las SUITES:"
+    cont "¡SHELDON!"
 	
-	para "If you want this"
-	line "CARD KEY, then"
-	cont "you have to beat"
-	cont "me!"
+	para "Si quieres la"
+	line "TARJ. LLAVE,"
+	cont "¡Tendras que"
+	cont "vencerme!"
 	done
 	
 AthleteSheldonText2:
-	text "Splendid."
+	text "Espléndido."
 	
-	para "Take this CARD"
-	line "KEY. LUANA is"
-	cont "expecting you."
+	para "Toma la TARJ.LLAVE"
+	line "que LUANA te"
+	cont "esta esperando."
 	done
 
 KumquatHotelSuites_MapEventHeader::

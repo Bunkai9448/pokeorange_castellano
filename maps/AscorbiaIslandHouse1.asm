@@ -43,33 +43,34 @@ AscorbiaDittoGuyDoneScript:
 	end
 
 AscorbiaDittoGuyText:
-	text "I love DITTO!"
-	line "But I don't own"
-	cont "one!"
+	text "¡Me encanta "
+	line "Ditto¡ ¡pero no"
+	cont "tengo uno!"
 	
-	para "Can you please"
-	line "show me a DITTO?"
+	para "¿Podrias mostrarme"
+	line "un DITTO?"
 	done
 
 AscorbiaDittoGuyText2:
-	text "METAL POWDER"
-	line "doubles DITTO's"
-	cont "DEFENSE!"
+	text "¡POLVO METALICO"
+	line "dobla la "
+	cont "DEFENSA de DITTO!"
 	done
 
 AscorbiaDittoGuyText3:
-	text "Aw, you don't have"
-	line "it?"
+	text "¡Ah!¿No tienes"
+	line "uno?"
 	done
 	
 AscorbiaDittoGuyText4:
-	text "That's it!"
-	line "It's so cute!"
+	text "¡Ese es!"
+	line "¡Es tan bonito!"
 	
-	para "Thank you for"
-	line "showing me DITTO!"
-	cont "Here's a token of"
-	cont "my gratitude."
+	para "Muchas gracias por"
+	line "enseñarme a DITTO"
+	cont "Aqui tienes un"
+	cont "Token en"
+	cont "agradecimiento."
 	done
 
 AscorbiaIslandHouse1_MapEventHeader::

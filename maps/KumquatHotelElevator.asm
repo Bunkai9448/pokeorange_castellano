@@ -54,8 +54,8 @@ Elevator_kumquat4:
 	db -1 ; end
 	
 NeedPoolMasterText:
-	text "I can't access any"
-	line  "other floor yet."
+	text "Aún no puedes ir"
+	line  "a otra planta."
 	done
 
 KumquatHotelElevator_MapEventHeader::

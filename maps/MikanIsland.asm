@@ -70,73 +70,76 @@ MikanIslandHiddenHyperPotion:
 	dwb EVENT_MIKAN_ISLAND_HIDDEN_HYPER_POTION, HYPER_POTION
 
 MikanIslandLassText:
-	text "CISSY has a rare"
-	line "#MON called a"
-	cont "HORSEA!"
+	text "CISSY tiene un"
+	line "#MON raro, un"
+	cont "HORSEA."
 	done
 
 MikanIslandSuperNerdText:
-	text "Hey, you're a"
-	line "#MON trainer?"
+	text "Ey, ¿eres un"
+	line "entrenador #MON?"
 
-	para "There's a GYM"
-	line "here! It's run"
-	cont "by CISSY!"
+	para "Este GIM esta"
+	line "dirigido por"
+	cont "CISSY."
 	done
 
 SendaNotBeatenCissyText:
-	text "SENTA: My sister,"
-	line "CISSY, is the"
-	cont "strongest trainer"
-	cont "I know!"
+	text "SENTA: Mi hermana"
+	line "CISSY, es la "
+	cont "entrenadora mas"
+	cont "fuerte que"
+	cont "conozco."
 
-	para "Fat chance you can"
-	line "beat her!"
+	para "No tienes casi"
+	line "posibilidades de"
+	cont "vencerla."
 	done
 	
 SendaBeatCissyText:
-	text "SENTA: Hmph!"
+	text "SENTA: ¡Hmph!"
 	
-	para "I won't acknowled-"
-	line "ge your victory"
-	cont "unless you beat"
-	cont "the ORANGE CREW!"
+	para "No reconocere tu"
+	line "victoria hasta que"
+	cont "derrotes al"
+	cont "ORANGE CREW."
 	done
 	
 SendaBeatOrangeCrewText:
-	text "SENTA: Hmph!"
+	text "SENTA: ¡Hmph!"
 	
-	para "I acknowledge your"
-	line "skill. Rematch my"
-	cont "sister anytime you"
-	cont "want to!"
+	para "Reconozco tus"
+	line "capacidades. Vuelve"
+	cont "a luchar contra mi"
+	cont "hermana cuando"
+	cont "quieras."
 	done
 
 MikanIslandYoungsterText:
-	text "CISSY's brother,"
-	line "SENTA, is pretty"
-	cont "arrogant."
+	text "El hermano de "
+	line "CISSY, SENTA, es"
+	cont "muy arrogante."
 
-	para "If he says some-"
-	line "thing dumb, just"
-	cont "ignore him."
+	para "Si dice alguna"
+	line "estupidez,"
+	cont "ignoralo."
 	done
 
 MikanIslandSignText:
-	text "MIKAN ISLAND"
+	text "ISLA MIKAN"
 
-	para "The island where"
-	line "vivid coral lies."
+	para "La isla donde"
+	line "yace el coral."
 	done
 
 MikanGymSignText:
-	text "MIKAN ISLAND"
-	line "#MON GYM"
-	cont "LEADER: CISSY"
+	text "ISLA MIKAN"
+	line "GIM #MON"
+	cont "LIDER: CISSY"
 
-	para "The beautiful"
-	line "WATER user of"
-	cont "the ORANGE CREW"
+	para "La bella usuaria"
+	line "acuatica del"
+	cont "ORANGE CREW"
 	done
 
 MikanIsland_MapEventHeader::

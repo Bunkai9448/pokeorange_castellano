@@ -32,19 +32,22 @@ MiracleSeedLadyDoneScript:
 	end
 	
 GiveMiracleSeedText:
-	text "GRASS-type #MON"
-	line "need a lot of care"
-	cont "and love to grow."
+	text "Los #MON de tipo"
+	line "planta necesitan"
+	cont "mucho amor y"
+	cont "cariño para"
+	cont "crecer."
 	
-	para "Here's something"
-	line "that might help!"
+	para "Toma algo que"
+	line "puede que te"
+	cont "ayude."
 	done
 
 GotMiracleSeedText:
-	text "MIRACLE SEED will"
-	line "increase damage"
-	cont "from GRASS-type"
-	cont "attacks."
+	text "SEM.MILAGRO"
+	line "aumenta el daño"
+	cont "de los mov. de"
+	cont "tipo planta."
 	done
 	
 MiracleSeedGloomScript:

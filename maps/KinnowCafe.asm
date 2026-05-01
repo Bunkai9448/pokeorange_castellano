@@ -20,12 +20,12 @@ WaitressInfo:
 	end
 
 InfoTextCafe:
-	text "Welcome to PIA"
-	line "CARROT!"
+	text "¡Bienvenido a"
+	line "PIA CARROT!"
 
-	para "Please battle to"
-	line "your heart's cont-"
-	cont "ent!"
+	para "Por favor,"
+	line "pelea con el"
+	cont "corazón."
 	done
 
 WaitressSatomi:
@@ -40,20 +40,23 @@ WaitressSatomi:
 	end
 
 WaitressSatomiSeenText:
-	text "The OWNER went ov-"
-	line "erseas to search"
-	cont "for new #MON!"
+	text "¡El propietario"
+	line "busca cruzar los"
+	cont "mares para ver"
+	cont "nuevos  #MON!"
 	done
 
 WaitressSatomiBeatenText:
-	text "Wow! If only the"
-	line "OWNER was here!"
+	text "¡Wow!Si solo el"
+	line "propietario"
+	cont "estuviera aquí."
 	done
 
 WaitressSatomiAfterText:
-	text "The OWNER is way"
-	line "stronger than any"
-	cont "of us!"
+	text "El propietario"
+	line "es mas fuerte"
+	cont "que cualquiera"
+	cont "de los presentes."
 	done
 
 WaitressNaomi:
@@ -68,17 +71,17 @@ WaitressNaomi:
 	end
 
 WaitressNaomiSeenText:
-	text "Would you like fr-"
-	line "ies with that?"
+	text "¿Con que quieres"
+	line "las patatas?"
 	done
 
 WaitressNaomiBeatenText:
-	text "For here or TO GO?"
+	text "¿Para llevar?"
 	done
 
 WaitressNaomiAfterText:
-	text "Fanservice costs"
-	line "extra."
+	text "Fanservice "
+	line "lleva un extra."
 	done
 
 WaitressSaori:
@@ -93,18 +96,18 @@ WaitressSaori:
 	end
 
 WaitressSaoriSeenText:
-	text "One special coming"
-	line "right up!"
+	text "Marchando un"
+	line "especial."
 	done
 
 WaitressSaoriBeatenText:
-	text "No! I lost!"
+	text "¡No! ¡Perdí!"
 	done
 
 WaitressSaoriAfterText:
-	text "It was supposed"
-	line "to be a special"
-	cont "for me<...>"
+	text "Se suponía que"
+	line "iba a ser "
+	cont "especial<...>"
 	done
 
 WaitressJun:
@@ -119,22 +122,22 @@ WaitressJun:
 	end
 
 WaitressJunSeenText:
-	text "You came to battle"
-	line "us?"
+	text "¿Vienes a"
+	line "desafiarnos?"
 
-	para "Well, let's do it!"
+	para "Vale,¡Peleemos!"
 	done
 
 WaitressJunBeatenText:
-	text "Well done."
+	text "Bien hecho."
 	done
 
 WaitressJunAfterText:
-	text "Good luck on your"
-	line "journey."
+	text "Buena suerte en"
+	line "tu viaje."
 
-	para "You remind me of"
-	line "the OWNER."
+	para "Me recuerdas al"
+	line "PROPIETARIO."
 	done
 
 KinnowCafe_MapEventHeader::

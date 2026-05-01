@@ -73,87 +73,91 @@ PummeloIslandCrossScript:
 	writetext CrossPummeloIslandDroppedWingText
 	waitbutton
 	verbosegiveitem RAINBOW_WING
-	setevent EVENT_GOT_RAINBOW_WING
 	closetext
 	end	
 	
 CrossPummeloIslandText:
-	text "CROSS: Well."
-	line "Look who finally"
-	cont "showed up."
+	text "CROSS: ¡Anda!"
+	line "Mira quien se"
+	cont "deja ver."
 	
-	para "I met the CHAMPION"
-	line "of the ORANGE"
-	cont "CREW, DRAKE."
+	para "He conocido a"
+	line "Drake, campeon del"
+	cont "ORANGE CREW"
 	
-	para "He beat me good."
-	line "I couldn't believe"
-	cont "it. My #MON"
-	cont "are stronger than"
+	para "Me dio una buena"
+	line "tunda. No podia"
+	cont "creerlo. Mis #MON"
+	cont "son mas fuertes"
 	
-	para "ever. Is what they"
-	line "keep telling me"
-	cont "true? Because I"
-	cont "treat #MON"
+	para "que nunca.¿Sera"
+	line "cierto lo que me"
+	cont "dicen? Que tratar"
+	cont "a mis #MON"
 	
-	para "poorly, I'm weak?"
-	line "No. They're wrong!"
-	cont "I was chosen!"
-	cont "I'll prove it to"
+	para "cruelmente me "
+	line "hace debil. ¡No!"
+	cont "Soy el elegido."
+	cont "Te lo demostrare."
 	
-	para "you, <PLAYER>!"
+	para ", <PLAYER>!"
 	done
 	
 CrossPummeloIslandWinLoss:
-	text "I was chosen!"
+	text "¡Era el elegido!"
 	
-	para "You're all wrong!"
-	line "I am a #MON"
-	cont "MASTER!"
+	para "¡Estais "
+	line "equivocados! ¡Soy"
+	cont "un maestro "
+	cont "pokemon!"
 	done
 	
 CrossPummeloIslandLeavingNowText:
 	text "CROSS: <...>"
 
-	para "I'll say it again."
-	line "I am chosen<...>by"
-	cont "the legendary"
-	cont "#MON!"
+	para "Lo repito."
+	line "Fui elegido<...>"
+	cont "por los #MON "
+	cont "legendarios."
 	
-	para "When I was young,"
-	line "I saw it fly over"
-	cont "my hometown."
+	para "Cuando era joven,"
+	line "lo vi volando en"
+	cont "mi ciudad natal."
 	
-	para "A giant, rainbow"
-	line "#MON that isn't"
-	cont "in any book or"
-	cont "ENCYCLOPEDIA."
+	para "Un arcoiris"
+	line "gigante y un"
+	cont "#MON que no"
+	cont "aparecia en"
+	cont "ningun libro ni"
+	cont "ENCICLOPEDIA."
 	
-	para "My search across"
-	line "lands lead me an"
-	cont "old JOHTO folk-"
-	cont "tale. HO-OH."
+	para "Mi busqueda me"
+	line "llevo a una"
+	cont "antigua leyenda"
+	cont "de JOHTO. HO-OH."
 	
-	para "It calls to me,"
-	line "somewhere in the"
-	cont "ORANGE ISLANDS,"
+	para "Me llamo, en"
+	line "algun lugar de"
+	cont "las ISLAS NARANJA"
 	cont "and no one can or"
 	cont "will stop me!"
 	
-	para "Farewell, <PLAYER>."
-	line "Next time we meet,"
-	cont "I will have the"
-	cont "legendary #MON"
+	para "Bien, <PLAYER>."
+	line "La siguiente vez"
+	cont "que te vea, sera"
+	cont "con los  #MON"
+	cont "legendarios."
 	
-	para "and prove you all"
-	line "wrong!"
+	para "¡Y demostrare "
+	line "que te"
+	cont "equivocas!"
 	done
 
 CrossPummeloIslandDroppedWingText:
-	text "Uh? What's this?"
+	text "¿Eh?¿Que es eso?"
 	
-	para "He seems to have"
-	line "dropped something."
+	para "Parece que ha"
+	line "dejado algo."
 	done
 	
 PummeloCrossMovement1:
@@ -197,34 +201,35 @@ PummeloBadgeYoungsterScript:
 	end
 	
 MissingBadgeText:
-	text "You're a trainer!"
-	line "How many badges do"
-	cont "you have?"
+	text "¡Un entrenador!"
+	line "¿Cuantas medallas"
+	cont "tienes?"
 	done
 	
 Missing1BadgeText:
-	text "Aha! You are miss-"
-	line "ing a badge!"
+	text "¡Aha!¡Te falta "
+	line "una medalla!"
 	
-	para "They won't let you"
-	line "into the PUMMELO"
-	cont "STADIUM like that!"
+	para "La ganaras en"
+	line "el estadio de"
+	cont "Pomelo."
 	done
 	
 Missing2BadgeText:
-	text "Aha! You are miss-"
-	line "ing two badges!"
+	text "¡Aha!¡Te "
+	line "faltan dos"
+	cont "medallas!"
 	
-	para "You're really a"
-	line "slacker, aren't"
-	cont "you?"
+	para "Eres un holga-"
+	line "zan, ¿No te"
+	cont "parece?"
 	done
 
 MissingNoBadgeText:
-	text "All four badges!"
+	text "¡Las 4 medallas!"
 	
-	para "Wow, you're super"
-	line "awesome!"
+	para "Wow,¡Eres super-"
+	line "increible!"
 	done
 	
 PummeloSailorScript:
@@ -278,11 +283,12 @@ PummeloIslandSign4:
 	jumptext PummeloIslandSign4Text
 
 PummeloIslandSignText:
-	text "PUMMELO ISLAND"
+	text "ISLA POMELO"
 	
-	para "Where CHAMPIONS"
-	line "rise like a"
-	cont "tsunami!"
+	para "Donde los"
+	line "CAMPEONES se"
+	cont "alzan como un"
+	cont "Tsunami."
 	done
 	
 PummeloIslandSign2Text:
@@ -290,60 +296,60 @@ PummeloIslandSign2Text:
 	done
 	
 PummeloIslandSign3Text:
-	text "PUMMELO STADIUM"
+	text "ESTADIO POMELO"
 	done
 	
 PummeloStatueText:
-	text "An impressive"
-	line "statue of a"
+	text "Una impactante"
+	line "estatua de un"
 	cont "DRAGON #MON."
 	done
 	
 PummeloIslandSign4Text:
-	text "EAST TO ROUTE 70"
+	text "AL ESTE RUTA 70"
 	done
 	
 PummeloSailorScriptText:
-	text "I just came in"
-	line "from HAMLIN."
+	text "Justo he llegado"
+	line "de HAMLIN."
 	
-	para "If you go out"
-	line "that way, watch"
-	cont "out for pirates!"
+	para "Si vas por"
+	line "esa ruta,cuida"
+	cont "con los piratas."
 	done
 	
 PummeloOfficerScriptText:
-	text "Hey there!"
-	line "That bandana!"
+	text "¡Eh tu!"
+	line "¡Esa bandana!"
 	
-	para "Are you a pirate?"
+	para "¿Eres un pirata?"
 	done
 	
 PummeloOfficerScriptText2:
-	text "You couldn't be!"
-	line "You're way too"
-	cont "young!"
+	text "¡No puedes"
+	line "serlo!Eres muy"
+	cont "joven."
 	done
 	
 PummeloOfficerScriptText3:
-	text "Of course, I'm"
-	line "so sorry!"
+	text "Por supuesto,"
+	line "disculpa."
 	
-	para "You couldn't be!"
-	line "You're way too"
-	cont "young!"
+	para "¡No lo pare-"
+	line "ces!Aparentas"
+	cont "ser un crio."
 	done
 	
 PummeloOfficerGuardScriptText:
-	text "Sorry, the road is"
-	line "closed due to bri-"
-	cont "gands posing as"
-	cont "highwaymen."
+	text "Lo siento, la"
+	line "ruta esta cerra-"
+	cont "da para evitar"
+	cont "asaltos."
 	
-	para "As soon as the"
-	line "situation is under"
-	cont "control the road"
-	cont "will open again."
+	para "Tan pronto la"
+	line "situacion este"
+	cont "bajo contro, se"
+	cont "abrira..."
 	done
 
 PummeloIsland_MapEventHeader::

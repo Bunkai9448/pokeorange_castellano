@@ -169,7 +169,7 @@ _ResetWRAM: ; 5bae
 ;	ld [Shells], a
 ;	ld [Shells + 1], a
 
-START_MONEY EQU 3000
+START_MONEY EQU 999999
 
 IF START_MONEY / $10000
 	ld a, START_MONEY / $10000
@@ -224,7 +224,7 @@ SetDefaultBoxNames: ; 5ca6
 	ret
 
 .Box:
-	db "BOX@"
+	db "CAJA@"
 ; 5cd3
 
 InitializeMagikarpHouse: ; 5cd3

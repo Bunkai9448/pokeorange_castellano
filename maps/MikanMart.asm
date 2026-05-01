@@ -22,28 +22,29 @@ CooltrainerMScript_0x6829f:
 	jumptextfaceplayer UnknownText_0x68323
 
 UnknownText_0x682a2:
-	text "When you first"
-	line "catch a #MON,"
-	cont "it may be weak."
+	text "Cuando atrapes"
+	line "tu primer #MON,"
+	cont "sera débil."
 
-	para "But it will even-"
-	line "tually grow to be"
-	cont "strong."
+	para "Pero crecerá"
+	line "haciéndose mas y"
+	cont "mas fuerte."
 
-	para "It's important to"
-	line "treat #MON with"
-	cont "love."
+	para "Es importante"
+	line "que tus #MON "
+	cont "sean tratados con"
+	cont "amor."
 	done
 
 UnknownText_0x68323:
-	text "#MON are"
-	line "getting hard to"
-	cont "catch with just"
-	cont "# BALLS."
+	text "Hay #MON que"
+	line "son mas difíciles"
+	cont "de atrapar con"
+	cont "ciertas # BALLS."
 
-	para "I wonder if they"
-	line "have GREAT BALLS"
-	cont "on MANDARIN NORTH."
+	para "Seria genial que"
+	line "tengan SUPER BALLS"
+	cont "en MANDARINA NORTE."
 	done
 
 MikanMart_MapEventHeader:

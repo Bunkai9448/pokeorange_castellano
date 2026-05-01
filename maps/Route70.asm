@@ -8,7 +8,7 @@ Route70Sign:
 	jumptext Route70SignText
 	
 Route70SignText:
-	text "ROUTE 70"
+	text "RUTA 70"
 	done
 	
 Route70HiddenPPMax:
@@ -24,13 +24,13 @@ Route70OfficerScript:
 	jumptextfaceplayer Route70OfficerScriptText
 	
 Route70OfficerScriptText:
-	text "CHAMPION!"
-	line "The road is clear"
-	cont "now, but please be"
-	cont "careful. There are"
+	text "¡CAMPEON!"
+	line "La ruta esta"
+	cont "despejada, pero"
+	cont "ten cuidado. Hay"
 	
-	para "PIRATES on these"
-	line "waters!"
+	para "PIRATAS en estas"
+	line "aguas."
 	done
 	
 TrainerPirateLackey1Script:
@@ -45,19 +45,19 @@ TrainerPirateLackey1Script:
 	end
 
 TrainerPirateLackey1SeenText:
-	text "Yarr! Gimme yer"
-	line "SURF HM! Or Else!"
+	text "¡Yarr! ¡Dame"
+	line " la MO SURF!"
 	done
 
 TrainerPirateLackey1BeatenText:
-	text "I be stranded,"
-	line "matey<...>"
+	text "Estaba alterado,"
+	line "chiqui<...>"
 	done
 
 TrainerPirateLackey1AfterText:
-	text "I won't be sellin'"
-	line "out me mates! Off"
-	cont "with ye!"
+	text "¡No quiero que'"
+	line "me dejen atras!"
+	cont "¡Adiosss!"
 	done
 
 Route70_MapEventHeader::

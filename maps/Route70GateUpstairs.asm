@@ -10,17 +10,17 @@ PummeloBinoculars1:
 	jumptext PummeloBinoculars1Text
 
 PummeloBinoculars1Text:
-	text "Some unfamiliar"
-	line "islands lie far to"
-	cont "the north."
+	text "Hay algunas islas"
+	line "deshabitadas al"
+	cont "norte."
 	done
 
 PummeloBinoculars2:
 	jumptext PummeloBinoculars2Text
 
 PummeloBinoculars2Text:
-	text "There's a cottage"
-	line "on a small island."
+	text "Hay una cabaña en"
+	line "una isla pequeña."
 	done
 
 Route70GateUpstairs_MapEventHeader::

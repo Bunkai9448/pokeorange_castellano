@@ -147,187 +147,196 @@ MayorOfficeMeetingRoomScript:
 	end
 	
 MayorMeetingText1:
-	text "MAYOR: And another"
-	line "nuisance shows up!"
+	text "ALCALDE: Otra"
+	line "molestia mas."
 	
-	para "This is my city,"
-	line "and there's no way"
-	cont "I'm gonna let some"
-	cont "pests ruin that!"
+	para "Es mi cuidad,"
+	line "y va a quedar"
+	cont "arruinada con las"
+	cont "plagas que voy a"
+	cont "liberar."
 	
-	para "LORELEI: Pests?"
-	line "Funny. Those four"
-	cont "behind you look"
-	cont "like the real"
-	cont "pests to me."
+	para "LORELEI: ¿Plagas?"
+	line "Que divertido.Esos"
+	cont "cuatro detras"
+	cont "tuyo si que me"
+	cont "parecen plagas."
 	
-	para "JAMES: Ooh!"
-	line "That was rude,"
-	cont "wasn't it, JESSIE?"
+	para "JAMES: ¡Ooh!"
+	line "Que malota,"
+	cont "¿No crees, JESSIE?"
 	
-	para "JESSIE: Extremely."
-	line "I think we'll have"
-	cont "to teach her a"
-	cont "lesson!"
+	para "JESSIE: Y tanto."
+	line "Creo que hay que"
+	cont "enseñarle una "
+	cont "lección."
 	
-	para "BUTCH: How about"
-	line "we take her out,"
-	cont "and you two can"
-	cont "fight the kid?"
+	para "BUTCH: ¿Y si"
+	line "quitamos de en"
+	cont "medio y vosotros"
+	cont "dos lucháis contra"
+	cont "el chico?"
 	
-	para "CASSIDY: That brat"
-	line "again! I say we"
-	cont "all gang up on"
-	cont "them!"
+	para "CASSIDY: Es ese"
+	line "mocoso otra vez."
+	cont "¡He dicho que "
+	cont "todos a por él!"
 	done
 	
 MayorMeetingText2:
-	text "JAMES: Say, that"
-	line "reminds me<...>"
+	text "JAMES: Eso me"
+	line "recuerda<...>"
 	
-	para "Didn't you two"
-	line "steal our motto?"
+	para "¿No robasteis"
+	line "vosotros dos"
+	cont "nuestro lema?"
 	
-	para "BUTCH: Motto?"
-	line "What in the world"
-	cont "are you talking"
-	cont "about?"
+	para "BUTCH: ¿Lema?"
+	line "¿De que demonios"
+	cont "estáis hablando?"
 	
-	para "JESSIE: That's"
-	line "right! The kid"
-	cont "knew our motto the"
-	cont "last time we met."
+	para "JESSIE: ¡Eso"
+	line "es! El chaval"
+	cont "conocío nuestro"
+	cont "lema la última vez"
+	cont "que nos vimos."
 	
-	para "CASSIDY: This is"
-	line "ridiculous."
+	para "CASSIDY: Esto"
+	line "es ridiculo."
 	done
 	
 MayorMeetingText3:
-	text "MAYOR: Would you"
-	line "four idiots shut"
-	cont "up already? You're"
-	cont "making a fool out"
+	text "ALCALDE: Los"
+	line "cuatro sois unos"
+	cont "idiotas de remate."
+	cont "¿Podeis comportaros"
 	
-	para "of me!"
+	para "de una vez?"
 	
 	para "LORELEI: <PLAYER>,"
-	line "why did you come?"
-	cont "Since you're here,"
-	cont "I guess you should"
+	line "¿Por qué has"
+	cont "venido?"
+	cont "Supongo que "
 	
-	para "make yourself"
-	line "useful. I'll need"
-	cont "you to hold off"
-	cont "the ROCKETS while"
+	para "podrías ser de"
+	line "ayuda.Necesito que"
+	cont "que te apañes con"
+	cont "los ROCKETS mientras"
 	
-	para "I take care of the"
-	line "MAYOR. Good luck!"
+	para "me hago cargo del"
+	line "ALCALDE. ¡Suerte!"
 	done
 	
 MayorMeetingText4:
-	text "MAYOR: Gah!"
+	text "ALCALDE: ¡Gah!"
 	done
 	
 MayorMeetingText5:
-	text "JAMES: Let's get"
-	line "that dreadful"
-	cont "twerp!"
+	text "JAMES: ¡Vamos"
+	line "por ese espan-"
+	cont "toso idiota!"
 	
-	para "I'll take you on"
-	line "first, brat!"
+	para "¡Yo primero,"
+	line "mocoso!"
 	done
 	
 JamesWinLoss:
-	text "Ooh! Why are these"
-	line "brats so strong?"
+	text "¡Ooh! ¿Por qué"
+	line "los mocosos son"
+	cont "tan fuertes?"
 	done
 
 MayorMeetingText6:
-	text "JESSIE: You! I"
-	line "haven't forgotten"
-	cont "how you ruined our"
-	cont "hustle on GOLDEN"
+	text "JESSIE: ¡Tu!"
+	line "No he olvidado que"
+	cont "arruinastes"
+	cont "nuestros planes"
 	
-	para "ISLAND! Prepare"
-	line "yourself!"
+	para "en ISLA GOLDEN!"
+	line "¡Preparate!"
 	done
 	
 JessieWinLoss:
-	text "Drat!"
+	text "¡Jobar!"
 	done
 	
 MayorMeetingText7:
-	text "JAMES: There's"
-	line "more where that"
-	cont "came from! I just"
-	cont "healed back up!"
+	text "JAMES: ¡Hay mas"
+	line "de donde vino"
+	cont "eso! ¡Acabo de"
+	cont "curarme!"
 	done
 	
 MayorMeetingText8:
-	text "TRACEY: <PLAYER>!"
-	line "I finally made it!"
-	cont "Let's beat these"
-	cont "ROCKET crooks!"
+	text "TRACEY: ¡<PLAYER>!"
+	line "¡Lo logré! ¡Vamos"
+	cont "a vencer a esos"
+	cont "dichosos ROCKET!"
 	
-	para "BUTCH and CASSIDY:"
-	line "Then you'll have"
-	cont "to deal with us!"
+	para "BUTCH y CASSIDY:"
+	line "¡Entonces tendrán"
+	cont "que lidiar con"
+	cont "nosotros."
 	done
 	
 JessieJamesOfficeWinLoss:
-	text "TEAM ROCKET's bla-"
-	line "sting off again!"
+	text "¡El TEAM ROCKET"
+	line "despega de"
+	cont "nuevo!"
 	done
 	
 MayorMeetingText9:
-	text "LORELEI: End of"
-	line "the line, MAYOR."
-	cont "Turn yourself in,"
-	cont "or else!"
+	text "LORELEI: Fin"
+	line "del camino,"
+	cont "ALCALDE."
+	cont "¡Entréguese o"
+	cont "verá."
 	
 	para "MAYOR: Grr<...>"
-	line "Useless ROCKETs!"
-	cont "There goes my own"
-	cont "personal crime"
+	line "¡Inútiles ROCKETS!"
+	cont "Ahí se esfuma mi"
+	cont "sindicato perso-"
+	cont "nal del crimen..."
 	
-	para "syndicate! I was"
-	line "so close!"
+	para "Estuvo tan"
+	line "cerca..."
 	
-	para "LORELEI: I know"
-	line "an OFFICER JENNY"
-	cont "that would love to"
-	cont "talk about that."
+	para "LORELEI: Se que"
+	line "a la OFICIAL JENNY"
+	cont "le encantará"
+	cont "hablar sobre eso."
 	done
 	
 MayorMeetingText10:
 	text "LORELEI: <PLAYER>,"
-	line "TRACEY, thank you"
-	cont "for the help!"
+	line "TRACEY, ¡ Gracias"
+	cont "por la ayuda!"
 	
-	para "I'll be escorting"
-	line "the mayor to a"
-	cont "police station."
+	para "Escoltaré al"
+	line "ALCALDE hasta"
+	cont "la comisaría."
 	
-	para "<PLAYER>, if you"
-	line "need me, I can be"
-	cont "found at the"
-	cont "TRAINER SCHOOL."
+	para "<PLAYER>, si me"
+	line "necesitas, estaré"
+	cont "en la ESCUELA DE"
+	cont "ENTRENADORES."
 	done
 	
 MayorMeetingText11:
-	text "TRACEY: Well, my"
-	line "job here is done!"
+	text "TRACEY: Bueno, mi"
+	line "trabajo aquí esta"
+	cont "terminado."
 	
-	para "<PLAYER>, I'm off"
-	line "to the next town,"
-	cont "ASCORBIA ISLAND."
+	para "<PLAYER>, me voy"
+	line "al siguiente des-"
+	cont "tino. ISLA"
+	cont "ASCORBIA."
 	
-	para "If we meet there,"
-	line "I'll give you"
-	cont "something really"
-	cont "useful!"
+	para "Si nos vemos allí,"
+	line "¡Te diré algo muy"
+	cont "útil!"
 	
-	para "Anyway, seeya!"
+	para "¡Chaooo!"
 	done
 
 MayorsOfficeMovement1:

@@ -18,7 +18,7 @@ VictoryRoadMysteryRoomMewtwoScript:
 	end
 	
 MewtwoText:
-	text "Mew!"
+	text "¡Mew!"
 	done
 
 VictoryRoadMysteryRoom_MapScriptHeader::

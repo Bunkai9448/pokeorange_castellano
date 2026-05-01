@@ -80,71 +80,75 @@ UnnamedIsland3MeowthScript:
 	end
 
 MeowthNeedsSalveyoWeedText:
-	text "You, the twerp!"
+	text "¡Tu, el idiota!"
 	
-	para "I know we 'ave"
-	line "our<...>differences,"
-	cont "but my buddies are"
-	cont "in real trouble!"
+	para "Se que hemos te-"
+	line "nido<...>diferen-"
+	cont "cias, pero...¡Mis"
+	cont "compañeros estan"
+	cont "en apuros!"
 	
-	para "They gots a sudden"
-	line "fevah!"
+	para "¡Han tenido una"
+	line "fiebre subita!"
 	
-	para "They took a whif"
-	line "of dah flowers,"
-	cont "and turns out they"
-	cont "was sniffin' VILE-"
+	para "Respiraron el"
+	line "polen de unas"
+	cont "flores que eran"
+	cont "un terrible VILE-"
 	
-	para "PLUME! I know"
-	line "what ta' get 'em"
-	cont "but I needs ta'"
-	cont "watch dem."
+	para "PLUME. Se que"
+	line "te sorprende, pero"
+	cont "necesito que les"
+	cont "eches un vistazo."
 	
-	para "Wouldya be a pal"
-	line "and get a cat some"
-	cont "SALVEYO WEED?"
+	para "¿Serias mi amigo"
+	line "y le traerias "
+	cont "semilla SALVEYO"
+	cont "al gato?"
 	
-	para "It grows inside"
-	line "dah ponds here!"
+	para "Crece en los"
+	line "estanques de aqui."
 	done
 	
 GiveMeowthSalveyoWeedText:
-	text "My buds are sick!"
-	line "I needs SALVEYO"
-	cont "WEED to cure 'em!"
+	text "Mis compañeros "
+	line "estan enfermos, "
+	cont "necesitan la semi-"
+	cont "lla SALVEYO."
 	
-	para "Give the SALVEYO"
-	line "WEED to MEOWTH?"
+	para "¿Dar SEMILLA"
+	line "SALVEYO a MEOWTH?"
 	done
 	
 DidntGiveSalveyoWeedText:
-	text "Hang in there,"
-	line "guys!"
+	text "¡Ya estoy aqui,"
+	line "chicos!"
 	done
 	
 MeowthDoneHealingText:
-	text "They should be"
-	line "good to go now!"
+	text "Deberian poner-"
+	line "se mejor."
 	
-	para "Anyways, kid."
-	line "You ain't so bad!"
+	para "No eres tan ma-"
+	line "lo despues de"
+	cont "todo..."
 	
-	para "Take this, it's"
-	line "not much<...>"
+	para "Toma esto, no"
+	line "es mucho<...>"
 	
-	para "Rather, I found"
-	line "it in the guttah,"
-	cont "but it's yours!"
+	para "Lo encontre en"
+	line "las cloacas,"
+	cont "pero te lo doy."
 	done
 	
 MeowthLeavingUnnamedIsland3Text:
-	text "Well, we bettah"
-	line "get goin'!"
+	text "Bueno, sera"
+	line "hora de irse."
 	
-	para "And don't tell"
-	line "JESSIE and JAMES"
-	cont "that ya' saved"
-	cont "'em!"
+	para "¡Y no le cuentes"
+	line "a JESSIE y JAMES"
+	cont "que les has"
+	cont "salvad!"
 	done
 	
 UnnamedIsland3PlayerMovement:

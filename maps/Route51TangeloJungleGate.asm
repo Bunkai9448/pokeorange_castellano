@@ -11,9 +11,9 @@ OfficerScript_0x197634:
 	jumptextfaceplayer UnknownText_0x19763a
 
 UnknownText_0x19763a:
-	text "Hi there!"
-	line "Be careful in"
-	cont "TANGELO JUNGLE."
+	text "¡Oye!"
+	line "Ten cuidado en"
+	cont "JUNGLA TANGELO."
 	done
 
 Route51TangeloJungleGate_MapEventHeader::

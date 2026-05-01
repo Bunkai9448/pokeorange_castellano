@@ -30,19 +30,19 @@ PummeloHouse1BlackbeltDoneScript:
 	end
 	
 PummeloHouse1BlackbeltScriptText1:
-	text "Hah! Hua! Hee!"
-	line "You!"
-	cont "You are strong,"
-	cont "like a RHYDON!"
+	text "¡Hah! ¡Hua! ¡Hee!"
+	line "¡Tu!"
+	cont "Eres fuerte,"
+	cont "como un RHYDON."
 	
-	para "But you could be"
-	line "even stronger!"
-	cont "Take this!"
+	para "Pero puedes ser"
+	line "mas fuerte."
+	cont "¡Toma esto!"
 	done
 	
 PummeloHouse1BlackbeltScriptText2:
-	text "Try to use that on"
-	line "RHYDON."
+	text "Intenta usarlo en"
+	line "un RHYDON."
 	done
 
 PummeloIslandHouse1_MapEventHeader:

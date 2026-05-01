@@ -46,87 +46,91 @@ OaksLabPC:
 	jumptext OaksLabPCText
 
 OakLabDexCheckText:
-	text "How is your #-"
-	line "DEX coming?"
+	text "¿Como va tu #-"
+	line "DEX ?"
 
-	para "Let's see<...>"
+	para "Veamos<...>"
 	done
 
 OakLabGoodbyeText:
-	text "If you're in the"
-	line "area, I hope you"
-	cont "come visit again."
+	text "Si estas por"
+	line "aquí, espero"
+	cont "que me visites."
 	done
 
 OaksAssistant1Text:
-	text "The PROF's #MON"
-	line "TALK radio program"
+	text "El progama de"
+	line "radio del"
+	cont "PROF's #MON"
 
-	para "isn't aired here"
-	line "in KANTO."
+	para "no se emite"
+	line "en KANTO."
 
-	para "It's a shame--I'd"
-	line "like to hear it."
+	para "Es una pena, me"
+	line "gustaría oirlo."
 	done
 
 OaksAssistant2Text:
-	text "Thanks to your"
-	line "work on the #-"
-	cont "DEX, the PROF's"
+	text "Gracias por tu"
+	line "trabajo en la #-"
+	cont "DEX, la busqueda"
 
-	para "research is coming"
-	line "along great."
+	para "del profesor esta"
+	line "alcanzando grandes"
+	cont "cotas."
 	done
 
 OaksAssistant3Text:
-	text "Don't tell anyone,"
-	line "but PROF.OAK'S"
+	text "No se lo cuentes"
+	line "a nadie, pero el"
 
-	para "#MON TALK isn't"
-	line "a live broadcast."
+	para "progama de radio"
+	line "del PROF. no es"
+	cont "en directo."
 	done
 
 OaksLabPoster1Text:
-	text "Press START to"
-	line "open the MENU."
+	text "Pulsa START para"
+	line "abrir el menú."
 	done
 
 OaksLabPoster2Text:
-	text "The SAVE option is"
-	line "on the MENU."
+	text "GUARDAR es una"
+	line "opcion del MENU."
 
-	para "Use it in a timely"
-	line "manner."
+	para "Usala de manera"
+	line "recurrente."
 	done
 
 OaksLabTrashcanText:
-	text "There's nothing in"
-	line "here<...>"
+	text "No hay nada"
+	line "aquí<...>"
 	done
 
 OaksLabPCText:
-	text "There's an e-mail"
-	line "message on the PC."
+	text "Hay un E-mail"
+	line "en el PC."
 
 	para "<...>"
 
-	para "PROF.OAK, how is"
-	line "your research"
-	cont "coming along?"
+	para "PROF.OAK,¿Como"
+	line "va progresando"
+	cont "tu investigación?"
 
-	para "I'm still plugging"
-	line "away."
+	para "Yo sigo traba-"
+	line "jando sin parar."
 
-	para "I heard rumors"
-	line "that <PLAYER> is"
+	para "He oido rumores"
+	line "de que <PLAYER>"
 
-	para "getting quite a"
-	line "reputation."
+	para "esta labrandose"
+	line "una gran repu-"
+	cont "tación."
 
-	para "I'm delighted to"
-	line "hear that."
+	para "Me alegra escu-"
+	line "char eso."
 
-	para "ELM in NEW BARK"
+	para "ELM en NEW BARK"
 	line "TOWN 8-)"
 	done
 

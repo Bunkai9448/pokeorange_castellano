@@ -88,32 +88,32 @@ TrovitaMistyAroundMovement:
 	step_end
 
 TrovitaMistyText1:
-	text "MISTY: Definitely"
-	line "not my type<...>"
+	text "MISTY: Defini-"
+	line "tivamente no es"
+	cont "mi tipo."
 	done
 	
 TrovitaMistyText2:
-	text "MISTY: Ah, hello!"
-	line "Your name was"
-	cont "<PLAYER>, right?"
+	text "MISTY:¡Ah,hola!"
+	line "¿Te llamas"
+	cont "<PLAYER>, no?"
 	
-	para "I see you're here"
-	line "to challenge RUDY."
+	para "Veo que estas para"
+	line "desafiar a RUDY."
 	
-	para "Well, good luck!"
-	line "Maybe if we meet"
-	cont "again, we can"
-	cont "have a battle!"
+	para "Bien, ¡suerte!"
+	line "Si nos volvemos"
+	cont "a ver, podría-"
+	cont "mos combatir."
 	
-	para "Here, a gift from"
-	line "me to you!"
+	para "¡Toma, un rega-"
+	line "lo para ti!"
 	done
 	
 TrovitaMistyText3:
-	text "MISTY: Well, I"
-	line "must be off now!"
-	cont "Nice to see you"
-	cont "again!"
+	text "MISTY: Bueno,"
+	line "debo irme,"
+	cont "¡Nos vemos!"
 	done
 	
 TrovitaSeashellScript:
@@ -136,24 +136,26 @@ TrovitaSeashellScript:
 	end
 	
 TrovitaNoShellBox:
-    text "What a pretty"
-    line "SEASHELL! It looks"
-    cont "too fragile to"
-    cont "go in my BAG."
+    text "Una bonita"
+    line "concha marina."
+    cont "Parece muy frágil"
+    cont "para guardar en"
+	cont "la bolsa."
     done
 	
 FoundTrovitaSeashell:
-	text "You found a rare"
-	line "SEASHELL!"
+	text "Encontraste una"
+	line "rara concha"
+	cont "marina."
 	done
 	
 TrovitaIslandSign:
 	jumptext TrovitaIslandSignText
 	
 TrovitaIslandSignText:
-	text "TROVITA ISLAND"
+	text "ISLA TROVITA"
 	
-	para "GYM up ahead!"
+	para "¡GIM DELANTE!"
 	done
 
 TrovitaIsland_MapEventHeader::

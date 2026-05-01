@@ -13,14 +13,14 @@ QuackenpokerSign:
 	jumptext QuackenpokerSignText
 
 RindIslandSignText:
-	text "RIND ISLAND"
+	text "ISLA RIND"
 	
-	para "WEST TO VICTORY"
-	line "ROAD"
+	para "CALLE VICTORIA"
+	line "AL OESTE"
 	done
 	
 QuackenpokerSignText:
-	text "QUACKENPOKER LAB"
+	text "LAB QUACKENPOKER"
 	done
 	
 RindIslandLureBall:

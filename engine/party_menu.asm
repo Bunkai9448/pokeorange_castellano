@@ -351,11 +351,11 @@ PlacePartyMonTMHMCompatibility: ; 501e0
 ; 50221
 
 .string_able ; 50221
-	db "ABLE@"
+	db "PUEDE@"
 ; 50226
 
 .string_not_able ; 50226
-	db "NOT ABLE@"
+	db "NO PUEDE@"
 ; 5022f
 
 
@@ -529,15 +529,15 @@ PlacePartyMonGender: ; 502b1
 ; 502ee
 
 .male ; 502ee
-	db "♂<...>MALE@"
+	db "♂<...>MACHO@"
 ; 502f5
 
 .female ; 502f5
-	db "♀<...>FEMALE@"
+	db "♀<...>HEMBRA@"
 ; 502fe
 
 .unknown ; 502fe
-	db "<...>UNKNOWN@"
+	db "<...>DESC.@"
 ; 50307
 
 
@@ -777,7 +777,7 @@ ToWhichPKMNString: ; 0x50549
 	db "To which <PK><MN>?@"
 
 YouHaveNoPKMNString: ; 0x50556
-	db "You have no <PK><MN>!@"
+	db "No tienes <PK><MN>!@"
 
 
 PrintPartyMenuActionText: ; 50566

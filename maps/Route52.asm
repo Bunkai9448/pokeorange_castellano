@@ -123,68 +123,70 @@ Route52HiddenSuperPotion:
 	dwb EVENT_ROUTE_52_HIDDEN_SUPER_POTION, SUPER_POTION
 
 FisherSojiroSeenText:
-	text "I been lookin'"
-	line "for a fish to"
-	cont "catch. Looks to"
-	cont "me I caught you!"
+	text "Estoy buscando"
+	line "un pez que "
+	cont "atrapar. "
+	cont "¡Parece que te"
+	cont "he atrapado!"
 	done
 
 FisherSojiroBeatenText:
-	text "Fishing's fun!"
+	text "¡Viva la pesca!"
 	done
 
 FisherSojiroAfterText:
-	text "Calm, collected<...>"
-	line "The essence of"
+	text "Calma,<...>"
+	line "La esencia de la"
 
-	para "fishing and #-"
-	line "MON is the same."
+	para "pesca y los #-"
+	line "MON es la misma."
 	done
 
 FisherFuguSeenText:
-	text "#MON caught"
-	line "on a ROD are"
-	cont "much cooler than"
-	cont "anything you got!"
+	text "Los #MON "
+	line "pescados molan"
+	cont "mucho mas que "
+	cont "los de tierra."
 
-	para "I'll show ya!"
+	para "¡Te lo mostraré!"
 	done
 
 FisherFuguBeatenText:
-	text "Darn. I should've"
-	line "used my ace<...>"
+	text "Maldicion. Debería"
+	line "haber usado"
+	cont "mi as<...>"
 	done
 
 FisherFuguAfterText:
-	text "You're good, kid."
+	text "¡Eres bueno, chico!"
 	done
 
 FisherNobuSeenText:
-	text "My #MON?"
-	line "Freshly caught!"
+	text "¿Mi #MON?"
+	line "¡Recién atrapado!"
 	done
 
 FisherNobuBeatenText:
-	text "Off to the SUSHI"
-	line "stand they go<...>"
+	text "El  SUSHI esta"
+	line "buenísimo<...>"
 	done
 
 FisherNobuAfterText:
-	text "Freshly caught"
-	line "#MON taste"
-	cont "phenomenal!"
+	text "El sabor de los"
+	line "#MON frescos"
+	cont "es excelso."
 	done
 
 SwimmermTheoSeenText:
-	text "Man I'm starving."
-	line "Could use a JELLY-"
-	cont "FILLED DONUT right"
-	cont "now."
+	text "Tio, me muero de"
+	line "hambre. Me co-"
+	cont "mería un donut"
+	cont "de medusa."
 	done
 
 SwimmermTheoBeatenText:
-	text "Or was it a RICE"
-	line "BALL?"
+	text "¿O era una bola"
+	line "de arroz?"
 	done
 
 SwimmermTheoAfterText:
@@ -192,76 +194,82 @@ SwimmermTheoAfterText:
 	done
 
 YoungsterKoutaSeenText:
-	text "There's some rare"
-	line "#MON in the"
-	cont "grass here."
+	text "Hay algunos"
+	line "#MON raros en"
+	cont "esta hierba."
 	done
 
 YoungsterKoutaBeatenText:
-	text "But my #MON"
-	line "is rare!"
+	text "¡Pero mi #MON"
+	line "es raro!"
 	done
 
 YoungsterKoutaAfterText:
-	text "TANGELA is still"
-	line "a pretty good"
+	text "TANGELA todavía"
+	line "es um muy buen"
 	cont "#MON."
 	done
 
 CamperSammSeenText:
-	text "Want that item?"
-	line "Gonna have to"
-	cont "beat me first."
+	text "¿Quieres el item?"
+	line "Tendrás que"
+	cont "derrotarme antes."
 	done
 
 CamperSammBeatenText:
-	text "Ugh. Take it."
+	text "Ugh. Tómalo."
 	done
 
 CamperSammAfterText:
-	text "It's not even a"
-	line "good item."
+	text "No es muy buen"
+	line "objeto."
 	done
 
 SwimmerfYukaSeenText:
-	text "CISSY is a WATER-"
-	line "type trainer. If"
-	cont "you can't beat me,"
-	cont "you're hopeless!"
+	text "CISSY es una"
+	line "entrenadora de"
+	cont "tipo agua. Si"
+	cont "no puedes ba-"
+	cont "tirme, no"
+	cont "tendrás ningu-"
+	cont "na opción."
 	done
 
 SwimmerfYukaBeatenText:
-	text "Ooh, you've got"
-	line "a chance!"
+	text "¡Ooh, vas a"
+	line "tener opciones!"
 	done
 
 SwimmerfYukaAfterText:
-	text "Good luck!"
+	text "¡Buena suerte!"
 	done
 
 SwimmermAtecainSeenText:
-	text "Diving for rubies"
-	line "to make THONSU."
+	text "Buceo buscando"
+	line "rubies para"
+	cont "crear THONSUS."
 
-	para "Is new invention"
-	line "to add FLUTE of"
-	cont "mystical power."
+	para "Es una nueva"
+	line "invención para"
+	cont "imbuir de poder"
+	cont "místico una"
+	cont "flauta."
 	done
 
 SwimmermAtecainBeatenText:
-	text "Do not said give"
-	line "you money."
+	text "No me digas que"
+	line "no tienes dinero."
 	done
 
 SwimmermAtecainAfterText:
-	text "I stop now. SUN"
-	line "is getting DIRTY."
+	text "Paro ya, que se"
+	line "esta nublando."
 	done
 
 Route52SignText:
-	text "ROUTE 52"
+	text "RUTA 52"
 
-	para "TANGELO -"
+	para "TANGELO-"
 	line "MIKAN"
 	done
 	
@@ -288,27 +296,28 @@ Route52ThunderpunchTutor:
 	end
 
 GivePlayerThunderpunchText:
-	text "Getting tired of"
-	line "the water already?"
+	text "¿Ya estas cansado"
+	line "del agua?"
 	
-	para "Ha. You've come to"
-	line "the right place."
-	cont "Want me to teach"
-	cont "your #MON"
+	para "Ja. Has venido al"
+	line "sitio correcto."
+	cont "¿Quieres que en-"
+	cont "señe a tu #MON"
 	
-	para "THUNDERPUNCH?"
+	para "PUÑO TRUENO?"
 	done
 	
 Text_ThunderpunchTutorTaught:
-	text "THUNDERPUNCH is"
-	line "an ELECTRIC attack"
-	cont "that can sometimes"
-	cont "cause paralysis!"
+	text "PUÑO TRUENO es"
+	line "un ataque elec-"
+	cont "trico que a veces"
+	cont "puede paralizar."
 	done
 	
 Text_ThunderpunchTutorRefused:
-	text "Take the high road"
-	line "why don'cha?"
+	text "Mejor toma el"
+	line "camino prin-"
+	cont "cipal."
 	done
 	
 Text_ThunderpunchTutorClear:

@@ -34,46 +34,46 @@ DontWantOne:
 	end
 
 DoYouWantOneText:
-	text "Hey there, kid!"
+	text "Chico, ¡Aquí!"
 
-	para "Looking for some"
-	line "spare parts?"
-	cont "New wheels?"
+	para "¿Buscando"
+	line "nuevas piezas?"
+	cont "¿Nuevas ruedas?"
 
 	para "<...><...>"
 
-	para "You don't have a"
-	line "SKATEBOARD? Well,"
-	cont "why didn't you say"
-	cont "so?"
+	para "¿No tienes un"
+	line "SKATE? Bueno,"
+	cont "¿Por que no me"
+	cont "lo dijiste?."
 
-	para "You want one? It's"
-	line "on me."
+	para "¿Quieres uno?"
+	line "Yeah"
 	done
 
 HereYouGoText:
-	text "Rad!"
+	text "¡Oh yeah!"
 
-	para "Here you go, kid!"
+	para "Aquí tienes,chico"
 	done
 
 PlayerGotSkateboardText:
-	text "<PLAYER> got a"
-	line "SKATEBOARD."
+	text "<PLAYER> obtuvo"
+	line "SKATE."
 	done
 
 AlreadyHaveASkateboardText:
-	text "Looking rad, kid!"
+	text "Luce genial,chico."
 
-	para "Now you can roll"
-	line "around in style!"
+	para "Ya puedes lucirte"
+	line "con el SKATE."
 	done
 
 NoThankYouText:
-	text "No sweat, kid!"
+	text "No pasa nada."
 
-	para "Come back if you"
-	line "change your mind!"
+	para "Vuelve si cambias"
+	line "de opinion."
 	done
 
 KinnowSkateShop_MapEventHeader::

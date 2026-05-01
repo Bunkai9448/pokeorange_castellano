@@ -60,43 +60,43 @@ KrissNeighborsHouseRadio:
 	end
 
 KrissNeighborsDaughterText:
-	text "Oh, <PLAYER>!"
-	line "Nice of you to"
-	cont "drop by!"
+	text "¡Oh, <PLAYER>!"
+	line "¡Que amable de"
+	cont "tu parte!"
 
-	para "I have something"
-	line "for you so you"
-	cont "won't get lost!"
+	para "Tengo algo para"
+	line "que no te me"
+	cont "pierdas."
 	done
 
 KrissNeighborsDaughterAfterText:
-	text "Have a safe trip,"
+	text "¡Ten buen viaje"
 	line "<PLAYER>!"
 	done
 
 KrisNeighborRadioText1:
 	text "PROF.OAK'S #MON"
-	line "TALK! Please tune"
-	cont "in next time!"
+	line "¡Habla! Por favor"
+	cont "sintonizanos."
 	done
 
 KrisNeighborRadioText2:
-	text "#MON CHANNEL!"
+	text "¡CANAL #MON!"
 	done
 
 KrisNeighborRadioText3:
-	text "This is DJ MARY,"
-	line "your co-host!"
+	text "Ella es DJ MARY,"
+	line "tu copresentadora."
 	done
 
 KrisNeighborRadioText4:
-	text "#MON!"
-	line "#MON CHANNEL<...>"
+	text "¡#MON!"
+	line "CANAL #MON <...>"
 	done
 
 KrissNeighborsTownMapText:
-	text "It's a map of the"
-	line "ORANGE ISLANDS."
+	text "Es un mapa de las"
+	line "ISLAS NARANJA."
 	done
 
 KrissNeighborsHouse_MapEventHeader:

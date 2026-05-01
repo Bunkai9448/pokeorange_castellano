@@ -12,34 +12,33 @@ FishingContestSign:
 	jumptext FishingContestSignText
 	
 FishingContestSignText:
-	text "NOTICE!"
+	text "¡AVISO!"
 	
-	para "Please capture"
-	line "here with some"
-	cont "restraint!"
+	para "Por favor, captura"
+	line "con mesura."
 	
-	para "Some #MON"
-	line "only live in this"
-	cont "area!"
+	para "Hay #MON"
+	line "que solo habitan"
+	cont "este área."
 	done
 	
 FishingContestNatPagleScript:
 	jumptextfaceplayer FishingContestNatPagleText
 	
 FishingContestNatPagleText:
-	text "If you ask me, the"
-	line "best part about"
-	cont "fishing is its"
-	cont "slow pace. Gives"
+	text "Si me preguntas,"
+	line "la mejor parte de"
+	cont "pescar es la paz"
+	cont "que da. Otorga"
 	
-	para "one time to think,"
-	line "to reflect on past"
-	cont "events and to plan"
-	cont "for future ones."
+	para "tiempo para pensar"
+	line "en el hoy, para"
+	cont "reflejarte en el"
+	cont "pasado..."
 	
-	para "Oh, and it's also"
-	line "a great excuse to"
-	cont "drink. Heavily."
+	para "¡Ah!¡Y es una gran"
+	line "excusa para beber."
+	cont "¡Beber!"
 	done
 	
 UnnamedIslandTMScript:

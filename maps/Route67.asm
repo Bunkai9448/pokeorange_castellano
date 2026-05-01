@@ -13,7 +13,7 @@ Route67Sign:
 	jumptext Route67SignText
 	
 Route67SignText:
-	text "ROUTE 67"
+	text "RUTA 67"
 	done
 	
 Route67SeedBomb:
@@ -46,19 +46,23 @@ TrainerOtakuAbe:
 	end
 
 OtakuAbeSeenText:
-	text "Gotta Catch 'Em"
-	line "All!"
+	text "¡Tenemos que"
+	line "atraparlos a"
+	cont "todos!"
 	done
 
 OtakuAbeBeatenText:
-	text "Why catch them"
-	line "all in real life?"
+	text "¿Por qué"
+	line "atraparlos a"
+	cont "todos en la"
+	cont "vida real?"
 	done
 
 OtakuAbeAfterText:
-	text "I have almost all"
-	line "the #MON in"
-	cont "my GAMEBOY game!"
+	text "¡Tengo casi"
+	line "todos los"
+	cont "#MON en mi"
+	cont "juego de GAME BOY!"
 	done
 	
 ;=================================
@@ -76,18 +80,19 @@ TrainerLassTori:
 	end
 
 LassToriSeenText:
-	text "Strength in num-"
-	line "bers!"
+	text "¡La unión"
+	line "hace la fuerza!"
 	done
 
 LassToriBeatenText:
-	text "Kyaa!"
+	text "¡Kyaa!"
 	done
 
 LassToriAfterText:
-	text "My cuties got me"
-	line "this far! I won't"
-	cont "give up yet!"
+	text "¡Mis bellezas me"
+	line "han traído hasta"
+	cont "aquí! ¡No me"
+	cont "rendiré todavía!"
 	done
 	
 ;=================================
@@ -105,21 +110,21 @@ TrainerFisherGin:
 	end
 
 FisherGinSeenText:
-	text "I caught a special"
-	line "one<...>"
+	text "Atrapé uno"
+	line "especial<...>"
 	done
 
 FisherGinBeatenText:
-	text "It sparkles!"
+	text "¡Brilla!"
 	done
 
 FisherGinAfterText:
-	text "I lied."
+	text "Mentí."
 	
-	para "I didn't catch it."
-	line "Some salesman told"
-	cont "me it was super"
-	cont "strong."
+	para "No lo pillé. Un"
+	line "vendedor me"
+	cont "dijo que era"
+	cont "súper fuerte."
 	done
 	
 ;=================================
@@ -137,16 +142,19 @@ TrainerCooltrainerMFabio:
 	end
 
 CooltrainerMFabioSeenText:
-	text "What's up hotshot?"
+	text "¿Qué pasa,"
+	line "pez gordo?"
 	done
 
 CooltrainerMFabioBeatenText:
-	text "Hot, hot, hot!"
+	text "¡Caliente,"
+	line "caliente,"
+	cont "caliente!"
 	done
 
 CooltrainerMFabioAfterText:
-	text "You're on fire,"
-	line "kid!"
+	text "Estas en"
+	line "llamas niño."
 	done
 	
 ;=================================
@@ -164,20 +172,21 @@ TrainerCooltrainerFLiz:
 	end
 
 CooltrainerFLizSeenText:
-	text "Good type coverage"
-	line "is what makes the"
-	cont "team."
+	text "La buena cobertura"
+	line "de tipos es lo que"
+	cont "hace al equipo."
 	done
 
 CooltrainerFLizBeatenText:
-	text "No way!"
+	text "¡De ninguna"
+	line "manera!"
 	done
 
 CooltrainerFLizAfterText:
-	text "Nevertheless, you"
-	line "should always have"
-	cont "your weaknesses"
-	cont "covered."
+	text "Sin embargo,"
+	line "siempre debes"
+	cont "tener cubiertas"
+	cont "tus debilidades."
 	done
 	
 ;=================================
@@ -195,23 +204,24 @@ TrainerBirdkeeperCid:
 	end
 
 BirdkeeperCidSeenText:
-	text "Isn't FLYING just"
-	line "the best?"
+	text "¿VOLAR no es"
+	line "lo mejor?"
 	done
 
 BirdkeeperCidBeatenText:
-	text "FLY away!"
+	text "¡VUELA lejos!"
 	done
 
 BirdkeeperCidAfterText:
-	text "Use FLY, PIDGEOT!"
+	text "¡Usa VUELO,"
+	line "PIDGEOT!"
 	
 	para "<...>"
 	line "<...>"
 	cont "<...>"
 	cont "<...>"
 	
-	para "PIDGEOT?"
+	para "¿PIDGEOT?"
 	done
 	
 ;=================================
@@ -229,19 +239,21 @@ TrainerSwimmerFLulu:
 	end
 
 SwimmerFLuluSeenText:
-	text "I found all my"
-	line "#MON while"
-	cont "diving!"
+	text "¡Encontré todos"
+	line "mis #MON"
+	cont "mientras"
+	cont "buceaba!"
 	done
 
 SwimmerFLuluBeatenText:
-	text "Blub<...>"
+	text "Lloriquear<...>"
 	done
 
 SwimmerFLuluAfterText:
-	text "There's lots of"
-	line "treasure to be"
-	cont "found UNDERWATER."
+	text "Hay muchos"
+	line "tesoros por"
+	cont "encontrar BAJO"
+	cont "EL AGUA."
 	done
 
 Route67_MapEventHeader::
@@ -267,4 +279,3 @@ Route67_MapEventHeader::
 	person_event SPRITE_COOLTRAINER_F, 15, 51, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 2, TrainerCooltrainerFLiz, -1
 	person_event SPRITE_COOLTRAINER_M, 17, 37, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 2, TrainerBirdkeeperCid, -1
 	person_event SPRITE_SWIMMER_GIRL, 12,  6, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerSwimmerFLulu, -1
-

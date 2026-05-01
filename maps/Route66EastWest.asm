@@ -28,19 +28,19 @@ TrainerFisherSho:
 	end
 
 FisherShoSeenText:
-	text "I'm all out of"
-	line "SODA POP."
+	text "No me quedan mas"
+	line "REFRESCOS."
 	
-	para "Got any, kid?"
+	para "¿Tienes alguno?"
 	done
 
 FisherShoBeatenText:
-	text "I know, I'm"
-	line "dehydrated!"
+	text "Lo se, estoy"
+	line "deshidratado."
 	done
 
 FisherShoAfterText:
-	text "So thirsty<...>"
+	text "Tan sediento<...>"
 	done
 	
 TrainerSightseerFLana:
@@ -55,28 +55,28 @@ TrainerSightseerFLana:
 	end
 
 SightseerFLanaSeenText:
-	text "Eek! I dropped it!"
+	text "¡Ay! ¡Lo perdí!"
 	done
 
 SightseerFLanaBeatenText:
-	text "My bow!"
+	text "¡Mi lazo!"
 	done
 
 SightseerFLanaAfterText:
-	text "I lost my bow. Now"
-	line "my hair is a"
-	cont "disaster!"
+	text "Perdi mi lazo."
+	line "Mi pelo es un"
+	cont "desastre."
 	
-	para "Oh, wait!"
-	line "I forgot, I have a"
-	cont "spare!"
+	para "¡Oh, espera!"
+	line "¡Olvide que tengo"
+	cont "un repuesto!"
 	done
 	
 Route66Sign:
 	jumptext Route65SignText
 	
 Route66SignText:
-	text "ROUTE 66"
+	text "RUTA 66"
 	done
 
 Route66EastWest_MapEventHeader::

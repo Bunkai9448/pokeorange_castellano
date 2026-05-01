@@ -26,30 +26,31 @@ MrFlashScript:
 	end
 
 MrFlashText:
-	text "MR. FLASH: Look"
-	line "who FLASHed by!"
+	text "MR. FLASH: ¡Mira"
+	line "quien esta"
+	cont "deslumbrado!"
 	
-	para "Hey there, FLASHy"
-	line "kid. You sure gave"
-	cont "me a FLASHback!"
+	para "¡Ey! Chavalote,"
+	line "me has dado un"
+	cont "FLASHback."
 	
-	para "I like to give"
-	line "FLASHing light-"
-	cont "bulbs like you"
-	cont "presents."
+	para "Me gustaría"
+	line "FLASHearte y"
+	cont "darte esto"
+	cont "como regalo."
 	
-	para "Here you go!"
+	para "¡Toma!"
 	done
 	
 AlreadyGotFlashText:
-	text "MR. FLASH: That"
-	line "FLASHy TM there"
-	cont "contains FLASH."
+	text "MR. FLASH: Esta"
+	line "FLASHY MT es"
+	cont "DESTELLO."
 	
-	para "You can light the"
-	line "darkest caves"
-	cont "right up with a"
-	cont "FLASHing bang!"
+	para "Puedes iluminar"
+	line "las cuevas mas"
+	cont "oscuras con un"
+	cont "fogonazo."
 	done
 
 TrovitopolisMrFlashHouse_MapEventHeader::

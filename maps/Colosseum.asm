@@ -49,8 +49,8 @@ ChrisScript_0x193499:
 	end
 
 .FriendReadyText:
-	text "Your friend is"
-	line "ready."
+	text "Tu amigo está"
+	line "listo."
 	done
 
 Colosseum_MapEventHeader:

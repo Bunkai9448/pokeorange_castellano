@@ -23,17 +23,17 @@ ShamoutiSailor:
 	end
 	
 ShamoutiBayHouseSailorText2:
-	text "Oh, you want to"
-	line "go back to KUMQUAT"
-	cont "ISLAND?"
+	text "¡Ah!¿Quieres"
+	line "volver a ISLA"
+	cont "KUMQUAT?"
 	done
 	
 ShamoutiBayHouseSailorText3:
-	text "You must have"
-	line "forgotten your"
-	cont "FLYING #MON!"
+	text "Debes haber"
+	line "olvidado tu"
+	cont "#MON volador."
 	
-	para "Off we go!"
+	para "¡Allá vamos!"
 	done
 
 ShamoutiBayHouse_MapEventHeader:

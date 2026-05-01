@@ -10,18 +10,18 @@ TrovitopolisBugBoyScript:
 	jumptextfaceplayer TrovitopolisBugBoyText
 	
 TrovitopolisBugBoyText:
-	text "PINSIR is an odd"
-	line "#MON."
+	text "PINSIR es un"
+	line "#MON sin igual."
 	
-	para "It's compared to"
-	line "SCYTHER often, but"
-	cont "PINSIR doesn't"
-	cont "evolve."
+	para "Comparado con"
+	line "SCYTHER, que"
+	cont "PINSIR no"
+	cont "evoluciona."
 	
-	para "I wonder if one"
-	line "day someone will"
-	cont "discover a new"
-	cont "evolution method?"
+	para "Me encantaría que"
+	line "algun día alguien"
+	cont "descubriera una"
+	cont "evolución suya."
 	done
 
 TrovitopolisHouse2_MapEventHeader::

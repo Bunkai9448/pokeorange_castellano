@@ -34,67 +34,68 @@ FukuharaBF3Script:
 	end
 	
 FukuharaBF3ScriptText1:
-	text "CASSIDY: BUTCH!"
-	line "Look! It's the"
-	cont "super rare #MON"
+	text "CASSIDY: ¡BUTCH!"
+	line "¡Mira! ¡Es el"
+	cont "rarísimo #MON"
 	cont "AERODACTYL!"
 	
-	para "BUTCH: But CASS-"
+	para "BUTCH: Pero CASS"
 	
-	para "CASSIDY: Don't"
-	line "worry! We just"
-	cont "gotta catch it"
-	cont "before<...>"
+	para "CASSIDY: ¡No"
+	line "te preocupes! Lo"
+	cont "atraparemos"
+	cont "antes<...>"
 	done
 	
 FukuharaBF3ScriptText2:
-	text "BUTCH: The kid"
-	line "gets here?"
+	text "BUTCH: ¿El crío"
+	line "esta aquí?"
 	
-	para "CASSIDY: <...>the"
-	line "kid gets here."
+	para "CASSIDY: <...>el"
+	line "crío está aqui."
 	
-	para "Well, we might as"
-	line "well try to win!"
+	para "Bueno, intenta-"
+	line "rémos vencerlo."
 	done
 	
 FukuharaButchCassidyWinLoss:
-	text "You've gotta be"
-	line "kidding!"
+	text "¡Tienes que"
+	line "estar de broma!"
 	done
 	
 FukuharaBF3ScriptText3:
-	text "CASSIDY: Is it"
-	line "hopeless, BUTCH?"
+	text "CASSIDY: ¿No hay"
+	line "esperanza, BUTCH?"
 	
 	para "BUTCH: <...>"
-	line "CASS, I think it's"
-	cont "time to call it"
-	cont "quits."
+	line "CASS, pienso que"
+	cont "es hora de "
+	cont "dejarlo.."
 	
 	para "CASSIDY: <...>"
 	
-	para "BUTCH: Look, kid."
-	line "We just had a"
-	cont "dream. We did what"
-	cont "we had to."
+	para "BUTCH: Chico,"
+	line "teniamos un sueño,"
+	cont "hemos hecho todo "
+	cont "lo posible por el."
 	
-	para "I guess this means"
-	line "TEAM ROCKET is"
-	cont "really dead."
+	para "Supongo que esto"
+	line "significa que el"
+	cont "TEAM ROCKET esta"
+	cont "acabado del todo."
 	
-	para "CASSIDY: Well, you"
-	line "still have those"
-	cont "idiots, JESSIE and"
-	cont "JAMES."
+	para "CASSIDY: Bueno,tú"
+	line "todavia tienes a"
+	cont "esos idiotas,"
+	cont "JESSIE y JAMES."
 	
-	para "BUTCH: They won't"
-	line "last a day without"
-	cont "us."
+	para "BUTCH: Ellos no"
+	line "duraran ni un"
+	cont "día sin nosotros."
 	
-	para "Anyway, kid. We're"
-	line "done. No way we"
-	cont "can beat you."
+	para "Lo hemos intentado,"
+	line "pero no hay manera"
+	cont "de derrotarte."
 	done
 
 FukuharaAerodactylScript:	
@@ -114,7 +115,7 @@ FukuharaAerodactylScript:
 	end
 	
 AerodactylText:
-	text "Wreeeooh!"
+	text "¡Wreeeooh!"
 	done
 	
 FukuharaNo4BF3_MapEventHeader::

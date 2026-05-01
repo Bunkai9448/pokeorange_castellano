@@ -414,7 +414,7 @@ TMHMPocket_GetCurrentLineCoord: ; 2ca86 (b:4a86)
 ; 2ca95 (b:4a95)
 
 TMHM_String_Cancel: ; 2caae
-	db "CANCEL@"
+	db "CANCELAR@"
 ; 2cab5
 
 TMHM_GetCurrentPocketPosition: ; 2cab5 (b:4ab5)

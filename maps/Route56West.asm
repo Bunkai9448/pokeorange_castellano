@@ -17,9 +17,9 @@ Route56Sign:
 	jumptext Route56SignText
 
 Route56SignText:
-	text "ROUTE 56"
-	line "EAST to KINNOW"
-	cont "ISLAND."
+	text "RUTA 56"
+	line "ESTE hacia"
+	cont "ISLA KINNOW"
 	done
 
 TrainerFisherIsao:
@@ -34,20 +34,22 @@ TrainerFisherIsao:
 	end
 
 FisherIsaoSeenText:
-	text "Heh. You'd be"
-	line "amazed if you"
-	cont "could fish with a"
-	cont "GOOD ROD."
+	text "Jeje. Te"
+	line "sorprenderías si"
+	cont "pudieras pescar"
+	cont "con una"
+	cont "CAÑA BUENA."
 	done
 
 FisherIsaoBeatenText:
-	text "I've been hooked!"
+	text "¡Me he enganchado!"
 	done
 
 FisherIsaoAfterText:
-	text "I heard you can"
-	line "get a GOOD ROD"
-	cont "from MORO ISLAND."
+	text "He oído que se"
+	line "puede conseguir"
+	cont "una CAÑA BUENA"
+	cont "en la ISLA MORO."
 	done
 
 TrainerAthleteKaito:
@@ -62,17 +64,19 @@ TrainerAthleteKaito:
 	end
 
 AthleteKaitoSeenText:
-	text "My #MON are"
-	line "all about speed!"
+	text "¡Mis #MON se"
+	line "centran en la"
+	cont "velocidad!"
 	done
 
 AthleteKaitoBeatenText:
-	text "That was fast!"
+	text "¡Eso fue rápido!"
 	done
 
 AthleteKaitoAfterText:
-	text "That was over in a"
-	line "flash!"
+	text "¡Eso pasó en un"
+	line "abrir y cerrar"
+	cont "de ojos!"
 	done
 
 TrainerSwimmerSakako:
@@ -87,21 +91,22 @@ TrainerSwimmerSakako:
 	end
 
 SwimmerSakakoSeenText:
-	text "Kyaa! Get away!"
+	text "¡Kyaa! ¡Aléjate!"
 	done
 
 SwimmerSakakoBeatenText:
-	text "I thought you"
-	line "were a SHARPEDO!"
+	text "¡Pensé que eras"
+	line "un SHARPEDO!"
 	done
 
 SwimmerSakakoAfterText:
-	text "Some #MON are"
-	line "very dangerous."
+	text "Algunos #MON"
+	line "son muy"
+	cont "peligrosos."
 
-	para "You can get hurt"
-	line "if you aren't"
-	cont "careful!"
+	para "¡Puedes lastimarte"
+	line "si no tienes"
+	cont "cuidado!"
 	done
 
 TrainerSwimmerNaoya:
@@ -116,20 +121,22 @@ TrainerSwimmerNaoya:
 	end
 
 SwimmerNaoyaSeenText:
-	text "I just used a"
-	line "STONE to evolve my"
+	text "¡Acabo de usar una"
+	line "PIEDRA para"
+	cont "evolucionar a mi"
 	cont "SHELLDER!"
 	done
 
 SwimmerNaoyaBeatenText:
-	text "SCIZORs don't fear"
-	line "the REAPER<...>"
+	text "Los SCIZOR no"
+	line "temen a la"
+	cont "SEGADORA<...>"
 	done
 
 SwimmerNaoyaAfterText:
-	text "By the way, my"
-	line "favorite band is"
-	cont "the BLUE CLOYSTER"
+	text "Por cierto, mi"
+	line "grupo favorito es"
+	cont "BLUE CLOYSTER"
 	cont "CULT."
 	done
 
@@ -200,50 +207,54 @@ TraceyScript2:
 	end
 
 TraceyYoText:
-	text "<PLAYER>!"
+	text "¡<PLAYER>!"
 	done
 
 TraceyLetsBattleText:
-	text "Long time no see!"
+	text "¡Mucho tiempo sin"
+	line "verlo!"
 
-	para "You look like you"
-	line "got much stronger!"
+	para "¡Parece que te has"
+	line "vuelto mucho más"
+	cont "fuerte!"
 
-	para "I've observed many"
-	line "different #MON."
+	para "He observado muchos"
+	line "#MON diferentes."
 
-	para "Let's see who got"
-	line "the strongest!"
+	para "¡Veamos quién"
+	line "consiguió el más"
+	cont "fuerte!"
 	done
 
 TraceyRoute56WinLoss:
-	text "You're so strong,"
+	text "¡Eres muy fuerte,"
 	line "<PLAYER>!"
 	done
 
 TraceyLeavingNowText:
-	text "I really need to"
-	line "focus on training"
-	cont "if I ever want to"
-	cont "be PROF.OAK's"
-	cont "assistant!"
+	text "¡Realmente necesito"
+	line "concentrarme en el"
+	cont "entrenamiento si"
+	cont "quiero ser"
+	cont "asistente del"
+	cont "del PROF.OAK!"
 
-	para "Oh, yeah."
+	para "Oh, sí."
 	
-	para "This should help"
-	line "you out!"
-	cont "It will make your"
-	cont "training easier!"
+	para "¡Esto te ayudará!"
+	line "¡Te facilitará el"
+	cont "entrenamiento!"
 	done
 
 TraceyReallyLeavingNowText:
-	text "<PLAYER>, if you"
-	line "go to KINNOW ISLA-"
-	cont "ND, make sure you"
-	cont "visit the SKATE"
-	cont "SHOP!"
+	text "<PLAYER>, si vas"
+	line "a la ISLA KINNOW,"
+	cont "¡asegúrate de"
+	cont "visitar la TIENDA"
+	cont "DE SKATE!"
 
-	para "Seeya around!"
+	para "¡Nos vemos por"
+	cont "ahí!"
 	done
 
 MovementYo1:
@@ -297,4 +308,3 @@ Route56West_MapEventHeader::
 	person_event SPRITE_TRACEY, 20, 55, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_56_TRACEY
 	person_event SPRITE_POKE_BALL,  9, 53, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route56WestHPUp, EVENT_ROUTE_56_WEST_HP_UP
 	person_event SPRITE_POKE_BALL, 27, 52, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route56WestUltraBall, EVENT_ROUTE_56_WEST_ULTRA_BALL
-

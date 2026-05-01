@@ -35,7 +35,7 @@ ShamoutiShrineSlowkingScript:
 	end
 	
 MelodyShrine:
-	checkevent EVENT_SHAMOUTI_QUEST_ENDED
+	checkevent EVENT_LUGIA_FOUGHT
 	iftrue .AlreadyFoughtLugia
 	faceplayer
 	opentext
@@ -107,7 +107,6 @@ MelodyShrine:
 	disappear SHAMOUTI_SHRINE_LUGIA
 	reloadmapafterbattle
 	playmapmusic
-	setevent EVENT_SHAMOUTI_QUEST_ENDED
 	setevent EVENT_LUGIA_FOUGHT
 	setevent EVENT_LUGIA_APPEARS
 	takeitem ELECTRIC_ORB
@@ -120,17 +119,6 @@ MelodyShrine:
 	opentext
 	checkevent EVENT_ENTERED_KANTO
 	iftrue .BeenGoneAWhile
-	
-	checkevent EVENT_LUGIA_FOUGHT
-	iftrue .AlreadyFoughtLugia2
-	
-	writetext ReadyToSummonLugiaAgainText
-	yesorno
-	iftrue .SummonLugia
-	closetext
-	end
-
-.AlreadyFoughtLugia2
 	writetext LugiaAlreadyFoughtText
 	waitbutton
 	closetext
@@ -167,128 +155,126 @@ LugiaShamoutiShrineMovement:
 	step_end
 
 OrbCheckText:
-	text "MELODY: You're"
-	line "back!"
+	text "MELODY: ¡Has"
+	line "vuelto!"
 	
-	para "Quickly, now, show"
-	line "me the treasures!"
+	para "¡Rápido, mues-"
+	line "trame los tesoros!"
 	
 	para "<...>"
 	done
 	
 NeedMoreOrbsText:
-	text "It looks like you"
-	line "are missing some"
-	cont "of the treasures!"
+	text "Parece que falta"
+	line "alguno de los"
+	cont "tesoros."
 	
-	para "Quickly, go back"
-	line "to the islands and"
-	cont "get them!"
+	para "¡Rápido, vuelva"
+	line "a las islas y"
+	cont "consiguelo!"
 	done
 	
 ReadyToSummonLugiaText:
-	text "Great, you have"
-	line "all of them!"
+	text "¡Genial, los"
+	line "conseguiste!"
 	
-	para "Are you ready?"
-	done
-
-ReadyToSummonLugiaAgainText:
-	text "Seem the Guardian"
-	line "of the Seas wants"
-	cont "another round."
-	
-	para "Are you ready?"
+	para "¿Estás listo?"
 	done
 	
 SummonLugiaText:
-	text "MELODY: Ok, I'm"
-	line "going to play the"
-	cont "sea god's song"
-	cont "now! Get ready!"
+	text "MELODY: Ok, Voy"
+	line "a tocar la"
+	cont "canción del dios"
+	cont "del mar."
+	cont "¡Prepárate!"
 	done
 	
 ShamoutiShrineText:
 	jumptext ShamoutiShrineText1
 	
 ShamoutiShrineText1:
-	text "The gods of fire,"
-	line "lightning and ice"
-	cont "must never be"
-	cont "disturbed."
+	text "Los dioses del"
+	line "fuego, trueno y"
+	cont "hielo nunca deben"
+	cont "ser perturbados."
 	
-	para "Else, Heaven and"
-	line "Earth will be"
-	cont "angered and the"
-	cont "world will face"
-	cont "destruction."
+	para "De lo contrario,"
+	line "tierra y cielo"
+	cont "convergeran y"
+	cont "eso llevara al"
+	cont "mundo a la"
+	cont "destrucción."
 	
-	para "The god of the"
-	line "sea will appear"
-	cont "to stop it, but"
-	cont "will not prevent"
-	cont "the destruction."
+	para "El dios del mar"
+	line "aparece para"
+	cont "detener el cata-"
+	cont "clismo pero no"
+	cont "evitará la"
+	cont "destrucción."
 	
-	para "Harmony will only"
-	line "be possible when"
-	cont "a powerful trainer"
-	cont "appears."
+	para "La armonía solo"
+	line "sera posible"
+	cont "cuando aparezca"
+	cont "un entrenador"
+	cont "poderoso."
 	done
 	
 ShamoutiShrineSlowkingText1:
-	text "Yaaaaawn."
+	text "Slowwww."
 	done
 	
 ShamoutiShrineSlowkingText2:
-	text "It's getting a"
-	line "bit chilly, isn't"
-	cont "it? I could use"
-	cont "some pants."
+	text "Se esta muy"
+	line "tranquilo,¿Será"
+	cont "tener el mar"
+	cont "cerca?"
 	
-	para "Ah, the flying"
-	line "castle up there?"
+	para "Ah, ¿El castillo"
+	line "volador de arriba?"
 	
-	para "I can teleport"
-	line "you there, if you"
-	cont "would like?"
+	para "Puedo teletrans-"
+	line "portate allí."
+	cont "¿Quieres?"
 	
-	para "I can't guarantee"
-	line "that you will"
-	cont "be in the safest"
-	cont "place up there."
+	para "No te garantizo"
+	line "que vayas a"
+	cont "aterrizar en un"
+	cont "lugar seguro."
 	done
 	
 LugiaAlreadyFoughtText:
-	text "MELODY: Thank you"
-	line "for saving us,"
+	text "MELODY: ¡Gracias"
+	line "por salvarnos,"
 	cont "<PLAYER>!"
 	
-	para "Now that the"
-	line "prophecy has come"
-	cont "full circle, I"
-	cont "guess you'll be"
-	cont "leaving soon<...>"
+	para "Ahora que la"
+	line "profecía ha sido"
+	cont "cumplida supongo"
+	cont "gue nos tocara"
+	cont "despedirnos<...>"
 	
-	para "Make sure you come"
-	line "visit, I'll play"
-	cont "my ocarina for you"
-	cont "anytime!"
+	para "Asegurate de"
+	line "visitarme, ¡tocare"
+	cont "mi ocarina para"
+	cont "ti!"
 	done
 	
 BeenGoneAWhileText:
-	text "MELODY: Hey,"
-	line "<PLAYER>! Nice of"
-	cont "you to drop by."
+	text "MELODY: ¡Ey,"
+	line "<PLAYER>!"
+	cont "¡Que bueno que"
+	cont "viniste!"
 	
-	para "That airship is"
-	line "still up in the"
-	cont "sky there. Hope"
-	cont "that guy isn't up"
-	cont "to anything shady."
+	para "La aeronave toda-"
+	line "vía esta en el "
+	cont "cielo. Espero"
+	cont "que ese tipo no"
+	cont "este tramando"
+	cont "nada."
 	done
 	
 LugiaCryText:
-	text "Gyaaaaaaah!"
+	text "¡Gyaaaaaaah!"
 	done
 
 ShamoutiShrine_MapEventHeader::

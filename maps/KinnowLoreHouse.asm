@@ -11,14 +11,14 @@ KinnowRockerLoreScript:
 	jumptextfaceplayer KinnowRockerLoreText
 
 KinnowRockerLoreText:
-	text "Hey, kid!"
+	text "¡Ey,chico!"
 
-	para "Have you been to"
-	line "the SKATE SHOP?"
+	para "¿Has ido a la"
+	line "tienda del Skate?"
 
-	para "Skateboarding is"
-	line "the way to go for"
-	cont "land travel!"
+	para "El Skate es"
+	line "la manera de ir"
+	cont "por estas tierras."
 	done
 
 KinnowLoreHouse_MapEventHeader::

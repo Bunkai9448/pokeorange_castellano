@@ -11,19 +11,20 @@ Route69OfficerScript:
 	jumptextfaceplayer Route69OfficerText
 
 Route69OfficerText:
-	text "Wow! Congrats on"
-	line "making it out of"
-	cont "there! Good luck"
-	cont "on PUMMELO!"
+	text "¡Wow!¡Felicidades"
+	line "por vencer en"
+	cont "esta zona! ¡Buena"
+	cont "suerte en POMELO!"
 	
-	para "There's still a"
-	line "small bit of SURF"
-	cont "left."
+	para "Aun tendrás un"
+	line "poco de SURFEO "
+	cont "para llegar."
 	
-	para "I instructed the"
-	line "local trainers not"
-	cont "to bother anyone"
-	cont "going through."
+	para "He ordenado a los"
+	line "entrenadores locas"
+	cont "que no obstaculi-"
+	cont "cen a quien cruce"
+	cont "por ahi."
 	done
 
 Route69Gate_MapEventHeader:

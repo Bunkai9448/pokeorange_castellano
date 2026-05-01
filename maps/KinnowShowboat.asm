@@ -8,12 +8,12 @@ KinnowShowboatSign:
 	jumptext KinnowShowboatSignText
 	
 KinnowShowboatSignText:
-	text "#MON SHOWBOAT"
-	line "For the best"
-	cont "challenge, come"
-	cont "back after every"
+	text "BARCO-SHOW #MON"
+	line "Para el mejor"
+	cont "desafío, ven"
+	cont "despues de cada"
 	
-	para "BADGE you get!"
+	para "medalla."
 	done
 
 KinnowShowboat_MapEventHeader::

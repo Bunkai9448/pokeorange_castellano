@@ -12,18 +12,16 @@ MoroNurseScript:
 	jumpstd pokecenternurse
 
 MoroSlouchScript:
-	faceplayer
 	opentext
 	writetext MoroSlouchText
 	waitbutton
 	closetext
-	spriteface MORO_SLOUCH, RIGHT
 	end
 
 MoroSlouchText:
-	text "Some say wrecked"
-	line "ships are haunted"
-	cont "by ghosts."
+	text "Dicen que los"
+	line "barcos fantasma"
+	cont "estan malditos."
 	done
 
 MoroCenterPokefanMScript:
@@ -32,7 +30,7 @@ MoroCenterPokefanMScript:
 MoroCenterPokefanText:
 	text "Yawn<...>"
 
-	para "Isn't SLOWPOKE"
+	para "¿No es SLOWPOKE"
 	line "adorable?"
 	done
 

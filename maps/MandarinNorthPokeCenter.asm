@@ -15,14 +15,14 @@ MandarinNorthCooltrainerMScript:
 	jumptextfaceplayer MandarinNorthCooltrainerMText
 
 MandarinNorthCooltrainerMText:
-	text "I came here to"
-	line "stock up on GREAT"
-	cont "BALLS."
+	text "He venido con un"
+	line "gran stock de"
+	cont "SUPER BALLS."
 
-	para "The #MON on"
-	line "the waters past"
-	cont "here are harder"
-	cont "to capture."
+	para "Los #MON en"
+	line "aguas profundas"
+	cont "son mas difíciles"
+	cont "de capturar."
 	done
 
 MandarinNorthPokeCenter_MapEventHeader::

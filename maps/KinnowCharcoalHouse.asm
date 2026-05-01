@@ -30,20 +30,21 @@ KinnowCharcoalDoneScript:
 	end
 
 GiveCharcoalText:
-	text "Yes!"
+	text "¡Sí!"
 
-	para "I see you have a"
-	line "knack at being a"
-	cont "#MON Trainer!"
+	para "Veo que tienes"
+	line "un don como"
+	cont "entrenador #MON."
 
-	para "Take this, it will"
-	line "help you."
+	para "Toma esto,"
+	line "te ayudará."
 	done
 
 GotCharcoalText:
-	text "CHARCOAL increases"
-	line "the power of FIRE-"
-	cont "TYPE #MON."
+	text "CARBON sube"
+	line "el poder de los"
+	cont "mov. de fuego"
+	cont "de tus #MON."
 	done
 
 KinnowCharcoalHouse_MapEventHeader::

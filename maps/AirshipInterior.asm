@@ -50,16 +50,17 @@ AirshipInteriorCutscene:
 	end
 	
 LawrenceInteriorText1:
-	text "LAWRENCE: You"
-	line "insipid worm!"
+	text "LAWRENCE: ¡Tú,"
+	line "insípido gusano!"
 	
-	para "Fine then, let's"
-	line "settle this once"
-	cont "and for all!"
+	para "Bien, ¡esto"
+	line "debería acabar"
+	cont "de una vez!"
 	
-	para "This should make"
-	line "a grand welcome"
-	cont "for LUGIA!"
+	para "Esto será"
+	line "una gran"
+	cont "bienvenida a"
+	cont "Lugia."
 	done
 
 AirshipInteriorHidePersonMovement:
@@ -86,30 +87,31 @@ PlayerEscapesRingMovement:
 	
 	
 LawrenceCutsceneMonologue:
-	text "Capture of MOLTRES"
-	line "confirmed. Moving"
-	cont "toward LIGHTNING"
-	cont "ISLAND for target"
+	text "Captura de MOLTRES"
+	line "confirmada. Yendo"
+	cont "hacia ISLA"
+	cont "del trueno para"
+	cont "el objetivo"
 	cont "2: ZAPDOS."
 	
-	para "???: Soon, the"
-	line "legendary bird"
-	cont "#MON will be"
-	cont "in the palm of"
+	para "???: Pronto, el"
+	line "ave legendaria"
+	cont "#MON estará"
+	cont "en la palma"
 	
-	para "of my hand."
+	para "de mi mano."
 	done
 	
 LawrenceCutsceneMonologue2:
-	text "???: Then I'm"
-	line "going to acquire"
-	cont "you, LUGIA<...>"
+	text "???: Pronto"
+	line "voy a conseguirte"
+	cont ", LUGIA<...>"
 	
 	para "Hahahahaha<...>"
 	
-	para "A fine addition"
-	line "to my collection,"
-	cont "indeed<...>"
+	para "una buena adición"
+	line "para mi colección,"
+	cont "sin duda<...>"
 	done
 	
 LawrenceInteriorScript:
@@ -178,49 +180,55 @@ AirshipInsideLawrenceMovement1:
 LawrenceDefeatedText1:
 	text "LAWRENCE: <...>"
 	
-	para "Fine. Terminal."
-	line "Release captives"
-	cont "immediately."
+	para "Bien. Sistema."
+	line "Suelta las "
+	cont "capturas"
+	cont "inmediatamente."
 	
-	para "Release Protocol"
-	line "Initiated."
+	para "Protocolo de "
+	line "liberación "
+	cont "iniciado."
 	done
 	
 LawrenceDefeatedText2:
-	text "I concede for now,"
-	line "trainer, but don't"
-	cont "think this is the"
-	cont "end."
+	text "Ganas por ahora,"
+	line "entrenador, pero "
+	cont "no pienses que"
+	cont "es el final."
 	
 	para "<...>"
 	
-	para "LAWRENCE: Wait<...>"
-	line "You say that the 3"
-	cont "birds aren't the"
-	cont "treasures that the"
-	cont "legend speaks of?"
+	para "LAWRENCE: <...>"
+	line "¿Dices que las"
+	cont "3 aves no son"
+	cont "los tesoros de"
+	cont "los que habla"
+	cont "la leyenda?"
 	
-	para "<...>And disturbing"
-	line "them will cause"
-	cont "ruin to the entire"
-	cont "world<...>?"
+	para "<...> ¿Dices"
+	line "que perturbarlos"
+	cont "puede causar la"
+	cont "ruina al mundo"
+	cont "entero<...>?"
 	
-	para "I see. You may go"
-	line "now."
+	para "Ya veo.Puedes irte"
+	line "ya."
 	done
 	
 LawrenceDefeatedText3:
-	text "LAWRENCE: I was"
-	line "wrong. Please,"
-	cont "just leave me be."
+	text "LAWRENCE: Estaba"
+	line "equivocado."
+	cont "Por favor,"
+	cont "dejame solo."
 	done
 	
 AirshipLawrenceWinLoss:
-	text "Impossible!"
+	text "¡Imposible!"
 	
-	para "How could you hope"
-	line "to stand up to"
-	cont "legends?"
+	para "¿Como puede"
+	line "tu esperanza"
+	cont "plantar cara"
+	cont "a las leyendas?"
 	done
 
 AirshipInteriorCaptureRingScript:
@@ -240,7 +248,8 @@ AirshipInteriorCaptureRingScript:
 	end
 	
 AirshipInteriorCaptureRingScriptText:
-	text "Return to shrine?"
+	text "¿Volver al"
+	line "santuario?."
 	done
 	
 ArticunoInteriorScript:
@@ -268,7 +277,7 @@ ZapdosInteriorScript:
 	end
 
 BirdsInteriorScriptText:	
-	text "Gyaoo!"
+	text "¡Gyaoo!"
 	done
 
 .Callbacks: db 0
@@ -284,5 +293,5 @@ AirshipInterior_MapEventHeader::
 	person_event SPRITE_LAWRENCE,  3, 10, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, LawrenceInteriorScript, -1
 	person_event SPRITE_ARTICUNO, 10, 14, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, ArticunoInteriorScript, EVENT_AIRSHIP_BIRDS
 	person_event SPRITE_MOLTRES, 10, 10, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_RED, 0, 0, MoltresInteriorScript, EVENT_MOLTRES_ESCAPES_AIRSHIP
-	person_event SPRITE_ZAPDOS, 10,  6, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_YELLOW2, 0, 0, ZapdosInteriorScript, EVENT_AIRSHIP_BIRDS
+	person_event SPRITE_ZAPDOS, 10,  6, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_OW_BROWN, 0, 0, ZapdosInteriorScript, EVENT_AIRSHIP_BIRDS
 	person_event SPRITE_CAPTURE_RING,  6,  6, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, AirshipInteriorCaptureRingScript, EVENT_PLAYER_CAPTURE_RING
