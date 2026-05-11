@@ -929,7 +929,7 @@ Text_Mart_HowMayIHelpYou: ; 0x15f83
 MenuDataHeader_BuySell: ; 0x15f88
 	db $40 ; flags
 	db 00, 00 ; start coords
-	db 08, 07 ; end coords
+	db 07, 10 ; end coords
 	dw .menudata2
 	db 1 ; default option
 ; 0x15f90
@@ -937,9 +937,9 @@ MenuDataHeader_BuySell: ; 0x15f88
 .menudata2 ; 0x15f90
 	db $80 ; strings
 	db 3 ; items
-	db "BUY@"
-	db "SELL@"
-	db "QUIT@"
+	db "COMPRAR@"
+	db "VENDER@"
+	db "SALIR@"
 ; 0x15f96
 
 Text_Mart_HereYouGo: ; 0x15fa0
