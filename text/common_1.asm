@@ -94,7 +94,7 @@ UnknownText_0x1bc16e::
 MakePinkText::
 	text_from_ram StringBuffer1
 	text " ¡se"
-	line "volvio rosa!"
+	line "volvió rosa!"
 	done
 
 MakeNotPinkText::
@@ -104,16 +104,16 @@ MakeNotPinkText::
 	done
 
 UnknownText_0x1bc29c::
-	text "Estoy poniendo"
-	line "la hora."
+	text "¿Te importaría"
+	line "decirme la hora?"
 	prompt
 
 UnknownText_0x1bc2eb::
-	text "¿Que hora es?"
+	text "¿Qué hora es?"
 	done
 
 UnknownText_0x1bc308::
-	text "¿Cuantos minutos?"
+	text "¿Cuántos minutos?"
 	done
 
 UnknownText_0x1bc323::
@@ -121,15 +121,15 @@ UnknownText_0x1bc323::
 	done
 
 UnknownText_0x1bc31b::
-	text "¿Son@@" ; para confirmar min en intro, no tocar, el "?" es el string de arriba 0x1bc323
+	text "¿Con @@" ; para confirmar min en intro, no tocar, el "?" es el string de arriba 0x1bc323
 	done
 
 UnknownText_0x1bc369::
-	text "¿Que día es?"
+	text "¿Qué día es?"
 	done
 
 UnknownText_0x1bc37a::
-	text ", ¿Es así?"
+	text ", ¿verdad?"
 	done
 
 UnknownText_0x1bc326::

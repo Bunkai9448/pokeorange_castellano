@@ -278,7 +278,7 @@ Text_WhatTimeIsIt: ; 0x90879
 ; 0x9087e
 
 String_oclock:
-	db "¿verdad@" ; es el string "en punto@" de el set de hora de la intro
+	db "@" ; es el string "en punto@" de el set de hora de la intro. lo que sigue a "Dia/Noc... Hora"
 ; 90886
 
 Text_WhatHrs: ; 0x90886
@@ -286,9 +286,18 @@ Text_WhatHrs: ; 0x90886
 	start_asm
 	hlcoord 1, 14
 	call DisplayHourOClock
-	ld hl, Text_QuestionMark
+	ld hl, Text_confirmar ; el original era el questionmark, este clon es para que el prompt no quede raro
 	ret
 ; 90895 (24:4895)
+
+Text_confirmar: ; bloque 1 de 2
+	text_jump Text_confirmar2
+	db "@"
+;
+Text_confirmar2:
+	text "¿correcto?" ; bloque 2 de 2
+	done
+;
 
 Text_HowManyMinutes: ; 0x9089a
 	; How many minutes?
@@ -459,13 +468,13 @@ PlaceWeekdayString: ; 909de
 	dw .Saturday
 	dw .Sunday
 
-.Sunday:    db " DOMINGO@"
-.Monday:    db " LUNES@"
-.Tuesday:   db " MARTES@"
+.Sunday:    db "DOMINGO@"
+.Monday:    db "LUNES@"
+.Tuesday:   db "MARTES@"
 .Wednesday: db "MIERCOLES@"
-.Thursday:  db " JUEVES@"
-.Friday:    db " VIERNES@"
-.Saturday:  db " SABADO@"
+.Thursday:  db "JUEVES@"
+.Friday:    db "VIERNES@"
+.Saturday:  db "SABADO@"
 
 
 Text_WhatDayIsIt: ; 0x90a3f
