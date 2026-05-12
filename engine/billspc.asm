@@ -1010,7 +1010,7 @@ BillsPC_BoxName: ; e2a8e (38:6a8e)
 ; e2abd (38:6abd)
 
 .PartyPKMN:
-	db "PARTY <PK><MN>@"
+	db "Equipo <PK><MN>@"
 ; e2ac6
 
 PCMonInfo: ; e2ac6 (38:6ac6)
@@ -1964,7 +1964,7 @@ MovePKMNWitoutMail_InsertMon: ; e31e7
 ; e3233
 
 .Saving_LeaveOn:
-	db "Saving<...> Leave ON!@"
+	db "Guardando<...>@"
 ; e3245
 
 .Jumptable: ; e3245
@@ -2213,20 +2213,20 @@ PCSelectLZ: INCBIN "gfx/pc.2bpp.lz"
 PCMailGFX:  INCBIN "gfx/pc_mail.2bpp"
 ; e34dd
 
-PCString_ChooseaPKMN: db "Choose a <PK><MN>.@"
+PCString_ChooseaPKMN: db "Elige un <PK><MN>.@"
 PCString_WhatsUp: db "What's up?@"
-PCString_ReleasePKMN: db "Release <PK><MN>?@"
-PCString_MoveToWhere: db "Move to where?@"
-PCString_ItsYourLastPKMN: db "It's your last <PK><MN>!@"
-PCString_TheresNoRoom: db "There's no room!@"
+PCString_ReleasePKMN: db "¿Soltar <PK><MN>?@"
+PCString_MoveToWhere: db "¿Mover adónde?@"
+PCString_ItsYourLastPKMN: db "Es tu último <PK><MN>.@"
+PCString_TheresNoRoom: db "¡No hay espacio!@"
 PCString_NoMoreUsablePKMN: db "No more usable <PK><MN>!@"
 PCString_RemoveMail: db "Remove MAIL.@"
-PCString_ReleasedPKMN: db "Released <PK><MN>.@"
+PCString_ReleasedPKMN: db "Liberado <PK><MN>.@"
 PCString_Bye: db "Bye,@"
-PCString_Stored: db "Stored @"
-PCString_Got: db "Got @"
-PCString_BoxFull: db "The BOX is full.@"
-PCString_PartyFull: db "The party's full!@"
+PCString_Stored: db "Dejado @"
+PCString_Got: db "Sacado @"
+PCString_BoxFull: db "CAJA llena.@"
+PCString_PartyFull: db "¡Equipo completo!@"
 PCString_NoReleasingEGGS: db "No releasing EGGS!@"
 ; e35aa
 
@@ -2416,7 +2416,7 @@ BillsPC_PrintBoxName: ; e36cf (38:76cf)
 ; e36f1 (38:76f1)
 
 .Current: ; e36f1
-	db "CURRENT@"
+	db "En activo @"
 ; e36f9
 
 BillsPC_ChangeBoxSubmenu: ; e36f9 (38:76f9)
@@ -2476,9 +2476,9 @@ BillsPC_ChangeBoxSubmenu: ; e36f9 (38:76f9)
 .MenuData2: ; 0xe3783
 	db $80 ; flags
 	db 3 ; items
-	db "SWITCH@"
-	db "NAME@"
-	db "QUIT@"
+	db "MOVER@"
+	db "NOMBRE@"
+	db "SALIR@"
 ; 0xe379c
 
 BillsPC_PlaceChooseABoxString: ; e379c (38:779c)
@@ -2487,7 +2487,7 @@ BillsPC_PlaceChooseABoxString: ; e379c (38:779c)
 ; e37a1 (38:77a1)
 
 .ChooseABox: ; e37a1
-	db "Choose a BOX.@"
+	db "Elige una caja.@"
 ; e37af
 
 BillsPC_PlaceWhatsUpString: ; e37af (38:77af)
