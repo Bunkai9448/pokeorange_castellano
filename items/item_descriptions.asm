@@ -209,8 +209,8 @@ UltraBallDesc:
 	next "índice de éxito.@"
 
 BrightpowderDesc:
-	db   "Lowers the foe's"
-	next "accuracy. (HOLD)@"
+	db   "Disminuye la prec."
+	next "enemiga. (EQ.)@"
 
 GreatBallDesc:
 	db   "BALL con un buen"
@@ -361,8 +361,8 @@ MaxReviveDesc:
 	next "debilitado.@"
 
 GuardSpecDesc:
-	db   "Prevents stats"
-	next "reduction. (1 BTL)@"
+	db   "Previene merma de"
+	next "stats. (1 BAT)@"
 
 SuperRepelDesc:
 	db   "Repele #MON"
