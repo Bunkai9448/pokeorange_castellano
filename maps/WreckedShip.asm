@@ -35,15 +35,15 @@ WreckedShipNoShellBox:
     text "¡Una bonita "
     line "concha marina!"
     cont "Parece muy"
-    cont "fragil para"
-	cont "llevar en la"
-	cont "mochila."
+    cont "frágil para"
+	cont "llevarla en"
+	cont "la mochila."
     done
 	
 FoundWreckedShipSeashell:
 	text "¡Encontraste una"
 	line "rara concha"
-	cont "marina."
+	cont "marina!"
 	done
 
 

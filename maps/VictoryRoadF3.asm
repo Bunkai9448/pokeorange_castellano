@@ -93,7 +93,7 @@ TrainerDiverMMonsta:
 DiverMMonstaSeenText:
 	text "Surfeaba en"
 	line "WAILORD y acabe"
-	cont "aqui<...>"
+	cont "aquí<...>"
 	done
 
 DiverMMonstaBeatenText:
@@ -135,11 +135,11 @@ HikerSourSeenText:
 	done
 
 HikerSourBeatenText:
-	text "¡Perfeccion!"
+	text "¡Perfección!"
 	done
 
 HikerSourAfterText:
-	text "Podria ir por"
+	text "Podría ir por"
 	line "un BOL DE SOPA"
 	cont "DE PATATA."
 	done

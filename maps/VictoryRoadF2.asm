@@ -57,12 +57,12 @@ TrainerCamperSnyd:
 	end
 
 CamperSnydSeenText:
-	text "¿Podrias perder"
+	text "¿Podrías perder"
 	line "por  mi?"
 	done
 
 CamperSnydBeatenText:
-	text "¿Por que?"
+	text "¿Por qué?"
 	done
 
 CamperSnydAfterText:
@@ -87,7 +87,7 @@ TrainerFisherStephen:
 
 FisherStephenSeenText:
 	text "Una buena arte-"
-	line "sania. Una buena"
+	line "sanía. Una buena"
 	cont "pelea tampoco"
 	cont "debe apresurarse."
 	done
@@ -123,8 +123,9 @@ CatmanMayoBeatenText:
 	done
 
 CatmanMayoAfterText:
-	text "Deje la villa para"
-	line "encontrar un MEOWTH."
+	text "Deje la villa"
+	line "para encontrar un"
+	cont "MEOWTH."
 	
 	para "Y me he perdido."
 	done
@@ -155,7 +156,7 @@ CooltrainerMMikeBeatenText:
 	done
 
 CooltrainerMMikeAfterText:
-	text "¡Dejame solo!"
+	text "¡Déjame solo!"
 	done
 
 ;=================================
@@ -184,12 +185,12 @@ YoungsterEveBeatenText:
 	done
 
 YoungsterEveAfterText:
-	text "Amo a mi VENUSAUR."
-	line "my VENUSAUR. A su"
+	text "Amo a mi VENU-"
+	line "SAUR. A su"
 	cont "vez yo soy la"
 	cont "principal motiva-"
 	
-	para "cion de el."
+	para "ción de el."
 	done
 	
 VictoryRoadF2Elixer:
@@ -218,8 +219,8 @@ VictoryRoadF2OfficerText:
 
 	para "El CAMPEON de"
 	line "la LIGA NARANJA"
-	cont "es la unica per-"
-	cont "que se aloja ahi."
+	cont "es el único que"
+	cont "se aloja ahí."
 	done
 
 VictoryRoadF2_MapEventHeader::

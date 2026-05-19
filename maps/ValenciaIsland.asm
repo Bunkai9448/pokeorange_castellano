@@ -210,7 +210,7 @@ Text_WaitPlayer:
 
 Text_WhatDoYouThinkYoureDoing:
 	text "¿Que crees que"
-	line "estas haciendo?"
+	line "estás haciendo?"
 	done
 
 Text_ItsDangerousToGoAlone:
@@ -219,9 +219,9 @@ Text_ItsDangerousToGoAlone:
 	cont "#MON!"
 
 	para "¿No te ha dado"
-	line "la PRO.IVY un "
+	line "la PROF.IVY un "
 
-	para "#MON? Ella esta"
+	para "#MON? Ella está"
 	line "en CARRETERA DE"
 	cont "LA BAHIA."
 	done
@@ -236,7 +236,7 @@ Text_ElmDiscoveredNewMon:
 	text "¡<PLAYER>!"
 
 	para "¡La PROFESSOR IVY"
-	line "esta buenisima!"
+	line "esta buenísima!"
 	cont "¿No crees?"
 	done
 

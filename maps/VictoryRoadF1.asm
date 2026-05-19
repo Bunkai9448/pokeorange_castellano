@@ -100,11 +100,11 @@ TrainerCooltrainerFGranny:
 
 CooltrainerFGrannySeenText:
 	text "¿De camino a"
-	line "ISLA POMMELO?"
+	line "ISLA POMELO?"
 	done
 
 CooltrainerFGrannyBeatenText:
-	text "Solo queria"
+	text "Solo quería"
 	line "asegurarme<...>"
 	done
 
@@ -114,7 +114,7 @@ CooltrainerFGrannyAfterText:
 	cont "ARCHIPELAGO"
 	cont "NARANJA donde "
 	
-	para "atrape a mis"
+	para "atrapé a mis"
 	line "EEVEES."
 	done
 
@@ -168,7 +168,7 @@ CooltrainerFNuukSeenText:
 	done
 
 CooltrainerFNuukBeatenText:
-	text "¡Eso da energia"
+	text "¡Eso da energía"
 	line "a mis pasos!"
 	done
 
@@ -201,7 +201,7 @@ BlackbeltSteppoBeatenText:
 	done
 
 BlackbeltSteppoAfterText:
-	text "¡Necesito mas"
+	text "¡Necesito más"
 	line "entrenamiento!"
 	done
 

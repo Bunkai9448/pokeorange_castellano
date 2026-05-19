@@ -356,7 +356,7 @@ UnknownText_0x7c6b8:
 	done
 
 UnknownText_0x7c6d8:
-	text "¡Ya esta!"
+	text "¡Ya está!"
 	done
 
 UnknownText_0x7c6ea:
@@ -365,14 +365,14 @@ UnknownText_0x7c6ea:
 	done
 
 UnknownText_0x7c709:
-	text "Necesitaras mas"
+	text "Necesitarás mas"
 	line "dinero para eso."
 	done
 
 UnknownText_0x7c72b:
 	text "Solo corto el"
 	line "pelo una vez al"
-	cont "dia. Ya vale"
+	cont "día. Ya vale"
 	cont "por hoy."
 	done
 
@@ -399,7 +399,7 @@ UnknownText_0x7c7f1:
 
 UnknownText_0x7c80e:
 	text "¡OK! ¡Lo deja-"
-	line "re genial!"
+	line "ré genial!"
 	done
 
 UnknownText_0x7c82a:
@@ -409,7 +409,7 @@ UnknownText_0x7c82a:
 
 UnknownText_0x7c842:
 	text "¿No? "
-	line "¡Que decepcion!"
+	line "¡Que decepción!"
 	done
 
 UnknownText_0x7c85b:

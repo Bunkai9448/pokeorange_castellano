@@ -36,9 +36,9 @@ VictoryRoadTraceyScript:
 	end
 	
 TraceyVictoryRoadText:
-	text "TRACEY: ¡Asi que"
+	text "TRACEY: ¡Así que"
 	line "lograste llegar"
-	cont "hasta aqui,"
+	cont "hasta aquí,"
 	cont "<PLAYER>!"
 	
 	para "A decir verdad,"
@@ -49,19 +49,19 @@ TraceyVictoryRoadText:
 	
 	para "Intente ganarle"
 	line "por lo que hizo"
-	cont " en ASCORBIA."
+	cont "en ASCORBIA."
 	
-	para "Pero el es mas"
+	para "Pero él es mas"
 	line "poderoso."
 	
-	para "Asi que he deci-"
+	para "Así que he deci-"
 	line "dido dejar de "
 	cont "ser entrenador y"
 	cont "convertirme en"
 	cont "observador."
 	
 	para "Mmm, <PLAYER>,"
-	line "¿Un ultimo "
+	line "¿Un último "
 	cont "combate antes"
 	cont "de mi retiro?"
 	done
@@ -91,7 +91,7 @@ TraceyVictoryRoadLeavingNowText:
 	cont "ver al PROF. OAK"
 	cont "en KANTO!"
 	
-	para "Me convertire en"
+	para "Me convertiré en"
 	line "su asistente y"
 	cont "sere un inves-"
 	cont "tigador."
