@@ -1106,7 +1106,7 @@ _OakText1::
 	line "ISLAS NARANJA."
 
 	para "Soy la profesora"
-	line "IVY. Dijijo el LAB"
+	line "IVY. Dirijo el LAB"
 	cont "de ISLA VALENCIA."
 
 	prompt
