@@ -362,7 +362,6 @@ INCBIN "gfx/splash/logo.1bpp"
 
 creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro, antes de pantalla titulo
 
-	call DisableLCD
 
 	; pasar la imagen al buffer de la engine
 
@@ -401,7 +400,6 @@ creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro
 	dec b
 	jr nz, .row
 
-	call EnableLCD
 
 	ld b, 4
 .wait
