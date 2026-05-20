@@ -45,6 +45,7 @@ Copyright_GFPresents: ; e4579
 
 .finish
 	call .StopGamefreakAnim
+	call creditos_naranjito ; pantalla creditos esp
 	and a
 	ret
 ; e45e8
@@ -358,3 +359,63 @@ GameFreakLogoPalettes: ; e47ac
 GameFreakLogo: ; e47cc
 INCBIN "gfx/splash/logo.1bpp"
 ; e48ac
+
+creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro, antes de pantalla titulo
+
+	call DisableLCD
+
+	; pasar la imagen al buffer de la engine
+
+	ld hl, CreditsScreenGFX_naranjito
+	ld de, wDecompressScratch
+	ld bc, CreditsScreenGFX_naranjito_end - CreditsScreenGFX_naranjito
+	call CopyBytes
+
+	ld hl, VTiles2
+	ld de, wDecompressScratch
+	lb bc, 1, 128
+	call Request2bpp
+
+	xor a
+	ld [hBGMapMode], a
+
+	; codigo para el renderizado
+
+	ld hl, $9800
+
+	ld b, 18
+
+	ld d,0
+
+.row
+	ld c, 20
+
+.col
+	ld a, d
+	inc d
+	ld [hli], a
+	inc a
+	dec c
+	jr nz, .col
+
+	dec b
+	jr nz, .row
+
+	call EnableLCD
+
+	ld b, 4
+.wait
+	ld c, 255
+	call DelayFrames
+	dec b
+	jr nz, .wait
+
+	xor a
+	ld [hBGMapMode] , a
+
+	ret
+
+
+CreditsScreenGFX_naranjito:
+INCBIN "gfx/font/font.2bpp"		; To-Do sustituir por pantalla real de creditos
+CreditsScreenGFX_naranjito_end:
