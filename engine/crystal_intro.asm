@@ -415,5 +415,5 @@ creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro
 
 
 CreditsScreenGFX_naranjito:
-INCBIN "gfx/font/font.2bpp"		; To-Do sustituir por pantalla real de creditos
+INCBIN "gfx/credits/naranjito.2bpp"		; To-Do sustituir por pantalla real de creditos
 CreditsScreenGFX_naranjito_end:
