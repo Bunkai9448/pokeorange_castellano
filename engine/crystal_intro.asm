@@ -372,7 +372,7 @@ creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro
 
 	ld hl, VTiles2
 	ld de, wDecompressScratch
-	lb bc, 1, 128
+	lb bc, 1, 360
 	call Request2bpp
 
 	xor a
