@@ -361,9 +361,19 @@ INCBIN "gfx/splash/logo.1bpp"
 ; e48ac
 
 creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro, antes de pantalla titulo
+; el codigo es pura fuerza bruta, el unico "esquema" que tiene detras es llenar los bloques de background
+; en ram y printearlos secuencialmente para que se muestren como una imagen estatica que ocupe toda la 
+; pantalla.
 
+	; Desactivar BG Mode Automatico
+	xor a
+	ld [hBGMapMode], a
 
 	; pasar la imagen al buffer de la engine
+WaitVBlank:
+	ld a, [rLY]
+	cp 144
+	jp c, WaitVBlank
 
 	ld hl, CreditsScreenGFX_naranjito
 	ld de, wDecompressScratch
@@ -372,17 +382,19 @@ creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro
 
 	ld hl, VTiles2
 	ld de, wDecompressScratch
-	lb bc, 1, 360
+	lb bc, 1, 136 tiles ; cuando lo arregle seran 20x7 140
 	call Request2bpp
 
-	xor a
-	ld [hBGMapMode], a
+WaitVBlank2:
+	ld a, [rLY]
+	cp 144
+	jp c, WaitVBlank2
 
 	; codigo para el renderizado
 
 	ld hl, $9800
 
-	ld b, 18
+	ld b, 7
 
 	ld d,0
 
@@ -397,11 +409,17 @@ creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro
 	dec c
 	jr nz, .col
 
+	ld c, 12
+.nyapa2 ; retrocede el puntero vram |32 - numCol| para no omitir filas
+	inc hl
+	dec c
+	jr nz, .nyapa2
+
 	dec b
 	jr nz, .row
 
 
-	ld b, 4
+	ld b, 2
 .wait
 	ld c, 255
 	call DelayFrames
