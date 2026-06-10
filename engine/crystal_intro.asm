@@ -362,61 +362,138 @@ INCBIN "gfx/splash/logo.1bpp"
 
 creditos_naranjito: ; rutina para incluir pantalla creditos al final de la intro, antes de pantalla titulo
 ; el codigo es pura fuerza bruta, el unico "esquema" que tiene detras es llenar los bloques de background
-; en ram y printearlos secuencialmente para que se muestren como una imagen estatica que ocupe toda la 
-; pantalla.
+; en ram y mostrarlos en pantalla. 
+; El TileMap se imprime en bloques del 1 al 5 para que el buffer coincida con el VBlank
 
 	; Desactivar BG Mode Automatico
 	xor a
 	ld [hBGMapMode], a
 
-	; pasar la imagen al buffer de la engine
 WaitVBlank:
 	ld a, [rLY]
 	cp 144
 	jp c, WaitVBlank
 
+	; get image data from ROM
 	ld hl, CreditsScreenGFX_naranjito
 	ld de, wDecompressScratch
-	ld bc, CreditsScreenGFX_naranjito_end - CreditsScreenGFX_naranjito
+	ld bc, 1835 ; Tam en Bytes a copiar del binario de la imagen 2bpp
 	call CopyBytes
 
-	ld hl, VTiles2
+	; Convert data to tiles in VRAM
+	ld hl, $9000
 	ld de, wDecompressScratch
-	lb bc, 1, 136 tiles ; cuando lo arregle seran 20x7 140
+	ld bc,380 ; Tam en tiles (2 Bytes Por Pixel) a copiar de la imagen obtenida
 	call Request2bpp
+	
 
 WaitVBlank2:
 	ld a, [rLY]
 	cp 144
 	jp c, WaitVBlank2
 
-	; codigo para el renderizado
-
+	; Copy tilemap for display
+	ld de, TileMap_creditos_0
 	ld hl, $9800
-
-	ld b, 7
-
-	ld d,0
-
-.row
-	ld c, 20
-
-.col
-	ld a, d
-	inc d
+	ld bc, 96 ; Tam en tiles a copiar del tilemap, limitado por el buffer de RAM usado
+CopyTilemap:
+	ld a, [de]
 	ld [hli], a
-	inc a
-	dec c
-	jr nz, .col
+	inc de
+	dec bc
+	ld a, b
+	or a, c
+	jp nz, CopyTilemap
 
-	ld c, 12
-.nyapa2 ; retrocede el puntero vram |32 - numCol| para no omitir filas
-	inc hl
-	dec c
-	jr nz, .nyapa2
+WaitVBlank3:
+	ld a, [rLY]
+	cp 144
+	jp c, WaitVBlank3
 
-	dec b
-	jr nz, .row
+	; Copy tilemap for display
+	ld de, TileMap_creditos_1
+	ld hl, $9860
+	ld bc, 96 
+CopyTilemap_1:
+	ld a, [de]
+	ld [hli], a
+	inc de
+	dec bc
+	ld a, b
+	or a, c
+	jp nz, CopyTilemap_1
+
+WaitVBlank4:
+	ld a, [rLY]
+	cp 144
+	jp c, WaitVBlank4
+
+	; Copy tilemap for display
+	ld de, TileMap_creditos_2
+	ld hl, $98C0
+	ld bc, 96 
+CopyTilemap_2:
+	ld a, [de]
+	ld [hli], a
+	inc de
+	dec bc
+	ld a, b
+	or a, c
+	jp nz, CopyTilemap_2
+
+WaitVBlank5:
+	ld a, [rLY]
+	cp 144
+	jp c, WaitVBlank5
+
+	; Copy tilemap for display
+	ld de, TileMap_creditos_3
+	ld hl, $9920
+	ld bc, 96 
+CopyTilemap_3:
+	ld a, [de]
+	ld [hli], a
+	inc de
+	dec bc
+	ld a, b
+	or a, c
+	jp nz, CopyTilemap_3
+
+WaitVBlank6:
+	ld a, [rLY]
+	cp 144
+	jp c, WaitVBlank6
+
+	; Copy tilemap for display
+	ld de, TileMap_creditos_4
+	ld hl, $9980
+	ld bc, 96 
+CopyTilemap_4:
+	ld a, [de]
+	ld [hli], a
+	inc de
+	dec bc
+	ld a, b
+	or a, c
+	jp nz, CopyTilemap_4
+
+WaitVBlank7:
+	ld a, [rLY]
+	cp 144
+	jp c, WaitVBlank7
+
+	; Copy tilemap for display
+	ld de, TileMap_creditos_5
+	ld hl, $99E0
+	ld bc, 96
+CopyTilemap_5:
+	ld a, [de]
+	ld [hli], a
+	inc de
+	dec bc
+	ld a, b
+	or a, c
+	jp nz, CopyTilemap_5
 
 
 	ld b, 2
@@ -426,12 +503,81 @@ WaitVBlank2:
 	dec b
 	jr nz, .wait
 
-	xor a
-	ld [hBGMapMode] , a
-
 	ret
 
-
 CreditsScreenGFX_naranjito:
-INCBIN "gfx/credits/naranjito.2bpp"		; To-Do sustituir por pantalla real de creditos
-CreditsScreenGFX_naranjito_end:
+INCBIN "gfx/credits/naranjito.2bpp" ; Imagen Font que se usa para luego mapear los tiles (caracteres) como un texto
+CreditsScreenGFX_font_naranjito:
+
+TileMap_creditos_0:
+; row 1
+	db 1, 20, 13, 10, 0, 8 ; Bunkai
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 2
+	db 2, 0, 11, 4, 13, 19, 0, 3, 0, 18, 19, 2, 6 ; CalentadasTCG
+	db 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 3
+	db 12, 0, 6, 13, 14, 19, 21 ; MagnoTV
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+
+TileMap_creditos_1:
+; row 4
+	db 0, 11, 23, 8, 17, 0, 31; Alxira5 
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 5
+	db 111, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 6
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+
+TileMap_creditos_2:
+; row 7
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 8
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 9
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+
+TileMap_creditos_3:
+; row 10
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 11
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 12
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+
+TileMap_creditos_4:
+; row 13
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 14
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 15
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+
+TileMap_creditos_5:
+; row 16
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 17
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+; row 18
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
+
+TileMap_creditos_end:
+
