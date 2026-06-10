@@ -511,72 +511,77 @@ CreditsScreenGFX_font_naranjito:
 
 TileMap_creditos_0:
 ; row 1
-	db 1, 20, 13, 10, 0, 8 ; Bunkai
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31; fill row (20 col) with blank tiles
+	db 61, 93, 61, 21, 36, 49, 98, 61, 61, 36, 50, 47, 32, 70, 46, 43, 32, 61, 84, 61 ; > ver. espa <
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 2
-	db 2, 0, 11, 4, 13, 19, 0, 3, 0, 18, 19, 2, 6 ; CalentadasTCG
-	db 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 3
-	db 12, 0, 6, 13, 14, 19, 21 ; MagnoTV
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 
 TileMap_creditos_1:
 ; row 4
-	db 0, 11, 23, 8, 17, 0, 31; Alxira5 
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 83, 2, 66, 35, 40, 38, 46, 83, 61, 61, 61, 61, 61, 61 ; -Codigo-
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 5
-	db 111, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 1, 52, 45, 42, 32, 40, 61, 61, 61, 61, 61, 61, 61 ; Bunkai
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 6
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 
 TileMap_creditos_2:
 ; row 7
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 8
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 83, 19, 49, 32, 35, 52, 34, 34, 40, 66, 45, 83, 61, 61, 61, 61 ; -Trad-
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 9
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 0, 43, 55, 40, 49, 32, 107, 61, 61, 61, 61, 61, 61 ; Alxira5
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 
 TileMap_creditos_3:
 ; row 10
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 2, 32, 43, 36, 45, 51, 32, 35, 32, 50, 19, 2, 6, 61, 61, 61; CalentadasTCG
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 11
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 12, 32, 38, 45, 46, 19, 21, 61, 61, 61, 61, 61, 61 ; MagnoTV
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 12
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 
 TileMap_creditos_4:
 ; row 13
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 14
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 83, 19, 36, 50, 51, 36, 46, 83, 61, 61, 61, 61, 61, 61 ; -Testeo-
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 15
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 3, 83, 13, 36, 55, 51, 17, 6, 61, 61, 61, 61, 61, 61 ; D-NextRG
+	; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 
 TileMap_creditos_5:
 ; row 16
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 17
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 ; row 18
-	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill row (20 col) with blank tiles
+	db 61, 83, 1, 36, 51, 32, 61, 47, 49, 36, 34, 32, 43, 36, 45, 51, 32, 35, 32, 61 ; fill row (20 col) with blank tiles
 	db 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31 ; fill non displayed ram (12 col) for the row
 
 TileMap_creditos_end:
