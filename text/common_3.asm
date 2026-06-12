@@ -952,22 +952,22 @@ _OakPCText4::
 	done
 
 UnknownText_0x1c1a6c::
-    text "¿Salir del"
+	text "¿Salir del"
 	line "Concurso?"
 	done
 
 UnknownText_0x1c1a90::
-	text "¿Tirar cuantas"
-	line "@"
-	text_from_ram StringBuffer2
-	text "(S)?"
+	text "¿Cuántas unidades"
+	line "quieres tirar?"
 	done
 
 UnknownText_0x1c1aad::
-	text "¿Cuántas unidades"
-	line "de @"
+	text "¿Quieres tirar @"
+	deciram wItemQuantityChangeBuffer, 1,2
+	text ""
+	line "@"
 	text_from_ram StringBuffer2
-	cont "quieres tirar?"
+	text "?"
 	done
 
 UnknownText_0x1c1aca::
@@ -1106,7 +1106,7 @@ _OakText1::
 	line "ISLAS NARANJA."
 
 	para "Soy la PROF. IVY."
-	line "Dirijo el LAB."
+	line "Dirijo el LAB"
 	cont "de ISLA VALENCIA."
 
 	prompt
