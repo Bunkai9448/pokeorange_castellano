@@ -1,10 +1,10 @@
 MonMenuOptionStrings: ; 24caf
-	db "STATS@"
-	db "SWITCH@"
-	db "ITEM@"
+	db "ESTADO@"
+	db "CAMBIAR@"
+	db "OBJETO@"
 	db "CANCEL@"
-	db "MOVE@"
-	db "MAIL@"
+	db "MOVER@"
+	db "CARTA@"
 ; 24cd9
 
 MonMenuOptions: ; 24cd9
@@ -327,7 +327,7 @@ MenuDataHeader_0x24ed4: ; 24ed4
 MenuData2_0x24edc: ; 24edc
 	db $c0 ; flags
 	db 3 ; items
-	db "SWITCH@"
-	db "STATS@"
-	db "CANCEL@"
+	db "CAMBIAR@"
+	db "ESTADO@"
+	db "SALIR@"
 ; 24ef2
