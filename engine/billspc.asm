@@ -2214,20 +2214,20 @@ PCMailGFX:  INCBIN "gfx/pc_mail.2bpp"
 ; e34dd
 
 PCString_ChooseaPKMN: db "Elige un <PK><MN>.@"
-PCString_WhatsUp: db "What's up?@"
+PCString_WhatsUp: db "¿Qué hacer?@"
 PCString_ReleasePKMN: db "¿Soltar <PK><MN>?@"
 PCString_MoveToWhere: db "¿Mover adónde?@"
 PCString_ItsYourLastPKMN: db "Es tu último <PK><MN>.@"
 PCString_TheresNoRoom: db "¡No hay espacio!@"
-PCString_NoMoreUsablePKMN: db "No more usable <PK><MN>!@"
-PCString_RemoveMail: db "Remove MAIL.@"
+PCString_NoMoreUsablePKMN: db "No hay más <PK><MN>.@"
+PCString_RemoveMail: db "Debe ir sin CARTA.@"
 PCString_ReleasedPKMN: db "Liberado <PK><MN>.@"
-PCString_Bye: db "Bye,@"
+PCString_Bye: db "Adiós.@"
 PCString_Stored: db "Dejado @"
 PCString_Got: db "Sacado @"
 PCString_BoxFull: db "CAJA llena.@"
 PCString_PartyFull: db "¡Equipo completo!@"
-PCString_NoReleasingEGGS: db "No releasing EGGS!@"
+PCString_NoReleasingEGGS: db "¡No es liberable!@"
 ; e35aa
 
 
