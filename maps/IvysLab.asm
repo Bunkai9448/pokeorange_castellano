@@ -382,16 +382,16 @@ IvyAdventureText:
 
 	para "La GS BALL."
 	line "Parece que no"
-	cont "es posible"
-	cont "abrirla.No sabemos"
+	cont "puede abrirse."
+	cont "No sabemos"
 
-	para "su proposito o"
-	line "quien la ha hecho."
-	cont "Dasela al PROF.OAK"
-	cont "en PUEBLO PALETA."
+	para "su propósito o"
+	line "quién la fabricó."
+	cont "Se la mandé al"
+	cont "PROF. OAK en"
 
-	para "Parece que él no"
-	line "lo sabe tampoco."
+	para "PUEBLO PALETA,"
+	line "pero nada..."
 
 	para "Hay un hombre que"
 	line "podría arrojar luz"
@@ -401,10 +401,10 @@ IvyAdventureText:
 	line "Es sobrino del"
 	cont "PROF.OAK."
 
-	para "Esta de visita"
+	para "Está de visita"
 	line "en ISLA HAMLIN."
 
-	para "Ya que estas en"
+	para "Ya que estás en"
 	line "el archipiélago"
 	cont "naranja, te pido"
 
@@ -421,9 +421,9 @@ FinalIvyText:
 	cont "region de ALOLA."
 	
 	para "SAM OAK"
-	line "esta aqui para"
-	cont "estudiar las "
-	cont "formas"
+	line "está aquí para"
+	cont "estudiar las"
+	cont "formas de"
 	
 	para "#MON unicas"
 	line "en este"
@@ -448,7 +448,7 @@ FinalIvyText:
 
 IvyText_Intro:
 	text "IVY: ¡<PLAYER>!"
-	line "¡Estamos aqui!"
+	line "¡Por fin llegas!"
 
 	para "Hoy es el día"
 	line "que empieza tu"
@@ -471,22 +471,22 @@ IvyText_Intro:
 	done
 
 IvyText_ChooseAPokemon:
-	text "Quiero que "
+	text "Quiero que"
 	line "elijas uno de los"
 
 	para "#MON de"
-	line "estas  POKEBALLS."
+	line "estas POKEBALLS."
 
-	para "¡Sera tu primer"
+	para "¡Será tu primer"
 	line "#MON y compi,"
 	cont " <PLAYER>!"
 
-	para "Vamos,¡Elige!"
+	para "Vamos, ¡Elige!"
 	done
 
 LabWhereGoingText:
 	text "IVY: ¡Espera!"
-	line "¿Que haces?"
+	line "¿Qué haces?"
 	
 	para "<...>"
 	
@@ -496,7 +496,7 @@ LabWhereGoingText:
 	
 LabGoForAWalkText:
 	text "IVY: Hmm<...>"
-	line "¿Por que no "
+	line "¿Por qué no "
 	cont "damos un paseo?"
 	done
 
@@ -513,7 +513,7 @@ TakeSquirtleText:
 	done
 
 TakeBulbasaurText:
-	text "IVY: ¿Asi que"
+	text "IVY: ¿Así que"
 	line "BULBASAUR, el"
 	cont "#MON de planta?"
 	done
@@ -523,11 +523,11 @@ DidntChooseStarterText:
 	line "detenidamente."
 
 	para "Tu compañero"
-	line "sera clave."
+	line "será clave."
 	done
 
 ChoseStarterText:
-	text "IVY: Pienso"
+	text "IVY: Creo"
 	line "que es un gran"
 	cont "#MON."
 	done
@@ -540,12 +540,12 @@ ReceivedStarterText:
 	done
 
 IvyDirectionsText1:
-	text "Ve al  oeste de"
+	text "Ve al oeste de"
 	line "VALENCIA para"
 	cont "encontrar el"
 	cont "puerto."
 
-	para "Ahi puedes coger"
+	para "Ahí puedes coger"
 	line "un barco hacia "
 	cont "ISLA TANGELO."
 	done
@@ -555,7 +555,7 @@ IvyDirectionsText2:
 	line "herido, deberías"
 
 	para "curarlo con esta"
-	line "maquina."
+	line "máquina."
 
 	para "Sientete libre"
 	line "de usarla"
@@ -563,10 +563,9 @@ IvyDirectionsText2:
 	done
 
 IvyDirectionsText3:
-	text "¡Una cosa mas!"
-	line "<PLAYER>, aqui"
-	cont "tienes tu"
-	cont "#DEX."
+	text "¡Una cosa más!"
+	line "<PLAYER>, aquí"
+	cont "está tu #DEX."
 	done
 
 PlayerGetDexText:
@@ -586,7 +585,7 @@ IvyPokeBallText:
 	done
 
 IvysLabHealingMachineText1:
-	text "¿Que te parece"
+	text "¿Qué te parece"
 	line "esto?"
 	done
 
@@ -598,15 +597,15 @@ IvysLabHealingMachineText2:
 AideText_GiveYouPotions:
 	text "HOPE: ¡<PLAYER>!"
 
-	para "Úsala en tu"
+	para "Usala en tu"
 	line "aventura."
 	done
 
 AideText_ExplainBalls:
 	text "HOPE: Para "
 	line "completar la" 
-	cont "#DEX, has"
-	cont " de atrapar"
+	cont "#DEX, has de"
+	cont "atrapar muchos"
 	cont "#MON."
 
 	para "Lanza # BALLS"
@@ -615,11 +614,11 @@ AideText_ExplainBalls:
 	done
 
 IvysLabWindowText:
-	text "Ventana abierta."
+	text "Una ventana."
 
-	para "Una brisa "
-	line "marina te."
-	cont "recorre."
+	para "Por ella entra"
+	line "una ligera"
+	cont "brisa marina."
 	done
 
 IvysLabTravelTip1Text:
