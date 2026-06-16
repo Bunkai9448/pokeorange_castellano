@@ -160,7 +160,7 @@ UnknownText_0x1c474b::
 	text "El @"
 	text_from_ram StringBuffer3
 	text ""
-	line "esta lleno<...>"
+	line "está lleno<...>"
 	prompt
 
 UnknownText_0x1c4b92::
@@ -171,28 +171,28 @@ UnknownText_0x1c4b92::
 
 UnknownText_0x1c4baf::
 	text ""
-	para "evoluciono en"
+	para "evolucionó en"
 	line "@"
 	text_from_ram StringBuffer1
 	text "!"
 	done
 
 UnknownText_0x1c4bc5::
-	text "Huh? @"
+	text "¿Eh? @"
 	text_from_ram StringBuffer1
 	text ""
-	line "¡no evoluciono!"
+	line "¡no evolucionó!"
 	prompt
 
 UnknownText_0x1c4be3::
-	text "Que? @"
+	text "¿Qué? @"
 	text_from_ram StringBuffer2
 	text ""
-	line "¡esta evolucionando!"
+	line "¡está evolucionando!"
 	done
 
 UnknownText_0x1c4bfd::
-	text "¿Cuantas unidades?"
+	text "¿Cuántas unidades?"
 	done
 
 UnknownText_0x1c4c08::
@@ -200,7 +200,7 @@ UnknownText_0x1c4c08::
 	text " @"
 	text_from_ram StringBuffer2
 	text "(S)"
-	line "seran ¥@"
+	line "serán ¥@"
 	deciram hMoneyTemp, 3, 6
 	text "."
 	done
@@ -221,7 +221,7 @@ UnknownText_0x1c4c28::
 	done
 
 UnknownText_0x1c4ca3::
-	text "¿Cuantas unidades?"
+	text "¿Cuántas unidades?"
 	done
 
 UnknownText_0x1c4cae::
@@ -229,7 +229,7 @@ UnknownText_0x1c4cae::
 	text " @"
 	text_from_ram StringBuffer2
 	text "(S)"
-	line "seran ¥@"
+	line "serán ¥@"
 	deciram hMoneyTemp, 3, 6
 	text "."
 	done
@@ -279,7 +279,7 @@ UnknownText_0x1c4dcd::
 
 UnknownText_0x1c4dd6::
 	text "¡Oh! Tu MOCHILA"
-	line "está a tope."
+	line "está llena."
 	done
 
 UnknownText_0x1c4df7::
@@ -336,7 +336,7 @@ UnknownText_0x1c4ef6::
 	done
 
 UnknownText_0x1c4f33::
-	text "¿Cuantas unidades?"
+	text "¿Cuántas unidades?"
 	done
 
 UnknownText_0x1c4f3e::
@@ -374,7 +374,7 @@ UnknownText_0x1c4fd7::
 	prompt
 
 UnknownText_0x1c4ff9::
-	text "¡Vuelva cuando quiera!"
+	text "¡Vuelva pronto!"
 	done
 
 UnknownText_0x1c500d::
