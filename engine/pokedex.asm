@@ -968,7 +968,7 @@ Pokedex_DrawSearchScreenBG: ; 408f0 (10:48f0)
 	jp PlaceString
 
 .Title: ; 4092a
-	db $4a, " SEARCH ", $4b, $ff
+	db $4a, " BUSCAR ", $4b, $ff
 
 .TypeLeftRightArrows: ; 40935
 	db "◀        ▶@"
@@ -979,8 +979,8 @@ Pokedex_DrawSearchScreenBG: ; 408f0 (10:48f0)
 	db   "@"
 
 .Menu: ; 4094c
-	db   "SEARCH!"
-	next "CANCEL"
+	db   "BUSCAR"
+	next "SALIR"
 	db   "@"
 
 Pokedex_DrawSearchResultsScreenBG: ; 40962 (10:4962)
