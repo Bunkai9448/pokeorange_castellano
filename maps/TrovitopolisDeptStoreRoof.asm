@@ -181,7 +181,7 @@ DeptOldLadyRoofScript:
 	db "TOGEPI@"
 	db "SMOOCHUM@"
 	db "PICHU@"
-	db "MORE@"
+	db "SIGUE@"
 
 .MenuData2:
 	db $80 ; flags
@@ -189,7 +189,7 @@ DeptOldLadyRoofScript:
 	db "MAGBY@"
 	db "IGGLYBUFF@"
 	db "HAPPINY@"
-	db "MORE@"
+	db "SIGUE@"
 	
 .MenuData3:
 	db $80 ; flags
@@ -197,7 +197,7 @@ DeptOldLadyRoofScript:
 	db "ELEKID@"
 	db "CLEFFA@"
 	db "AZURILL@"
-	db "CANCEL@"
+	db "SALIR@"
 
 .NotEnoughMoney:
 	writetext NotEnoughMoneyDeptRoofText
@@ -218,10 +218,10 @@ DeptOldLadyRoofScript:
 	end
 
 .eggname
-	db "EGG@"
+	db "HUEVO@"
 
 WhichEggText:
-	text "¿Que huevo?"
+	text "¿Qué huevo?"
 	done
 
 DeptOldLadyText1:
@@ -229,9 +229,9 @@ DeptOldLadyText1:
 	line "#MON muy raros."
 
 	para "¡Tengo de sobra!"
-	line "¡Uno puede ser "
+	line "¡Uno puede ser"
 	cont "tuyo por ¥2000!"
-	cont "¿Que me dices?"
+	cont "¿Qué me dices?"
 	done
 
 NotEnoughMoneyDeptRoofText:
