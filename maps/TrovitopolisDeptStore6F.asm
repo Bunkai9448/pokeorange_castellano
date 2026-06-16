@@ -76,10 +76,10 @@ TrovitopolisVendingMachine:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "FRESH WATER  ¥200@"
-	db "SODA POP     ¥300@"
-	db "LEMONADE     ¥350@"
-	db "CANCEL@"
+	db "AGUA FRESCA  ¥200@"
+	db "LATA DE SODA ¥300@"
+	db "LIMONADA     ¥350@"
+	db "SALIR@"
 
 TrovitopolisDeptStore6FDirectory:
 	jumptext TrovitopolisDeptStore6FDirectoryText
@@ -88,8 +88,8 @@ TrovitopolisDeptStore6FElevatorButton:
 	jumpstd elevatorbutton
 
 TrovitopolisVendingText:
-	text "¡Una máquina de"
-	line "vending!"
+	text "¡Una máquina"
+	line "expendedora!"
 	done
 
 TrovitopolisClangText:
@@ -97,7 +97,7 @@ TrovitopolisClangText:
 	line "@"
 	text_from_ram StringBuffer3
 	text $55
-	db "cayo."
+	db "cayó."
 	done
 
 TrovitopolisVendingNoMoneyText:
@@ -113,7 +113,7 @@ TrovitopolisVendingNoSpaceText:
 
 TrovitopolisDeptStore6FDirectoryText:
 	text "¡Descansa un poco"
-	line "de tanto Shopping!"
+	line "de tantas compras!"
 
 	para "6F SALA DESCANSO"
 	done
@@ -122,7 +122,7 @@ DeptStore6FCooltrainerScript:
 	jumptextfaceplayer DeptStore6FCooltrainerText
 	
 DeptStore6FCooltrainerText:
-	text "Compre un HUEVO"
+	text "Compré un HUEVO"
 	line "a la chica de"
 	cont "la azotea."
 	
