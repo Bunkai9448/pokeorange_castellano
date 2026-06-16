@@ -113,7 +113,7 @@ PlacePartyNicknames: ; 5009b
 ; 500c8
 
 .CANCEL: ; 500c8
-	db "CANCEL@"
+	db "SALIR@"
 ; 500cf
 
 
@@ -481,10 +481,10 @@ PlacePartyMonEvoStoneCompatibility: ; 5022f
 ; 502a3
 
 .string_able ; 502a3
-	db "ABLE@"
+	db "PUEDE@"
 ; 502a8
 .string_not_able ; 502a8
-	db "NOT ABLE@"
+	db "NO PUEDE@"
 ; 502b1
 
 
@@ -766,15 +766,15 @@ PartyMenuStrings: ; 0x504d2
 ChooseAMonString: ; 0x504e4
 	db "Elige un #MON.@"
 UseOnWhichPKMNString: ; 0x504f3
-	db "Use en <PK><MN>?@"
+	db "Usar en <PK><MN>?@"
 WhichPKMNString: ; 0x50504
-	db "Which <PK><MN>?@"
+	db "que <PK><MN>?@"
 TeachWhichPKMNString: ; 0x5050e
-	db "Teach which <PK><MN>?@"
+	db "Enseñar a que <PK><MN>?@"
 MoveToWhereString: ; 0x5051e
-	db "Move to where?@"
+	db "¿Mover dónde?@"
 ToWhichPKMNString: ; 0x50549
-	db "To which <PK><MN>?@"
+	db "¿A que <PK><MN>?@"
 
 YouHaveNoPKMNString: ; 0x50556
 	db "No tienes <PK><MN>!@"
