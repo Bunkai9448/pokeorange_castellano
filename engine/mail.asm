@@ -579,7 +579,7 @@ MailboxPC: ; 0x44806
 .SubMenuData2:
 	db %10000000 ; flags
 	db 4 ; items
-	db "READ MAIL@"
-	db "PUT IN PACK@"
-	db "ATTACH MAIL@"
-	db "CANCEL@"
+	db "LEER CARTA@"
+	db "SACAR CARTA@"
+	db "DAR CARTA@"
+	db "SALIR@"
