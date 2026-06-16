@@ -201,10 +201,10 @@ GameCornerItemVendorMenuData:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "LINK CABLE   1000@"
-	db "UP-GRADE     1000@"
-	db "DUBIOUS DISC 1000@"
-	db "CANCEL@"
+	db "CABLE LINK   1000@"
+	db "MEJORA       1000@"
+	db "DISCO EXTRA. 1000@"
+	db "CANCELAR@"
 
 GameCornerTMVendorMenuData:
 	db $40 ; flags
@@ -216,10 +216,10 @@ GameCornerTMVendorMenuData:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "TM25    5500@"
-	db "TM14    5500@"
-	db "TM38    5500@"
-	db "CANCEL@"
+	db "MT25    5500@"
+	db "MT14    5500@"
+	db "MT38    5500@"
+	db "CANCELAR@"
 
 
 GameCornerPrizeMonVendorScript:
@@ -372,7 +372,7 @@ GameCornerPrizeVendorIntroText:
 	done
 
 GameCornerPrizeVendorWhichPrizeText:
-	text "¿Que premio te"
+	text "¿Qué premio te"
 	line "gustaría?"
 	done
 
@@ -383,12 +383,12 @@ GameCornerPrizeVendorConfirmPrizeText:
 	done
 
 GameCornerPrizeVendorHereYouGoText:
-	text "De acuerdo"
+	text "De acuerdo."
 	done
 
 GameCornerPrizeVendorNeedMoreCoinsText:
-	text "¡Lo siento! Pero"
-	line "necesitas mas"
+	text "Lo siento, pero"
+	line "necesitas más"
 	cont "fichas."
 	done
 
@@ -409,12 +409,12 @@ GameCornerPrizeVendorNoCoinCaseText:
 	done
 
 GameCornerPokefanFText:
-	text "Los Slots es"
-	line "donde esta la"
-	cont "pasta.Llevo"
-	cont "enganchado desde"
-	cont "que estrenaron"
-	cont "estas máquinas."
+	text "La pasta se"
+	line "encuentra en las"
+	cont "tragaperras."
+	cont "Llevo enganchado"
+	cont "desde que las"
+	cont "estrenaron."
 	done
 
 GameCornerCooltrainerFText:
@@ -426,7 +426,7 @@ GameCornerPokefanM3Text:
 	text "Hmm<...>"
 	
 	para "Perdí algunas"
-	line "fichas antes.."
+	line "fichas antes..."
 	done
 	
 GameCornerAlreadyHaveTMText:
@@ -519,12 +519,12 @@ FloorCoinsNoCoinCaseText:
 	
 GameCorner10CoinsText:
 	text "¡Encontraste 10"
-	line "fichas!¡Bien!"
+	line "fichas! ¡Bien!"
 	done
 	
 GameCorner20CoinsText:
 	text "¡Encontraste 20"
-	line "fichas! ¡Wow!"
+	line "fichas! ¡Uau!"
 	done
 	
 GameCorner50CoinsText:
@@ -534,7 +534,7 @@ GameCorner50CoinsText:
 	
 GameCorner100CoinsText:
 	text "¡Encontraste 100"
-	line "fichas!¡Suertudo!"
+	line "fichas! ¡Super!"
 	done
 	
 PickedFireBlastText:
