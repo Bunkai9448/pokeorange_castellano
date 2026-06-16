@@ -47,7 +47,7 @@ _CanDiveText::
 
 UnknownText_0x1c068e::
 	text_from_ram StringBuffer2
-	text " ¡uso"
+	text " ¡Usó"
 	line "CASCADA!"
 	done
 
@@ -68,7 +68,7 @@ UnknownText_0x1c06de::
 	done
 
 UnknownText_0x1c06ed::
-	text "<PLAYER> uso una"
+	text "<PLAYER> usó una"
 	line "CUERDA HUIDA."
 	done
 
@@ -527,7 +527,7 @@ UnknownText_0x1c1006::
 	prompt
 
 UnknownText_0x1c1024::
-	text "¿Que?"
+	text "¿Qué harás?"
 	done
 
 UnknownText_0x1c102b::
