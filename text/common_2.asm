@@ -1,17 +1,17 @@
 UnknownText_0x1c0043::
 	text "¡Hola a todos!"
 	line "Soy el INSPECTOR"
-	cont "MOTES."
+	cont "de MOTES."
 
 	para "Evalúo los nombres"
 	line "de los #MON."
 
-	para "Quieres evaluar"
+	para "¿Quieres evaluar"
 	line "algún nombre?"
 	done
 
 UnknownText_0x1c00a0::
-	text "¿Que mote"
+	text "¿Qué mote"
 	line "#MON debería"
 	cont "evaluar?"
 	prompt
@@ -106,17 +106,17 @@ Text_StringBuffer2ExpPoints::
 	prompt
 
 Text_GoPkmn::
-	text "¡Ve! @@"
+	text "¡Ve, @@"
 
 Text_DoItPkmn::
 	text "¡Hazlo! @@"
 
 Text_GoForItPkmn::
-	text "¡A por él!,"
+	text "¡A por él,"
 	line "@@"
 
 Text_YourFoesWeakGetmPkmn::
-	text "¡Esta débil!"
+	text "¡Está débil!"
 	line "¡Ve, @@"
 
 Text_BattleMonNick01::
@@ -188,7 +188,7 @@ UnknownText_0x1c0705::
 UnknownText_0x1c05dd::
 	text_from_ram StringBuffer2
 	text " usó"
-	line "¡CORTE!"
+	line "CORTE."
 	prompt
 
 UnknownText_0x1c05ec::
