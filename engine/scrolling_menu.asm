@@ -399,7 +399,7 @@ ScrollingMenu_UpdateDisplay: ; 247f0
 	jp PlaceString
 
 .string_2485f
-	db "CANCEL@"
+	db "SALIR@"
 
 .call_function
 	ld d, h
