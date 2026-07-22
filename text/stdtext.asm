@@ -154,7 +154,7 @@ TVText:
 	done
 
 WrongSideText:
-	text "Oops, no lo veo."
+	text "Ups, no lo veo."
 	done
 
 RadioText:
@@ -275,7 +275,7 @@ CoinVendor_IntroText:
 	line "de juego?"
 
 	para "50 fichas por"
-	line "1000¥. ¿Quieres"
+	line "¥1000. ¿Quieres"
 	cont "comprar?"
 	done
 
@@ -345,13 +345,13 @@ HappinessText1:
 
 FullBoxText:
 	text "¡La CAJA DEL"
-	line "PC esta llena!"
+	line "PC está llena!"
 
 	para "¡Debes cambiar"
 	line "de caja si"
 
 	para "quieres atrapar"
-	line "mas #MON!"
+	line "más #MON!"
 	done
 
 NewEggCallText:
