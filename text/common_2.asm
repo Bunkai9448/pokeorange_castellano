@@ -46,7 +46,7 @@ UnknownText_0x1c0171::
 	done
 
 UnknownText_0x1c019e::
-	text "Muy bien. Vuelve"
+	text "Muy bien, vuelve"
 	line "cuando quieras."
 	done
 
@@ -54,8 +54,8 @@ UnknownText_0x1c01be::
 	text "Hm<...> @"
 	text_from_ram StringBuffer1
 	text "?"
-	line "¡Qué buen nombre!"
-	cont "Es perfecto."
+	line "¡Qué buen nombre,"
+	cont "Es perfecto!"
 
 	para "Trata a"
 	line "@"
