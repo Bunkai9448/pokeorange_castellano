@@ -4,7 +4,7 @@ _FruitBearingTreeText::
 	done
 
 _HeyItsFruitText::
-	text "¡Oye! ¡Mira qué"
+	text "¡Oye, mira qué"
 	line "@"
 	text_from_ram StringBuffer3
 	text "!"
@@ -93,14 +93,14 @@ UnknownText_0x1bc16e::
 
 MakePinkText::
 	text_from_ram StringBuffer1
-	text " ¡se"
-	line "volvió rosa!"
+	text " se"
+	line "volvió rosa."
 	done
 
 MakeNotPinkText::
 	text_from_ram StringBuffer1
-	text " ¡Ya no"
-	line "está rosa!"
+	text " ya no"
+	line "está rosa."
 	done
 
 UnknownText_0x1bc29c::
@@ -211,24 +211,24 @@ Text_EnemyUsedOn::
 
 	para "@"
 	text_from_ram wMonOrItemNameBuffer
-	text "con"
+	text "en"
 	cont "@"
 	text_from_ram EnemyMonNick
 	text "."
 	prompt
 
 UnknownText_0x1bd2bc::
-	text "¿Que planta?"
+	text "¿Qué planta?"
 	done
 
 UnknownText_0x1bd2ca::
-	text "SPEAKER: BEEEP!"
+	text "Altavoz: ¡BEEEP!"
 
 	para "¡Tiempo!"
 	done
 
 UnknownText_0x1bd2e7::
-	text "SPEAKER: ¿El"
+	text "Altavoz: ¡El"
 	line "concurso acabó!"
 	done
 
@@ -260,7 +260,7 @@ UnknownText_0x1bd331::
 
 UnknownText_0x1bd39e::
 	text "Guardando ¡No<...>"
-	line "Apagues !"
+	line "Apagues!"
 	done
 
 UnknownText_0x1bd3d7::
@@ -274,7 +274,7 @@ UnknownText_0x1bd3eb::
 
 UnknownText_0x1bd407::
 	text "¡Bien, conecta el"
-	line "cable Game Link!"
+	line "cable Link!"
 	prompt
 
 UnknownText_0x1bd429::
@@ -302,7 +302,7 @@ UnknownText_0x1bd449::
 	text "?"
 
 	para "¿Quieres cambiarlo"
-	line "por this @"
+	line "por mi @"
 	text_from_ram StringBuffer2
 	text "?"
 	done
@@ -317,7 +317,7 @@ UnknownText_0x1bd4aa::
 	line "@"
 	text_from_ram StringBuffer1
 	text "."
-	cont "¡Qué chasco…!"
+	cont "¡Qué chasco!"
 	done
 
 UnknownText_0x1bd4d2::
@@ -352,8 +352,8 @@ UnknownText_0x1bd565::
 	text "¿Tú tampoco"
 	line "tienes uno?"
 
-	para "¡Pues vaya! ¡Qué"
-	line "decepción…!"
+	para "¡Pues vaya!"
+	line "¡Qué decepción!"
 	done
 
 UnknownText_0x1bd5a1::
@@ -432,15 +432,15 @@ UnknownText_0x1bd6f5::
 	done
 
 UnknownText_0x1bd731::
-	text "¿Eh? ¿Que paso?"
+	text "¿Eh? ¿Que pasó?"
 	done
 
 UnknownText_0x1bd745::
 	text "Intercambiar es"
-	line "tan raro…"
+	line "tan raro..."
 
-	para "Todavía tengo mu-"
-	line "cho que aprender."
+	para "Todavía tengo que"
+	line "aprender mucho."
 	done
 
 UnknownText_0x1bdaa9::
@@ -528,7 +528,7 @@ UnknownText_0x1bdcff::
 	prompt
 
 UnknownText_0x1bdd30::
-	text "Vale. Cuidaré de"
+	text "Vale, cuidaré de"
 	line "tu @"
 	text_from_ram StringBuffer1
 	text "."
@@ -551,8 +551,8 @@ UnknownText_0x1bdd96::
 	text_from_ram StringBuffer1
 	text "ha crecido mucho."
 
-	para "En cuanto a su ni-"
-	line "vel, ha subido @"
+	para "Su nivel ha"
+	line "ha subido @"
 	deciram StringBuffer2 + 1, 1, 3
 	text "."
 
@@ -581,11 +581,11 @@ UnknownText_0x1bde32::
 	text_from_ram StringBuffer1
 
 	para "debería pasar más"
-	line "tiempo aquí. Pero"
+	line "tiempo aquí."
 
-	para "recoger ahora a"
+	para "Recoger ahora a"
 	line "tu #MON, te"
-	cont "costará 100¥."
+	cont "costará ¥100."
 	done
 
 UnknownText_0x1bdea2::
@@ -594,8 +594,8 @@ UnknownText_0x1bdea2::
 	prompt
 
 UnknownText_0x1bdebc::
-	text "No tienes bastante"
-	line "dinero."
+	text "No tienes lo"
+	line "suficiente."
 	prompt
 
 UnknownText_0x1bded9::
@@ -640,8 +640,8 @@ UnknownText_0x1bdfba::
 	done
 
 UnknownText_0x1bdfd1::
-	text "Cuidaré de él."
-	line "¡Gracias!"
+	text "¡Cuidaré de él,"
+	line "gracias!"
 	done
 
 UnknownText_0x1bdff2::
