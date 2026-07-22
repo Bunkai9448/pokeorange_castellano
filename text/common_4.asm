@@ -62,11 +62,11 @@ UnknownText_0x1c41b1::
 	prompt
 
 UnknownText_0x1c41e6::
-	text "¡Tu amigo"
+	text ""
 	line "@"
 	text_from_ram StringBuffer1
 	text " parece ser"
-	cont "anormal!"
+	cont "diferente."
 	prompt
 
 UnknownText_0x1c4212::
@@ -178,17 +178,17 @@ UnknownText_0x1c4baf::
 	done
 
 UnknownText_0x1c4bc5::
-	text "¿Eh? @"
+	text "¿Eh? ¡@"
 	text_from_ram StringBuffer1
 	text ""
-	line "¡no evolucionó!"
+	line "no evolucionó!"
 	prompt
 
 UnknownText_0x1c4be3::
-	text "¿Qué? @"
+	text "¿Qué? ¡@"
 	text_from_ram StringBuffer2
 	text ""
-	line "¡está evolucionando!"
+	line "está evolucionando!"
 	done
 
 UnknownText_0x1c4bfd::
@@ -235,13 +235,13 @@ UnknownText_0x1c4cae::
 	done
 
 UnknownText_0x1c4cce::
-	text "Gracias, joven."
+	text "Gracias joven."
 	line "¡Je, je, je…!"
 	done
 
 UnknownText_0x1c4cea::
 	text "¡Oh! Tu MOCHILA"
-	line "está llena, joven."
+	line "está llena joven."
 	done
 
 UnknownText_0x1c4d08::
