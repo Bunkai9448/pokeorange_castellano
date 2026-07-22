@@ -1,5 +1,5 @@
 BattleText_PlayerPickedUpPayDayMoney: ; 0x80730
-	text "<PLAYER> recogió"
+	text "¡<PLAYER> recogió"
 	line "¥@"
 	deciram wPayDayMoney, 3, 6
 	text "!"
@@ -19,19 +19,19 @@ HookedPokemonAttackedText: ; 0x8075c
 	line "@"
 	text_from_ram EnemyMonNick
 	text ""
-	cont "encaramado ataco!"
+	cont "encaramado atacó!"
 	prompt
 ; 0x80778
 
 PokemonFellFromTreeText: ; 0x80778
 	text_from_ram EnemyMonNick
-	text " ¡cayo"
-	line "del arbol!"
+	text " cayó"
+	line "del árbol."
 	prompt
 ; 0x80793
 
 WantsToBattleText:: ; 0x807a9
-	text "<ENEMY>"
+	text "¡<ENEMY>"
 	line "quiere luchar!"
 	prompt
 ; 0x807bd
@@ -42,15 +42,15 @@ PluralWantToBattleText::
 	prompt
 
 BattleText_WildFled: ; 0x807bd
-	text "Wild @"
+	text "¡@"
 	text_from_ram EnemyMonNick
 	text ""
-	line "fled!"
+	line "salvaje huyó!"
 	prompt
 ; 0x807cf
 
 BattleText_EnemyFled: ; 0x807cf
-	text "Enemy @"
+	text "¡@"
 	text_from_ram EnemyMonNick
 	text ""
 	line "salvaje ha huido!"
@@ -64,13 +64,13 @@ HurtByPoisonText: ; 0x807e2
 ; 0x807f8
 
 HurtByBurnText: ; 0x807f8
-	text "¡<USER>'s"
+	text "¡<USER> es"
 	line "quemado!"
 	prompt
 ; 0x8080e
 
 LeechSeedSapsText: ; 0x8080e
-	text "Las DRENADORAS "
+	text "¡Las DRENADORAS"
 	line "agotan a <USER>!"
 	prompt
 ; 0x80822
@@ -83,18 +83,18 @@ HurtByCurseText: ; 0x80836
 ; 0x8084d
 
 SandstormHitsText: ; 0x8084d
-	text "Tor. Arena hiere a"
-	line "<USER>!"
+	text "¡Tor. Arena hiere"
+	line "a <USER>!"
 	prompt
 ; 0x80864
 
 HailHitsText:
-	text "Granizo golpea a"
+	text "¡Granizo golpea a"
 	line "<USER>!"
 	prompt
 
 PerishCountText: ; 0x80864
-	text "EL Contador de"
+	text "¡El contador de"
 	line "MUERTE de"
 	cont "<USER> es @"
 	deciram wd265, 1, 1
@@ -104,7 +104,7 @@ PerishCountText: ; 0x80864
 
 BattleText_TargetRecoveredWithItem: ; 0x80880
 	text "<TARGET>"
-	line "se recupero con"
+	line "se recuperó con"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "."
@@ -113,7 +113,7 @@ BattleText_TargetRecoveredWithItem: ; 0x80880
 
 BattleText_UserRecoveredPPUsing: ; 0x80899
 	text "<USER>"
-	line "recupero PP usando"
+	line "recuperó PP usando"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "."
@@ -121,16 +121,16 @@ BattleText_UserRecoveredPPUsing: ; 0x80899
 ; 0x808b6
 
 BattleText_TargetWasHitByFutureSight: ; 0x808b6
-	text "¡<TARGET>"
+	text "¡<TARGET> es"
 	line "herido por"
 	cont "premonición!"
 	prompt
 ; 0x808d2
 
 BattleText_SafeguardFaded: ; 0x808d2
-	text "El VELO SAGRADO"
+	text "¡El VELO SAGRADO"
 	line "de <USER> se"
-	cont "desvanecio!"
+	cont "desvaneció!"
 	
 	prompt
 ; 0x808e7
@@ -174,7 +174,7 @@ BattleText_TheHailContinuesToFall:
 	prompt
 
 BattleText_TheRainStopped: ; 0x80967
-	text "Dejo de llover."
+	text "Dejó de llover."
 	prompt
 ; 0x8097a
 
@@ -186,12 +186,12 @@ BattleText_TheSunlightFaded: ; 0x8097a
 
 BattleText_TheSandstormSubsided: ; 0x8098f
 	text "La TORMENTA"
-	line "de ARENA amaino."
+	line "de ARENA amainó."
 	prompt
 ; 0x809a8
 
 BattleText_TheHailStopped:
-	text "El GRANIZO paro."
+	text "El GRANIZO paró."
 	prompt
 ; 0x809a8
 
@@ -204,25 +204,25 @@ BattleText_EnemyPkmnFainted: ; 0x809a8
 ; 0x809be
 
 GotMoneyForWinningText:
-	text "¡<PLAYER> gano ¥@"
+	text "¡<PLAYER> recibe ¥@"
 	deciram wBattleReward, 3, 6
 	text ""
-	line "for winning!"
+	line "por ganar!"
 	prompt
 
 BattleText_EnemyWasDefeated: ; 0x809da
-	text "<ENEMY>"
+	text "¡<ENEMY>"
 	line "ha perdido!"
 	prompt
 ; 0x809eb
 
 BattleText_PluralEnemyWereDefeated:
-	text "<ENEMY>"
+	text "¡<ENEMY>"
 	line "han perdido!"
 	prompt
 
 TiedAgainstText: ; 0x809eb
-	text "Has empatado con"
+	text "¡Has empatado con"
 	line "<ENEMY>!"
 	prompt
 ; 0x809fc
@@ -230,7 +230,7 @@ TiedAgainstText: ; 0x809eb
 BattleText_PkmnFainted: ; 0x80a75
 	text_from_ram BattleMonNick
 	text ""
-	line "debilitado!"
+	line "debilitado."
 	prompt
 ; 0x80a83
 
@@ -269,8 +269,8 @@ BattleText_PluralEnemyAreAboutToUseWillPlayerChangePkmn:
 	done
 
 BattleText_EnemySentOut: ; 0x80af8
-	text "<ENEMY>"
-	line "¡Envió a"
+	text "¡<ENEMY>"
+	line "envió a"
 	cont "@"
 	text_from_ram EnemyMonNick
 	text "!"
@@ -307,7 +307,7 @@ BattleText_GotAwaySafely: ; 0x80b77
 
 BattleText_UserFledUsingAStringBuffer1: ; 0x80b89
 	text "¡<USER>"
-	line "escapo usando "
+	line "escapó usando"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "!"
@@ -320,14 +320,14 @@ BattleText_CantEscape: ; 0x80ba0
 ; 0x80bae
 
 BattleText_UserHurtBySpikes: ; 0x80bae
-	text "¡<USER>'s"
-	line "Herido por PÚAS!"
+	text "¡<USER> es"
+	line "herido por PÚAS!"
 	prompt
 ; 0x80bc2
 
 RecoveredUsingText: ; 0x80bc2
 	text "¡<TARGET>"
-	line "se recupero usando"
+	line "se recuperó usando"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "!"
@@ -335,94 +335,94 @@ RecoveredUsingText: ; 0x80bc2
 ; 0x80bde
 
 BattleText_UsersStringBuffer1Activated: ; 0x80bde
-	text "<USER>'s"
+	text "<USER>"
 	line "@"
 	text_from_ram StringBuffer1
 	text ""
-	cont "activado!"
+	cont "fue activado!"
 	prompt
 ; 0x80bf3
 
 BattleText_ItemsCantBeUsedHere: ; 0x80bf3
 	text "Los objetos "
-	line "no pueden "
-	cont "ser usados aqui."
+	line "no pueden ser"
+	cont "usados aquí."
 	prompt
 ; 0x80c0d
 
 BattleText_PkmnIsAlreadyOut: ; 0x80c0d
 	text_from_ram BattleMonNick
 	text ""
-	line "ya esta luchando."
+	line "ya está luchando."
 	prompt
 ; 0x80c22
 
 BattleText_PkmnCantBeRecalled: ; 0x80c22
 	text_from_ram BattleMonNick
 	text ""
-	line "No puede ser"
+	line "no puede ser"
 	cont "retirado"
 	prompt
 ; 0x80c39
 
 BattleText_TheresNoPPLeftForThisMove: ; 0x80c39
 	text "¡No quedan PP"
-	line "para este "
+	line "para este"
 	cont "movimiento"
 	prompt
 ; 0x80c5b
 
 BattleText_TheMoveIsDisabled: ; 0x80c5b
 	text "¡El MOVIMIENTO"
-	line "esta DESACTIVADO!"
+	line "está DESACTIVADO!"
 	prompt
 ; 0x80c72
 
 BattleText_PkmnHasNoMovesLeft: ; 0x80c72
 	text_from_ram BattleMonNick
 	text ""
-	line "¡No le quedan mas "
-	cont "movimientos"
+	line "¡No le quedan más "
+	cont "movimientos!"
 	done
 ; 0x80c8a
 
 BattleText_TargetsEncoreEnded: ; 0x80c8a
-	text "<TARGET>'s"
-	line "OTRA VEZ se acabo!"
+	text "El efecto de"
+	line "OTRA VEZ se acabó!"
 	prompt
 ; 0x80c9c
 
 BattleText_StringBuffer1GrewToLevel: ; 0x80c9c
 	text_from_ram StringBuffer1
-	text " subio al"
+	text " subió al"
 	line "nivel @"
 	deciram CurPartyLevel, 1, 3
-	text "!@"
+	text ".@"
 	sound_dex_fanfare_50_79
 	db "@@"
 ; 0x80cb9
 
 FastAsleepText: ; 0x80ce7
 	text "¡<USER>"
-	line "esta dormido!"
+	line "está dormido!"
 	prompt
 ; 0x80cfa
 
 WokeUpText: ; 0x80cfa
 	text "¡<USER>"
-	line "se desperto!"
+	line "se despertó!"
 	prompt
 ; 0x80d06
 
 FrozenSolidText: ; 0x80d06
 	text "¡<USER>"
-	line "Esta congelado!"
+	line "está congelado!"
 	prompt
 ; 0x80d1a
 
 FlinchedText: ; 0x80d1a
 	text "¡<USER>"
-	line "Retrocedio!"
+	line "retrocedió!"
 	prompt
 ; 0x80d27
 
@@ -433,8 +433,8 @@ MustRechargeText: ; 0x80d27
 ; 0x80d39
 
 DisabledNoMoreText: ; 0x80d39
-	text "<USER>'s"
-	line "activado de nuevo!"
+	text "<USER> está"
+	line "activo de nuevo!"
 	prompt
 ; 0x80d4f
 
@@ -445,25 +445,25 @@ IsConfusedText: ; 0x80d4f
 ; 0x80d5f
 
 HurtItselfText: ; 0x80d5f
-	text "¡Está confuso tan"
+	text "¡Está tan confuso"
 	line "que se hiere a"
 	cont "sí mismo!"
 ; 0x80d81
 
 ConfusedNoMoreText: ; 0x80d81
-	text "¡<USER>"
+	text "¡<USER> ya"
 	line "no está confuso!"
 	prompt
 ; 0x80d97
 
 BecameConfusedText: ; 0x80d97
 	text "¡<TARGET>"
-	line "Está confuso!"
+	line "está confuso!"
 	prompt
 ; ItemHealedConfusion
 
 BattleText_ItemHealedConfusion: ; ItemHealedConfusion
-	text "A @"
+	text "@"
 	text_from_ram StringBuffer1
 	text " curó a "
 	line "<TARGET>"
@@ -472,7 +472,7 @@ BattleText_ItemHealedConfusion: ; ItemHealedConfusion
 ; 0x80dcc
 
 AlreadyConfusedText: ; 0x80dcc
-	text "¡<TARGET>'s"
+	text "¡<TARGET>"
 	line "ya está confuso!"
 	prompt
 ; 0x80de2
@@ -523,7 +523,7 @@ ClampedByText: ; 0x80e59
 
 HungOnText: ; 0x80e99
 	text "¡<TARGET>"
-	line "resistio con"
+	line "resistió con"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "!"
@@ -532,64 +532,64 @@ HungOnText: ; 0x80e99
 
 EnduredText: ; 0x80eb0
 	text "¡<TARGET>"
-	line "aguanto el golpe!"
+	line "aguantó el golpe!"
 	prompt
 ; 0x80ec4
 
 InLoveWithText: ; 0x80ec4
 	text "¡<USER>"
-	line "esta enamorado de"
+	line "está enamorado de"
 	cont "<TARGET>!"
 	prompt
 ; 0x80eda
 
 InfatuationText: ; 0x80eda
-	text "¡<USER>'s"
-	line "enamoramiento de"
+	text "¡El enamoramiento"
+	line "de <USER>"
 	cont "le impidió atacar!"
 	prompt
 ; 0x80f02
 
 DisabledMoveText: ; 0x80f02
-	text "¡<USER>'s"
+	text "¡El ataque "
 	line "@"
 	text_from_ram StringBuffer1
-	text " esta"
+	text " está"
 	cont "DESACTIVADO!"
 	prompt
 ; 0x80f19
 
 LoafingAroundText: ; 0x80f19
 	text_from_ram BattleMonNick
-	text " esta"
+	text " está"
 	line "ocioso."
 	prompt
 ; 0x80f31
 
 BeganToNapText: ; 0x80f31
 	text_from_ram BattleMonNick
-	text " ¡Se echo a"
-	line "dormir!"
+	text " se echó a"
+	line "dormir."
 	prompt
 ; 0x80f44
 
 WontObeyText: ; 0x80f44
 	text_from_ram BattleMonNick
-	text "¡No te "
-	line "obedeció!"
+	text "no te "
+	line "obedeció."
 	prompt
 ; 0x80f54
 
 TurnedAwayText: ; 0x80f54
 	text_from_ram BattleMonNick
-	text " ¡ya no "
-	line "te obedece!"
+	text " ya no"
+	line "te obedece."
 	prompt
 ; 0x80f66
 
 IgnoredOrdersText: ; 0x80f66
 	text_from_ram BattleMonNick
-	text " ¡Desobedecio"
+	text " desobedeció"
 	line "ordenes!"
 	prompt
 ; 0x80f7b
@@ -598,14 +598,14 @@ IgnoredSleepingText: ; 0x80f7b
 	text "¡@"
 	text_from_ram BattleMonNick
 	text ""
-	line "desobedeció…!"
-	cont "¡Está durmiendo!"
+	line "desobedeció y"
+	cont "se echo a dormir."
 	prompt
 ; 0x80f99
 
 NoPPLeftText: ; 0x80f99
-	text "¡Pero no quedan PP"
-	line "para el movim.!"
+	text "¡No quedan PP para"
+	line "el movimimiento!"
 	prompt
 ; 0x80fba
 
@@ -711,7 +711,7 @@ GotAnEncoreText: ; 0x81109
 
 TookAimText: ; 0x81136
 	text "¡<USER>"
-	line "apunto!"
+	line "apuntó!"
 	prompt
 ; 0x81143
 
@@ -871,7 +871,7 @@ GettingPumpedText: ; 0x81338
 
 RecoilText: ; 0x8134d
 	text "¡<USER>"
-	line "es re-golpeado!"
+	line "es regolpeado!"
 	prompt
 ; 0x81362
 
@@ -895,9 +895,9 @@ TooWeakSubText: ; 0x8138d
 ; 0x813ad
 
 SubTookDamageText: ; 0x813ad
-	text "The SUBSTITUTE"
-	line "took damage for"
-	cont "<TARGET>!"
+	text "El SUSTITUTO"
+	line "recibió el daño"
+	cont "por <TARGET>!"
 	prompt
 ; 0x813d0
 
@@ -910,7 +910,7 @@ SubFadedText: ; 0x813d0
 
 LearnedMoveText: ; 0x813e6
 	text "¡<USER>"
-	line "ha aprendido!"
+	line "ha aprendido"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "!"
@@ -1024,8 +1024,8 @@ DraggedOutText: ; 0x81544
 
 ParalyzedText: ; 0x81558
 	text "¡<TARGET>"
-	line "está paralizado!"
-	cont "¡Quizá no ataque!"
+	line "está paralizado,"
+	cont "quizá no ataque!"
 	prompt
 ; 0x8157d
 
@@ -1069,7 +1069,7 @@ StoleText: ; 0x815da
 
 EatBerryText:
 	text "<USER>"
-	line "comio @"
+	line "comió @"
 	text_from_ram StringBuffer1
 	text ""
 	cont "de su objetivo"
@@ -1176,7 +1176,7 @@ MagnitudeText: ; 0x81751
 
 ReleasedByText: ; 0x81764
 	text "¡<USER>"
-	line "fue liberado por"
+	line "fue liberado de"
 	cont "<TARGET>!"
 	prompt
 ; 0x8177a
@@ -1208,7 +1208,7 @@ SunGotBrightText: ; 0x817b8
 BellyDrumText: ; 0x817d2
 	text "¡<USER>"
 	line "redujo sus PS"
-	cont "y mejoro su"
+	cont "y mejoró su"
       cont "ataque!"
 	prompt
 ; 0x817f6
@@ -1234,7 +1234,7 @@ UsedMoveText:
 
 UsedMoveInsteadText:
 	text "¡<USER>"
-	line "uso @"
+	line "usó @"
 	text_from_ram StringBuffer2
 	text ""
 	cont "en su lugar!"
@@ -1243,14 +1243,14 @@ UsedMoveInsteadText:
 PkmnSetAShellTrapText:
 	text_from_ram BattleMonNick
 	text ""
-	line "Puso coraza trampa!"
+	line "puso coraza trampa."
 	prompt
 
 EnemySetAShellTrapText:
-	text "Enemy @"
+	text "Enemigo @"
 	text_from_ram EnemyMonNick
 	text ""
-	line "Puso coraza trampa!"
+	line "puso coraza trampa!"
 	prompt
 
 StoleBoostedStatsText:
