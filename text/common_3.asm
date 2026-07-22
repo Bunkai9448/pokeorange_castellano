@@ -42,17 +42,17 @@ _CanDiveText::
 	text "El mar es profundo."
 
 	para "un #MON puede"
-	line "usar BUCEO aquí.."
+	line "usar BUCEO aquí."
 	done
 
 UnknownText_0x1c068e::
 	text_from_ram StringBuffer2
-	text " ¡Usó"
-	line "CASCADA!"
+	text " usó"
+	line "CASCADA."
 	done
 
 UnknownText_0x1c06a3::
-	text "Wow, es una gran"
+	text "Uau, es una gran"
 	line "cascada."
 	done
 
@@ -73,7 +73,7 @@ UnknownText_0x1c06ed::
 	done
 
 UnknownText_0x1c071a::
-	text "Volvio al último"
+	text "Volvió al último"
 	line "#MON CENTER."
 	done
 
@@ -86,8 +86,8 @@ UnknownText_0x1c073b::
 
 UnknownText_0x1c0774::
 	text_from_ram StringBuffer2
-	text " Uso"
-	line "FUERZA!"
+	text " Usó"
+	line "FUERZA."
 	done
 
 UnknownText_0x1c0788::
@@ -113,8 +113,8 @@ UnknownText_0x1c07f4::
 
 UnknownText_0x1c0816::
 	text_from_ram StringBuffer2
-	text " ¡Usó"
-	line "TORBELLINO!"
+	text " usó"
+	line "TORBELLINO."
 	prompt
 
 UnknownText_0x1c082b::
@@ -132,11 +132,11 @@ UnknownText_0x1c0864::
 
 UnknownText_0x1c0897::
 	text_from_ram StringBuffer2
-	line "Usó GOLPE CABEZA."
+	line "usó GOLPE CABEZA."
 	prompt
 
 UnknownText_0x1c08ac::
-	text "No. Nada…"
+	text "No pasó nada…"
 	done
 
 UnknownText_0x1c08bc::
@@ -150,7 +150,7 @@ UnknownText_0x1c08bc::
 
 UnknownText_0x1c08f0::
 	text_from_ram StringBuffer2
-	text " ¡uso"
+	text " usó"
 	line "GOLPE ROCA!"
 	prompt
 
@@ -179,14 +179,14 @@ UnknownText_0x1c099a::
 	done
 
 UnknownText_0x1c09b2::
-	text "<PLAYER> subio a"
+	text "<PLAYER> subió a"
 	line "@"
 	text_from_ram StringBuffer2
 	text "."
 	done
 
 UnknownText_0x1c09c7::
-	text "<PLAYER> bajo"
+	text "<PLAYER> bajó"
 	line "de @"
 	text_from_ram StringBuffer2
 	text "."
@@ -208,16 +208,16 @@ _AskRockClimbText::
 
 _UsedRockClimbText::
 	text_from_ram StringBuffer2
-	text " ¡Usó"
-	line "TREPARROCAS!"
+	text " usó"
+	line "TREPARROCAS."
 	prompt
 
 _CantRockClimbText::
 	text "La pared es muy"
 	line "rocosa<...>"
 
-	para "¿Un #MON's"
-	line "la escalara?"
+	para "Quizás un #MON"
+	line "pueda escalarla."
 	done
 
 UnknownText_0x1c0a1c::
@@ -230,7 +230,7 @@ UnknownText_0x1c0a1c::
 UnknownText_0x1c0a2c::
 	text "¡Pero <PLAYER>"
 	line "no puede llevar"
-	cont "mas objetos!"
+	cont "más objetos!"
 	done
 
 UnknownText_0x1c0a4e::
@@ -255,13 +255,13 @@ UnknownText_0x1c0aa9::
 UnknownText_0x1c0acc::
 	text_from_ram StringBuffer3
 	text ""
-	line "¡debilitado!"
+	line "debilitado."
 	prompt
 
 UnknownText_0x1c0b03::
 	text_from_ram StringBuffer3
-	text " ¡Usó"
-	line "DULCE AROMA!"
+	text " usó"
+	line "DULCE AROMA."
 	done
 
 UnknownText_0x1c0b1a::
@@ -795,7 +795,7 @@ _OakPCText3::
 	text "Viste: @"
 	text_from_ram StringBuffer3
 	text " #MON"
-	line "Tuyos: @"
+	line "Tienes: @"
 	text_from_ram StringBuffer4
 	text " #MON"
 
@@ -881,19 +881,19 @@ _OakRating11::
 	line "No sólo atrapas"
 
 	para "#MON, también"
-	line "evolucionan."
+	line "los evolucionas."
 	done
 
 _OakRating12::
 	text "¿Conoces a CÉSAR?"
-	line "Sus # BALL"
+	line "Sus #BALL"
 
 	para "personalizadas son"
 	line "de gran ayuda."
 	done
 
 _OakRating13::
-	text "¡Uauu! Tienes más"
+	text "¡Uau! Tienes más"
 	line "#MON que en"
 
 	para "la #DEX"
@@ -953,7 +953,7 @@ _OakPCText4::
 
 UnknownText_0x1c1a6c::
 	text "¿Salir del"
-	line "Concurso?"
+	line "concurso?"
 	done
 
 UnknownText_0x1c1a90::
