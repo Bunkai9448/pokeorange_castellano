@@ -30,7 +30,7 @@ UnknownText_0x1c50bb::
 
 UnknownText_0x1c55db::
 	text "Dale a continuar"
-	line "y resetea."
+	line "para reiniciar."
 	prompt
 
 UnknownText_0x1c561c::
@@ -128,7 +128,7 @@ UnknownText_0x1c5772::
 
 UnknownText_0x1c5793::
 	text "¿Quieres apostar"
-	line "tres?"
+	line "tres fichas?"
 	done
 
 UnknownText_0x1c57ab::
@@ -159,7 +159,7 @@ UnknownText_0x1c5813::
 	done
 
 UnknownText_0x1c581a::
-	text "¡Fallaste…!<...>"
+	text "Fallaste <...>"
 	done
 
 UnknownText_0x1c5aa6::
@@ -240,7 +240,7 @@ Text_RepelUsedEarlierIsStillInEffect::
 
 UnknownText_0x1c5bf9::
 	text "Escuchaste la"
-	line "# FLAUTA."
+	line "#FLUTE"
 
 	para "¡Es una canción"
 	line "muy pegadiza!"
@@ -254,7 +254,7 @@ UnknownText_0x1c5c28::
 	
 UnknownText_0x1c5c44::
 	text "<PLAYER> toca la"
-	line "# FLAUTA.@"
+	line "#FLUTE.@"
 	text_waitbutton
 	db "@@"
 
@@ -290,7 +290,7 @@ Text_RestoreThePPOfWhichMove::
 Text_PPIsMaxedOut::
 	text_from_ram StringBuffer2
 	text "los PP"
-	line "estan agotados."
+	line "están agotados."
 	prompt
 
 Text_PPsIncreased::
@@ -326,13 +326,13 @@ UnknownText_0x1c5d6e::
 	prompt
 
 UnknownText_0x1c5db6::
-	text "Eso no tendra"
+	text "Eso no tendrá"
 	line "ningún efecto."
 	prompt
 
 UnknownText_0x1c5dd0::
 	text "¡El entrenador"
-	line "bloqueo BALL!"
+	line "bloqueó la BALL!"
 	prompt
 
 UnknownText_0x1c5def::
@@ -341,12 +341,12 @@ UnknownText_0x1c5def::
 
 UnknownText_0x1c5e3a::
 	text "La caja #MON"
-	line "esta llena.No"
+	line "está llena. No"
 	cont "puede ser usada."
 	prompt
 
 UnknownText_0x1c5e68::
-	text "<PLAYER> uso el@"
+	text "<PLAYER> usó el @"
 	text_low
 	text_from_ram StringBuffer2
 	text "."
@@ -375,8 +375,8 @@ UnknownText_0x1c5eda::
 
 UnknownText_0x1c5ef5::
 	text "¡Hecho! Tu #MON"
-	line "olvidó el movi-"
-	cont "miento."
+	line "olvidó el"
+	cont "movimiento."
 	done
 
 UnknownText_0x1c5f17::
@@ -398,8 +398,8 @@ UnknownText_0x1c5f74::
 	text "Soy el QUITA-"
 	line "MOVIMIENTOS. Hago"
 
-	para "olvidar movimien-"
-	line "tos a los #MON."
+	para "olvidar movimientos"
+	line "a los #MON."
 
 	para "¿Quieres que"
 	line "olviden algún"
@@ -411,17 +411,17 @@ UnknownText_0x1c5fd1::
 	prompt
 
 Text_DSTIsThatOK::
-	text "."
+	text ""
 	line "¿Correcto?"
 	done
 
 UnknownText_0x1c5ff1::
-	text "."
+	text ""
 	line "¿Correcto?"
 	done
 	
 MoveReminderIntroText::
-	text "¡Hola!Soy el"
+	text "¡Hola! Soy el"
 	line "recuerda mov."
 
 	para "Haré a tu"
@@ -429,7 +429,7 @@ MoveReminderIntroText::
 
 	para "un movimiento"
 	line "si me traes una"
-	cont "escama corazon."
+	cont "escama corazón."
 	done
 
 MoveReminderPromptText::
@@ -469,7 +469,7 @@ MoveReminderNoMonText::
 
 MoveReminderNoMovesText::
 	text "Lo siento, no hay"
-	line "ningun mov que"
+	line "ningún mov que"
 
 	para "tu #MON"
 	line "pueda recordar."
@@ -480,8 +480,8 @@ MoveReminderCancelText::
 	line "necesita aprender"
 
 	para "un ataque vuelve"
-	line "una escama"
-	cont "corazon"
+	line "con una escama"
+	cont "corazón"
 	done
 
 AlreadyHaveTMText::
