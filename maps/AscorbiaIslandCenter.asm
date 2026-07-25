@@ -27,8 +27,8 @@ Maya:
 	end
 
 AscorbiaSlouchText:
-	text "Las Esc.corazón"
-	line "pueden encontrarse"
+	text "Puedes encontrar"
+	line "Esc. Corazón"
 	cont "en playas y en"
 	cont "#MON salvajes"
 	
