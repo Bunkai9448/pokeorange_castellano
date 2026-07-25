@@ -59,7 +59,7 @@ AscorbiaFanClubPresidentScript:
 AscorbiaFanClubPresidentText1:
 	text "¡Ey!"
 	
-	para "¿Conoces algo"
+	para "¿Te cuento algo"
 	line "sobre EXEGGUTOR?"
 	
 	para "¿No te encanta"
@@ -68,14 +68,14 @@ AscorbiaFanClubPresidentText1:
 	done
 	
 AscorbiaFanClubPresidentText2:
-	text "¡Oh,si! Es"
+	text "¡Oh, si! Es"
 	line "magnífico."
 	
-	para "Ahora, cuentame"
-	line "sobre la cuarta"
-	cont "cabeza en la cola"
+	para "¿Y qué te parece"
+	line "la cuarta cabeza"
+	cont "en la cola?"
 	
-	para "¿No es bella?"
+	para "¿Es bella eh?"
 	done
 	
 AscorbiaFanClubPresidentText3:
@@ -88,27 +88,27 @@ AscorbiaFanClubPresidentText3:
 	done
 	
 AscorbiaFanClubPresidentText4:
-	text "Oh,¡tan verde!"
+	text "Oh, ¡tan verde!"
 	
-	para "Gracias por "
+	para "Gracias por"
 	line "estar hablando"
 	cont "conmigo sobre"
 	cont "EXEGGUTOR."
 	
-	para "Toma,un regalo"
+	para "Toma, un regalo"
 	line "de un fan"
 	cont "#MON a otro."
 	done
 	
 AscorbiaFanClubPresidentTextNo:
-	text "Oh,ya veo. Perdon"
+	text "Oh, ya veo. Perdón"
 	line "por molestarte."
 	done
 	
 AscorbiaFanClubPresidentText5:
-	text "Hola, otra vez."
-	line "Espero que "
-	cont "conozcas mas #MON."
+	text "Hola otra vez."
+	line "Espero que veas"
+	cont "más #MON."
 	done
 	
 AscorbiaFanClubFearowScript:
@@ -140,29 +140,29 @@ AscorbiaFanClubFisherText:
 	text "¿Sabes algo"
 	line "del CABLE LINK?"
 	
-	para "Ciertos #MON solo"
-	line "evolucionan por,"
-	cont "intercambio pero"
-	cont "el CABLE LINK"
-	cont "hace lo mismo."
+	para "El CABLE LINK"
+	line "hace evolucionar"
+	cont "#MON que solo"
+	cont "lo harían por"
+	cont "intercambio."
 	done
 	
 AscorbiaFanClubLassScript:
 	jumptextfaceplayer AscorbiaFanClubLassText
 	
 AscorbiaFanClubLassText:
-	text "¿Has oido algo"
+	text "¿Has oido esto"
 	line "sobre la"
 	cont "MASTER BALL?"
 	
-	para "Supuestamente "
+	para "Supuestamente"
 	line "atrapa siempre"
 	cont "a cualquier"
 	cont "#MON."
 	
 	para "Si tuviera una,"
-	line "la usaria en"
-	cont "en algún #MON "
+	line "la usaría en"
+	cont "en algún #MON"
 	cont "raro como FEAROW"
 	cont "o TENTACRUEL."
 	done
