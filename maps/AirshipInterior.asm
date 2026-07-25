@@ -104,8 +104,8 @@ LawrenceCutsceneMonologue:
 	
 LawrenceCutsceneMonologue2:
 	text "???: Pronto"
-	line "voy a conseguirte"
-	cont ", LUGIA<...>"
+	line "te conseguiré,"
+	cont "LUGIA<...>"
 	
 	para "Hahahahaha<...>"
 	
@@ -181,7 +181,7 @@ LawrenceDefeatedText1:
 	text "LAWRENCE: <...>"
 	
 	para "Bien. Sistema."
-	line "Suelta las "
+	line "Suelta las"
 	cont "capturas"
 	cont "inmediatamente."
 	
@@ -211,15 +211,15 @@ LawrenceDefeatedText2:
 	cont "ruina al mundo"
 	cont "entero<...>?"
 	
-	para "Ya veo.Puedes irte"
-	line "ya."
+	para "Ya veo. Puedes"
+	line "irte ya."
 	done
 	
 LawrenceDefeatedText3:
 	text "LAWRENCE: Estaba"
 	line "equivocado."
 	cont "Por favor,"
-	cont "dejame solo."
+	cont "déjame solo."
 	done
 	
 AirshipLawrenceWinLoss:
