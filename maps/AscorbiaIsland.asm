@@ -37,7 +37,7 @@ AscorbiaTeacherScript:
 	jumptextfaceplayer AscorbiaTeacherText
 	
 AscorbiaTeacherText:
-	text "Pienso que estoy"
+	text "Creo que estoy"
 	line "en el puerto"
 	cont "equivocado."
 	
@@ -50,7 +50,7 @@ AscorbiaLassScript:
 	
 AscorbiaLassText:
 	text "¡Esta es la ISLA"
-	line "ASCORBIA!¿No es "
+	line "ASCORBIA! ¿No es"
 	cont "super bonita?"
 	
 	para "¡La playa del este"
@@ -61,13 +61,13 @@ AscorbiaRockerScript:
 	jumptextfaceplayer AscorbiaRockerText
 	
 AscorbiaRockerText:
-	text "Hay una gran "
+	text "Hay una gran"
 	line "isla al este"
 	cont "de aquí."
 	
 	para "He oido que"
 	line "necesitas cierta"
-	cont "MO si quieres "
+	cont "MO si quieres"
 	cont "explorar todo"
 	done
 
@@ -75,7 +75,7 @@ AscorbiaBlackBeltScript:
 	jumptextfaceplayer AscorbiaBlackBeltText
 	
 AscorbiaBlackBeltText:
-	text "He oido que "
+	text "He oído que"
 	line "aquí hay una"
 	cont "bella mujer que"
 	cont "pinta en la"
@@ -91,7 +91,7 @@ AscorbiaTownSign:
 AscorbiaTownSignText:
 	text "ISLA ASCORBIA"
 	
-	para "Escoge tu "
+	para "Escoge tu"
 	line "destino."
 	done	
 
@@ -107,7 +107,7 @@ AscorbiaMoveRelearnerSign:
 	jumptext AscorbiaMoveRelearnerSignText
 	
 AscorbiaMoveRelearnerSignText:
-	text "RECUERDA MOV"
+	text "RECUERDA MOV."
 	done
 	
 AscorbiaIllustratorPikachu:
@@ -190,8 +190,8 @@ IllyPikaJumpMovement2:
 	step_end
 	
 AscorbiaGrannyNiteText1:
-	text "Oh, hola. ¿ Has"
-	line "oido sobre el"
+	text "Oh, hola. ¿Has"
+	line "oído sobre el"
 	cont "famoso pintor de"
 	cont "esta isla?"
 	
@@ -200,28 +200,28 @@ AscorbiaGrannyNiteText1:
 	cont "pero el pintor..."
 	cont "¡es ese PIKACHU!"
 	
-	para "¡Pero ni una"
-	line "palabra!, me"
-	cont "preocuparia la"
+	para "¡Pero, ni una"
+	line "palabra!"
+	cont "Debo cuidar la"
 	cont "seguridad de"
 	cont "PIKACHU."
 	
 	para "¡Pareces un buen"
-	line "entrenador!¿Y si"
-	cont "te lo llevas?"
+	line "entrenador! ¿Y"
+	cont "si te llevas a"
 	
-	para "PIKACHU baja tu"
-	line "ala, y toma esto"
-	cont "alrededor del"
-	cont "mundo si puedes."
+	para "PIKACHU contigo"
+	line "alrededor del"
+	cont "mundo para que"
+	cont "pueda seguir"
 	
-	para "¿Seguir haciendo"
-	line "lo que amas?"
+	para "haciendo lo"
+	line "que ama?"
 	done
 
 AscorbiaGrannyNiteText2:
-	text "Oh,Ya veo."
-	line "Entiendo.Debes"
+	text "Oh, ya veo."
+	line "Entiendo. Debes"
 	cont "tener ya muchos"
 	cont "maravillosos"
 	
@@ -229,12 +229,12 @@ AscorbiaGrannyNiteText2:
 	done
 	
 AscorbiaGrannyNiteText3:
-	text "Viajes seguros,"
-	line "¡PIKACHU!"
+	text "¡Buen viaje,"
+	line "PIKACHU!"
 	done	
 
 AscorbiaGrannyNiteText4:
-	text "Me atrevo a "
+	text "Me atrevo a"
 	line "decir que ya te"
 	cont "ha cogido cariño."
 	done
