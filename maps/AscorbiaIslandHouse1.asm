@@ -43,22 +43,22 @@ AscorbiaDittoGuyDoneScript:
 	end
 
 AscorbiaDittoGuyText:
-	text "¡Me encanta "
-	line "Ditto¡ ¡pero no"
+	text "¡Me encanta"
+	line "DITTO! ¡Pero no"
 	cont "tengo uno!"
 	
-	para "¿Podrias mostrarme"
+	para "¿Podrías mostrarme"
 	line "un DITTO?"
 	done
 
 AscorbiaDittoGuyText2:
 	text "¡POLVO METALICO"
-	line "dobla la "
+	line "dobla la"
 	cont "DEFENSA de DITTO!"
 	done
 
 AscorbiaDittoGuyText3:
-	text "¡Ah!¿No tienes"
+	text "¡Ah! ¿No tienes"
 	line "uno?"
 	done
 	
