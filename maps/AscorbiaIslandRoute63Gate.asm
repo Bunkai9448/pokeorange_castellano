@@ -27,13 +27,13 @@ AscorbiaGateGuyScript:
 	jumptextfaceplayer AscorbiaGateGuyText
 	
 AscorbiaGateGuyText:
-	text "¡La brisa de "
-	line "la isla es "
-	cont "algo que nunca "
+	text "¡La brisa de"
+	line "la isla es"
+	cont "algo que nunca"
 	cont "cansa!"
 	
-	para "Escucha,chico."
-	line "Desde aqui se"
+	para "Escucha, chico."
+	line "Desde aquí se"
 	cont "pueden ver muchas"
 	cont "colinas y montañas"
 	done
