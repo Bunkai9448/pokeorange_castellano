@@ -97,7 +97,7 @@ UnknownText_0x19b1b6:
 	done
 
 UnknownText_0x19b244:
-	text "DAISY: ¿Cuál "
+	text "DAISY: ¿Cuál"
 	line "debería limpiar?"
 	done
 
