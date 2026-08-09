@@ -96,42 +96,42 @@ CrossButwalIslandText:
 	cont "todo."
 	
 	para "¡Te machacaré y"
-	line "mandaré a la"
-	cont "lona,amigo!"
+	line "te mandaré a la"
+	cont "lona, amigo!"
 	
-	para "Si quieres esta"
-	line "MO,es una pena."
-	cont "¡Tendras que"
+	para "Lo siento si"
+	line "quieres esta MO."
+	cont "¡Tendrás que"
 	cont "quitármela por"
 	cont "la fuerza!"
 	done
 	
 CrossButwalIslandWinLoss:
 	text "CROSS: ¡Argh!"
-	line "¿Piensas que"
-	cont "se acabó solo por"
+	line "¿Piensas que se"
+	cont "acabó solo por"
 	cont "ganarme de chiripa"
 	cont "una o dos veces?"
 	done
 
 CrossButwalIslandLeavingNowText:
 	text "CROSS: ¡Hahaha!"
-	line "Ya he usado "
-	cont "esta MO. No tiene"
-	cont "usos para ti."
+	line "Ya he usado esta"
+	cont "MO. A mi ya no"
+	cont "me sirve de nada."
 	
-	para "Pero todavía"
-	line "puedes usarla"
-	cont "para algo."
+	para "Pero tú aún"
+	line "la necesitas."
+	cont "¡Usalá bien!"
 	done
 
 ButwalEastDiverText:
 	text "¡OUCH!"
 	
-	para "¡Eh chico!"
+	para "¡Eh, chico!"
 	line "Mira cuando tires"
 	cont "cosas, contaminar"
-	cont "no esta bien."
+	cont "no está bien."
 	done
 
 ButwalPokeballMovementData:
