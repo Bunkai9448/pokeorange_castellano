@@ -21,11 +21,11 @@ AscorbiaArtistLadyDayScript:
 	end
 	
 AscorbiaArtistLadyDayText:
-	text "Hola, cariño."
+	text "Hola cariño."
 	
-	para "¿Has oido sobre"
+	para "¿Has oído sobre"
 	line "el gran artista"
-	cont "que vive aqui?"
+	cont "que vive aquí?"
 	
 	para "Nadie lo ha"
 	line "visto nunca"
@@ -33,10 +33,10 @@ AscorbiaArtistLadyDayText:
 	done
 	
 AscorbiaArtistLadyDayGotPikachuText:
-	text "Hola otra vez,"
+	text "Hola otra vez"
 	line "cariño"
 	
-	para "¿Que esta haciendo"
+	para "¿Qué está haciendo"
 	line "Pikachu? Espero"
 	cont "que salga de su"
 	cont "bloqueo creativo."
