@@ -17,7 +17,7 @@ AscorbiaOfficerText:
 	
 	para "He escuchado"
 	line "que algunos"
-	cont "miembros del "
+	cont "miembros del"
 	cont "TEAM ROCKET se"
 	cont "han visto por"
 	cont "las islas."
