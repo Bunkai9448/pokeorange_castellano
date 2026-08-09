@@ -66,7 +66,7 @@ UnknownScript_0x19b12a:
 	end
 
 UnknownText_0x19b130:
-	text "DAISY:¡Hola!"
+	text "DAISY: ¡Hola!"
 	line "Mi hermano"
 	cont "pequeño es el"
 
@@ -77,32 +77,32 @@ UnknownText_0x19b130:
 	line "con frecuencia."
 
 	para "Eso afecta a los"
-	line "los entrenadores."
+	line "entrenadores."
 	done
 
 UnknownText_0x19b1b6:
-	text "DAISY:¡Hola! En"
-	line "buen momento"
-	cont "vienes. Me iba a"
-	cont "servir un té."
+	text "DAISY: ¡Hola!"
+	line "Vienes en buen"
+	cont "momento. Me iba"
+	cont "a servir un té."
 
 	para "¿Querrías unirte"
 	line "a mi?"
 
-	para "Oh,tus #MON estan"
-	line "algo sucios."
+	para "Oh, tus #MON"
+	line "están algo sucios."
 
 	para "¿Te gustaría que"
 	line "limpie alguno?"
 	done
 
 UnknownText_0x19b244:
-	text "DAISY: ¿Cual "
+	text "DAISY: ¿Cuál "
 	line "debería limpiar?"
 	done
 
 UnknownText_0x19b266:
-	text "DAISY: OK,lo"
+	text "DAISY: OK, lo"
 	line "dejaré limpito"
 	cont "en nada."
 	done
@@ -114,34 +114,34 @@ UnknownText_0x19b296:
 	done
 
 UnknownText_0x19b2aa:
-	text "DAISY: Ya esta"
+	text "DAISY: Ya está"
 	line "todo hecho."
 
-	para "¿Ves? ¿No te "
+	para "¿Ves? ¿No te"
 	line "luce mejor?"
 
-	para "Esta mas bonito"
-	line "#MON."
+	para "El #MON está"
+	line "más bonito ahora."
 	done
 
 UnknownText_0x19b2fa:
 	text "DAISY: Siempre"
-	line "tengo mas te"
+	line "tengo más té."
 
-	para "Ven,"
-	line "unete."
+	para "Ven, únete"
+	line "a mi."
 	done
 
 UnknownText_0x19b334:
-	text "DAISY:¿No quieres"
+	text "DAISY: ¿No quieres"
 	line "que limpie a"
 
-	para "a nadie? OK,"
+	para "nadie? OK,"
 	line "solo té."
 	done
 
 UnknownText_0x19b377:
-	text "DAISY: Oh,perdón."
+	text "DAISY: Oh, perdón."
 	line "No puedo limpiar"
 	cont "un huevo."
 	done
