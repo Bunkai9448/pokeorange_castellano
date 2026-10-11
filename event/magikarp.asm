@@ -82,7 +82,7 @@ PrintMagikarpLength: ; fbbdb
 	ld de, Buffer1
 	lb bc, PRINTNUM_RIGHTALIGN | 1, 2
 	call PrintNum
-	ld [hl], "′"
+	ld [hl], "'"
 	inc hl
 	ld de, Buffer2
 	lb bc, PRINTNUM_RIGHTALIGN | 1, 2
