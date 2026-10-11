@@ -88,7 +88,7 @@
 	charmap "y",        $b8
 	charmap "z",        $b9
 
-	charmap "′",        $ba
+	charmap "Ñ",        $ba
 	charmap "″",        $bb
 
 	charmap "á",       $c0
