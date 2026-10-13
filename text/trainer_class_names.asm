@@ -3,8 +3,8 @@
 	db "LIDER@" ; RUDY
 	db "LIDER@" ; LUANA
 	db "LIDER@" ; DRAKE
-	db "OBSERVADOR <PK><MN>@" ; TRACEY
-	db "OBSERVADOR <PK><MN>@" ; TRACEY2
+	db "OBS. <PK><MN>@" ; TRACEY
+	db "OBS. <PK><MN>@" ; TRACEY2
 	db "LIDER@" ; BROCK
 	db "LIDER@" ; MISTY
 	db "LIDER@" ; LT_SURGE
@@ -31,7 +31,7 @@
 	db "ENT. <PK><MN>@" ; MOM
 	db "#MANIACO@" ; BILL
 	db "IMAKUNI?@" ; IMAKUNI
-	db "COLECCIONISTA@" ; LAWRENCE
+	db "COLECC.@" ; LAWRENCE
 	db "PRO. #MON@" ; PROF_OAK
 	db "PROF #MON@" ; PROF_IVY
 	db "ASIST. PROF@" ; PROF_AIDE
