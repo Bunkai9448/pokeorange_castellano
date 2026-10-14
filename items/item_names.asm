@@ -137,7 +137,7 @@
 	db "PIEDRADIA@"
 	db "CABLE LINK@"
 	db "TROFEO MORO@"
-	db "DISCO EXTRAÑO@"
+	db "DISCOEXTRAÑO@"
 	db "AMULETO IRIS@"
 	db "ROCIO BONDAD@"
 	db "BUCEO BALL@"
