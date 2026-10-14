@@ -53,7 +53,7 @@
 	db "MONEDERO@"
 	db "ZAHORI@"
 	db "# FLAUTA@"
-	db "REPARTIR. EXP@"
+	db "REPARTIR EXP@"
 	db "CAÑA VIEJA@"
 	db "CAÑA BUENA@"
 	db "SUPERCAÑA@"
