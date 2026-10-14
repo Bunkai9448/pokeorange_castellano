@@ -101,7 +101,7 @@
 	db "CINTA FOCUS@"
 	db "POLVOENERGIA@"
 	db "RAIZ ENERGÍA@"
-	db "POLVO CURACION@"
+	db "POLVO CURA@"
 	db "HIERBA REV.@"
 	db "PIEDRA DURA@"
 	db "HUEVO SUERTE@"
