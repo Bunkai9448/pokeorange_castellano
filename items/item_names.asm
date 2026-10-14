@@ -166,6 +166,8 @@
 	db "LLAMASFERA@"
 	db "HIELOSFERA@"
 	db "PIEDRAKANTO@"
+	db "CINT. CAMP.@"
+	db "SHINY BALL@"
 	db "MT01@"
 	db "MT02@"
 	db "MT03@"
