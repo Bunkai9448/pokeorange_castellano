@@ -448,6 +448,7 @@ HurtItselfText: ; 0x80d5f
 	text "¡Está tan confuso"
 	line "que se hiere a"
 	cont "sí mismo!"
+	prompt
 ; 0x80d81
 
 ConfusedNoMoreText: ; 0x80d81
