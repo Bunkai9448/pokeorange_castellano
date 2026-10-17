@@ -143,8 +143,7 @@ TraceyLeavingTangelo:
 	para "¡Oh, que duro!"
 	line "Mi nombre es"
 	cont "TRACEY SKETCHIT."
-	cont "Soy un OBSER-"
-	cont "VADOR."
+	cont "Soy un OBSERVADOR."
 
 	para "De todas formas,"
 	line "me voy. ¡Nos"
