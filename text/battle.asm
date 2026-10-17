@@ -37,7 +37,7 @@ WantsToBattleText:: ; 0x807a9
 ; 0x807bd
 
 PluralWantToBattleText::
-	text "<ENEMY>"
+	text "¡<ENEMY>"
 	line "quieren luchar!"
 	prompt
 
@@ -78,7 +78,7 @@ LeechSeedSapsText: ; 0x8080e
 HurtByCurseText: ; 0x80836
 	text "¡<USER> es"
 	line "herido por"
-	cont "MALDICIÓN!"
+	cont "MALDICION!"
 	prompt
 ; 0x8084d
 
@@ -196,7 +196,7 @@ BattleText_TheHailStopped:
 ; 0x809a8
 
 BattleText_EnemyPkmnFainted: ; 0x809a8
-	text "¡Enemy @"
+	text "¡Enemigo @"
 	text_from_ram EnemyMonNick
 	text ""
 	line "debilitado!"
@@ -321,7 +321,7 @@ BattleText_CantEscape: ; 0x80ba0
 
 BattleText_UserHurtBySpikes: ; 0x80bae
 	text "¡<USER> es"
-	line "herido por PÚAS!"
+	line "herido por PUAS!"
 	prompt
 ; 0x80bc2
 
@@ -685,7 +685,7 @@ SuperEffectiveText: ; 0x810aa
 
 NotVeryEffectiveText: ; 0x810c1
 	text "No es muy"
-	line "efectivo…"
+	line "efectivo..."
 	prompt
 ; 0x810da
 
@@ -895,7 +895,7 @@ TooWeakSubText: ; 0x8138d
 ; 0x813ad
 
 SubTookDamageText: ; 0x813ad
-	text "El SUSTITUTO"
+	text "¡El SUSTITUTO"
 	line "recibió el daño"
 	cont "por <TARGET>!"
 	prompt
@@ -961,7 +961,7 @@ EliminatedStatsText: ; 0x81476
 
 TransformedText: ; 0x81499
 	text "¡<USER>"
-	line "se TRANSFORMÓ en"
+	line "se transformó en"
 	cont "@"
 	text_from_ram StringBuffer1
 	text "!"
@@ -1072,7 +1072,7 @@ EatBerryText:
 	line "comió @"
 	text_from_ram StringBuffer1
 	text ""
-	cont "de su objetivo"
+	cont "de su objetivo."
 	prompt
 
 CantEscapeNowText: ; 0x815f7
@@ -1112,7 +1112,7 @@ ProtectingItselfText: ; 0x8167a
 SpikesText: ; 0x81691
 	text "¡<TARGET>"
 	line "está rodeado"
-	cont "de PÚAS!"
+	cont "de PUAS!"
 	prompt
 ; 0x816b1
 
@@ -1189,7 +1189,7 @@ ShedLeechSeedText: ; 0x8177a
 
 BlewSpikesText: ; 0x8178e
 	text "¡<USER>"
-	line "rompió PÚAS!"
+	line "rompió PUAS!"
 	prompt
 ; 0x817a3
 
@@ -1227,7 +1227,7 @@ IgnoredOrders2Text: ; 0x81850
 
 UsedMoveText:
 	text "¡<USER>"
-	line "uso @"
+	line "usó @"
 	text_from_ram StringBuffer2
 	text "!"
 	done
@@ -1254,8 +1254,8 @@ EnemySetAShellTrapText:
 	prompt
 
 StoleBoostedStatsText:
-	text "¡<USER> robo"
-	line "<TARGET>'s"
-	cont "aumento de"
-	cont "estadísticas!"
+	text "¡<USER> robó"
+	line "el aumento de"
+	cont "estadísticas"
+	cont "de <TARGET>!"
 	prompt
