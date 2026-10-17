@@ -344,7 +344,7 @@ BattleText_UsersStringBuffer1Activated: ; 0x80bde
 ; 0x80bf3
 
 BattleText_ItemsCantBeUsedHere: ; 0x80bf3
-	text "Los objetos "
+	text "Los objetos"
 	line "no pueden ser"
 	cont "usados aquí."
 	prompt
@@ -381,14 +381,14 @@ BattleText_TheMoveIsDisabled: ; 0x80c5b
 BattleText_PkmnHasNoMovesLeft: ; 0x80c72
 	text_from_ram BattleMonNick
 	text ""
-	line "¡No le quedan más "
+	line "¡No le quedan más"
 	cont "movimientos!"
 	done
 ; 0x80c8a
 
 BattleText_TargetsEncoreEnded: ; 0x80c8a
 	text "El efecto de"
-	line "OTRA VEZ se acabó!"
+	line "OTRA VEZ se acabó."
 	prompt
 ; 0x80c9c
 
