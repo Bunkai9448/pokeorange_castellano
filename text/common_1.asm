@@ -28,7 +28,7 @@ _NothingHereText::
 	done
 
 UnknownText_0x1bc0a2::
-	text "¡@"
+	text "@ "
 	text_from_ram StringBuffer1
 	text "recuperó @"
 	deciram wCurHPAnimDeltaHP, 2, 3
