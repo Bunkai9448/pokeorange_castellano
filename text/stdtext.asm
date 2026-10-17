@@ -21,7 +21,7 @@ NurseNiteText:
 PokeComNurseMornText:
 	text "¡Buenas!"
 
-	para "Éste es el CENTRO"
+	para "Este es el CENTRO"
 	line "de COMUNICACIONES"
 
 	para "#MON o"
@@ -31,7 +31,7 @@ PokeComNurseMornText:
 PokeComNurseDayText:
 	text "¡Hola!"
 
-	para "Éste es el CENTRO"
+	para "Este es el CENTRO"
 	line "de COMUNICACIONES"
 
 	para "#MON o"
@@ -40,9 +40,9 @@ PokeComNurseDayText:
 
 PokeComNurseNiteText:
 	text "Te veo trabajando"
-	line "hasta tarde…"
+	line "hasta tarde..."
 
-	para "Éste es el CENTRO"
+	para "Este es el CENTRO"
 	line "de COMUNICACIONES"
 
 	para "#MON o"
@@ -121,11 +121,11 @@ PictureBookshelfText:
 	done
 
 MagazineBookshelfText:
-	text "Revistas #MON…"
+	text "Revistas #MON"
 	line "TELEVISOR #MON,"
 
 	para "MANUAL #MON,"
-	line "GRÁFICA #MON…"
+	line "GRÁFICA #MON."
 	done
 
 IncenseBurnerText:
@@ -183,18 +183,18 @@ ContestResults_ReadyToJudgeText:
 	text "Vamos a evaluar"
 	line "a tus #MON."
 
-	para "<……>"
-	line "<……>"
+	para "..."
+	line "..."
 
 	para "¡Hemos elegido a"
 	line "los ganadores!"
 
-	para "Aquí van…"
+	para "Aquí van..."
 	done
 
 ContestResults_PlayerWonAPrizeText:
 	text "<PLAYER> gana el"
-	line "premio n.°@"
+	line "premio n.@"
 	text_from_ram StringBuffer3
 	text ":"
 	cont "¡una @"
@@ -248,7 +248,7 @@ GymStatue_CityGymText:
 	done
 
 GymStatue_WinningTrainersText:
-	text "LÍDER: @"
+	text "LIDER: @"
 	text_from_ram StringBuffer4
 	text ""
 
@@ -300,7 +300,7 @@ CoinVendor_NotEnoughMoneyText:
 	done
 
 CoinVendor_CoinCaseFullText:
-	text "¡Uups! Tu MONEDERO"
+	text "¡Ups! Tu MONEDERO"
 	line "está lleno."
 	done
 
