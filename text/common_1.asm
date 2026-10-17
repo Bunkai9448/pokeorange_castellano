@@ -19,12 +19,12 @@ _ObtainedFruitText::
 
 _FruitPackIsFullText::
 	text "Pero la MOCHILA"
-	line "está llena…"
+	line "está llena..."
 	done
 
 _NothingHereText::
 	text "Aquí no hay"
-	line "nada…"
+	line "nada..."
 	done
 
 UnknownText_0x1bc0a2::
@@ -150,7 +150,7 @@ UnknownText_0x1bc701::
 
 UnknownText_0x1bc703::
 	text_from_ram wOTTrademonSenderName
-	text " dice adios"
+	text " dice adiós"
 	line "a"
 	done
 
@@ -313,7 +313,7 @@ UnknownText_0x1bd48c::
 	done
 
 UnknownText_0x1bd4aa::
-	text "¿Qué? Ése no es"
+	text "¿Qué? Ese no es"
 	line "@"
 	text_from_ram StringBuffer1
 	text "."
@@ -445,7 +445,7 @@ UnknownText_0x1bd745::
 
 UnknownText_0x1bdaa9::
 	text "Soy el ENCARGADO"
-	line "de la GUARDERÍA."
+	line "de la GUARDERIA."
 
 	para "¿Quieres que"
 	line "cuide un #MON?"
@@ -453,7 +453,7 @@ UnknownText_0x1bdaa9::
 
 UnknownText_0x1bdad8::
 	text "Soy el ENCARGADO"
-	line "de la GUARDERÍA."
+	line "de la GUARDERIA."
 
 	para "¿Sabes algo sobre"
 	line "los HUEVOS?"
@@ -474,7 +474,7 @@ UnknownText_0x1bdad8::
 
 UnknownText_0x1bdb85::
 	text "Soy la ENCARGADA"
-	line "de la GUARDERÍA."
+	line "de la GUARDERIA."
 
 	para "¿Quieres que te"
 	line "cuide un #MON?"
@@ -482,7 +482,7 @@ UnknownText_0x1bdb85::
 
 UnknownText_0x1bdbbb::
 	text "Soy la ENCARGADA"
-	line "de la GUARDERÍA."
+	line "de la GUARDERIA."
 
 	para "¿Sabes algo sobre"
 	line "los HUEVOS?"
@@ -552,7 +552,7 @@ UnknownText_0x1bdd96::
 	text "ha crecido mucho."
 
 	para "Su nivel ha"
-	line "ha subido @"
+	line "subido @"
 	deciram StringBuffer2 + 1, 1, 3
 	text "."
 
@@ -608,14 +608,14 @@ UnknownText_0x1bdee9::
 	done
 
 UnknownText_0x1bdef6::
-	text "Aún no…"
+	text "Aún no..."
 	done
 
 UnknownText_0x1bdf00::
 	text "¡Ah, eres tú!"
 
 	para "Estábamos cuidando"
-	line "de tus #MON y…"
+	line "de tus #MON y..."
 
 	para "¡Menuda sorpresa"
 	line "nos hemos llevado!"
