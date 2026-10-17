@@ -204,7 +204,7 @@ BattleText_EnemyPkmnFainted: ; 0x809a8
 ; 0x809be
 
 GotMoneyForWinningText:
-	text "¡<PLAYER> recibe ¥@"
+	text "¡Recibiste ¥@"
 	deciram wBattleReward, 3, 6
 	text ""
 	line "por ganar!"
@@ -252,8 +252,8 @@ BattleText_EnemyIsAboutToUseWillPlayerChangePkmn: ; 0x80aca
 	text_from_ram EnemyMonNick
 	text "."
 
-	para "¿Quieres <PLAYER>"
-	line "cambiar de #MON?"
+	para "¿Quieres cambiar"
+	line "de #MON?"
 	done
 ; 0x80af8
 
@@ -264,8 +264,8 @@ BattleText_PluralEnemyAreAboutToUseWillPlayerChangePkmn:
 	text_from_ram EnemyMonNick
 	text "."
 
-	para "¿Quieres <PLAYER>"
-	line "cambiar de #MON?"
+	para "¿Quieres cambiar"
+	line "de #MON?"
 	done
 
 BattleText_EnemySentOut: ; 0x80af8
