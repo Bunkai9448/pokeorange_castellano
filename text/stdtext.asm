@@ -245,6 +245,7 @@ GymStatue_CityGymText:
 	text "GIMNASIO #MON"
 	line "DE @"
 	text_from_ram StringBuffer3
+	text ""
 	done
 
 GymStatue_WinningTrainersText:
