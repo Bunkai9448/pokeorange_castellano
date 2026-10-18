@@ -117,7 +117,7 @@ UnknownText_0x1c574e::
 	text_from_ram StringBuffer1
 	text "."
 
-	para "Y…"
+	para "Y<...>"
 	prompt
 
 UnknownText_0x1c5772::
