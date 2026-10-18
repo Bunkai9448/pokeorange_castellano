@@ -217,7 +217,7 @@ UnknownText_0x1c4c28::
 	para "Quizá tus #MON"
 	line "no las quieran."
 
-	para "¡Je, je, je…!"
+	para "¡Je, je, je...!"
 	done
 
 UnknownText_0x1c4ca3::
@@ -236,7 +236,7 @@ UnknownText_0x1c4cae::
 
 UnknownText_0x1c4cce::
 	text "Gracias joven."
-	line "¡Je, je, je…!"
+	line "¡Je, je, je...!"
 	done
 
 UnknownText_0x1c4cea::
@@ -245,13 +245,13 @@ UnknownText_0x1c4cea::
 	done
 
 UnknownText_0x1c4d08::
-	text "¡Je, je…! No"
+	text "¡Je, je...! No"
 	line "tienes ese dinero."
 	done
 
 UnknownText_0x1c4d2a::
 	text "Vuelve otra vez."
-	line "¡Je, je, je…!"
+	line "¡Je, je, je...!"
 	done
 
 UnknownText_0x1c4d47::
