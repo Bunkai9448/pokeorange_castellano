@@ -125,7 +125,7 @@ MagazineBookshelfText:
 	line "TELEVISOR #MON,"
 
 	para "MANUAL #MON,"
-	line "GRÁFICA #MON."
+	line "GRAFICA #MON."
 	done
 
 IncenseBurnerText:
