@@ -308,7 +308,7 @@ GuillotineDescription:
 
 SolarbeamDescription:
 	db   "1er turno: Prepara"
-	next "2° turno: Ataca.@"
+	next "2o turno: Ataca.@"
 
 SwordsDanceDescription:
 	db   "Baile que mejora"
@@ -332,11 +332,11 @@ WhirlwindDescription:
 
 FlyDescription:
 	db   "1er turno: Vuela"
-	next "2° turno: Ataca.@"
+	next "2o turno: Ataca.@"
 
 DiveDescription:
 	db   "1er turno: Bucea"
-	next "2° turno: Ataca.@"
+	next "2o turno: Ataca.@"
 
 SlamDescription:
 	db   "Golpea con sus"
@@ -518,7 +518,7 @@ PlayRoughDescription:
 HyperBeamDescription:
 GigaImpactDescription:
 	db   "1er turno: Ataca"
-	next "2° turno: Descansa@"
+	next "2o turno: Descansa@"
 
 PeckDescription:
 	db   "Ataca al enemigo"
@@ -602,7 +602,7 @@ FissureDescription:
 
 DigDescription:
 	db   "1er turno: Cava"
-	next "2° turno: Ataca@"
+	next "2o turno: Ataca@"
 
 ToxicDescription:
 	db   "Veneno que aumenta"
@@ -645,7 +645,7 @@ ScreechDescription:
 DoubleTeamDescription:
 MinimizeDescription:
 	db   "Mejora habilidad"
-	next "de EVASIÓN.@"
+	next "de EVASION.@"
 
 RecoverDescription:
 	db   "Restaura la mitad"
@@ -756,7 +756,7 @@ SporeDescription:
 
 FlashDescription:
 	db   "Ciega al enemigo y"
-	next "baja la PRECISIÓN.@"
+	next "baja la PRECISION.@"
 
 SplashDescription:
 	db   "No tiene ningún"
@@ -858,7 +858,7 @@ BellyDrumDescription:
 
 OctazookaDescription:
 	db   "Puede reducir la"
-	next "PRECISIÓN@"
+	next "PRECISION@"
 
 SpikesDescription:
 	db   "Hiere al enemigo"
@@ -870,7 +870,7 @@ ZapCannonDescription:
 
 ForesightDescription:
 	db   "Anula ataques que"
-	next "bajan PRECISIÓN.@"
+	next "bajan PRECISION.@"
 
 DestinyBondDescription:
 	db   "El enemigo se"
@@ -943,7 +943,7 @@ ReturnDescription:
 
 BounceDescription:
 	db   "1er turno: Salta"
-	next "2° turno: Ataca@"
+	next "2o turno: Ataca@"
 
 SafeguardDescription:
 	db   "Evita problemas"
