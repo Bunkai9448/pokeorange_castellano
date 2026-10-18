@@ -512,7 +512,7 @@ MailEggText::
 
 MailMovedFromBoxText::
 	text "La CARTA fue"
-	line "sacada del BUZÓN."
+	line "sacada del BUZON."
 	prompt
 	
 Text_WasSentToBillsPC::
@@ -1080,7 +1080,7 @@ UnknownText_0x1c1c86::
 	done
 
 UnknownText_0x1c1ca9::
-	text "El BUZÓN de tu"
+	text "El BUZON de tu"
 	line "PC está lleno."
 	prompt
 
