@@ -136,7 +136,7 @@ UnknownText_0x1c0897::
 	prompt
 
 UnknownText_0x1c08ac::
-	text "No pasó nada…"
+	text "No pasó nada..."
 	done
 
 UnknownText_0x1c08bc::
@@ -266,7 +266,7 @@ UnknownText_0x1c0b03::
 
 UnknownText_0x1c0b1a::
 	text "Parece que aquí"
-	line "no hay nada…"
+	line "no hay nada..."
 	done
 
 UnknownText_0x1c0b3b::
@@ -311,7 +311,7 @@ UnknownText_0x1c0bd8::
 
 UnknownText_0x1c0bee::
 	text "OAK: ¡<PLAYER>!"
-	line "¡Éste no es el"
+	line "¡Este no es el"
 	cont "momento de usarlo!"
 	prompt
 
@@ -435,7 +435,7 @@ UnknownText_0x1c0df3::
 	text "que dejé con la"
 
 	para "ENCARGADA de la"
-	line "GUARDERÍA."
+	line "GUARDERIA."
 	done
 
 UnknownText_0x1c0e24::
@@ -444,7 +444,7 @@ UnknownText_0x1c0e24::
 	text "que dejé con el"
 
 	para "ENCARGADO de la"
-	line "GUARDERÍA."
+	line "GUARDERIA."
 	done
 
 UnknownText_0x1c0e54::
@@ -563,7 +563,7 @@ ContestJudging_FirstPlaceText::
 
 	para "Captura de Bichos"
 	line "es @"
-	para "…"
+	para "..."
 
 	para "¡@"
 	text_from_ram wBugContestWinnerName
@@ -629,7 +629,7 @@ UnknownText_0x1c1203::
 	text "Déjame que mida a"
 	line "ese MAGIKARP."
 
-	para "¡Mmmmm…! Mide"
+	para "¡Mmmmm...! Mide"
 	line "@"
 	text_from_ram StringBuffer1
 	text " cm."
@@ -885,7 +885,7 @@ _OakRating11::
 	done
 
 _OakRating12::
-	text "¿Conoces a CÉSAR?"
+	text "¿Conoces a CESAR?"
 	line "Sus #BALL"
 
 	para "personalizadas son"
@@ -985,7 +985,7 @@ UnknownText_0x1c1adf::
 	
 UnknownText_0x1c1b03::
 	text "OAK: ¡<PLAYER>!"
-	line "¡Éste no es el"
+	line "¡Este no es el"
 	cont "momento de usarlo!"
 	done
 
