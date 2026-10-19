@@ -67,7 +67,7 @@ SwimmerYaekoAfterText:
 	text "STUNFISK vive en"
 	line "el agua, pero es"
 	cont "de tipo TIERRA y"
-	cont "ELÉCTRICO."
+	cont "ELECTRICO."
 	done
 
 TrainerHikerTeppei:
