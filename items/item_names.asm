@@ -100,7 +100,7 @@
 	db "HUESO GRUESO@"
 	db "CINTA FOCUS@"
 	db "POLVOENERGIA@"
-	db "RAIZ ENERGÍA@"
+	db "RAIZ ENERGIA@"
 	db "POLVO CURA@"
 	db "HIERBA REV.@"
 	db "PIEDRADURA@"
