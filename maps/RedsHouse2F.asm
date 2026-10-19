@@ -11,7 +11,7 @@ MapRedsHouse2FSignpost1Script:
 	jumptext UnknownText_0x19b087
 
 UnknownText_0x19b050:
-	text "<PLAYER> jugo"
+	text "<PLAYER> jugó"
 	line "a la N64."
 
 	para "¡Mejor no"
@@ -21,7 +21,7 @@ UnknownText_0x19b050:
 UnknownText_0x19b087:
 	text "Parece que"
 	line "lleva tiempo"
-	cont "sin usarse...>"
+	cont "sin usarse<...>"
 	done
 
 RedsHouse2F_MapEventHeader:
