@@ -124,17 +124,17 @@ ShamoutiChiefText1:
 	cont "nieta hará"
 	cont "el resto."
 	
-	para "Hare que el"
+	para "Haré que el"
 	line "GUARDIAN en la "
 	cont "playa sepa que"
 	cont "cruzas."
 	done
 
 ShamoutiChiefText3:
-	text "¡No puedo "
+	text "¡No puedo"
 	line "agradecerte lo"
 	cont "suficiente"
-	cont "PLAYER>!"
+	cont "<PLAYER>!"
 	
 	para "La profecía se"
 	line "ha cumplido,asi"
