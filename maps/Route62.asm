@@ -99,7 +99,7 @@ Route62Sign:
 R62SignText:
 	text "RUTA 62"
 	line "al DESIERTO"
-	cont "MANDARÍN"
+	cont "MANDARIN"
 	done
 	
 Route62ClimbSign:
