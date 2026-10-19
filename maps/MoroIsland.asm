@@ -19,7 +19,7 @@ MoroFattyScript:
 	jumptextfaceplayer MoroFattyText
 
 MoroFattyText:
-	text "La tecnologÍa es"
+	text "La tecnología es"
 	line "sorprendente."
 
 	para "¿Preguntas si "
