@@ -362,7 +362,7 @@ DoubleKickDescription:
 	db   "Una patada doble.@"
 
 SandAttackDescription:
-	db   "Baja la PRECISIÓN"
+	db   "Baja la PRECISION"
 	next "arrojando arena@"
 
 HornAttackDescription:
@@ -653,7 +653,7 @@ RecoverDescription:
 
 SmokescreenDescription:
 MudSlapDescription:
-	db   "Baja la PRECISIÓN"
+	db   "Baja la PRECISION"
 	next "del enemigo.@"
 
 ConfuseRayDescription:
@@ -982,7 +982,7 @@ RapidSpinDescription:
 	next "de gran velocidad.@"
 
 SweetScentDescription:
-	db   "Reduce la EVASIÓN"
+	db   "Reduce la EVASION"
 	next "del enemigo.@"
 
 MetalClawDescription:
@@ -991,7 +991,7 @@ PowerUpPunchDescription:
 	next "ATAQUE.@"
 
 VitalThrowDescription:
-	db   "Un 2° golpe que"
+	db   "Un 2o golpe que"
 	next "no falla nunca.@"
 
 MorningSunDescription:
@@ -1046,7 +1046,7 @@ PowerGemDescription:
 
 AccelerockDescription:
 	db   "Golpea primero con"
-	next "ataque muy rapido.@"
+	next "ataque muy rápido.@"
 
 ShellTrapDescription:
 	db   "Pone una trampa"
