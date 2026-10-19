@@ -216,7 +216,7 @@ TrainerBirdkeeperTatsuya:
 BirdkeeperTatsuyaSeenText:
 	text "¿Puedes volar"
 	line "como mis"
-	cont "PÁJAROS?"
+	cont "PAJAROS?"
 	done
 	
 BirdkeeperTatsuyaWinText:
