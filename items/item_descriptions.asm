@@ -329,7 +329,7 @@ RareCandyDesc:
 	next "un #MON.@"
 
 XAccuracyDesc:
-	db   "Sube la PRECISIÓN."
+	db   "Sube la PRECISION."
 	next "(1 BAT.)@"
 
 LeafStoneDesc:
