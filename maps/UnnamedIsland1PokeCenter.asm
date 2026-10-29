@@ -57,10 +57,10 @@ UnnamedIslandSlouchScript:
 	end
 
 UnnamedIslandSlouchText:
-	text "If you go east of"
-	line "KINNOW ISLAND, you"
-	cont "can find the path"
-	cont "to the 7 GRAPE-"
+	text "Si vas al este de"
+	line "la ISLA KINNOW,"
+	cont "verás el paso a"
+	cont "the 7 GRAPE-"
 	cont "FRUIT ISLANDS."
 	done
 
