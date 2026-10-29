@@ -708,6 +708,7 @@ GotAnEncoreText: ; 0x81109
 	text "¡<TARGET>"
 	line "sufrió los efectos"
 	cont "de OTRA VEZ!"
+	prompt
 ; 0x8111b
 
 TookAimText: ; 0x81136
