@@ -151,7 +151,7 @@ BattleText_PkmnReflectFaded: ; 0x80905
 ; 0x8091f
 
 BattleText_RainContinuesToFall: ; 0x8091f
-	text "La lluvia continua"
+	text "La lluvia sigue"
 	line "cayendo."
 	prompt
 ; 0x80938
@@ -169,8 +169,8 @@ BattleText_TheSandstormRages: ; 0x80951
 ; 0x80967
 
 BattleText_TheHailContinuesToFall:
-	text "¡El granizo continua"
-	line "cayendo!."
+	text "¡El granizo sigue"
+	line "cayendo!"
 	prompt
 
 BattleText_TheRainStopped: ; 0x80967
