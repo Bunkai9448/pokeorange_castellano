@@ -165,24 +165,25 @@ TrovitopolisPokeCommCenter_MapEventHeader::
 .CoordEvents: db 0
 
 .BGEvents: db 18
-	signpost 15, 2, SIGNPOST_READ, PokeCommSign
-	signpost 2, 5, SIGNPOST_READ, APSign
-	signpost 10, 19, SIGNPOST_READ, PokeCommMachineSign
-	signpost 11, 19, SIGNPOST_READ, PokeCommMachineSign
-	signpost 12, 19, SIGNPOST_READ, PokeCommMachineSign
-	signpost 13, 19, SIGNPOST_READ, PokeCommMachineSign
-	signpost 14, 19, SIGNPOST_READ, PokeCommMachineSign
-	signpost 15, 19, SIGNPOST_READ, PokeCommMachineSign
-	signpost 17, 18, SIGNPOST_READ, PokeCommMachineSign
-	signpost 17, 17, SIGNPOST_READ, PokeCommMachineSign
-	signpost 17, 16, SIGNPOST_READ, PokeCommMachineSign
-	signpost 17, 15, SIGNPOST_READ, PokeCommMachineSign
-	signpost 15, 14, SIGNPOST_READ, PokeCommMachineSign
-	signpost 14, 14, SIGNPOST_READ, PokeCommMachineSign
-	signpost 13, 14, SIGNPOST_READ, PokeCommMachineSign
-	signpost 12, 14, SIGNPOST_READ, PokeCommMachineSign
-	signpost 11, 14, SIGNPOST_READ, PokeCommMachineSign
-	signpost 10, 14, SIGNPOST_READ, PokeCommMachineSign
+	signpost 21,  2, SIGNPOST_READ, PokeCommSign
+	signpost  2,  5, SIGNPOST_READ, APSign
+	signpost 16, 19, SIGNPOST_READ, PokeCommMachineSign
+	signpost 17, 19, SIGNPOST_READ, PokeCommMachineSign
+	signpost 18, 19, SIGNPOST_READ, PokeCommMachineSign
+	signpost 19, 19, SIGNPOST_READ, PokeCommMachineSign
+	signpost 20, 19, SIGNPOST_READ, PokeCommMachineSign
+	signpost 21, 19, SIGNPOST_READ, PokeCommMachineSign
+	signpost 23, 18, SIGNPOST_READ, PokeCommMachineSign
+	signpost 23, 17, SIGNPOST_READ, PokeCommMachineSign
+	signpost 23, 16, SIGNPOST_READ, PokeCommMachineSign
+	signpost 23, 15, SIGNPOST_READ, PokeCommMachineSign
+	signpost 21, 14, SIGNPOST_READ, PokeCommMachineSign
+	signpost 20, 14, SIGNPOST_READ, PokeCommMachineSign
+	signpost 19, 14, SIGNPOST_READ, PokeCommMachineSign
+	signpost 18, 14, SIGNPOST_READ, PokeCommMachineSign
+	signpost 17, 14, SIGNPOST_READ, PokeCommMachineSign
+	signpost 16, 14, SIGNPOST_READ, PokeCommMachineSign
+
 
 .ObjectEvents: db 8
 	person_event SPRITE_NURSE, 13, 7, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, TrovitopolisNurseScript, -1
