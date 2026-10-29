@@ -132,7 +132,8 @@ UnknownText_0x1c0864::
 
 UnknownText_0x1c0897::
 	text_from_ram StringBuffer2
-	line "usó GOLPE CABEZA."
+	text " usó"
+	line "GOLPE CABEZA."
 	prompt
 
 UnknownText_0x1c08ac::
