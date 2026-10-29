@@ -155,10 +155,10 @@ PokeCommScientistScript:
 TrovitopolisPokeCommCenter_MapEventHeader::
 
 .Warps: db 6
-	warp_def 21, 6, 1, TROVITOPOLIS
-	warp_def 21, 7, 1, TROVITOPOLIS
-	warp_def 12, 0, 5, TROVITOPOLIS_POKE_COMM_CENTER
-	warp_def 21, 0, 1, POKECENTER_2F
+	warp_def 27,  6, 1, TROVITOPOLIS
+	warp_def 27,  7, 1, TROVITOPOLIS
+	warp_def 18,  0, 5, TROVITOPOLIS_POKE_COMM_CENTER
+	warp_def 27,  0, 1, POKECENTER_2F
 	warp_def 7, 0, 3, TROVITOPOLIS_POKE_COMM_CENTER
 	warp_def 7, 1, 3, TROVITOPOLIS_POKE_COMM_CENTER
 
