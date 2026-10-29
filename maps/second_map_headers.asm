@@ -367,6 +367,7 @@
 	map_header_2 SewerEntrance, SEWER_ENTRANCE, 0, 0
 	map_header_2 Route62MandarinDesertGate, ROUTE_62_MANDARIN_DESERT_GATE, 0, 0
 	map_header_2 SunrayCaveMandarinDesert1F, SUNRAY_CAVE_MANDARIN_DESERT_1F, 9, 0
+	map_header_2 TrovitopolisGroomer, TROVITOPOLIS_GROOMER, 0, 0
 	map_header_2 TrovitopolisPort, TROVITOPOLIS_PORT, 10, 0
 	map_header_2 MayorsOffice, MAYORS_OFFICE, 0, 0
 	map_header_2 MayorsOfficeMeetingRoom, MAYORS_OFFICE_MEETING_ROOM, 0, 0
